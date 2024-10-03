@@ -11,6 +11,8 @@ multi line comment */
 
 
 /* Format my paragraph */
+/* The point here is to create a format for all text with the 'p' tag */
+/* This minimizes code */
 p {
 	font-size: 18px;
 	margin: 5px 5px;
