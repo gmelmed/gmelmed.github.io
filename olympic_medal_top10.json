@@ -88,7 +88,7 @@
         }
     },
     "data": {
-        "name": "data-cd453904a78f053554f5a498bc2877ad"
+        "name": "data-f115924cca384d32b5fd86157bac90f5"
     },
     "mark": {
         "type": "bar"
@@ -140,16 +140,16 @@
             },
             "field": "Country",
             "sort": [
-                "United States",
-                "France",
-                "Australia",
-                "Germany",
-                "China",
-                "Japan",
-                "Italy",
-                "Spain",
-                "Great Britain",
-                "Canada"
+                "Hong Kong",
+                "Singapore",
+                "Turkey",
+                "Thailand",
+                "Indonesia",
+                "Georgia",
+                "Iran",
+                "Israel",
+                "Kazakhstan",
+                "Malaysia"
             ],
             "title": "Country",
             "type": "nominal"
@@ -177,163 +177,163 @@
         "anchor": "start",
         "offset": 15,
         "subtitle": [
-            "Top 10 countries by 2024 Olympic roster size",
+            "Top 10 countries by Gold Medal Compensation",
             "Compensation in 2021 USD"
         ]
     },
     "width": 600,
     "$schema": "https://vega.github.io/schema/vega-lite/v5.16.3.json",
     "datasets": {
-        "data-cd453904a78f053554f5a498bc2877ad": [
+        "data-f115924cca384d32b5fd86157bac90f5": [
             {
-                "Country": "United States",
+                "Country": "Hong Kong",
                 "Medal": "Gold",
-                "Compensation": 37500.0
+                "Compensation": 769558.0
             },
             {
-                "Country": "France",
+                "Country": "Singapore",
                 "Medal": "Gold",
-                "Compensation": 86670.0
+                "Compensation": 737000.0
             },
             {
-                "Country": "Australia",
+                "Country": "Turkey",
                 "Medal": "Gold",
-                "Compensation": 20000.0
+                "Compensation": 531638.0
             },
             {
-                "Country": "Germany",
+                "Country": "Thailand",
                 "Medal": "Gold",
-                "Compensation": 22000.0
+                "Compensation": 365150.0
             },
             {
-                "Country": "China",
+                "Country": "Indonesia",
                 "Medal": "Gold",
-                "Compensation": null
+                "Compensation": 346000.0
             },
             {
-                "Country": "Japan",
+                "Country": "Georgia",
                 "Medal": "Gold",
-                "Compensation": 45000.0
+                "Compensation": 318000.0
             },
             {
-                "Country": "Italy",
+                "Country": "Iran",
                 "Medal": "Gold",
-                "Compensation": 213000.0
+                "Compensation": 295000.0
             },
             {
-                "Country": "Spain",
+                "Country": "Israel",
                 "Medal": "Gold",
-                "Compensation": 111562.0
+                "Compensation": 263000.0
             },
             {
-                "Country": "Great Britain",
+                "Country": "Kazakhstan",
                 "Medal": "Gold",
-                "Compensation": 0.0
+                "Compensation": 250000.0
             },
             {
-                "Country": "Canada",
+                "Country": "Malaysia",
                 "Medal": "Gold",
-                "Compensation": 14572.0
+                "Compensation": 236000.0
             },
             {
-                "Country": "United States",
+                "Country": "Hong Kong",
                 "Medal": "Silver",
-                "Compensation": 22500.0
+                "Compensation": 384279.0
             },
             {
-                "Country": "France",
+                "Country": "Singapore",
                 "Medal": "Silver",
-                "Compensation": 43335.0
+                "Compensation": 369000.0
             },
             {
-                "Country": "Australia",
+                "Country": "Turkey",
                 "Medal": "Silver",
-                "Compensation": 18000.0
+                "Compensation": 313258.0
             },
             {
-                "Country": "Germany",
+                "Country": "Thailand",
                 "Medal": "Silver",
-                "Compensation": 17000.0
+                "Compensation": 219090.0
             },
             {
-                "Country": "China",
+                "Country": "Indonesia",
                 "Medal": "Silver",
-                "Compensation": null
+                "Compensation": 138500.0
             },
             {
-                "Country": "Japan",
+                "Country": "Georgia",
                 "Medal": "Silver",
-                "Compensation": 18000.0
+                "Compensation": 159000.0
             },
             {
-                "Country": "Italy",
+                "Country": "Iran",
                 "Medal": "Silver",
-                "Compensation": 107000.0
+                "Compensation": 131000.0
             },
             {
-                "Country": "Spain",
+                "Country": "Israel",
                 "Medal": "Silver",
-                "Compensation": 56968.0
+                "Compensation": 197000.0
             },
             {
-                "Country": "Great Britain",
+                "Country": "Kazakhstan",
                 "Medal": "Silver",
-                "Compensation": 0.0
+                "Compensation": 150000.0
             },
             {
-                "Country": "Canada",
+                "Country": "Malaysia",
                 "Medal": "Silver",
-                "Compensation": 10929.0
-            },
-            {
-                "Country": "United States",
-                "Medal": "Bronze",
-                "Compensation": 15000.0
-            },
-            {
-                "Country": "France",
-                "Medal": "Bronze",
-                "Compensation": 21667.0
-            },
-            {
-                "Country": "Australia",
-                "Medal": "Bronze",
-                "Compensation": 10000.0
-            },
-            {
-                "Country": "Germany",
-                "Medal": "Bronze",
-                "Compensation": 11000.0
-            },
-            {
-                "Country": "China",
-                "Medal": "Bronze",
-                "Compensation": null
-            },
-            {
-                "Country": "Japan",
-                "Medal": "Bronze",
-                "Compensation": 9000.0
-            },
-            {
-                "Country": "Italy",
-                "Medal": "Bronze",
                 "Compensation": 71000.0
             },
             {
-                "Country": "Spain",
+                "Country": "Hong Kong",
                 "Medal": "Bronze",
-                "Compensation": 35605.0
+                "Compensation": 192139.0
             },
             {
-                "Country": "Great Britain",
+                "Country": "Singapore",
                 "Medal": "Bronze",
-                "Compensation": 0.0
+                "Compensation": 184000.0
             },
             {
-                "Country": "Canada",
+                "Country": "Turkey",
                 "Medal": "Bronze",
-                "Compensation": 7286.0
+                "Compensation": 157616.0
+            },
+            {
+                "Country": "Thailand",
+                "Medal": "Bronze",
+                "Compensation": 146060.0
+            },
+            {
+                "Country": "Indonesia",
+                "Medal": "Bronze",
+                "Compensation": 69250.0
+            },
+            {
+                "Country": "Georgia",
+                "Medal": "Bronze",
+                "Compensation": 79500.0
+            },
+            {
+                "Country": "Iran",
+                "Medal": "Bronze",
+                "Compensation": 66000.0
+            },
+            {
+                "Country": "Israel",
+                "Medal": "Bronze",
+                "Compensation": 132000.0
+            },
+            {
+                "Country": "Kazakhstan",
+                "Medal": "Bronze",
+                "Compensation": 75000.0
+            },
+            {
+                "Country": "Malaysia",
+                "Medal": "Bronze",
+                "Compensation": 24000.0
             }
         ]
     }

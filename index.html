@@ -60,7 +60,7 @@
         <div class="chart-description">
             <h2>Peak Blossom of Cherry Blossoms in Kyoto, Japan</h2>
             <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                Kyoto’s world-famous cherry blossom trees are blooming earlier and earlier every year. The timing of peak blossom depends on spring temperatures, which are rising.
+                Kyoto’s world-famous cherry blossom trees are blooming earlier and earlier every year. The timing of peak blossom depends on spring temperatures, which are steadily rising. Note the sustained drop since the beginning of the 21st century. 
             </p>
         </div>
         <figure id="Location1"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
@@ -68,18 +68,26 @@
 
     <section>
         <div class="chart-description">
-            <h2>Olympic Medal Compensation by Country and Medal</h2>
+            <h2>Medal Compensation at the 2024 Olympics</h2>
             <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                Below are the top 10 largest olympic rosters at the Paris 2024 games. As you can see below, they have vastly different approaches to compensating their medalists.
+                During the 2024 Olympic Games, I became interested in how countries compensated their athletes for winning medals. Medal compensation is at the discretion of each country's national olympic committee (NOC), and varies significantly. The first chart shows the top 10 NOCs by gold medal compensation.
+
+                Not every NOC compensates their medalist this generously. In fact, most NOCs do not offer any compensation for medalists. For comparison, the next chart shows the top 10 NOCs by 2024 Olympic roster size. Most pay a small fraction of what the top-paying NOCs pay. Note: China is empty because no information is available. Great Britain is empty because team GB medalists are not compensated.
             </p>
         </div>
         <figure id="Location2"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+        <figure id="Location3"></figure> 
     </section>
 
-    <!-- Do you want to add more sections? -->
-        <!-- Try copying pasting the section above -->
-        <!-- You'll need to change the id of the figure "<figure id="Location3"... -->
-        <!-- ... and add a new variable for the graph spec in the script at the bottom of the page -->
+    <section>
+        <div class="chart-description">
+            <h2>Sports Facilities in England</h2>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+            Since 2010, England has lost nearly 10,000 more sports facilities than it has gained.     
+            </p>
+        </div>
+        <figure id="Location4"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    </section>
 
 
     <!-- This is a script, it's a way to run JavaScript code on the page -->
@@ -87,18 +95,13 @@
         // This is a comment in JavaScript - it's a different language to HTML and CSS
 
         let figure_1_spec = "cherry_blossoms.json"; // We're storing the URL of the graph we want to display in a variable
-        let figure_2_spec = "olympic_medal_comp.json"
-                                                                                                                    // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
-
+        let figure_2_spec = "olympic_medal_top10.json";
+        let figure_3_spec = "olympic_medal_comp.json";
+        let figure_4_spec = "england_facilities.json";
         vegaEmbed('#Location1', figure_1_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
-
-        // Do you want to add more graphs?
-        // try defining a new variable for figure_3_spec, adding VegaEmbed for Location3, and adding a new section in the HTML
-        // e.g. 
-        // let figure_3_spec = ...
-        // vegaEmbed('#Location3', figure_3_spec)
-        
         vegaEmbed('#Location2', figure_2_spec)
+        vegaEmbed('#Location3', figure_3_spec)
+        vegaEmbed('#Location4', figure_4_spec)
 
     </script>
 

@@ -133,7 +133,6 @@
         }
       }
     ],
-    "background": "#f7f7f7",
     "data": {"name": "data-6e5c1f92e2905f7f65670b8cc416488f"},
     "height": 500,
     "title": {
@@ -147,7 +146,7 @@
       "subtitle": ["Source: Yasuyuki Aono (2024) via Our World in Data.", ""],
       "anchor": "start"
     },
-    "width": "container",
+    "width": 600,
     "$schema": "https://vega.github.io/schema/vega-lite/v5.16.3.json",
     "datasets": {
       "data-6e5c1f92e2905f7f65670b8cc416488f": [
