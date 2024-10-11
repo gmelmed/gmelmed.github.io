@@ -1,0 +1,41 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Google's stock price over time.",
+    "data": {
+      "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/consumertrends.csv"
+    },
+    "mark":{
+      "type": "line"
+    },
+    "width" : 500,
+    "height" : 350,
+    "title" :{
+      "text" : "Vice Spending",
+      "subtitle" : ["Spending (M) on Alcohol, Tobacco, and Narcotics", "Source: ONS"]
+    },
+    "encoding": {
+      "x": {
+        "field" : "year",
+        "type" : "temporal",
+        "title" : "",
+        "axis" : {
+          "grid": false
+        }
+      },
+      "y":{
+        "field" : "value",
+        "type" :"quantitative",
+        "axis" : {
+          "labelExpr": "'£' + datum.label + 'M'"
+        },
+        "title" : ""
+      },
+      "color" : {
+        "field": "category",
+        "legend" : {
+          "title" : "",
+          "orient" : "top"
+        }
+      } 
+    }
+  }
