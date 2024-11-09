@@ -29,12 +29,12 @@
                     "rxCyclingBeforeRegistration": "control",
                     "rgLoldpConversionM3": "control",
                     "rgIlaService": "control",
-                    "rxEnrichedPrefsM1": "control",
+                    "rxEnrichedPrefsM1": "treatment2",
                     "rgReviewsM1": "control",
-                    "rgGoogleOneTap": "treatment1"
+                    "rgGoogleOneTap": "control"
                 },
                 "hideBanner": false,
-                "ip": "35.191.84.242",
+                "ip": "35.191.38.91",
                 "ipCoordinates": {
                     "lat": "51.530",
                     "lon": "-0.190"
@@ -2635,6 +2635,365 @@
                         }
                     }
                 ],
+                "researchers": [
+                    {
+                        "metadata": {
+                            "tags": [],
+                            "concepts": []
+                        },
+                        "sys": {
+                            "space": {
+                                "sys": {
+                                    "type": "Link",
+                                    "linkType": "Space",
+                                    "id": "jeox55pd4d8n"
+                                }
+                            },
+                            "id": "5fxu6pepAVpuaUg5iBjNtC",
+                            "type": "Entry",
+                            "createdAt": "2020-04-20T21:24:11.886Z",
+                            "updatedAt": "2021-08-24T23:23:30.755Z",
+                            "environment": {
+                                "sys": {
+                                    "id": "master",
+                                    "type": "Link",
+                                    "linkType": "Environment"
+                                }
+                            },
+                            "publishedVersion": 39,
+                            "revision": 15,
+                            "contentType": {
+                                "sys": {
+                                    "type": "Link",
+                                    "linkType": "ContentType",
+                                    "id": "author"
+                                }
+                            },
+                            "locale": "en-US"
+                        },
+                        "fields": {
+                            "name": "Igor Popov",
+                            "title": "Chief Economist",
+                            "slug": "igor",
+                            "username": "igor",
+                            "bio": "Igor is the Chief Economist at Apartment List, where he leads the research team in publishing original housing market research. Igor teaches an undergraduate seminar titled \"Housing, Neighborhoods, and Homelessness\" at Stanford University, and his research has been published in the American Economic Review. Prior to joining Apartment List, Igor worked as an economist and data scientist at Airbnb and earned his Ph.D. in economics at Stanford University. Igor can be reached at ipopov@apartmentlist.com.",
+                            "image": {
+                                "metadata": {
+                                    "tags": [],
+                                    "concepts": []
+                                },
+                                "sys": {
+                                    "space": {
+                                        "sys": {
+                                            "type": "Link",
+                                            "linkType": "Space",
+                                            "id": "jeox55pd4d8n"
+                                        }
+                                    },
+                                    "id": "1o6BOGybcbqqDl0EmMmeX6",
+                                    "type": "Asset",
+                                    "createdAt": "2020-06-02T23:45:40.882Z",
+                                    "updatedAt": "2020-06-02T23:45:40.882Z",
+                                    "environment": {
+                                        "sys": {
+                                            "id": "master",
+                                            "type": "Link",
+                                            "linkType": "Environment"
+                                        }
+                                    },
+                                    "publishedVersion": 3,
+                                    "revision": 1,
+                                    "locale": "en-US"
+                                },
+                                "fields": {
+                                    "title": "Igor-Popov",
+                                    "file": {
+                                        "url": "//images.ctfassets.net/jeox55pd4d8n/1o6BOGybcbqqDl0EmMmeX6/e53b91fc47f224c65cf0a9e3e0660dbb/Igor-Popov.jpg",
+                                        "details": {
+                                            "size": 340832,
+                                            "image": {
+                                                "width": 1000,
+                                                "height": 1000
+                                            }
+                                        },
+                                        "fileName": "Igor-Popov.jpg",
+                                        "contentType": "image/jpeg"
+                                    }
+                                }
+                            },
+                            "researcher": true,
+                            "twitter": "IAPopov"
+                        }
+                    },
+                    {
+                        "metadata": {
+                            "tags": [],
+                            "concepts": []
+                        },
+                        "sys": {
+                            "space": {
+                                "sys": {
+                                    "type": "Link",
+                                    "linkType": "Space",
+                                    "id": "jeox55pd4d8n"
+                                }
+                            },
+                            "id": "3XlyksnHXeODEgo2nohYsW",
+                            "type": "Entry",
+                            "createdAt": "2020-04-20T21:24:11.923Z",
+                            "updatedAt": "2021-08-24T23:22:46.098Z",
+                            "environment": {
+                                "sys": {
+                                    "id": "master",
+                                    "type": "Link",
+                                    "linkType": "Environment"
+                                }
+                            },
+                            "publishedVersion": 31,
+                            "revision": 13,
+                            "contentType": {
+                                "sys": {
+                                    "type": "Link",
+                                    "linkType": "ContentType",
+                                    "id": "author"
+                                }
+                            },
+                            "locale": "en-US"
+                        },
+                        "fields": {
+                            "name": "Chris Salviati",
+                            "title": "Senior Housing Economist",
+                            "slug": "salviati",
+                            "username": "salviati",
+                            "bio": "Chris is a senior housing economist at Apartment List, where he conducts research on economic trends in the housing market. Chris previously worked as a research assistant at the Federal Reserve and an economic consultant, and he has BA and MA degrees in economics from Boston University.",
+                            "image": {
+                                "metadata": {
+                                    "tags": [],
+                                    "concepts": []
+                                },
+                                "sys": {
+                                    "space": {
+                                        "sys": {
+                                            "type": "Link",
+                                            "linkType": "Space",
+                                            "id": "jeox55pd4d8n"
+                                        }
+                                    },
+                                    "id": "4bNJ6W78tu4QpNFrr9tPyE",
+                                    "type": "Asset",
+                                    "createdAt": "2020-06-02T23:45:11.378Z",
+                                    "updatedAt": "2020-06-02T23:45:11.378Z",
+                                    "environment": {
+                                        "sys": {
+                                            "id": "master",
+                                            "type": "Link",
+                                            "linkType": "Environment"
+                                        }
+                                    },
+                                    "publishedVersion": 3,
+                                    "revision": 1,
+                                    "locale": "en-US"
+                                },
+                                "fields": {
+                                    "title": "Chris-Salviati",
+                                    "file": {
+                                        "url": "//images.ctfassets.net/jeox55pd4d8n/4bNJ6W78tu4QpNFrr9tPyE/43891ff13e83fdbcfae0ca64b42b3d38/Chris-Salviati.jpg",
+                                        "details": {
+                                            "size": 80189,
+                                            "image": {
+                                                "width": 1000,
+                                                "height": 1000
+                                            }
+                                        },
+                                        "fileName": "Chris-Salviati.jpg",
+                                        "contentType": "image/jpeg"
+                                    }
+                                }
+                            },
+                            "researcher": true,
+                            "twitter": "chris_salviati"
+                        }
+                    },
+                    {
+                        "metadata": {
+                            "tags": [],
+                            "concepts": []
+                        },
+                        "sys": {
+                            "space": {
+                                "sys": {
+                                    "type": "Link",
+                                    "linkType": "Space",
+                                    "id": "jeox55pd4d8n"
+                                }
+                            },
+                            "id": "3ahAoZjNKO0UV80FvuYMd0",
+                            "type": "Entry",
+                            "createdAt": "2020-04-20T21:24:12.102Z",
+                            "updatedAt": "2021-08-24T23:22:37.432Z",
+                            "environment": {
+                                "sys": {
+                                    "id": "master",
+                                    "type": "Link",
+                                    "linkType": "Environment"
+                                }
+                            },
+                            "publishedVersion": 25,
+                            "revision": 9,
+                            "contentType": {
+                                "sys": {
+                                    "type": "Link",
+                                    "linkType": "ContentType",
+                                    "id": "author"
+                                }
+                            },
+                            "locale": "en-US"
+                        },
+                        "fields": {
+                            "name": "Rob Warnock",
+                            "title": "Senior Research Associate",
+                            "slug": "rwarnock",
+                            "username": "rwarnock",
+                            "bio": "Rob is a senior research associate at Apartment List, where he examines trends in the housing and rental markets. Previously he worked in public health policy, and before that, graduated from UCLA with a degree in Globalization. Rob can be reached directly at rwarnock@apartmentlist.com.",
+                            "image": {
+                                "metadata": {
+                                    "tags": [],
+                                    "concepts": []
+                                },
+                                "sys": {
+                                    "space": {
+                                        "sys": {
+                                            "type": "Link",
+                                            "linkType": "Space",
+                                            "id": "jeox55pd4d8n"
+                                        }
+                                    },
+                                    "id": "XNtT1z7LepTFBu364h0Sh",
+                                    "type": "Asset",
+                                    "createdAt": "2020-04-20T21:21:50.564Z",
+                                    "updatedAt": "2020-04-20T21:22:01.517Z",
+                                    "environment": {
+                                        "sys": {
+                                            "id": "master",
+                                            "type": "Link",
+                                            "linkType": "Environment"
+                                        }
+                                    },
+                                    "publishedVersion": 7,
+                                    "revision": 2,
+                                    "locale": "en-US"
+                                },
+                                "fields": {
+                                    "title": "rob warnock",
+                                    "file": {
+                                        "url": "//images.ctfassets.net/jeox55pd4d8n/XNtT1z7LepTFBu364h0Sh/2101267c2d205d2564a7009379e4e359/rob_headshot.jpg",
+                                        "details": {
+                                            "size": 302626,
+                                            "image": {
+                                                "width": 1000,
+                                                "height": 1000
+                                            }
+                                        },
+                                        "fileName": "rob_headshot.jpg",
+                                        "contentType": "image/jpeg"
+                                    }
+                                }
+                            },
+                            "researcher": true,
+                            "twitter": "robnock_"
+                        }
+                    },
+                    {
+                        "metadata": {
+                            "tags": [],
+                            "concepts": []
+                        },
+                        "sys": {
+                            "space": {
+                                "sys": {
+                                    "type": "Link",
+                                    "linkType": "Space",
+                                    "id": "jeox55pd4d8n"
+                                }
+                            },
+                            "id": "33CPh3OpuNqSM1DrRnPEmi",
+                            "type": "Entry",
+                            "createdAt": "2021-08-24T05:47:07.190Z",
+                            "updatedAt": "2021-08-24T23:22:29.085Z",
+                            "environment": {
+                                "sys": {
+                                    "id": "master",
+                                    "type": "Link",
+                                    "linkType": "Environment"
+                                }
+                            },
+                            "publishedVersion": 14,
+                            "revision": 5,
+                            "contentType": {
+                                "sys": {
+                                    "type": "Link",
+                                    "linkType": "ContentType",
+                                    "id": "author"
+                                }
+                            },
+                            "locale": "en-US"
+                        },
+                        "fields": {
+                            "name": "Lilla Szini",
+                            "title": "Research Analyst",
+                            "slug": "lszini",
+                            "username": "lszini",
+                            "bio": "Lilla is a research analyst at Apartment List, where she assists in researching housing trends in the rental market. She graduated from UIUC with a BS in economics and physics, then from USFCA with a MS in applied economics.",
+                            "image": {
+                                "metadata": {
+                                    "tags": [],
+                                    "concepts": []
+                                },
+                                "sys": {
+                                    "space": {
+                                        "sys": {
+                                            "type": "Link",
+                                            "linkType": "Space",
+                                            "id": "jeox55pd4d8n"
+                                        }
+                                    },
+                                    "id": "2cYXROPZFZTeA65LrCTXA3",
+                                    "type": "Asset",
+                                    "createdAt": "2021-08-24T05:47:03.586Z",
+                                    "updatedAt": "2021-08-24T05:47:03.586Z",
+                                    "environment": {
+                                        "sys": {
+                                            "id": "master",
+                                            "type": "Link",
+                                            "linkType": "Environment"
+                                        }
+                                    },
+                                    "publishedVersion": 8,
+                                    "revision": 1,
+                                    "locale": "en-US"
+                                },
+                                "fields": {
+                                    "title": "lilla headshot gs",
+                                    "description": "",
+                                    "file": {
+                                        "url": "//images.ctfassets.net/jeox55pd4d8n/2cYXROPZFZTeA65LrCTXA3/a383d9a61c41dbdc1d89831cca28626c/lilla_headshot_gs.png",
+                                        "details": {
+                                            "size": 137596,
+                                            "image": {
+                                                "width": 450,
+                                                "height": 450
+                                            }
+                                        },
+                                        "fileName": "lilla_headshot_gs.png",
+                                        "contentType": "image/png"
+                                    }
+                                }
+                            },
+                            "researcher": true,
+                            "twitter": "lszini"
+                        }
+                    }
+                ],
                 "searchResults": [
                     {
                         "metadata": {
@@ -3122,365 +3481,6 @@
                                     }
                                 }
                             }
-                        }
-                    }
-                ],
-                "researchers": [
-                    {
-                        "metadata": {
-                            "tags": [],
-                            "concepts": []
-                        },
-                        "sys": {
-                            "space": {
-                                "sys": {
-                                    "type": "Link",
-                                    "linkType": "Space",
-                                    "id": "jeox55pd4d8n"
-                                }
-                            },
-                            "id": "5fxu6pepAVpuaUg5iBjNtC",
-                            "type": "Entry",
-                            "createdAt": "2020-04-20T21:24:11.886Z",
-                            "updatedAt": "2021-08-24T23:23:30.755Z",
-                            "environment": {
-                                "sys": {
-                                    "id": "master",
-                                    "type": "Link",
-                                    "linkType": "Environment"
-                                }
-                            },
-                            "publishedVersion": 39,
-                            "revision": 15,
-                            "contentType": {
-                                "sys": {
-                                    "type": "Link",
-                                    "linkType": "ContentType",
-                                    "id": "author"
-                                }
-                            },
-                            "locale": "en-US"
-                        },
-                        "fields": {
-                            "name": "Igor Popov",
-                            "title": "Chief Economist",
-                            "slug": "igor",
-                            "username": "igor",
-                            "bio": "Igor is the Chief Economist at Apartment List, where he leads the research team in publishing original housing market research. Igor teaches an undergraduate seminar titled \"Housing, Neighborhoods, and Homelessness\" at Stanford University, and his research has been published in the American Economic Review. Prior to joining Apartment List, Igor worked as an economist and data scientist at Airbnb and earned his Ph.D. in economics at Stanford University. Igor can be reached at ipopov@apartmentlist.com.",
-                            "image": {
-                                "metadata": {
-                                    "tags": [],
-                                    "concepts": []
-                                },
-                                "sys": {
-                                    "space": {
-                                        "sys": {
-                                            "type": "Link",
-                                            "linkType": "Space",
-                                            "id": "jeox55pd4d8n"
-                                        }
-                                    },
-                                    "id": "1o6BOGybcbqqDl0EmMmeX6",
-                                    "type": "Asset",
-                                    "createdAt": "2020-06-02T23:45:40.882Z",
-                                    "updatedAt": "2020-06-02T23:45:40.882Z",
-                                    "environment": {
-                                        "sys": {
-                                            "id": "master",
-                                            "type": "Link",
-                                            "linkType": "Environment"
-                                        }
-                                    },
-                                    "publishedVersion": 3,
-                                    "revision": 1,
-                                    "locale": "en-US"
-                                },
-                                "fields": {
-                                    "title": "Igor-Popov",
-                                    "file": {
-                                        "url": "//images.ctfassets.net/jeox55pd4d8n/1o6BOGybcbqqDl0EmMmeX6/e53b91fc47f224c65cf0a9e3e0660dbb/Igor-Popov.jpg",
-                                        "details": {
-                                            "size": 340832,
-                                            "image": {
-                                                "width": 1000,
-                                                "height": 1000
-                                            }
-                                        },
-                                        "fileName": "Igor-Popov.jpg",
-                                        "contentType": "image/jpeg"
-                                    }
-                                }
-                            },
-                            "researcher": true,
-                            "twitter": "IAPopov"
-                        }
-                    },
-                    {
-                        "metadata": {
-                            "tags": [],
-                            "concepts": []
-                        },
-                        "sys": {
-                            "space": {
-                                "sys": {
-                                    "type": "Link",
-                                    "linkType": "Space",
-                                    "id": "jeox55pd4d8n"
-                                }
-                            },
-                            "id": "3XlyksnHXeODEgo2nohYsW",
-                            "type": "Entry",
-                            "createdAt": "2020-04-20T21:24:11.923Z",
-                            "updatedAt": "2021-08-24T23:22:46.098Z",
-                            "environment": {
-                                "sys": {
-                                    "id": "master",
-                                    "type": "Link",
-                                    "linkType": "Environment"
-                                }
-                            },
-                            "publishedVersion": 31,
-                            "revision": 13,
-                            "contentType": {
-                                "sys": {
-                                    "type": "Link",
-                                    "linkType": "ContentType",
-                                    "id": "author"
-                                }
-                            },
-                            "locale": "en-US"
-                        },
-                        "fields": {
-                            "name": "Chris Salviati",
-                            "title": "Senior Housing Economist",
-                            "slug": "salviati",
-                            "username": "salviati",
-                            "bio": "Chris is a senior housing economist at Apartment List, where he conducts research on economic trends in the housing market. Chris previously worked as a research assistant at the Federal Reserve and an economic consultant, and he has BA and MA degrees in economics from Boston University.",
-                            "image": {
-                                "metadata": {
-                                    "tags": [],
-                                    "concepts": []
-                                },
-                                "sys": {
-                                    "space": {
-                                        "sys": {
-                                            "type": "Link",
-                                            "linkType": "Space",
-                                            "id": "jeox55pd4d8n"
-                                        }
-                                    },
-                                    "id": "4bNJ6W78tu4QpNFrr9tPyE",
-                                    "type": "Asset",
-                                    "createdAt": "2020-06-02T23:45:11.378Z",
-                                    "updatedAt": "2020-06-02T23:45:11.378Z",
-                                    "environment": {
-                                        "sys": {
-                                            "id": "master",
-                                            "type": "Link",
-                                            "linkType": "Environment"
-                                        }
-                                    },
-                                    "publishedVersion": 3,
-                                    "revision": 1,
-                                    "locale": "en-US"
-                                },
-                                "fields": {
-                                    "title": "Chris-Salviati",
-                                    "file": {
-                                        "url": "//images.ctfassets.net/jeox55pd4d8n/4bNJ6W78tu4QpNFrr9tPyE/43891ff13e83fdbcfae0ca64b42b3d38/Chris-Salviati.jpg",
-                                        "details": {
-                                            "size": 80189,
-                                            "image": {
-                                                "width": 1000,
-                                                "height": 1000
-                                            }
-                                        },
-                                        "fileName": "Chris-Salviati.jpg",
-                                        "contentType": "image/jpeg"
-                                    }
-                                }
-                            },
-                            "researcher": true,
-                            "twitter": "chris_salviati"
-                        }
-                    },
-                    {
-                        "metadata": {
-                            "tags": [],
-                            "concepts": []
-                        },
-                        "sys": {
-                            "space": {
-                                "sys": {
-                                    "type": "Link",
-                                    "linkType": "Space",
-                                    "id": "jeox55pd4d8n"
-                                }
-                            },
-                            "id": "3ahAoZjNKO0UV80FvuYMd0",
-                            "type": "Entry",
-                            "createdAt": "2020-04-20T21:24:12.102Z",
-                            "updatedAt": "2021-08-24T23:22:37.432Z",
-                            "environment": {
-                                "sys": {
-                                    "id": "master",
-                                    "type": "Link",
-                                    "linkType": "Environment"
-                                }
-                            },
-                            "publishedVersion": 25,
-                            "revision": 9,
-                            "contentType": {
-                                "sys": {
-                                    "type": "Link",
-                                    "linkType": "ContentType",
-                                    "id": "author"
-                                }
-                            },
-                            "locale": "en-US"
-                        },
-                        "fields": {
-                            "name": "Rob Warnock",
-                            "title": "Senior Research Associate",
-                            "slug": "rwarnock",
-                            "username": "rwarnock",
-                            "bio": "Rob is a senior research associate at Apartment List, where he examines trends in the housing and rental markets. Previously he worked in public health policy, and before that, graduated from UCLA with a degree in Globalization. Rob can be reached directly at rwarnock@apartmentlist.com.",
-                            "image": {
-                                "metadata": {
-                                    "tags": [],
-                                    "concepts": []
-                                },
-                                "sys": {
-                                    "space": {
-                                        "sys": {
-                                            "type": "Link",
-                                            "linkType": "Space",
-                                            "id": "jeox55pd4d8n"
-                                        }
-                                    },
-                                    "id": "XNtT1z7LepTFBu364h0Sh",
-                                    "type": "Asset",
-                                    "createdAt": "2020-04-20T21:21:50.564Z",
-                                    "updatedAt": "2020-04-20T21:22:01.517Z",
-                                    "environment": {
-                                        "sys": {
-                                            "id": "master",
-                                            "type": "Link",
-                                            "linkType": "Environment"
-                                        }
-                                    },
-                                    "publishedVersion": 7,
-                                    "revision": 2,
-                                    "locale": "en-US"
-                                },
-                                "fields": {
-                                    "title": "rob warnock",
-                                    "file": {
-                                        "url": "//images.ctfassets.net/jeox55pd4d8n/XNtT1z7LepTFBu364h0Sh/2101267c2d205d2564a7009379e4e359/rob_headshot.jpg",
-                                        "details": {
-                                            "size": 302626,
-                                            "image": {
-                                                "width": 1000,
-                                                "height": 1000
-                                            }
-                                        },
-                                        "fileName": "rob_headshot.jpg",
-                                        "contentType": "image/jpeg"
-                                    }
-                                }
-                            },
-                            "researcher": true,
-                            "twitter": "robnock_"
-                        }
-                    },
-                    {
-                        "metadata": {
-                            "tags": [],
-                            "concepts": []
-                        },
-                        "sys": {
-                            "space": {
-                                "sys": {
-                                    "type": "Link",
-                                    "linkType": "Space",
-                                    "id": "jeox55pd4d8n"
-                                }
-                            },
-                            "id": "33CPh3OpuNqSM1DrRnPEmi",
-                            "type": "Entry",
-                            "createdAt": "2021-08-24T05:47:07.190Z",
-                            "updatedAt": "2021-08-24T23:22:29.085Z",
-                            "environment": {
-                                "sys": {
-                                    "id": "master",
-                                    "type": "Link",
-                                    "linkType": "Environment"
-                                }
-                            },
-                            "publishedVersion": 14,
-                            "revision": 5,
-                            "contentType": {
-                                "sys": {
-                                    "type": "Link",
-                                    "linkType": "ContentType",
-                                    "id": "author"
-                                }
-                            },
-                            "locale": "en-US"
-                        },
-                        "fields": {
-                            "name": "Lilla Szini",
-                            "title": "Research Analyst",
-                            "slug": "lszini",
-                            "username": "lszini",
-                            "bio": "Lilla is a research analyst at Apartment List, where she assists in researching housing trends in the rental market. She graduated from UIUC with a BS in economics and physics, then from USFCA with a MS in applied economics.",
-                            "image": {
-                                "metadata": {
-                                    "tags": [],
-                                    "concepts": []
-                                },
-                                "sys": {
-                                    "space": {
-                                        "sys": {
-                                            "type": "Link",
-                                            "linkType": "Space",
-                                            "id": "jeox55pd4d8n"
-                                        }
-                                    },
-                                    "id": "2cYXROPZFZTeA65LrCTXA3",
-                                    "type": "Asset",
-                                    "createdAt": "2021-08-24T05:47:03.586Z",
-                                    "updatedAt": "2021-08-24T05:47:03.586Z",
-                                    "environment": {
-                                        "sys": {
-                                            "id": "master",
-                                            "type": "Link",
-                                            "linkType": "Environment"
-                                        }
-                                    },
-                                    "publishedVersion": 8,
-                                    "revision": 1,
-                                    "locale": "en-US"
-                                },
-                                "fields": {
-                                    "title": "lilla headshot gs",
-                                    "description": "",
-                                    "file": {
-                                        "url": "//images.ctfassets.net/jeox55pd4d8n/2cYXROPZFZTeA65LrCTXA3/a383d9a61c41dbdc1d89831cca28626c/lilla_headshot_gs.png",
-                                        "details": {
-                                            "size": 137596,
-                                            "image": {
-                                                "width": 450,
-                                                "height": 450
-                                            }
-                                        },
-                                        "fileName": "lilla_headshot_gs.png",
-                                        "contentType": "image/png"
-                                    }
-                                }
-                            },
-                            "researcher": true,
-                            "twitter": "lszini"
                         }
                     }
                 ]
