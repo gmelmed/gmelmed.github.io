@@ -1,0 +1,110 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Rent trends over time with a dropdown to select bedroom size.",
+    "data": {
+      "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/final_project/us_rent_clean.csv"
+    },
+    "config": {
+      "font": "Gotham",
+      "mark": {"line": {"interpolate": "monotone"}},
+      "view": {"stroke": "transparent", "width": 400, "height": 300},
+      "axisX": {
+        "domainColor": "#676A86",
+        "domainOpacity": 0.5,
+        "grid": false,
+        "labelAngle": 0,
+        "labelColor": "#676A86",
+        "labelOpacity": 0.7,
+        "orient": "bottom",
+        "tickColor": "#676A86",
+        "tickCount": 10,
+        "tickOpacity": 0.5,
+        "title": false,
+        "titleAlign": "center",
+        "titleAnchor": "middle",
+        "titleColor": "#676A86",
+        "titleFontSize": 12,
+        "titleOpacity": 0.8,
+        "titleY": -15
+      },
+      "axisY": {
+        "domainColor": "#676A86",
+        "domainOpacity": 0.5,
+        "gridColor": "#676A86",
+        "gridDash": [1, 5],
+        "gridOpacity": 0.5,
+        "labelColor": "#676A86",
+        "labelOpacity": 0.7,
+        "labelPadding": 5,
+        "tickColor": "#676A86",
+        "tickCount": 8,
+        "tickOpacity": 0.5,
+        "ticks": false,
+        "titleAlign": "left",
+        "titleAngle": 0,
+        "titleBaseline": "bottom",
+        "titleColor": "#676A86",
+        "titleFontSize": 12,
+        "titleOpacity": 0.8,
+        "titleX": 0,
+        "titleY": -7
+      }
+    },
+    "params": [
+      {
+        "name": "bedroom_selection",
+        "value": "2br",
+        "bind": {
+          "input": "select",
+          "options": ["1br", "2br"],
+          "labels": ["1 Bedroom", "2 Bedroom"],
+          "name": "Select: "
+        }
+      }
+    ],
+    "transform": [
+      {
+        "filter": "datum.bed_size == bedroom_selection"
+      }
+    ],
+    "mark": {
+      "type": "line",
+      "strokeWidth": 2.5,
+      "color": "#002FA7"
+    },
+    "encoding": {
+      "x": {
+        "field": "date",
+        "type": "temporal",
+        "title": null,
+        "axis": {"format": "%Y"},
+      },
+      "y": {
+        "field": "rent",
+        "type": "quantitative",
+        "title": "Rent ($)"
+      },
+      "tooltip": [
+        {"field": "date", "type": "temporal", "title": "Date", "format": "%Y-%m"},
+        {
+          "field": "rent",
+          "type": "quantitative",
+          "title": "Median Rent",
+          "format": "$,"
+        }
+      ]
+    },
+    "width": 600,
+    "height": 400,
+    "title": {
+      "text": {
+        "signal": "'Median rent in a ' + bedroom_selection + ' apartment in the US'"
+      },
+      "color": "#676A86",
+      "fontSize": 14,
+      "frame": "group",
+      "offset": 5,
+      "anchor": "middle"
+    }
+  }
+  
