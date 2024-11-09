@@ -105,12 +105,11 @@
     "width": 600,
     "height": 400,
     "title": {
-      "text": "Median rent in a 2-bedroom apartment in the US",
-      "color": "#676A86",
+      "text": "Median rent for a 2-bedroom apartment in the US",
       "fontSize": 14,
       "frame": "group",
       "offset": 5,
-      "anchor": "middle",
+      "anchor": "start",
       "subtitle" :["Source: Apartment List", ""]
     }
   }
