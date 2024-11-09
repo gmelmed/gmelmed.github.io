@@ -7,7 +7,7 @@
     "config": {
       "font": "Gotham",
       "mark": {"line": {"interpolate": "monotone"}},
-      "view": {"stroke": "transparent", "width": 400, "height": 300},
+      "view": {"stroke": "transparent"},
       "axisX": {
         "domainColor": "#676A86",
         "domainOpacity": 0.5,
@@ -70,7 +70,8 @@
     "mark": {
       "type": "line",
       "strokeWidth": 2.5,
-      "color": "#002FA7"
+      "color": "#002FA7",
+      "interpolate": "linear"
     },
     "encoding": {
       "x": {
@@ -85,26 +86,32 @@
         "title": "Rent ($)"
       },
       "tooltip": [
-        {"field": "date", "type": "temporal", "title": "Date", "format": "%Y-%m"},
+        {
+          "field": "date",
+          "type": "temporal",
+          "title": "Date",
+          "format": "%B %Y",
+          "font": "Gotham"
+          },
         {
           "field": "rent",
           "type": "quantitative",
           "title": "Median Rent",
-          "format": "$,"
+          "format": "$,",
+          "font": "Gotham"
         }
       ]
     },
     "width": 600,
     "height": 400,
     "title": {
-      "text": {
-        "signal": "'Median rent in a ' + bedroom_selection + ' apartment in the US'"
-      },
+      "text": "Median rent in a 2-bedroom apartment in the US",
       "color": "#676A86",
       "fontSize": 14,
       "frame": "group",
       "offset": 5,
-      "anchor": "middle"
+      "anchor": "middle",
+      "subtitle" :["Source: Apartment List", ""]
     }
   }
   
