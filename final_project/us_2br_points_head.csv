@@ -1,0 +1,11 @@
+,location_name,location_type,location_fips_code,population,state,county,metro,lat,lng,date,rent,rank
+2,California,State,6,39356104,California,,,35.491035,-119.347852,2017-01-01,1785.0,2.0
+5,Texas,State,48,29243342,Texas,,,30.909581,-97.328656,2017-01-01,1047.0,17.0
+8,Florida,State,12,21634529,Florida,,,27.839295,-81.636016,2017-01-01,1072.0,15.0
+11,New York,State,36,19994379,New York,,,41.471783,-74.590827,2017-01-01,1438.0,7.0
+14,Pennsylvania,State,42,12989208,Pennsylvania,,,40.443486,-76.965232,2017-01-01,1006.0,18.0
+17,Illinois,State,17,12757634,Illinois,,,41.312077,-88.372974,2017-01-01,1073.0,14.0
+20,Ohio,State,39,11774683,Ohio,,,40.438553,-82.796902,2017-01-01,790.0,38.0
+23,Georgia,State,13,10722325,Georgia,,,33.410677,-83.891248,2017-01-01,936.0,22.0
+26,North Carolina,State,37,10470214,North Carolina,,,35.538715,-79.675021,2017-01-01,843.0,32.0
+29,Michigan,State,26,10057921,Michigan,,,42.864675,-84.213172,2017-01-01,853.0,30.0
