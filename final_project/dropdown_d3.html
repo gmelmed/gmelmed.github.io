@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rent Trends Visualization</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    body {
+      font-family: "Gotham", sans-serif;
+    }
+    svg {
+      background-color: #f9f9f9;
+    }
+    .dropdown {
+      margin: 20px 0;
+    }
+    .axis path,
+    .axis line {
+      fill: none;
+      shape-rendering: crispEdges;
+    }
+    .axis text {
+      font-size: 12px;
+      fill: #676A86;
+      font-family: "Gotham", sans-serif;
+      opacity: 0.8;
+    }
+    .line {
+      fill: none;
+      stroke: #002FA7;
+      stroke-width: 2.5;
+    }
+    .highlight-point {
+      fill: red;
+      stroke: #002FA7;
+      stroke-width: 2;
+    }
+    .tooltip {
+      position: absolute;
+      background: #ffffff;
+      border: 1px solid #676A86;
+      border-radius: 5px;
+      padding: 10px;
+      font-size: 12px;
+      color: #000000;
+      font-family: "Gotham", sans-serif;
+      pointer-events: none;
+      opacity: 0;
+    }
+    .chart-title {
+      font-size: 16px;
+      font-weight: bold;
+      fill: black;
+    }
+    .source-note {
+      font-size: 12px;
+      fill: #676A86;
+      text-anchor: middle;
+    }
+  </style>
+</head>
+<body>
+  <div class="dropdown">
+    <label for="location-dropdown">Select Location: </label>
+    <select id="location-dropdown"></select>
+  </div>
+  <svg width="800" height="500"></svg>
+  <div class="tooltip"></div>
+
+  <script>
+    const width = 800;
+    const height = 500;
+    const margin = { top: 50, right: 100, bottom: 70, left: 70 };
+
+    const tooltip = d3.select(".tooltip");
+
+    // Load dataset
+    d3.csv("https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/final_project/us_2br_points_clean.csv").then(data => {
+      // Parse the data
+      data.forEach(d => {
+        d.date = new Date(d.date);
+        d.rent = +d.rent;
+      });
+
+      // Calculate the cutoff date (5 years before the most recent date)
+      const mostRecentDate = d3.max(data, d => d.date);
+      const cutoffDate = new Date(mostRecentDate);
+      cutoffDate.setFullYear(cutoffDate.getFullYear() - 5);
+
+      // Filter data for the last 5 years
+      const recentData = data.filter(d => d.date >= cutoffDate);
+
+      // Extract unique location names, maintaining order
+      const locations = [...new Set(recentData.map(d => d.location_name))];
+
+      // Populate dropdown menu
+      const dropdown = d3.select("#location-dropdown");
+      dropdown
+        .selectAll("option")
+        .data(locations)
+        .join("option")
+        .attr("value", d => d)
+        .text(d => d);
+
+      // Initial chart rendering
+      const initialLocation = locations[0];
+      renderChart(initialLocation);
+
+      // Event listener for dropdown change
+      dropdown.on("change", function () {
+        const selectedLocation = this.value;
+        renderChart(selectedLocation);
+      });
+
+      // Render chart function
+      function renderChart(location) {
+        // Filter data by location
+        const filteredData = recentData.filter(d => d.location_name === location);
+
+        // Find the most recent data point
+        const mostRecentPoint = filteredData.reduce((a, b) => (a.date > b.date ? a : b));
+
+        // Clear previous chart
+        d3.select("svg").selectAll("*").remove();
+
+        // Create SVG canvas
+        const svg = d3.select("svg")
+          .attr("width", width)
+          .attr("height", height);
+
+        // Define scales
+        const xScale = d3.scaleTime()
+          .domain(d3.extent(filteredData, d => d.date))
+          .range([margin.left, width - margin.right]);
+
+        const yScale = d3.scaleLinear()
+          .domain([0, d3.max(filteredData, d => d.rent)])
+          .range([height - margin.bottom, margin.top]);
+
+        // Add X axis
+        svg.append("g")
+          .attr("transform", `translate(0,${height - margin.bottom})`)
+          .attr("class", "axis")
+          .call(d3.axisBottom(xScale).ticks(10).tickFormat(d3.timeFormat("%Y")));
+
+        // Add Y axis
+        svg.append("g")
+          .attr("transform", `translate(${margin.left},0)`)
+          .attr("class", "axis")
+          .call(d3.axisLeft(yScale));
+
+        // Add line
+        const line = d3.line()
+          .x(d => xScale(d.date))
+          .y(d => yScale(d.rent))
+          .curve(d3.curveMonotoneX);
+
+        svg.append("path")
+          .datum(filteredData)
+          .attr("class", "line")
+          .attr("d", line);
+
+        // Add title
+        svg.append("text")
+          .attr("x", margin.left)
+          .attr("y", margin.top / 2)
+          .attr("class", "chart-title")
+          .text(`Median Rent Trends in ${location} (Last 5 Years)`);
+
+        // Add source note
+        svg.append("text")
+          .attr("x", width / 2)
+          .attr("y", height - 10)
+          .attr("class", "source-note")
+          .text("Source: Apartment List");
+
+        // Highlight the most recent data point
+        svg.append("circle")
+          .attr("class", "highlight-point")
+          .attr("cx", xScale(mostRecentPoint.date))
+          .attr("cy", yScale(mostRecentPoint.rent))
+          .attr("r", 5);
+
+        // Add text for the most recent point
+        svg.append("text")
+          .attr("x", xScale(mostRecentPoint.date) + 10)
+          .attr("y", yScale(mostRecentPoint.rent) - 10)
+          .style("font-size", "12px")
+          .style("fill", "black")
+          .text(`${d3.timeFormat("%B %Y")(mostRecentPoint.date)}: $${mostRecentPoint.rent.toLocaleString()}`);
+
+        // Tooltip interaction
+        const bisectDate = d3.bisector(d => d.date).left;
+
+        svg.append("rect")
+          .attr("class", "overlay")
+          .attr("width", width - margin.left - margin.right)
+          .attr("height", height - margin.top - margin.bottom)
+          .attr("x", margin.left)
+          .attr("y", margin.top)
+          .style("fill", "none")
+          .style("pointer-events", "all")
+          .on("mousemove", (event) => {
+            const [mouseX] = d3.pointer(event);
+            const date = xScale.invert(mouseX);
+            const index = bisectDate(filteredData, date, 1);
+            const a = filteredData[index - 1];
+            const b = filteredData[index];
+            const d = b && date - a.date > b.date - date ? b : a;
+
+            tooltip
+              .style("opacity", 1)
+              .style("left", `${event.pageX}px`)
+              .style("top", `${yScale(d.rent) + margin.top - 20}px`)
+              .html(`
+                <strong>Date:</strong> ${d3.timeFormat("%B %Y")(d.date)}<br>
+                <strong>Rent:</strong> $${d.rent.toLocaleString()}
+              `);
+          })
+          .on("mouseout", () => {
+            tooltip.style("opacity", 0);
+          });
+      }
+    });
+  </script>
+</body>
+</html>
