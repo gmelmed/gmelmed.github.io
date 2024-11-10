@@ -1,0 +1,11 @@
+,location_name,location_type,location_fips_code,population,state,county,metro,lat,lng,bed_size,date,rent
+0,California,State,6,39356104,California,,,35.491035,-119.347852,overall,2017-01-01,1741.0
+1,California,State,6,39356104,California,,,35.491035,-119.347852,1br,2017-01-01,1511.0
+2,California,State,6,39356104,California,,,35.491035,-119.347852,2br,2017-01-01,1785.0
+3,Texas,State,48,29243342,Texas,,,30.909581,-97.328656,overall,2017-01-01,1054.0
+4,Texas,State,48,29243342,Texas,,,30.909581,-97.328656,1br,2017-01-01,935.0
+5,Texas,State,48,29243342,Texas,,,30.909581,-97.328656,2br,2017-01-01,1047.0
+6,Florida,State,12,21634529,Florida,,,27.839295,-81.636016,overall,2017-01-01,1074.0
+7,Florida,State,12,21634529,Florida,,,27.839295,-81.636016,1br,2017-01-01,907.0
+8,Florida,State,12,21634529,Florida,,,27.839295,-81.636016,2br,2017-01-01,1072.0
+9,New York,State,36,19994379,New York,,,41.471783,-74.590827,overall,2017-01-01,1429.0
