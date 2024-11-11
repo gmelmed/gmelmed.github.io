@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D3 Rent Visualization</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    body {
+        font-family: "Gotham", sans-serif;
+    }
+
+    text {
+        fill: #676A86;
+        font-size: 11px;
+        alignment-baseline: middle;
+    }
+
+    .axis path,
+    .axis line {
+        stroke: #676A86;
+        stroke-opacity: 0.5;
+    }
+
+    .axis text {
+        fill: #676A86;
+        opacity: 0.7;
+    }
+
+    .grid line {
+        stroke: #676A86;
+        stroke-dasharray: 2, 2;
+        opacity: 0.5;
+    }
+
+    .grid path {
+        stroke: none;
+    }
+
+    .line {
+        stroke-width: 2px;
+    }
+
+    .point {
+        opacity: 0.95;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    // Load the datasets
+    const rentDataUrl = 'https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/final_project/us_2br_points_clean.csv';
+    const topCitiesUrl = 'https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/final_project/top_20_cities.json';
+
+    Promise.all([
+      d3.csv(rentDataUrl),
+      d3.json(topCitiesUrl)
+    ]).then(([rentData, topCities]) => {
+      // Parse the top 20 cities
+      const topCitiesList = new Set(topCities);
+
+      // Parse and filter rent data
+      rentData.forEach(d => {
+        d.rent = +d.rent;
+        d.date = new Date(d.date);
+      });
+
+      // Find the most recent date
+      const mostRecentDate = d3.max(rentData, d => d.date);
+      const fiveYearsAgo = new Date(mostRecentDate);
+      fiveYearsAgo.setFullYear(fiveYearsAgo.getFullYear() - 5);
+
+      // Filter to keep only relevant cities and dates
+      const filteredData = rentData.filter(d =>
+        topCitiesList.has(d.location_name) &&
+        (d.date.getTime() === fiveYearsAgo.getTime() || d.date.getTime() === mostRecentDate.getTime())
+      );
+
+      // Nest data by location, retaining only two points per city
+      const nestedData = Array.from(
+        d3.group(filteredData, d => d.location_name),
+        ([key, values]) => ({
+          location_name: key,
+          points: values.sort((a, b) => a.date - b.date)
+        })
+      );
+
+      // Set up dimensions and scales
+      const width = 600; // Adjusted for continuous width
+      const height = 600; // Adjusted for continuous height
+      const margin = { top: 40, right: 20, bottom: 50, left: 100 };
+
+      const xScale = d3.scaleLinear()
+        .domain(d3.extent(filteredData, d => d.rent))
+        .range([margin.left, width - margin.right]);
+
+      const yScale = d3.scaleBand()
+        .domain(topCities)
+        .range([margin.top, height - margin.bottom])
+        .padding(0.2);
+
+      // Create the SVG canvas
+      const svg = d3.select("body").append("svg")
+        .attr("width", width)
+        .attr("height", height);
+
+      // Add gridlines
+      const gridlines = d3.axisBottom(xScale)
+        .tickSize(-height + margin.top + margin.bottom)
+        .tickFormat("");
+
+      svg.append("g")
+        .attr("class", "grid")
+        .attr("transform", `translate(0,${height - margin.bottom})`)
+        .call(gridlines);
+
+      // Add axes
+      svg.append("g")
+        .attr("transform", `translate(0,${height - margin.bottom})`)
+        .attr("class", "axis")
+        .call(d3.axisBottom(xScale).ticks(10));
+
+      svg.append("g")
+        .attr("transform", `translate(${margin.left},0)`)
+        .attr("class", "axis")
+        .call(d3.axisLeft(yScale).tickSize(0).tickPadding(5));
+
+      // Draw lines and points
+      nestedData.forEach(d => {
+        const points = d.points;
+        const color = points[1].rent > points[0].rent ? "red" : "blue";
+
+        // Draw line
+        svg.append("line")
+          .attr("x1", xScale(points[0].rent))
+          .attr("y1", yScale(d.location_name) + yScale.bandwidth() / 2)
+          .attr("x2", xScale(points[1].rent))
+          .attr("y2", yScale(d.location_name) + yScale.bandwidth() / 2)
+          .attr("stroke", color)
+          .attr("stroke-width", 2);
+
+        // Draw light point for 5 years ago
+        svg.append("circle")
+          .attr("cx", xScale(points[0].rent))
+          .attr("cy", yScale(d.location_name) + yScale.bandwidth() / 2)
+          .attr("r", 8) // Increased size to match style
+          .attr("fill", color === "red" ? "#e6959c" : "#90caf9")
+          .attr("class", "point");
+
+        // Draw dark point for most recent
+        svg.append("circle")
+          .attr("cx", xScale(points[1].rent))
+          .attr("cy", yScale(d.location_name) + yScale.bandwidth() / 2)
+          .attr("r", 8)
+          .attr("fill", color === "red" ? "#b71c1c" : "#0d47a1")
+          .attr("class", "point");
+      });
+    });
+  </script>
+</body>
+</html>
