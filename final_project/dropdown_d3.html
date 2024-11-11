@@ -177,18 +177,30 @@
 
         // Highlight the most recent data point
         svg.append("circle")
-          .attr("class", "highlight-point")
-          .attr("cx", xScale(mostRecentPoint.date))
-          .attr("cy", yScale(mostRecentPoint.rent))
-          .attr("r", 5);
+        .attr("class", "highlight-point")
+        .attr("cx", xScale(mostRecentPoint.date))
+        .attr("cy", yScale(mostRecentPoint.rent))
+        .attr("r", 5)
+        .style("fill", "#002FA7") // Same shade as the line
+        .style("stroke", "#002FA7"); // Border matches the fill
 
         // Add text for the most recent point
         svg.append("text")
-          .attr("x", xScale(mostRecentPoint.date) + 10)
-          .attr("y", yScale(mostRecentPoint.rent) - 10)
-          .style("font-size", "12px")
-          .style("fill", "black")
-          .text(`${d3.timeFormat("%B %Y")(mostRecentPoint.date)}: $${mostRecentPoint.rent.toLocaleString()}`);
+        .attr("x", xScale(mostRecentPoint.date) + 10)
+        .attr("y", yScale(mostRecentPoint.rent) - 10)
+        .style("font-size", "12px")
+        .style("fill", "black")
+        .attr("text-anchor", "start") // Align text appropriately
+        .selectAll("tspan")
+        .data([
+            `${d3.timeFormat("%B %Y")(mostRecentPoint.date)}:`,
+            `$${mostRecentPoint.rent.toLocaleString()}`
+        ])
+        .join("tspan")
+        .attr("x", xScale(mostRecentPoint.date) + 10)
+        .attr("dy", (d, i) => i * 15) // Adjust vertical spacing for each line
+        .text(d => d);
+
 
         // Tooltip interaction
         const bisectDate = d3.bisector(d => d.date).left;
