@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D3 heat Visualization</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    body {
+      font-family: "Gotham", sans-serif;
+    }
+    svg {
+      background-color: #f9f9f9;
+    }
+    .dropdown {
+      margin: 20px 0;
+    }
+    .axis path,
+    .axis line {
+      fill: none;
+      shape-rendering: crispEdges;
+    }
+    .axis text {
+      font-size: 12px;
+      fill: #676A86;
+      font-family: "Gotham", sans-serif;
+      opacity: 0.8;
+    }
+    .line {
+      fill: none;
+      stroke: #002FA7;
+      stroke-width: 2.5;
+    }
+    .highlight-point {
+      fill: red;
+      stroke: #002FA7;
+      stroke-width: 2;
+    }
+    .tooltip {
+      position: absolute;
+      background: #ffffff;
+      border: 1px solid #676A86;
+      border-radius: 5px;
+      padding: 10px;
+      font-size: 12px;
+      color: #000000;
+      font-family: "Gotham", sans-serif;
+      pointer-events: none;
+      opacity: 0;
+    }
+    .chart-title {
+      font-size: 16px;
+      font-weight: bold;
+      fill: black;
+    }
+    .source-note {
+      font-size: 12px;
+      fill: #676A86;
+      text-anchor: middle;
+    }
+  </style>
+</head>
+<body>
+    <script>
+        // Load the datasets
+        const heatDataUrl = 'https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/final_project/us_2br_points_clean.csv';
+        const topMetrosUrl = 'https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/final_project/top_20_Metros.json';
+    
+        Promise.all([
+          d3.csv(heatDataUrl),
+          d3.json(topMetrosUrl)
+        ]).then(([heatData, topMetros]) => {
+          const topMetrosList = new Set(topMetros);
+    
+          heatData.forEach(d => {
+            d.heat = +d.heat;
+            d.date = new Date(d.date);
+          });
+    
+          const mostRecentDate = d3.max(heatData, d => d.date);
+          const fiveYearsAgo = new Date(mostRecentDate);
+          fiveYearsAgo.setFullYear(fiveYearsAgo.getFullYear() - 5);
+    
+          const filteredData = heatData.filter(d =>
+            topMetrosList.has(d.location_name) &&
+            (d.date.getTime() === fiveYearsAgo.getTime() || d.date.getTime() === mostRecentDate.getTime())
+          );
+    
+          const nestedData = Array.from(
+            d3.group(filteredData, d => d.location_name),
+            ([key, values]) => ({
+              location_name: key,
+              points: values.sort((a, b) => a.date - b.date)
+            })
+          );
+    
+          const width = 800;
+          const height = 800;
+          const margin = { top: 40, right: 20, bottom: 50, left: 100 };
+    
+          const xScale = d3.scaleLinear()
+            .domain([0, 4000])
+            .range([margin.left, width - margin.right]);
+    
+          const yScale = d3.scaleBand()
+            .domain(topMetros)
+            .range([margin.top, height - margin.bottom])
+            .padding(0.2);
+    
+          const svg = d3.select("body").append("svg")
+            .attr("width", width)
+            .attr("height", height);
+    
+          // Define arrow markers with proper orientation and adjusted position
+          const defs = svg.append("defs");
+    
+          defs.append("marker")
+            .attr("id", "arrow-right")
+            .attr("viewBox", "0 0 10 10")
+            .attr("refX", 6) 
+            .attr("refY", 5)
+            .attr("markerWidth", 3) 
+            .attr("markerHeight", 3) 
+            .attr("orient", "auto")
+            .append("path")
+            .attr("d", "M0,0 L10,5 L0,10 Z")
+            .attr("fill", "red");
+    
+          defs.append("marker")
+            .attr("id", "arrow-left")
+            .attr("viewBox", "0 0 10 10")
+            .attr("refX", 6) 
+            .attr("refY", 5)
+            .attr("markerWidth", 3) 
+            .attr("markerHeight", 3) 
+            .attr("orient", "left")
+            .append("path")
+            .attr("d", "M10,0 L0,5 L10,10 Z")
+            .attr("fill", "blue");
+    
+          svg.append("g")
+            .attr("transform", `translate(0,${height - margin.bottom})`)
+            .attr("class", "axis")
+            .call(d3.axisBottom(xScale).ticks(4));
+    
+          svg.append("g")
+            .attr("transform", `translate(${margin.left},0)`)
+            .attr("class", "axis")
+            .call(d3.axisLeft(yScale).tickSize(0).tickPadding(5));
+    
+          nestedData.forEach(d => {
+            const points = d.points;
+            const color = points[1].heat > points[0].heat ? "red" : "blue";
+            const markerId = points[1].heat > points[0].heat ? "arrow-right" : "arrow-left";
+    
+            // Draw line with arrow
+            svg.append("line")
+              .attr("x1", xScale(points[0].heat))
+              .attr("y1", yScale(d.location_name) + yScale.bandwidth() / 2)
+              .attr("x2", xScale(points[1].heat))
+              .attr("y2", yScale(d.location_name) + yScale.bandwidth() / 2)
+              .attr("stroke", color)
+              .attr("stroke-width", 3)
+              .attr("marker-end", `url(#${markerId})`); // Attach appropriate arrow marker
+          });
+        });
+    </script>               
+</body>
+</html>
