@@ -7,42 +7,56 @@
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <style>
     body {
-        font-family: "Gotham", sans-serif;
+      font-family: "Gotham", sans-serif;
     }
-
-    text {
-        fill: #676A86;
-        font-size: 11px;
-        alignment-baseline: middle;
+    svg {
+      background-color: #f9f9f9;
     }
-
+    .dropdown {
+      margin: 20px 0;
+    }
     .axis path,
     .axis line {
-        stroke: #676A86;
-        stroke-opacity: 0.5;
+      fill: none;
+      shape-rendering: crispEdges;
     }
-
     .axis text {
-        fill: #676A86;
-        opacity: 0.7;
+      font-size: 12px;
+      fill: #676A86;
+      font-family: "Gotham", sans-serif;
+      opacity: 0.8;
     }
-
-    .grid line {
-        stroke: #676A86;
-        stroke-dasharray: 2, 2;
-        opacity: 0.5;
-    }
-
-    .grid path {
-        stroke: none;
-    }
-
     .line {
-        stroke-width: 2px;
+      fill: none;
+      stroke: #002FA7;
+      stroke-width: 2.5;
     }
-
-    .point {
-        opacity: 0.95;
+    .highlight-point {
+      fill: red;
+      stroke: #002FA7;
+      stroke-width: 2;
+    }
+    .tooltip {
+      position: absolute;
+      background: #ffffff;
+      border: 1px solid #676A86;
+      border-radius: 5px;
+      padding: 10px;
+      font-size: 12px;
+      color: #000000;
+      font-family: "Gotham", sans-serif;
+      pointer-events: none;
+      opacity: 0;
+    }
+    .chart-title {
+      font-size: 16px;
+      font-weight: bold;
+      fill: black;
+    }
+    .source-note {
+      font-size: 12px;
+      fill: #676A86;
+      text-anchor: middle;
     }
   </style>
 </head>
@@ -80,8 +94,8 @@
             })
           );
     
-          const width = 600;
-          const height = 600;
+          const width = 800;
+          const height = 800;
           const margin = { top: 40, right: 20, bottom: 50, left: 100 };
     
           const xScale = d3.scaleLinear()
@@ -146,7 +160,7 @@
               .attr("x2", xScale(points[1].rent))
               .attr("y2", yScale(d.location_name) + yScale.bandwidth() / 2)
               .attr("stroke", color)
-              .attr("stroke-width", 4)
+              .attr("stroke-width", 3)
               .attr("marker-end", `url(#${markerId})`); // Attach appropriate arrow marker
           });
         });
