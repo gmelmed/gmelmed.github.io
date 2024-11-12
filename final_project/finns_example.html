@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pub Prices Map</title>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+        #filter {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: white;
+            padding: 10px;
+            border-radius: 4px;
+            font-family: Arial, sans-serif;
+        }
+        #legend {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: white;
+            padding: 10px;
+            border-radius: 4px;
+            font-family: Arial, sans-serif;
+            width: 250px;
+        }
+        .legend-gradient {
+            height: 20px;
+            width: 100%;
+            border-radius: 4px;
+        }
+        /* Tooltip styling */
+        #tooltip {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            pointer-events: none;
+            display: none;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <div id="filter">
+        <input type="checkbox" id="airportFilter"> Show only airport pubs
+    </div>
+    <div id="legend">
+        <div id="legend-title">Guinness Price (£)</div>
+        <div id="legend-gradient" class="legend-gradient"></div>
+        <div id="legend-scale">
+            <span>£2</span>
+            <span style="float: right;">£10</span>
+        </div>
+    </div>
+    <div id="tooltip"></div>
+
+    <script>
+        // Initialize Mapbox map
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZm0tZHMiLCJhIjoiY2xvbXIwb3piMm93aTJscndvYnFncjh4NSJ9.ZYcFieW_kfpK-uB6PhVkLA';
+        const map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [-1.5, 54], // Centered on UK
+            zoom: 5
+        });
+
+        // Color scale for Guinness prices with multiple colors
+        const colorScale = d3.scaleSequential(d3.interpolateTurbo).domain([2, 10]);
+
+        // Load CSV data and convert it to GeoJSON format
+        d3.csv("https://raw.githubusercontent.com/mclass-user/mclass-user.github.io/refs/heads/main/maps/pint_data.csv").then(data => {
+            const geojson = {
+                type: "FeatureCollection",
+                features: data.map(pub => ({
+                    type: "Feature",
+                    geometry: {
+                        type: "Point",
+                        coordinates: [+pub.long, +pub.lat]
+                    },
+                    properties: {
+                        name: pub.name,
+                        town: pub.town,
+                        isAirport: pub.isAirport === "true",
+                        guiness_price: +pub.guiness_price,
+                        size: Math.random() * 15 + 5, // Random size for circle radius
+                        color: colorScale(+pub.guiness_price)
+                    }
+                }))
+            };
+
+            // Add GeoJSON data as a source
+            map.on('load', () => {
+                map.addSource('pubs', {
+                    type: 'geojson',
+                    data: geojson
+                });
+
+                // Add a circle layer to represent pubs
+                map.addLayer({
+                    id: 'pub-circles',
+                    type: 'circle',
+                    source: 'pubs',
+                    paint: {
+                        'circle-radius': ['get', 'size'], // Circle size
+                        'circle-color': ['get', 'color'], // Color based on price
+                        'circle-opacity': 0.7,
+                        'circle-stroke-width': 1,
+                        'circle-stroke-color': '#fff'
+                    }
+                });
+
+                // Event listener for the airport filter
+                document.getElementById('airportFilter').addEventListener('change', (e) => {
+                    const isAirportOnly = e.target.checked;
+                    const filteredData = {
+                        type: "FeatureCollection",
+                        features: geojson.features.filter(pub => isAirportOnly ? pub.properties.isAirport : true)
+                    };
+                    map.getSource('pubs').setData(filteredData);
+                });
+
+                // Tooltip handling
+                const tooltip = document.getElementById('tooltip');
+                map.on('mousemove', 'pub-circles', (e) => {
+                    const properties = e.features[0].properties;
+                    tooltip.style.display = 'block';
+                    tooltip.style.left = e.point.x + 10 + 'px';
+                    tooltip.style.top = e.point.y + 10 + 'px';
+                    tooltip.innerHTML = `
+                        <strong>${properties.name}</strong><br>
+                        ${properties.town}<br>
+                        Guinness Price: £${properties.guiness_price.toFixed(2)}
+                    `;
+                });
+
+                map.on('mouseleave', 'pub-circles', () => {
+                    tooltip.style.display = 'none';
+                });
+
+                // Create legend
+                createLegend();
+            });
+        });
+
+        // Function to create a color gradient legend
+        function createLegend() {
+            const legendGradient = d3.select("#legend-gradient");
+
+            // Create SVG gradient
+            const svg = legendGradient.append("svg")
+                .attr("width", 250)
+                .attr("height", 20);
+
+            const defs = svg.append("defs");
+            const linearGradient = defs.append("linearGradient")
+                .attr("id", "linear-gradient");
+
+            linearGradient.selectAll("stop")
+                .data(d3.range(0, 1.01, 0.1))
+                .enter()
+                .append("stop")
+                .attr("offset", d => `${d * 100}%`)
+                .attr("stop-color", d => colorScale(2 + d * 8));
+
+            // Apply gradient to a rect
+            svg.append("rect")
+                .attr("width", 250)
+                .attr("height", 20)
+                .style("fill", "url(#linear-gradient)");
+        }
+    </script>
+</body>
+</html>
