@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Bubble Map with Tooltip</title>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js"></script>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css" type="text/css" />
+    <style>
+        body { margin: 0; padding: 0; }
+        #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+        .tooltip {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            border-radius: 5px;
+            pointer-events: none;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+            font-family: 'Gotham Book', sans-serif; /* Gotham Book for main text */
+            font-size: 1.015em; /* Slightly larger font size */
+            z-index: 1500;
+        }
+        .tooltip .name {
+            font-family: 'Gotham Rounded Bold Italic', sans-serif; /* Bold Italic for names */
+            font-size: 1.2em; /* Slightly larger font size for emphasis */
+        }
+        .tooltip .value {
+            font-family: 'Gotham Rounded Bold Italic', sans-serif; /* Bold Italic for values */
+        }
+        .tooltip .value.positive {
+            color: #e66101; /* Positive value color */
+        }
+        .tooltip .value.negative {
+            color: #5e3c99; /* Negative value color */
+        }
+        .legend {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .legend-item, .size-benchmark {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        .legend-color, .size-bubble {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+        .size-bubble {
+            border: 1px solid #333;
+            border-radius: 50%;
+        }
+    </style>    
+</head>
+<body>
+    <div id="map"></div>
+    <div class="tooltip" id="tooltip" style="display: none;"></div>
+    <div class="legend" id="legend"></div>
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZ21lbG1lZCIsImEiOiJjbTNleXo5ajQwa3pyMmxzOGM0dzR2MTRqIn0.DoIpFl0U8bAf5XcclnywBA';
+        const map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/gmelmed/cm3ez4qa6000901sgc3b7393y',
+            center: [-98.5795, 39.8283],
+            zoom: 4
+        });
+
+        // Add zoom buttons
+        const nav = new mapboxgl.NavigationControl();
+        map.addControl(nav, 'top-right');
+
+        // Add search bar
+        const geocoder = new MapboxGeocoder({
+            accessToken: mapboxgl.accessToken,
+            mapboxgl: mapboxgl,
+            placeholder: 'Search for a state or location...',
+            zoom: 5, // Adjust zoom level for the location
+            marker: false // Prevent the default marker from being added
+        });
+
+        // Add event listener to zoom to the selected location
+        geocoder.on('result', (e) => {
+            map.flyTo({
+                center: e.result.center, // Center on the selected location
+                zoom: 6, // Adjust zoom level as needed
+                essential: true // Animates the transition
+            });
+        });
+
+        map.addControl(geocoder, 'top-left');
+
+        const tooltip = document.getElementById('tooltip');
+        const legend = document.getElementById('legend');
+
+        d3.csv('https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/final_project/zori_county_long_clean.csv')
+            .then(data => {
+                const mostRecentDate = d3.max(data, d => d.date);
+                const previousYearDate = new Date(mostRecentDate);
+                previousYearDate.setFullYear(previousYearDate.getFullYear() - 1);
+
+                const filteredData = data.filter(d => d.date === mostRecentDate);
+
+                const colorScale = d3.scaleQuantile()
+                    .domain(filteredData.map(d => +d.zori_1yc))
+                    .range(['#5e3c99', '#b2abd2', '#f7f7f7', '#fdb863', '#e66101']);
+
+                // Sort data to layer smaller points on top
+                filteredData.sort((a, b) => +b.pop_2023 - +a.pop_2023);
+
+                // Add legend for color scale
+                legend.innerHTML = `<h4>Change in rent index since ${previousYearDate.toLocaleString('default', { month: 'long', year: 'numeric' })}</h4>`;
+                const legendColors = colorScale.range();
+                legendColors.forEach((color, i) => {
+                    const range = colorScale.invertExtent(color);
+                    const legendItem = document.createElement('div');
+                    legendItem.className = 'legend-item';
+                    legendItem.innerHTML = `
+                        <div class="legend-color" style="background-color: ${color};"></div>
+                        <div>${range[0].toFixed(1)}% to ${range[1].toFixed(1)}%</div>
+                    `;
+                    legend.appendChild(legendItem);
+                });
+
+                // Add size benchmarks
+                const sizeBenchmarks = [50000, 250000, 1000000]; // Example populations
+                const sizeSection = document.createElement('div');
+                sizeSection.innerHTML = '<h4>Population Size</h4>';
+                sizeBenchmarks.forEach(pop => {
+                    const sizeBubble = document.createElement('div');
+                    sizeBubble.className = 'size-benchmark';
+                    const bubbleSize = Math.sqrt(pop) * 0.05; // Match size scaling
+                    sizeBubble.innerHTML = `
+                        <div class="size-bubble" style="width: ${bubbleSize}px; height: ${bubbleSize}px;"></div>
+                        <div>${pop.toLocaleString()}</div>
+                    `;
+                    sizeSection.appendChild(sizeBubble);
+                });
+                legend.appendChild(sizeSection);
+
+                // Add points
+                filteredData.forEach(d => {
+                    const popupContent = `
+                        ${d.name}:<br>
+                        Rent Index in ${new Date(d.date).toLocaleString('default', { month: 'long', year: 'numeric' })}: $${(+d.zori).toFixed(1)}<br>
+                        ${(+d.zori_1yc).toFixed(1)}% change since ${new Date(d.date).getFullYear() - 1}<br>
+                        ${(+d.zori_5yc).toFixed(1)}% change since ${new Date(d.date).getFullYear() - 5}
+                    `;
+
+                    const el = document.createElement('div');
+                    el.className = 'marker';
+                    el.style.width = `${Math.sqrt(+d.pop_2023) * 0.035}px`;
+                    el.style.height = `${Math.sqrt(+d.pop_2023) * 0.035}px`;
+                    el.style.backgroundColor = colorScale(+d.zori_1yc);
+                    el.style.opacity = '0.5'; // Ensure default opacity
+                    el.style.border = '1px solid #333';
+                    el.style.borderRadius = '50%'; // Make it a circle
+                    el.style.transition = 'opacity 0.2s'; // Smooth transition for hover effects
+
+                    const marker = new mapboxgl.Marker(el)
+                        .setLngLat([+d.lng, +d.lat])
+                        .addTo(map);
+
+                    // Hover interaction
+                    el.addEventListener('mouseenter', () => {
+                        el.style.opacity = '1'; // Fully opaque on hover
+                        tooltip.style.display = 'block';
+                        tooltip.innerHTML = popupContent;
+                    });
+                    el.addEventListener('mouseleave', () => {
+                        el.style.opacity = '0.5'; // Restore default transparency
+                        tooltip.style.display = 'none';
+                    });
+                    el.addEventListener('mousemove', (e) => {
+                        tooltip.style.left = `${e.pageX + 10}px`;
+                        tooltip.style.top = `${e.pageY + 10}px`;
+                    });
+                });
+
+            })
+            .catch(error => console.error('Error loading the data:', error));
+    </script>
+</body>
+</html>
