@@ -1,0 +1,150 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Stock prices of 5 Tech Companies over Time.",
+    "data": {
+      "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/final_project/rent_inflation.csv"
+    },
+    "transform": [
+      {
+        "filter": "toDate(datum.date) >= toDate('2020-01-01')"
+      }
+    ],
+    "mark": {
+      "type": "line",
+      "strokeWidth": 2.5
+    },
+    "encoding": {
+      "x": {
+        "field": "date",
+        "type": "temporal",
+        "axis": {
+          "grid": false,
+          "tickCount": "year"
+        }
+      },
+      "y": {
+        "field": "yoy_change",
+        "type": "quantitative",
+        "axis": {
+          "format": ".0%"
+        }
+      },
+      "color": {
+        "field": "metric",
+        "type": "nominal",
+        "legend": {
+          "title": "Inflation"
+        }
+      },
+      "tooltip": [
+        {
+          "field": "date",
+          "type": "temporal",
+          "title": "Month",
+          "timeUnit": "yearmonth"
+        },
+        {
+          "field": "metric",
+          "type": "nominal",
+          "title": "Inflation"
+        },
+        {
+          "field": "yoy_change",
+          "type": "quantitative",
+          "title": "Value",
+          "format": ".2%"
+        }
+      ]
+    },
+    "height": 400,
+    "width": 600,
+    "title": {
+      "text": "US: Rent and CPI Inflation Since 2020",
+      "anchor": "start",
+      "subtitle": [
+        "Rent data from Zillow. CPI data from FRED.",
+        ""
+      ]
+    },
+    "config": {
+      "font": "Gotham",
+      "view": {
+        "stroke": "transparent"
+      },
+      "range": {
+        "category": [
+          "#F4C245",
+          "#0063AF",
+          "#E6224B",
+          "#36B7B4",
+          "#00A767",
+          "#179FDB",
+          "#EB5C2E"
+        ]
+      },
+      "point": {
+        "filled": true,
+        "size": 80,
+        "color": "#e6224b",
+        "opacity": 0.95
+      },
+      "axis": {
+        "labelColor": "#676A86",
+        "labelFontSize": 11,
+        "labelFont": "Gotham",
+        "labelOpacity": 0.7,
+        "tickColor": "#676A86",
+        "tickOpacity": 0.5,
+        "domainColor": "#676A86",
+        "domainOpacity": 0.5,
+        "gridColor": "#676A86",
+        "gridDash": [2, 2],
+        "gridOpacity": 0.5,
+        "title": null,
+        "titleColor": "#676A86",
+        "titleOpacity": 0.8,
+        "tickSize": 4
+      },
+      "axisXDiscrete": {
+        "grid": false,
+        "labelAngle": 0,
+        "tickCount": 10,
+        "tickOpacity": 0.5,
+        "title": null
+      },
+      "axisYDiscrete": {
+        "ticks": false,
+        "labelPadding": 5
+      },
+      "axisXQuantitative": {
+        "grid": true
+      },
+      "axisYQuantitative": {
+        "gridColor": "#676A86",
+        "gridDash": [1, 5],
+        "gridOpacity": 0.5,
+        "ticks": false,
+        "labelPadding": 5,
+        "tickCount": 8,
+        "titleAngle": 0,
+        "titleAlign": "left",
+        "titleBaseline": "bottom",
+        "titleX": 0,
+        "titleY": -5
+      },
+      "legend": {
+        "titleFont": "Gotham",
+        "titleFontSize":14,
+        "titleColor": "#122b39",
+        "title": null,
+        "labelColor": "#122b39",
+        "labelFontSize": 12
+      },
+      "title": {
+        "fontSize": 16,
+        "subtitleFontSize": 14,
+        "subtitleColor": "#676A86"
+      }
+    }
+  }
+  
