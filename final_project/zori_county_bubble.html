@@ -25,8 +25,8 @@
             }
 
             @font-face {
-                font-family: 'Gotham-BookItalic';
-                src: url();
+                font-family: 'GothamRnd-Bold';
+                src: url('https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/main/final_project/fonts/GothamRnd-Bold.otf') format('opentype');
             }
     
             body { margin: 0; padding: 0; }
@@ -34,8 +34,8 @@
     
             .reset-button {
                 position: absolute;
-                top: 100px;
-                right: 10px;
+                top: 50px;
+                left: 10px;
                 background: white;
                 padding: 6px 10px;
                 border: none;
@@ -63,12 +63,12 @@
             }
     
             .tooltip .name {
-                font-family: 'Gotham-Bold', sans-serif;
+                font-family: 'GothamRnd-Bold', sans-serif;
                 font-size: 1.015em;
             }
     
             .tooltip .value {
-                font-family: 'Gotham-BoldItalic', sans-serif;
+                font-family: 'GothamRnd-Bold', sans-serif;
             }
     
             .tooltip .value.positive {
@@ -148,6 +148,25 @@
         });
     
         map.addControl(geocoder, 'top-left');
+
+        // Create reset button
+        const resetButton = document.createElement('button');
+        resetButton.className = 'reset-button';
+        resetButton.textContent = 'Reset Map View';
+        resetButton.style.left = '10px'; // Align with geocoder
+        resetButton.style.top = '50px';  // Position below geocoder
+
+        // Add click handler
+        resetButton.addEventListener('click', () => {
+            map.flyTo({
+                center: [-98.5795, 39.8283], // Your initial center coordinates
+                zoom: 4,                     // Your initial zoom level
+                essential: true
+            });
+        });
+
+        // Add button to map container
+        document.getElementById('map').appendChild(resetButton);
     
         const tooltip = document.getElementById('tooltip');
         const legend = document.getElementById('legend');
@@ -188,7 +207,7 @@
                 'paint': {
                     'circle-radius': [
                         'sqrt',
-                        ['/', ['get', 'population'], 900]
+                        ['/', ['get', 'population'], 2500]
                     ],
                     'circle-color': ['get', 'color'],
                     'circle-opacity': 1.0,
@@ -256,7 +275,7 @@
                                 <div>
                                     <div class="name">${feature.properties.name}</div>
                                     <div>Rent Index: <span class="value">$${feature.properties.zori.toFixed(1)}</span></div>
-                                    <div>1-Yr Change: <span style="color: ${feature.properties.color}; font-family: 'Gotham-BoldItalic', sans-serif;">${feature.properties.zori_1yc.toFixed(1)}%</span></div>
+                                    <div>YoY Change: <span style="color: ${feature.properties.color}; font-family: 'GothamRnd-Bold', sans-serif;">${feature.properties.zori_1yc.toFixed(1)}%</span></div>
                                 </div>
                             `;
                         }
@@ -270,24 +289,47 @@
                     });
     
                     // Add legend
-                    legend.innerHTML = `<h4>Change in rent index since ${new Date(mostRecentDate).toLocaleString('default', { month: 'long', year: 'numeric' })}</h4>`;
+                    // Create date object for one year before most recent date
+                    const oneYearAgo = new Date(mostRecentDate);
+                    oneYearAgo.setFullYear(oneYearAgo.getFullYear() - 1);
+
+                    // Add legend with one year ago date
+                    legend.innerHTML = `<h4>Change in rent index since ${oneYearAgo.toLocaleString('default', { month: 'long', year: 'numeric' })}</h4>`;
                     legend.innerHTML += `
                         <div class="legend-item">
                             <div class="legend-color" style="background-color: #5e3c99;"></div>
                             <div>Below 0%</div>
                         </div>
                     `;
-    
+
                     const quantileBreakpoints = colorScalePositive.quantiles();
                     const legendColors = colorScalePositive.range();
                     quantileBreakpoints.unshift(0);
                     quantileBreakpoints.push(d3.max(positiveValues));
-    
+
                     legendColors.forEach((color, i) => {
                         legend.innerHTML += `
                             <div class="legend-item">
                                 <div class="legend-color" style="background-color: ${color};"></div>
                                 <div>${quantileBreakpoints[i].toFixed(1)}% to ${quantileBreakpoints[i + 1].toFixed(1)}%</div>
+                            </div>
+                        `;
+                    });
+
+                    // Add separator between color and size legends
+                    legend.innerHTML += `<hr style="margin: 10px 0; border: none; border-top: 1px solid #ccc;">`;
+
+                    // Add size legend title
+                    legend.innerHTML += `<h4 style="margin-top: 10px; margin-bottom: 5px;">Population</h4>`;
+
+                    // Add size legend items
+                    const populationSizes = [100000, 500000, 1000000]; // Example population sizes
+                    populationSizes.forEach(pop => {
+                        const radius = Math.sqrt(pop / 2500); // Same formula as in the circle radius
+                        legend.innerHTML += `
+                            <div class="size-benchmark">
+                                <div class="size-bubble" style="width: ${radius * 2}px; height: ${radius * 2}px;"></div>
+                                <div>${(pop/1000000).toFixed(1)}M</div>
                             </div>
                         `;
                     });
