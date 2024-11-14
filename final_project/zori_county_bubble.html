@@ -1,96 +1,119 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>Bubble Map with Tooltip</title>
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
-    <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js"></script>
-    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css" type="text/css" />
-    <style>
-        @font-face {
-            font-family: 'Gotham-Book';
-            src: url('https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/main/final_project/fonts/Gotham-Book.otf') format('opentype');
-        }
+    <head>
+        <meta charset="utf-8">
+        <title>Bubble Map with Tooltip</title>
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+        <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js"></script>
+        <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css" type="text/css" />
+        <style>
+            @font-face {
+                font-family: 'Gotham-Book';
+                src: url('https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/main/final_project/fonts/Gotham-Book.otf') format('opentype');
+            }
+    
+            @font-face {
+                font-family: 'Gotham-BoldItalic';
+                src: url('https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/main/final_project/fonts/Gotham-BoldItalic.otf') format('opentype');
+            }
+    
+            @font-face {
+                font-family: 'Gotham-Bold';
+                src: url('https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/main/final_project/fonts/Gotham-Bold.otf') format('opentype');
+            }
 
-        @font-face {
-            font-family: 'Gotham-BoldItalic';
-            src: url('https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/main/final_project/fonts/Gotham-BoldItalic.otf') format('opentype');
-        }
-
-        @font-face {
-            font-family: 'Gotham-Bold';
-            src: url('https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/main/final_project/fonts/Gotham-Bold.otf') format('opentype');
-        }
-
-        body { margin: 0; padding: 0; }
-        #map { position: absolute; top: 0; bottom: 0; width: 100%; }
-
-        .tooltip {
-            position: absolute;
-            background: rgba(255, 255, 255, 0.9);
-            padding: 10px;
-            border-radius: 5px;
-            pointer-events: none;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-            font-family: 'Gotham-Book', sans-serif;
-            font-size: 1.015em;
-            z-index: 1500;
-        }
-
-        .tooltip .name {
-            font-family: 'Gotham-Bold', sans-serif;
-            font-size: 1.015em;
-        }
-
-        .tooltip .value {
-            font-family: 'Gotham-BoldItalic', sans-serif;
-        }
-
-        .tooltip .value.positive {
-            color: #d7301f;
-        }
-
-        .tooltip .value.negative {
-            color: #5e3c99;
-        }
-
-        .legend {
-            position: absolute;
-            bottom: 20px;
-            right: 20px;
-            background: white;
-            padding: 8px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-            font-family: 'Gotham-Book', sans-serif;
-            font-size: 0.85em;
-            max-width: 180px;
-        }
-
-        .legend-item, .size-benchmark {
-            display: flex;
-            align-items: center;
-            margin-bottom: 5px;
-        }
-
-        .legend-item:last-child, .size-benchmark:last-child {
-            margin-bottom: 0;
-        }
-
-        .legend-color, .size-bubble {
-            width: 16px;
-            height: 16px;
-            margin-right: 8px;
-        }
-
-        .size-bubble {
-            border: 1px solid #333;
-            border-radius: 50%;
-        }
-    </style>
-</head>
+            @font-face {
+                font-family: 'Gotham-BookItalic';
+                src: url();
+            }
+    
+            body { margin: 0; padding: 0; }
+            #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+    
+            .reset-button {
+                position: absolute;
+                top: 100px;
+                right: 10px;
+                background: white;
+                padding: 6px 10px;
+                border: none;
+                border-radius: 4px;
+                box-shadow: 0 0 0 2px rgba(0,0,0,0.1);
+                cursor: pointer;
+                font-family: 'Gotham-Book', sans-serif;
+                font-size: 12px;
+            }
+    
+            .reset-button:hover {
+                background: #f0f0f0;
+            }
+    
+            .tooltip {
+                position: absolute;
+                background: rgba(255, 255, 255, 0.9);
+                padding: 10px;
+                border-radius: 5px;
+                pointer-events: none;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+                font-family: 'Gotham-Book', sans-serif;
+                font-size: 1.015em;
+                z-index: 1500;
+            }
+    
+            .tooltip .name {
+                font-family: 'Gotham-Bold', sans-serif;
+                font-size: 1.015em;
+            }
+    
+            .tooltip .value {
+                font-family: 'Gotham-BoldItalic', sans-serif;
+            }
+    
+            .tooltip .value.positive {
+                color: #d7301f;
+            }
+    
+            .tooltip .value.negative {
+                color: #5e3c99;
+            }
+    
+            .legend {
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+                background: white;
+                padding: 8px;
+                border-radius: 5px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+                font-family: 'Gotham-Book', sans-serif;
+                font-size: 0.85em;
+                max-width: 180px;
+            }
+    
+            .legend-item, .size-benchmark {
+                display: flex;
+                align-items: center;
+                margin-bottom: 5px;
+            }
+    
+            .legend-item:last-child, .size-benchmark:last-child {
+                margin-bottom: 0;
+            }
+    
+            .legend-color, .size-bubble {
+                width: 16px;
+                height: 16px;
+                margin-right: 8px;
+            }
+    
+            .size-bubble {
+                border: 1px solid #333;
+                border-radius: 50%;
+            }
+        </style>
+    </head>
 <body>
     <div id="map"></div>
     <div class="tooltip" id="tooltip" style="display: none;"></div>
@@ -112,7 +135,7 @@
             accessToken: mapboxgl.accessToken,
             mapboxgl: mapboxgl,
             placeholder: 'Search for a state or location...',
-            zoom: 5,
+            zoom: 4,
             marker: false
         });
     
@@ -129,87 +152,148 @@
         const tooltip = document.getElementById('tooltip');
         const legend = document.getElementById('legend');
     
-        d3.csv('https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/final_project/zori_county_long_clean.csv')
-            .then(data => {
-                const mostRecentDate = d3.max(data, d => d.date);
-                const filteredData = data.filter(d => d.date === mostRecentDate);
+        map.on('load', () => {
+            // Add a data source
+            map.addSource('points', {
+                type: 'geojson',
+                data: {
+                    type: 'FeatureCollection',
+                    features: []
+                }
+            });
     
-                // Quantile-based color scale for positive values
-                const positiveValues = filteredData.filter(d => +d.zori_1yc >= 0).map(d => +d.zori_1yc);
-                const colorScalePositive = d3.scaleQuantile()
-                    .domain(positiveValues)
-                    .range(['#fef0d9','#fdcc8a','#fc8d59','#d7301f']); // Corresponding colors
+            // Base circle layer for all points
+            map.addLayer({
+                'id': 'rent-points',
+                'type': 'circle',
+                'source': 'points',
+                'paint': {
+                    'circle-radius': [
+                        'sqrt',
+                        ['/', ['get', 'population'], 2500]
+                    ],
+                    'circle-color': ['get', 'color'],
+                    'circle-opacity': 0.5,
+                    'circle-stroke-width': 1,
+                    'circle-stroke-color': '#333',
+                    'circle-stroke-opacity': 0.5
+                }
+            });
     
-                const getColor = d => {
-                    if (d < 0) return '#5e3c99'; // Fixed color for negative values
-                    return colorScalePositive(d); // Quantile-based color for positive values
-                };
+            // Hover layer - will only show the hovered point
+            map.addLayer({
+                'id': 'rent-points-hover',
+                'type': 'circle',
+                'source': 'points',
+                'paint': {
+                    'circle-radius': [
+                        'sqrt',
+                        ['/', ['get', 'population'], 900]
+                    ],
+                    'circle-color': ['get', 'color'],
+                    'circle-opacity': 1.0,
+                    'circle-stroke-width': 1,
+                    'circle-stroke-color': '#333',
+                    'circle-stroke-opacity': 1.0
+                },
+                'filter': ['==', ['id'], '']  // Start with no points visible
+            });
     
-                // Add legend
-                legend.innerHTML = `<h4>Change in rent index since ${new Date(mostRecentDate).toLocaleString('default', { month: 'long', year: 'numeric' })}</h4>`;
-                legend.innerHTML += `
-                    <div class="legend-item">
-                        <div class="legend-color" style="background-color: #5e3c99;"></div>
-                        <div>Below 0%</div>
-                    </div>
-                `;
+            // Load and process the data
+            d3.csv('https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/final_project/zori_county_long_clean.csv')
+                .then(data => {
+                    const mostRecentDate = d3.max(data, d => d.date);
+                    const filteredData = data.filter(d => d.date === mostRecentDate);
     
-                const quantileBreakpoints = colorScalePositive.quantiles(); // Quantile breakpoints for positive values
-                const legendColors = colorScalePositive.range();
-                quantileBreakpoints.unshift(0); // Add the zero breakpoint
-                quantileBreakpoints.push(d3.max(positiveValues)); // Add the maximum value
+                    // Quantile-based color scale for positive values
+                    const positiveValues = filteredData.filter(d => +d.zori_1yc >= 0).map(d => +d.zori_1yc);
+                    const colorScalePositive = d3.scaleQuantile()
+                        .domain(positiveValues)
+                        .range(['#fef0d9','#fdcc8a','#fc8d59','#d7301f']);
     
-                legendColors.forEach((color, i) => {
+                    const getColor = d => {
+                        if (d < 0) return '#5e3c99';
+                        return colorScalePositive(d);
+                    };
+    
+                    // Convert data to GeoJSON
+                    const geojson = {
+                        type: 'FeatureCollection',
+                        features: filteredData.map(d => ({
+                            type: 'Feature',
+                            properties: {
+                                name: d.name,
+                                zori: +d.zori,
+                                zori_1yc: +d.zori_1yc,
+                                population: +d.pop_2023,
+                                color: getColor(+d.zori_1yc)
+                            },
+                            geometry: {
+                                type: 'Point',
+                                coordinates: [+d.lng, +d.lat]
+                            }
+                        }))
+                    };
+    
+                    // Update the source data
+                    map.getSource('points').setData(geojson);
+    
+                    // Update hover interactions
+                    map.on('mousemove', 'rent-points', (e) => {
+                        if (e.features.length > 0) {
+                            const feature = e.features[0];
+                            
+                            map.getCanvas().style.cursor = 'pointer';
+                            
+                            // Update the filter to show only the hovered point in the hover layer
+                            map.setFilter('rent-points-hover', ['==', ['id'], feature.id]);
+
+                            // Show tooltip with color-matched value
+                            tooltip.style.display = 'block';
+                            tooltip.style.left = `${e.point.x + 10}px`;
+                            tooltip.style.top = `${e.point.y + 10}px`;
+                            tooltip.innerHTML = `
+                                <div>
+                                    <div class="name">${feature.properties.name}</div>
+                                    <div>Rent Index: <span class="value">$${feature.properties.zori.toFixed(1)}</span></div>
+                                    <div>1-Yr Change: <span style="color: ${feature.properties.color}; font-family: 'Gotham-BoldItalic', sans-serif;">${feature.properties.zori_1yc.toFixed(1)}%</span></div>
+                                </div>
+                            `;
+                        }
+                    });
+    
+                    map.on('mouseleave', 'rent-points', () => {
+                        map.getCanvas().style.cursor = '';
+                        tooltip.style.display = 'none';
+                        // Clear the hover layer
+                        map.setFilter('rent-points-hover', ['==', ['id'], '']);
+                    });
+    
+                    // Add legend
+                    legend.innerHTML = `<h4>Change in rent index since ${new Date(mostRecentDate).toLocaleString('default', { month: 'long', year: 'numeric' })}</h4>`;
                     legend.innerHTML += `
                         <div class="legend-item">
-                            <div class="legend-color" style="background-color: ${color};"></div>
-                            <div>${quantileBreakpoints[i].toFixed(1)}% to ${quantileBreakpoints[i + 1].toFixed(1)}%</div>
-                        </div>
-                    `;
-                });
-    
-                // Sort data to layer smaller points on top
-                filteredData.sort((a, b) => +b.pop_2023 - +a.pop_2023);
-    
-                filteredData.forEach(d => {
-                    const popupContent = `
-                        <div>
-                            <div class="name">${d.name}</div>
-                            <div>Rent Index: <span class="value">$${(+d.zori).toFixed(1)}</span></div>
-                            <div>1-Yr Change: <span class="value ${+d.zori_1yc > 0 ? 'positive' : 'negative'}">${(+d.zori_1yc).toFixed(1)}%</span></div>
+                            <div class="legend-color" style="background-color: #5e3c99;"></div>
+                            <div>Below 0%</div>
                         </div>
                     `;
     
-                    const el = document.createElement('div');
-                    el.className = 'marker';
-                    el.style.width = `${Math.sqrt(+d.pop_2023) * 0.035}px`;
-                    el.style.height = `${Math.sqrt(+d.pop_2023) * 0.035}px`;
-                    el.style.backgroundColor = getColor(+d.zori_1yc);
-                    el.style.opacity = '0.5';
-                    el.style.border = '1px solid #333';
-                    el.style.borderRadius = '50%';
+                    const quantileBreakpoints = colorScalePositive.quantiles();
+                    const legendColors = colorScalePositive.range();
+                    quantileBreakpoints.unshift(0);
+                    quantileBreakpoints.push(d3.max(positiveValues));
     
-                    const marker = new mapboxgl.Marker(el)
-                        .setLngLat([+d.lng, +d.lat])
-                        .addTo(map);
-    
-                    el.addEventListener('mouseenter', () => {
-                        el.style.opacity = '1';
-                        tooltip.style.display = 'block';
-                        tooltip.innerHTML = popupContent;
+                    legendColors.forEach((color, i) => {
+                        legend.innerHTML += `
+                            <div class="legend-item">
+                                <div class="legend-color" style="background-color: ${color};"></div>
+                                <div>${quantileBreakpoints[i].toFixed(1)}% to ${quantileBreakpoints[i + 1].toFixed(1)}%</div>
+                            </div>
+                        `;
                     });
-                    el.addEventListener('mouseleave', () => {
-                        el.style.opacity = '0.5';
-                        tooltip.style.display = 'none';
-                    });
-                    el.addEventListener('mousemove', (e) => {
-                        tooltip.style.left = `${e.pageX + 10}px`;
-                        tooltip.style.top = `${e.pageY + 10}px`;
-                    });
-                });
-            })
-            .catch(error => console.error('Error loading the data:', error));
+                })
+                .catch(error => console.error('Error loading the data:', error));
+        });
     </script>
-    
 </body>
 </html>
