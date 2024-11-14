@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <title>D3 Chart</title>
+  <style>
+    .axis path,
+    .axis line {
+      stroke: #676A86;
+      opacity: 0.5;
+    }
+    .axis text {
+      font-family: "Circular Std", sans-serif;
+      fill: #676A86;
+      opacity: 0.7;
+      font-size: 11px;
+    }
+    .grid line {
+      stroke: #676A86;
+      stroke-dasharray: 2,2;
+      opacity: 0.5;
+    }
+    .grid path {
+      stroke: none;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    const width = 600;
+    const height = 400;
+    const margin = { top: 20, right: 30, bottom: 30, left: 50 };
+
+    const parseDate = d3.timeParse("%Y-%m-%d");
+    const formatDate = d3.timeFormat("%b %Y");
+
+    const svg = d3.select("body")
+      .append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+      .append("g")
+      .attr("transform", `translate(${margin.left},${margin.top})`);
+
+    d3.csv("https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/final_project/rent_inflation.csv").then(data => {
+      // Filter and preprocess data
+      data.forEach(d => {
+        d.date = parseDate(d.date);
+        d.yoy_change = +d.yoy_change;
+      });
+
+      data = data.filter(d => d.date >= parseDate("2020-01-01"));
+
+      const metrics = Array.from(new Set(data.map(d => d.metric)));
+
+      // Scales
+      const x = d3.scaleTime()
+        .domain(d3.extent(data, d => d.date))
+        .range([0, width]);
+
+      const y = d3.scaleLinear()
+        .domain(d3.extent(data, d => d.yoy_change))
+        .nice()
+        .range([height, 0]);
+
+      const color = d3.scaleOrdinal()
+        .domain(metrics)
+        .range(["#F4C245", "#0063AF", "#E6224B", "#36B7B4", "#00A767"]);
+
+      // Axes
+      const xAxis = d3.axisBottom(x)
+        .ticks(d3.timeMonth.every(3))
+        .tickSize(-height)
+        .tickFormat(formatDate);
+
+      const yAxis = d3.axisLeft(y)
+        .ticks(8)
+        .tickSize(-width);
+
+      svg.append("g")
+        .attr("class", "x axis")
+        .attr("transform", `translate(0,${height})`)
+        .call(xAxis);
+
+      svg.append("g")
+        .attr("class", "y axis")
+        .call(yAxis);
+
+      // Gridlines
+      svg.append("g")
+        .attr("class", "grid")
+        .call(yAxis.tickSize(-width).tickFormat(""));
+
+      // Line generator
+      const line = d3.line()
+        .x(d => x(d.date))
+        .y(d => y(d.yoy_change));
+
+      const groupedData = d3.groups(data, d => d.metric);
+
+      svg.selectAll(".line")
+        .data(groupedData)
+        .join("path")
+        .attr("class", "line")
+        .attr("d", d => line(d[1]))
+        .attr("fill", "none")
+        .attr("stroke", d => color(d[0]))
+        .attr("stroke-width", 2);
+
+      // Legend
+      const legend = svg.selectAll(".legend")
+        .data(metrics)
+        .join("g")
+        .attr("class", "legend")
+        .attr("transform", (d, i) => `translate(0,${i * 20})`);
+
+      legend.append("rect")
+        .attr("x", width - 18)
+        .attr("width", 18)
+        .attr("height", 18)
+        .attr("fill", color);
+
+      legend.append("text")
+        .attr("x", width - 24)
+        .attr("y", 9)
+        .attr("dy", "0.35em")
+        .style("text-anchor", "end")
+        .text(d => d === "cpi_yoy" ? "Prices" : d === "zori_yoy" ? "Rent" : d);
+    });
+  </script>
+</body>
+</html>
