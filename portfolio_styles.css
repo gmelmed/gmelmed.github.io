@@ -72,4 +72,13 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  padding: 20px 0; /* Optional: Space above and below the iframe */
+}
+
+.centered-frame iframe {
+  max-width: 100%; /* Ensure responsiveness */
+  width: 90%;      /* Adjust width to occupy less than full page width */
+  height: 600px;   /* Maintain the height */
+  border: 1px solid #ccc; /* Optional: Add a border to frame it visually */
 }
