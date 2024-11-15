@@ -74,7 +74,7 @@
       "range": {
         "category": [
           "#F4C245",
-          "#0063AF",
+          "#002FA7",
           "#E6224B",
           "#36B7B4",
           "#00A767",
@@ -141,6 +141,7 @@
         "labelFontSize": 12
       },
       "title": {
+        "font": "Gotham",
         "fontSize": 16,
         "subtitleFontSize": 14,
         "subtitleColor": "#676A86"
