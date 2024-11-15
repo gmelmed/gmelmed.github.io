@@ -292,41 +292,50 @@
                     const oneYearAgo = new Date(mostRecentDate);
                     oneYearAgo.setFullYear(oneYearAgo.getFullYear() - 1);
     
-                    legend.innerHTML = `<h4 style="font-size: 0.85em;">Change in rent index since ${oneYearAgo.toLocaleString('default', { month: 'long', year: 'numeric' })}</h4>`;
+                    legend.innerHTML = `<h4 style="font-size: 0.85em; margin: 0 0 5px 0;">Change in rent index since ${oneYearAgo.toLocaleString('default', { month: 'long', year: 'numeric' })}</h4>`;
+                legend.innerHTML += `
+                    <div class="legend-item" style="margin-bottom: 4px; display: flex; align-items: center;">
+                        <div class="legend-color" style="width: 12px; height: 12px; background-color: #5e3c99; margin-right: 6px;"></div>
+                        <div style="font-size: 0.75em;">Below 0%</div>
+                    </div>
+                `;
+
+                const quantileBreakpoints = colorScalePositive.quantiles();
+                const legendColors = colorScalePositive.range();
+                quantileBreakpoints.unshift(0);
+                quantileBreakpoints.push(d3.max(positiveValues));
+
+                legendColors.forEach((color, i) => {
                     legend.innerHTML += `
-                        <div class="legend-item">
-                            <div class="legend-color" style="width: 12px; height: 12px; background-color: #5e3c99; margin-right: 6px;"></div>
-                            <div style="font-size: 0.75em;">Below 0%</div>
+                        <div class="legend-item" style="margin-bottom: 4px; display: flex; align-items: center;">
+                            <div class="legend-color" style="width: 12px; height: 12px; background-color: ${color}; margin-right: 6px;"></div>
+                            <div style="font-size: 0.75em;">${quantileBreakpoints[i].toFixed(1)}% to ${quantileBreakpoints[i + 1].toFixed(1)}%</div>
                         </div>
                     `;
-    
-                    const quantileBreakpoints = colorScalePositive.quantiles();
-                    const legendColors = colorScalePositive.range();
-                    quantileBreakpoints.unshift(0);
-                    quantileBreakpoints.push(d3.max(positiveValues));
-    
-                    legendColors.forEach((color, i) => {
-                        legend.innerHTML += `
-                            <div class="legend-item">
-                                <div class="legend-color" style="width: 12px; height: 12px; background-color: ${color}; margin-right: 6px;"></div>
-                                <div style="font-size: 0.75em;">${quantileBreakpoints[i].toFixed(1)}% to ${quantileBreakpoints[i + 1].toFixed(1)}%</div>
-                            </div>
-                        `;
-                    });
-    
-                    legend.innerHTML += `<hr style="margin: 6px 0; border: none; border-top: 1px solid #ccc;">`;
-                    legend.innerHTML += `<h4 style="margin-top: 6px; margin-bottom: 4px; font-size: 0.85em;">Population</h4>`;
-    
-                    const populationSizes = [100000, 500000, 1000000];
-                    populationSizes.forEach(pop => {
-                        const radius = Math.sqrt(pop / 2500);
-                        legend.innerHTML += `
-                            <div class="size-benchmark">
-                                <div class="size-bubble" style="width: ${radius * 2}px; height: ${radius * 2}px; margin-right: 6px; border: 1px solid #333; border-radius: 50%;"></div>
-                                <div style="font-size: 0.75em;">${(pop / 1000000).toFixed(1)}M</div>
-                            </div>
-                        `;
-                    });
+                });
+
+                // Add separator between color and size legends
+                legend.innerHTML += `<hr style="margin: 6px 0; border: none; border-top: 1px solid #ccc;">`;
+
+                // Add size legend title
+                legend.innerHTML += `<h4 style="font-size: 0.85em; margin: 0 0 5px 0;">Population</h4>`;
+
+                // Add size legend items
+                const populationSizes = [100000, 500000, 1000000];
+                populationSizes.forEach(pop => {
+                    const radius = Math.sqrt(pop / 2500); // Same formula as in the circle radius
+                    legend.innerHTML += `
+                        <div class="size-benchmark" style="margin-bottom: 4px; display: flex; align-items: center;">
+                            <div class="size-bubble" style="width: ${radius * 2}px; height: ${radius * 2}px; margin-right: 6px; border: 1px solid #333; border-radius: 50%;"></div>
+                            <div style="font-size: 0.75em;">${(pop / 1000000).toFixed(1)}M</div>
+                        </div>
+                    `;
+                });
+
+                // Adjust overall legend container size
+                legend.style.padding = '5px';
+                legend.style.maxWidth = '150px';
+
                 })
                 .catch(error => console.error('Error loading the data:', error));
         });
