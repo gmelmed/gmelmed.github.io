@@ -18,7 +18,7 @@ body {
 
 /* Links style - keeps the previous body font */
 .links {
-  font-family: 'Gotham', sans-serif;
+  font-family: 'Gotham-Bold', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
@@ -27,6 +27,7 @@ body {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
+  font-family: "Gotham", sans-serif;
   color: #333;
   margin-top: 24px;
   margin-bottom: 16px;
