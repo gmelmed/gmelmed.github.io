@@ -3,9 +3,8 @@
 
 /* These are comments in CSS. Comments don't do anything except explain your working to make code easier to understand. */
 
-
-body { /* We can style any HTML element by using its name - here we're styling the body */
-  /* We want text that uses a clean sans-serif font, is usually 16px big and close to black */
+/* Body */
+body { 
   font-family: 'Gotham', sans-serif;
   font-size: 16px;
   color: #333;
@@ -71,5 +70,6 @@ img {
 iframe {
   display: block;
   margin: 0 auto;
+  width: 1000px;
 }
 
