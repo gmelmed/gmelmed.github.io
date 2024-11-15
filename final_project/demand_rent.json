@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  
+    "description": "Housing demand and change in rent.",
     "data": {
       "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/final_project/demand_rent_metro.csv"
     },
