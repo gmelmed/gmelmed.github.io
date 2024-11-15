@@ -148,14 +148,14 @@
         });
     
         map.addControl(geocoder, 'top-left');
-
+    
         // Create reset button
         const resetButton = document.createElement('button');
         resetButton.className = 'reset-button';
         resetButton.textContent = 'Reset Map View';
         resetButton.style.left = '10px'; // Align with geocoder
         resetButton.style.top = '50px';  // Position below geocoder
-
+    
         // Add click handler
         resetButton.addEventListener('click', () => {
             map.flyTo({
@@ -164,7 +164,7 @@
                 essential: true
             });
         });
-
+    
         // Add button to map container
         document.getElementById('map').appendChild(resetButton);
     
@@ -266,7 +266,7 @@
                             
                             // Update the filter to show only the hovered point in the hover layer
                             map.setFilter('rent-points-hover', ['==', ['id'], feature.id]);
-
+    
                             // Show tooltip with color-matched value
                             tooltip.style.display = 'block';
                             tooltip.style.left = `${e.point.x + 10}px`;
@@ -289,47 +289,41 @@
                     });
     
                     // Add legend
-                    // Create date object for one year before most recent date
                     const oneYearAgo = new Date(mostRecentDate);
                     oneYearAgo.setFullYear(oneYearAgo.getFullYear() - 1);
-
-                    // Add legend with one year ago date
-                    legend.innerHTML = `<h4>Change in rent index since ${oneYearAgo.toLocaleString('default', { month: 'long', year: 'numeric' })}</h4>`;
+    
+                    legend.innerHTML = `<h4 style="font-size: 0.85em;">Change in rent index since ${oneYearAgo.toLocaleString('default', { month: 'long', year: 'numeric' })}</h4>`;
                     legend.innerHTML += `
                         <div class="legend-item">
-                            <div class="legend-color" style="background-color: #5e3c99;"></div>
-                            <div>Below 0%</div>
+                            <div class="legend-color" style="width: 12px; height: 12px; background-color: #5e3c99; margin-right: 6px;"></div>
+                            <div style="font-size: 0.75em;">Below 0%</div>
                         </div>
                     `;
-
+    
                     const quantileBreakpoints = colorScalePositive.quantiles();
                     const legendColors = colorScalePositive.range();
                     quantileBreakpoints.unshift(0);
                     quantileBreakpoints.push(d3.max(positiveValues));
-
+    
                     legendColors.forEach((color, i) => {
                         legend.innerHTML += `
                             <div class="legend-item">
-                                <div class="legend-color" style="background-color: ${color};"></div>
-                                <div>${quantileBreakpoints[i].toFixed(1)}% to ${quantileBreakpoints[i + 1].toFixed(1)}%</div>
+                                <div class="legend-color" style="width: 12px; height: 12px; background-color: ${color}; margin-right: 6px;"></div>
+                                <div style="font-size: 0.75em;">${quantileBreakpoints[i].toFixed(1)}% to ${quantileBreakpoints[i + 1].toFixed(1)}%</div>
                             </div>
                         `;
                     });
-
-                    // Add separator between color and size legends
-                    legend.innerHTML += `<hr style="margin: 10px 0; border: none; border-top: 1px solid #ccc;">`;
-
-                    // Add size legend title
-                    legend.innerHTML += `<h4 style="margin-top: 10px; margin-bottom: 5px;">Population</h4>`;
-
-                    // Add size legend items
-                    const populationSizes = [100000, 500000, 1000000]; // Example population sizes
+    
+                    legend.innerHTML += `<hr style="margin: 6px 0; border: none; border-top: 1px solid #ccc;">`;
+                    legend.innerHTML += `<h4 style="margin-top: 6px; margin-bottom: 4px; font-size: 0.85em;">Population</h4>`;
+    
+                    const populationSizes = [100000, 500000, 1000000];
                     populationSizes.forEach(pop => {
-                        const radius = Math.sqrt(pop / 2500); // Same formula as in the circle radius
+                        const radius = Math.sqrt(pop / 2500);
                         legend.innerHTML += `
                             <div class="size-benchmark">
-                                <div class="size-bubble" style="width: ${radius * 2}px; height: ${radius * 2}px;"></div>
-                                <div>${(pop/1000000).toFixed(1)}M</div>
+                                <div class="size-bubble" style="width: ${radius * 2}px; height: ${radius * 2}px; margin-right: 6px; border: 1px solid #333; border-radius: 50%;"></div>
+                                <div style="font-size: 0.75em;">${(pop / 1000000).toFixed(1)}M</div>
                             </div>
                         `;
                     });
@@ -337,5 +331,6 @@
                 .catch(error => console.error('Error loading the data:', error));
         });
     </script>
+    
 </body>
 </html>
