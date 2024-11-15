@@ -70,6 +70,10 @@ img {
 iframe {
   display: block;
   margin: 0 auto;
-  width: 880px;
+  width: 1000px;  /* Wider than body */
+  height: 600px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
