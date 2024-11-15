@@ -59,7 +59,13 @@
                 Placeholder text
             </p>
         </div>
-        <figure id="Location2"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+        <figure id="Location2">
+            <iframe 
+            src="zori_county_bubble.html" 
+            frameborder="0" 
+            scrolling="no">
+        </iframe>
+        </figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
     </section>
     <section>
         <div class="chart-description">
@@ -85,13 +91,6 @@
         let supply_spec = "homebuilding_zori.json";
         let demand_spec= "demand_rent.json";
         vegaEmbed('#Location1', rent_inflation_spec)
-        document.getElementById('Location2').innerHTML = `
-            <iframe 
-                src="zori_county_bubble.html" 
-                frameborder="0" 
-                scrolling="no">
-            </iframe>
-            `;
         vegaEmbed('#Location3', supply_spec)
         vegaEmbed('#Location4', demand_spec)
      </script>

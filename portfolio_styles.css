@@ -50,7 +50,6 @@ section {
   margin-bottom: 2.5em;  /* We want a little more space between sections */
 }
 
-/* Links */
 /* We want the links to be a little more visible  and a different color */
 a {
   color: #065f46;
@@ -70,7 +69,7 @@ img {
 iframe {
   display: block;
   margin: 0 auto;
-  width: 1000px;  /* Wider than body */
+  width: 100%;  /* Wider than body */
   height: 600px;
   position: relative;
   left: 50%;
