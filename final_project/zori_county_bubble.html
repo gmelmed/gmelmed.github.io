@@ -124,7 +124,7 @@
         const map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/gmelmed/cm3ez4qa6000901sgc3b7393y',
-            center: [-92.5, 38.5],
+            center: [-95, 38.5],
             zoom: 3.5
         });
     
@@ -142,7 +142,7 @@
         geocoder.on('result', (e) => {
             map.flyTo({
                 center: e.result.center,
-                zoom: 6,
+                zoom: 5,
                 essential: true
             });
         });
@@ -159,7 +159,7 @@
         // Add click handler
         resetButton.addEventListener('click', () => {
             map.flyTo({
-                center: [-92.5, 38.5], // Your initial center coordinates
+                center: [-95, 38.5], // Your initial center coordinates
                 zoom: 3.5,                     // Your initial zoom level
                 essential: true
             });
