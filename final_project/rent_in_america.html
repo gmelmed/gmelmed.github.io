@@ -80,30 +80,25 @@
         <figure id="Location4"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
     </section>
     <script>
-        // This is a comment in JavaScript - it's a different language to HTML and CSS
-
-        let rent_inflation_spec = "rent_inflation.json"; // We're storing the URL of the graph we want to display in a variable
-        let rent_map_spec = "zori_county_bubble.html";
+        let rent_inflation_spec = "rent_inflation.json";
+        let rent_map_spec = "zori_county_bubble.html"; 
         let supply_spec = "homebuilding_zori.json";
         let demand_spec= "demand_rent.json";
         vegaEmbed('#Location1', rent_inflation_spec)
         document.getElementById('Location2').innerHTML = `
-            <div style="margin: 0 auto; padding: 20px 0; text-align: center; max-width: 90%;">
+            <div style="display: flex; justify-content: center;">
                 <iframe 
                     src="zori_county_bubble.html" 
-                    style="width: 1000px; height: 600px; border: 1px solid #ccc;" 
+                    width="100%" 
+                    height="600px" 
                     frameborder="0" 
                     scrolling="no">
                 </iframe>
             </div>
         `;
-
         vegaEmbed('#Location3', supply_spec)
         vegaEmbed('#Location4', demand_spec)
-        // For the HTML map, add it directly to the container using innerHTML
-        
-
-    </script>
+     </script>
 </body>
 
 

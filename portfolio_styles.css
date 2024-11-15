@@ -76,6 +76,11 @@ img {
   padding: 20px 0; /* Optional: Space above and below the iframe */
 }
 
+iframe {
+  display: block;
+  margin: 0 auto;
+}
+
 .centered-frame iframe {
   max-width: 100%; /* Ensure responsiveness */
   width: 1000px;      /* Adjust width to occupy less than full page width */
