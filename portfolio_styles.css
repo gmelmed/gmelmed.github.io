@@ -69,7 +69,7 @@ img {
 iframe {
   display: block;
   margin: 0 auto;
-  width: 100%;  /* Wider than body */
+  width: 1000px;  /* Wider than body */
   height: 600px;
   position: relative;
   left: 50%;
