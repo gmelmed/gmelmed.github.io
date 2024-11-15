@@ -78,7 +78,7 @@ img {
 
 .centered-frame iframe {
   max-width: 100%; /* Ensure responsiveness */
-  width: 90%;      /* Adjust width to occupy less than full page width */
+  width: 1000px;      /* Adjust width to occupy less than full page width */
   height: 600px;   /* Maintain the height */
   border: 1px solid #ccc; /* Optional: Add a border to frame it visually */
 }
