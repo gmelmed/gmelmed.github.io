@@ -1,0 +1,108 @@
+
+<!-- Same header and links as homepage -->
+<!DOCTYPE html>
+<html> 
+    <!-- HTML is heirarchial: tags like this define elements on the page. 
+    Each tag does something different. For example:
+        - The <html> tag defines the whole document.
+        - The <h1> tag defines a large heading
+        - The <p> tag defines a paragraph
+        - Tags appear as an opening <div> and closing </div> pair
+    -->
+
+<head>    
+    <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/portfolio_styles.css">
+    <title>Rent in America</title> <!-- The title displayed in the browser tab, not on the page itself -->
+
+    <!-- This is a link to the vega-lite which we're using to make graphs -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+
+    <style>
+        #chartGrid {
+            display: flex;
+        }
+        
+    </style>
+</head>
+
+<body>
+<!-- The body tag contains the elements that visitors to our page will see. -->
+    <h1 class="big" style>
+        <!-- This is a header, it is the largest text on the page -->
+        Gabe Melmed
+    </h1>
+    <p style="margin-top: 0px; color: darkblue">
+        <!-- we're setting the margin to 0px so the header and authour name are close together -->
+        <a href="gmelmed.github.io">Home</a> | <a
+            href="https://github.com/gmelmed">Coding Challenges</a> | <a href="sometimesredsometimesblue.com">More Charts</a> | <a href="sometimesredsometimesblue.com">Life Expectancy in America</a> | <a href="sometimesredssometimesblue.com">The State of the Mexican Economy</a>
+    </p>
+    <h2 class="big" style="margin-top: 0px;"> <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
+        <!-- This is a header, it is the largest text on the page -->
+        Mapping America's Housing Crisis
+    </h2>
+    <section>
+        <div class="chart-description">
+            <h3>Rent Inflation</h3>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                Placeholder text
+            </p>
+        </div>
+        <figure id="Location1"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    </section>
+    <section>
+        <div class="chart-description">
+            <h3>Mapping Rent</h3>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                Placeholder text
+            </p>
+        </div>
+        <figure id="Location2"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    </section>
+    <section>
+        <div class="chart-description">
+            <h3>Housing Supply</h3>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                Placeholder text
+            </p>
+        </div>
+        <figure id="Location3"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    </section>
+    <section>
+        <div class="chart-description">
+            <h3>Housing Demand</h3>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                Placeholder text
+            </p>
+        </div>
+        <figure id="Location4"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    </section>
+    <script>
+        // This is a comment in JavaScript - it's a different language to HTML and CSS
+
+        let rent_inflation_spec = "rent_inflation.json"; // We're storing the URL of the graph we want to display in a variable
+        let rent_map_spec = "zori_county_bubble.html";
+        let supply_spec = "homebuilding_zori.json";
+        let demand_spec= "demand_rent.json";
+        vegaEmbed('#Location1', rent_inflation_spec)
+        document.getElementById('Location2').innerHTML = `
+            <iframe 
+                src="zori_county_bubble.html" 
+                width="1000px" 
+                height="600px" 
+                frameborder="0" 
+                scrolling="no">
+            </iframe>
+        `;
+        vegaEmbed('#Location3', supply_spec)
+        vegaEmbed('#Location4', demand_spec)
+        // For the HTML map, add it directly to the container using innerHTML
+        
+
+    </script>
+</body>
+
+
+
