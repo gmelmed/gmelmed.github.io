@@ -88,9 +88,10 @@
         let demand_spec= "demand_rent.json";
         vegaEmbed('#Location1', rent_inflation_spec)
         document.getElementById('Location2').innerHTML = `
-            <div class="centered-frame">
+            <div style="margin: 0 auto; padding: 20px 0; text-align: center; max-width: 90%;">
                 <iframe 
                     src="zori_county_bubble.html" 
+                    style="width: 110%; height: 600px; border: 1px solid #ccc;" 
                     frameborder="0" 
                     scrolling="no">
                 </iframe>
