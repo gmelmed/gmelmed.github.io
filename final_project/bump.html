@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bump Chart</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    body {
+      font-family: Gotham, sans-serif;
+    }
+    .axis path,
+    .axis line {
+      stroke: #676A86;
+      opacity: 0.5;
+    }
+    .axis text {
+      font-size: 11px;
+      fill: #676A86;
+      opacity: 0.7;
+    }
+    .grid line {
+      stroke: #676A86;
+      stroke-dasharray: 2, 2;
+      opacity: 0.5;
+    }
+    .grid path {
+      stroke: none;
+    }
+    .tooltip {
+      position: absolute;
+      background: white;
+      border: 1px solid #ccc;
+      padding: 8px;
+      font-size: 12px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="chart"></div>
+  <script>
+    const width = 600;
+    const height = 400;
+    const margin = { top: 50, right: 50, bottom: 50, left: 50 };
+
+    const colors = [
+      "#F4C245", "#002FA7", "#E6224B", "#36B7B4", "#00A767", "#179FDB", "#EB5C2E"
+    ];
+
+    const tooltip = d3.select("body").append("div")
+      .attr("class", "tooltip")
+      .style("opacity", 0);
+
+    const svg = d3.select("#chart")
+      .append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+      .append("g")
+      .attr("transform", `translate(${margin.left},${margin.top})`);
+
+    // Load data
+    d3.csv("https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/final_project/rent_rank_long_clean.csv").then(data => {
+      data.forEach(d => {
+        d.rank = +d.rank;
+        d.zori = +d.zori;
+        d.date = new Date(d.date);
+      });
+
+      // Scales
+      const x = d3.scaleTime()
+        .domain(d3.extent(data, d => d.date))
+        .range([0, width]);
+
+      const y = d3.scaleLinear()
+        .domain([d3.max(data, d => d.rank), 1]) // Reverse order
+        .range([height, 0]);
+
+      const colorScale = d3.scaleOrdinal()
+        .domain([...new Set(data.map(d => d.name))])
+        .range(colors);
+
+      // Gridlines
+      svg.append("g")
+        .attr("class", "grid")
+        .call(d3.axisLeft(y)
+          .tickSize(-width)
+          .tickFormat("")
+          .ticks(8));
+
+      // Axes
+      svg.append("g")
+        .attr("class", "x axis")
+        .attr("transform", `translate(0,${height})`)
+        .call(d3.axisBottom(x).ticks(10).tickSize(4));
+
+      svg.append("g")
+        .attr("class", "y axis")
+        .call(d3.axisLeft(y).tickSize(0).tickFormat(d3.format(".0f")));
+
+      // Line generator
+      const line = d3.line()
+        .x(d => x(d.date))
+        .y(d => y(d.rank))
+        .curve(d3.curveMonotoneX);
+
+      const nestedData = d3.group(data, d => d.name);
+
+      // Draw lines
+      svg.selectAll(".line")
+        .data(nestedData)
+        .enter()
+        .append("path")
+        .attr("d", d => line(d[1]))
+        .attr("fill", "none")
+        .attr("stroke", d => colorScale(d[0]))
+        .attr("stroke-width", 2);
+
+      // Draw points
+      svg.selectAll(".point")
+        .data(data)
+        .enter()
+        .append("circle")
+        .attr("cx", d => x(d.date))
+        .attr("cy", d => y(d.rank))
+        .attr("r", 5)
+        .attr("fill", d => colorScale(d.name))
+        .attr("opacity", 0.7)
+        .on("mouseover", (event, d) => {
+            const formatCurrency = d3.format("$.2f"); // Define the currency format
+            tooltip.transition().duration(200).style("opacity", 1);
+            tooltip.html(`<strong>Metro:</strong> ${d.name}<br>
+                            <strong>Rent Index:</strong> ${formatCurrency(d.zori)}<br>
+                            <strong>Rank:</strong> ${d.rank}`)
+                .style("left", (event.pageX + 10) + "px")
+                .style("top", (event.pageY - 28) + "px");
+            })
+
+        .on("mouseout", () => {
+          tooltip.transition().duration(500).style("opacity", 0);
+        });
+    });
+  </script>
+</body>
+</html>
