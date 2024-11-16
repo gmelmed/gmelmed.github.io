@@ -56,19 +56,19 @@
           "title": "Metro"
         },
         {
+          "field": "zori",
+          "title": "Rent index",
+          "format": ".2%"
+        },
+        {
           "field": "zori_yoy",
-          "title": "YoY % change in rent index",
+          "title": "Change since last year",
           "format": ".2%"
         },
         {
           "field": "demand",
           "title": "Rent demand index",
           "format": ".2f"
-        },
-        {
-          "field": "pop_2023",
-          "title": "Population",
-          "format":".2~s"
         }
       ]
     },
