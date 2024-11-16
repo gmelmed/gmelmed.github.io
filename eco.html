@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html> 
+<head>    
+    <link rel="stylesheet" type="text/css" href="portfolio_styles.css">
+    <title>ECO Contributions</title> 
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+
+    <style>
+        #chartGrid {
+            display: flex;
+        }
+
+        .footnotes {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #555;
+        }
+        .footnotes li {
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+
+<body> 
+    <h1 class="big" style="margin-bottom: 0px;"> 
+        Gabe Melmed
+    </h1>
+    <p class = "links">
+        <a href="index.html"></a> Home | <a
+            href="/final_project/rent_in_america.html">Mapping America's Housing Crisis</a> | <a href="lifeex.html">Diverging Life Expectancy</a> | More on the way.
+    </p>
+    <p>
+        These are data visualizations I have created for the <a href="https://www.economicsobservatory.com/">Economics Observatory</a>. 
+    </p>
+    <section>
+        <figure id="Location1"></figure>
+        <div class="chart-description">
+            <p> 
+                The US Democratic Party is the latest in a series of incumbent parties to lose vote share in 2024. Backlash against inflation may be driving these sweeping changes. This chart shows eight national elections held in high-income OECD countries. In every case, the incumbent party experienced a decline in vote share compared to the previous election.
+            </p>
+        </div>
+        
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h2>Japanese Cherry Blossoms</h2>
+            <p> 
+                The US Democratic Party is the latest in a series of incumbent parties to lose vote share in 2024. Backlash against inflation may be driving these sweeping changes. This chart shows eight national elections held in high-income OECD countries. In every case, the incumbent party experienced a decline in vote share compared to the previous election.
+            </p>
+        </div>
+        <figure id="Location1"></figure>
+    </section>
+    
+
+    <script>
+        let elections_spec = "/chart_specs/elections.json";
+
+        vegaEmbed("#Location1", elections_spec)
+    </script>
+</body>
+</html>
