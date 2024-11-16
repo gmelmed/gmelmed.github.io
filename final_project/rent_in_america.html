@@ -73,12 +73,25 @@
     </section>
     <section>
         <div class="chart-description">
+            <h3>The Most expensive places to rent</h3>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                Placeholder text
+            </p>
+        </div>
+        <figure id="Location2">
+            <iframe 
+            src="top_20_slider.html" 
+            frameborder="0" 
+            scrolling="no">
+        </iframe> 
+    <section>
+        <div class="chart-description">
             <h3>Housing Supply</h3>
             <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
                 Placeholder text
             </p>
         </div>
-        <figure id="Location3"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+        <figure id="Location4"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
     </section>
     <section>
         <div class="chart-description">
@@ -87,7 +100,7 @@
                 Placeholder text
             </p>
         </div>
-        <figure id="Location4"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+        <figure id="Location5"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
     </section>
     <script>
         let rent_inflation_spec = "rent_inflation.json";
@@ -95,8 +108,8 @@
         let supply_spec = "homebuilding_zori.json";
         let demand_spec= "demand_rent.json";
         vegaEmbed('#Location1', rent_inflation_spec)
-        vegaEmbed('#Location3', supply_spec)
-        vegaEmbed('#Location4', demand_spec)
+        vegaEmbed('#Location4', supply_spec)
+        vegaEmbed('#Location5', demand_spec)
      </script>
 </body>
 
