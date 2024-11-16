@@ -8,7 +8,7 @@
   <style>
     body {
       font-family: Gotham, sans-serif;
-      background: #f9f9f9;
+      background: #ffffff;
       margin: 0;
       padding: 0;
     }
@@ -19,6 +19,7 @@
     }
     .axis text {
       font-size: 11px;
+      font-family: 'Gotham', sans-serif;
       fill: #676A86;
       opacity: 0.7;
     }
@@ -26,19 +27,26 @@
       margin: 20px 0 0 20px;
     }
     .title {
-      font-size: 24px;
+      font-size: 16px;
       font-weight: bold;
       text-anchor: start;
       fill: #122b39;
     }
     .subtitle {
-      font-size: 16px;
+      font-size: 14px;
       text-anchor: start;
       fill: #676A86;
     }
-    .bar-label {
+    .tooltip {
+      position: absolute;
+      background: white;
+      border: 1px solid #ccc;
+      padding: 8px;
       font-size: 12px;
-      fill: #676A86;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.2s ease-in-out;
     }
   </style>
 </head>
@@ -54,6 +62,9 @@
     const height = 400;
     const margin = { top: 80, right: 50, bottom: 50, left: 150 };
     const barColor = "#002FA7"; // Yves Klein blue
+
+    const tooltip = d3.select("body").append("div")
+      .attr("class", "tooltip");
 
     const svg = d3.select("#chart")
       .append("svg")
@@ -108,13 +119,13 @@
         .attr("class", "title")
         .attr("x", 0)
         .attr("y", -50)
-        .text("Placeholder Title: Rent Index Overview");
+        .text("Top 20 Metros by Rent Index");
 
       svg.append("text")
         .attr("class", "subtitle")
         .attr("x", 0)
         .attr("y", -30)
-        .text("Placeholder Subtitle: Top 20 Metros by Month");
+        .text("Data from Zillow Observed Rent Index (ZORI)");
     });
 
     function updateChart(selectedMonth) {
@@ -134,7 +145,6 @@
 
       // Remove old elements
       svg.selectAll(".bar").remove();
-      svg.selectAll(".bar-label").remove();
       svg.selectAll(".axis").remove();
 
       // Add bars
@@ -147,18 +157,34 @@
         .attr("x", 0)
         .attr("height", y.bandwidth())
         .attr("width", d => x(d.zori))
-        .attr("fill", barColor);
+        .attr("fill", barColor)
+        .attr("opacity", 0.7) // Default opacity
+        .on("mouseover", function (event, d) {
+          d3.select(this)
+            .transition()
+            .duration(200)
+            .attr("opacity", 1); // Full opacity on hover
 
-      // Add ZORI labels
-      svg.selectAll(".bar-label")
-        .data(top20)
-        .enter()
-        .append("text")
-        .attr("class", "bar-label")
-        .attr("x", d => x(d.zori) + 5)
-        .attr("y", d => y(d.name) + y.bandwidth() / 2)
-        .attr("dy", "0.35em")
-        .text(d => `$${d.zori.toFixed(2)}`);
+          // Show tooltip
+          tooltip.transition()
+            .duration(200)
+            .style("opacity", 1);
+          tooltip.html(`<strong>Metro:</strong> ${d.name}<br>
+                        <strong>Rent Index:</strong> $${d.zori.toFixed(2)}`)
+            .style("left", (event.pageX + 10) + "px")
+            .style("top", (event.pageY - 28) + "px");
+        })
+        .on("mouseout", function () {
+          d3.select(this)
+            .transition()
+            .duration(200)
+            .attr("opacity", 0.7); // Return to default opacity
+
+          // Hide tooltip
+          tooltip.transition()
+            .duration(500)
+            .style("opacity", 0);
+        });
 
       // Add axes
       svg.append("g")
