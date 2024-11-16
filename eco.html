@@ -34,8 +34,11 @@
         <a href="index.html"></a> Home | <a
             href="/final_project/rent_in_america.html">Mapping America's Housing Crisis</a> | <a href="lifeex.html">Diverging Life Expectancy</a> | More on the way.
     </p>
+    <h1>
+        Economics Observatory Contributions
+    </h1>
     <p>
-        These are data visualizations I have created for the <a href="https://www.economicsobservatory.com/">Economics Observatory</a>. 
+        These are a selection of data visualizations I have created for the <a href="https://www.economicsobservatory.com/">Economics Observatory</a>. Thanks to the team for their support and guidance.
     </p>
     <section>
         <figure id="Location1"></figure>
@@ -49,19 +52,47 @@
 
     <section>
         <div class="chart-description">
-            <h2>Japanese Cherry Blossoms</h2>
+            <figure id="Location2"></figure>
             <p> 
-                The US Democratic Party is the latest in a series of incumbent parties to lose vote share in 2024. Backlash against inflation may be driving these sweeping changes. This chart shows eight national elections held in high-income OECD countries. In every case, the incumbent party experienced a decline in vote share compared to the previous election.
+                Kyoto’s world-famous cherry blossom trees are blooming earlier and earlier every year. The timing of peak blossom depends on spring temperatures, which are rising. Note the sharp drop in the 20th century.
             </p>
         </div>
-        <figure id="Location1"></figure>
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <p> 
+                The following is a section of an article I co-authored on the 2024 Paris Olympics. The full article can be found <a href="https://www.economicsobservatory.com/what-happened-at-the-2024-olympics">here</a>.
+                
+                The Olympics can be highly lucrative for some athletes, but not for all. The IOC maintains an official policy of amateur competition, so it does not reward medallists or pay athletes to compete.
+
+                With no universal compensation regime, athletes’ earnings depend on their sport, their performance, corporate sponsorship and, most importantly, their country.
+
+                While the Olympics as a whole is governed by the IOC, each sport is governed by its own international federation, which has autonomy over their IOC-allocated funds. This year, two broke with the IOC’s amateur athletics tradition.
+
+                World Athletics – the governing body for track and field – elected to reward gold medallists, paying $50,000 (around £39,400). The International Boxing Association announced that it would reward medallists and their coaches: for gold, $100,000 for the boxer and $25,000 for the coach, $50,000 and $25,000 respectively for silver, and $12,500 apiece for bronze.
+
+                Several National Olympic Committees (NOCs) also have medal compensation policies (see below). At the Paris games, Hong Kong had the most generous scheme, paying its gold medallists HK$6,000,000 (around £590,000). Singapore and Taiwan are among the other nations that offer financial incentives to their athletes.
+            </p>
+            <figure id="Location3"></figure>
+            <p>
+                Not every NOC compensates their medallists this generously or at all (see Figure 8). Indeed, of the ten largest teams, only Italy and Spain compensate gold medallists more than $100,000 (around £76,700).
+            </p>
+            <figure id="Location4"></figure>
+        </div>
     </section>
     
 
     <script>
-        let elections_spec = "/chart_specs/elections.json";
+        let elections_spec = "chart_specs/elections.json";
+        let cherry_blossoms_spec = "chart_specs/cherry_blossoms.json";
+        let olympics_toprosters_spec = "chart_specs/olympic_medal_comp.json";
+        let olympics_topcomp_spec = "chart_specs/olympic_medal_top10.json";
 
         vegaEmbed("#Location1", elections_spec)
+        vegaEmbed("#Location2", cherry_blossoms_spec)
+        vegaEmbed("#Location3", olympics_topcomp_spec)
+        vegaEmbed("#Location4", olympics_toprosters_spec)
     </script>
 </body>
 </html>

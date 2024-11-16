@@ -85,4 +85,13 @@ iframe {
   transform: translateX(-50%);
 }
 
+blockquote {
+  margin: 20px 0;
+  padding: 10px 20px;
+  border-left: 4px solid #ccc; /* Vertical line on the left */
+  background: #f9f9f9; /* Light gray background */
+  font-style: italic;
+  color: #555;
+}
+
 

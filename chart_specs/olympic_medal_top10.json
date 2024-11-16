@@ -1,16 +1,7 @@
 {
     "config": {
         "font": "Circular Std",
-        "mark": {
-            "line": {
-                "interpolate": "monotone"
-            }
-        },
-        "view": {
-            "stroke": "transparent",
-            "width": 400,
-            "height": 300
-        },
+
         "range": {
             "category": [
                 "#36B7B4",
@@ -181,6 +172,7 @@
             "Compensation in 2021 USD"
         ]
     },
+    "height":400,
     "width": 600,
     "$schema": "https://vega.github.io/schema/vega-lite/v5.16.3.json",
     "datasets": {
