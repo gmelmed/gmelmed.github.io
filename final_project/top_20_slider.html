@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top 20 Metros by Rent Index</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    body {
+      font-family: Gotham, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    .axis path,
+    .axis line {
+      stroke: #676A86;
+      opacity: 0.5;
+    }
+    .axis text {
+      font-size: 11px;
+      fill: #676A86;
+      opacity: 0.7;
+    }
+    .slider {
+      margin: 20px 0 0 20px;
+    }
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      text-anchor: start;
+      fill: #122b39;
+    }
+    .subtitle {
+      font-size: 16px;
+      text-anchor: start;
+      fill: #676A86;
+    }
+    .bar-label {
+      font-size: 12px;
+      fill: #676A86;
+    }
+  </style>
+</head>
+<body>
+  <div id="chart"></div>
+  <div class="slider">
+    <label for="monthSlider">Select Month:</label>
+    <input type="range" id="monthSlider" min="0" step="1">
+    <span id="selectedMonth"></span>
+  </div>
+  <script>
+    const width = 600;
+    const height = 400;
+    const margin = { top: 80, right: 50, bottom: 50, left: 150 };
+    const barColor = "#002FA7"; // Yves Klein blue
+
+    const svg = d3.select("#chart")
+      .append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+      .append("g")
+      .attr("transform", `translate(${margin.left},${margin.top})`);
+
+    let data, months, maxValue;
+
+    // Load the data
+    d3.csv("https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/final_project/rent_rank_long_clean.csv").then(csv => {
+      csv.forEach(d => {
+        d.rank = +d.rank;
+        d.zori = +d.zori;
+        d.date = new Date(d.date);
+      });
+
+      // Group data by month
+      data = d3.group(csv, d => d.date.toISOString().slice(0, 7));
+      months = Array.from(data.keys()).sort();
+
+      // Find the maximum ZORI value and calculate the axis domain
+      maxValue = d3.max(csv, d => d.zori) * 1.1;
+
+      // Format months for display
+      const monthFormatter = d3.timeFormat("%B %Y");
+      const parsedMonths = months.map(d => ({
+        raw: d,
+        formatted: monthFormatter(new Date(d + "-01"))
+      }));
+
+      // Initialize the slider
+      const slider = d3.select("#monthSlider")
+        .attr("max", months.length - 1)
+        .on("input", function () {
+          const monthIndex = +this.value;
+          const selected = parsedMonths[monthIndex];
+          d3.select("#selectedMonth").text(selected.formatted);
+          updateChart(selected.raw);
+        });
+
+      // Set the initial month to the most recent date
+      const lastMonthIndex = months.length - 1;
+      slider.property("value", lastMonthIndex);
+      const initialMonth = parsedMonths[lastMonthIndex];
+      d3.select("#selectedMonth").text(initialMonth.formatted);
+      updateChart(initialMonth.raw);
+
+      // Add title and subtitle
+      svg.append("text")
+        .attr("class", "title")
+        .attr("x", 0)
+        .attr("y", -50)
+        .text("Placeholder Title: Rent Index Overview");
+
+      svg.append("text")
+        .attr("class", "subtitle")
+        .attr("x", 0)
+        .attr("y", -30)
+        .text("Placeholder Subtitle: Top 20 Metros by Month");
+    });
+
+    function updateChart(selectedMonth) {
+      const monthData = data.get(selectedMonth) || [];
+
+      // Sort by ZORI and get the top 20
+      const top20 = monthData.sort((a, b) => b.zori - a.zori).slice(0, 20);
+
+      const x = d3.scaleLinear()
+        .domain([0, maxValue])
+        .range([0, width]);
+
+      const y = d3.scaleBand()
+        .domain(top20.map(d => d.name))
+        .range([0, height])
+        .padding(0.1);
+
+      // Remove old elements
+      svg.selectAll(".bar").remove();
+      svg.selectAll(".bar-label").remove();
+      svg.selectAll(".axis").remove();
+
+      // Add bars
+      svg.selectAll(".bar")
+        .data(top20)
+        .enter()
+        .append("rect")
+        .attr("class", "bar")
+        .attr("y", d => y(d.name))
+        .attr("x", 0)
+        .attr("height", y.bandwidth())
+        .attr("width", d => x(d.zori))
+        .attr("fill", barColor);
+
+      // Add ZORI labels
+      svg.selectAll(".bar-label")
+        .data(top20)
+        .enter()
+        .append("text")
+        .attr("class", "bar-label")
+        .attr("x", d => x(d.zori) + 5)
+        .attr("y", d => y(d.name) + y.bandwidth() / 2)
+        .attr("dy", "0.35em")
+        .text(d => `$${d.zori.toFixed(2)}`);
+
+      // Add axes
+      svg.append("g")
+        .attr("class", "x axis")
+        .attr("transform", `translate(0, ${height})`)
+        .call(d3.axisBottom(x).ticks(5));
+
+      svg.append("g")
+        .attr("class", "y axis")
+        .call(d3.axisLeft(y));
+    }
+  </script>
+</body>
+</html>
