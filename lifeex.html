@@ -26,7 +26,16 @@
         #chartGrid {
             display: flex;
         }
-        
+
+        .footnotes {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #555;
+        }
+        .footnotes li {
+            margin-bottom: 10px;
+        }
+
     </style>
 </head>
 
@@ -56,7 +65,7 @@
         </script>
     </p>
     <p>
-        The chart above follows life expectancy at birth among the 20 richest countries by median income. Life expectancy is a complex statistical artifact that measures <a href="https://www.oecd.org/en/data/indicators/life-expectancy-at-birth.html":>“how long, on average, a newborn can expect to live, if current death rates do not change.”</a> It is driven down when people die younger and up when people die older.  
+        The chart above follows life expectancy at birth among the 20 richest countries by median income. Life expectancy is a complex statistical artifact that measures <a href="https://www.oecd.org/en/data/indicators/life-expectancy-at-birth.html":>“how long, on average, a newborn can expect to live, if current death rates do not change.”</a> It is driven down when people die younger and up when people die older.<sup>1<a href="#fn1"></a></sup>  
     </p>
     <p>
         Despite the typical American being materially richer than her counterpart in almost every country in this group, she is expected to die earlier. Beginning around 2010, US life expectancy began to rise slowly compared to other high-income nations. It declined sharply compared to peer countries during the COVID-19 pandemic and has rebounded slower since the pandemic ended. The CDC’s most recent provisional figures for 2022 <a href="https://www.washingtonpost.com/health/2023/11/29/life-expectancy-2022-united-states/">indicate</a> that life expectancy has ticked up but remains pre-COVID levels.
@@ -90,7 +99,7 @@
         Other researchers have focused on education-based mortality gaps. Novosad et. Al. 2022 examined mortality changes at constant education percentiles. They found that from 1992 to 2018, the least educated 10% of Americans (read: high-school dropouts) have faced <a href="https://doi.org/10.1257/app.20190297">“catastrophic”</a> increases in early mortality while mortality in other education bands stagnated or decreased.
     </p>
     <p>
-        COVID-19 accounted for a sharp life expectancy reduction in virtually all countries, including the US. COVID infections, hospitalizations, and deaths all <a href="https://doi.org/10.15585/mmwr.mm7226a5">diverged sharply by class</a> – wealthier Americans with remote-compatible jobs were able to stay home and avoid infection. After the introduction of COVID vaccines, rural Americans were vaccinated at <a href="https://doi.org/10.15585/mmwr.mm7109a2">far lower rates</a> than urban Americans, compounding the urban-rural expectancy gap.
+        COVID-19 accounted for a sharp life expectancy reduction in virtually all countries, including the US.<sup>2<a href="#fn2"></a></sup>  COVID infections, hospitalizations, and deaths all <a href="https://doi.org/10.15585/mmwr.mm7226a5">diverged sharply by class</a> – wealthier Americans with remote-compatible jobs were able to stay home and avoid infection. After the introduction of COVID vaccines, rural Americans were vaccinated at <a href="https://doi.org/10.15585/mmwr.mm7109a2">far lower rates</a> than urban Americans, compounding the urban-rural expectancy gap.
     </p>
     <p>
         Underperforming life expectancy is not a nationwide issue but a sign of inequality and neglect – the US is failing to ensure that its rural, poor, and less educated citizens live long and healthy lives.
@@ -142,3 +151,17 @@
     <p>
        ~
     </p>
+    <footer class="footnotes">
+        <hr>
+        <ol>
+            <li id="fn1">
+                A note on life expectancy: this memo deals with life expectancy at birth for both men and women. These figures vary by sex – in the US, female life expectancy is consistently around 5 years longer than male life expectancy. While the reasons for Male and Female mortality in America vary, the difference of 5 years has been remarkably stable since 2000. For this reason, this memo will refer almost entirely to the unified figure for both men and women.
+                <a href="#fn1-ref">↩</a>
+            </li>
+            <li id="fn2">
+                A note on COVID-19: while the pandemic had a dramatic impact on American life expectancy in 2020 and 2021, it is largely outside of the scope of this memo. This memo concerns the reasons for America’s persistent expectancy gap which predate the pandemic.
+                <a href="#fn2-ref">↩</a>
+        </ol>
+    </footer>
+</body>
+</html>
