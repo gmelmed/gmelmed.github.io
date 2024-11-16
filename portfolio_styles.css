@@ -68,6 +68,16 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+/* Specific rule for links in the .links class */
+.links a {
+  color: #333; /* Keep the dark gray color for links in the "links" class */
+  text-decoration: none; /* Optional: Prevent underlining */
+}
+
+.links a:hover {
+  text-decoration: underline; /* Optional: Allow hover underline for "links" */
+}
   
 /* Images */
 img {
