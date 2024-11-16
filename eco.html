@@ -102,6 +102,12 @@
         vegaEmbed("#Location2", cherry_blossoms_spec)
         vegaEmbed("#Location3", olympics_topcomp_spec)
         vegaEmbed("#Location4", olympics_toprosters_spec)
+
+
+        // Select all <a> tags inside the <body> that are NOT in the .links class or footnotes
+        document.querySelectorAll("body a:not(.links a):not(.footnotes a)").forEach(function(link) {
+            link.setAttribute("target", "_blank");
+        });
     </script>
 </body>
 </html>

@@ -110,6 +110,12 @@
         vegaEmbed('#Location1', rent_inflation_spec)
         vegaEmbed('#Location4', supply_spec)
         vegaEmbed('#Location5', demand_spec)
+
+
+        // Select all <a> tags inside the <body> that are NOT in the .links class or footnotes
+        document.querySelectorAll("body a:not(.links a):not(.footnotes a)").forEach(function(link) {
+            link.setAttribute("target", "_blank");
+        });
      </script>
 </body>
 
