@@ -56,7 +56,10 @@
         <div class="chart-description">
             <h3>Rent Inflation</h3>
             <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                Placeholder text
+                The surge in rent prices is not simply the result of post-pandemic inflation. The chart below shows the year-on-year change in rent prices and inflation since 2016. Rent inflation outpaced overall inflation for years before the pandemic began. During the immediate recovery from the pandemic (late 2021-mid 2022), rent prices rose an order of magnidute faster than overall prices. Thankfully, rent inflation has slowed down, but it's still outpacing inflation in most places.
+            </p>
+            <p>
+                To build this chart, I scraped data from the Zillow's Observed Rent Index (ZORI). ZORI is my preferred rent statistic because ___. I used the FRED API to get the Consumer Price Index (CPI) for all urban consumers. I built the chart using vega-lite. 
             </p>
         </div>
         <figure id="Location1"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
@@ -65,7 +68,13 @@
         <div class="chart-description">
             <h3>Mapping Rent</h3>
             <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                Placeholder text
+                The rent crisis is not felt equally across the US. The map below shows the year-on-year change in rent prices in US counties, which are sized by population.Rent inflation is felt most accutely in the midwest and northeast. On the west coast, rent inflation is low.  A small handful of counties, mostly in the Texas, saw their rent index decrease over the past year. 
+            </p>
+            <p>
+                This chart uses the same Zillow data as the previous chart. I built the map using D3 and mapbox. The D3 spec for this map uses the most recent ZORI data for each county. 
+            </p>
+            <p>
+                Use the zoom and search features to explore the data.
             </p>
         </div>
         <figure id="Location2">
@@ -93,7 +102,13 @@
         <div class="chart-description">
             <h3>Housing Supply</h3>
             <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                Placeholder text
+                I hope the above visualizations have motivated the rent issue and given a sense of the scale of the current crisis. But what's causing it? I would argue that the root cause of the rent crisis is a lack of housing supply in the areas where people want to live. When supply is low, renters have to compete for a limited number of units, which gives landlords room to charge higher rents.
+            </p>
+            <p>
+                The points below represent the fifty largest metro areas in the US, their year-on-year rent inflation, and the number of new multi-unit housing structures approved this year per 10,000 people.
+            </p>
+            <p>
+                Home building data for this chart comes from the US Census Bureau's Building Permits Survey. I acquired the data using the Census Beaureau's API. I chose to focus only on multi-unit structures because those are most likely to be rented. I built the chart using vega-lite.
             </p>
         </div>
         <figure id="Location4"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->

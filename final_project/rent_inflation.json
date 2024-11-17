@@ -6,7 +6,7 @@
   },
   "transform": [
     {
-      "filter": "toDate(datum.date) >= toDate('2020-01-01')"
+      "filter": "toDate(datum.date) >= toDate('2016-01-01')"
     }
   ],
   "mark": {
