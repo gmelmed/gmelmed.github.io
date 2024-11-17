@@ -100,6 +100,7 @@
         "discreteWidth": 600,
         "discreteHeight": 300
       },
+      "background": "#f7f7f7",
       "bar": {"color": "#179fdb"},
       "line": {"color": "#e6224b"},
       "rule": {"color": "#676A86"},

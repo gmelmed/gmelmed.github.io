@@ -1,7 +1,7 @@
 {
     "config": {
         "font": "Circular Std",
-
+        "background": "#f7f7f7",
         "range": {
             "category": [
                 "#36B7B4",

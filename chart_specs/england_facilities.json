@@ -1,6 +1,7 @@
 {
     "config": {
         "font": "Circular Std",
+        "background": "#f7f7f7",
         "mark": {
             "line": {
                 "interpolate": "monotone"

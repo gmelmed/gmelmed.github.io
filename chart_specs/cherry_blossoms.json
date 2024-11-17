@@ -4,6 +4,7 @@
       "view": {
         "stroke": "transparent"
       },
+      "background": "#f7f7f7",
       "range": {
         "category": [
           "#F4C245",
