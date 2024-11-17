@@ -34,6 +34,9 @@
       "type": "nominal",
       "legend": {
         "title": "Inflation"
+      },
+      "scale": {
+        "domain": ["Rent", "CPI"]
       }
     },
     "tooltip": [
@@ -71,15 +74,16 @@
     "view": {
       "stroke": "transparent"
     },
+    "background":"#f7f7f7",
     "range": {
       "category": [
-        "#F4C245",
-        "#002FA7",
-        "#E6224B",
-        "#36B7B4",
-        "#00A767",
-        "#179FDB",
-        "#EB5C2E"
+      "#002fa7",
+      "#FFD300",
+      "#FF9500",
+      "#FF2B7F",
+      "#00C5CD",
+      "#5D00A6", 
+      "#00FF7F"
       ]
     },
     "point": {
@@ -135,14 +139,15 @@
     "legend": {
       "titleFont": "Gotham",
       "titleFontSize":14,
-      "titleColor": "#122b39",
+      "titleColor": "#1a1a1a",
       "title": null,
-      "labelColor": "#122b39",
+      "labelColor": "#1a1a1a",
       "labelFontSize": 12
     },
     "title": {
       "font": "Gotham",
       "fontSize": 16,
+      "color":"#1a1a1a",
       "subtitleFontSize": 14,
       "subtitleColor": "#676A86"
     }
