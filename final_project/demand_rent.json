@@ -58,7 +58,7 @@
         {
           "field": "zori",
           "title": "Rent index",
-          "format": ".2%"
+          "format": "$.2"
         },
         {
           "field": "zori_yoy",
