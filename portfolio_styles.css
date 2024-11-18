@@ -7,26 +7,31 @@
 @font-face {
   font-family: 'Gotham-Book', sans-serif;
   src: url('https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/main/final_project/fonts/Gotham-Book.otf') format('opentype');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Gotham-BoldItalic', sans-serif;
   src: url('https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/main/final_project/fonts/Gotham-BoldItalic.otf') format('opentype');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Gotham-Bold', sans-serif;
   src: url('https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/main/final_project/fonts/Gotham-Bold.otf') format('opentype');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'GothamRnd-Bold', sans-serif;
   src: url('https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/main/final_project/fonts/GothamRnd-Bold.otf') format('opentype');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Lora', sans-serif;
   src: url('https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/main/final_project/fonts/Lora-Regular.ttf') format('truetype');
+  font-display: swap;
 }
 
 /* Body */
