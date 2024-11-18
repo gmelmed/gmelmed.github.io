@@ -3,6 +3,32 @@
 
 /* These are comments in CSS. Comments don't do anything except explain your working to make code easier to understand. */
 
+/* Set the fonts I want with the links to the .otf on my github */
+@font-face {
+  font-family: 'Gotham-Book';
+  src: url('https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/main/final_project/fonts/Gotham-Book.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Gotham-BoldItalic';
+  src: url('https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/main/final_project/fonts/Gotham-BoldItalic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Gotham-Bold';
+  src: url('https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/main/final_project/fonts/Gotham-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'GothamRnd-Bold';
+  src: url('https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/main/final_project/fonts/GothamRnd-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url('https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/main/final_project/fonts/Lora-Regular.ttf') format('truetype');
+}
+
 /* Body */
 body { 
   font-family: 'Lora', serif;
