@@ -96,6 +96,32 @@
     
 
     <script>
+        const customConfig = {
+            config: {
+            font: "Montserrat, sans-serif",
+            view: {
+                stroke: "transparent"
+            },
+            background: "#f7f7f7",
+            legend: {
+                titleFont: "Montserrat, sans-serif",
+                titleFontSize: 14,
+                titleColor: "#1a1a1a",
+                title: null,
+                labelColor: "#1a1a1a",
+                labelFontSize: 12
+            },
+            title: {
+                font: "Montserrat, sans-serif",
+                fontSize: 16,
+                color: "#1a1a1a",
+                subtitleFontSize: 14,
+                subtitleColor: "#676A86"
+            }
+            }
+        };
+
+
         let elections_spec = "chart_specs/elections.json";
         let cherry_blossoms_spec = "chart_specs/cherry_blossoms.json";
         let olympics_toprosters_spec = "chart_specs/olympic_medal_comp.json";
