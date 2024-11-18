@@ -135,13 +135,13 @@
                 I scraped the ZORI data from the Zillow's website. I used the FRED API to get the Consumer Price Index (CPI) for all urban consumers. I built the chart using vega-lite.
             </li>
             <li id="fn2">
-                This chart uses the same Zillow data as the previous chart. I calculated YoY change using python. I built the map using D3 and mapbox. The D3 spec for this map uses the most recent ZORI data for each county. For population data, I used 2023 US Census figures.
+                This chart uses the same Zillow data as the previous chart. I calculated YoY change using python. I built the map using D3 and mapbox. The D3 spec for this map uses the most recent ZORI data for each county. For population data, I used 2023 US Census figures. To locate conties on the map, I used the latitude and longitude of population centroids (rather than the geographic centers of counties), also from the US Census. The goal of this map is to show how rent inflation is distributed across the US while providing an accurate picture of the population density.
             </li>
             <li id ="fn3">
                 I acquired the homebuilding data from the US Census Bureau using their API. I chose to focus on multi-unit structures because they are the most likely to be rented. To calculate homebuilding per capita, I used metro are population figures from the 2023 US Census. I calculated the homebuilding rate using python. I built the chart using vega-lite.
             </li>
             <li id="fn4">
-                Like ZORI, I acquired ZORDI data by scraping Zillow's website. Zillow makes all of this information downloadable on their website, but for some reason does not offer an API for their public data. Very strange.
+                Like ZORI, I acquired ZORDI data by scraping Zillow's website. Zillow makes all of this information easily downloadable on their website, but for some reason does not offer an API for their public data.
             </li>
         </ol>
 
