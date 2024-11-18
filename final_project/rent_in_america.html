@@ -165,9 +165,19 @@
         vegaEmbed('#Location5', demand_spec)
 
 
-        // Select all <a> tags inside the <body> that are NOT in the .links class or footnotes
-        document.querySelectorAll("body a:not(.links a):not(.footnotes a)").forEach(function(link) {
-            link.setAttribute("target", "_blank");
+        // Select all links in the document
+        document.querySelectorAll("a").forEach(link => {
+            const isLinkStyle = link.closest(".links"); // Check if the link is in the .links class
+            const isFootnoteLink = link.href.includes("#fn"); // Links to footnotes
+            const isSuperscriptLink = link.href.includes("#fn") && link.id.includes("ref"); // Superscripts back to the footnote
+
+            // Open in same tab for .links, footnotes, or superscripts
+            if (isLinkStyle || isFootnoteLink || isSuperscriptLink) {
+                link.removeAttribute("target");
+            } else {
+                // Otherwise, open in a new tab
+                link.setAttribute("target", "_blank");
+            }
         });
      </script>
 </body>
