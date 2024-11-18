@@ -12,7 +12,7 @@
 
 <head>    
     <link rel="stylesheet" type="text/css" href="/portfolio_styles.css">
-    <title>Rent in America</title> <!-- The title displayed in the browser tab, not on the page itself -->
+    <title>Rent | Gabe Melmed</title> <!-- The title displayed in the browser tab, not on the page itself -->
 
     <!-- This is a link to the vega-lite which we're using to make graphs -->
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
@@ -108,7 +108,7 @@
                 The points below represent the fifty largest metro areas in the US, their year-on-year rent inflation, and the number of new multi-unit housing structures approved this year per 10,000 people.
             </p>
             <p>
-                The chart below shows seems to support the supply chrunch thesis - the metro areas with the highest rent inflation tend to have the lowest home building rates. Note the extreme cases at the corners of this chart. Austin, TX has the highest home building rate and the lowest rent inflation. 
+                The chart below shows seems to support the supply chrunch thesis - the metro areas with the highest rent inflation tend to have the lowest home building rates. Note the extreme cases at the corners of this chart. Austin, TX has the second-highest home building rate and the lowest rent inflation. 
             </p>
             <p>
                 Home building data for this chart comes from the US Census Bureau's Building Permits Survey. I acquired the data using the Census Beaureau's API. I chose to focus only on multi-unit structures because those are most likely to be rented. I built the chart using vega-lite.
@@ -122,7 +122,7 @@
                 When we examine Zillow's Rent Demand Index (ZORDI), we a similar story. ZORDI measures the typical traffic that a rental listing recieves on their site. I would argue that "rent demand" is a slight misnomer - ZORDI measures the amount of traffic <i>for a given rental</i> in a metro area, not the total amount of traffic in that area. We can consider ZORDI a measure of the <i>competition</i> for rental units in a given area.
             </p>
             <p>
-                The chart below shows the ZORDI and rent inflation for the fifty largest metro areas in the US, which are sized by population. Remarkably, the chart below is approximately the reverse of the previous chart. The metro areas with the highest rent inflation tend to have the lowest ZORDI scores. Note the extreme cases of Austin, Texas and Hartford, Connecticut. Austin has second-lowest ZORDI score and the lowest rent inflation. Hartford has the highest rent inflation and the second-highest rent inflation.
+                The chart below shows the ZORDI and rent inflation for the fifty largest metro areas in the US, which are sized by population. Remarkably, the chart below is approximately the reverse of the previous chart. The metro areas with the highest rent inflation tend to have the lowest ZORDI scores. The same extreme cases, Austin and Hartford are present in this chart as in the previous chart, but their positions are reversed.
             </p>
         </div>
         <figure id="Location5"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
