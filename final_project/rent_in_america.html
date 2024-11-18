@@ -56,10 +56,7 @@
         <div class="chart-description">
             <h3>Rent Inflation</h3>
             <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                The surge in rent prices is not simply the result of post-pandemic inflation. The chart below shows the year-on-year change in rent prices and inflation since 2016. Rent inflation outpaced overall inflation for years before the pandemic began. During the immediate recovery from the pandemic (late 2021-mid 2022), rent prices rose an order of magnidute faster than overall prices. Thankfully, rent inflation has slowed down, but it's still outpacing inflation in most places.
-            </p>
-            <p>
-                To build this chart, I scraped data from the Zillow's Observed Rent Index (ZORI). ZORI is my preferred rent statistic because ___. I used the FRED API to get the Consumer Price Index (CPI) for all urban consumers. I built the chart using vega-lite. 
+                The surge in rent prices is not simply the result of post-pandemic inflation. The chart below shows the year-on-year change in rent prices and inflation since 2016. Rent inflation outpaced overall inflation for years before the pandemic began. During the immediate recovery from the pandemic, rent prices rose an order of magnidute faster than overall prices. Rent inflation has slowed in the past year, but it remains higher inflation in most places.<sup id="fn1-ref"><a href="#fn1">1</a></sup>
             </p>
         </div>
         <figure id="Location1"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
@@ -68,10 +65,7 @@
         <div class="chart-description">
             <h3>Mapping Rent</h3>
             <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                The rent crisis is not felt equally across the US. The map below shows the year-on-year change in rent prices in US counties, which are sized by population.Rent inflation is felt most accutely in the midwest and northeast. On the west coast, rent inflation is low.  A small handful of counties, mostly in the Texas, saw their rent index decrease over the past year. 
-            </p>
-            <p>
-                This chart uses the same Zillow data as the previous chart. I built the map using D3 and mapbox. The D3 spec for this map uses the most recent ZORI data for each county. 
+                The rent crisis is not felt equally across the US. The map below shows the year-on-year change in rent prices in US counties, which are sized by population.Rent inflation is felt most accutely in the midwest and northeast. On the west coast, rent inflation is low.  A small handful of counties, mostly in the Texas, saw their rent index decrease over the past year. <sup id="fn2-ref"><a href="#fn2">1</a></sup>
             </p>
             <p>
                 Use the zoom and search features to explore the data.
@@ -108,10 +102,7 @@
                 The points below represent the fifty largest metro areas in the US, their year-on-year rent inflation, and the number of new multi-unit housing structures approved this year per 10,000 people.
             </p>
             <p>
-                The chart below shows seems to support the supply chrunch thesis - the metro areas with the highest rent inflation tend to have the lowest home building rates. Note the extreme cases at the corners of this chart. Austin, TX has the second-highest home building rate and the lowest rent inflation. 
-            </p>
-            <p>
-                Home building data for this chart comes from the US Census Bureau's Building Permits Survey. I acquired the data using the Census Beaureau's API. I chose to focus only on multi-unit structures because those are most likely to be rented. I built the chart using vega-lite.
+                The chart below shows seems to support the supply chrunch thesis - the metro areas with the highest rent inflation tend to have the lowest home building rates. Note the extreme cases at the corners of this chart. Austin, TX has the second-highest home building rate and the lowest rent inflation. Hartford, CT has the among lowest home building rates and the highest rent inflation.<sup id="fn3-ref"><a href="#fn3">3</a></sup> 
             </p>
         </div>
         <figure id="Location4"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
@@ -122,11 +113,39 @@
                 When we examine Zillow's Rent Demand Index (ZORDI), we a similar story. ZORDI measures the typical traffic that a rental listing recieves on their site. I would argue that "rent demand" is a slight misnomer - ZORDI measures the amount of traffic <i>for a given rental</i> in a metro area, not the total amount of traffic in that area. We can consider ZORDI a measure of the <i>competition</i> for rental units in a given area.
             </p>
             <p>
-                The chart below shows the ZORDI and rent inflation for the fifty largest metro areas in the US, which are sized by population. Remarkably, the chart below is approximately the reverse of the previous chart. The metro areas with the highest rent inflation tend to have the lowest ZORDI scores. The same extreme cases, Austin and Hartford are present in this chart as in the previous chart, but their positions are reversed.
+                The chart below shows the ZORDI and rent inflation for the fifty largest metro areas in the US, which are sized by population. Remarkably, the chart below is approximately the reverse of the previous chart. The metro areas with the highest rent inflation tend to have the lowest ZORDI scores. The same extreme cases, Austin and Hartford are present in this chart as in the previous chart, but their positions are reversed.<sup id="fn4-ref"><a href="#fn4">3</a></sup>
             </p>
         </div>
         <figure id="Location5"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
     </section>
+    <footer class = "footnotes">
+        <hr>
+        <ol>
+            <li id="fn1">
+                To measure rent for this project, I am using Zillow's Observed Rent Index (ZORI). Zillow describes ZORI as:
+                <blockquote>
+                    A smoothed measure of the typical observed market rate rent across a given region. ZORI is a repeat-rent index that is weighted to the rental housing stock to ensure representativeness across the entire market, not just those homes currently listed for-rent. The index is dollar-denominated by computing the mean of listed rents that fall into the 35th to 65th percentile range for all homes and apartments in a given region, which is weighted to reflect the rental housing stock.
+                </blockquote>
+                ZORI is a mean figure, but since it excludes the highest and lowest percentiles, it is not heavily affected by extreme values. It also offers some control for seasonality. 
+                <blockquote>
+                    What’s available to rent at any given time can change rapidly, and measures of median or average prices across time may not reflect actual market-based movements in rent prices, but instead simply reflect the fact that certain unit types are available at different times. ZORI solves this challenge by calculating price differences for the same rental unit over time, then aggregating those differences across all properties repeatedly listed for rent on Zillow.  
+                </blockquote> 
+                For more on ZORI, see <a href="https://www.zillow.com/research/methodology-zori-repeat-rent-27092/">Zillow's methodology.</a>
+
+                I scraped the ZORI data from the Zillow's website. I used the FRED API to get the Consumer Price Index (CPI) for all urban consumers. I built the chart using vega-lite.
+            </li>
+            <li id="fn2">
+                This chart uses the same Zillow data as the previous chart. I calculated YoY change using python. I built the map using D3 and mapbox. The D3 spec for this map uses the most recent ZORI data for each county. For population data, I used 2023 US Census figures.
+            </li>
+            <li id ="fn3">
+                I acquired the homebuilding data from the US Census Bureau using their API. I chose to focus on multi-unit structures because they are the most likely to be rented. To calculate homebuilding per capita, I used metro are population figures from the 2023 US Census. I calculated the homebuilding rate using python. I built the chart using vega-lite.
+            </li>
+            <li id="fn4">
+                Like ZORI, I acquired ZORDI data by scraping Zillow's website. Zillow makes all of this information downloadable on their website, but for some reason does not offer an API for their public data. Very strange.
+            </li>
+        </ol>
+
+    </footer>
     <script>
         let rent_inflation_spec = "rent_inflation.json";
         let rent_map_spec = "zori_county_bubble.html"; 
@@ -143,6 +162,7 @@
         });
      </script>
 </body>
+</html>
 
 
 
