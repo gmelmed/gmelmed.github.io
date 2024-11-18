@@ -68,7 +68,7 @@
           "dx": 7,
           "dy": -5,
           "fontSize": 11,
-          "font": "Circular Std",
+          "font": "Montserrat, sans-serif",
           "opacity": 0.7
         },
         "encoding": {
@@ -84,7 +84,7 @@
       }
     ],
     "config": {
-      "font": "Circular Std",
+      "font": "Montserrat, sans-serif",
       "text": {
         "color": "#676A86",
         "align": "left",
@@ -111,7 +111,7 @@
       "axis": {
         "labelColor": "#676A86",
         "labelFontSize": 11,
-        "labelFont": "Circular Std",
+        "labelFont": "Montserrat, sans-serif",
         "labelOpacity": 0.7,
         "tickColor": "#676A86",
         "tickOpacity": 0.5,
@@ -151,8 +151,8 @@
       "title": {
         "color": "#122b39E6",
         "subtitleColor": "#676A86",
-        "font": "Circular Std",
-        "subtitleFont": "Circular Std",
+        "font": "Montserrat, sans-serif",
+        "subtitleFont": "Montserrat, sans-serif",
         "anchor": "start",
         "fontSize": 12,
         "subtitleFontSize": 11,

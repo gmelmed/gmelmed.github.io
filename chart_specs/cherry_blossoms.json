@@ -1,6 +1,6 @@
 {
   "config": {
-      "font": "Circular Std",
+      "font": "Montserrat, sans-serif",
       "view": {
         "stroke": "transparent"
       },
@@ -23,7 +23,7 @@
       "axis": {
         "labelColor": "#676A86",
         "labelFontSize": 11,
-        "labelFont": "Circular Std",
+        "labelFont": "Montserrat, sans-serif",
         "labelOpacity": 0.7,
         "tickColor": "#676A86",
         "tickOpacity": 0.5,
@@ -65,7 +65,7 @@
         "titleY": -5
       },
       "legend": {
-        "titleFont": "Circular Std",
+        "titleFont": "Montserrat, sans-serif",
         "titleFontSize": 14,
         "titleColor": "#122b39",
         "title": null,
@@ -73,7 +73,7 @@
         "labelFontSize": 12
       },
       "title": {
-        "font": "Circular Std",
+        "font": "Montserrat, sans-serif",
         "fontSize": 16,
         "subtitleFontSize": 14,
         "subtitleColor": "#676A86"

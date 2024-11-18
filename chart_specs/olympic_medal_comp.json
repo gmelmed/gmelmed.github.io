@@ -1,6 +1,6 @@
 {
     "config": {
-        "font": "Circular Std",
+        "font": "Montserrat, sans-serif",
         "background": "#f7f7f7",
         "range": {
             "category": [
