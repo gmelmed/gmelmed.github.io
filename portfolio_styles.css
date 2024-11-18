@@ -1,46 +1,9 @@
-/* This is an example CSS file. If you include it in your portfolio, it'll provide some clean and basic styling */
-/* for your page. Feel free to experiment with the values, or copy them into a new file and use that instead. */
-
-/* These are comments in CSS. Comments don't do anything except explain your working to make code easier to understand. */
-
-/* Set the fonts I want with the links to the .otf on my github */
-@font-face {
-  font-family: 'Gotham-Book', sans-serif;
-  src: url('https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/main/final_project/fonts/Gotham-Book.otf') format('opentype');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Gotham-BoldItalic', sans-serif;
-  src: url('https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/main/final_project/fonts/Gotham-BoldItalic.otf') format('opentype');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Gotham-Bold', sans-serif;
-  src: url('https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/main/final_project/fonts/Gotham-Bold.otf') format('opentype');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'GothamRnd-Bold', sans-serif;
-  src: url('https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/main/final_project/fonts/GothamRnd-Bold.otf') format('opentype');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Lora', sans-serif;
-  src: url('https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/main/final_project/fonts/Lora-Regular.ttf') format('truetype');
-  font-display: swap;
-}
-
-/* Body */
+/* Import fonts via Google Fonts */
 body { 
-  font-family: 'Lora', sans-serif;
+  font-family: 'Lora', serif; /* Use Lora for the body text */
   font-size: 16px;
   color: #1a1a1a;
   line-height: 1.6;
-  /* we want a white page, that's centered and not too wide */
   background-color: #f7f7f7;
   margin: 0 auto;
   max-width: 800px;
@@ -49,31 +12,31 @@ body {
 
 /* Links style - keeps the previous body font */
 .links {
-  font-family: 'Gotham-Bold', sans-serif;
+  font-family: 'Montserrat', sans-serif; /* Use Montserrat for links */
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.6;
   color: #1a1a1a;
 }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Gotham", sans-serif;
+  font-family: 'Montserrat', sans-serif; /* Use Montserrat for headings */
   color: #1a1a1a;
   margin-top: 24px;
   margin-bottom: 16px;
-  font-weight: 600;
+  font-weight: 600; /* Semi-bold */
 }
 
 /* We want the headings to be a little bigger than the paragraph text */
-.big { /* This is the class we created in the HTML file, you can use it to style any element */
+.big { 
   font-size: 2.5em;
-  font-family: 'Gotham';
+  font-family: 'Montserrat', sans-serif; /* Use Montserrat for larger headings */
 }
 
 h2 {
   font-size: 1.75em;
-  font-family: 'Gotham';
+  font-family: 'Montserrat', sans-serif;
 }
 
 .small {
@@ -87,10 +50,10 @@ p {
 }
 
 section {
-  margin-bottom: 2.5em;  /* We want a little more space between sections */
+  margin-bottom: 2.5em; /* We want a little more space between sections */
 }
 
-/* We want the links to be a little more visible  and a different color */
+/* We want the links to be a little more visible and a different color */
 a {
   color: #002fa7;
   text-decoration: none;
@@ -103,13 +66,13 @@ a:hover {
 /* Specific rule for links in the .links class */
 .links a {
   color: #1a1a1a; /* Keep the dark gray color for links in the "links" class */
-  text-decoration: underline; /* Optional: Prevent underlining */
+  text-decoration: underline;
 }
 
 .links a:hover {
-  text-decoration: underline; /* Optional: Allow hover underline for "links" */
+  text-decoration: underline;
 }
-  
+
 /* Images */
 img {
   max-width: 100%;
@@ -119,7 +82,7 @@ img {
 iframe {
   display: block;
   margin: 0 auto;
-  width: 1000px;  /* Wider than body */
+  width: 1000px; /* Wider than body */
   height: 600px;
   position: relative;
   left: 50%;
@@ -134,5 +97,3 @@ blockquote {
   font-style: italic;
   color: #1a1a1a;
 }
-
-
