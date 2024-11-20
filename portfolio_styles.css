@@ -79,14 +79,53 @@ img {
   height: auto;
 }
 
+/* General centering rule for all iframes */
 iframe {
   display: block;
   margin: 0 auto;
-  width: 1000px; /* Wider than body */
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Specific styles for bigmap */
+iframe.bigmap {
+  width: 1000px;
   height: 600px;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+}
+
+/* Centering for specific visualizations */
+.datawrapper-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0; /* Adds space around visualizations */
+}
+
+/* Styles for the 'bigmap' visualization */
+iframe.bigmap {
+  width: 1000px;
+  height: 600px;
+  position: static; /* Ensures no conflict with the default iframe rule */
+  transform: none;
+}
+
+/* Styles for the 'wide' visualization */
+iframe.wide {
+  width: 600px;
+  height: 450px;
+  position: static; /* Ensures no conflict with the default iframe rule */
+  transform: none;
+}
+
+/* Styles for the 'tall' visualization */
+iframe.tall {
+  width: 600px;
+  height: 800px;
+  position: static; /* Ensures no conflict with the default iframe rule */
+  transform: none;
 }
 
 blockquote {
