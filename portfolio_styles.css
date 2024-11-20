@@ -90,7 +90,7 @@ iframe {
 /* Specific styles for bigmap */
 iframe.bigmap {
   width: 1000px;
-  height: 700px;
+  height: 600px;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
