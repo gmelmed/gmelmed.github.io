@@ -8,6 +8,7 @@ body {
   margin: 0 auto;
   max-width: 800px;
   padding-top: 60px;
+  overflow-x: visible;
 }
 
 /* Links style - keeps the previous body font */
@@ -83,45 +84,47 @@ img {
 iframe {
   display: block;
   margin: 0 auto; /* Centers the iframe when using block display */
+  max-width: 100%; /* Ensures responsiveness for smaller viewports */
 }
 
 /* Specific styles for bigmap */
 iframe.bigmap {
-  width: 1000px;
-  height: 770px; /* Use the correct height */
+  width: 1000px; /* Explicit width for bigmap */
+  height: 770px; /* Explicit height for bigmap */
+  margin: 0 auto; /* Centers the iframe */
   display: block;
-  margin: 0 auto; /* Ensures centering */
+  max-width: none; /* Allows bigmap to exceed the body width */
 }
 
-/* Centering for specific visualizations */
-.datawrapper-container {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0; /* Adds space around visualizations */
-}
-
-/* Styles for the 'wide' visualization */
+/* Specific styles for wide visualizations */
 iframe.wide {
-  width: 600px;
-  height: 450px;
-  margin: 0 auto;
+  width: 600px; /* Width for wide visualizations */
+  height: 450px; /* Height for wide visualizations */
+  margin: 0 auto; /* Centers the iframe */
   display: block;
 }
 
-/* Styles for the 'tall' visualization */
+/* Specific styles for tall visualizations */
 iframe.tall {
-  width: 600px;
-  height: 710px;
-  margin: 0 auto;
+  width: 600px; /* Width for tall visualizations */
+  height: 710px; /* Height for tall visualizations */
+  margin: 0 auto; /* Centers the iframe */
   display: block;
 }
 
-/* Styles for the 'verytall' visualization */
+/* Specific styles for very tall visualizations */
 iframe.verytall {
-  width: 600px;
-  height: 800px;
-  margin: 0 auto;
+  width: 600px; /* Width for very tall visualizations */
+  height: 800px; /* Height for very tall visualizations */
+  margin: 0 auto; /* Centers the iframe */
   display: block;
+}
+
+/* Ensure parent containers like figure allow wider elements */
+figure {
+  width: 100%; /* Allows figure to span the full width of the page */
+  text-align: center; /* Ensures content is centered */
+  margin: 20px 0; /* Adds spacing above and below */
 }
 
 /* Blockquote styling */
