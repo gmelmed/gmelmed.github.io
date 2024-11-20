@@ -89,11 +89,13 @@ iframe {
 
 /* Specific styles for bigmap */
 iframe.bigmap {
-  width: 1000px; /* Explicit width for bigmap */
-  height: 770px; /* Explicit height for bigmap */
-  margin: 0 auto; /* Centers the iframe */
+  width: 1000px;
+  height: 770px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   display: block;
-  max-width: none; /* Allows bigmap to exceed the body width */
+  max-width: none;
 }
 
 /* Specific styles for wide visualizations */
