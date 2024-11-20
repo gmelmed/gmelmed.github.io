@@ -98,16 +98,6 @@ iframe.bigmap {
   max-width: none;
 }
 
-/* Specific styles for bigmap */
-iframe.bigmapdw {
-  width: 800px;
-  height: 680px;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  display: block;
-  max-width: none;
-}
 
 /* Specific styles for wide visualizations */
 iframe.wide {
