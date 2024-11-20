@@ -73,7 +73,8 @@
         "labelFontSize": 12
       },
       "title": {
-        "font": "Montserrat, sans-serif",
+        "font": "Montserrat-Bold, sans-serif",
+        "color":"#122b39",
         "fontSize": 16,
         "subtitleFontSize": 14,
         "subtitleColor": "#676A86"
