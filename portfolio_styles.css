@@ -107,7 +107,7 @@ iframe.bigmap {
 /* Styles for the 'bigmap' visualization */
 iframe.bigmap {
   width: 1000px;
-  height: 600px;
+  height: 770px;
   position: static; /* Ensures no conflict with the default iframe rule */
   transform: none;
 }
@@ -122,6 +122,14 @@ iframe.wide {
 
 /* Styles for the 'tall' visualization */
 iframe.tall {
+  width: 600px;
+  height: 710px;
+  position: static; /* Ensures no conflict with the default iframe rule */
+  transform: none;
+}
+
+/* Styles for the 'tall' visualization */
+iframe.verytall {
   width: 600px;
   height: 800px;
   position: static; /* Ensures no conflict with the default iframe rule */
