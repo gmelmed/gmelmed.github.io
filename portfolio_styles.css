@@ -82,19 +82,15 @@ img {
 /* General centering rule for all iframes */
 iframe {
   display: block;
-  margin: 0 auto;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  margin: 0 auto; /* Centers the iframe when using block display */
 }
 
 /* Specific styles for bigmap */
 iframe.bigmap {
   width: 1000px;
-  height: 600px;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  height: 770px; /* Use the correct height */
+  display: block;
+  margin: 0 auto; /* Ensures centering */
 }
 
 /* Centering for specific visualizations */
@@ -104,38 +100,31 @@ iframe.bigmap {
   margin: 20px 0; /* Adds space around visualizations */
 }
 
-/* Styles for the 'bigmap' visualization */
-iframe.bigmap {
-  width: 1000px;
-  height: 770px;
-  position: static; /* Ensures no conflict with the default iframe rule */
-  transform: none;
-}
-
 /* Styles for the 'wide' visualization */
 iframe.wide {
   width: 600px;
   height: 450px;
-  position: static; /* Ensures no conflict with the default iframe rule */
-  transform: none;
+  margin: 0 auto;
+  display: block;
 }
 
 /* Styles for the 'tall' visualization */
 iframe.tall {
   width: 600px;
   height: 710px;
-  position: static; /* Ensures no conflict with the default iframe rule */
-  transform: none;
+  margin: 0 auto;
+  display: block;
 }
 
-/* Styles for the 'tall' visualization */
+/* Styles for the 'verytall' visualization */
 iframe.verytall {
   width: 600px;
   height: 800px;
-  position: static; /* Ensures no conflict with the default iframe rule */
-  transform: none;
+  margin: 0 auto;
+  display: block;
 }
 
+/* Blockquote styling */
 blockquote {
   margin: 20px 0;
   padding: 10px 20px;
@@ -144,3 +133,4 @@ blockquote {
   font-style: italic;
   color: #1a1a1a;
 }
+
