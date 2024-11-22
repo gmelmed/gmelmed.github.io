@@ -6,8 +6,8 @@
     "subtitleFontWeight": "lighter",
     "subtitle": ["The median price of 'LAGER - PINT 3.4-4.2%'", "Data: ONS", ""]
   },
-  "width": 300,
-  "height": 450,
+  "width": 400,
+  "height": 600,
   "data": {
     "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/misc/bigdata/beer_prices_by_region.csv"
   },
@@ -51,9 +51,45 @@
         "legendY": -10,
         "direction": "horizontal",
         "gradientLength": 200
+      },
+      "scale":{
+        "scheme":"lightmulti"
+      }  
+    },
+    "tooltip":[
+      {
+        "field":"properties.NAME_LATN",
+        "title":"Region"
+      },
+      {
+        "field":"price",
+        "title":"Price (£)",
+        "format":".2f"
       }
-    }
+    ]
   },
   "projection": {"type": "naturalEarth1"},
-  "mark": {"type": "geoshape", "stroke": "black", "strokeWidth": 0.3}
+  "mark": {"type": "geoshape", "stroke": "black", "strokeWidth": 0.3},
+  "config": {
+      "font": "Montserrat, sans-serif",
+      "view": {
+        "stroke": "transparent"
+      },
+      "background": "#f7f7f7",
+      "legend": {
+        "titleFont": "Montserrat, sans-serif",
+        "titleFontSize": 14,
+        "titleColor": "#122b39",
+        "title": null,
+        "labelColor": "#122b39",
+        "labelFontSize": 12
+      },
+      "title": {
+        "font": "Montserrat-Bold, sans-serif",
+        "color":"#122b39",
+        "fontSize": 16,
+        "subtitleFontSize": 14,
+        "subtitleColor": "#676A86"
+      }
+    },
 }
