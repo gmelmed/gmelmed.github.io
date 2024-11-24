@@ -3,7 +3,7 @@
     "title": {
       "text": "Change in population, 2020-2023",
       "anchor": "start",
-      "subtitle": ["State titlegrams are sized by 2023 population. 1 hexagon = 350k people.", "Data: US Census Bureau", ""]
+      "subtitle": ["1 hexagon = 350k people", "Data: US Census Bureau", ""]
     },
     "width": 600,
     "height": 400,
