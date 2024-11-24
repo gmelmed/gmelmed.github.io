@@ -1,0 +1,177 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Housing demand and change in rent.",
+    "data": {
+      "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/final_project/data/demand_rent_metro.csv"
+    },
+    "transform": [
+      {
+        "filter": "datum.date == '2024-09-01'"
+      }
+    ],
+    "mark": {
+      "type": "point",
+      "filled": true,
+      "tooltip": true,
+      "color":"#002FA7"
+    },
+    "encoding": {
+      "x": {
+        "field": "demand",
+        "type": "quantitative",
+        "axis": {
+          "grid": false,
+          "title":"Zillow Observed Rent Demand Index (ZORDI)"
+        }
+      },
+      "y": {
+        "field": "zori_yoy",
+        "type": "quantitative",
+        "axis": {
+          "format": "%",
+          "title":"Change in rent index (yoy)"
+        }
+      },
+      "size": {
+        "field": "pop_2023",
+        "type": "quantitative",
+        "scale": {
+          "type": "linear",
+          "range": [50, 1000] 
+        },
+        "legend":{
+          "title":"Population"
+        }
+      },
+      "opacity": {
+        "condition": {
+          "selection": "hover",
+          "value": 1
+        },
+        "value": 0.6
+      },
+      "tooltip": [
+        {
+          "field": "name",
+          "title": "Metro"
+        },
+        {
+          "field": "zori",
+          "title": "Rent index",
+          "format": "$.0f"
+        },
+        {
+          "field": "zori_yoy",
+          "title": "Change since last year",
+          "format": ".2%"
+        },
+        {
+          "field": "demand",
+          "title": "Rent demand index",
+          "format": ".0f"
+        }
+      ]
+    },
+    "selection": {
+      "hover": {
+        "type": "single",
+        "on": "mouseover",
+        "empty": "none",
+        "encodings": ["x", "y"]
+      }
+    },
+    "config": {
+      "font": "Montserrat, sans-serif",
+      "view": {
+        "stroke": "transparent"
+      },
+      "background":"#f7f7f7",
+      "range": {
+        "category": [
+        "#002fa7",
+        "#FFD300",
+        "#FF9500",
+        "#FF2B7F",
+        "#00C5CD",
+        "#5D00A6", 
+        "#00FF7F"
+        ]
+      },
+      "point": {
+        "filled": true,
+        "size": 80,
+        "color": "#002fa7",
+        "opacity": 0.95
+      },
+      "axis": {
+        "labelColor": "#676A86",
+        "labelFontSize": 11,
+        "labelFont": "Montserrat, sans-serif",
+        "labelOpacity": 0.7,
+        "tickColor": "#676A86",
+        "tickOpacity": 0.5,
+        "domainColor": "#676A86",
+        "domainOpacity": 0.5,
+        "gridColor": "#676A86",
+        "gridDash": [2, 2],
+        "gridOpacity": 0.5,
+        "title": null,
+        "titleColor": "#676A86",
+        "titleOpacity": 0.8,
+        "tickSize": 4
+      },
+      "axisXDiscrete": {
+        "grid": false,
+        "labelAngle": 0,
+        "tickCount": 10,
+        "tickOpacity": 0.5,
+        "title": null
+      },
+      "axisYDiscrete": {
+        "ticks": false,
+        "labelPadding": 5
+      },
+      "axisXQuantitative": {
+        "grid": true
+      },
+      "axisYQuantitative": {
+        "gridColor": "#676A86",
+        "gridDash": [1, 5],
+        "gridOpacity": 0.5,
+        "ticks": false,
+        "labelPadding": 5,
+        "tickCount": 8,
+        "titleAngle": 0,
+        "titleAlign": "left",
+        "titleBaseline": "bottom",
+        "titleX": 0,
+        "titleY": -5
+      },
+      "legend": {
+        "titleFont": "Montserrat, sans-serif",
+        "titleFontSize":14,
+        "titleColor": "#1a1a1a",
+        "title": null,
+        "labelColor": "#1a1a1a",
+        "labelFontSize": 12
+      },
+      "title": {
+        "font": "Montserrat, sans-serif",
+        "fontSize": 16,
+        "color":"#1a1a1a",
+        "subtitleFontSize": 14,
+        "subtitleColor": "#676A86"
+      }
+    },
+    "height": 400,
+    "width": 600,
+    "title": {
+      "text": "Rend demand index and change in rent, September 2024",
+      "subtitle": [
+        "Data from Zillow.",
+        ""
+      ],
+      "anchor": "start"
+    }
+  }
+  

@@ -96,7 +96,7 @@
         </div>
         <figure id="Location2">
             <iframe class="bigmap" 
-            src="zori_county_bubble.html" 
+            src="specs/zori_county_bubble.html" 
             frameborder="0" 
             scrolling="no">
         </iframe>
@@ -247,10 +247,10 @@
             }
         };
 
-        let rent_inflation_spec = "rent_inflation.json";
-        let rent_map_spec = "zori_county_bubble.html"; 
-        let supply_spec = "homebuilding_zori.json";
-        let demand_spec= "demand_rent.json";
+        let rent_inflation_spec = "specs/rent_inflation.json";
+        let rent_map_spec = "specs/zori_county_bubble.html"; 
+        let supply_spec = "specs/homebuilding_zori.json";
+        let demand_spec= "specs/demand_rent.json";
         vegaEmbed('#Location1', rent_inflation_spec)
         vegaEmbed('#Location4', supply_spec)
         vegaEmbed('#Location5', demand_spec)

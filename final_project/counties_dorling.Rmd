@@ -4,6 +4,11 @@ output: html_document
 ---
 
 ```{r setup}
+
+if(!require("cartogram")) install.packages("cartogram")
+if(!require("tidycensus")) install.packages("tidycensus")
+
+
 # Required packages
 library(tidyverse)
 library(tidycensus)
@@ -15,35 +20,39 @@ options(tigris_use_cache = TRUE)
 ```
 
 ```{r get-data}
-# Get population data
-pop_names <- tribble(
-  ~varname, ~clean,
-  "B01003_001", "pop"  # We only need total population for the cartogram
-)
+# Set your Census API key here
+census_api_key("9330018ae4a2bd20da22ced1281145d9405dc349")
 
-# Get county population data
-fips_pop <- get_acs(
+# Get county population data from 2020 Census
+fips_pop <- get_decennial(
   geography = "county",
-  variables = pop_names$varname,
+  variables = "P1_001N",  # Total population from 2020 Census
+  year = 2020,
   cache_table = TRUE
 ) |>
-  left_join(pop_names, join_by(variable == varname)) |> 
-  mutate(variable = clean) |> 
-  select(-clean, -moe) |>
-  pivot_wider(names_from = variable, values_from = estimate) |>
-  rename(fips = GEOID, name = NAME) |>
-  mutate(prop_pop = pop/sum(pop))
+  select(-variable) |>
+  rename(
+    fips = GEOID,
+    name = NAME,
+    pop = value
+  ) |>
+  mutate(
+    fips = as.numeric(fips),  # Convert fips to numeric
+    prop_pop = pop/sum(pop)
+    )
 
 # Get county geometries
-fips_map <- get_acs(
+fips_map <- get_decennial(
   geography = "county",
-  variables = "B01001_001",
+  variables = "P1_001N",
+  year = 2020,
   geometry = TRUE,
   shift_geo = FALSE,
   cache_table = TRUE
 ) |>
   select(GEOID, NAME, geometry) |>
-  rename(fips = GEOID, name = NAME)
+  rename(fips = GEOID, name = NAME) |>
+  mutate(fips = as.numeric(fips))  # Convert fips to numeric
 ```
 
 ```{r create-dorling}
@@ -76,6 +85,7 @@ st_write(
 
 # Export as TopoJSON using geo2topo (requires mapshaper installed)
 # This creates a more compact file
+if(!require("rmapshaper")) install.packages("rmapshaper")
 library(rmapshaper)
 ms_write(
   county_dorling_filtered,
