@@ -1,0 +1,85 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Change in rent over the past year",
+      "anchor": "start",
+      "subtitle": ["Dat from Zillow Observed Rent Index (ZORI)", ""]
+    },
+    "width": 600,
+    "height": 400,
+    "data": {
+      "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/final_project/data/zori_county_most_recent_clean.csv"
+    },
+    "transform": [
+      {
+        "lookup": "fips",
+        "from": {
+          "data": {
+            "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/final_project/shapefiles/county_dorling_topo.json",
+            "format": {
+              "type": "topojson",
+              "feature": "county_dorling"
+            }
+          },
+          "key": "properties.fips",
+          "fields": ["type", "geometry", "properties"]
+        }
+      }
+    ],
+    "encoding": {
+      "color": {
+        "field": "zori_1yc",
+        "type": "quantitative",
+        "legend": {
+          "title": "Monthly Rent",
+          "labelFontWeight": "lighter",
+          "format":".2%",
+          "orient": "top-right",
+          "direction": "horizontal",
+          "gradientLength": 200
+        },
+        "scale": {
+          "scheme": "brownbluegreen",
+          "reverse":true,
+          "type":"quantile"
+        }
+      },
+      "tooltip": [
+        {
+          "field": "properties.name",
+          "title": "County"
+        },
+        {
+          "field": "zori_1yc",
+          "title": "Change since last year",
+          "format": ".2%"
+        }
+      ]
+    },
+    "projection": {
+      "type": "identity",
+      "reflectY": true
+    },
+    "mark": {"type": "geoshape", "stroke": "black", "strokeWidth": 0.5},
+    "config": {
+      "font": "Montserrat, sans-serif",
+      "view": {
+        "stroke": "transparent"
+      },
+      "background": "#f7f7f7",
+      "legend": {
+        "titleFont": "Montserrat, sans-serif",
+        "titleFontSize": 14,
+        "titleColor": "#122b39",
+        "labelColor": "#122b39",
+        "labelFontSize": 12
+      },
+      "title": {
+        "font": "Montserrat-Bold, sans-serif",
+        "color": "#122b39",
+        "fontSize": 16,
+        "subtitleFontSize": 14,
+        "subtitleColor": "#676A86"
+      }
+    }
+  }
