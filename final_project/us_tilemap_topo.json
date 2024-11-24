@@ -6,7 +6,7 @@
             "geometries": [
                 {
                     "type": "MultiPolygon",
-                    "id": "10",
+                    "id": 10,
                     "properties": {
                         "name": "DELAWARE",
                         "tilegramValue": 1031890
@@ -53,7 +53,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "12",
+                    "id": 12,
                     "properties": {
                         "name": "FLORIDA",
                         "tilegramValue": 22610726
@@ -661,7 +661,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "13",
+                    "id": 13,
                     "properties": {
                         "name": "GEORGIA",
                         "tilegramValue": 11029227
@@ -991,7 +991,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "15",
+                    "id": 15,
                     "properties": {
                         "name": "HAWAII",
                         "tilegramValue": 1435138
@@ -1018,7 +1018,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "16",
+                    "id": 16,
                     "properties": {
                         "name": "IDAHO",
                         "tilegramValue": 1964726
@@ -1087,7 +1087,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "17",
+                    "id": 17,
                     "properties": {
                         "name": "ILLINOIS",
                         "tilegramValue": 12549689
@@ -1476,7 +1476,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "18",
+                    "id": 18,
                     "properties": {
                         "name": "INDIANA",
                         "tilegramValue": 6862199
@@ -1696,7 +1696,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "19",
+                    "id": 19,
                     "properties": {
                         "name": "IOWA",
                         "tilegramValue": 3207004
@@ -1816,7 +1816,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "20",
+                    "id": 20,
                     "properties": {
                         "name": "KANSAS",
                         "tilegramValue": 2940546
@@ -1906,7 +1906,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "21",
+                    "id": 21,
                     "properties": {
                         "name": "KENTUCKY",
                         "tilegramValue": 4526154
@@ -2046,7 +2046,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "22",
+                    "id": 22,
                     "properties": {
                         "name": "LOUISIANA",
                         "tilegramValue": 4573749
@@ -2189,7 +2189,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "23",
+                    "id": 23,
                     "properties": {
                         "name": "MAINE",
                         "tilegramValue": 1395722
@@ -2233,7 +2233,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "24",
+                    "id": 24,
                     "properties": {
                         "name": "MARYLAND",
                         "tilegramValue": 6180253
@@ -2423,7 +2423,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "25",
+                    "id": 25,
                     "properties": {
                         "name": "MASSACHUSETTS",
                         "tilegramValue": 7001399
@@ -2626,7 +2626,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "26",
+                    "id": 26,
                     "properties": {
                         "name": "MICHIGAN",
                         "tilegramValue": 10037261
@@ -2870,7 +2870,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "27",
+                    "id": 27,
                     "properties": {
                         "name": "MINNESOTA",
                         "tilegramValue": 5737915
@@ -3039,7 +3039,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "28",
+                    "id": 28,
                     "properties": {
                         "name": "MISSISSIPPI",
                         "tilegramValue": 2939690
@@ -3119,7 +3119,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "29",
+                    "id": 29,
                     "properties": {
                         "name": "MISSOURI",
                         "tilegramValue": 6196156
@@ -3289,7 +3289,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "30",
+                    "id": 30,
                     "properties": {
                         "name": "MONTANA",
                         "tilegramValue": 1132812
@@ -3325,7 +3325,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "31",
+                    "id": 31,
                     "properties": {
                         "name": "NEBRASKA",
                         "tilegramValue": 1978379
@@ -3385,7 +3385,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "32",
+                    "id": 32,
                     "properties": {
                         "name": "NEVADA",
                         "tilegramValue": 3194176
@@ -3475,7 +3475,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "33",
+                    "id": 33,
                     "properties": {
                         "name": "NEW HAMPSHIRE",
                         "tilegramValue": 1402054
@@ -3525,7 +3525,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "34",
+                    "id": 34,
                     "properties": {
                         "name": "NEW JERSEY",
                         "tilegramValue": 9290841
@@ -3798,7 +3798,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "35",
+                    "id": 35,
                     "properties": {
                         "name": "NEW MEXICO",
                         "tilegramValue": 2114371
@@ -3877,7 +3877,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "36",
+                    "id": 36,
                     "properties": {
                         "name": "NEW YORK",
                         "tilegramValue": 19571216
@@ -4418,7 +4418,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "37",
+                    "id": 37,
                     "properties": {
                         "name": "NORTH CAROLINA",
                         "tilegramValue": 10835491
@@ -4751,7 +4751,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "38",
+                    "id": 38,
                     "properties": {
                         "name": "NORTH DAKOTA",
                         "tilegramValue": 783926
@@ -4787,7 +4787,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "39",
+                    "id": 39,
                     "properties": {
                         "name": "OHIO",
                         "tilegramValue": 11785935
@@ -5144,7 +5144,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "40",
+                    "id": 40,
                     "properties": {
                         "name": "OKLAHOMA",
                         "tilegramValue": 4053824
@@ -5274,7 +5274,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "41",
+                    "id": 41,
                     "properties": {
                         "name": "OREGON",
                         "tilegramValue": 4233358
@@ -5392,7 +5392,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "42",
+                    "id": 42,
                     "properties": {
                         "name": "PENNSYLVANIA",
                         "tilegramValue": 12961683
@@ -5772,7 +5772,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "44",
+                    "id": 44,
                     "properties": {
                         "name": "RHODE ISLAND",
                         "tilegramValue": 1095962
@@ -5820,7 +5820,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "45",
+                    "id": 45,
                     "properties": {
                         "name": "SOUTH CAROLINA",
                         "tilegramValue": 5373555
@@ -5965,7 +5965,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "46",
+                    "id": 46,
                     "properties": {
                         "name": "SOUTH DAKOTA",
                         "tilegramValue": 919318
@@ -6005,7 +6005,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "47",
+                    "id": 47,
                     "properties": {
                         "name": "TENNESSEE",
                         "tilegramValue": 7126489
@@ -6205,7 +6205,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "48",
+                    "id": 48,
                     "properties": {
                         "name": "TEXAS",
                         "tilegramValue": 30503301
@@ -7080,7 +7080,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "49",
+                    "id": 49,
                     "properties": {
                         "name": "UTAH",
                         "tilegramValue": 3417734
@@ -7180,7 +7180,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "50",
+                    "id": 50,
                     "properties": {
                         "name": "VERMONT",
                         "tilegramValue": 647464
@@ -7208,7 +7208,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "51",
+                    "id": 51,
                     "properties": {
                         "name": "VIRGINIA",
                         "tilegramValue": 8715698
@@ -7458,7 +7458,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "53",
+                    "id": 53,
                     "properties": {
                         "name": "WASHINGTON",
                         "tilegramValue": 7812880
@@ -7685,7 +7685,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "54",
+                    "id": 54,
                     "properties": {
                         "name": "WEST VIRGINIA",
                         "tilegramValue": 1770071
@@ -7735,7 +7735,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "55",
+                    "id": 55,
                     "properties": {
                         "name": "WISCONSIN",
                         "tilegramValue": 5910955
@@ -7902,7 +7902,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "56",
+                    "id": 56,
                     "properties": {
                         "name": "WYOMING",
                         "tilegramValue": 584057
@@ -7932,7 +7932,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "06",
+                    "id": 6,
                     "properties": {
                         "name": "CALIFORNIA",
                         "tilegramValue": 38965193
@@ -9048,7 +9048,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "02",
+                    "id": 2,
                     "properties": {
                         "name": "ALASKA",
                         "tilegramValue": 733406
@@ -9083,7 +9083,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "04",
+                    "id": 4,
                     "properties": {
                         "name": "ARIZONA",
                         "tilegramValue": 7431344
@@ -9308,7 +9308,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "08",
+                    "id": 8,
                     "properties": {
                         "name": "COLORADO",
                         "tilegramValue": 5877610
@@ -9478,7 +9478,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "05",
+                    "id": 5,
                     "properties": {
                         "name": "ARKANSAS",
                         "tilegramValue": 3067732
@@ -9578,7 +9578,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "01",
+                    "id": 1,
                     "properties": {
                         "name": "ALABAMA",
                         "tilegramValue": 5108468
@@ -9737,7 +9737,7 @@
                 },
                 {
                     "type": "MultiPolygon",
-                    "id": "09",
+                    "id": 9,
                     "properties": {
                         "name": "CONNECTICUT",
                         "tilegramValue": 3617176
@@ -39518,8 +39518,8 @@
     ],
     "transform": {
         "scale": [
-            1.5856885737468445e-7,
-            1.00797224257069e-7
+            1.5856885737468445e-07,
+            1.00797224257069e-07
         ],
         "translate": [
             368.39229487404384,
