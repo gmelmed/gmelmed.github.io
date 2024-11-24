@@ -39,11 +39,10 @@
         "gradientLength": 200
       },
       "scale": {
-        "scheme": "brownbluegreen",
-        "reverse": true,
+        "scheme": "purpleorange",
         "domainMax": 0.1,
-        "domainMid":0.025,
-        "domainMin": -0.03
+        "domainMid":0.0,
+        "domainMin": -0.04
       }
     },
     "tooltip": [
@@ -62,7 +61,7 @@
     "type": "identity",
     "reflectY": true
   },
-  "mark": {"type": "geoshape", "stroke": "black", "strokeWidth": 0.5},
+  "mark": {"type": "geoshape", "stroke": null, "strokeWidth": 0.5},
   "config": {
     "font": "Montserrat, sans-serif",
     "view": {
