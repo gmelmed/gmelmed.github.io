@@ -1,0 +1,105 @@
+---
+title: "Create Dorling Cartogram"
+output: html_document
+---
+
+```{r setup}
+# Required packages
+library(tidyverse)
+library(tidycensus)
+library(sf)
+library(cartogram)
+
+# Set options
+options(tigris_use_cache = TRUE)
+```
+
+```{r get-data}
+# Get population data
+pop_names <- tribble(
+  ~varname, ~clean,
+  "B01003_001", "pop"  # We only need total population for the cartogram
+)
+
+# Get county population data
+fips_pop <- get_acs(
+  geography = "county",
+  variables = pop_names$varname,
+  cache_table = TRUE
+) |>
+  left_join(pop_names, join_by(variable == varname)) |> 
+  mutate(variable = clean) |> 
+  select(-clean, -moe) |>
+  pivot_wider(names_from = variable, values_from = estimate) |>
+  rename(fips = GEOID, name = NAME) |>
+  mutate(prop_pop = pop/sum(pop))
+
+# Get county geometries
+fips_map <- get_acs(
+  geography = "county",
+  variables = "B01001_001",
+  geometry = TRUE,
+  shift_geo = FALSE,
+  cache_table = TRUE
+) |>
+  select(GEOID, NAME, geometry) |>
+  rename(fips = GEOID, name = NAME)
+```
+
+```{r create-dorling}
+# Combine data and create initial sf object
+counties_sf <- fips_map |>
+  left_join(fips_pop, by = c("fips", "name")) |>
+  # Transform to Albers equal area projection
+  sf::st_transform(crs = 2163)
+
+# Create the Dorling cartogram
+county_dorling <- cartogram_dorling(
+  x = counties_sf,
+  weight = "prop_pop",
+  k = 0.2,          # Adjust this to control spacing
+  itermax = 100     # Increase for better convergence
+)
+
+# Filter out Alaska, Hawaii, and territories
+county_dorling_filtered <- county_dorling |>
+  filter(!str_detect(name, "Alaska|Hawaii|Puerto|Guam"))
+```
+
+```{r export}
+# Export as GeoJSON
+st_write(
+  county_dorling_filtered,
+  "county_dorling.geojson",
+  delete_dsn = TRUE  # Overwrites existing file
+)
+
+# Export as TopoJSON using geo2topo (requires mapshaper installed)
+# This creates a more compact file
+library(rmapshaper)
+ms_write(
+  county_dorling_filtered,
+  "county_dorling.topojson",
+  force = TRUE
+)
+```
+
+The key differences from the original code:
+1. Only gets population data (not racial demographics)
+2. Uses same cartogram settings but exports the result
+3. Produces both GeoJSON and TopoJSON formats
+4. Maintains all county attributes in the output files
+
+To use this:
+1. Save it as a .Rmd file
+2. Make sure you have all required packages installed
+3. Set your Census API key
+4. Run all chunks
+
+The resulting files will contain the Dorling cartogram geometry with:
+- Properly spaced, non-overlapping bubbles
+- Population-proportional sizing
+- County FIPS codes and names preserved
+- Continental US only
+
+Would you like me to adjust any of the parameters (like the spacing factor `k` or number of iterations)?
