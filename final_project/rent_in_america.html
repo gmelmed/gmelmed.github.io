@@ -131,6 +131,16 @@
         </div>
         <figure id="Location5"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
     </section>
+    <section>
+        <div class="chart-description">
+            <h3>Population Change</h3>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                Placeholder text
+            </p>
+        </div>
+        <figure id="Location6"></figure> 
+
+    </section>
     <footer class = "footnotes">
         <hr>
         <ol>
@@ -251,9 +261,11 @@
         let rent_map_spec = "specs/zori_county_bubble.html"; 
         let supply_spec = "specs/homebuilding_zori.json";
         let demand_spec= "specs/demand_rent.json";
+        let pop_change_spec = "specs/pop_change.json";
         vegaEmbed('#Location1', rent_inflation_spec)
         vegaEmbed('#Location4', supply_spec)
         vegaEmbed('#Location5', demand_spec)
+        vegaEmbed('#Location6', pop_change_spec)
 
 
         // Select all links in the document
