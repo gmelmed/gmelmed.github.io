@@ -1,0 +1,109 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Change in population, 2020-2023",
+      "anchor": "start",
+      "subtitle": ["State titlegrams are sized by 2023 population. 1 hexagon = 350k people.", "Data: US Census Bureau", ""]
+    },
+    "width": 600,
+    "height": 400,
+    "data": {
+      "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/final_project/data/state_pop_change.csv"
+    },
+    "transform": [
+      {
+        "lookup": "id",
+        "from": {
+          "data": {
+            "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/final_project/shapefiles/us_tilemap_topo.json",
+            "format": {
+              "type": "topojson",
+              "feature": "tiles"
+            }
+          },
+          "key": "id",
+          "fields": ["type", "properties", "geometry", "arcs"]
+        }
+      }
+    ],
+    "params": [
+      {"name": "hover", 
+      "select": {
+        "type": "point",
+        "on": "mouseover"
+        }
+      }
+    ],
+    "encoding": {
+      "color": {
+        "field": "change",
+        "type": "quantitative",
+        "legend": {
+          "title": null,
+          "labelExpr": "datum.label+'%'",
+          "orient": "right",
+          "direction": "vertical",
+          "gradientLength": 200
+        },
+        "scale": {
+          "scheme": "purpleorange"
+        }
+      },
+      "strokeWidth": {
+        "condition": {
+          "param": "hover",
+          "empty": false,
+          "value": 1
+        },
+        "value": 0.15
+      },
+      "tooltip": [
+        {
+          "field": "name",
+          "title": "State",
+          "type": "nominal"
+        },
+        {
+          "field": "change",
+          "title": "% Change",
+          "type": "quantitative",
+          "format": ".2f"
+        },
+        {
+          "field": "total_change",
+          "title": "Absolute pop. change",
+          "type": "quantitative",
+          "format": ","
+        }
+      ]
+    },
+    "projection": {
+      "type": "identity",
+      "reflectY": true
+    },
+    "mark": {
+      "type": "geoshape",
+      "stroke": "white"
+    },
+    "config": {
+      "font": "Montserrat, sans-serif",
+      "view": {
+        "stroke": "transparent"
+      },
+      "background": "#f7f7f7",
+      "legend": {
+        "titleFont": "Montserrat, sans-serif",
+        "titleFontSize": 14,
+        "titleColor": "#122b39",
+        "labelColor": "#122b39",
+        "labelFontSize": 12
+      },
+      "title": {
+        "font": "Montserrat-Bold, sans-serif",
+        "color": "#122b39",
+        "fontSize": 16,
+        "subtitleFontSize": 14,
+        "subtitleColor": "#676A86"
+      }
+    }
+  }
