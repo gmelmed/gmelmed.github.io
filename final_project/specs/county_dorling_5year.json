@@ -41,6 +41,7 @@
         "scale": {
           "scheme": "yelloworangebrown",
           "domainMin": 0,
+          "domainMax": 0.5
 
         }
       },

@@ -40,7 +40,7 @@
       },
       "scale": {
         "scheme": "purpleorange",
-        "domainMax": 0.1,
+        "domainMax": 0.07,
         "domainMid":0.0,
         "domainMin": -0.04
       }
