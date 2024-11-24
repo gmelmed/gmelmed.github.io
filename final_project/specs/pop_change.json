@@ -3,7 +3,7 @@
     "title": {
       "text": "Change in population, 2020-2023",
       "anchor": "start",
-      "subtitle": ["1 hexagon = 350k people", "Data: US Census Bureau", ""]
+      "subtitle": ["1 hexagon = 350k people", "Data: US Census Bureau"]
     },
     "width": 600,
     "height": 400,
@@ -40,7 +40,7 @@
         "type": "quantitative",
         "legend": {
           "title": null,
-          "labelExpr": "datum.label+'%'",
+          "format":".0%",
           "orient": "right",
           "direction": "vertical",
           "gradientLength": 200
@@ -65,9 +65,9 @@
         },
         {
           "field": "change",
-          "title": "% Change",
+          "title": "% pop. change",
           "type": "quantitative",
-          "format": ".2f"
+          "format": ".2%"
         },
         {
           "field": "total_change",
