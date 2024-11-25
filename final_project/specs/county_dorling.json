@@ -3,7 +3,7 @@
   "title": {
     "text": "Change in rent over the past year",
     "anchor": "start",
-    "subtitle": ["Data from Zillow Observed Rent Index (ZORI)"]
+    "subtitle": ["Points represent counties and are sized by population.","Data from Zillow Observed Rent Index (ZORI)."]
   },
   "width": 1000,
   "height": 650,
