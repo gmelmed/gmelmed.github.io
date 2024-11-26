@@ -124,8 +124,9 @@
         const map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/gmelmed/cm3ez4qa6000901sgc3b7393y',
-            center: [-95, 38.5],
-            zoom: 3.5
+            center: [-75.1652, 39.9526], // Philadelphia coordinates
+            zoom: 6,
+            minZoom: 3.5 // Add zoom restriction
         });
     
         const nav = new mapboxgl.NavigationControl();
@@ -152,7 +153,7 @@
         // Create reset button
         const resetButton = document.createElement('button');
         resetButton.className = 'reset-button';
-        resetButton.textContent = 'Reset Map View';
+        resetButton.textContent = 'Lower 48 View';
         resetButton.style.left = '10px'; // Align with geocoder
         resetButton.style.top = '50px';  // Position below geocoder
     
@@ -275,8 +276,7 @@
                                 <div>
                                     <div class="name">${feature.properties.name}</div>
                                     <div>Rent Index: <span class="value">$${feature.properties.zori.toFixed(1)}</span></div>
-                                    <div>YoY Change: <span style="color: ${feature.properties.color}; font-family: 'GothamRnd-Bold', sans-serif;">${feature.properties.zori_1yc.toFixed(1)}%</span></div>
-                                </div>
+                                    <div>YoY Change: <span style="color: ${feature.properties.color}; font-family: 'GothamRnd-Bold', sans-serif;">${(feature.properties.zori_1yc * 100).toFixed(1)}%</span></div>
                             `;
                         }
                     });
@@ -309,7 +309,7 @@
                     legend.innerHTML += `
                         <div class="legend-item" style="margin-bottom: 4px; display: flex; align-items: center;">
                             <div class="legend-color" style="width: 12px; height: 12px; background-color: ${color}; margin-right: 6px;"></div>
-                            <div style="font-size: 0.75em;">${quantileBreakpoints[i].toFixed(1)}% to ${quantileBreakpoints[i + 1].toFixed(1)}%</div>
+                            <div style="font-size: 0.75em;">${(quantileBreakpoints[i] * 100).toFixed(1)}% to ${(quantileBreakpoints[i + 1] * 100).toFixed(1)}%</div>
                         </div>
                     `;
                 });
