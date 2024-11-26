@@ -225,15 +225,13 @@
                     const mostRecentDate = d3.max(data, d => d.date);
                     const filteredData = data.filter(d => d.date === mostRecentDate);
     
-                    // Quantile-based color scale for positive values
-                    const positiveValues = filteredData.filter(d => +d.zori_1yc >= 0).map(d => +d.zori_1yc);
-                    const colorScalePositive = d3.scaleQuantile()
-                        .domain(positiveValues)
-                        .range(['#fef0d9','#fdcc8a','#fc8d59','#d7301f']);
-    
+                    // TO THIS
+                    const colorScale = d3.scaleThreshold()
+                        .domain([-0.02, 0, 0.02, 0.04, 0.07, 0.1])
+                        .range(['#5e3c99', '#b2abd2', '#f7f7f7', '#fee0b6', '#f1a340', '#b35806']);
+
                     const getColor = d => {
-                        if (d < 0) return '#5e3c99';
-                        return colorScalePositive(d);
+                        return colorScale(d);
                     };
     
                     // Convert data to GeoJSON
@@ -293,26 +291,33 @@
                     oneYearAgo.setFullYear(oneYearAgo.getFullYear() - 1);
     
                     legend.innerHTML = `<h4 style="font-size: 0.85em; margin: 0 0 5px 0;">Change in rent index since ${oneYearAgo.toLocaleString('default', { month: 'long', year: 'numeric' })}</h4>`;
+                // ADD THIS BLOCK
+                const breaks = [-0.02, 0, 0.02, 0.04, 0.07, 0.1];
+                // First entry for "below" case
                 legend.innerHTML += `
                     <div class="legend-item" style="margin-bottom: 4px; display: flex; align-items: center;">
-                        <div class="legend-color" style="width: 12px; height: 12px; background-color: #5e3c99; margin-right: 6px;"></div>
-                        <div style="font-size: 0.75em;">Below 0%</div>
+                        <div class="legend-color" style="width: 12px; height: 12px; background-color: ${colorScale(-0.03)}; margin-right: 6px;"></div>
+                        <div style="font-size: 0.75em;">${(breaks[0] * 100).toFixed(1)}% and below</div>
                     </div>
                 `;
 
-                const quantileBreakpoints = colorScalePositive.quantiles();
-                const legendColors = colorScalePositive.range();
-                quantileBreakpoints.unshift(0);
-                quantileBreakpoints.push(d3.max(positiveValues));
-
-                legendColors.forEach((color, i) => {
+                // Middle entries
+                for (let i = 0; i < breaks.length - 1; i++) {
                     legend.innerHTML += `
                         <div class="legend-item" style="margin-bottom: 4px; display: flex; align-items: center;">
-                            <div class="legend-color" style="width: 12px; height: 12px; background-color: ${color}; margin-right: 6px;"></div>
-                            <div style="font-size: 0.75em;">${(quantileBreakpoints[i] * 100).toFixed(1)}% to ${(quantileBreakpoints[i + 1] * 100).toFixed(1)}%</div>
+                            <div class="legend-color" style="width: 12px; height: 12px; background-color: ${colorScale(breaks[i])}; margin-right: 6px;"></div>
+                            <div style="font-size: 0.75em;">${(breaks[i] * 100).toFixed(1)}% to ${(breaks[i + 1] * 100).toFixed(1)}%</div>
                         </div>
                     `;
-                });
+                }
+
+                // Last entry for "above" case
+                legend.innerHTML += `
+                    <div class="legend-item" style="margin-bottom: 4px; display: flex; align-items: center;">
+                        <div class="legend-color" style="width: 12px; height: 12px; background-color: ${colorScale(0.11)}; margin-right: 6px;"></div>
+                        <div style="font-size: 0.75em;">${(breaks[breaks.length-1] * 100).toFixed(1)}% and above</div>
+                    </div>
+                `;
 
                 // Add separator between color and size legends
                 legend.innerHTML += `<hr style="margin: 6px 0; border: none; border-top: 1px solid #ccc;">`;
