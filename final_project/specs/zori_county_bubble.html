@@ -8,8 +8,9 @@
         <script src="https://d3js.org/d3.v7.min.js"></script>
         <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js"></script>
         <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
         <style>
-            @font-face {
+            /* @font-face {
                 font-family: 'Gotham-Book';
                 src: url('https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/main/final_project/fonts/Gotham-Book.otf') format('opentype');
             }
@@ -27,9 +28,13 @@
             @font-face {
                 font-family: 'GothamRnd-Bold';
                 src: url('https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/main/final_project/fonts/GothamRnd-Bold.otf') format('opentype');
-            }
+            } */
     
-            body { margin: 0; padding: 0; }
+            body { 
+                margin: 0;
+                padding: 0;
+                font-family: 'Montserrat', sans-serif; 
+            }
             #map { position: absolute; top: 0; bottom: 0; width: 100%; }
     
             .reset-button {
@@ -42,7 +47,7 @@
                 border-radius: 4px;
                 box-shadow: 0 0 0 2px rgba(0,0,0,0.1);
                 cursor: pointer;
-                font-family: 'Gotham-Book', sans-serif;
+                font-family: 'Montserrat', sans-serif;
                 font-size: 12px;
             }
     
@@ -57,18 +62,21 @@
                 border-radius: 5px;
                 pointer-events: none;
                 box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-                font-family: 'Gotham-Book', sans-serif;
+                font-family: 'Montserrat', sans-serif;
                 font-size: 1.015em;
                 z-index: 1500;
             }
     
             .tooltip .name {
-                font-family: 'GothamRnd-Bold', sans-serif;
+                font-family: 'Montserrat', sans-serif;
                 font-size: 1.015em;
+                font-weight: 700;
             }
     
             .tooltip .value {
-                font-family: 'GothamRnd-Bold', sans-serif;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1.015em;
+                font-weight: 700;
             }
     
             .tooltip .value.positive {
@@ -87,7 +95,7 @@
                 padding: 8px;
                 border-radius: 5px;
                 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-                font-family: 'Gotham-Book', sans-serif;
+                font-family: 'Montserrat', sans-serif;
                 font-size: 0.85em;
                 max-width: 180px;
             }
@@ -274,7 +282,7 @@
                             <div>
                                 <div class="name">${feature.properties.name}</div>
                                 <div>Rent Index: <span class="value">$${feature.properties.zori.toFixed(1)}</span></div>
-                                <div>YoY Change: <span style="color: ${feature.properties.color}; font-family: 'GothamRnd-Bold', sans-serif; -webkit-text-stroke: 1.0px #333; text-stroke: 0.5px #333;">${(feature.properties.zori_1yc * 100).toFixed(1)}%</span></div>
+                                <div>YoY Change: <span style="color: ${feature.properties.color}; font-family: 'Montserrat', sans-serif; font-weight: 700; -webkit-text-stroke: 1.0px #333; text-stroke: 0.5px #333;">${(feature.properties.zori_1yc * 100).toFixed(1)}%</span></div>
                         `;
                         }
                     });
