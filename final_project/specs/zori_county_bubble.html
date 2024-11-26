@@ -271,11 +271,11 @@
                             tooltip.style.left = `${e.point.x + 10}px`;
                             tooltip.style.top = `${e.point.y + 10}px`;
                             tooltip.innerHTML = `
-                                <div>
-                                    <div class="name">${feature.properties.name}</div>
-                                    <div>Rent Index: <span class="value">$${feature.properties.zori.toFixed(1)}</span></div>
-                                    <div>YoY Change: <span style="color: ${feature.properties.color}; font-family: 'GothamRnd-Bold', sans-serif;">${(feature.properties.zori_1yc * 100).toFixed(1)}%</span></div>
-                            `;
+                            <div>
+                                <div class="name">${feature.properties.name}</div>
+                                <div>Rent Index: <span class="value">$${feature.properties.zori.toFixed(1)}</span></div>
+                                <div>YoY Change: <span style="color: ${feature.properties.color}; font-family: 'GothamRnd-Bold', sans-serif; -webkit-text-stroke: 1.0px #333; text-stroke: 0.5px #333;">${(feature.properties.zori_1yc * 100).toFixed(1)}%</span></div>
+                        `;
                         }
                     });
     
