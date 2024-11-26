@@ -228,7 +228,7 @@
                     // TO THIS
                     const colorScale = d3.scaleThreshold()
                         .domain([-0.02, 0, 0.02, 0.04, 0.07, 0.1])
-                        .range(['#5e3c99', '#b2abd2', '#f7f7f7', '#fee0b6', '#f1a340', '#b35806']);
+                        .range(['#5e3c99', '#b2abd2', '#f7f7f7', '#fee0b6', '#f1a340', '#b35806', '#8B2900']);
 
                     const getColor = d => {
                         return colorScale(d);
@@ -297,7 +297,7 @@
                 legend.innerHTML += `
                     <div class="legend-item" style="margin-bottom: 4px; display: flex; align-items: center;">
                         <div class="legend-color" style="width: 12px; height: 12px; background-color: ${colorScale(-0.03)}; margin-right: 6px;"></div>
-                        <div style="font-size: 0.75em;">${(breaks[0] * 100).toFixed(1)}% and below</div>
+                        <div style="font-size: 0.75em;">below ${(breaks[0] * 100).toFixed(1)}%</div>
                     </div>
                 `;
 
@@ -315,7 +315,7 @@
                 legend.innerHTML += `
                     <div class="legend-item" style="margin-bottom: 4px; display: flex; align-items: center;">
                         <div class="legend-color" style="width: 12px; height: 12px; background-color: ${colorScale(0.11)}; margin-right: 6px;"></div>
-                        <div style="font-size: 0.75em;">${(breaks[breaks.length-1] * 100).toFixed(1)}% and above</div>
+                        <div style="font-size: 0.75em;">above  ${(breaks[breaks.length-1] * 100).toFixed(1)}%</div>
                     </div>
                 `;
 
