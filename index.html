@@ -49,19 +49,20 @@
         <div class="chart-description">
             <h2>Featured work: Mapping rent changes in the US</h2>
             <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                Rent is rising in almost every county in the US, and in most counties it's outpacing inflation. Only a small handful of counties, mostly in the south, saw their rent index decrease over the past year. This map shows year-on-year change in US counties, which are sized by population. I recommend using the zoom and search features to explore the data.
+                The US is facing a once-in-a-generation housing affordability crisis. Rent prices have increased dramatically over the past five years, outpacing inflation. Since the pandemic, the sun belt (the southeast and southwest) has experienced the largest increases in rent as demand in these areas has surged. Over the past year, however, rent inflation in the sun belt has cooled. A small handful of counties even saw their rent index <i>decrease</i> over the past year. Meanwhile, the northeast and midwest are still experiencing intense rent inflation. These cartograms show the one-year and five-year changes in rent in US counties, which are sized by population.
             </p>
         </div>
-        <figure id="Location2">
-            <iframe class="bigmap"
-            src="/final_project/specs/zori_county_bubble.html" 
-            frameborder="0" 
-            scrolling= "no">
-        </iframe>
-        </figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+        <figure id="Location1"></figure>
+        <figure id="Location2"></figure> 
     </section>
 
     <script>
+        let one_year_spec = "final_project/specs/county_dorling.json";
+        let five_year_spec = "final_project/specs/county_dorling_5year.json";
+
+        vegaEmbed('#Location1', five_year_spec)
+        vegaEmbed('#Location2', one_year_spec)
+
         // Select all links in the document
         document.querySelectorAll("a").forEach(link => {
             const isLinkStyle = link.closest(".links"); // Check if the link is in the .links class
