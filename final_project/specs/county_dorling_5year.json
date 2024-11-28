@@ -51,8 +51,13 @@
         "title": "County"
       },
       {
+        "field": "zori",
+        "title": "Rent index",
+        "format": "$,.0f"
+      },
+      {
         "field": "zori_5yc",
-        "title": "Change since last year",
+        "title": "Change in the past five years",
         "format": ".2%"
       }
     ]
