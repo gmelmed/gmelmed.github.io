@@ -47,7 +47,8 @@
       },
       "scale": {
         "scheme": "purpleorange",
-        "reverse":true
+        "reverse":true,
+        "domainMid": 0.01
       }
     },
     "strokeWidth": {
