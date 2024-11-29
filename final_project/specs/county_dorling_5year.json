@@ -1,77 +1,77 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Change in rent over the past 5 years",
+    "text": "Change in rent over the past five years",
     "anchor": "start",
-    "subtitle": ["Points represent counties and are sized by population.","Data from Zillow Observed Rent Index (ZORI)."]
+    "subtitle": [
+      "Points represent counties and are sized by 2020 population.",
+      "Data from Zillow Observed Rent Index (ZORI)."
+    ]
   },
   "width": 700,
   "height": 500,
-  "data": {
-    "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/final_project/data/zori_county_most_recent_clean.csv"
-  },
-  "transform": [
+  "layer": [
     {
-      "lookup": "fips",
-      "from": {
-        "data": {
-          "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/final_project/shapefiles/county_dorling_topo.json",
-          "format": {
-            "type": "topojson",
-            "feature": "county_dorling"
+      "data": {
+        "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/final_project/shapefiles/county_dorling_topo.json",
+        "format": {"type": "topojson", "feature": "county_dorling"}
+      },
+      "mark": {
+        "type": "geoshape",
+        "stroke": "black",
+        "strokeWidth": 0.2,
+        "fill": "#f7f7f7"
+      },
+      "projection": {"type": "identity", "reflectY": true}
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/final_project/data/zori_county_most_recent_clean.csv"
+      },
+      "transform": [
+        {
+          "lookup": "fips",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/final_project/shapefiles/county_dorling_topo.json",
+              "format": {"type": "topojson", "feature": "county_dorling"}
+            },
+            "key": "properties.fips",
+            "fields": ["type", "geometry", "properties"]
+          }
+        }
+      ],
+      "encoding": {
+        "color": {
+          "field": "zori_5yc",
+          "type": "quantitative",
+          "legend": {
+            "title": null,
+            "format": ".0%",
+            "orient": "right",
+            "direction": "vertical",
+            "offset": 20,
+            "gradientLength": 200
+          },
+          "scale": {
+            "scheme": "oranges",
+            "domainMax": 0.5,
+            "domainMin": 0
           }
         },
-        "key": "properties.fips",
-        "fields": ["type", "geometry", "properties"]
-      }
+        "tooltip": [
+          {"field": "properties.name", "title": "County"},
+          {"field": "zori", "title": "Rent index", "format": "$,.0f"},
+          {"field": "zori_5yc", "title": "Change since last year", "format": ".2%"}
+        ]
+      },
+      "projection": {"type": "identity", "reflectY": true},
+      "mark": {"type": "geoshape", "stroke": null, "strokeWidth": 0.5}
     }
   ],
-  "encoding": {
-    "color": {
-      "field": "zori_5yc",
-      "type": "quantitative",
-      "legend": {
-        "title": null,
-        "format": ".0%",
-        "orient": "right",
-        "direction": "vertical",
-        "offset": 20,  
-        "gradientLength": 200
-      },
-      "scale": {
-        "scheme": "yelloworangebrown",
-        "domainMin": 0,
-        "domainMax": 0.5
-
-      }
-    },
-    "tooltip": [
-      {
-        "field": "properties.name",
-        "title": "County"
-      },
-      {
-        "field": "zori",
-        "title": "Rent index",
-        "format": "$,.0f"
-      },
-      {
-        "field": "zori_5yc",
-        "title": "Change in the past five years",
-        "format": ".2%"
-      }
-    ]
-  },
-  "projection": {
-    "type": "identity",
-    "reflectY": true
-  },
-  "mark": {"type": "geoshape", "stroke": null, "strokeWidth": 0.5},
   "config": {
     "font": "Montserrat, sans-serif",
-    "view": {
-      "stroke": "transparent"
-    },
+    "view": {"stroke": "transparent"},
     "background": "#f7f7f7",
     "legend": {
       "titleFont": "Montserrat, sans-serif",
