@@ -62,7 +62,7 @@
         "tooltip": [
           {"field": "properties.name", "title": "County"},
           {"field": "zori", "title": "Rent index", "format": "$,.0f"},
-          {"field": "zori_5yc", "title": "Change since last year", "format": ".2%"}
+          {"field": "zori_5yc", "title": "Change in the past five years", "format": ".2%"}
         ]
       },
       "projection": {"type": "identity", "reflectY": true},

@@ -43,7 +43,7 @@
       ],
       "encoding": {
         "color": {
-          "field": "zori_5yc",
+          "field": "zori_1yc",
           "type": "quantitative",
           "legend": {
             "title": null,
@@ -63,7 +63,7 @@
         "tooltip": [
           {"field": "properties.name", "title": "County"},
           {"field": "zori", "title": "Rent index", "format": "$,.0f"},
-          {"field": "zori_5yc", "title": "Change since last year", "format": ".2%"}
+          {"field": "zori_1yc", "title": "Change since last year", "format": ".2%"}
         ]
       },
       "projection": {"type": "identity", "reflectY": true},
