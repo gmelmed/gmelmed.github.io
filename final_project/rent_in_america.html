@@ -66,7 +66,7 @@
             The United States is facing a once-in-a-generation housing affordability crisis. In mid 2022, a typical american renter devoted a greater share of her income to rent <a href="https://www.moodyscre.com/insights/market-insights/q2-2024-housing-affordability-update/#:~:text=National%20Rent%2Dto%2DIncome%20Ratio,from%2027.8%25%20a%20year%20earlier.">than at any point this century</a>. Housing is chronically undersupplied in most of the places where people want to live, and the crisis was made acute when demand for housing surged in the wake of the COVID-19 pandemic.
         </p>
         <p>
-            Happily, the crisis reached its peak in mid-2022. This is little comfort to millions of Americans whose rent is still eating up more of their monthly budget than ever before, but it does mean that explosive rent growth has ended in many areas. Policy makers throughout the country (mainly in the south and southwest) have recognized the crisis and taken steps to address it by unlocking abundant housing.
+            Happily, the crisis peaked in mid-2022. This is little comfort to millions of Americans whose rent is still eating up more of their monthly budget than ever before, but it does mean that explosive rent growth has ended in many areas. Policy makers throughout the country (mainly in the south and southwest) have recognized the crisis and taken steps to address it by unlocking abundant housing.
         </p>    
         <p>   
             Not all areas are so lucky, however. Recovery has been uneven and the crisis is still raging in many parts of the country. This project aims to explore the geography of the rent crisis in the US, understand the factors that drive rent inflation, and highlight effective policy solutions.
@@ -86,15 +86,24 @@
     </section>
     <section>
         <div class="chart-description">
+            <h3>Where are Americans moving?</h3>
+            <p>
+                To understand America's rent crisis, it helps to understand which areas are gaining and losing population. The map below shows population change from 2020 to 2023 by state. Since the pandemic, hundreds of thousands of people have moved away from large states with major cities. Mew York, California, and Illinois experienced the biggest losses. Meanwhile, the states in the 'sun belt' (roughly, the southeast, southwest, and mountain west) has seen the largest population gains. The primary driver of this migration is the cost of living. Housing costs in major coastal cities and Chicago have become prohibitive for many Americans, and Americas are seeking cheaper (and warmer) areas as a result. This has been helped along by the rise of remote work - many Americans are no longer tied to their place of employment and can live wherever they want.<sup id="fn2-ref"><a href="#fn2">2</a></sup>
+            </p>
+        </div>
+        <figure id="Location2">
+    </section>
+    <section>
+        <div class="chart-description">
             <h3>Mapping Rent</h3>
-            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                The map below shows the year-on-year change in rent prices in US counties, which are sized by population. Rent inflation is felt most acutely in the midwest and northeast. In the 'sun belt' (roughly, the southeast to the southwest), rent inflation is near or below overall inflation. This is a welcome sight for sun belt residents, as those regions experienced the most dramatic rent inflation immediately after COVID. A small handful of counties, mostly in the Texas, even saw their rent index <i>decrease</i> over the past year.<sup id="fn2-ref"><a href="#fn2">2</a></sup>
+            <p> 
+                The map below shows the year-on-year change in rent prices in US counties, which are sized by population. Rent inflation is felt most acutely in the midwest and northeast. In the sunt belt, rent inflation is near or below overall inflation. This is a welcome sight for sun belt residents, as those regions experienced the most dramatic rent inflation immediately after COVID. A small handful of counties, mostly in the Texas, even saw their rent index <i>decrease</i> over the past year.<sup id="fn3-ref"><a href="#fn3">2</a></sup>
             </p>
             <p>
                 Use the zoom and search features to explore the data.
             </p>
         </div>
-        <figure id="Location2">
+        <figure id="Location3">
             <iframe class="bigmap" 
             src="specs/zori_county_bubble.html" 
             frameborder="0" 
@@ -108,37 +117,30 @@
             <h3>
                 Who builds homes?
             </h3>
-            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+            <p>
                 I believe the rent crisis is mainly caused by an under-supply of housing in the areas where people want to live. When there are fewer available rental units in an area, renters have to compete for a limited number of homes, which gives landlords room to charge higher rents.
             </p>
             <p>
                 Consider the chart plotting America's 50 largest metro areas, comparing their rent index changes against new multi-unit housing approvals per 10,000 residents this year. A clear pattern emerges: metro areas experiencing the highest rent inflation tend to have the lowest home building rates. This relationship is particularly stark in mid-sized northeastern cities like Hartford, Providence, Buffalo, and Cleveland, where rent inflation exceeds 5.5% while new multi-unit construction languishes at fewer than 2 structures per 10,000 people.
             </p>
             <p>
-                At the opposite end of the spectrum stands Austin, which is emerging as a beacon of housing affordability amid a national rental crisis. With more than 10 new multi-unit structures per 10,000 people—the second-highest building rate nationally—Austin has managed to buck the trend of steep rent increases plaguing other major metros.<sup id="fn3-ref"><a href="#fn3">3</a></sup>
+                At the opposite end of the spectrum stands Austin, which is emerging as a beacon of housing affordability amid a national rental crisis. With more than 10 new multi-unit structures per 10,000 people—the second-highest building rate nationally—Austin has managed to buck the trend of steep rent increases plaguing other major metros.<sup id="fn4-ref"><a href="#fn4">3</a></sup>
             </p>
         </div>
         <figure id="Location4"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
     </section>
     <section>
         <div class="chart-description">
-            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+            <p> 
                 The next chart provides further evidence of a supply-driven market dynamic. It plots the same 50 metro areas, comparing rent inflation against the Zillow Observed Rent Demand Index (ZORDI), which measures the typical traffic a rental listing receives on their site. While "rent demand" might suggest total market activity, ZORDI actually captures the level of interest each individual rental listing attracts. In essence, it's a barometer of <i>competition</i> for available units in each metro area.
             </p>
             <p>
-                This visualization presents almost a mirror image of the previous chart. Metro areas experiencing the steepest rent increases typically show the lowest ZORDI scores. The contrast between our previous extreme examples, Austin and Hartford, becomes even more striking here—their positions flip. Renters face extreme competition in Hartford and very little in Austin.<sup id="fn4-ref"><a href="#fn4">3</a></sup>
+                This visualization presents almost a mirror image of the previous chart. Metro areas experiencing the steepest rent increases typically show the lowest ZORDI scores. The contrast between our previous extreme examples, Austin and Hartford, becomes even more striking here—their positions flip. Renters face extreme competition in Hartford and very little in Austin.<sup id="fn5-ref"><a href="#fn5">3</a></sup>
             </p>
         </div>
         <figure id="Location5"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
     </section>
-    <section>
-        <div class="chart-description">
-            <h3>Population Change</h3>
-            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                Placeholder text
-            </p>
-        </div>
-        <figure id="Location6"></figure> 
+
 
     </section>
     <footer class = "footnotes">
@@ -158,13 +160,22 @@
                 I scraped the ZORI data from the Zillow's website. I used the FRED API to get the Consumer Price Index (CPI) for all urban consumers. I built the chart using vega-lite.<a href="#fn1-ref">↩</a>
             </li>
             <li id="fn2">
-                This chart uses the same Zillow data as the previous chart. I calculated YoY change using python. I built the map using D3 and mapbox. The D3 spec for this map uses the most recent ZORI data for each county. For population data, I used 2023 US Census figures. To locate conties on the map, I used the latitude and longitude of population centroids (rather than the geographic centers of counties), also from the US Census. The goal of this map is to show how rent inflation is distributed across the US while providing an accurate picture of the population density.<a href="#fn2-ref">↩</a>
+                <p>
+                    Cost of living and remote work aren't the only factors driving Americans to the sun belt. People also argue that these areas are gaining population because (i) the US is an ageing country and the sun belt contains many popular retirement areas, (ii) sun belt states, especially in the south, tend to have lower taxes, (iii) many of these states, like Texas, Georgia, and North Carolina, are booming economies in their own right, and (iv) crime and other quality-of-life issues have risen in major cities. The reasons people give typically depend on their politics, but almost every observer agrees that housing costs play a major role.
+                </p>
+                <p>
+                    I made this map using Pitch Interactive's <a href = "https://pitchinteractiveinc.github.io/tilegrams/<a href=">tilegram maker</a>. The app allows the user to input data in csv format and generates a topojson of the US with states sized by the data. I used the most recent US Census population data for this map. I built the map using vega-lite.
+                </p>
+            <a href="#fn2-ref">↩</a>
             </li>
-            <li id ="fn3">
-                I acquired the homebuilding data from the US Census Bureau using their API. I chose to focus on multi-unit structures because they are the most likely to be rented. To calculate homebuilding per capita, I used metro are population figures from the 2023 US Census. I calculated the homebuilding rate using python. I built the chart using vega-lite.<a href="#fn3-ref">↩</a>
+            <li id="fn3">
+                This chart uses the same Zillow data as the previous chart. I calculated YoY change using python. I built the map using D3 and mapbox. The D3 spec for this map uses the most recent ZORI data for each county. For population data, I used 2023 US Census figures. To locate conties on the map, I used the latitude and longitude of population centroids (rather than the geographic centers of counties), also from the US Census. The goal of this map is to show how rent inflation is distributed across the US while providing an accurate picture of the population density.<a href="#fn3-ref">↩</a>
             </li>
-            <li id="fn4">
-                Like ZORI, I acquired ZORDI data by scraping Zillow's website. Zillow makes all of this information easily downloadable on their website, but does not offer an API for their public data. Strange.<a href="#fn4-ref">↩</a>
+            <li id ="fn4">
+                I acquired the homebuilding data from the US Census Bureau using their API. I chose to focus on multi-unit structures because they are the most likely to be rented. To calculate homebuilding per capita, I used metro are population figures from the 2023 US Census. I calculated the homebuilding rate using python. I built the chart using vega-lite.<a href="#fn4-ref">↩</a>
+            </li>
+            <li id="fn5">
+                Like ZORI, I acquired ZORDI data by scraping Zillow's website. Zillow makes all of this information easily downloadable on their website, but does not offer an API for their public data. Strange.<a href="#fn5-ref">↩</a>
             </li>
         </ol>
 
@@ -264,9 +275,10 @@
         let pop_change_spec = "specs/state_pop_change.json";
         
         vegaEmbed('#Location1', rent_inflation_spec)
+        vegaEmbed('#Location2', pop_change_spec)
         vegaEmbed('#Location4', supply_spec)
         vegaEmbed('#Location5', demand_spec)
-        vegaEmbed('#Location6', pop_change_spec)
+
 
 
         // Select all links in the document
