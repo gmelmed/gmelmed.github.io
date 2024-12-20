@@ -1,74 +1,97 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Housing demand and change in rent.",
+  "description": "CPI and rent inflation over time.",
   "data": {
-    "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/final_project/data/demand_rent_metro.csv"
+    "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/final_project/data/rent_inflation.csv"
   },
   "transform": [
     {
-      "window": [{"op": "max", "field": "date", "as": "max_date"}],
-      "frame": [null, null]
-    },
-    {"filter": "datum.date == datum.max_date"}
+      "filter": "toDate(datum.date) >= toDate('2016-01-01')"
+    }
   ],
   "mark": {
-    "type": "point",
-    "filled": true,
-    "tooltip": true,
-    "color": "#002FA7"
+    "type": "line",
+    "strokeWidth": 2.5
   },
   "encoding": {
     "x": {
-      "field": "demand",
-      "type": "quantitative",
+      "field": "date",
+      "type": "temporal",
       "axis": {
         "grid": false,
-        "title": "Zillow Observed Rent Demand Index (ZORDI)"
+        "tickCount": "year"
       }
     },
     "y": {
-      "field": "zori_yoy",
+      "field": "yoy_change",
       "type": "quantitative",
-      "axis": {"format": "%", "title": "Change in rent index (yoy)"}
+      "axis": {
+        "format": ".0%"
+      }
     },
-    "size": {
-      "field": "pop_2023",
-      "type": "quantitative",
-      "scale": {"type": "linear", "range": [50, 1000]},
-      "legend": {"title": "Population"}
+    "color": {
+      "field": "metric",
+      "type": "nominal",
+      "legend": {
+        "title": "Inflation"
+      },
+      "scale": {
+        "domain": ["Rent", "CPI"]
+      }
     },
-    "opacity": {"condition": {"selection": "hover", "value": 1}, "value": 0.6},
     "tooltip": [
-      {"field": "name", "title": "Metro"},
-      {"field": "zori", "title": "Rent index", "format": "$.0f"},
-      {"field": "zori_yoy", "title": "Change since last year", "format": ".2%"},
-      {"field": "demand", "title": "Rent demand index", "format": ".0f"}
+      {
+        "field": "date",
+        "type": "temporal",
+        "title": "Month",
+        "timeUnit": "yearmonth"
+      },
+      {
+        "field": "metric",
+        "type": "nominal",
+        "title": "Inflation"
+      },
+      {
+        "field": "yoy_change",
+        "type": "quantitative",
+        "title": "Value",
+        "format": ".2%"
+      }
     ]
   },
-  "selection": {
-    "hover": {
-      "type": "single",
-      "on": "mouseover",
-      "empty": "none",
-      "encodings": ["x", "y"]
-    }
+  "height": 400,
+  "width": 600,
+  "title": {
+    "text": "US: Rent and CPI Inflation",
+    "anchor": "start",
+    "subtitle": [
+      "Rent data from Zillow. CPI data from FRED.",
+      ""
+    ]
   },
   "config": {
     "font": "Montserrat, sans-serif",
-    "view": {"stroke": "transparent"},
-    "background": "#f7f7f7",
+    "view": {
+      "stroke": "transparent"
+    },
+    "background":"#f7f7f7",
     "range": {
       "category": [
-        "#002fa7",
-        "#FFD300",
-        "#FF9500",
-        "#FF2B7F",
-        "#00C5CD",
-        "#5D00A6",
-        "#00FF7F"
+      "#002fa7",
+      "#FFD300",
+      "#FF9500",
+      "#FF2B7F",
+      "#00C5CD",
+      "#5D00A6", 
+      "#00FF7F"
       ]
     },
-    "point": {"filled": true, "size": 80, "color": "#002fa7", "opacity": 0.95},
+    "point": {
+      "filled": true,
+      "size": 80,
+      "color": "#e6224b",
+      "opacity": 0.95
+    },
     "axis": {
       "labelColor": "#676A86",
       "labelFontSize": 11,
@@ -93,8 +116,13 @@
       "tickOpacity": 0.5,
       "title": null
     },
-    "axisYDiscrete": {"ticks": false, "labelPadding": 5},
-    "axisXQuantitative": {"grid": true},
+    "axisYDiscrete": {
+      "ticks": false,
+      "labelPadding": 5
+    },
+    "axisXQuantitative": {
+      "grid": true
+    },
     "axisYQuantitative": {
       "gridColor": "#676A86",
       "gridDash": [1, 5],
@@ -110,7 +138,7 @@
     },
     "legend": {
       "titleFont": "Montserrat, sans-serif",
-      "titleFontSize": 14,
+      "titleFontSize":14,
       "titleColor": "#1a1a1a",
       "title": null,
       "labelColor": "#1a1a1a",
@@ -119,16 +147,9 @@
     "title": {
       "font": "Montserrat, sans-serif",
       "fontSize": 16,
-      "color": "#1a1a1a",
+      "color":"#1a1a1a",
       "subtitleFontSize": 14,
       "subtitleColor": "#676A86"
     }
-  },
-  "height": 400,
-  "width": 600,
-  "title": {
-    "text": "Rent demand index and change in rent, November 2024",
-    "subtitle": ["Data from Zillow.", ""],
-    "anchor": "start"
   }
 }
