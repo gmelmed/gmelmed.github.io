@@ -5,8 +5,12 @@
     "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/final_project/data/homebuilding_zori.csv"
   },
   "transform": [
-    {"filter": "datum.date == '2024-10-01'"}
-    ],
+    {
+      "window": [{"op": "max", "field": "date", "as": "max_date"}],
+      "frame": [null, null]
+    },
+    {"filter": "datum.date == datum.max_date"}
+  ],
   "mark": {"type": "point", "filled": true, "tooltip": true},
   "encoding": {
     "x": {
@@ -14,7 +18,7 @@
       "type": "quantitative",
       "axis": {
         "grid": false,
-        "title": "New multi-unit housing per 10k people (ytd)"
+        "title": "New multi-unit housing per 10k people, past year"
       }
     },
     "y": {
@@ -35,7 +39,7 @@
       {"field": "zori_yoy", "title": "Change since last year", "format": ".2%"},
       {
         "field": "multi_rt_pc",
-        "title": "Multi-units authorized per 10k (ytd)",
+        "title": "Multi-units authorized per 10k",
         "format": ".2f"
       }
     ]
@@ -122,7 +126,7 @@
   "height": 400,
   "width": 600,
   "title": {
-    "text": "New multi-unit housing and change in rent, September 2024",
+    "text": "New multi-unit housing and change in rent, October 2024",
     "subtitle": [
       "Rent data from Zillow. New construction and population data from US Census Bureau.",
       ""
