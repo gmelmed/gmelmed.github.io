@@ -55,7 +55,7 @@
           },
           "scale": {
             "scheme": "oranges",
-            "domainMax": 0.6,
+            "domainMax": 0.5,
             "domainMin": 0
           }
         },
