@@ -14,7 +14,10 @@
     {
       "data": {
         "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/final_project/shapefiles/county_dorling_topo.json",
-        "format": {"type": "topojson", "feature": "county_dorling"}
+        "format": {
+          "type": "topojson",
+          "feature": "county_dorling"
+        }
       },
       "mark": {
         "type": "geoshape",
@@ -22,7 +25,10 @@
         "strokeWidth": 0.2,
         "fill": "#f7f7f7"
       },
-      "projection": {"type": "identity", "reflectY": true}
+      "projection": {
+        "type": "identity",
+        "reflectY": true
+      }
     },
     {
       "data": {
@@ -34,10 +40,17 @@
           "from": {
             "data": {
               "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/final_project/shapefiles/county_dorling_topo.json",
-              "format": {"type": "topojson", "feature": "county_dorling"}
+              "format": {
+                "type": "topojson",
+                "feature": "county_dorling"
+              }
             },
             "key": "properties.fips",
-            "fields": ["type", "geometry", "properties"]
+            "fields": [
+              "type",
+              "geometry",
+              "properties"
+            ]
           }
         }
       ],
@@ -54,24 +67,44 @@
             "gradientLength": 200
           },
           "scale": {
-            "scheme": "oranges",
+            "scheme": "yelloworangebrown",
             "domainMax": 0.5,
-            "domainMin": 0
+            "domainMin": 0.1
           }
         },
         "tooltip": [
-          {"field": "properties.name", "title": "County"},
-          {"field": "zori", "title": "Rent index", "format": "$,.0f"},
-          {"field": "zori_5yc", "title": "Change in the past five years", "format": ".2%"}
+          {
+            "field": "properties.name",
+            "title": "County"
+          },
+          {
+            "field": "zori",
+            "title": "Rent index",
+            "format": "$,.0f"
+          },
+          {
+            "field": "zori_5yc",
+            "title": "Change in the past five years",
+            "format": ".2%"
+          }
         ]
       },
-      "projection": {"type": "identity", "reflectY": true},
-      "mark": {"type": "geoshape", "stroke": null, "strokeWidth": 0.5}
+      "projection": {
+        "type": "identity",
+        "reflectY": true
+      },
+      "mark": {
+        "type": "geoshape",
+        "stroke": null,
+        "strokeWidth": 0.5
+      }
     }
   ],
   "config": {
     "font": "Montserrat, sans-serif",
-    "view": {"stroke": "transparent"},
+    "view": {
+      "stroke": "transparent"
+    },
     "background": "#f7f7f7",
     "legend": {
       "titleFont": "Montserrat, sans-serif",
