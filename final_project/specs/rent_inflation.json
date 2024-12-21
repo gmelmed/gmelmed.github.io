@@ -4,94 +4,89 @@
   "data": {
     "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/final_project/data/rent_inflation.csv"
   },
-  "transform": [
+  "transform": [{"filter": "toDate(datum.date) >= toDate('2016-01-01')"}],
+  "layer": [
     {
-      "filter": "toDate(datum.date) >= toDate('2016-01-01')"
+      "mark": {"type": "point", "opacity": 0, "size": 150},
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "axis": {"grid": false, "tickCount": "year"}
+        },
+        "y": {
+          "field": "yoy_change",
+          "type": "quantitative",
+          "axis": {"format": ".0%"}
+        },
+        "color": {
+          "field": "metric",
+          "type": "nominal",
+          "legend": {"title": "Inflation"},
+          "scale": {"domain": ["Rent", "CPI"]}
+        },
+        "tooltip": [
+          {
+            "field": "date",
+            "type": "temporal",
+            "title": "Month",
+            "timeUnit": "yearmonth"
+          },
+          {"field": "metric", "type": "nominal", "title": "Inflation"},
+          {
+            "field": "yoy_change",
+            "type": "quantitative",
+            "title": "Value",
+            "format": ".2%"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {"type": "line", "strokeWidth": 2.5},
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "axis": {"grid": false, "tickCount": "year"}
+        },
+        "y": {
+          "field": "yoy_change",
+          "type": "quantitative",
+          "axis": {"format": ".0%"}
+        },
+        "color": {
+          "field": "metric",
+          "type": "nominal",
+          "legend": {"title": "Inflation"},
+          "scale": {"domain": ["Rent", "CPI"]}
+        }
+      }
     }
   ],
-  "mark": {
-    "type": "line",
-    "strokeWidth": 2.5
-  },
-  "encoding": {
-    "x": {
-      "field": "date",
-      "type": "temporal",
-      "axis": {
-        "grid": false,
-        "tickCount": "year"
-      }
-    },
-    "y": {
-      "field": "yoy_change",
-      "type": "quantitative",
-      "axis": {
-        "format": ".0%"
-      }
-    },
-    "color": {
-      "field": "metric",
-      "type": "nominal",
-      "legend": {
-        "title": "Inflation"
-      },
-      "scale": {
-        "domain": ["Rent", "CPI"]
-      }
-    },
-    "tooltip": [
-      {
-        "field": "date",
-        "type": "temporal",
-        "title": "Month",
-        "timeUnit": "yearmonth"
-      },
-      {
-        "field": "metric",
-        "type": "nominal",
-        "title": "Inflation"
-      },
-      {
-        "field": "yoy_change",
-        "type": "quantitative",
-        "title": "Value",
-        "format": ".2%"
-      }
-    ]
-  },
   "height": 400,
   "width": 600,
   "title": {
     "text": "US: Rent and CPI Inflation",
     "anchor": "start",
-    "subtitle": [
-      "Rent data from Zillow. CPI data from FRED.",
-      ""
-    ]
+    "subtitle": ["Rent data from Zillow. CPI data from FRED.", ""]
   },
   "config": {
     "font": "Montserrat, sans-serif",
-    "view": {
-      "stroke": "transparent"
-    },
-    "background":"#f7f7f7",
+    "view": {"stroke": "transparent"},
+    "background": "#f7f7f7",
     "range": {
       "category": [
-      "#002fa7",
-      "#FFD300",
-      "#FF9500",
-      "#FF2B7F",
-      "#00C5CD",
-      "#5D00A6", 
-      "#00FF7F"
+        "#002fa7",
+        "#FFD300",
+        "#FF9500",
+        "#FF2B7F",
+        "#00C5CD",
+        "#5D00A6",
+        "#00FF7F"
       ]
     },
-    "point": {
-      "filled": true,
-      "size": 80,
-      "color": "#e6224b",
-      "opacity": 0.95
-    },
+    "point": {"filled": true, "size": 80, "color": "#e6224b", "opacity": 0.95},
     "axis": {
       "labelColor": "#676A86",
       "labelFontSize": 11,
@@ -116,13 +111,8 @@
       "tickOpacity": 0.5,
       "title": null
     },
-    "axisYDiscrete": {
-      "ticks": false,
-      "labelPadding": 5
-    },
-    "axisXQuantitative": {
-      "grid": true
-    },
+    "axisYDiscrete": {"ticks": false, "labelPadding": 5},
+    "axisXQuantitative": {"grid": true},
     "axisYQuantitative": {
       "gridColor": "#676A86",
       "gridDash": [1, 5],
@@ -138,7 +128,7 @@
     },
     "legend": {
       "titleFont": "Montserrat, sans-serif",
-      "titleFontSize":14,
+      "titleFontSize": 14,
       "titleColor": "#1a1a1a",
       "title": null,
       "labelColor": "#1a1a1a",
@@ -147,7 +137,7 @@
     "title": {
       "font": "Montserrat, sans-serif",
       "fontSize": 16,
-      "color":"#1a1a1a",
+      "color": "#1a1a1a",
       "subtitleFontSize": 14,
       "subtitleColor": "#676A86"
     }
