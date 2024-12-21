@@ -32,11 +32,11 @@
             "title": "Month",
             "timeUnit": "yearmonth"
           },
-          {"field": "metric", "type": "nominal", "title": "Inflation"},
+          {"field": "metric", "type": "nominal", "title": "Category"},
           {
             "field": "yoy_change",
             "type": "quantitative",
-            "title": "Value",
+            "title": "Inflation",
             "format": ".2%"
           }
         ]
