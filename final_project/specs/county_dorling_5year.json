@@ -69,7 +69,7 @@
           "scale": {
             "scheme": "yelloworangebrown",
             "domainMax": 0.5,
-            "domainMin": 0.1
+            "domainMid": 0
           }
         },
         "tooltip": [
