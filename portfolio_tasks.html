@@ -50,7 +50,7 @@
 
     <section>
         <div class="chart-description">
-            <h2>CC1: Hosting</h2>
+            <h2>CC1: Hosting.</h2>
             <p>
                 <b>Task:</b> Set up your own Github account and live page using GitHub pages; Add two charts using the <tt>vegaEmbed</tt> function. <sup><a href="#fn1" id="ref1">1</a></sup>
             </p>
@@ -59,10 +59,42 @@
         <figure id="cc1_2"></figure>
     </section>
 
+    <section>
+        <div class="chart-description">
+            <h2>CC2: Building.</h2>
+            <p>
+                <b>Task:</b> Build two separate charts using the “create” tool from Economics Observatory's <a href="https://www.economicsobservatory.com/create">"create" tool</a>. Embed the two charts in your page.
+            </p>
+        </div>
+        <figure id="cc2_1"></figure>
+        <figure id="cc2_2"></figure>
+    </section>
+
+    <section>
+        <div class="chart-description">
+            <h2>CC4: Replication.</h2>
+            <p>
+                <b>Task:</b> Find a chart that a journalist, think tank, television channel or company has used. Your challenge this week is to replicate it, and then improve on it.
+            </p>
+            <p>
+                <i>This chart initially appeared in an FT article on the Dollar:</i>
+            </p>
+                <div style="text-align: center;">
+                    <img src="chart_specs/ft_example.png" alt="FT chart" width="600" height="400">
+                </div>
+            <p>
+                <i>Yes, even FT is occasionally guilty of publishing the dreaded dual axis chart. If the viewer doesn't pay attention, he may think the Renminbi's share of global reserves is already just behind the dollar. FT released a <a href="https://www.ft.com/content/3888bdba-d0d6-49a1-9e78-4d07ce458f42">revised version</a> with the two series as a trellis chart. This is an improvement, but I still think it obscures the distance that remains between the two currencies. Here is my recreation and revised version.</i>
+            </p>    
+            
+        </div>
+        <figure id="cc4_1"></figure>
+        <figure id="cc4_2"></figure>
+    </section>
     <footer class="footnotes">
             <ol>
                 <li id="fn1">
-                    I changed the configuration of the JSON specs for these charts to match the style of my portfolio. I changed nothing else.<a href="#fn1-ref">↩</a>
+                    Data and charts from Richard Davies' <a href="https://rdeconomist.github.io/library">chart library.</a> I changed the configuration of the JSON specs for these charts to match the style of my portfolio.
+                    <a href="#fn1-ref">↩</a>
                 </li>
             </ol>
         </div>
@@ -71,9 +103,13 @@
 <script>
     let rd_football_spec = "chart_specs/rd_football.json";
     let rd_accommodation_spec = "chart_specs/rd_accommodation.json";
+    let eco_nuclear_spec = "chart_specs/eco_nuclear.json";
+    let eco_india_spec = "chart_specs/eco_india_phones.json";
 
     vegaEmbed('#cc1_1', rd_football_spec)
     vegaEmbed('#cc1_2', rd_accommodation_spec)
+    vegaEmbed('#cc2_1', eco_nuclear_spec)
+    vegaEmbed('#cc2_2', eco_india_spec)
 
     // Select all links in the document
     document.querySelectorAll("a").forEach(link => {
