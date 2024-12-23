@@ -52,6 +52,9 @@
               "properties"
             ]
           }
+        },
+        {
+          "filter": "datum.zori_5yc != 0"
         }
       ],
       "encoding": {

@@ -39,6 +39,9 @@
             "key": "properties.fips",
             "fields": ["type", "geometry", "properties"]
           }
+        },
+        {
+          "filter": "datum.zori_1yc != 0"
         }
       ],
       "encoding": {
