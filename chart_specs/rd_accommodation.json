@@ -1,0 +1,184 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.16.3.json",
+  "description": "Number of households in temporary accommodation. Quarterly data from 1998 Q1 until 2023 Q3.",
+  "view": {
+    "stroke": "transparent"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Article%20Charts/data/UK_DLUHC_tempHousing.csv"
+  },
+  "selection": {
+    "region": {
+      "type": "multi",
+      "fields": [
+        "Type"
+      ],
+      "bind": "legend"
+    }
+  },
+  "mark": {
+    "type": "area"
+  },
+  "encoding": {
+    "color": {
+      "field": "Type",
+      "type": "nominal",
+      "scale": {
+        "scheme": "magma"
+      },
+      "legend": {
+        "title": "Type of Temporary Accommodation",
+        "orient": "bottom",
+        "columns": 1,
+        "labelLimit": 0,
+        "titleLimit": 0,
+        "labelFontSize": 10
+      }
+    },
+    "x": {
+      "field": "Date",
+      "type": "temporal",
+      "axis": {
+        "grid": false,
+        "title": null
+      }
+    },
+    "y": {
+      "field": "Households",
+      "type": "quantitative",
+      "axis": {
+        "gridDash": [
+          1,
+          5
+        ],
+        "titleAngle": 0,
+        "titleAlign": "left",
+        "titleFontStyle": "italic",
+        "titleY": -10
+      }
+    },
+    "opacity": {
+      "condition": {
+        "selection": "region",
+        "value": 1
+      },
+      "value": 0.1
+    }
+  },
+  "config": {
+    "font": "Montserrat, sans-serif",
+    "text": {
+      "color": "#676A86",
+      "align": "left",
+      "baseline": "middle",
+      "dx": 7,
+      "dy": 0,
+      "fontSize": 11
+    },
+    "view": {
+      "stroke": null,
+      "continuousWidth": 600,
+      "continuousHeight": 300,
+      "discreteWidth": 600,
+      "discreteHeight": 300
+    },
+    "background": "#f7f7f7",
+    "bar": {
+      "color": "#179fdb"
+    },
+    "line": {
+      "color": "#e6224b"
+    },
+    "rule": {
+      "color": "#676A86"
+    },
+    "area": {
+      "opacity": 0.3
+    },
+    "point": {
+      "filled": true,
+      "size": 80,
+      "color": "#e6224b",
+      "opacity": 0.95
+    },
+    "geoshape": {
+      "stroke": "white",
+      "strokeWidth": 0.3
+    },
+    "rect": {
+      "fill": "#d6d4d4",
+      "opacity": 0.3
+    },
+    "axis": {
+      "labelColor": "#676A86",
+      "labelFontSize": 11,
+      "labelFont": "Montserrat, sans-serif",
+      "labelOpacity": 0.7,
+      "tickColor": "#676A86",
+      "tickOpacity": 0.5,
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [
+        2,
+        2
+      ],
+      "gridOpacity": 0.5,
+      "title": null,
+      "titleColor": "#676A86",
+      "titleOpacity": 0.8,
+      "tickSize": 4
+    },
+    "axisXDiscrete": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": null
+    },
+    "axisYDiscrete": {
+      "ticks": false,
+      "labelPadding": 5
+    },
+    "axisXTemporal": {
+      "grid": false,
+      "ticks": true
+    },
+    "axisXQuantitative": {
+      "grid": true
+    },
+    "axisYQuantitative": {
+      "gridColor": "#676A86",
+      "gridDash": [
+        1,
+        5
+      ],
+      "gridOpacity": 0.5,
+      "ticks": false,
+      "labelPadding": 5,
+      "tickCount": 8,
+      "titleAngle": 0,
+      "titleAlign": "left",
+      "titleBaseline": "bottom",
+      "titleX": 0,
+      "titleY": -5
+    },
+    "title": {
+      "color": "#122b39E6",
+      "subtitleColor": "#676A86",
+      "font": "Montserrat, sans-serif",
+      "subtitleFont": "Montserrat, sans-serif",
+      "anchor": "start",
+      "fontSize": 12,
+      "subtitleFontSize": 11,
+      "subtitlePadding": 4,
+      "offset": 0,
+      "frame": "group"
+    },
+    "legend": {
+      "disable": true
+    }
+  },
+  "height": 400,
+  "width": 600
+}

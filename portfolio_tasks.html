@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabe Melmed</title>
+
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Petrona:wght@400;700&family=Cardo:wght@400;700&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Link to your CSS -->
+    <link rel="stylesheet" type="text/css" href="portfolio_styles.css">
+
+    <!-- Vega and Vega-Lite for visualizations -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+    <style>
+        #chartGrid {
+            display: flex;
+        }
+    </style>
+</head>
+
+
+<body> 
+
+    <h1 class="big" style="margin-bottom: 0px;"> <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
+        <!-- This is a header, it is the largest text on the page -->
+        Gabe Melmed
+    </h1>
+    <!-- Add a body paragraph -->
+    <p class = "links">
+        <!-- we're setting the margin to 0px so the header and authour name are close together -->
+        <a href="index.html">Home</a> | 
+        <a href="/final_project/rent_in_america.html">Mapping America's Housing Crisis</a> |
+        <a href="lifeex.html">Diverging Life Expectancy</a> |  
+        <a href="eco.html">Economics Observatory Contributions</a> | 
+        <a href="other_projects.html">Other Projects</a> | More coming soon.
+    </p>
+
+    <!-- Description paragraph -->
+     <p>
+        <i>
+            This is a portfolio of coding challanges I have created for PP434: Automated Data Visualization for Public Policy.
+        </i>
+     </p>
+
+    <section>
+        <div class="chart-description">
+            <h2>CC1: Hosting</h2>
+            <p>
+                <b>Task:</b> Set up your own Github account and live page using GitHub pages; Add two charts using the <tt>vegaEmbed</tt> function. <sup><a href="#fn1" id="ref1">1</a></sup>
+            </p>
+        </div>
+        <figure id="cc1_1"></figure>
+        <figure id="cc1_2"></figure>
+    </section>
+
+    <footer class="footnotes">
+            <ol>
+                <li id="fn1">
+                    I changed the configuration of the JSON specs for these charts to match the style of my portfolio. I changed nothing else.<a href="#fn1-ref">↩</a>
+                </li>
+            </ol>
+        </div>
+    </footer>    
+</body>
+<script>
+    let rd_football_spec = "chart_specs/rd_football.json";
+    let rd_accommodation_spec = "chart_specs/rd_accommodation.json";
+
+    vegaEmbed('#cc1_1', rd_football_spec)
+    vegaEmbed('#cc1_2', rd_accommodation_spec)
+
+    // Select all links in the document
+    document.querySelectorAll("a").forEach(link => {
+        const isLinkStyle = link.closest(".links"); // Check if the link is in the .links class
+        const isFootnoteLink = link.href.includes("#fn"); // Links to footnotes
+        const isSuperscriptLink = link.href.includes("#fn") && link.id.includes("ref"); // Superscripts back to the footnote
+
+        // Open in same tab for .links, footnotes, or superscripts
+        if (isLinkStyle || isFootnoteLink || isSuperscriptLink) {
+            link.removeAttribute("target");
+        } else {
+            // Otherwise, open in a new tab
+            link.setAttribute("target", "_blank");
+        }
+    });
+
+</script>
+
+</html>

@@ -1,0 +1,209 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+        "text": "Women's football performance vs economic development",
+        "subtitle": [
+            "Human Development Index (x), FIFA ranking points (y). 2021 data",
+            "Size of points based on popluation",
+            ""
+        ],
+        "subtitleFontStyle": "italic",
+        "subtitleFontSize": 10,
+        "anchor": "start",
+        "color": "black"
+    },
+    "data": {
+        "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/football/dataWomensFIFA.csv",
+        "format": {
+            "type": "csv"
+        }
+    },
+    "mark": {
+        "type": "circle",
+        "color": "green",
+        "opacity": 0.7
+    },
+    "height": 400,
+    "width": 600,
+    "encoding": {
+        "x": {
+            "field": "HDI_2021",
+            "type": "quantitative",
+            "scale": {
+                "domain": [
+                    0.3,
+                    1
+                ]
+            },
+            "axis": {
+                "grid": false
+            },
+            "title": null
+        },
+        "y": {
+            "field": "FIFA_rank_2021",
+            "type": "quantitative",
+            "scale": {
+                "domain": [
+                    300,
+                    2200
+                ]
+            },
+            "axis": {
+                "grid": false
+            },
+            "title": null
+        },
+        "size": {
+            "field": "Population_2021",
+            "type": "quantitative",
+            "title": "Prison Rate",
+            "scale": {
+                "range": [
+                    10,
+                    800
+                ]
+            },
+            "legend": null
+        },
+        "tooltip": [
+            {
+                "field": "country",
+                "type": "ordinal",
+                "title": "Country"
+            },
+            {
+                "field": "FIFA_rank_2021",
+                "type": "quantitative",
+                "title": "Rank",
+                "format": ".0f"
+            },
+            {
+                "field": "HDI_2021",
+                "type": "quantitative",
+                "title": "HDI",
+                "format": ".2f"
+            },
+            {
+                "field": "Population_2021",
+                "type": "quantitative",
+                "title": "Population",
+                "format": ","
+            }
+        ]
+    },
+    "config": {
+        "font": "Montserrat, sans-serif",
+        "text": {
+            "color": "#676A86",
+            "align": "left",
+            "baseline": "middle",
+            "dx": 7,
+            "dy": 0,
+            "fontSize": 11
+        },
+        "view": {
+            "stroke": null,
+            "continuousWidth": 600,
+            "continuousHeight": 300,
+            "discreteWidth": 600,
+            "discreteHeight": 300
+        },
+        "background": "#f7f7f7",
+        "bar": {
+            "color": "#179fdb"
+        },
+        "line": {
+            "color": "#e6224b"
+        },
+        "rule": {
+            "color": "#676A86"
+        },
+        "area": {
+            "opacity": 0.3
+        },
+        "point": {
+            "filled": true,
+            "size": 80,
+            "color": "#e6224b",
+            "opacity": 0.95
+        },
+        "geoshape": {
+            "stroke": "white",
+            "strokeWidth": 0.3
+        },
+        "rect": {
+            "fill": "#d6d4d4",
+            "opacity": 0.3
+        },
+        "axis": {
+            "labelColor": "#676A86",
+            "labelFontSize": 11,
+            "labelFont": "Montserrat, sans-serif",
+            "labelOpacity": 0.7,
+            "tickColor": "#676A86",
+            "tickOpacity": 0.5,
+            "domainColor": "#676A86",
+            "domainOpacity": 0.5,
+            "gridColor": "#676A86",
+            "gridDash": [
+                2,
+                2
+            ],
+            "gridOpacity": 0.5,
+            "title": null,
+            "titleColor": "#676A86",
+            "titleOpacity": 0.8,
+            "tickSize": 4
+        },
+        "axisXDiscrete": {
+            "grid": false,
+            "labelAngle": 0,
+            "tickCount": 10,
+            "tickOpacity": 0.5,
+            "title": null
+        },
+        "axisYDiscrete": {
+            "ticks": false,
+            "labelPadding": 5
+        },
+        "axisXTemporal": {
+            "grid": false,
+            "ticks": true
+        },
+        "axisXQuantitative": {
+            "grid": true
+        },
+        "axisYQuantitative": {
+            "gridColor": "#676A86",
+            "gridDash": [
+                1,
+                5
+            ],
+            "gridOpacity": 0.5,
+            "ticks": false,
+            "labelPadding": 5,
+            "tickCount": 8,
+            "titleAngle": 0,
+            "titleAlign": "left",
+            "titleBaseline": "bottom",
+            "titleX": 0,
+            "titleY": -5
+        },
+        "title": {
+            "color": "#122b39E6",
+            "subtitleColor": "#676A86",
+            "font": "Montserrat, sans-serif",
+            "subtitleFont": "Montserrat, sans-serif",
+            "anchor": "start",
+            "fontSize": 12,
+            "subtitleFontSize": 11,
+            "subtitlePadding": 4,
+            "offset": 0,
+            "frame": "group"
+        },
+        "legend": {
+            "disable": true
+        }
+    }
+}
