@@ -22,7 +22,7 @@
     },
     "layer": [
       {
-        "mark": {"type": "line", "strokeCap": "round", "color": "#0A3161"},
+        "mark": {"type": "line", "strokeCap": "round"},
         "transform": [
           {"filter": "datum.series == 'U.S. dollars'"},
           {"filter": "datum.share != 0"}
@@ -31,14 +31,20 @@
           "y": {
             "field": "share",
             "type": "quantitative",
-            "title": "USD Share (%)",
-            "scale": {"domain": [0, 80]},
-            "axis": {"titleColor": "#0A3161"}
+            "title": null,
+            "scale": {"domain": [45, 75]}
+          },
+          "color": {
+            "datum": "USD Share (%)",
+            "scale": {
+              "domain": ["USD Share (%)", "RMB Share (%)"],
+              "range": ["#0A3161", "#EE1C25"]
+            }
           }
         }
       },
       {
-        "mark": {"type": "line", "strokeCap": "round", "color": "#EE1C25"},
+        "mark": {"type": "line", "strokeCap": "round"},
         "transform": [
           {"filter": "datum.series == 'Chinese renminbi'"},
           {"filter": "datum.share != 0"}
@@ -47,9 +53,16 @@
           "y": {
             "field": "share",
             "type": "quantitative",
-            "title": "RMB Share (%)",
-            "scale": {"domain": [0, 4]},
-            "axis": {"orient": "right", "titleColor": "#EE1C25"}
+            "title": null,
+            "scale": {"domain": [1, 7]},
+            "axis": {"orient": "right"}
+          },
+          "color": {
+            "datum": "RMB Share (%)",
+            "scale": {
+              "domain": ["USD Share (%)", "RMB Share (%)"],
+              "range": ["#0A3161", "#EE1C25"]
+            }
           }
         }
       }
@@ -61,12 +74,25 @@
         "color": "#676A86",
         "align": "left",
         "baseline": "middle",
+        "dx": 7,
+        "dy": 0,
         "fontSize": 11
       },
       "view": {
-        "stroke": null
+        "stroke": null,
+        "continuousWidth": 600,
+        "continuousHeight": 300,
+        "discreteWidth": 600,
+        "discreteHeight": 300
       },
       "background": "#f7f7f7",
+      "bar": {"color": "#179fdb"},
+      "line": {"color": "#676A86"},
+      "rule": {"color": "#676A86"},
+      "area": {"opacity": 0.3},
+      "point": {"filled": true, "size": 80, "color": "#e6224b", "opacity": 0.95},
+      "geoshape": {"stroke": "white", "strokeWidth": 0.3},
+      "rect": {"fill": "#d6d4d4", "opacity": 0.3},
       "axis": {
         "labelColor": "#676A86",
         "labelFontSize": 11,
@@ -79,8 +105,33 @@
         "gridColor": "#676A86",
         "gridDash": [2, 2],
         "gridOpacity": 0.5,
-        "tickSize": 4,
-        "grid":false
+        "title": null,
+        "titleColor": "#676A86",
+        "titleOpacity": 0.8,
+        "tickSize": 4
+      },
+      "axisXDiscrete": {
+        "grid": false,
+        "labelAngle": 0,
+        "tickCount": 10,
+        "tickOpacity": 0.5,
+        "title": null
+      },
+      "axisYDiscrete": {"ticks": false, "labelPadding": 5},
+      "axisXTemporal": {"grid": false, "ticks": true},
+      "axisXQuantitative": {"grid": true},
+      "axisYQuantitative": {
+        "gridColor": "#676A86",
+        "gridDash": [1, 5],
+        "gridOpacity": 0.5,
+        "ticks": false,
+        "labelPadding": 5,
+        "tickCount": 8,
+        "titleAngle": 0,
+        "titleAlign": "left",
+        "titleBaseline": "bottom",
+        "titleX": 0,
+        "titleY": -5
       },
       "title": {
         "color": "#122b39E6",
@@ -93,6 +144,13 @@
         "subtitlePadding": 4,
         "offset": 0,
         "frame": "group"
+      },
+      "legend": {
+        "orient": "top",
+        "title": null,
+        "labelFontSize": 12,
+        "offset": 0,
+        "padding": 4
       }
     }
   }
