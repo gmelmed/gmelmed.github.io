@@ -35,9 +35,9 @@
             "scale": {"domain": [45, 75]}
           },
           "color": {
-            "datum": "USD Share (%)",
+            "datum": "US Dollar",
             "scale": {
-              "domain": ["USD Share (%)", "RMB Share (%)"],
+              "domain": ["US Dollar", "Renminbi (right scale)"],
               "range": ["#0A3161", "#EE1C25"]
             }
           }
@@ -58,9 +58,9 @@
             "axis": {"orient": "right"}
           },
           "color": {
-            "datum": "RMB Share (%)",
+            "datum": "Renminbi (right scale)",
             "scale": {
-              "domain": ["USD Share (%)", "RMB Share (%)"],
+              "domain": ["US Dollar", "Renminbi (right scale)"],
               "range": ["#0A3161", "#EE1C25"]
             }
           }
