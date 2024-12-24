@@ -1,38 +1,88 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "Stock prices of 5 Tech Companies over Time.",
     "data": {
       "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/data/cofer_clean.csv"
     },
-    "title":{
+    "title": {
       "text": "The dollar is dominant in FX reserves but its lead is starting to slip",
-      "subtitle" :["Currency share of allocated foreign currency reserves (%) | Source: IMF",""],
+      "subtitle": [
+        "Currency share of allocated foreign currency reserves (%) | Source: IMF",
+        ""
+      ],
       "anchor": "start"
     },
-    "transform": [{"filter": "datum.share != 0"}],  
-    "mark": "line",
+    "transform": [{"filter": "datum.share != 0"}],
+    "mark": {"type": "line", "strokeCap": "round"},
     "encoding": {
       "x": {"field": "date", "type": "temporal"},
-      "y": {
-        "field": "share", 
-        "type": "quantitative",
-        "scale": {"domain": [0, 100]}
+      "y": {"field": "share", "type": "quantitative"},
+      "color": {
+        "field": "series",
+        "type": "nominal",
+        "scale": {
+          "domain": [
+            "U.S. dollars",
+            "Chinese renminbi",
+            "euro",
+            "Japanese yen",
+            "pounds sterling",
+            "Australian dollars",
+            "Canadian dollars",
+            "Swiss francs"
+          ],
+          "range": [
+            "#0A3161",
+            "#EE1C25",
+            "lightgrey",
+            "lightgrey",
+            "lightgrey",
+            "lightgrey",
+            "lightgrey",
+            "lightgrey"
+          ]
+        },
+        "legend": {"values": ["U.S. dollars", "Chinese renminbi"]}
       },
-      "color": {"field": "series", "type": "nominal"}
+      "strokeWidth": {
+        "condition": {
+          "test": "datum.series == 'U.S. dollars' || datum.series == 'Chinese renminbi'",
+          "value": 2.5
+        },
+        "value": 2
+      },
+      "opacity": {
+        "condition": {
+          "test": "datum.series == 'U.S. dollars' || datum.series == 'Chinese renminbi'",
+          "value": 1
+        },
+        "value": 0.8
+      }
     },
     "config": {
       "font": "Montserrat, sans-serif",
+      "text": {
+        "color": "#676A86",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 7,
+        "dy": 0,
+        "fontSize": 11
+      },
       "view": {
-        "stroke": "transparent"
+        "stroke": null,
+        "continuousWidth": 600,
+        "continuousHeight": 300,
+        "discreteWidth": 600,
+        "discreteHeight": 300
       },
       "background": "#f7f7f7",
-      "range": {
-        "category": [
-          "#EE1C25",
-          "#0A3161"
-        ]
-      },
-      "point": {"filled": true, "size": 80, "color": "#002fa7", "opacity": 0.95},
+      "bar": {"color": "#179fdb"},
+      "line": {"color": "#676A86"},
+      "rule": {"color": "#676A86"},
+      "area": {"opacity": 0.3},
+      "point": {"filled": true, "size": 80, "color": "#e6224b", "opacity": 0.95},
+      "geoshape": {"stroke": "white", "strokeWidth": 0.3},
+      "rect": {"fill": "#d6d4d4", "opacity": 0.3},
       "axis": {
         "labelColor": "#676A86",
         "labelFontSize": 11,
@@ -57,16 +107,9 @@
         "tickOpacity": 0.5,
         "title": null
       },
-      "axisYDiscrete": {
-        "ticks": false,
-        "labelPadding": 5
-      },
-      "axisXQuantitative": {
-        "grid": false
-      },
-      "axisXTemporal": {
-        "grid": false
-      },
+      "axisYDiscrete": {"ticks": false, "labelPadding": 5},
+      "axisXTemporal": {"grid": false, "ticks": true},
+      "axisXQuantitative": {"grid": true},
       "axisYQuantitative": {
         "gridColor": "#676A86",
         "gridDash": [1, 5],
@@ -80,22 +123,19 @@
         "titleX": 0,
         "titleY": -5
       },
-      "legend": {
-        "titleFont": "Montserrat, sans-serif",
-        "titleFontSize": 14,
-        "titleColor": "#1a1a1a",
-        "title": null,
-        "labelColor": "#1a1a1a",
-        "labelFontSize": 12,
-        "orient": "top-left"
-      },
       "title": {
+        "color": "#122b39E6",
+        "subtitleColor": "#676A86",
         "font": "Montserrat, sans-serif",
+        "subtitleFont": "Montserrat, sans-serif",
+        "anchor": "start",
         "fontSize": 16,
-        "color": "#1a1a1a",
         "subtitleFontSize": 14,
-        "subtitleColor": "#676A86"
-      }
+        "subtitlePadding": 4,
+        "offset": 0,
+        "frame": "group"
+      },
+      "legend": {"orient": "top", "title": null, "labelFontSize": 12}
     },
     "height": 400,
     "width": 600
