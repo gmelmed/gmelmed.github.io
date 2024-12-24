@@ -83,9 +83,13 @@
                     <img src="chart_specs/ft_example.png" alt="FT chart" width="600" height="400">
                 </div>
             <p>
-                <i>Yes, even FT is occasionally guilty of publishing the dreaded dual axis chart. If the viewer doesn't pay attention, he may think the Renminbi's share of global reserves is already just behind the dollar. FT released a <a href="https://www.ft.com/content/3888bdba-d0d6-49a1-9e78-4d07ce458f42">revised version</a> with the two series as a trellis chart with separate scales. This is an improvement, but I still think it obscures the distance that remains between the two currencies. Here is my recreation and revised version.</i>
+                <i>Yes, even FT is occasionally guilty of publishing the dreaded dual axis chart. If the viewer doesn't pay attention, he may think the Renminbi's share of global reserves is already just behind the dollar. FT released a <a href="https://www.ft.com/content/3888bdba-d0d6-49a1-9e78-4d07ce458f42">revised version</a> with the two series as a trellis chart with separate scales. This is an improvement, but I still think it obscures the distance that remains between the two currencies. Here is my recreation:</i>
             </p>    
         <figure id="cc4_1"></figure>
+            <p>
+                <i>And my revised version:</i>
+            </p>
+
         <figure id="cc4_2"></figure>
             <p>
                 <i>When both series are on the same scale and other currencies are included, we can see the latter claim is true - the dollar isn't as dominant as it once was. We also see how much the original chart exaggerates the Renminbi's share. It isn't even the fourth most held currency.</i>
@@ -108,13 +112,16 @@
     let rd_accommodation_spec = "chart_specs/rd_accommodation.json";
     let eco_nuclear_spec = "chart_specs/eco_nuclear.json";
     let eco_india_spec = "chart_specs/eco_india_phones.json";
+    let ft_recreation_spec = "chart_specs/ft_recreation.json";
     let ft_remake_spec = "chart_specs/ft_remake.json";
 
     vegaEmbed('#cc1_1', rd_football_spec)
     vegaEmbed('#cc1_2', rd_accommodation_spec)
     vegaEmbed('#cc2_1', eco_nuclear_spec)
     vegaEmbed('#cc2_2', eco_india_spec)
-    vegaEmbed('#cc4_1', ft_remake_spec)
+    vegaEmbed('#cc4_1', ft_recreation_spec)
+    vegaEmbed('#cc4_2', ft_remake_spec)
+    
 
     // Select all links in the document
     document.querySelectorAll("a").forEach(link => {

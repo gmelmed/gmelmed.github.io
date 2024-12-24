@@ -1,0 +1,98 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "The dollar is dominant in FX reserves but its lead is starting to slip",
+      "subtitle": [
+        "Currency share of allocated foreign currency reserves (%) | Source: IMF",
+        ""
+      ],
+      "anchor": "start"
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/data/cofer_clean.csv"
+    },
+    "width": 600,
+    "height": 400,
+    "encoding": {
+      "x": {
+        "field": "date",
+        "type": "temporal",
+        "axis": {"title": null}
+      }
+    },
+    "layer": [
+      {
+        "mark": {"type": "line", "strokeCap": "round", "color": "#0A3161"},
+        "transform": [
+          {"filter": "datum.series == 'U.S. dollars'"},
+          {"filter": "datum.share != 0"}
+        ],
+        "encoding": {
+          "y": {
+            "field": "share",
+            "type": "quantitative",
+            "title": "USD Share (%)",
+            "scale": {"domain": [0, 80]},
+            "axis": {"titleColor": "#0A3161"}
+          }
+        }
+      },
+      {
+        "mark": {"type": "line", "strokeCap": "round", "color": "#EE1C25"},
+        "transform": [
+          {"filter": "datum.series == 'Chinese renminbi'"},
+          {"filter": "datum.share != 0"}
+        ],
+        "encoding": {
+          "y": {
+            "field": "share",
+            "type": "quantitative",
+            "title": "RMB Share (%)",
+            "scale": {"domain": [0, 4]},
+            "axis": {"orient": "right", "titleColor": "#EE1C25"}
+          }
+        }
+      }
+    ],
+    "resolve": {"scale": {"y": "independent"}},
+    "config": {
+      "font": "Montserrat, sans-serif",
+      "text": {
+        "color": "#676A86",
+        "align": "left",
+        "baseline": "middle",
+        "fontSize": 11
+      },
+      "view": {
+        "stroke": null
+      },
+      "background": "#f7f7f7",
+      "axis": {
+        "labelColor": "#676A86",
+        "labelFontSize": 11,
+        "labelFont": "Montserrat, sans-serif",
+        "labelOpacity": 0.7,
+        "tickColor": "#676A86",
+        "tickOpacity": 0.5,
+        "domainColor": "#676A86",
+        "domainOpacity": 0.5,
+        "gridColor": "#676A86",
+        "gridDash": [2, 2],
+        "gridOpacity": 0.5,
+        "tickSize": 4,
+        "grid":false
+      },
+      "title": {
+        "color": "#122b39E6",
+        "subtitleColor": "#676A86",
+        "font": "Montserrat, sans-serif",
+        "subtitleFont": "Montserrat, sans-serif",
+        "anchor": "start",
+        "fontSize": 16,
+        "subtitleFontSize": 14,
+        "subtitlePadding": 4,
+        "offset": 0,
+        "frame": "group"
+      }
+    }
+  }
