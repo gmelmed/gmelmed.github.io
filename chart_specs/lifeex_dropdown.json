@@ -1,0 +1,212 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Life Expectancy by County, 2000-2019",
+      "anchor": "start",
+      "subtitle": ["Data: IHME", ""]
+    },
+    "width": 600,
+    "height": 400,
+    "data": {
+      "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/data/lifeex_counties.csv"
+    },
+    "params": [
+      {
+        "name": "State",
+        "value": "California",
+        "bind": {
+          "input": "select",
+          "options": [
+            "Alabama",
+            "Alaska",
+            "Arizona",
+            "Arkansas",
+            "California",
+            "Colorado",
+            "Connecticut",
+            "Delaware",
+            "Florida",
+            "Georgia",
+            "Hawaii",
+            "Idaho",
+            "Illinois",
+            "Indiana",
+            "Iowa",
+            "Kansas",
+            "Kentucky",
+            "Louisiana",
+            "Maine",
+            "Maryland",
+            "Massachusetts",
+            "Michigan",
+            "Minnesota",
+            "Mississippi",
+            "Missouri",
+            "Montana",
+            "Nebraska",
+            "Nevada",
+            "New Hampshire",
+            "New Jersey",
+            "New Mexico",
+            "New York",
+            "North Carolina",
+            "North Dakota",
+            "Ohio",
+            "Oklahoma",
+            "Oregon",
+            "Pennsylvania",
+            "Rhode Island",
+            "South Carolina",
+            "South Dakota",
+            "Tennessee",
+            "Texas",
+            "Utah",
+            "Vermont",
+            "Virginia",
+            "Washington",
+            "West Virginia",
+            "Wisconsin",
+            "Wyoming"
+          ]
+        }
+      }
+    ],
+    "layer": [
+      {
+        "transform": [
+          {"filter": "datum.state != State"},
+          {"filter": "datum.val != 0"}
+        ],
+        "mark": {
+          "type": "line",
+          "point": false,
+          "color": "lightgray",
+          "opacity": 0.3,
+          "strokeWidth": 1.5
+        },
+        "encoding": {
+          "x": {
+            "field": "year",
+            "type": "temporal",
+            "title": "Year"
+          },
+          "y": {
+            "field": "val",
+            "type": "quantitative",
+            "title": "Life Expectancy (years)",
+            "scale": {"domain": [60, 95]}
+          },
+          "detail": {"field": "id"}
+        }
+      },
+      {
+        "transform": [
+          {"filter": "datum.state == State"},
+          {"filter": "datum.val != 0"}
+        ],
+        "mark": {
+          "type": "line",
+          "point": false,
+          "color": "#002fa7",
+          "strokeWidth": 1.5
+        },
+        "encoding": {
+          "x": {
+            "field": "year",
+            "type": "temporal",
+            "title": "Year"
+          },
+          "y": {
+            "field": "val",
+            "type": "quantitative",
+            "title": "Life Expectancy (years)",
+            "scale": {"domain": [60, 95]}
+          },
+          "detail": {"field": "id"},
+          "tooltip": [
+            {"field": "location_name", "title": "County"},
+            {"field": "val", "title": "Life Expectancy", "format": ".1f"}
+          ]
+        }
+      }
+    ],
+    "config": {
+      "font": "Montserrat, sans-serif",
+      "text": {
+        "color": "#676A86",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 7,
+        "dy": 0,
+        "fontSize": 11
+      },
+      "view": {
+        "stroke": null,
+        "continuousWidth": 600,
+        "continuousHeight": 300,
+        "discreteWidth": 600,
+        "discreteHeight": 300
+      },
+      "background": "#f7f7f7",
+      "bar": {"color": "#179fdb"},
+      "line": {"color": "#676A86"},
+      "rule": {"color": "#676A86"},
+      "area": {"opacity": 0.3},
+      "point": {"filled": true, "size": 80, "color": "#e6224b", "opacity": 0.95},
+      "geoshape": {"stroke": "white", "strokeWidth": 0.3},
+      "rect": {"fill": "#d6d4d4", "opacity": 0.3},
+      "axis": {
+        "labelColor": "#676A86",
+        "labelFontSize": 11,
+        "labelFont": "Montserrat, sans-serif",
+        "labelOpacity": 0.7,
+        "tickColor": "#676A86",
+        "tickOpacity": 0.5,
+        "domainColor": "#676A86",
+        "domainOpacity": 0.5,
+        "gridColor": "#676A86",
+        "gridDash": [2, 2],
+        "gridOpacity": 0.5,
+        "title": null,
+        "titleColor": "#676A86",
+        "titleOpacity": 0.8,
+        "tickSize": 4
+      },
+      "axisXDiscrete": {
+        "grid": false,
+        "labelAngle": 0,
+        "tickCount": 10,
+        "tickOpacity": 0.5,
+        "title": null
+      },
+      "axisYDiscrete": {"ticks": false, "labelPadding": 5},
+      "axisXTemporal": {"grid": false, "ticks": true},
+      "axisXQuantitative": {"grid": true},
+      "axisYQuantitative": {
+        "gridColor": "#676A86",
+        "gridDash": [1, 5],
+        "gridOpacity": 0.5,
+        "ticks": false,
+        "labelPadding": 5,
+        "tickCount": 8,
+        "titleAngle": 0,
+        "titleAlign": "left",
+        "titleBaseline": "bottom",
+        "titleX": 0,
+        "titleY": -5
+      },
+      "title": {
+        "color": "#122b39E6",
+        "subtitleColor": "#676A86",
+        "font": "Montserrat, sans-serif",
+        "subtitleFont": "Montserrat, sans-serif",
+        "anchor": "start",
+        "fontSize": 16,
+        "subtitleFontSize": 14,
+        "subtitlePadding": 4,
+        "offset": 0,
+        "frame": "group"
+      },
+      "legend": {"orient": "top", "title": null, "labelFontSize": 12}
+    }
+}
