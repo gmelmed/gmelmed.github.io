@@ -97,6 +97,18 @@
         </div>
         
     </section>
+
+    <section>
+        <div class="chart-description">
+            <h2>CC10: Interactivity.</h2>
+            <p>
+                <b>Task:</b> Produce two vizualisations that have interactive elements. 
+            </p>
+        </div>
+        <figure id="cc10_1"></figure>
+    </section>
+
+
     <footer class="footnotes">
             <ol>
                 <li id="fn1">
@@ -114,6 +126,7 @@
     let eco_india_spec = "chart_specs/eco_india_phones.json";
     let ft_recreation_spec = "chart_specs/ft_recreation.json";
     let ft_remake_spec = "chart_specs/ft_remake.json";
+    let interactive_map_spec = "chart_specs/lifeex_state_interactive.json";
 
     vegaEmbed('#cc1_1', rd_football_spec)
     vegaEmbed('#cc1_2', rd_accommodation_spec)
@@ -121,6 +134,7 @@
     vegaEmbed('#cc2_2', eco_india_spec)
     vegaEmbed('#cc4_1', ft_recreation_spec)
     vegaEmbed('#cc4_2', ft_remake_spec)
+    vegaEmbed('#cc10_1', interactive_map_spec)
     
 
     // Select all links in the document

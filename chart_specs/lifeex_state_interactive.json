@@ -81,16 +81,6 @@
               "field": "val",
               "title": "Estimate",
               "format": ".1f"
-            },
-            {
-              "field": "lower",
-              "title": "Lower bound",
-              "format": ".1f"
-            },
-            {
-              "field":"upper",
-              "title":"Upper bound",
-              "format":".1f"
             }
           ]
         },
