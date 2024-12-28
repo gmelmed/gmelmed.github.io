@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 600,
-    "height": 400,
+    "width": 700,
+    "height": 500,
     "data": {
       "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/data/us_states_topo.json",
       "format": {

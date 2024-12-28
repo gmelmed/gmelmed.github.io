@@ -5,8 +5,8 @@
       "anchor": "start",
       "subtitle": ["Data: US Census Bureau ACS 2022", ""]
     },
-    "width": 600,
-    "height": 400,
+    "width": 700,
+    "height": 500,
     "data": {
       "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/data/us_unemployment_rate.csv"
     },
