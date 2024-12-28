@@ -1,0 +1,46 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Distribution of Life Expectancy Across US Counties",
+    "width": 600,
+    "height": 70,
+    "data": {
+      "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/data/lifeex_counties.csv"
+    },
+    "transform": [
+    {"filter": "datum.year == 2003 || datum.year == 2007 || datum.year == 2011 || datum.year == 2015 || datum.year == 2019"},
+    {
+      "density": "val",
+      "groupby": ["year"],
+      "extent": [70, 85]
+    }
+  ],
+    "encoding": {
+      "x": {
+        "field": "value", 
+        "type": "quantitative", 
+        "title": "Life Expectancy (years)",
+        "scale": {"domain": [70, 85]}
+      },
+      "y": {
+        "field": "density", 
+        "type": "quantitative", 
+        "stack": "zero",
+        "axis": {"title": null, "labels": false, "ticks": false}
+      },
+      "row": {
+        "field": "year",
+        "type": "ordinal",
+        "title": "Year"
+      }
+    },
+    "mark": {
+      "type": "area",
+      "color": "#002fa7",
+      "opacity": 0.75
+    },
+    "config": {
+      "view": {"stroke": null},
+      "font": "Montserrat, sans-serif",
+      "background": "#f7f7f7"
+    }
+  }
