@@ -52,8 +52,7 @@
               "gradientLength": 200
             },
             "scale": {
-              "scheme": "yellowgreenblue",
-              "reverse":true
+              "scheme": "purpleorange"
               }
           },
           "tooltip": [

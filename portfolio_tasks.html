@@ -92,7 +92,7 @@
 
         <figure id="cc4_2"></figure>
             <p>
-                When both series are on the same scale and other currencies are included, we can see the latter claim is true - the dollar isn't as dominant as it once was. We also see how much the original chart exaggerates the Renminbi's share. It isn't even the fourth most held currency.
+                When both series are on the same scale and other currencies are included, we can see the latter claim is true - the dollar isn't as dominant as it once was. We also see how much the original chart exaggerates the Renminbi's share. It isn't even the fourth most held currency.<sup><a href="#fn2" id="ref1">2</a></sup>
             </p>
         </div>
         
@@ -119,8 +119,12 @@
             <p>
                 <b>Task:</b> Produce two charts that use advanced analytics.
             </p>
+            <p>
+                For the next visualization, I returned to the life expectancy data I used for my <a href="lifeex.html">policy memo</a> on the subject last year. In it, I argued that life expectancy in the US is diverging by geography and by class. The decline and stagnation of overall life expectancy conceals a great deal of variation. Consider the density plots of life expectancy by county every four years. The distributions gradually become flatter and wider, indicating a widening gap between the shortest- and longest-living areas.
+            </p>
+            <figure id="cc8_2"></figure>
         </div>
-        <figure id="cc8_1"></figure>
+        
     </section>
 
     <section>
@@ -129,9 +133,17 @@
             <p>
                 <b>Task:</b> Produce two visualizations that have interactive elements.
             </p>
+            <p>
+                For these visualizations, I continued with the life expectancy data. The first shows life expectancy by state from 2000 to 2019. Moving forward in time, we see how some states are living dramatically longer while other areas are stagnating.
+            </p>
+            <figure id="cc10_1"></figure>
+            <p>
+                The second variation shows inequality <i>within</i> states. The plot shows every county in the US, with the user able to select a state from the dropdown menu and highlight its counties. Life expectancy varies widely within some states.
+
+            </p>
+            <figure id="cc10_2"></figure>    
         </div>
-        <figure id="cc10_1"></figure>
-        <figure id="cc10_2"></figure>
+        
     </section>
 
 
@@ -140,6 +152,10 @@
                 <li id="fn1">
                     Data and charts from Richard Davies' <a href="https://rdeconomist.github.io/library">chart library.</a> I changed the configuration of the JSON specs for these charts to match the style of my portfolio.
                     <a href="#fn1-ref">↩</a>
+                </li>
+                <li id="fn2">
+                    Data for this chart from the IMF's <a href="https://data.imf.org/?sk=e6a5f467-c14b-4aa8-9f6d-5a09ec4e62a4">COFER database</a>. One unimportant detail: the blue and red I used to represent the US and China are the exact shades from the countries' flags.
+                    <a href="#fn2-ref">↩</a>
                 </li>
             </ol>
         </div>
@@ -166,7 +182,7 @@
     vegaEmbed('#cc4_2', ft_remake_spec)
     vegaEmbed('#cc7_1', states_map_spec)
     vegaEmbed('#cc7_2', states_choropleth_spec)
-    vegaEmbed('#cc8_1', lifeex_distribution_spec)
+    vegaEmbed('#cc8_2', lifeex_distribution_spec)
     vegaEmbed('#cc10_1', interactive_map_spec)
     vegaEmbed('#cc10_2', lifeex_dropdown_spec)
     
