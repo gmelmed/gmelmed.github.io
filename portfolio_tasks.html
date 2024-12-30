@@ -72,6 +72,24 @@
 
     <section>
         <div class="chart-description">
+            <h2>CC3: Debating.</h2>
+            <p>
+                <b>Task:</b> Produce two charts that support or refute (or are related to in some way) a topic discussed at the <a href = "https://www.economicsobservatory.com/festival-of-economics-2024">Festival of Economics.</a> Your task:
+
+                <!-- bullets -->
+                <ul>
+                    <li>Set out a topic that was discussed</li>
+                    <li>Make two charts that support or refute it or a related to an argument on this topic. This could be two that support, two that refute, or a mixture.</li>
+                    <li>Comment on what you find</li>
+                </ul>
+            </p>
+            <p>
+                On day 1 of the festival, the panel discussed <a href="https://www.economicsobservatory.com/under-performing-how-can-we-boost-britains-low-productivity">UK Productivity</a>, which the panelists argue is under-performing.
+                <figure id="cc3_1"></figure>
+            </p>
+
+    <section>
+        <div class="chart-description">
             <h2>CC4: Replication.</h2>
             <p>
                 <b>Task:</b> Find a chart that a journalist, think tank, television channel or company has used. Your challenge this week is to replicate it, and then improve on it.
@@ -166,6 +184,7 @@
     let rd_accommodation_spec = "chart_specs/rd_accommodation.json";
     let eco_nuclear_spec = "chart_specs/eco_nuclear.json";
     let eco_india_spec = "chart_specs/eco_india_phones.json";
+    let mva_spec = "chart_specs/mva.json";
     let ft_recreation_spec = "chart_specs/ft_recreation.json";
     let ft_remake_spec = "chart_specs/ft_remake.json";
     let states_map_spec = "chart_specs/us_states_plain.json";
@@ -178,6 +197,7 @@
     vegaEmbed('#cc1_2', rd_accommodation_spec)
     vegaEmbed('#cc2_1', eco_nuclear_spec)
     vegaEmbed('#cc2_2', eco_india_spec)
+    vegaEmbed('#cc3_1', mva_spec)
     vegaEmbed('#cc4_1', ft_recreation_spec)
     vegaEmbed('#cc4_2', ft_remake_spec)
     vegaEmbed('#cc7_1', states_map_spec)
