@@ -26,7 +26,20 @@
         },
         "value": "grey"
       },
-      "opacity": {"condition": {"param": "hover", "value": 1}, "value": 0.2}
+      "opacity": {"condition": {"param": "hover", "value": 1}, "value": 0.2},
+      "tooltip": [
+        {
+          "field": "country",
+          "type": "nominal",
+          "title": "Countries"
+        },
+        {
+          "field": "value",
+          "type": "quantitative",
+          "format": ".2%",
+          "title": "MVA"
+        }
+      ]
     },
     "layer": [
       {
@@ -45,10 +58,14 @@
       },
       {"mark": "line"},
       {
-        "encoding": {
-          "x": {"aggregate": "max", "field": "date"},
-          "y": {"aggregate": {"argmax": "date"}, "field": "value"}
-        },
+        "transform": [
+          {
+            "window": [{"op": "rank", "as": "rank"}],
+            "sort": [{"field": "date", "order": "descending"}],
+            "groupby": ["country"]
+          },
+          {"filter": "datum.rank == 1"}
+        ],
         "layer": [
           {"mark": {"type": "circle"}},
           {
