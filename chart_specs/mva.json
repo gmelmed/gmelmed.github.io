@@ -14,7 +14,7 @@
         "type": "quantitative",
         "title": "Manufacturing value added, % of GDP",
         "axis":{
-            "format": "%"
+          "format":"%"
         }
       },
       "color": {
@@ -63,7 +63,7 @@
     "title": {
       "text": "UK lags its peers in manufacturing",
       "anchor": "start",
-      "subtitle": ["Data from OECD", ""]
+      "subtitle": ["Data from World Bank", ""]
     },
     "config": {
       "font": "Montserrat, sans-serif",
@@ -72,10 +72,9 @@
       "range": {
         "category": [
           "#FFD300",
-          "#FF9500",
+          "#00C5CD",
           "#002fa7",
           "#FF2B7F",
-          "#00C5CD",
           "#5D00A6",
           "#00FF7F"
         ]
@@ -98,14 +97,6 @@
         "titleOpacity": 0.8,
         "tickSize": 4
       },
-      "axisXDiscrete": {
-        "grid": false,
-        "labelAngle": 0,
-        "tickCount": 10,
-        "tickOpacity": 0.5,
-        "title": null
-      },
-      "axisYDiscrete": {"ticks": false, "labelPadding": 5},
       "axisXTemporal": {"grid": false},
       "axisYQuantitative": {
         "gridColor": "#676A86",
