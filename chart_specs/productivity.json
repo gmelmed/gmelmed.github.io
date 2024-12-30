@@ -1,16 +1,20 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "Multi-series line chart with labels and interactive highlight on hover.  We also set the selection's initial value to provide a better screenshot",
+    "description": "Multi-series line chart with labels and interactive highlight on hover. We also set the selection's initial value to provide a better screenshot",
     "data": {"url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/data/gdpph_clean.csv"},
-    "transform": [{"filter": "datum.year >= 2015"}],
+    "transform": [{"filter": "toDate(datum.year) >= toDate('2015-01-01')"}],
     "encoding": {
       "x": {"field": "year", "type": "temporal", "title": "year"},
-      "y": {"field": "value", "type": "quantitative", "title": "value"},
+      "y": {
+        "field": "value",
+        "type": "quantitative",
+        "title": "value",
+        "scale": {"domain": [80, 140]}},
       "color": {
         "condition": {
           "param": "hover",
-          "field":"country",
-          "type":"nominal",
+          "field": "country",
+          "type": "nominal",
           "legend": null
         },
         "value": "grey"
@@ -23,32 +27,127 @@
         "value": 0.2
       }
     },
-    "layer": [{
-      "description": "transparent layer to make it easier to trigger selection",
-      "params": [{
-        "name": "hover",
-        "value": [{"country": "AAPL"}],
-        "select": {
-          "type": "point",
-          "fields": ["country"],
-          "on": "pointerover"
-        }
-      }],
-      "mark": {"type": "line", "strokeWidth": 8, "stroke": "transparent"}
-    }, {
-      "mark": "line"
-    }, {
-      "encoding": {
-        "x": {"aggregate": "max", "field": "year"},
-        "y": {"aggregate": {"argmax": "year"}, "field": "value"}
+    "layer": [
+      {
+        "transform": [{"filter": "datum.country != 'United Kingdom'"}],
+        "description": "transparent layer to make it easier to trigger selection",
+        "params": [{
+          "name": "hover",
+          "value": [{"country": "United States"}],
+          "select": {
+            "type": "point",
+            "fields": ["country"],
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }],
+        "mark": {"type": "line", "strokeWidth": 8, "stroke": "transparent"}
+      }, 
+      {
+        "transform": [{"filter": "datum.country != 'United Kingdom'"}],
+        "mark": "line"
+      }, 
+      {
+        "transform": [{"filter": "datum.country != 'United Kingdom'"}],
+        "encoding": {
+          "x": {"aggregate": "max", "field": "year"},
+          "y": {"aggregate": {"argmax": "year"}, "field": "value"},
+          "opacity": {
+            "condition": {
+              "param": "hover",
+              "value": 1
+            },
+            "value": 0
+          }
+        },
+        "layer": [{
+          "mark": {"type": "circle"}
+        }, {
+          "mark": {"type": "text", "align": "left", "dx": 4},
+          "encoding": {"text": {"field": "country", "type": "nominal"}}
+        }]
       },
-      "layer": [{
-        "mark": {"type": "circle"}
-      }, {
-        "mark": {"type": "text", "align": "left", "dx": 4},
-        "encoding": {"text": {"field":"country", "type": "nominal"}}
-      }]
-    }],
-    "config": {"view": {"stroke": null}}
+      {
+        "transform": [{"filter": "datum.country == 'United Kingdom'"}],
+        "encoding": {
+          "color": {"value": "#C8102E"},
+          "opacity": {"value": 1}
+        },
+        "mark": {"type": "line", "zIndex": 1}
+      },
+      {
+        "transform": [{"filter": "datum.country == 'United Kingdom'"}],
+        "encoding": {
+          "x": {"aggregate": "max", "field": "year"},
+          "y": {"aggregate": {"argmax": "year"}, "field": "value"},
+          "color": {"value": "#C8102E"},
+          "opacity": {"value": 1}
+        },
+        "layer": [{
+          "mark": {"type": "circle"}
+        }, {
+          "mark": {"type": "text", "align": "left", "dx": 4},
+          "encoding": {"text": {"field": "country", "type": "nominal"}}
+        }]
+      }
+    ],
+    "config": {
+      "font": "Montserrat, sans-serif",
+      "view": {"stroke": "transparent"},
+      "background": "#f7f7f7",
+      "range": {
+        "category": [
+          "#002fa7"
+        ]
+      },
+      "point": {"filled": true, "size": 80, "color": "#e6224b", "opacity": 0.95},
+      "axis": {
+        "labelColor": "#676A86",
+        "labelFontSize": 11,
+        "labelFont": "Montserrat, sans-serif",
+        "labelOpacity": 0.7,
+        "tickColor": "#676A86",
+        "tickOpacity": 0.5,
+        "domainColor": "#676A86",
+        "domainOpacity": 0.5,
+        "gridColor": "#676A86",
+        "gridDash": [2, 2],
+        "gridOpacity": 0.5,
+        "title": null,
+        "titleColor": "#676A86",
+        "titleOpacity": 0.8,
+        "tickSize": 4
+      },
+      "axisXTemporal": {"grid": false},
+      "axisYQuantitative": {
+        "gridColor": "#676A86",
+        "gridDash": [1, 5],
+        "gridOpacity": 0.5,
+        "ticks": false,
+        "labelPadding": 5,
+        "tickCount": 8,
+        "titleAngle": 0,
+        "titleAlign": "left",
+        "titleBaseline": "bottom",
+        "titleX": 0,
+        "titleY": -5
+      },
+      "legend": {
+        "titleFont": "Montserrat, sans-serif",
+        "titleFontSize": 14,
+        "titleColor": "#1a1a1a",
+        "title": null,
+        "labelColor": "#1a1a1a",
+        "labelFontSize": 12
+      },
+      "title": {
+        "font": "Montserrat, sans-serif",
+        "fontSize": 16,
+        "color": "#1a1a1a",
+        "subtitleFontSize": 14,
+        "subtitleColor": "#676A86"
+      }
+    },
+    "height": 400,
+    "width": 600
   }
-  
