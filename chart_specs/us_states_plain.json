@@ -1,69 +1,76 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 700,
-    "height": 500,
-    "data": {
-      "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/data/us_states_topo.json",
-      "format": {
-        "type": "topojson",
-        "feature": "geog"
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "US States",
+    "anchor": "start",
+    "subtitle": ["Hover to see state names.", ""]
+  },
+  "width": 700,
+  "height": 500,
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/data/us_states_topo.json",
+        "format": {"type": "topojson", "feature": "geog"}
+      },
+      "projection": {"type": "albersUsa"},
+      "mark": {
+        "type": "geoshape",
+        "stroke": "black",
+        "strokeWidth": 0.3,
+        "fill": "lightgrey"
       }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/data/us_unemployment_rate.csv"
+      },
+      "transform": [
+        {
+          "lookup": "id",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/data/us_states_topo.json",
+              "format": {"type": "topojson", "feature": "geog"}
+            },
+            "key": "id",
+            "fields": ["type", "properties", "geometry"]
+          }
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "stroke": "black",
+        "strokeWidth": 0.3,
+        "fill": "lightgrey",
+        "fillOpacity": 0
+      },
+      "encoding": {
+        "tooltip": [
+          {"field": "state", "title": "State"}
+        ]
+      },
+      "projection": {"type": "albersUsa"}
+    }
+  ],
+  "config": {
+    "font": "Montserrat, sans-serif",
+    "view": {"stroke": "transparent"},
+    "background": "#f7f7f7",
+    "legend": {
+      "titleFont": "Montserrat, sans-serif",
+      "titleFontSize": 14,
+      "titleColor": "#122b39",
+      "title": null,
+      "labelColor": "#122b39",
+      "labelFontSize": 12
     },
     "title": {
-      "text": "US States",
-      "subtitle": ["Hover to see state names.",""]
-    },
-    "mark": {
-      "type": "geoshape",
-      "stroke": "black",
-      "strokeWidth": 0.5,
-      "fill": "lightgray"
-    },
-    "encoding": {
-      "tooltip": {
-        "field": "properties.name",
-        "type": "nominal"
-      }
-    },
-    "projection": {
-      "type": "albersUsa"
-    },
-    "config": {
-      "font": "Montserrat, sans-serif",
-      "text": {
-        "color": "#676A86",
-        "align": "left",
-        "baseline": "middle",
-        "dx": 7,
-        "dy": 0,
-        "fontSize": 11
-      },
-      "view": {
-        "stroke": null,
-        "continuousWidth": 600,
-        "continuousHeight": 300,
-        "discreteWidth": 600,
-        "discreteHeight": 300
-      },
-      "background": "#f7f7f7",
-      "title": {
-        "color": "#122b39E6",
-        "subtitleColor": "#676A86",
-        "font": "Montserrat, sans-serif",
-        "subtitleFont": "Montserrat, sans-serif",
-        "anchor": "start",
-        "fontSize": 16,
-        "subtitleFontSize": 14,
-        "subtitlePadding": 4,
-        "offset": 0,
-        "frame": "group"
-      },
-      "legend": {
-        "orient": "top",
-        "title": null,
-        "labelFontSize": 12,
-        "offset": 0,
-        "padding": 4
-      }
+      "font": "Montserrat-Bold, sans-serif",
+      "color": "#122b39",
+      "fontSize": 16,
+      "subtitleFontSize": 14,
+      "subtitleColor": "#676A86"
     }
   }
+}
