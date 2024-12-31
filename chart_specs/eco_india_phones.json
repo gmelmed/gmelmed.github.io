@@ -32,7 +32,7 @@
       "type": "quantitative",
       "axis": {
         "title": "",
-        "grid": false
+        "grid": true
       }
     }
   },
