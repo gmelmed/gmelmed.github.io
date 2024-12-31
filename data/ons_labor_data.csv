@@ -1,568 +1,4 @@
 date,value,series
-2001-05-01,680,Total vacancies
-2001-06-01,674,Total vacancies
-2001-07-01,663,Total vacancies
-2001-08-01,663,Total vacancies
-2001-09-01,639,Total vacancies
-2001-10-01,626,Total vacancies
-2001-11-01,602,Total vacancies
-2001-12-01,605,Total vacancies
-2002-01-01,616,Total vacancies
-2002-02-01,617,Total vacancies
-2002-03-01,622,Total vacancies
-2002-04-01,613,Total vacancies
-2002-05-01,616,Total vacancies
-2002-06-01,612,Total vacancies
-2002-07-01,613,Total vacancies
-2002-08-01,609,Total vacancies
-2002-09-01,609,Total vacancies
-2002-10-01,608,Total vacancies
-2002-11-01,603,Total vacancies
-2002-12-01,602,Total vacancies
-2003-01-01,596,Total vacancies
-2003-02-01,594,Total vacancies
-2003-03-01,585,Total vacancies
-2003-04-01,588,Total vacancies
-2003-05-01,579,Total vacancies
-2003-06-01,574,Total vacancies
-2003-07-01,576,Total vacancies
-2003-08-01,592,Total vacancies
-2003-09-01,604,Total vacancies
-2003-10-01,610,Total vacancies
-2003-11-01,615,Total vacancies
-2003-12-01,613,Total vacancies
-2004-01-01,617,Total vacancies
-2004-02-01,624,Total vacancies
-2004-03-01,631,Total vacancies
-2004-04-01,636,Total vacancies
-2004-05-01,641,Total vacancies
-2004-06-01,652,Total vacancies
-2004-07-01,654,Total vacancies
-2004-08-01,654,Total vacancies
-2004-09-01,654,Total vacancies
-2004-10-01,658,Total vacancies
-2004-11-01,662,Total vacancies
-2004-12-01,661,Total vacancies
-2005-01-01,655,Total vacancies
-2005-02-01,642,Total vacancies
-2005-03-01,638,Total vacancies
-2005-04-01,642,Total vacancies
-2005-05-01,642,Total vacancies
-2005-06-01,633,Total vacancies
-2005-07-01,624,Total vacancies
-2005-08-01,622,Total vacancies
-2005-09-01,608,Total vacancies
-2005-10-01,606,Total vacancies
-2005-11-01,609,Total vacancies
-2005-12-01,615,Total vacancies
-2006-01-01,612,Total vacancies
-2006-02-01,600,Total vacancies
-2006-03-01,598,Total vacancies
-2006-04-01,597,Total vacancies
-2006-05-01,604,Total vacancies
-2006-06-01,607,Total vacancies
-2006-07-01,611,Total vacancies
-2006-08-01,611,Total vacancies
-2006-09-01,618,Total vacancies
-2006-10-01,620,Total vacancies
-2006-11-01,620,Total vacancies
-2006-12-01,619,Total vacancies
-2007-01-01,629,Total vacancies
-2007-02-01,642,Total vacancies
-2007-03-01,648,Total vacancies
-2007-04-01,651,Total vacancies
-2007-05-01,659,Total vacancies
-2007-06-01,670,Total vacancies
-2007-07-01,681,Total vacancies
-2007-08-01,683,Total vacancies
-2007-09-01,686,Total vacancies
-2007-10-01,691,Total vacancies
-2007-11-01,687,Total vacancies
-2007-12-01,678,Total vacancies
-2008-01-01,687,Total vacancies
-2008-02-01,697,Total vacancies
-2008-03-01,696,Total vacancies
-2008-04-01,679,Total vacancies
-2008-05-01,657,Total vacancies
-2008-06-01,643,Total vacancies
-2008-07-01,624,Total vacancies
-2008-08-01,615,Total vacancies
-2008-09-01,596,Total vacancies
-2008-10-01,562,Total vacancies
-2008-11-01,527,Total vacancies
-2008-12-01,497,Total vacancies
-2009-01-01,478,Total vacancies
-2009-02-01,465,Total vacancies
-2009-03-01,455,Total vacancies
-2009-04-01,443,Total vacancies
-2009-05-01,431,Total vacancies
-2009-06-01,430,Total vacancies
-2009-07-01,438,Total vacancies
-2009-08-01,436,Total vacancies
-2009-09-01,432,Total vacancies
-2009-10-01,437,Total vacancies
-2009-11-01,454,Total vacancies
-2009-12-01,463,Total vacancies
-2010-01-01,467,Total vacancies
-2010-02-01,465,Total vacancies
-2010-03-01,469,Total vacancies
-2010-04-01,479,Total vacancies
-2010-05-01,484,Total vacancies
-2010-06-01,479,Total vacancies
-2010-07-01,461,Total vacancies
-2010-08-01,455,Total vacancies
-2010-09-01,454,Total vacancies
-2010-10-01,474,Total vacancies
-2010-11-01,483,Total vacancies
-2010-12-01,493,Total vacancies
-2011-01-01,490,Total vacancies
-2011-02-01,484,Total vacancies
-2011-03-01,472,Total vacancies
-2011-04-01,461,Total vacancies
-2011-05-01,461,Total vacancies
-2011-06-01,457,Total vacancies
-2011-07-01,462,Total vacancies
-2011-08-01,464,Total vacancies
-2011-09-01,466,Total vacancies
-2011-10-01,462,Total vacancies
-2011-11-01,465,Total vacancies
-2011-12-01,473,Total vacancies
-2012-01-01,473,Total vacancies
-2012-02-01,467,Total vacancies
-2012-03-01,465,Total vacancies
-2012-04-01,471,Total vacancies
-2012-05-01,474,Total vacancies
-2012-06-01,480,Total vacancies
-2012-07-01,484,Total vacancies
-2012-08-01,488,Total vacancies
-2012-09-01,490,Total vacancies
-2012-10-01,494,Total vacancies
-2012-11-01,501,Total vacancies
-2012-12-01,500,Total vacancies
-2013-01-01,505,Total vacancies
-2013-02-01,504,Total vacancies
-2013-03-01,516,Total vacancies
-2013-04-01,523,Total vacancies
-2013-05-01,534,Total vacancies
-2013-06-01,540,Total vacancies
-2013-07-01,536,Total vacancies
-2013-08-01,548,Total vacancies
-2013-09-01,552,Total vacancies
-2013-10-01,567,Total vacancies
-2013-11-01,572,Total vacancies
-2013-12-01,581,Total vacancies
-2014-01-01,595,Total vacancies
-2014-02-01,616,Total vacancies
-2014-03-01,638,Total vacancies
-2014-04-01,654,Total vacancies
-2014-05-01,663,Total vacancies
-2014-06-01,670,Total vacancies
-2014-07-01,681,Total vacancies
-2014-08-01,687,Total vacancies
-2014-09-01,702,Total vacancies
-2014-10-01,703,Total vacancies
-2014-11-01,707,Total vacancies
-2014-12-01,708,Total vacancies
-2015-01-01,720,Total vacancies
-2015-02-01,729,Total vacancies
-2015-03-01,728,Total vacancies
-2015-04-01,728,Total vacancies
-2015-05-01,732,Total vacancies
-2015-06-01,742,Total vacancies
-2015-07-01,742,Total vacancies
-2015-08-01,742,Total vacancies
-2015-09-01,741,Total vacancies
-2015-10-01,742,Total vacancies
-2015-11-01,743,Total vacancies
-2015-12-01,746,Total vacancies
-2016-01-01,745,Total vacancies
-2016-02-01,746,Total vacancies
-2016-03-01,745,Total vacancies
-2016-04-01,748,Total vacancies
-2016-05-01,750,Total vacancies
-2016-06-01,749,Total vacancies
-2016-07-01,753,Total vacancies
-2016-08-01,755,Total vacancies
-2016-09-01,762,Total vacancies
-2016-10-01,758,Total vacancies
-2016-11-01,758,Total vacancies
-2016-12-01,754,Total vacancies
-2017-01-01,767,Total vacancies
-2017-02-01,773,Total vacancies
-2017-03-01,788,Total vacancies
-2017-04-01,783,Total vacancies
-2017-05-01,782,Total vacancies
-2017-06-01,785,Total vacancies
-2017-07-01,794,Total vacancies
-2017-08-01,799,Total vacancies
-2017-09-01,809,Total vacancies
-2017-10-01,819,Total vacancies
-2017-11-01,821,Total vacancies
-2017-12-01,822,Total vacancies
-2018-01-01,815,Total vacancies
-2018-02-01,814,Total vacancies
-2018-03-01,812,Total vacancies
-2018-04-01,819,Total vacancies
-2018-05-01,829,Total vacancies
-2018-06-01,839,Total vacancies
-2018-07-01,843,Total vacancies
-2018-08-01,844,Total vacancies
-2018-09-01,862,Total vacancies
-2018-10-01,861,Total vacancies
-2018-11-01,856,Total vacancies
-2018-12-01,859,Total vacancies
-2019-01-01,847,Total vacancies
-2019-02-01,845,Total vacancies
-2019-03-01,840,Total vacancies
-2019-04-01,835,Total vacancies
-2019-05-01,821,Total vacancies
-2019-06-01,823,Total vacancies
-2019-07-01,816,Total vacancies
-2019-08-01,817,Total vacancies
-2019-09-01,810,Total vacancies
-2019-10-01,807,Total vacancies
-2019-11-01,810,Total vacancies
-2019-12-01,816,Total vacancies
-2020-01-01,819,Total vacancies
-2020-02-01,796,Total vacancies
-2020-03-01,638,Total vacancies
-2020-04-01,472,Total vacancies
-2020-05-01,328,Total vacancies
-2020-06-01,371,Total vacancies
-2020-07-01,429,Total vacancies
-2020-08-01,488,Total vacancies
-2020-09-01,531,Total vacancies
-2020-10-01,557,Total vacancies
-2020-11-01,600,Total vacancies
-2020-12-01,619,Total vacancies
-2021-01-01,621,Total vacancies
-2021-02-01,628,Total vacancies
-2021-03-01,663,Total vacancies
-2021-04-01,765,Total vacancies
-2021-05-01,867,Total vacancies
-2021-06-01,971,Total vacancies
-2021-07-01,1052,Total vacancies
-2021-08-01,1122,Total vacancies
-2021-09-01,1194,Total vacancies
-2021-10-01,1218,Total vacancies
-2021-11-01,1241,Total vacancies
-2021-12-01,1257,Total vacancies
-2022-01-01,1273,Total vacancies
-2022-02-01,1286,Total vacancies
-2022-03-01,1296,Total vacancies
-2022-04-01,1304,Total vacancies
-2022-05-01,1299,Total vacancies
-2022-06-01,1280,Total vacancies
-2022-07-01,1259,Total vacancies
-2022-08-01,1233,Total vacancies
-2022-09-01,1216,Total vacancies
-2022-10-01,1175,Total vacancies
-2022-11-01,1153,Total vacancies
-2022-12-01,1132,Total vacancies
-2023-01-01,1128,Total vacancies
-2023-02-01,1120,Total vacancies
-2023-03-01,1086,Total vacancies
-2023-04-01,1060,Total vacancies
-2023-05-01,1039,Total vacancies
-2023-06-01,1024,Total vacancies
-2023-07-01,1000,Total vacancies
-2023-08-01,983,Total vacancies
-2023-09-01,961,Total vacancies
-2023-10-01,955,Total vacancies
-2023-11-01,929,Total vacancies
-2023-12-01,924,Total vacancies
-2024-01-01,916,Total vacancies
-2024-02-01,919,Total vacancies
-2024-03-01,909,Total vacancies
-2024-04-01,899,Total vacancies
-2024-05-01,875,Total vacancies
-2024-06-01,866,Total vacancies
-2024-07-01,850,Total vacancies
-2024-08-01,837,Total vacancies
-2024-09-01,828,Total vacancies
-2024-10-01,818,Total vacancies
-2001-05-01,2.6,Vacancies per 100 jobs
-2001-06-01,2.5,Vacancies per 100 jobs
-2001-07-01,2.5,Vacancies per 100 jobs
-2001-08-01,2.5,Vacancies per 100 jobs
-2001-09-01,2.4,Vacancies per 100 jobs
-2001-10-01,2.4,Vacancies per 100 jobs
-2001-11-01,2.3,Vacancies per 100 jobs
-2001-12-01,2.3,Vacancies per 100 jobs
-2002-01-01,2.3,Vacancies per 100 jobs
-2002-02-01,2.3,Vacancies per 100 jobs
-2002-03-01,2.3,Vacancies per 100 jobs
-2002-04-01,2.3,Vacancies per 100 jobs
-2002-05-01,2.3,Vacancies per 100 jobs
-2002-06-01,2.3,Vacancies per 100 jobs
-2002-07-01,2.3,Vacancies per 100 jobs
-2002-08-01,2.3,Vacancies per 100 jobs
-2002-09-01,2.3,Vacancies per 100 jobs
-2002-10-01,2.3,Vacancies per 100 jobs
-2002-11-01,2.3,Vacancies per 100 jobs
-2002-12-01,2.3,Vacancies per 100 jobs
-2003-01-01,2.2,Vacancies per 100 jobs
-2003-02-01,2.2,Vacancies per 100 jobs
-2003-03-01,2.2,Vacancies per 100 jobs
-2003-04-01,2.2,Vacancies per 100 jobs
-2003-05-01,2.2,Vacancies per 100 jobs
-2003-06-01,2.2,Vacancies per 100 jobs
-2003-07-01,2.2,Vacancies per 100 jobs
-2003-08-01,2.2,Vacancies per 100 jobs
-2003-09-01,2.3,Vacancies per 100 jobs
-2003-10-01,2.3,Vacancies per 100 jobs
-2003-11-01,2.3,Vacancies per 100 jobs
-2003-12-01,2.3,Vacancies per 100 jobs
-2004-01-01,2.3,Vacancies per 100 jobs
-2004-02-01,2.3,Vacancies per 100 jobs
-2004-03-01,2.3,Vacancies per 100 jobs
-2004-04-01,2.4,Vacancies per 100 jobs
-2004-05-01,2.4,Vacancies per 100 jobs
-2004-06-01,2.4,Vacancies per 100 jobs
-2004-07-01,2.4,Vacancies per 100 jobs
-2004-08-01,2.4,Vacancies per 100 jobs
-2004-09-01,2.4,Vacancies per 100 jobs
-2004-10-01,2.4,Vacancies per 100 jobs
-2004-11-01,2.5,Vacancies per 100 jobs
-2004-12-01,2.4,Vacancies per 100 jobs
-2005-01-01,2.4,Vacancies per 100 jobs
-2005-02-01,2.3,Vacancies per 100 jobs
-2005-03-01,2.3,Vacancies per 100 jobs
-2005-04-01,2.3,Vacancies per 100 jobs
-2005-05-01,2.3,Vacancies per 100 jobs
-2005-06-01,2.3,Vacancies per 100 jobs
-2005-07-01,2.3,Vacancies per 100 jobs
-2005-08-01,2.3,Vacancies per 100 jobs
-2005-09-01,2.2,Vacancies per 100 jobs
-2005-10-01,2.2,Vacancies per 100 jobs
-2005-11-01,2.2,Vacancies per 100 jobs
-2005-12-01,2.2,Vacancies per 100 jobs
-2006-01-01,2.2,Vacancies per 100 jobs
-2006-02-01,2.2,Vacancies per 100 jobs
-2006-03-01,2.2,Vacancies per 100 jobs
-2006-04-01,2.2,Vacancies per 100 jobs
-2006-05-01,2.2,Vacancies per 100 jobs
-2006-06-01,2.2,Vacancies per 100 jobs
-2006-07-01,2.2,Vacancies per 100 jobs
-2006-08-01,2.2,Vacancies per 100 jobs
-2006-09-01,2.2,Vacancies per 100 jobs
-2006-10-01,2.2,Vacancies per 100 jobs
-2006-11-01,2.2,Vacancies per 100 jobs
-2006-12-01,2.2,Vacancies per 100 jobs
-2007-01-01,2.3,Vacancies per 100 jobs
-2007-02-01,2.3,Vacancies per 100 jobs
-2007-03-01,2.3,Vacancies per 100 jobs
-2007-04-01,2.3,Vacancies per 100 jobs
-2007-05-01,2.4,Vacancies per 100 jobs
-2007-06-01,2.4,Vacancies per 100 jobs
-2007-07-01,2.4,Vacancies per 100 jobs
-2007-08-01,2.5,Vacancies per 100 jobs
-2007-09-01,2.5,Vacancies per 100 jobs
-2007-10-01,2.5,Vacancies per 100 jobs
-2007-11-01,2.5,Vacancies per 100 jobs
-2007-12-01,2.4,Vacancies per 100 jobs
-2008-01-01,2.5,Vacancies per 100 jobs
-2008-02-01,2.5,Vacancies per 100 jobs
-2008-03-01,2.5,Vacancies per 100 jobs
-2008-04-01,2.4,Vacancies per 100 jobs
-2008-05-01,2.3,Vacancies per 100 jobs
-2008-06-01,2.3,Vacancies per 100 jobs
-2008-07-01,2.2,Vacancies per 100 jobs
-2008-08-01,2.2,Vacancies per 100 jobs
-2008-09-01,2.1,Vacancies per 100 jobs
-2008-10-01,2.0,Vacancies per 100 jobs
-2008-11-01,1.9,Vacancies per 100 jobs
-2008-12-01,1.8,Vacancies per 100 jobs
-2009-01-01,1.7,Vacancies per 100 jobs
-2009-02-01,1.7,Vacancies per 100 jobs
-2009-03-01,1.7,Vacancies per 100 jobs
-2009-04-01,1.6,Vacancies per 100 jobs
-2009-05-01,1.6,Vacancies per 100 jobs
-2009-06-01,1.6,Vacancies per 100 jobs
-2009-07-01,1.6,Vacancies per 100 jobs
-2009-08-01,1.6,Vacancies per 100 jobs
-2009-09-01,1.6,Vacancies per 100 jobs
-2009-10-01,1.6,Vacancies per 100 jobs
-2009-11-01,1.7,Vacancies per 100 jobs
-2009-12-01,1.7,Vacancies per 100 jobs
-2010-01-01,1.7,Vacancies per 100 jobs
-2010-02-01,1.7,Vacancies per 100 jobs
-2010-03-01,1.7,Vacancies per 100 jobs
-2010-04-01,1.8,Vacancies per 100 jobs
-2010-05-01,1.8,Vacancies per 100 jobs
-2010-06-01,1.8,Vacancies per 100 jobs
-2010-07-01,1.7,Vacancies per 100 jobs
-2010-08-01,1.7,Vacancies per 100 jobs
-2010-09-01,1.7,Vacancies per 100 jobs
-2010-10-01,1.7,Vacancies per 100 jobs
-2010-11-01,1.8,Vacancies per 100 jobs
-2010-12-01,1.8,Vacancies per 100 jobs
-2011-01-01,1.8,Vacancies per 100 jobs
-2011-02-01,1.8,Vacancies per 100 jobs
-2011-03-01,1.7,Vacancies per 100 jobs
-2011-04-01,1.7,Vacancies per 100 jobs
-2011-05-01,1.7,Vacancies per 100 jobs
-2011-06-01,1.7,Vacancies per 100 jobs
-2011-07-01,1.7,Vacancies per 100 jobs
-2011-08-01,1.7,Vacancies per 100 jobs
-2011-09-01,1.7,Vacancies per 100 jobs
-2011-10-01,1.7,Vacancies per 100 jobs
-2011-11-01,1.7,Vacancies per 100 jobs
-2011-12-01,1.7,Vacancies per 100 jobs
-2012-01-01,1.7,Vacancies per 100 jobs
-2012-02-01,1.7,Vacancies per 100 jobs
-2012-03-01,1.7,Vacancies per 100 jobs
-2012-04-01,1.7,Vacancies per 100 jobs
-2012-05-01,1.7,Vacancies per 100 jobs
-2012-06-01,1.8,Vacancies per 100 jobs
-2012-07-01,1.8,Vacancies per 100 jobs
-2012-08-01,1.8,Vacancies per 100 jobs
-2012-09-01,1.8,Vacancies per 100 jobs
-2012-10-01,1.8,Vacancies per 100 jobs
-2012-11-01,1.8,Vacancies per 100 jobs
-2012-12-01,1.8,Vacancies per 100 jobs
-2013-01-01,1.8,Vacancies per 100 jobs
-2013-02-01,1.8,Vacancies per 100 jobs
-2013-03-01,1.9,Vacancies per 100 jobs
-2013-04-01,1.9,Vacancies per 100 jobs
-2013-05-01,1.9,Vacancies per 100 jobs
-2013-06-01,2.0,Vacancies per 100 jobs
-2013-07-01,1.9,Vacancies per 100 jobs
-2013-08-01,2.0,Vacancies per 100 jobs
-2013-09-01,2.0,Vacancies per 100 jobs
-2013-10-01,2.1,Vacancies per 100 jobs
-2013-11-01,2.1,Vacancies per 100 jobs
-2013-12-01,2.1,Vacancies per 100 jobs
-2014-01-01,2.1,Vacancies per 100 jobs
-2014-02-01,2.2,Vacancies per 100 jobs
-2014-03-01,2.2,Vacancies per 100 jobs
-2014-04-01,2.3,Vacancies per 100 jobs
-2014-05-01,2.3,Vacancies per 100 jobs
-2014-06-01,2.4,Vacancies per 100 jobs
-2014-07-01,2.4,Vacancies per 100 jobs
-2014-08-01,2.4,Vacancies per 100 jobs
-2014-09-01,2.5,Vacancies per 100 jobs
-2014-10-01,2.5,Vacancies per 100 jobs
-2014-11-01,2.5,Vacancies per 100 jobs
-2014-12-01,2.5,Vacancies per 100 jobs
-2015-01-01,2.5,Vacancies per 100 jobs
-2015-02-01,2.5,Vacancies per 100 jobs
-2015-03-01,2.5,Vacancies per 100 jobs
-2015-04-01,2.5,Vacancies per 100 jobs
-2015-05-01,2.5,Vacancies per 100 jobs
-2015-06-01,2.6,Vacancies per 100 jobs
-2015-07-01,2.6,Vacancies per 100 jobs
-2015-08-01,2.6,Vacancies per 100 jobs
-2015-09-01,2.5,Vacancies per 100 jobs
-2015-10-01,2.6,Vacancies per 100 jobs
-2015-11-01,2.6,Vacancies per 100 jobs
-2015-12-01,2.6,Vacancies per 100 jobs
-2016-01-01,2.5,Vacancies per 100 jobs
-2016-02-01,2.5,Vacancies per 100 jobs
-2016-03-01,2.5,Vacancies per 100 jobs
-2016-04-01,2.5,Vacancies per 100 jobs
-2016-05-01,2.5,Vacancies per 100 jobs
-2016-06-01,2.5,Vacancies per 100 jobs
-2016-07-01,2.5,Vacancies per 100 jobs
-2016-08-01,2.6,Vacancies per 100 jobs
-2016-09-01,2.6,Vacancies per 100 jobs
-2016-10-01,2.6,Vacancies per 100 jobs
-2016-11-01,2.6,Vacancies per 100 jobs
-2016-12-01,2.5,Vacancies per 100 jobs
-2017-01-01,2.6,Vacancies per 100 jobs
-2017-02-01,2.6,Vacancies per 100 jobs
-2017-03-01,2.6,Vacancies per 100 jobs
-2017-04-01,2.6,Vacancies per 100 jobs
-2017-05-01,2.6,Vacancies per 100 jobs
-2017-06-01,2.6,Vacancies per 100 jobs
-2017-07-01,2.7,Vacancies per 100 jobs
-2017-08-01,2.7,Vacancies per 100 jobs
-2017-09-01,2.7,Vacancies per 100 jobs
-2017-10-01,2.7,Vacancies per 100 jobs
-2017-11-01,2.7,Vacancies per 100 jobs
-2017-12-01,2.7,Vacancies per 100 jobs
-2018-01-01,2.7,Vacancies per 100 jobs
-2018-02-01,2.7,Vacancies per 100 jobs
-2018-03-01,2.7,Vacancies per 100 jobs
-2018-04-01,2.7,Vacancies per 100 jobs
-2018-05-01,2.8,Vacancies per 100 jobs
-2018-06-01,2.8,Vacancies per 100 jobs
-2018-07-01,2.8,Vacancies per 100 jobs
-2018-08-01,2.8,Vacancies per 100 jobs
-2018-09-01,2.9,Vacancies per 100 jobs
-2018-10-01,2.9,Vacancies per 100 jobs
-2018-11-01,2.8,Vacancies per 100 jobs
-2018-12-01,2.9,Vacancies per 100 jobs
-2019-01-01,2.8,Vacancies per 100 jobs
-2019-02-01,2.8,Vacancies per 100 jobs
-2019-03-01,2.8,Vacancies per 100 jobs
-2019-04-01,2.7,Vacancies per 100 jobs
-2019-05-01,2.7,Vacancies per 100 jobs
-2019-06-01,2.7,Vacancies per 100 jobs
-2019-07-01,2.7,Vacancies per 100 jobs
-2019-08-01,2.7,Vacancies per 100 jobs
-2019-09-01,2.7,Vacancies per 100 jobs
-2019-10-01,2.6,Vacancies per 100 jobs
-2019-11-01,2.7,Vacancies per 100 jobs
-2019-12-01,2.7,Vacancies per 100 jobs
-2020-01-01,2.7,Vacancies per 100 jobs
-2020-02-01,2.6,Vacancies per 100 jobs
-2020-03-01,2.1,Vacancies per 100 jobs
-2020-04-01,1.6,Vacancies per 100 jobs
-2020-05-01,1.1,Vacancies per 100 jobs
-2020-06-01,1.2,Vacancies per 100 jobs
-2020-07-01,1.4,Vacancies per 100 jobs
-2020-08-01,1.6,Vacancies per 100 jobs
-2020-09-01,1.8,Vacancies per 100 jobs
-2020-10-01,1.8,Vacancies per 100 jobs
-2020-11-01,2.0,Vacancies per 100 jobs
-2020-12-01,2.0,Vacancies per 100 jobs
-2021-01-01,2.0,Vacancies per 100 jobs
-2021-02-01,2.1,Vacancies per 100 jobs
-2021-03-01,2.2,Vacancies per 100 jobs
-2021-04-01,2.5,Vacancies per 100 jobs
-2021-05-01,2.8,Vacancies per 100 jobs
-2021-06-01,3.2,Vacancies per 100 jobs
-2021-07-01,3.4,Vacancies per 100 jobs
-2021-08-01,3.7,Vacancies per 100 jobs
-2021-09-01,3.9,Vacancies per 100 jobs
-2021-10-01,4.0,Vacancies per 100 jobs
-2021-11-01,4.1,Vacancies per 100 jobs
-2021-12-01,4.1,Vacancies per 100 jobs
-2022-01-01,4.1,Vacancies per 100 jobs
-2022-02-01,4.1,Vacancies per 100 jobs
-2022-03-01,4.1,Vacancies per 100 jobs
-2022-04-01,4.2,Vacancies per 100 jobs
-2022-05-01,4.1,Vacancies per 100 jobs
-2022-06-01,4.1,Vacancies per 100 jobs
-2022-07-01,4.0,Vacancies per 100 jobs
-2022-08-01,3.9,Vacancies per 100 jobs
-2022-09-01,3.9,Vacancies per 100 jobs
-2022-10-01,3.7,Vacancies per 100 jobs
-2022-11-01,3.7,Vacancies per 100 jobs
-2022-12-01,3.6,Vacancies per 100 jobs
-2023-01-01,3.5,Vacancies per 100 jobs
-2023-02-01,3.5,Vacancies per 100 jobs
-2023-03-01,3.4,Vacancies per 100 jobs
-2023-04-01,3.3,Vacancies per 100 jobs
-2023-05-01,3.2,Vacancies per 100 jobs
-2023-06-01,3.2,Vacancies per 100 jobs
-2023-07-01,3.1,Vacancies per 100 jobs
-2023-08-01,3.1,Vacancies per 100 jobs
-2023-09-01,3.0,Vacancies per 100 jobs
-2023-10-01,3.0,Vacancies per 100 jobs
-2023-11-01,2.9,Vacancies per 100 jobs
-2023-12-01,2.9,Vacancies per 100 jobs
-2024-01-01,2.8,Vacancies per 100 jobs
-2024-02-01,2.9,Vacancies per 100 jobs
-2024-03-01,2.8,Vacancies per 100 jobs
-2024-04-01,2.8,Vacancies per 100 jobs
-2024-05-01,2.7,Vacancies per 100 jobs
-2024-06-01,2.7,Vacancies per 100 jobs
-2024-07-01,2.6,Vacancies per 100 jobs
-2024-08-01,2.6,Vacancies per 100 jobs
-2024-09-01,2.6,Vacancies per 100 jobs
-2024-10-01,2.5,Vacancies per 100 jobs
 1971-02-01,3.8,Unpemployment rate (%)
 1971-03-01,3.9,Unpemployment rate (%)
 1971-04-01,4.0,Unpemployment rate (%)
@@ -1207,6 +643,650 @@ date,value,series
 2024-07-01,4.1,Unpemployment rate (%)
 2024-08-01,4.3,Unpemployment rate (%)
 2024-09-01,4.3,Unpemployment rate (%)
+1971-02-01,24.9,Inactivity rate (%)
+1971-03-01,25.0,Inactivity rate (%)
+1971-04-01,25.0,Inactivity rate (%)
+1971-05-01,24.9,Inactivity rate (%)
+1971-06-01,25.0,Inactivity rate (%)
+1971-07-01,25.0,Inactivity rate (%)
+1971-08-01,25.1,Inactivity rate (%)
+1971-09-01,25.2,Inactivity rate (%)
+1971-10-01,25.2,Inactivity rate (%)
+1971-11-01,25.2,Inactivity rate (%)
+1971-12-01,25.1,Inactivity rate (%)
+1972-01-01,25.0,Inactivity rate (%)
+1972-02-01,24.8,Inactivity rate (%)
+1972-03-01,24.7,Inactivity rate (%)
+1972-04-01,24.7,Inactivity rate (%)
+1972-05-01,24.8,Inactivity rate (%)
+1972-06-01,24.8,Inactivity rate (%)
+1972-07-01,24.9,Inactivity rate (%)
+1972-08-01,24.8,Inactivity rate (%)
+1972-09-01,24.8,Inactivity rate (%)
+1972-10-01,24.7,Inactivity rate (%)
+1972-11-01,24.6,Inactivity rate (%)
+1972-12-01,24.5,Inactivity rate (%)
+1973-01-01,24.4,Inactivity rate (%)
+1973-02-01,24.3,Inactivity rate (%)
+1973-03-01,24.2,Inactivity rate (%)
+1973-04-01,24.1,Inactivity rate (%)
+1973-05-01,24.2,Inactivity rate (%)
+1973-06-01,24.3,Inactivity rate (%)
+1973-07-01,24.3,Inactivity rate (%)
+1973-08-01,24.4,Inactivity rate (%)
+1973-09-01,24.4,Inactivity rate (%)
+1973-10-01,24.4,Inactivity rate (%)
+1973-11-01,24.4,Inactivity rate (%)
+1973-12-01,24.4,Inactivity rate (%)
+1974-01-01,24.4,Inactivity rate (%)
+1974-02-01,24.4,Inactivity rate (%)
+1974-03-01,24.3,Inactivity rate (%)
+1974-04-01,24.3,Inactivity rate (%)
+1974-05-01,24.3,Inactivity rate (%)
+1974-06-01,24.2,Inactivity rate (%)
+1974-07-01,24.1,Inactivity rate (%)
+1974-08-01,24.1,Inactivity rate (%)
+1974-09-01,24.0,Inactivity rate (%)
+1974-10-01,24.0,Inactivity rate (%)
+1974-11-01,24.1,Inactivity rate (%)
+1974-12-01,24.1,Inactivity rate (%)
+1975-01-01,24.1,Inactivity rate (%)
+1975-02-01,24.1,Inactivity rate (%)
+1975-03-01,24.1,Inactivity rate (%)
+1975-04-01,24.1,Inactivity rate (%)
+1975-05-01,24.0,Inactivity rate (%)
+1975-06-01,23.9,Inactivity rate (%)
+1975-07-01,23.9,Inactivity rate (%)
+1975-08-01,23.9,Inactivity rate (%)
+1975-09-01,23.8,Inactivity rate (%)
+1975-10-01,23.8,Inactivity rate (%)
+1975-11-01,23.8,Inactivity rate (%)
+1975-12-01,23.8,Inactivity rate (%)
+1976-01-01,23.8,Inactivity rate (%)
+1976-02-01,23.9,Inactivity rate (%)
+1976-03-01,23.9,Inactivity rate (%)
+1976-04-01,23.9,Inactivity rate (%)
+1976-05-01,23.9,Inactivity rate (%)
+1976-06-01,23.9,Inactivity rate (%)
+1976-07-01,23.9,Inactivity rate (%)
+1976-08-01,24.0,Inactivity rate (%)
+1976-09-01,24.0,Inactivity rate (%)
+1976-10-01,24.0,Inactivity rate (%)
+1976-11-01,24.0,Inactivity rate (%)
+1976-12-01,24.0,Inactivity rate (%)
+1977-01-01,24.0,Inactivity rate (%)
+1977-02-01,24.1,Inactivity rate (%)
+1977-03-01,24.1,Inactivity rate (%)
+1977-04-01,24.1,Inactivity rate (%)
+1977-05-01,24.1,Inactivity rate (%)
+1977-06-01,24.1,Inactivity rate (%)
+1977-07-01,24.1,Inactivity rate (%)
+1977-08-01,24.1,Inactivity rate (%)
+1977-09-01,24.1,Inactivity rate (%)
+1977-10-01,24.1,Inactivity rate (%)
+1977-11-01,24.1,Inactivity rate (%)
+1977-12-01,24.2,Inactivity rate (%)
+1978-01-01,24.2,Inactivity rate (%)
+1978-02-01,24.2,Inactivity rate (%)
+1978-03-01,24.2,Inactivity rate (%)
+1978-04-01,24.2,Inactivity rate (%)
+1978-05-01,24.3,Inactivity rate (%)
+1978-06-01,24.3,Inactivity rate (%)
+1978-07-01,24.3,Inactivity rate (%)
+1978-08-01,24.3,Inactivity rate (%)
+1978-09-01,24.2,Inactivity rate (%)
+1978-10-01,24.2,Inactivity rate (%)
+1978-11-01,24.2,Inactivity rate (%)
+1978-12-01,24.2,Inactivity rate (%)
+1979-01-01,24.2,Inactivity rate (%)
+1979-02-01,24.2,Inactivity rate (%)
+1979-03-01,24.2,Inactivity rate (%)
+1979-04-01,24.2,Inactivity rate (%)
+1979-05-01,24.2,Inactivity rate (%)
+1979-06-01,24.2,Inactivity rate (%)
+1979-07-01,24.2,Inactivity rate (%)
+1979-08-01,24.1,Inactivity rate (%)
+1979-09-01,24.1,Inactivity rate (%)
+1979-10-01,24.1,Inactivity rate (%)
+1979-11-01,24.1,Inactivity rate (%)
+1979-12-01,24.1,Inactivity rate (%)
+1980-01-01,24.0,Inactivity rate (%)
+1980-02-01,24.0,Inactivity rate (%)
+1980-03-01,24.0,Inactivity rate (%)
+1980-04-01,24.0,Inactivity rate (%)
+1980-05-01,23.9,Inactivity rate (%)
+1980-06-01,23.9,Inactivity rate (%)
+1980-07-01,23.9,Inactivity rate (%)
+1980-08-01,23.9,Inactivity rate (%)
+1980-09-01,23.9,Inactivity rate (%)
+1980-10-01,23.9,Inactivity rate (%)
+1980-11-01,23.9,Inactivity rate (%)
+1980-12-01,23.8,Inactivity rate (%)
+1981-01-01,23.8,Inactivity rate (%)
+1981-02-01,23.8,Inactivity rate (%)
+1981-03-01,23.9,Inactivity rate (%)
+1981-04-01,23.9,Inactivity rate (%)
+1981-05-01,23.9,Inactivity rate (%)
+1981-06-01,24.0,Inactivity rate (%)
+1981-07-01,24.1,Inactivity rate (%)
+1981-08-01,24.1,Inactivity rate (%)
+1981-09-01,24.2,Inactivity rate (%)
+1981-10-01,24.3,Inactivity rate (%)
+1981-11-01,24.4,Inactivity rate (%)
+1981-12-01,24.5,Inactivity rate (%)
+1982-01-01,24.6,Inactivity rate (%)
+1982-02-01,24.6,Inactivity rate (%)
+1982-03-01,24.7,Inactivity rate (%)
+1982-04-01,24.8,Inactivity rate (%)
+1982-05-01,24.9,Inactivity rate (%)
+1982-06-01,25.0,Inactivity rate (%)
+1982-07-01,25.1,Inactivity rate (%)
+1982-08-01,25.2,Inactivity rate (%)
+1982-09-01,25.3,Inactivity rate (%)
+1982-10-01,25.4,Inactivity rate (%)
+1982-11-01,25.5,Inactivity rate (%)
+1982-12-01,25.7,Inactivity rate (%)
+1983-01-01,25.8,Inactivity rate (%)
+1983-02-01,25.8,Inactivity rate (%)
+1983-03-01,25.9,Inactivity rate (%)
+1983-04-01,25.9,Inactivity rate (%)
+1983-05-01,25.9,Inactivity rate (%)
+1983-06-01,25.7,Inactivity rate (%)
+1983-07-01,25.6,Inactivity rate (%)
+1983-08-01,25.4,Inactivity rate (%)
+1983-09-01,25.2,Inactivity rate (%)
+1983-10-01,25.0,Inactivity rate (%)
+1983-11-01,24.9,Inactivity rate (%)
+1983-12-01,24.7,Inactivity rate (%)
+1984-01-01,24.6,Inactivity rate (%)
+1984-02-01,24.5,Inactivity rate (%)
+1984-03-01,24.4,Inactivity rate (%)
+1984-04-01,24.3,Inactivity rate (%)
+1984-05-01,24.2,Inactivity rate (%)
+1984-06-01,24.2,Inactivity rate (%)
+1984-07-01,24.2,Inactivity rate (%)
+1984-08-01,24.2,Inactivity rate (%)
+1984-09-01,24.1,Inactivity rate (%)
+1984-10-01,24.1,Inactivity rate (%)
+1984-11-01,24.0,Inactivity rate (%)
+1984-12-01,24.0,Inactivity rate (%)
+1985-01-01,24.0,Inactivity rate (%)
+1985-02-01,24.0,Inactivity rate (%)
+1985-03-01,23.9,Inactivity rate (%)
+1985-04-01,23.9,Inactivity rate (%)
+1985-05-01,23.9,Inactivity rate (%)
+1985-06-01,23.9,Inactivity rate (%)
+1985-07-01,23.9,Inactivity rate (%)
+1985-08-01,23.9,Inactivity rate (%)
+1985-09-01,23.8,Inactivity rate (%)
+1985-10-01,23.8,Inactivity rate (%)
+1985-11-01,23.8,Inactivity rate (%)
+1985-12-01,23.8,Inactivity rate (%)
+1986-01-01,23.8,Inactivity rate (%)
+1986-02-01,23.8,Inactivity rate (%)
+1986-03-01,23.7,Inactivity rate (%)
+1986-04-01,23.7,Inactivity rate (%)
+1986-05-01,23.7,Inactivity rate (%)
+1986-06-01,23.6,Inactivity rate (%)
+1986-07-01,23.5,Inactivity rate (%)
+1986-08-01,23.5,Inactivity rate (%)
+1986-09-01,23.5,Inactivity rate (%)
+1986-10-01,23.4,Inactivity rate (%)
+1986-11-01,23.4,Inactivity rate (%)
+1986-12-01,23.3,Inactivity rate (%)
+1987-01-01,23.3,Inactivity rate (%)
+1987-02-01,23.4,Inactivity rate (%)
+1987-03-01,23.3,Inactivity rate (%)
+1987-04-01,23.3,Inactivity rate (%)
+1987-05-01,23.2,Inactivity rate (%)
+1987-06-01,23.1,Inactivity rate (%)
+1987-07-01,23.0,Inactivity rate (%)
+1987-08-01,23.0,Inactivity rate (%)
+1987-09-01,22.9,Inactivity rate (%)
+1987-10-01,22.9,Inactivity rate (%)
+1987-11-01,22.8,Inactivity rate (%)
+1987-12-01,22.7,Inactivity rate (%)
+1988-01-01,22.7,Inactivity rate (%)
+1988-02-01,22.6,Inactivity rate (%)
+1988-03-01,22.6,Inactivity rate (%)
+1988-04-01,22.6,Inactivity rate (%)
+1988-05-01,22.5,Inactivity rate (%)
+1988-06-01,22.5,Inactivity rate (%)
+1988-07-01,22.5,Inactivity rate (%)
+1988-08-01,22.4,Inactivity rate (%)
+1988-09-01,22.3,Inactivity rate (%)
+1988-10-01,22.2,Inactivity rate (%)
+1988-11-01,22.2,Inactivity rate (%)
+1988-12-01,22.1,Inactivity rate (%)
+1989-01-01,22.1,Inactivity rate (%)
+1989-02-01,22.0,Inactivity rate (%)
+1989-03-01,21.9,Inactivity rate (%)
+1989-04-01,21.9,Inactivity rate (%)
+1989-05-01,21.9,Inactivity rate (%)
+1989-06-01,21.9,Inactivity rate (%)
+1989-07-01,21.9,Inactivity rate (%)
+1989-08-01,21.9,Inactivity rate (%)
+1989-09-01,21.8,Inactivity rate (%)
+1989-10-01,21.8,Inactivity rate (%)
+1989-11-01,21.7,Inactivity rate (%)
+1989-12-01,21.7,Inactivity rate (%)
+1990-01-01,21.7,Inactivity rate (%)
+1990-02-01,21.8,Inactivity rate (%)
+1990-03-01,21.7,Inactivity rate (%)
+1990-04-01,21.7,Inactivity rate (%)
+1990-05-01,21.7,Inactivity rate (%)
+1990-06-01,21.7,Inactivity rate (%)
+1990-07-01,21.7,Inactivity rate (%)
+1990-08-01,21.7,Inactivity rate (%)
+1990-09-01,21.8,Inactivity rate (%)
+1990-10-01,21.8,Inactivity rate (%)
+1990-11-01,21.8,Inactivity rate (%)
+1990-12-01,21.9,Inactivity rate (%)
+1991-01-01,22.0,Inactivity rate (%)
+1991-02-01,22.0,Inactivity rate (%)
+1991-03-01,22.1,Inactivity rate (%)
+1991-04-01,22.1,Inactivity rate (%)
+1991-05-01,22.2,Inactivity rate (%)
+1991-06-01,22.3,Inactivity rate (%)
+1991-07-01,22.4,Inactivity rate (%)
+1991-08-01,22.5,Inactivity rate (%)
+1991-09-01,22.6,Inactivity rate (%)
+1991-10-01,22.8,Inactivity rate (%)
+1991-11-01,22.9,Inactivity rate (%)
+1991-12-01,23.0,Inactivity rate (%)
+1992-01-01,23.0,Inactivity rate (%)
+1992-02-01,23.1,Inactivity rate (%)
+1992-03-01,23.1,Inactivity rate (%)
+1992-04-01,23.2,Inactivity rate (%)
+1992-05-01,23.3,Inactivity rate (%)
+1992-06-01,23.4,Inactivity rate (%)
+1992-07-01,23.4,Inactivity rate (%)
+1992-08-01,23.4,Inactivity rate (%)
+1992-09-01,23.5,Inactivity rate (%)
+1992-10-01,23.4,Inactivity rate (%)
+1992-11-01,23.5,Inactivity rate (%)
+1992-12-01,23.4,Inactivity rate (%)
+1993-01-01,23.4,Inactivity rate (%)
+1993-02-01,23.4,Inactivity rate (%)
+1993-03-01,23.5,Inactivity rate (%)
+1993-04-01,23.5,Inactivity rate (%)
+1993-05-01,23.6,Inactivity rate (%)
+1993-06-01,23.6,Inactivity rate (%)
+1993-07-01,23.7,Inactivity rate (%)
+1993-08-01,23.6,Inactivity rate (%)
+1993-09-01,23.6,Inactivity rate (%)
+1993-10-01,23.6,Inactivity rate (%)
+1993-11-01,23.6,Inactivity rate (%)
+1993-12-01,23.6,Inactivity rate (%)
+1994-01-01,23.6,Inactivity rate (%)
+1994-02-01,23.6,Inactivity rate (%)
+1994-03-01,23.6,Inactivity rate (%)
+1994-04-01,23.7,Inactivity rate (%)
+1994-05-01,23.7,Inactivity rate (%)
+1994-06-01,23.6,Inactivity rate (%)
+1994-07-01,23.7,Inactivity rate (%)
+1994-08-01,23.7,Inactivity rate (%)
+1994-09-01,23.9,Inactivity rate (%)
+1994-10-01,24.0,Inactivity rate (%)
+1994-11-01,24.1,Inactivity rate (%)
+1994-12-01,24.2,Inactivity rate (%)
+1995-01-01,24.1,Inactivity rate (%)
+1995-02-01,24.0,Inactivity rate (%)
+1995-03-01,23.9,Inactivity rate (%)
+1995-04-01,23.9,Inactivity rate (%)
+1995-05-01,23.9,Inactivity rate (%)
+1995-06-01,23.8,Inactivity rate (%)
+1995-07-01,23.7,Inactivity rate (%)
+1995-08-01,23.7,Inactivity rate (%)
+1995-09-01,23.7,Inactivity rate (%)
+1995-10-01,23.7,Inactivity rate (%)
+1995-11-01,23.7,Inactivity rate (%)
+1995-12-01,23.6,Inactivity rate (%)
+1996-01-01,23.7,Inactivity rate (%)
+1996-02-01,23.8,Inactivity rate (%)
+1996-03-01,23.7,Inactivity rate (%)
+1996-04-01,23.7,Inactivity rate (%)
+1996-05-01,23.7,Inactivity rate (%)
+1996-06-01,23.8,Inactivity rate (%)
+1996-07-01,23.8,Inactivity rate (%)
+1996-08-01,23.8,Inactivity rate (%)
+1996-09-01,23.7,Inactivity rate (%)
+1996-10-01,23.6,Inactivity rate (%)
+1996-11-01,23.6,Inactivity rate (%)
+1996-12-01,23.6,Inactivity rate (%)
+1997-01-01,23.6,Inactivity rate (%)
+1997-02-01,23.6,Inactivity rate (%)
+1997-03-01,23.6,Inactivity rate (%)
+1997-04-01,23.6,Inactivity rate (%)
+1997-05-01,23.4,Inactivity rate (%)
+1997-06-01,23.4,Inactivity rate (%)
+1997-07-01,23.6,Inactivity rate (%)
+1997-08-01,23.6,Inactivity rate (%)
+1997-09-01,23.7,Inactivity rate (%)
+1997-10-01,23.7,Inactivity rate (%)
+1997-11-01,23.8,Inactivity rate (%)
+1997-12-01,23.9,Inactivity rate (%)
+1998-01-01,23.9,Inactivity rate (%)
+1998-02-01,23.8,Inactivity rate (%)
+1998-03-01,23.8,Inactivity rate (%)
+1998-04-01,23.9,Inactivity rate (%)
+1998-05-01,23.9,Inactivity rate (%)
+1998-06-01,23.7,Inactivity rate (%)
+1998-07-01,23.6,Inactivity rate (%)
+1998-08-01,23.6,Inactivity rate (%)
+1998-09-01,23.6,Inactivity rate (%)
+1998-10-01,23.5,Inactivity rate (%)
+1998-11-01,23.5,Inactivity rate (%)
+1998-12-01,23.3,Inactivity rate (%)
+1999-01-01,23.3,Inactivity rate (%)
+1999-02-01,23.4,Inactivity rate (%)
+1999-03-01,23.4,Inactivity rate (%)
+1999-04-01,23.5,Inactivity rate (%)
+1999-05-01,23.4,Inactivity rate (%)
+1999-06-01,23.5,Inactivity rate (%)
+1999-07-01,23.4,Inactivity rate (%)
+1999-08-01,23.3,Inactivity rate (%)
+1999-09-01,23.4,Inactivity rate (%)
+1999-10-01,23.3,Inactivity rate (%)
+1999-11-01,23.2,Inactivity rate (%)
+1999-12-01,23.3,Inactivity rate (%)
+2000-01-01,23.3,Inactivity rate (%)
+2000-02-01,23.2,Inactivity rate (%)
+2000-03-01,23.2,Inactivity rate (%)
+2000-04-01,23.2,Inactivity rate (%)
+2000-05-01,23.3,Inactivity rate (%)
+2000-06-01,23.3,Inactivity rate (%)
+2000-07-01,23.3,Inactivity rate (%)
+2000-08-01,23.2,Inactivity rate (%)
+2000-09-01,23.3,Inactivity rate (%)
+2000-10-01,23.5,Inactivity rate (%)
+2000-11-01,23.5,Inactivity rate (%)
+2000-12-01,23.3,Inactivity rate (%)
+2001-01-01,23.3,Inactivity rate (%)
+2001-02-01,23.4,Inactivity rate (%)
+2001-03-01,23.4,Inactivity rate (%)
+2001-04-01,23.5,Inactivity rate (%)
+2001-05-01,23.4,Inactivity rate (%)
+2001-06-01,23.5,Inactivity rate (%)
+2001-07-01,23.5,Inactivity rate (%)
+2001-08-01,23.5,Inactivity rate (%)
+2001-09-01,23.5,Inactivity rate (%)
+2001-10-01,23.4,Inactivity rate (%)
+2001-11-01,23.4,Inactivity rate (%)
+2001-12-01,23.5,Inactivity rate (%)
+2002-01-01,23.6,Inactivity rate (%)
+2002-02-01,23.6,Inactivity rate (%)
+2002-03-01,23.4,Inactivity rate (%)
+2002-04-01,23.3,Inactivity rate (%)
+2002-05-01,23.3,Inactivity rate (%)
+2002-06-01,23.4,Inactivity rate (%)
+2002-07-01,23.3,Inactivity rate (%)
+2002-08-01,23.3,Inactivity rate (%)
+2002-09-01,23.2,Inactivity rate (%)
+2002-10-01,23.2,Inactivity rate (%)
+2002-11-01,23.2,Inactivity rate (%)
+2002-12-01,23.4,Inactivity rate (%)
+2003-01-01,23.4,Inactivity rate (%)
+2003-02-01,23.3,Inactivity rate (%)
+2003-03-01,23.3,Inactivity rate (%)
+2003-04-01,23.3,Inactivity rate (%)
+2003-05-01,23.3,Inactivity rate (%)
+2003-06-01,23.2,Inactivity rate (%)
+2003-07-01,23.3,Inactivity rate (%)
+2003-08-01,23.3,Inactivity rate (%)
+2003-09-01,23.3,Inactivity rate (%)
+2003-10-01,23.4,Inactivity rate (%)
+2003-11-01,23.5,Inactivity rate (%)
+2003-12-01,23.3,Inactivity rate (%)
+2004-01-01,23.2,Inactivity rate (%)
+2004-02-01,23.2,Inactivity rate (%)
+2004-03-01,23.3,Inactivity rate (%)
+2004-04-01,23.4,Inactivity rate (%)
+2004-05-01,23.4,Inactivity rate (%)
+2004-06-01,23.5,Inactivity rate (%)
+2004-07-01,23.5,Inactivity rate (%)
+2004-08-01,23.5,Inactivity rate (%)
+2004-09-01,23.5,Inactivity rate (%)
+2004-10-01,23.4,Inactivity rate (%)
+2004-11-01,23.3,Inactivity rate (%)
+2004-12-01,23.2,Inactivity rate (%)
+2005-01-01,23.1,Inactivity rate (%)
+2005-02-01,23.3,Inactivity rate (%)
+2005-03-01,23.4,Inactivity rate (%)
+2005-04-01,23.4,Inactivity rate (%)
+2005-05-01,23.4,Inactivity rate (%)
+2005-06-01,23.4,Inactivity rate (%)
+2005-07-01,23.3,Inactivity rate (%)
+2005-08-01,23.3,Inactivity rate (%)
+2005-09-01,23.3,Inactivity rate (%)
+2005-10-01,23.3,Inactivity rate (%)
+2005-11-01,23.3,Inactivity rate (%)
+2005-12-01,23.3,Inactivity rate (%)
+2006-01-01,23.2,Inactivity rate (%)
+2006-02-01,23.0,Inactivity rate (%)
+2006-03-01,22.9,Inactivity rate (%)
+2006-04-01,23.0,Inactivity rate (%)
+2006-05-01,22.9,Inactivity rate (%)
+2006-06-01,22.8,Inactivity rate (%)
+2006-07-01,22.7,Inactivity rate (%)
+2006-08-01,22.9,Inactivity rate (%)
+2006-09-01,22.9,Inactivity rate (%)
+2006-10-01,23.0,Inactivity rate (%)
+2006-11-01,23.0,Inactivity rate (%)
+2006-12-01,23.1,Inactivity rate (%)
+2007-01-01,23.2,Inactivity rate (%)
+2007-02-01,23.2,Inactivity rate (%)
+2007-03-01,23.2,Inactivity rate (%)
+2007-04-01,23.1,Inactivity rate (%)
+2007-05-01,23.2,Inactivity rate (%)
+2007-06-01,23.2,Inactivity rate (%)
+2007-07-01,23.2,Inactivity rate (%)
+2007-08-01,23.2,Inactivity rate (%)
+2007-09-01,23.1,Inactivity rate (%)
+2007-10-01,23.1,Inactivity rate (%)
+2007-11-01,23.1,Inactivity rate (%)
+2007-12-01,23.0,Inactivity rate (%)
+2008-01-01,22.9,Inactivity rate (%)
+2008-02-01,23.0,Inactivity rate (%)
+2008-03-01,22.9,Inactivity rate (%)
+2008-04-01,22.9,Inactivity rate (%)
+2008-05-01,22.9,Inactivity rate (%)
+2008-06-01,22.9,Inactivity rate (%)
+2008-07-01,23.0,Inactivity rate (%)
+2008-08-01,23.0,Inactivity rate (%)
+2008-09-01,23.1,Inactivity rate (%)
+2008-10-01,22.9,Inactivity rate (%)
+2008-11-01,22.9,Inactivity rate (%)
+2008-12-01,22.7,Inactivity rate (%)
+2009-01-01,22.8,Inactivity rate (%)
+2009-02-01,22.8,Inactivity rate (%)
+2009-03-01,22.9,Inactivity rate (%)
+2009-04-01,23.0,Inactivity rate (%)
+2009-05-01,23.1,Inactivity rate (%)
+2009-06-01,23.3,Inactivity rate (%)
+2009-07-01,23.2,Inactivity rate (%)
+2009-08-01,23.3,Inactivity rate (%)
+2009-09-01,23.3,Inactivity rate (%)
+2009-10-01,23.4,Inactivity rate (%)
+2009-11-01,23.4,Inactivity rate (%)
+2009-12-01,23.6,Inactivity rate (%)
+2010-01-01,23.6,Inactivity rate (%)
+2010-02-01,23.6,Inactivity rate (%)
+2010-03-01,23.6,Inactivity rate (%)
+2010-04-01,23.4,Inactivity rate (%)
+2010-05-01,23.5,Inactivity rate (%)
+2010-06-01,23.3,Inactivity rate (%)
+2010-07-01,23.3,Inactivity rate (%)
+2010-08-01,23.2,Inactivity rate (%)
+2010-09-01,23.3,Inactivity rate (%)
+2010-10-01,23.5,Inactivity rate (%)
+2010-11-01,23.5,Inactivity rate (%)
+2010-12-01,23.3,Inactivity rate (%)
+2011-01-01,23.3,Inactivity rate (%)
+2011-02-01,23.4,Inactivity rate (%)
+2011-03-01,23.5,Inactivity rate (%)
+2011-04-01,23.4,Inactivity rate (%)
+2011-05-01,23.3,Inactivity rate (%)
+2011-06-01,23.5,Inactivity rate (%)
+2011-07-01,23.4,Inactivity rate (%)
+2011-08-01,23.4,Inactivity rate (%)
+2011-09-01,23.3,Inactivity rate (%)
+2011-10-01,23.2,Inactivity rate (%)
+2011-11-01,23.2,Inactivity rate (%)
+2011-12-01,23.2,Inactivity rate (%)
+2012-01-01,23.2,Inactivity rate (%)
+2012-02-01,23.1,Inactivity rate (%)
+2012-03-01,23.1,Inactivity rate (%)
+2012-04-01,23.0,Inactivity rate (%)
+2012-05-01,22.8,Inactivity rate (%)
+2012-06-01,22.6,Inactivity rate (%)
+2012-07-01,22.6,Inactivity rate (%)
+2012-08-01,22.7,Inactivity rate (%)
+2012-09-01,22.7,Inactivity rate (%)
+2012-10-01,22.5,Inactivity rate (%)
+2012-11-01,22.4,Inactivity rate (%)
+2012-12-01,22.4,Inactivity rate (%)
+2013-01-01,22.5,Inactivity rate (%)
+2013-02-01,22.6,Inactivity rate (%)
+2013-03-01,22.6,Inactivity rate (%)
+2013-04-01,22.7,Inactivity rate (%)
+2013-05-01,22.5,Inactivity rate (%)
+2013-06-01,22.4,Inactivity rate (%)
+2013-07-01,22.4,Inactivity rate (%)
+2013-08-01,22.3,Inactivity rate (%)
+2013-09-01,22.3,Inactivity rate (%)
+2013-10-01,22.3,Inactivity rate (%)
+2013-11-01,22.3,Inactivity rate (%)
+2013-12-01,22.2,Inactivity rate (%)
+2014-01-01,22.2,Inactivity rate (%)
+2014-02-01,22.2,Inactivity rate (%)
+2014-03-01,22.1,Inactivity rate (%)
+2014-04-01,22.0,Inactivity rate (%)
+2014-05-01,22.2,Inactivity rate (%)
+2014-06-01,22.3,Inactivity rate (%)
+2014-07-01,22.2,Inactivity rate (%)
+2014-08-01,22.2,Inactivity rate (%)
+2014-09-01,22.3,Inactivity rate (%)
+2014-10-01,22.4,Inactivity rate (%)
+2014-11-01,22.3,Inactivity rate (%)
+2014-12-01,22.2,Inactivity rate (%)
+2015-01-01,22.1,Inactivity rate (%)
+2015-02-01,22.2,Inactivity rate (%)
+2015-03-01,22.2,Inactivity rate (%)
+2015-04-01,22.2,Inactivity rate (%)
+2015-05-01,22.2,Inactivity rate (%)
+2015-06-01,22.2,Inactivity rate (%)
+2015-07-01,22.2,Inactivity rate (%)
+2015-08-01,22.0,Inactivity rate (%)
+2015-09-01,21.9,Inactivity rate (%)
+2015-10-01,21.9,Inactivity rate (%)
+2015-11-01,21.9,Inactivity rate (%)
+2015-12-01,21.9,Inactivity rate (%)
+2016-01-01,21.8,Inactivity rate (%)
+2016-02-01,21.9,Inactivity rate (%)
+2016-03-01,21.9,Inactivity rate (%)
+2016-04-01,21.7,Inactivity rate (%)
+2016-05-01,21.7,Inactivity rate (%)
+2016-06-01,21.6,Inactivity rate (%)
+2016-07-01,21.6,Inactivity rate (%)
+2016-08-01,21.7,Inactivity rate (%)
+2016-09-01,21.7,Inactivity rate (%)
+2016-10-01,21.8,Inactivity rate (%)
+2016-11-01,21.7,Inactivity rate (%)
+2016-12-01,21.7,Inactivity rate (%)
+2017-01-01,21.7,Inactivity rate (%)
+2017-02-01,21.6,Inactivity rate (%)
+2017-03-01,21.6,Inactivity rate (%)
+2017-04-01,21.6,Inactivity rate (%)
+2017-05-01,21.4,Inactivity rate (%)
+2017-06-01,21.3,Inactivity rate (%)
+2017-07-01,21.5,Inactivity rate (%)
+2017-08-01,21.7,Inactivity rate (%)
+2017-09-01,21.6,Inactivity rate (%)
+2017-10-01,21.3,Inactivity rate (%)
+2017-11-01,21.4,Inactivity rate (%)
+2017-12-01,21.3,Inactivity rate (%)
+2018-01-01,21.3,Inactivity rate (%)
+2018-02-01,21.2,Inactivity rate (%)
+2018-03-01,21.1,Inactivity rate (%)
+2018-04-01,21.1,Inactivity rate (%)
+2018-05-01,21.3,Inactivity rate (%)
+2018-06-01,21.4,Inactivity rate (%)
+2018-07-01,21.3,Inactivity rate (%)
+2018-08-01,21.3,Inactivity rate (%)
+2018-09-01,21.1,Inactivity rate (%)
+2018-10-01,21.1,Inactivity rate (%)
+2018-11-01,21.1,Inactivity rate (%)
+2018-12-01,20.9,Inactivity rate (%)
+2019-01-01,20.8,Inactivity rate (%)
+2019-02-01,21.0,Inactivity rate (%)
+2019-03-01,20.9,Inactivity rate (%)
+2019-04-01,20.9,Inactivity rate (%)
+2019-05-01,20.7,Inactivity rate (%)
+2019-06-01,20.8,Inactivity rate (%)
+2019-07-01,20.9,Inactivity rate (%)
+2019-08-01,20.8,Inactivity rate (%)
+2019-09-01,20.9,Inactivity rate (%)
+2019-10-01,20.7,Inactivity rate (%)
+2019-11-01,20.6,Inactivity rate (%)
+2019-12-01,20.5,Inactivity rate (%)
+2020-01-01,20.3,Inactivity rate (%)
+2020-02-01,20.8,Inactivity rate (%)
+2020-03-01,21.0,Inactivity rate (%)
+2020-04-01,21.2,Inactivity rate (%)
+2020-05-01,21.3,Inactivity rate (%)
+2020-06-01,21.2,Inactivity rate (%)
+2020-07-01,21.3,Inactivity rate (%)
+2020-08-01,21.4,Inactivity rate (%)
+2020-09-01,21.4,Inactivity rate (%)
+2020-10-01,21.3,Inactivity rate (%)
+2020-11-01,21.5,Inactivity rate (%)
+2020-12-01,21.5,Inactivity rate (%)
+2021-01-01,21.5,Inactivity rate (%)
+2021-02-01,21.7,Inactivity rate (%)
+2021-03-01,21.7,Inactivity rate (%)
+2021-04-01,21.7,Inactivity rate (%)
+2021-05-01,21.5,Inactivity rate (%)
+2021-06-01,21.5,Inactivity rate (%)
+2021-07-01,21.5,Inactivity rate (%)
+2021-08-01,21.5,Inactivity rate (%)
+2021-09-01,21.6,Inactivity rate (%)
+2021-10-01,21.6,Inactivity rate (%)
+2021-11-01,21.6,Inactivity rate (%)
+2021-12-01,21.7,Inactivity rate (%)
+2022-01-01,21.8,Inactivity rate (%)
+2022-02-01,21.9,Inactivity rate (%)
+2022-03-01,21.8,Inactivity rate (%)
+2022-04-01,21.6,Inactivity rate (%)
+2022-05-01,21.9,Inactivity rate (%)
+2022-06-01,22.2,Inactivity rate (%)
+2022-07-01,22.1,Inactivity rate (%)
+2022-08-01,22.1,Inactivity rate (%)
+2022-09-01,21.9,Inactivity rate (%)
+2022-10-01,21.9,Inactivity rate (%)
+2022-11-01,21.7,Inactivity rate (%)
+2022-12-01,21.7,Inactivity rate (%)
+2023-01-01,21.7,Inactivity rate (%)
+2023-02-01,21.5,Inactivity rate (%)
+2023-03-01,21.4,Inactivity rate (%)
+2023-04-01,21.3,Inactivity rate (%)
+2023-05-01,21.4,Inactivity rate (%)
+2023-06-01,21.6,Inactivity rate (%)
+2023-07-01,21.9,Inactivity rate (%)
+2023-08-01,21.9,Inactivity rate (%)
+2023-09-01,21.9,Inactivity rate (%)
+2023-10-01,22.0,Inactivity rate (%)
+2023-11-01,22.0,Inactivity rate (%)
+2023-12-01,22.1,Inactivity rate (%)
+2024-01-01,22.1,Inactivity rate (%)
+2024-02-01,22.1,Inactivity rate (%)
+2024-03-01,22.2,Inactivity rate (%)
+2024-04-01,22.0,Inactivity rate (%)
+2024-05-01,22.1,Inactivity rate (%)
+2024-06-01,21.9,Inactivity rate (%)
+2024-07-01,21.8,Inactivity rate (%)
+2024-08-01,21.7,Inactivity rate (%)
+2024-09-01,21.7,Inactivity rate (%)
 1971-02-01,72.2,Employment rate (%)
 1971-03-01,72.1,Employment rate (%)
 1971-04-01,72.0,Employment rate (%)
@@ -4563,647 +4643,567 @@ date,value,series
 2024-08-01,33,Working days lost due to strikes
 2024-09-01,48,Working days lost due to strikes
 2024-10-01,42,Working days lost due to strikes
-1971-02-01,24.9,Inactivity rate (%)
-1971-03-01,25.0,Inactivity rate (%)
-1971-04-01,25.0,Inactivity rate (%)
-1971-05-01,24.9,Inactivity rate (%)
-1971-06-01,25.0,Inactivity rate (%)
-1971-07-01,25.0,Inactivity rate (%)
-1971-08-01,25.1,Inactivity rate (%)
-1971-09-01,25.2,Inactivity rate (%)
-1971-10-01,25.2,Inactivity rate (%)
-1971-11-01,25.2,Inactivity rate (%)
-1971-12-01,25.1,Inactivity rate (%)
-1972-01-01,25.0,Inactivity rate (%)
-1972-02-01,24.8,Inactivity rate (%)
-1972-03-01,24.7,Inactivity rate (%)
-1972-04-01,24.7,Inactivity rate (%)
-1972-05-01,24.8,Inactivity rate (%)
-1972-06-01,24.8,Inactivity rate (%)
-1972-07-01,24.9,Inactivity rate (%)
-1972-08-01,24.8,Inactivity rate (%)
-1972-09-01,24.8,Inactivity rate (%)
-1972-10-01,24.7,Inactivity rate (%)
-1972-11-01,24.6,Inactivity rate (%)
-1972-12-01,24.5,Inactivity rate (%)
-1973-01-01,24.4,Inactivity rate (%)
-1973-02-01,24.3,Inactivity rate (%)
-1973-03-01,24.2,Inactivity rate (%)
-1973-04-01,24.1,Inactivity rate (%)
-1973-05-01,24.2,Inactivity rate (%)
-1973-06-01,24.3,Inactivity rate (%)
-1973-07-01,24.3,Inactivity rate (%)
-1973-08-01,24.4,Inactivity rate (%)
-1973-09-01,24.4,Inactivity rate (%)
-1973-10-01,24.4,Inactivity rate (%)
-1973-11-01,24.4,Inactivity rate (%)
-1973-12-01,24.4,Inactivity rate (%)
-1974-01-01,24.4,Inactivity rate (%)
-1974-02-01,24.4,Inactivity rate (%)
-1974-03-01,24.3,Inactivity rate (%)
-1974-04-01,24.3,Inactivity rate (%)
-1974-05-01,24.3,Inactivity rate (%)
-1974-06-01,24.2,Inactivity rate (%)
-1974-07-01,24.1,Inactivity rate (%)
-1974-08-01,24.1,Inactivity rate (%)
-1974-09-01,24.0,Inactivity rate (%)
-1974-10-01,24.0,Inactivity rate (%)
-1974-11-01,24.1,Inactivity rate (%)
-1974-12-01,24.1,Inactivity rate (%)
-1975-01-01,24.1,Inactivity rate (%)
-1975-02-01,24.1,Inactivity rate (%)
-1975-03-01,24.1,Inactivity rate (%)
-1975-04-01,24.1,Inactivity rate (%)
-1975-05-01,24.0,Inactivity rate (%)
-1975-06-01,23.9,Inactivity rate (%)
-1975-07-01,23.9,Inactivity rate (%)
-1975-08-01,23.9,Inactivity rate (%)
-1975-09-01,23.8,Inactivity rate (%)
-1975-10-01,23.8,Inactivity rate (%)
-1975-11-01,23.8,Inactivity rate (%)
-1975-12-01,23.8,Inactivity rate (%)
-1976-01-01,23.8,Inactivity rate (%)
-1976-02-01,23.9,Inactivity rate (%)
-1976-03-01,23.9,Inactivity rate (%)
-1976-04-01,23.9,Inactivity rate (%)
-1976-05-01,23.9,Inactivity rate (%)
-1976-06-01,23.9,Inactivity rate (%)
-1976-07-01,23.9,Inactivity rate (%)
-1976-08-01,24.0,Inactivity rate (%)
-1976-09-01,24.0,Inactivity rate (%)
-1976-10-01,24.0,Inactivity rate (%)
-1976-11-01,24.0,Inactivity rate (%)
-1976-12-01,24.0,Inactivity rate (%)
-1977-01-01,24.0,Inactivity rate (%)
-1977-02-01,24.1,Inactivity rate (%)
-1977-03-01,24.1,Inactivity rate (%)
-1977-04-01,24.1,Inactivity rate (%)
-1977-05-01,24.1,Inactivity rate (%)
-1977-06-01,24.1,Inactivity rate (%)
-1977-07-01,24.1,Inactivity rate (%)
-1977-08-01,24.1,Inactivity rate (%)
-1977-09-01,24.1,Inactivity rate (%)
-1977-10-01,24.1,Inactivity rate (%)
-1977-11-01,24.1,Inactivity rate (%)
-1977-12-01,24.2,Inactivity rate (%)
-1978-01-01,24.2,Inactivity rate (%)
-1978-02-01,24.2,Inactivity rate (%)
-1978-03-01,24.2,Inactivity rate (%)
-1978-04-01,24.2,Inactivity rate (%)
-1978-05-01,24.3,Inactivity rate (%)
-1978-06-01,24.3,Inactivity rate (%)
-1978-07-01,24.3,Inactivity rate (%)
-1978-08-01,24.3,Inactivity rate (%)
-1978-09-01,24.2,Inactivity rate (%)
-1978-10-01,24.2,Inactivity rate (%)
-1978-11-01,24.2,Inactivity rate (%)
-1978-12-01,24.2,Inactivity rate (%)
-1979-01-01,24.2,Inactivity rate (%)
-1979-02-01,24.2,Inactivity rate (%)
-1979-03-01,24.2,Inactivity rate (%)
-1979-04-01,24.2,Inactivity rate (%)
-1979-05-01,24.2,Inactivity rate (%)
-1979-06-01,24.2,Inactivity rate (%)
-1979-07-01,24.2,Inactivity rate (%)
-1979-08-01,24.1,Inactivity rate (%)
-1979-09-01,24.1,Inactivity rate (%)
-1979-10-01,24.1,Inactivity rate (%)
-1979-11-01,24.1,Inactivity rate (%)
-1979-12-01,24.1,Inactivity rate (%)
-1980-01-01,24.0,Inactivity rate (%)
-1980-02-01,24.0,Inactivity rate (%)
-1980-03-01,24.0,Inactivity rate (%)
-1980-04-01,24.0,Inactivity rate (%)
-1980-05-01,23.9,Inactivity rate (%)
-1980-06-01,23.9,Inactivity rate (%)
-1980-07-01,23.9,Inactivity rate (%)
-1980-08-01,23.9,Inactivity rate (%)
-1980-09-01,23.9,Inactivity rate (%)
-1980-10-01,23.9,Inactivity rate (%)
-1980-11-01,23.9,Inactivity rate (%)
-1980-12-01,23.8,Inactivity rate (%)
-1981-01-01,23.8,Inactivity rate (%)
-1981-02-01,23.8,Inactivity rate (%)
-1981-03-01,23.9,Inactivity rate (%)
-1981-04-01,23.9,Inactivity rate (%)
-1981-05-01,23.9,Inactivity rate (%)
-1981-06-01,24.0,Inactivity rate (%)
-1981-07-01,24.1,Inactivity rate (%)
-1981-08-01,24.1,Inactivity rate (%)
-1981-09-01,24.2,Inactivity rate (%)
-1981-10-01,24.3,Inactivity rate (%)
-1981-11-01,24.4,Inactivity rate (%)
-1981-12-01,24.5,Inactivity rate (%)
-1982-01-01,24.6,Inactivity rate (%)
-1982-02-01,24.6,Inactivity rate (%)
-1982-03-01,24.7,Inactivity rate (%)
-1982-04-01,24.8,Inactivity rate (%)
-1982-05-01,24.9,Inactivity rate (%)
-1982-06-01,25.0,Inactivity rate (%)
-1982-07-01,25.1,Inactivity rate (%)
-1982-08-01,25.2,Inactivity rate (%)
-1982-09-01,25.3,Inactivity rate (%)
-1982-10-01,25.4,Inactivity rate (%)
-1982-11-01,25.5,Inactivity rate (%)
-1982-12-01,25.7,Inactivity rate (%)
-1983-01-01,25.8,Inactivity rate (%)
-1983-02-01,25.8,Inactivity rate (%)
-1983-03-01,25.9,Inactivity rate (%)
-1983-04-01,25.9,Inactivity rate (%)
-1983-05-01,25.9,Inactivity rate (%)
-1983-06-01,25.7,Inactivity rate (%)
-1983-07-01,25.6,Inactivity rate (%)
-1983-08-01,25.4,Inactivity rate (%)
-1983-09-01,25.2,Inactivity rate (%)
-1983-10-01,25.0,Inactivity rate (%)
-1983-11-01,24.9,Inactivity rate (%)
-1983-12-01,24.7,Inactivity rate (%)
-1984-01-01,24.6,Inactivity rate (%)
-1984-02-01,24.5,Inactivity rate (%)
-1984-03-01,24.4,Inactivity rate (%)
-1984-04-01,24.3,Inactivity rate (%)
-1984-05-01,24.2,Inactivity rate (%)
-1984-06-01,24.2,Inactivity rate (%)
-1984-07-01,24.2,Inactivity rate (%)
-1984-08-01,24.2,Inactivity rate (%)
-1984-09-01,24.1,Inactivity rate (%)
-1984-10-01,24.1,Inactivity rate (%)
-1984-11-01,24.0,Inactivity rate (%)
-1984-12-01,24.0,Inactivity rate (%)
-1985-01-01,24.0,Inactivity rate (%)
-1985-02-01,24.0,Inactivity rate (%)
-1985-03-01,23.9,Inactivity rate (%)
-1985-04-01,23.9,Inactivity rate (%)
-1985-05-01,23.9,Inactivity rate (%)
-1985-06-01,23.9,Inactivity rate (%)
-1985-07-01,23.9,Inactivity rate (%)
-1985-08-01,23.9,Inactivity rate (%)
-1985-09-01,23.8,Inactivity rate (%)
-1985-10-01,23.8,Inactivity rate (%)
-1985-11-01,23.8,Inactivity rate (%)
-1985-12-01,23.8,Inactivity rate (%)
-1986-01-01,23.8,Inactivity rate (%)
-1986-02-01,23.8,Inactivity rate (%)
-1986-03-01,23.7,Inactivity rate (%)
-1986-04-01,23.7,Inactivity rate (%)
-1986-05-01,23.7,Inactivity rate (%)
-1986-06-01,23.6,Inactivity rate (%)
-1986-07-01,23.5,Inactivity rate (%)
-1986-08-01,23.5,Inactivity rate (%)
-1986-09-01,23.5,Inactivity rate (%)
-1986-10-01,23.4,Inactivity rate (%)
-1986-11-01,23.4,Inactivity rate (%)
-1986-12-01,23.3,Inactivity rate (%)
-1987-01-01,23.3,Inactivity rate (%)
-1987-02-01,23.4,Inactivity rate (%)
-1987-03-01,23.3,Inactivity rate (%)
-1987-04-01,23.3,Inactivity rate (%)
-1987-05-01,23.2,Inactivity rate (%)
-1987-06-01,23.1,Inactivity rate (%)
-1987-07-01,23.0,Inactivity rate (%)
-1987-08-01,23.0,Inactivity rate (%)
-1987-09-01,22.9,Inactivity rate (%)
-1987-10-01,22.9,Inactivity rate (%)
-1987-11-01,22.8,Inactivity rate (%)
-1987-12-01,22.7,Inactivity rate (%)
-1988-01-01,22.7,Inactivity rate (%)
-1988-02-01,22.6,Inactivity rate (%)
-1988-03-01,22.6,Inactivity rate (%)
-1988-04-01,22.6,Inactivity rate (%)
-1988-05-01,22.5,Inactivity rate (%)
-1988-06-01,22.5,Inactivity rate (%)
-1988-07-01,22.5,Inactivity rate (%)
-1988-08-01,22.4,Inactivity rate (%)
-1988-09-01,22.3,Inactivity rate (%)
-1988-10-01,22.2,Inactivity rate (%)
-1988-11-01,22.2,Inactivity rate (%)
-1988-12-01,22.1,Inactivity rate (%)
-1989-01-01,22.1,Inactivity rate (%)
-1989-02-01,22.0,Inactivity rate (%)
-1989-03-01,21.9,Inactivity rate (%)
-1989-04-01,21.9,Inactivity rate (%)
-1989-05-01,21.9,Inactivity rate (%)
-1989-06-01,21.9,Inactivity rate (%)
-1989-07-01,21.9,Inactivity rate (%)
-1989-08-01,21.9,Inactivity rate (%)
-1989-09-01,21.8,Inactivity rate (%)
-1989-10-01,21.8,Inactivity rate (%)
-1989-11-01,21.7,Inactivity rate (%)
-1989-12-01,21.7,Inactivity rate (%)
-1990-01-01,21.7,Inactivity rate (%)
-1990-02-01,21.8,Inactivity rate (%)
-1990-03-01,21.7,Inactivity rate (%)
-1990-04-01,21.7,Inactivity rate (%)
-1990-05-01,21.7,Inactivity rate (%)
-1990-06-01,21.7,Inactivity rate (%)
-1990-07-01,21.7,Inactivity rate (%)
-1990-08-01,21.7,Inactivity rate (%)
-1990-09-01,21.8,Inactivity rate (%)
-1990-10-01,21.8,Inactivity rate (%)
-1990-11-01,21.8,Inactivity rate (%)
-1990-12-01,21.9,Inactivity rate (%)
-1991-01-01,22.0,Inactivity rate (%)
-1991-02-01,22.0,Inactivity rate (%)
-1991-03-01,22.1,Inactivity rate (%)
-1991-04-01,22.1,Inactivity rate (%)
-1991-05-01,22.2,Inactivity rate (%)
-1991-06-01,22.3,Inactivity rate (%)
-1991-07-01,22.4,Inactivity rate (%)
-1991-08-01,22.5,Inactivity rate (%)
-1991-09-01,22.6,Inactivity rate (%)
-1991-10-01,22.8,Inactivity rate (%)
-1991-11-01,22.9,Inactivity rate (%)
-1991-12-01,23.0,Inactivity rate (%)
-1992-01-01,23.0,Inactivity rate (%)
-1992-02-01,23.1,Inactivity rate (%)
-1992-03-01,23.1,Inactivity rate (%)
-1992-04-01,23.2,Inactivity rate (%)
-1992-05-01,23.3,Inactivity rate (%)
-1992-06-01,23.4,Inactivity rate (%)
-1992-07-01,23.4,Inactivity rate (%)
-1992-08-01,23.4,Inactivity rate (%)
-1992-09-01,23.5,Inactivity rate (%)
-1992-10-01,23.4,Inactivity rate (%)
-1992-11-01,23.5,Inactivity rate (%)
-1992-12-01,23.4,Inactivity rate (%)
-1993-01-01,23.4,Inactivity rate (%)
-1993-02-01,23.4,Inactivity rate (%)
-1993-03-01,23.5,Inactivity rate (%)
-1993-04-01,23.5,Inactivity rate (%)
-1993-05-01,23.6,Inactivity rate (%)
-1993-06-01,23.6,Inactivity rate (%)
-1993-07-01,23.7,Inactivity rate (%)
-1993-08-01,23.6,Inactivity rate (%)
-1993-09-01,23.6,Inactivity rate (%)
-1993-10-01,23.6,Inactivity rate (%)
-1993-11-01,23.6,Inactivity rate (%)
-1993-12-01,23.6,Inactivity rate (%)
-1994-01-01,23.6,Inactivity rate (%)
-1994-02-01,23.6,Inactivity rate (%)
-1994-03-01,23.6,Inactivity rate (%)
-1994-04-01,23.7,Inactivity rate (%)
-1994-05-01,23.7,Inactivity rate (%)
-1994-06-01,23.6,Inactivity rate (%)
-1994-07-01,23.7,Inactivity rate (%)
-1994-08-01,23.7,Inactivity rate (%)
-1994-09-01,23.9,Inactivity rate (%)
-1994-10-01,24.0,Inactivity rate (%)
-1994-11-01,24.1,Inactivity rate (%)
-1994-12-01,24.2,Inactivity rate (%)
-1995-01-01,24.1,Inactivity rate (%)
-1995-02-01,24.0,Inactivity rate (%)
-1995-03-01,23.9,Inactivity rate (%)
-1995-04-01,23.9,Inactivity rate (%)
-1995-05-01,23.9,Inactivity rate (%)
-1995-06-01,23.8,Inactivity rate (%)
-1995-07-01,23.7,Inactivity rate (%)
-1995-08-01,23.7,Inactivity rate (%)
-1995-09-01,23.7,Inactivity rate (%)
-1995-10-01,23.7,Inactivity rate (%)
-1995-11-01,23.7,Inactivity rate (%)
-1995-12-01,23.6,Inactivity rate (%)
-1996-01-01,23.7,Inactivity rate (%)
-1996-02-01,23.8,Inactivity rate (%)
-1996-03-01,23.7,Inactivity rate (%)
-1996-04-01,23.7,Inactivity rate (%)
-1996-05-01,23.7,Inactivity rate (%)
-1996-06-01,23.8,Inactivity rate (%)
-1996-07-01,23.8,Inactivity rate (%)
-1996-08-01,23.8,Inactivity rate (%)
-1996-09-01,23.7,Inactivity rate (%)
-1996-10-01,23.6,Inactivity rate (%)
-1996-11-01,23.6,Inactivity rate (%)
-1996-12-01,23.6,Inactivity rate (%)
-1997-01-01,23.6,Inactivity rate (%)
-1997-02-01,23.6,Inactivity rate (%)
-1997-03-01,23.6,Inactivity rate (%)
-1997-04-01,23.6,Inactivity rate (%)
-1997-05-01,23.4,Inactivity rate (%)
-1997-06-01,23.4,Inactivity rate (%)
-1997-07-01,23.6,Inactivity rate (%)
-1997-08-01,23.6,Inactivity rate (%)
-1997-09-01,23.7,Inactivity rate (%)
-1997-10-01,23.7,Inactivity rate (%)
-1997-11-01,23.8,Inactivity rate (%)
-1997-12-01,23.9,Inactivity rate (%)
-1998-01-01,23.9,Inactivity rate (%)
-1998-02-01,23.8,Inactivity rate (%)
-1998-03-01,23.8,Inactivity rate (%)
-1998-04-01,23.9,Inactivity rate (%)
-1998-05-01,23.9,Inactivity rate (%)
-1998-06-01,23.7,Inactivity rate (%)
-1998-07-01,23.6,Inactivity rate (%)
-1998-08-01,23.6,Inactivity rate (%)
-1998-09-01,23.6,Inactivity rate (%)
-1998-10-01,23.5,Inactivity rate (%)
-1998-11-01,23.5,Inactivity rate (%)
-1998-12-01,23.3,Inactivity rate (%)
-1999-01-01,23.3,Inactivity rate (%)
-1999-02-01,23.4,Inactivity rate (%)
-1999-03-01,23.4,Inactivity rate (%)
-1999-04-01,23.5,Inactivity rate (%)
-1999-05-01,23.4,Inactivity rate (%)
-1999-06-01,23.5,Inactivity rate (%)
-1999-07-01,23.4,Inactivity rate (%)
-1999-08-01,23.3,Inactivity rate (%)
-1999-09-01,23.4,Inactivity rate (%)
-1999-10-01,23.3,Inactivity rate (%)
-1999-11-01,23.2,Inactivity rate (%)
-1999-12-01,23.3,Inactivity rate (%)
-2000-01-01,23.3,Inactivity rate (%)
-2000-02-01,23.2,Inactivity rate (%)
-2000-03-01,23.2,Inactivity rate (%)
-2000-04-01,23.2,Inactivity rate (%)
-2000-05-01,23.3,Inactivity rate (%)
-2000-06-01,23.3,Inactivity rate (%)
-2000-07-01,23.3,Inactivity rate (%)
-2000-08-01,23.2,Inactivity rate (%)
-2000-09-01,23.3,Inactivity rate (%)
-2000-10-01,23.5,Inactivity rate (%)
-2000-11-01,23.5,Inactivity rate (%)
-2000-12-01,23.3,Inactivity rate (%)
-2001-01-01,23.3,Inactivity rate (%)
-2001-02-01,23.4,Inactivity rate (%)
-2001-03-01,23.4,Inactivity rate (%)
-2001-04-01,23.5,Inactivity rate (%)
-2001-05-01,23.4,Inactivity rate (%)
-2001-06-01,23.5,Inactivity rate (%)
-2001-07-01,23.5,Inactivity rate (%)
-2001-08-01,23.5,Inactivity rate (%)
-2001-09-01,23.5,Inactivity rate (%)
-2001-10-01,23.4,Inactivity rate (%)
-2001-11-01,23.4,Inactivity rate (%)
-2001-12-01,23.5,Inactivity rate (%)
-2002-01-01,23.6,Inactivity rate (%)
-2002-02-01,23.6,Inactivity rate (%)
-2002-03-01,23.4,Inactivity rate (%)
-2002-04-01,23.3,Inactivity rate (%)
-2002-05-01,23.3,Inactivity rate (%)
-2002-06-01,23.4,Inactivity rate (%)
-2002-07-01,23.3,Inactivity rate (%)
-2002-08-01,23.3,Inactivity rate (%)
-2002-09-01,23.2,Inactivity rate (%)
-2002-10-01,23.2,Inactivity rate (%)
-2002-11-01,23.2,Inactivity rate (%)
-2002-12-01,23.4,Inactivity rate (%)
-2003-01-01,23.4,Inactivity rate (%)
-2003-02-01,23.3,Inactivity rate (%)
-2003-03-01,23.3,Inactivity rate (%)
-2003-04-01,23.3,Inactivity rate (%)
-2003-05-01,23.3,Inactivity rate (%)
-2003-06-01,23.2,Inactivity rate (%)
-2003-07-01,23.3,Inactivity rate (%)
-2003-08-01,23.3,Inactivity rate (%)
-2003-09-01,23.3,Inactivity rate (%)
-2003-10-01,23.4,Inactivity rate (%)
-2003-11-01,23.5,Inactivity rate (%)
-2003-12-01,23.3,Inactivity rate (%)
-2004-01-01,23.2,Inactivity rate (%)
-2004-02-01,23.2,Inactivity rate (%)
-2004-03-01,23.3,Inactivity rate (%)
-2004-04-01,23.4,Inactivity rate (%)
-2004-05-01,23.4,Inactivity rate (%)
-2004-06-01,23.5,Inactivity rate (%)
-2004-07-01,23.5,Inactivity rate (%)
-2004-08-01,23.5,Inactivity rate (%)
-2004-09-01,23.5,Inactivity rate (%)
-2004-10-01,23.4,Inactivity rate (%)
-2004-11-01,23.3,Inactivity rate (%)
-2004-12-01,23.2,Inactivity rate (%)
-2005-01-01,23.1,Inactivity rate (%)
-2005-02-01,23.3,Inactivity rate (%)
-2005-03-01,23.4,Inactivity rate (%)
-2005-04-01,23.4,Inactivity rate (%)
-2005-05-01,23.4,Inactivity rate (%)
-2005-06-01,23.4,Inactivity rate (%)
-2005-07-01,23.3,Inactivity rate (%)
-2005-08-01,23.3,Inactivity rate (%)
-2005-09-01,23.3,Inactivity rate (%)
-2005-10-01,23.3,Inactivity rate (%)
-2005-11-01,23.3,Inactivity rate (%)
-2005-12-01,23.3,Inactivity rate (%)
-2006-01-01,23.2,Inactivity rate (%)
-2006-02-01,23.0,Inactivity rate (%)
-2006-03-01,22.9,Inactivity rate (%)
-2006-04-01,23.0,Inactivity rate (%)
-2006-05-01,22.9,Inactivity rate (%)
-2006-06-01,22.8,Inactivity rate (%)
-2006-07-01,22.7,Inactivity rate (%)
-2006-08-01,22.9,Inactivity rate (%)
-2006-09-01,22.9,Inactivity rate (%)
-2006-10-01,23.0,Inactivity rate (%)
-2006-11-01,23.0,Inactivity rate (%)
-2006-12-01,23.1,Inactivity rate (%)
-2007-01-01,23.2,Inactivity rate (%)
-2007-02-01,23.2,Inactivity rate (%)
-2007-03-01,23.2,Inactivity rate (%)
-2007-04-01,23.1,Inactivity rate (%)
-2007-05-01,23.2,Inactivity rate (%)
-2007-06-01,23.2,Inactivity rate (%)
-2007-07-01,23.2,Inactivity rate (%)
-2007-08-01,23.2,Inactivity rate (%)
-2007-09-01,23.1,Inactivity rate (%)
-2007-10-01,23.1,Inactivity rate (%)
-2007-11-01,23.1,Inactivity rate (%)
-2007-12-01,23.0,Inactivity rate (%)
-2008-01-01,22.9,Inactivity rate (%)
-2008-02-01,23.0,Inactivity rate (%)
-2008-03-01,22.9,Inactivity rate (%)
-2008-04-01,22.9,Inactivity rate (%)
-2008-05-01,22.9,Inactivity rate (%)
-2008-06-01,22.9,Inactivity rate (%)
-2008-07-01,23.0,Inactivity rate (%)
-2008-08-01,23.0,Inactivity rate (%)
-2008-09-01,23.1,Inactivity rate (%)
-2008-10-01,22.9,Inactivity rate (%)
-2008-11-01,22.9,Inactivity rate (%)
-2008-12-01,22.7,Inactivity rate (%)
-2009-01-01,22.8,Inactivity rate (%)
-2009-02-01,22.8,Inactivity rate (%)
-2009-03-01,22.9,Inactivity rate (%)
-2009-04-01,23.0,Inactivity rate (%)
-2009-05-01,23.1,Inactivity rate (%)
-2009-06-01,23.3,Inactivity rate (%)
-2009-07-01,23.2,Inactivity rate (%)
-2009-08-01,23.3,Inactivity rate (%)
-2009-09-01,23.3,Inactivity rate (%)
-2009-10-01,23.4,Inactivity rate (%)
-2009-11-01,23.4,Inactivity rate (%)
-2009-12-01,23.6,Inactivity rate (%)
-2010-01-01,23.6,Inactivity rate (%)
-2010-02-01,23.6,Inactivity rate (%)
-2010-03-01,23.6,Inactivity rate (%)
-2010-04-01,23.4,Inactivity rate (%)
-2010-05-01,23.5,Inactivity rate (%)
-2010-06-01,23.3,Inactivity rate (%)
-2010-07-01,23.3,Inactivity rate (%)
-2010-08-01,23.2,Inactivity rate (%)
-2010-09-01,23.3,Inactivity rate (%)
-2010-10-01,23.5,Inactivity rate (%)
-2010-11-01,23.5,Inactivity rate (%)
-2010-12-01,23.3,Inactivity rate (%)
-2011-01-01,23.3,Inactivity rate (%)
-2011-02-01,23.4,Inactivity rate (%)
-2011-03-01,23.5,Inactivity rate (%)
-2011-04-01,23.4,Inactivity rate (%)
-2011-05-01,23.3,Inactivity rate (%)
-2011-06-01,23.5,Inactivity rate (%)
-2011-07-01,23.4,Inactivity rate (%)
-2011-08-01,23.4,Inactivity rate (%)
-2011-09-01,23.3,Inactivity rate (%)
-2011-10-01,23.2,Inactivity rate (%)
-2011-11-01,23.2,Inactivity rate (%)
-2011-12-01,23.2,Inactivity rate (%)
-2012-01-01,23.2,Inactivity rate (%)
-2012-02-01,23.1,Inactivity rate (%)
-2012-03-01,23.1,Inactivity rate (%)
-2012-04-01,23.0,Inactivity rate (%)
-2012-05-01,22.8,Inactivity rate (%)
-2012-06-01,22.6,Inactivity rate (%)
-2012-07-01,22.6,Inactivity rate (%)
-2012-08-01,22.7,Inactivity rate (%)
-2012-09-01,22.7,Inactivity rate (%)
-2012-10-01,22.5,Inactivity rate (%)
-2012-11-01,22.4,Inactivity rate (%)
-2012-12-01,22.4,Inactivity rate (%)
-2013-01-01,22.5,Inactivity rate (%)
-2013-02-01,22.6,Inactivity rate (%)
-2013-03-01,22.6,Inactivity rate (%)
-2013-04-01,22.7,Inactivity rate (%)
-2013-05-01,22.5,Inactivity rate (%)
-2013-06-01,22.4,Inactivity rate (%)
-2013-07-01,22.4,Inactivity rate (%)
-2013-08-01,22.3,Inactivity rate (%)
-2013-09-01,22.3,Inactivity rate (%)
-2013-10-01,22.3,Inactivity rate (%)
-2013-11-01,22.3,Inactivity rate (%)
-2013-12-01,22.2,Inactivity rate (%)
-2014-01-01,22.2,Inactivity rate (%)
-2014-02-01,22.2,Inactivity rate (%)
-2014-03-01,22.1,Inactivity rate (%)
-2014-04-01,22.0,Inactivity rate (%)
-2014-05-01,22.2,Inactivity rate (%)
-2014-06-01,22.3,Inactivity rate (%)
-2014-07-01,22.2,Inactivity rate (%)
-2014-08-01,22.2,Inactivity rate (%)
-2014-09-01,22.3,Inactivity rate (%)
-2014-10-01,22.4,Inactivity rate (%)
-2014-11-01,22.3,Inactivity rate (%)
-2014-12-01,22.2,Inactivity rate (%)
-2015-01-01,22.1,Inactivity rate (%)
-2015-02-01,22.2,Inactivity rate (%)
-2015-03-01,22.2,Inactivity rate (%)
-2015-04-01,22.2,Inactivity rate (%)
-2015-05-01,22.2,Inactivity rate (%)
-2015-06-01,22.2,Inactivity rate (%)
-2015-07-01,22.2,Inactivity rate (%)
-2015-08-01,22.0,Inactivity rate (%)
-2015-09-01,21.9,Inactivity rate (%)
-2015-10-01,21.9,Inactivity rate (%)
-2015-11-01,21.9,Inactivity rate (%)
-2015-12-01,21.9,Inactivity rate (%)
-2016-01-01,21.8,Inactivity rate (%)
-2016-02-01,21.9,Inactivity rate (%)
-2016-03-01,21.9,Inactivity rate (%)
-2016-04-01,21.7,Inactivity rate (%)
-2016-05-01,21.7,Inactivity rate (%)
-2016-06-01,21.6,Inactivity rate (%)
-2016-07-01,21.6,Inactivity rate (%)
-2016-08-01,21.7,Inactivity rate (%)
-2016-09-01,21.7,Inactivity rate (%)
-2016-10-01,21.8,Inactivity rate (%)
-2016-11-01,21.7,Inactivity rate (%)
-2016-12-01,21.7,Inactivity rate (%)
-2017-01-01,21.7,Inactivity rate (%)
-2017-02-01,21.6,Inactivity rate (%)
-2017-03-01,21.6,Inactivity rate (%)
-2017-04-01,21.6,Inactivity rate (%)
-2017-05-01,21.4,Inactivity rate (%)
-2017-06-01,21.3,Inactivity rate (%)
-2017-07-01,21.5,Inactivity rate (%)
-2017-08-01,21.7,Inactivity rate (%)
-2017-09-01,21.6,Inactivity rate (%)
-2017-10-01,21.3,Inactivity rate (%)
-2017-11-01,21.4,Inactivity rate (%)
-2017-12-01,21.3,Inactivity rate (%)
-2018-01-01,21.3,Inactivity rate (%)
-2018-02-01,21.2,Inactivity rate (%)
-2018-03-01,21.1,Inactivity rate (%)
-2018-04-01,21.1,Inactivity rate (%)
-2018-05-01,21.3,Inactivity rate (%)
-2018-06-01,21.4,Inactivity rate (%)
-2018-07-01,21.3,Inactivity rate (%)
-2018-08-01,21.3,Inactivity rate (%)
-2018-09-01,21.1,Inactivity rate (%)
-2018-10-01,21.1,Inactivity rate (%)
-2018-11-01,21.1,Inactivity rate (%)
-2018-12-01,20.9,Inactivity rate (%)
-2019-01-01,20.8,Inactivity rate (%)
-2019-02-01,21.0,Inactivity rate (%)
-2019-03-01,20.9,Inactivity rate (%)
-2019-04-01,20.9,Inactivity rate (%)
-2019-05-01,20.7,Inactivity rate (%)
-2019-06-01,20.8,Inactivity rate (%)
-2019-07-01,20.9,Inactivity rate (%)
-2019-08-01,20.8,Inactivity rate (%)
-2019-09-01,20.9,Inactivity rate (%)
-2019-10-01,20.7,Inactivity rate (%)
-2019-11-01,20.6,Inactivity rate (%)
-2019-12-01,20.5,Inactivity rate (%)
-2020-01-01,20.3,Inactivity rate (%)
-2020-02-01,20.8,Inactivity rate (%)
-2020-03-01,21.0,Inactivity rate (%)
-2020-04-01,21.2,Inactivity rate (%)
-2020-05-01,21.3,Inactivity rate (%)
-2020-06-01,21.2,Inactivity rate (%)
-2020-07-01,21.3,Inactivity rate (%)
-2020-08-01,21.4,Inactivity rate (%)
-2020-09-01,21.4,Inactivity rate (%)
-2020-10-01,21.3,Inactivity rate (%)
-2020-11-01,21.5,Inactivity rate (%)
-2020-12-01,21.5,Inactivity rate (%)
-2021-01-01,21.5,Inactivity rate (%)
-2021-02-01,21.7,Inactivity rate (%)
-2021-03-01,21.7,Inactivity rate (%)
-2021-04-01,21.7,Inactivity rate (%)
-2021-05-01,21.5,Inactivity rate (%)
-2021-06-01,21.5,Inactivity rate (%)
-2021-07-01,21.5,Inactivity rate (%)
-2021-08-01,21.5,Inactivity rate (%)
-2021-09-01,21.6,Inactivity rate (%)
-2021-10-01,21.6,Inactivity rate (%)
-2021-11-01,21.6,Inactivity rate (%)
-2021-12-01,21.7,Inactivity rate (%)
-2022-01-01,21.8,Inactivity rate (%)
-2022-02-01,21.9,Inactivity rate (%)
-2022-03-01,21.8,Inactivity rate (%)
-2022-04-01,21.6,Inactivity rate (%)
-2022-05-01,21.9,Inactivity rate (%)
-2022-06-01,22.2,Inactivity rate (%)
-2022-07-01,22.1,Inactivity rate (%)
-2022-08-01,22.1,Inactivity rate (%)
-2022-09-01,21.9,Inactivity rate (%)
-2022-10-01,21.9,Inactivity rate (%)
-2022-11-01,21.7,Inactivity rate (%)
-2022-12-01,21.7,Inactivity rate (%)
-2023-01-01,21.7,Inactivity rate (%)
-2023-02-01,21.5,Inactivity rate (%)
-2023-03-01,21.4,Inactivity rate (%)
-2023-04-01,21.3,Inactivity rate (%)
-2023-05-01,21.4,Inactivity rate (%)
-2023-06-01,21.6,Inactivity rate (%)
-2023-07-01,21.9,Inactivity rate (%)
-2023-08-01,21.9,Inactivity rate (%)
-2023-09-01,21.9,Inactivity rate (%)
-2023-10-01,22.0,Inactivity rate (%)
-2023-11-01,22.0,Inactivity rate (%)
-2023-12-01,22.1,Inactivity rate (%)
-2024-01-01,22.1,Inactivity rate (%)
-2024-02-01,22.1,Inactivity rate (%)
-2024-03-01,22.2,Inactivity rate (%)
-2024-04-01,22.0,Inactivity rate (%)
-2024-05-01,22.1,Inactivity rate (%)
-2024-06-01,21.9,Inactivity rate (%)
-2024-07-01,21.8,Inactivity rate (%)
-2024-08-01,21.7,Inactivity rate (%)
-2024-09-01,21.7,Inactivity rate (%)
+2001-05-01,680,Total vacancies
+2001-06-01,674,Total vacancies
+2001-07-01,663,Total vacancies
+2001-08-01,663,Total vacancies
+2001-09-01,639,Total vacancies
+2001-10-01,626,Total vacancies
+2001-11-01,602,Total vacancies
+2001-12-01,605,Total vacancies
+2002-01-01,616,Total vacancies
+2002-02-01,617,Total vacancies
+2002-03-01,622,Total vacancies
+2002-04-01,613,Total vacancies
+2002-05-01,616,Total vacancies
+2002-06-01,612,Total vacancies
+2002-07-01,613,Total vacancies
+2002-08-01,609,Total vacancies
+2002-09-01,609,Total vacancies
+2002-10-01,608,Total vacancies
+2002-11-01,603,Total vacancies
+2002-12-01,602,Total vacancies
+2003-01-01,596,Total vacancies
+2003-02-01,594,Total vacancies
+2003-03-01,585,Total vacancies
+2003-04-01,588,Total vacancies
+2003-05-01,579,Total vacancies
+2003-06-01,574,Total vacancies
+2003-07-01,576,Total vacancies
+2003-08-01,592,Total vacancies
+2003-09-01,604,Total vacancies
+2003-10-01,610,Total vacancies
+2003-11-01,615,Total vacancies
+2003-12-01,613,Total vacancies
+2004-01-01,617,Total vacancies
+2004-02-01,624,Total vacancies
+2004-03-01,631,Total vacancies
+2004-04-01,636,Total vacancies
+2004-05-01,641,Total vacancies
+2004-06-01,652,Total vacancies
+2004-07-01,654,Total vacancies
+2004-08-01,654,Total vacancies
+2004-09-01,654,Total vacancies
+2004-10-01,658,Total vacancies
+2004-11-01,662,Total vacancies
+2004-12-01,661,Total vacancies
+2005-01-01,655,Total vacancies
+2005-02-01,642,Total vacancies
+2005-03-01,638,Total vacancies
+2005-04-01,642,Total vacancies
+2005-05-01,642,Total vacancies
+2005-06-01,633,Total vacancies
+2005-07-01,624,Total vacancies
+2005-08-01,622,Total vacancies
+2005-09-01,608,Total vacancies
+2005-10-01,606,Total vacancies
+2005-11-01,609,Total vacancies
+2005-12-01,615,Total vacancies
+2006-01-01,612,Total vacancies
+2006-02-01,600,Total vacancies
+2006-03-01,598,Total vacancies
+2006-04-01,597,Total vacancies
+2006-05-01,604,Total vacancies
+2006-06-01,607,Total vacancies
+2006-07-01,611,Total vacancies
+2006-08-01,611,Total vacancies
+2006-09-01,618,Total vacancies
+2006-10-01,620,Total vacancies
+2006-11-01,620,Total vacancies
+2006-12-01,619,Total vacancies
+2007-01-01,629,Total vacancies
+2007-02-01,642,Total vacancies
+2007-03-01,648,Total vacancies
+2007-04-01,651,Total vacancies
+2007-05-01,659,Total vacancies
+2007-06-01,670,Total vacancies
+2007-07-01,681,Total vacancies
+2007-08-01,683,Total vacancies
+2007-09-01,686,Total vacancies
+2007-10-01,691,Total vacancies
+2007-11-01,687,Total vacancies
+2007-12-01,678,Total vacancies
+2008-01-01,687,Total vacancies
+2008-02-01,697,Total vacancies
+2008-03-01,696,Total vacancies
+2008-04-01,679,Total vacancies
+2008-05-01,657,Total vacancies
+2008-06-01,643,Total vacancies
+2008-07-01,624,Total vacancies
+2008-08-01,615,Total vacancies
+2008-09-01,596,Total vacancies
+2008-10-01,562,Total vacancies
+2008-11-01,527,Total vacancies
+2008-12-01,497,Total vacancies
+2009-01-01,478,Total vacancies
+2009-02-01,465,Total vacancies
+2009-03-01,455,Total vacancies
+2009-04-01,443,Total vacancies
+2009-05-01,431,Total vacancies
+2009-06-01,430,Total vacancies
+2009-07-01,438,Total vacancies
+2009-08-01,436,Total vacancies
+2009-09-01,432,Total vacancies
+2009-10-01,437,Total vacancies
+2009-11-01,454,Total vacancies
+2009-12-01,463,Total vacancies
+2010-01-01,467,Total vacancies
+2010-02-01,465,Total vacancies
+2010-03-01,469,Total vacancies
+2010-04-01,479,Total vacancies
+2010-05-01,484,Total vacancies
+2010-06-01,479,Total vacancies
+2010-07-01,461,Total vacancies
+2010-08-01,455,Total vacancies
+2010-09-01,454,Total vacancies
+2010-10-01,474,Total vacancies
+2010-11-01,483,Total vacancies
+2010-12-01,493,Total vacancies
+2011-01-01,490,Total vacancies
+2011-02-01,484,Total vacancies
+2011-03-01,472,Total vacancies
+2011-04-01,461,Total vacancies
+2011-05-01,461,Total vacancies
+2011-06-01,457,Total vacancies
+2011-07-01,462,Total vacancies
+2011-08-01,464,Total vacancies
+2011-09-01,466,Total vacancies
+2011-10-01,462,Total vacancies
+2011-11-01,465,Total vacancies
+2011-12-01,473,Total vacancies
+2012-01-01,473,Total vacancies
+2012-02-01,467,Total vacancies
+2012-03-01,465,Total vacancies
+2012-04-01,471,Total vacancies
+2012-05-01,474,Total vacancies
+2012-06-01,480,Total vacancies
+2012-07-01,484,Total vacancies
+2012-08-01,488,Total vacancies
+2012-09-01,490,Total vacancies
+2012-10-01,494,Total vacancies
+2012-11-01,501,Total vacancies
+2012-12-01,500,Total vacancies
+2013-01-01,505,Total vacancies
+2013-02-01,504,Total vacancies
+2013-03-01,516,Total vacancies
+2013-04-01,523,Total vacancies
+2013-05-01,534,Total vacancies
+2013-06-01,540,Total vacancies
+2013-07-01,536,Total vacancies
+2013-08-01,548,Total vacancies
+2013-09-01,552,Total vacancies
+2013-10-01,567,Total vacancies
+2013-11-01,572,Total vacancies
+2013-12-01,581,Total vacancies
+2014-01-01,595,Total vacancies
+2014-02-01,616,Total vacancies
+2014-03-01,638,Total vacancies
+2014-04-01,654,Total vacancies
+2014-05-01,663,Total vacancies
+2014-06-01,670,Total vacancies
+2014-07-01,681,Total vacancies
+2014-08-01,687,Total vacancies
+2014-09-01,702,Total vacancies
+2014-10-01,703,Total vacancies
+2014-11-01,707,Total vacancies
+2014-12-01,708,Total vacancies
+2015-01-01,720,Total vacancies
+2015-02-01,729,Total vacancies
+2015-03-01,728,Total vacancies
+2015-04-01,728,Total vacancies
+2015-05-01,732,Total vacancies
+2015-06-01,742,Total vacancies
+2015-07-01,742,Total vacancies
+2015-08-01,742,Total vacancies
+2015-09-01,741,Total vacancies
+2015-10-01,742,Total vacancies
+2015-11-01,743,Total vacancies
+2015-12-01,746,Total vacancies
+2016-01-01,745,Total vacancies
+2016-02-01,746,Total vacancies
+2016-03-01,745,Total vacancies
+2016-04-01,748,Total vacancies
+2016-05-01,750,Total vacancies
+2016-06-01,749,Total vacancies
+2016-07-01,753,Total vacancies
+2016-08-01,755,Total vacancies
+2016-09-01,762,Total vacancies
+2016-10-01,758,Total vacancies
+2016-11-01,758,Total vacancies
+2016-12-01,754,Total vacancies
+2017-01-01,767,Total vacancies
+2017-02-01,773,Total vacancies
+2017-03-01,788,Total vacancies
+2017-04-01,783,Total vacancies
+2017-05-01,782,Total vacancies
+2017-06-01,785,Total vacancies
+2017-07-01,794,Total vacancies
+2017-08-01,799,Total vacancies
+2017-09-01,809,Total vacancies
+2017-10-01,819,Total vacancies
+2017-11-01,821,Total vacancies
+2017-12-01,822,Total vacancies
+2018-01-01,815,Total vacancies
+2018-02-01,814,Total vacancies
+2018-03-01,812,Total vacancies
+2018-04-01,819,Total vacancies
+2018-05-01,829,Total vacancies
+2018-06-01,839,Total vacancies
+2018-07-01,843,Total vacancies
+2018-08-01,844,Total vacancies
+2018-09-01,862,Total vacancies
+2018-10-01,861,Total vacancies
+2018-11-01,856,Total vacancies
+2018-12-01,859,Total vacancies
+2019-01-01,847,Total vacancies
+2019-02-01,845,Total vacancies
+2019-03-01,840,Total vacancies
+2019-04-01,835,Total vacancies
+2019-05-01,821,Total vacancies
+2019-06-01,823,Total vacancies
+2019-07-01,816,Total vacancies
+2019-08-01,817,Total vacancies
+2019-09-01,810,Total vacancies
+2019-10-01,807,Total vacancies
+2019-11-01,810,Total vacancies
+2019-12-01,816,Total vacancies
+2020-01-01,819,Total vacancies
+2020-02-01,796,Total vacancies
+2020-03-01,638,Total vacancies
+2020-04-01,472,Total vacancies
+2020-05-01,328,Total vacancies
+2020-06-01,371,Total vacancies
+2020-07-01,429,Total vacancies
+2020-08-01,488,Total vacancies
+2020-09-01,531,Total vacancies
+2020-10-01,557,Total vacancies
+2020-11-01,600,Total vacancies
+2020-12-01,619,Total vacancies
+2021-01-01,621,Total vacancies
+2021-02-01,628,Total vacancies
+2021-03-01,663,Total vacancies
+2021-04-01,765,Total vacancies
+2021-05-01,867,Total vacancies
+2021-06-01,971,Total vacancies
+2021-07-01,1052,Total vacancies
+2021-08-01,1122,Total vacancies
+2021-09-01,1194,Total vacancies
+2021-10-01,1218,Total vacancies
+2021-11-01,1241,Total vacancies
+2021-12-01,1257,Total vacancies
+2022-01-01,1273,Total vacancies
+2022-02-01,1286,Total vacancies
+2022-03-01,1296,Total vacancies
+2022-04-01,1304,Total vacancies
+2022-05-01,1299,Total vacancies
+2022-06-01,1280,Total vacancies
+2022-07-01,1259,Total vacancies
+2022-08-01,1233,Total vacancies
+2022-09-01,1216,Total vacancies
+2022-10-01,1175,Total vacancies
+2022-11-01,1153,Total vacancies
+2022-12-01,1132,Total vacancies
+2023-01-01,1128,Total vacancies
+2023-02-01,1120,Total vacancies
+2023-03-01,1086,Total vacancies
+2023-04-01,1060,Total vacancies
+2023-05-01,1039,Total vacancies
+2023-06-01,1024,Total vacancies
+2023-07-01,1000,Total vacancies
+2023-08-01,983,Total vacancies
+2023-09-01,961,Total vacancies
+2023-10-01,955,Total vacancies
+2023-11-01,929,Total vacancies
+2023-12-01,924,Total vacancies
+2024-01-01,916,Total vacancies
+2024-02-01,919,Total vacancies
+2024-03-01,909,Total vacancies
+2024-04-01,899,Total vacancies
+2024-05-01,875,Total vacancies
+2024-06-01,866,Total vacancies
+2024-07-01,850,Total vacancies
+2024-08-01,837,Total vacancies
+2024-09-01,828,Total vacancies
+2024-10-01,818,Total vacancies
+2001-05-01,2.6,Vacancies per 100 jobs
+2001-06-01,2.5,Vacancies per 100 jobs
+2001-07-01,2.5,Vacancies per 100 jobs
+2001-08-01,2.5,Vacancies per 100 jobs
+2001-09-01,2.4,Vacancies per 100 jobs
+2001-10-01,2.4,Vacancies per 100 jobs
+2001-11-01,2.3,Vacancies per 100 jobs
+2001-12-01,2.3,Vacancies per 100 jobs
+2002-01-01,2.3,Vacancies per 100 jobs
+2002-02-01,2.3,Vacancies per 100 jobs
+2002-03-01,2.3,Vacancies per 100 jobs
+2002-04-01,2.3,Vacancies per 100 jobs
+2002-05-01,2.3,Vacancies per 100 jobs
+2002-06-01,2.3,Vacancies per 100 jobs
+2002-07-01,2.3,Vacancies per 100 jobs
+2002-08-01,2.3,Vacancies per 100 jobs
+2002-09-01,2.3,Vacancies per 100 jobs
+2002-10-01,2.3,Vacancies per 100 jobs
+2002-11-01,2.3,Vacancies per 100 jobs
+2002-12-01,2.3,Vacancies per 100 jobs
+2003-01-01,2.2,Vacancies per 100 jobs
+2003-02-01,2.2,Vacancies per 100 jobs
+2003-03-01,2.2,Vacancies per 100 jobs
+2003-04-01,2.2,Vacancies per 100 jobs
+2003-05-01,2.2,Vacancies per 100 jobs
+2003-06-01,2.2,Vacancies per 100 jobs
+2003-07-01,2.2,Vacancies per 100 jobs
+2003-08-01,2.2,Vacancies per 100 jobs
+2003-09-01,2.3,Vacancies per 100 jobs
+2003-10-01,2.3,Vacancies per 100 jobs
+2003-11-01,2.3,Vacancies per 100 jobs
+2003-12-01,2.3,Vacancies per 100 jobs
+2004-01-01,2.3,Vacancies per 100 jobs
+2004-02-01,2.3,Vacancies per 100 jobs
+2004-03-01,2.3,Vacancies per 100 jobs
+2004-04-01,2.4,Vacancies per 100 jobs
+2004-05-01,2.4,Vacancies per 100 jobs
+2004-06-01,2.4,Vacancies per 100 jobs
+2004-07-01,2.4,Vacancies per 100 jobs
+2004-08-01,2.4,Vacancies per 100 jobs
+2004-09-01,2.4,Vacancies per 100 jobs
+2004-10-01,2.4,Vacancies per 100 jobs
+2004-11-01,2.5,Vacancies per 100 jobs
+2004-12-01,2.4,Vacancies per 100 jobs
+2005-01-01,2.4,Vacancies per 100 jobs
+2005-02-01,2.3,Vacancies per 100 jobs
+2005-03-01,2.3,Vacancies per 100 jobs
+2005-04-01,2.3,Vacancies per 100 jobs
+2005-05-01,2.3,Vacancies per 100 jobs
+2005-06-01,2.3,Vacancies per 100 jobs
+2005-07-01,2.3,Vacancies per 100 jobs
+2005-08-01,2.3,Vacancies per 100 jobs
+2005-09-01,2.2,Vacancies per 100 jobs
+2005-10-01,2.2,Vacancies per 100 jobs
+2005-11-01,2.2,Vacancies per 100 jobs
+2005-12-01,2.2,Vacancies per 100 jobs
+2006-01-01,2.2,Vacancies per 100 jobs
+2006-02-01,2.2,Vacancies per 100 jobs
+2006-03-01,2.2,Vacancies per 100 jobs
+2006-04-01,2.2,Vacancies per 100 jobs
+2006-05-01,2.2,Vacancies per 100 jobs
+2006-06-01,2.2,Vacancies per 100 jobs
+2006-07-01,2.2,Vacancies per 100 jobs
+2006-08-01,2.2,Vacancies per 100 jobs
+2006-09-01,2.2,Vacancies per 100 jobs
+2006-10-01,2.2,Vacancies per 100 jobs
+2006-11-01,2.2,Vacancies per 100 jobs
+2006-12-01,2.2,Vacancies per 100 jobs
+2007-01-01,2.3,Vacancies per 100 jobs
+2007-02-01,2.3,Vacancies per 100 jobs
+2007-03-01,2.3,Vacancies per 100 jobs
+2007-04-01,2.3,Vacancies per 100 jobs
+2007-05-01,2.4,Vacancies per 100 jobs
+2007-06-01,2.4,Vacancies per 100 jobs
+2007-07-01,2.4,Vacancies per 100 jobs
+2007-08-01,2.5,Vacancies per 100 jobs
+2007-09-01,2.5,Vacancies per 100 jobs
+2007-10-01,2.5,Vacancies per 100 jobs
+2007-11-01,2.5,Vacancies per 100 jobs
+2007-12-01,2.4,Vacancies per 100 jobs
+2008-01-01,2.5,Vacancies per 100 jobs
+2008-02-01,2.5,Vacancies per 100 jobs
+2008-03-01,2.5,Vacancies per 100 jobs
+2008-04-01,2.4,Vacancies per 100 jobs
+2008-05-01,2.3,Vacancies per 100 jobs
+2008-06-01,2.3,Vacancies per 100 jobs
+2008-07-01,2.2,Vacancies per 100 jobs
+2008-08-01,2.2,Vacancies per 100 jobs
+2008-09-01,2.1,Vacancies per 100 jobs
+2008-10-01,2.0,Vacancies per 100 jobs
+2008-11-01,1.9,Vacancies per 100 jobs
+2008-12-01,1.8,Vacancies per 100 jobs
+2009-01-01,1.7,Vacancies per 100 jobs
+2009-02-01,1.7,Vacancies per 100 jobs
+2009-03-01,1.7,Vacancies per 100 jobs
+2009-04-01,1.6,Vacancies per 100 jobs
+2009-05-01,1.6,Vacancies per 100 jobs
+2009-06-01,1.6,Vacancies per 100 jobs
+2009-07-01,1.6,Vacancies per 100 jobs
+2009-08-01,1.6,Vacancies per 100 jobs
+2009-09-01,1.6,Vacancies per 100 jobs
+2009-10-01,1.6,Vacancies per 100 jobs
+2009-11-01,1.7,Vacancies per 100 jobs
+2009-12-01,1.7,Vacancies per 100 jobs
+2010-01-01,1.7,Vacancies per 100 jobs
+2010-02-01,1.7,Vacancies per 100 jobs
+2010-03-01,1.7,Vacancies per 100 jobs
+2010-04-01,1.8,Vacancies per 100 jobs
+2010-05-01,1.8,Vacancies per 100 jobs
+2010-06-01,1.8,Vacancies per 100 jobs
+2010-07-01,1.7,Vacancies per 100 jobs
+2010-08-01,1.7,Vacancies per 100 jobs
+2010-09-01,1.7,Vacancies per 100 jobs
+2010-10-01,1.7,Vacancies per 100 jobs
+2010-11-01,1.8,Vacancies per 100 jobs
+2010-12-01,1.8,Vacancies per 100 jobs
+2011-01-01,1.8,Vacancies per 100 jobs
+2011-02-01,1.8,Vacancies per 100 jobs
+2011-03-01,1.7,Vacancies per 100 jobs
+2011-04-01,1.7,Vacancies per 100 jobs
+2011-05-01,1.7,Vacancies per 100 jobs
+2011-06-01,1.7,Vacancies per 100 jobs
+2011-07-01,1.7,Vacancies per 100 jobs
+2011-08-01,1.7,Vacancies per 100 jobs
+2011-09-01,1.7,Vacancies per 100 jobs
+2011-10-01,1.7,Vacancies per 100 jobs
+2011-11-01,1.7,Vacancies per 100 jobs
+2011-12-01,1.7,Vacancies per 100 jobs
+2012-01-01,1.7,Vacancies per 100 jobs
+2012-02-01,1.7,Vacancies per 100 jobs
+2012-03-01,1.7,Vacancies per 100 jobs
+2012-04-01,1.7,Vacancies per 100 jobs
+2012-05-01,1.7,Vacancies per 100 jobs
+2012-06-01,1.8,Vacancies per 100 jobs
+2012-07-01,1.8,Vacancies per 100 jobs
+2012-08-01,1.8,Vacancies per 100 jobs
+2012-09-01,1.8,Vacancies per 100 jobs
+2012-10-01,1.8,Vacancies per 100 jobs
+2012-11-01,1.8,Vacancies per 100 jobs
+2012-12-01,1.8,Vacancies per 100 jobs
+2013-01-01,1.8,Vacancies per 100 jobs
+2013-02-01,1.8,Vacancies per 100 jobs
+2013-03-01,1.9,Vacancies per 100 jobs
+2013-04-01,1.9,Vacancies per 100 jobs
+2013-05-01,1.9,Vacancies per 100 jobs
+2013-06-01,2.0,Vacancies per 100 jobs
+2013-07-01,1.9,Vacancies per 100 jobs
+2013-08-01,2.0,Vacancies per 100 jobs
+2013-09-01,2.0,Vacancies per 100 jobs
+2013-10-01,2.1,Vacancies per 100 jobs
+2013-11-01,2.1,Vacancies per 100 jobs
+2013-12-01,2.1,Vacancies per 100 jobs
+2014-01-01,2.1,Vacancies per 100 jobs
+2014-02-01,2.2,Vacancies per 100 jobs
+2014-03-01,2.2,Vacancies per 100 jobs
+2014-04-01,2.3,Vacancies per 100 jobs
+2014-05-01,2.3,Vacancies per 100 jobs
+2014-06-01,2.4,Vacancies per 100 jobs
+2014-07-01,2.4,Vacancies per 100 jobs
+2014-08-01,2.4,Vacancies per 100 jobs
+2014-09-01,2.5,Vacancies per 100 jobs
+2014-10-01,2.5,Vacancies per 100 jobs
+2014-11-01,2.5,Vacancies per 100 jobs
+2014-12-01,2.5,Vacancies per 100 jobs
+2015-01-01,2.5,Vacancies per 100 jobs
+2015-02-01,2.5,Vacancies per 100 jobs
+2015-03-01,2.5,Vacancies per 100 jobs
+2015-04-01,2.5,Vacancies per 100 jobs
+2015-05-01,2.5,Vacancies per 100 jobs
+2015-06-01,2.6,Vacancies per 100 jobs
+2015-07-01,2.6,Vacancies per 100 jobs
+2015-08-01,2.6,Vacancies per 100 jobs
+2015-09-01,2.5,Vacancies per 100 jobs
+2015-10-01,2.6,Vacancies per 100 jobs
+2015-11-01,2.6,Vacancies per 100 jobs
+2015-12-01,2.6,Vacancies per 100 jobs
+2016-01-01,2.5,Vacancies per 100 jobs
+2016-02-01,2.5,Vacancies per 100 jobs
+2016-03-01,2.5,Vacancies per 100 jobs
+2016-04-01,2.5,Vacancies per 100 jobs
+2016-05-01,2.5,Vacancies per 100 jobs
+2016-06-01,2.5,Vacancies per 100 jobs
+2016-07-01,2.5,Vacancies per 100 jobs
+2016-08-01,2.6,Vacancies per 100 jobs
+2016-09-01,2.6,Vacancies per 100 jobs
+2016-10-01,2.6,Vacancies per 100 jobs
+2016-11-01,2.6,Vacancies per 100 jobs
+2016-12-01,2.5,Vacancies per 100 jobs
+2017-01-01,2.6,Vacancies per 100 jobs
+2017-02-01,2.6,Vacancies per 100 jobs
+2017-03-01,2.6,Vacancies per 100 jobs
+2017-04-01,2.6,Vacancies per 100 jobs
+2017-05-01,2.6,Vacancies per 100 jobs
+2017-06-01,2.6,Vacancies per 100 jobs
+2017-07-01,2.7,Vacancies per 100 jobs
+2017-08-01,2.7,Vacancies per 100 jobs
+2017-09-01,2.7,Vacancies per 100 jobs
+2017-10-01,2.7,Vacancies per 100 jobs
+2017-11-01,2.7,Vacancies per 100 jobs
+2017-12-01,2.7,Vacancies per 100 jobs
+2018-01-01,2.7,Vacancies per 100 jobs
+2018-02-01,2.7,Vacancies per 100 jobs
+2018-03-01,2.7,Vacancies per 100 jobs
+2018-04-01,2.7,Vacancies per 100 jobs
+2018-05-01,2.8,Vacancies per 100 jobs
+2018-06-01,2.8,Vacancies per 100 jobs
+2018-07-01,2.8,Vacancies per 100 jobs
+2018-08-01,2.8,Vacancies per 100 jobs
+2018-09-01,2.9,Vacancies per 100 jobs
+2018-10-01,2.9,Vacancies per 100 jobs
+2018-11-01,2.8,Vacancies per 100 jobs
+2018-12-01,2.9,Vacancies per 100 jobs
+2019-01-01,2.8,Vacancies per 100 jobs
+2019-02-01,2.8,Vacancies per 100 jobs
+2019-03-01,2.8,Vacancies per 100 jobs
+2019-04-01,2.7,Vacancies per 100 jobs
+2019-05-01,2.7,Vacancies per 100 jobs
+2019-06-01,2.7,Vacancies per 100 jobs
+2019-07-01,2.7,Vacancies per 100 jobs
+2019-08-01,2.7,Vacancies per 100 jobs
+2019-09-01,2.7,Vacancies per 100 jobs
+2019-10-01,2.6,Vacancies per 100 jobs
+2019-11-01,2.7,Vacancies per 100 jobs
+2019-12-01,2.7,Vacancies per 100 jobs
+2020-01-01,2.7,Vacancies per 100 jobs
+2020-02-01,2.6,Vacancies per 100 jobs
+2020-03-01,2.1,Vacancies per 100 jobs
+2020-04-01,1.6,Vacancies per 100 jobs
+2020-05-01,1.1,Vacancies per 100 jobs
+2020-06-01,1.2,Vacancies per 100 jobs
+2020-07-01,1.4,Vacancies per 100 jobs
+2020-08-01,1.6,Vacancies per 100 jobs
+2020-09-01,1.8,Vacancies per 100 jobs
+2020-10-01,1.8,Vacancies per 100 jobs
+2020-11-01,2.0,Vacancies per 100 jobs
+2020-12-01,2.0,Vacancies per 100 jobs
+2021-01-01,2.0,Vacancies per 100 jobs
+2021-02-01,2.1,Vacancies per 100 jobs
+2021-03-01,2.2,Vacancies per 100 jobs
+2021-04-01,2.5,Vacancies per 100 jobs
+2021-05-01,2.8,Vacancies per 100 jobs
+2021-06-01,3.2,Vacancies per 100 jobs
+2021-07-01,3.4,Vacancies per 100 jobs
+2021-08-01,3.7,Vacancies per 100 jobs
+2021-09-01,3.9,Vacancies per 100 jobs
+2021-10-01,4.0,Vacancies per 100 jobs
+2021-11-01,4.1,Vacancies per 100 jobs
+2021-12-01,4.1,Vacancies per 100 jobs
+2022-01-01,4.1,Vacancies per 100 jobs
+2022-02-01,4.1,Vacancies per 100 jobs
+2022-03-01,4.1,Vacancies per 100 jobs
+2022-04-01,4.2,Vacancies per 100 jobs
+2022-05-01,4.1,Vacancies per 100 jobs
+2022-06-01,4.1,Vacancies per 100 jobs
+2022-07-01,4.0,Vacancies per 100 jobs
+2022-08-01,3.9,Vacancies per 100 jobs
+2022-09-01,3.9,Vacancies per 100 jobs
+2022-10-01,3.7,Vacancies per 100 jobs
+2022-11-01,3.7,Vacancies per 100 jobs
+2022-12-01,3.6,Vacancies per 100 jobs
+2023-01-01,3.5,Vacancies per 100 jobs
+2023-02-01,3.5,Vacancies per 100 jobs
+2023-03-01,3.4,Vacancies per 100 jobs
+2023-04-01,3.3,Vacancies per 100 jobs
+2023-05-01,3.2,Vacancies per 100 jobs
+2023-06-01,3.2,Vacancies per 100 jobs
+2023-07-01,3.1,Vacancies per 100 jobs
+2023-08-01,3.1,Vacancies per 100 jobs
+2023-09-01,3.0,Vacancies per 100 jobs
+2023-10-01,3.0,Vacancies per 100 jobs
+2023-11-01,2.9,Vacancies per 100 jobs
+2023-12-01,2.9,Vacancies per 100 jobs
+2024-01-01,2.8,Vacancies per 100 jobs
+2024-02-01,2.9,Vacancies per 100 jobs
+2024-03-01,2.8,Vacancies per 100 jobs
+2024-04-01,2.8,Vacancies per 100 jobs
+2024-05-01,2.7,Vacancies per 100 jobs
+2024-06-01,2.7,Vacancies per 100 jobs
+2024-07-01,2.6,Vacancies per 100 jobs
+2024-08-01,2.6,Vacancies per 100 jobs
+2024-09-01,2.6,Vacancies per 100 jobs
+2024-10-01,2.5,Vacancies per 100 jobs
