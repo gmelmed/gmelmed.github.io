@@ -116,7 +116,18 @@
                 When both series are on the same scale and other currencies are included, we can see the latter claim is true - the dollar isn't as dominant as it once was. We also see how much the original chart exaggerates the Renminbi's share. It isn't even the fourth most held currency.<sup><a href="#fn2" id="ref1">2</a></sup>
             </p>
         </div>
-        
+    </section>
+    <section>
+        <div class="chart-description">
+            <h2>CC6: Loops. Build a Dashboard</h2>
+            <p>
+                <b>Task:</b> Use the ONS API to batch download nine different series. Save these to your GitHub account, and use these to supply the data to nine charts on a theme or themes of your choice. 
+            </p>
+            <p>
+                I batch downloaded time series from the ONS's <a href="https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/datasets/labourmarketstatistics">Labour market statistics</a> dataset. I created a "dashboard" using Vega-Lite's <tt>facet</tt> feature. The dashboard is meant to provide a brief overview of the UK's labor market trends.
+            </p>
+            <figure id="cc6"></figure>
+        </div>
     </section>
 
     <section>
@@ -191,6 +202,7 @@
     let rd_spec = "chart_specs/rd_spending.json";
     let ft_recreation_spec = "chart_specs/ft_recreation.json";
     let ft_remake_spec = "chart_specs/ft_remake.json";
+    let facet_spec = "chart_specs/uk_labor_mkt.json";
     let states_map_spec = "chart_specs/us_states_plain.json";
     let states_chloropleth_spec = "chart_specs/us_unemployment.json";
     let lifeex_distribution_spec = "chart_specs/lifeex_distributions.json";
@@ -205,6 +217,7 @@
     vegaEmbed('#cc3_2', rd_spec)
     vegaEmbed('#cc4_1', ft_recreation_spec)
     vegaEmbed('#cc4_2', ft_remake_spec)
+    vegaEmbed('#cc6', facet_spec)
     vegaEmbed('#cc7_1', states_map_spec)
     vegaEmbed('#cc7_2', states_chloropleth_spec)
     vegaEmbed('#cc8_2', lifeex_distribution_spec)
