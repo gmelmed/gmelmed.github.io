@@ -62,7 +62,7 @@
           "color": {
             "field": "language",
             "type": "nominal",
-            "scale": {"scheme": "category20b"},
+            "scale": {"scheme": "category20c"},
             "legend": {
               "title": "Language",
               "symbolStrokeWidth": 0
