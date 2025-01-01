@@ -77,15 +77,15 @@
               "title": "Date"
             },
             {
+              "field": "series",
+              "type": "nominal",
+              "title": "Series"
+            },
+            {
               "field": "value",
               "type": "quantitative",
               "format": ".1f",
               "title": "Value"
-            },
-            {
-              "field": "series",
-              "type": "nominal",
-              "title": "Series"
             }
           ]
         },

@@ -6,27 +6,15 @@
   },
   "transform": [
     {
-      "window": [
-        {
-          "op": "max",
-          "field": "date",
-          "as": "max_date"
-        }
-      ],
-      "frame": [
-        null,
-        null
-      ]
+      "window": [{"op": "max", "field": "date", "as": "max_date"}],
+      "frame": [null, null]
     },
-    {
-      "filter": "datum.date == datum.max_date"
-    }
+    {"filter": "datum.date == datum.max_date"}
   ],
   "mark": {
     "type": "point",
     "filled": true,
-    "tooltip": true,
-    "color": "#002FA7"
+    "tooltip": true
   },
   "encoding": {
     "x": {
@@ -40,52 +28,21 @@
     "y": {
       "field": "zori_yoy",
       "type": "quantitative",
-      "axis": {
-        "format": "%",
-        "title": "Change in rent index (yoy)"
-      }
+      "axis": {"format": "%", "title": "Change in rent index (yoy)"}
     },
     "size": {
       "field": "pop_2023",
       "type": "quantitative",
-      "scale": {
-        "type": "linear",
-        "range": [
-          50,
-          1000
-        ]
-      },
-      "legend": {
-        "title": "Population"
-      }
+      "scale": {"type": "linear", "range": [50, 1000]},
+      "legend": null
     },
-    "opacity": {
-      "condition": {
-        "selection": "hover",
-        "value": 1
-      },
-      "value": 0.6
-    },
+    "color": {"field": "region", "type": "nominal", "title": "Region"},
+    "opacity": {"condition": {"selection": "hover", "value": 1}, "value": 0.6},
     "tooltip": [
-      {
-        "field": "name",
-        "title": "Metro"
-      },
-      {
-        "field": "zori",
-        "title": "Rent index",
-        "format": "$.0f"
-      },
-      {
-        "field": "zori_yoy",
-        "title": "Change since last year",
-        "format": ".2%"
-      },
-      {
-        "field": "demand",
-        "title": "Rent demand index",
-        "format": ".0f"
-      }
+      {"field": "name", "title": "Metro"},
+      {"field": "zori", "title": "Rent index", "format": "$.0f"},
+      {"field": "zori_yoy", "title": "Change since last year", "format": ".2%"},
+      {"field": "demand", "title": "Rent demand index", "format": ".0f"}
     ]
   },
   "selection": {
@@ -93,17 +50,12 @@
       "type": "single",
       "on": "mouseover",
       "empty": "none",
-      "encodings": [
-        "x",
-        "y"
-      ]
+      "encodings": ["x", "y"]
     }
   },
   "config": {
     "font": "Montserrat, sans-serif",
-    "view": {
-      "stroke": "transparent"
-    },
+    "view": {"stroke": "transparent"},
     "background": "#f7f7f7",
     "range": {
       "category": [
@@ -116,12 +68,7 @@
         "#00FF7F"
       ]
     },
-    "point": {
-      "filled": true,
-      "size": 80,
-      "color": "#002fa7",
-      "opacity": 0.95
-    },
+    "point": {"filled": true, "size": 80,"opacity": 0.95},
     "axis": {
       "labelColor": "#676A86",
       "labelFontSize": 11,
@@ -132,10 +79,7 @@
       "domainColor": "#676A86",
       "domainOpacity": 0.5,
       "gridColor": "#676A86",
-      "gridDash": [
-        2,
-        2
-      ],
+      "gridDash": [2, 2],
       "gridOpacity": 0.5,
       "title": null,
       "titleColor": "#676A86",
@@ -149,19 +93,11 @@
       "tickOpacity": 0.5,
       "title": null
     },
-    "axisYDiscrete": {
-      "ticks": false,
-      "labelPadding": 5
-    },
-    "axisXQuantitative": {
-      "grid": true
-    },
+    "axisYDiscrete": {"ticks": false, "labelPadding": 5},
+    "axisXQuantitative": {"grid": true},
     "axisYQuantitative": {
       "gridColor": "#676A86",
-      "gridDash": [
-        1,
-        5
-      ],
+      "gridDash": [1, 5],
       "gridOpacity": 0.5,
       "ticks": false,
       "labelPadding": 5,
@@ -193,6 +129,7 @@
   "title": {
     "text": "Rent demand index and change in rent, November 2024",
     "subtitle": [
+      "Metros are sized by 2023 population.",
       "Rent data from Zillow. Population data from the US Census Bureau.",
       ""
     ],
