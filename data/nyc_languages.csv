@@ -8,24 +8,24 @@ id,pct,borough,name,language
 107,0.044000000000000004,Manhattan,"West Side, Upper West Side",Russian
 108,0.10300000000000001,Manhattan,Upper East Side,Japanese
 109,0.013999999999999999,Manhattan,"Manhattanville, Hamilton Heights",French
-110,0.078,Manhattan,Central Harlem,"Chinese (incl. Mandarin, Cantonese)"
+110,0.078,Manhattan,Central Harlem,Chinese
 111,0.02,Manhattan,East Harlem,French
-112,0.006999999999999999,Manhattan,"Washington Heights, Inwood","Chinese (incl. Mandarin, Cantonese)"
+112,0.006999999999999999,Manhattan,"Washington Heights, Inwood",Chinese
 201,0.02,Bronx,"Melrose, Mott Haven, Port Morris",Arabic
 202,0.02,Bronx,"Hunts Point, Longwood",Arabic
-203,0.015,Bronx,"Morrisania, Crotona Park East",Akan (incl. Twi)
-204,0.017,Bronx,"Highbridge, Concourse Village",Akan (incl. Twi)
+203,0.015,Bronx,"Morrisania, Crotona Park East",Akan
+204,0.017,Bronx,"Highbridge, Concourse Village",Akan
 205,0.013999999999999999,Bronx,"University Hts., Fordham, Mt. Hope",French
-206,0.015,Bronx,"East Tremont, Belmont",Akan (incl. Twi)
+206,0.015,Bronx,"East Tremont, Belmont",Akan
 207,0.019,Bronx,"Bedford Park, Norwood, Fordham",Albanian
-208,0.019,Bronx,"Riverdale, Kingsbridge, Marble Hill","Chinese (incl. Mandarin, Cantonese)"
+208,0.019,Bronx,"Riverdale, Kingsbridge, Marble Hill",Chinese
 209,0.017,Bronx,"Soundview, Parkchester",Arabic
-210,0.032,Bronx,"Throgs Nk., Co-op City, Pelham Bay","Chinese (incl. Mandarin, Cantonese)"
+210,0.032,Bronx,"Throgs Nk., Co-op City, Pelham Bay",Chinese
 211,0.048,Bronx,"Pelham Pkwy, Morris Park, Laconia",Arabic
 212,0.033,Bronx,"Wakefield, Williamsbridge",French
 301,0.111,Brooklyn,"Williamsburg, Greenpoint",Polish
 302,0.114,Brooklyn,"Brooklyn Heights, Fort Greene",Yiddish
-303,0.054000000000000006,Brooklyn,Bedford Stuyvesant,"Chinese (incl. Mandarin, Cantonese)"
+303,0.054000000000000006,Brooklyn,Bedford Stuyvesant,Chinese
 304,0.011000000000000001,Brooklyn,Bushwick,Haitian
 305,0.069,Brooklyn,"East New York, Starrett City",Bengali
 306,0.036000000000000004,Brooklyn,"Park Slope, Carroll Gardens",Japanese
@@ -35,17 +35,17 @@ id,pct,borough,name,language
 310,0.098,Brooklyn,"Bay Ridge, Dyker Heights",Arabic
 311,0.153,Brooklyn,"Bensonhurst, Bath Beach",Russian
 312,0.158,Brooklyn,"Borough Park, Ocean Parkway",Spanish
-313,0.114,Brooklyn,"Coney Island, Brighton Beach","Chinese (incl. Mandarin, Cantonese)"
+313,0.114,Brooklyn,"Coney Island, Brighton Beach",Chinese
 314,0.14300000000000002,Brooklyn,"Flatbush, Midwood",Haitian
 315,0.10400000000000001,Brooklyn,"Sheepshead Bay, Gerritsen Beach",Spanish
-316,0.035,Brooklyn,"Brownsville, Ocean Hill","Chinese (incl. Mandarin, Cantonese)"
+316,0.035,Brooklyn,"Brownsville, Ocean Hill",Chinese
 317,0.071,Brooklyn,"East Flatbush, Rugby, Farragut",French
-318,0.10300000000000001,Brooklyn,"Canarsie, Flatlands","Chinese (incl. Mandarin, Cantonese)"
+318,0.10300000000000001,Brooklyn,"Canarsie, Flatlands",Chinese
 401,0.078,Queens,"Astoria, Long Island City",Bengali
 402,0.098,Queens,"Sunnyside, Woodside",Bengali
 403,0.054000000000000006,Queens,"Jackson Heights, North Corona",Bengali
 404,0.05,Queens,"Elmhurst, South Corona",Bengali
-405,0.11800000000000001,Queens,"Ridgewood, Glendale, Maspeth","Chinese (incl. Mandarin, Cantonese)"
+405,0.11800000000000001,Queens,"Ridgewood, Glendale, Maspeth",Chinese
 406,0.14,Queens,"Forest Hills, Rego Park",Spanish
 407,0.129,Queens,"Flushing, Bay Terrace",Korean
 408,0.128,Queens,"Fresh Meadows, Briarwood",Bengali
