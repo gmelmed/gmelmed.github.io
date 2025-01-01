@@ -1,51 +1,66 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 400,
-    "height": 500,
-    "title": {
-      "text": "NYC Community Districts",
-      "subtitle": ["Hover to see district names.", ""],
-      "anchor": "start"
-    },
-    "data": {
-      "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/data/nyc_cd_topo.json",
-      "format": {"type": "topojson", "feature": "geog"}
-    },
-    "transform": [
-      {
-        "lookup": "properties.id",
-        "from": {
-          "data": {
-            "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/data/nyc_languages.csv"
-          },
-          "key": "id",
-          "fields": ["name", "borough"]
-        }
-      }
-    ],
-    "projection": {"type": "albers"},
-    "mark": {
-      "type": "geoshape",
-      "stroke": "black",
-      "strokeWidth": 0.5,
-      "fill": "lightgrey"
-    },
-    "encoding": {
-      "tooltip": [
-        {"field": "name", "type": "nominal", "title": "District"},
-        {"field": "borough", "type": "nominal", "title": "Borough"}
-      ]
-    },
-    "config": {
-      "font": "Montserrat, sans-serif",
-      "view": {"stroke": "transparent"},
-      "background": "#f7f7f7",
-      "title": {
-        "font": "Montserrat-Bold, sans-serif",
-        "color": "#122b39",
-        "fontSize": 16,
-        "subtitleFontSize": 14,
-        "subtitleColor": "#676A86"
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 400,
+  "height": 500,
+  "title": {
+    "text": "NYC Community Districts",
+    "subtitle": ["Hover to see district names.", ""],
+    "anchor": "start"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/data/nyc_cd_topo.json",
+    "format": {"type": "topojson", "feature": "geog"}
+  },
+  "transform": [
+    {
+      "lookup": "properties.id",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/data/nyc_languages.csv"
+        },
+        "key": "id",
+        "fields": ["name", "borough"]
       }
     }
+  ],
+  "layer": [
+    {
+      "transform": [{"filter": "datum.name == null"}],
+      "projection": {"type": "albers"},
+      "mark": {
+        "type": "geoshape",
+        "stroke": "black",
+        "strokeWidth": 0.5,
+        "fill": "#f7f7f7"
+      }
+    },
+    {
+      "transform": [{"filter": "datum.name != null"}],
+      "projection": {"type": "albers"},
+      "mark": {
+        "type": "geoshape",
+        "stroke": "black",
+        "strokeWidth": 0.5,
+        "fill": "lightgrey"
+      },
+      "encoding": {
+        "tooltip": [
+          {"field": "name", "type": "nominal", "title": "District"},
+          {"field": "borough", "type": "nominal", "title": "Borough"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "font": "Montserrat, sans-serif",
+    "view": {"stroke": "transparent"},
+    "background": "#f7f7f7",
+    "title": {
+      "font": "Montserrat-Bold, sans-serif",
+      "color": "#122b39",
+      "fontSize": 16,
+      "subtitleFontSize": 14,
+      "subtitleColor": "#676A86"
+    }
   }
+}

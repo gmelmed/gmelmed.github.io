@@ -4,10 +4,24 @@
   "data": {
     "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/final_project/data/rent_inflation.csv"
   },
-  "transform": [{"filter": "toDate(datum.date) >= toDate('2016-01-01')"}],
+  "transform": [
+    {"filter": "toDate(datum.date) >= toDate('2016-01-01')"},
+    {
+      "pivot": "metric",
+      "value": "yoy_change",
+      "groupby": ["date"]
+    }
+  ],
+  "height": 400,
+  "width": 600,
   "layer": [
     {
-      "mark": {"type": "point", "opacity": 0, "size": 150},
+      "transform": [
+        {
+          "fold": ["Rent", "CPI"],
+          "as": ["metric", "yoy_change"]
+        }
+      ],
       "encoding": {
         "x": {
           "field": "date",
@@ -32,40 +46,73 @@
             "title": "Month",
             "timeUnit": "yearmonth"
           },
-          {"field": "metric", "type": "nominal", "title": "Category"},
           {
-            "field": "yoy_change",
+            "field": "Rent",
             "type": "quantitative",
-            "title": "Inflation",
+            "title": "Rent Inflation",
+            "format": ".2%"
+          },
+          {
+            "field": "CPI",
+            "type": "quantitative",
+            "title": "CPI Inflation",
             "format": ".2%"
           }
         ]
-      }
+      },
+      "layer": [
+        {
+          "mark": {"type": "line", "strokeWidth": 2.5}
+        },
+        {
+          "transform": [{"filter": {"param": "hover", "empty": false}}],
+          "mark": {"type": "point", "size": 100, "filled": true}
+        }
+      ]
     },
     {
-      "mark": {"type": "line", "strokeWidth": 2.5},
+      "mark": "rule",
       "encoding": {
-        "x": {
-          "field": "date",
-          "type": "temporal",
-          "axis": {"grid": false, "tickCount": "year"}
+        "x": {"field": "date", "type": "temporal"},
+        "opacity": {
+          "condition": {"value": 0.3, "param": "hover", "empty": false},
+          "value": 0
         },
-        "y": {
-          "field": "yoy_change",
-          "type": "quantitative",
-          "axis": {"format": ".0%"}
-        },
-        "color": {
-          "field": "metric",
-          "type": "nominal",
-          "legend": {"title": "Inflation"},
-          "scale": {"domain": ["Rent", "CPI"]}
+        "tooltip": [
+          {
+            "field": "date",
+            "type": "temporal",
+            "title": "Month",
+            "timeUnit": "yearmonth"
+          },
+          {
+            "field": "Rent",
+            "type": "quantitative",
+            "title": "Rent Inflation",
+            "format": ".2%"
+          },
+          {
+            "field": "CPI",
+            "type": "quantitative",
+            "title": "CPI Inflation",
+            "format": ".2%"
+          }
+        ]
+      },
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": ["date"],
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
         }
-      }
+      ]
     }
   ],
-  "height": 400,
-  "width": 600,
   "title": {
     "text": "US: Rent and CPI Inflation",
     "anchor": "start",
@@ -86,7 +133,7 @@
         "#00FF7F"
       ]
     },
-    "point": {"filled": true, "size": 80, "color": "#e6224b", "opacity": 0.95},
+    "point": {"filled": true, "opacity": 0.95},
     "axis": {
       "labelColor": "#676A86",
       "labelFontSize": 11,
