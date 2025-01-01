@@ -1,156 +1,183 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": {
-      "text": "The dollar is dominant in FX reserves but its lead is starting to slip",
-      "subtitle": [
-        "Currency share of allocated foreign currency reserves (%) | Source: IMF",
-        ""
-      ],
-      "anchor": "start"
-    },
-    "data": {
-      "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/data/cofer_clean.csv"
-    },
-    "width": 600,
-    "height": 400,
-    "encoding": {
-      "x": {
-        "field": "date",
-        "type": "temporal",
-        "axis": {"title": null}
-      }
-    },
-    "layer": [
-      {
-        "mark": {"type": "line", "strokeCap": "round"},
-        "transform": [
-          {"filter": "datum.series == 'U.S. dollars'"},
-          {"filter": "datum.share != 0"}
-        ],
-        "encoding": {
-          "y": {
-            "field": "share",
-            "type": "quantitative",
-            "title": null,
-            "scale": {"domain": [45, 75]}
-          },
-          "color": {
-            "datum": "US Dollar",
-            "scale": {
-              "domain": ["US Dollar", "Renminbi (right scale)"],
-              "range": ["#0A3161", "#EE1C25"]
-            }
-          }
-        }
-      },
-      {
-        "mark": {"type": "line", "strokeCap": "round"},
-        "transform": [
-          {"filter": "datum.series == 'Chinese renminbi'"},
-          {"filter": "datum.share != 0"}
-        ],
-        "encoding": {
-          "y": {
-            "field": "share",
-            "type": "quantitative",
-            "title": null,
-            "scale": {"domain": [1, 7]},
-            "axis": {"orient": "right"}
-          },
-          "color": {
-            "datum": "Renminbi (right scale)",
-            "scale": {
-              "domain": ["US Dollar", "Renminbi (right scale)"],
-              "range": ["#0A3161", "#EE1C25"]
-            }
-          }
-        }
-      }
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "The dollar is dominant in FX reserves but its lead is starting to slip",
+    "subtitle": [
+      "Currency share of allocated foreign currency reserves (%) | Source: IMF",
+      ""
     ],
-    "resolve": {"scale": {"y": "independent"}},
-    "config": {
-      "font": "Montserrat, sans-serif",
-      "text": {
-        "color": "#676A86",
-        "align": "left",
-        "baseline": "middle",
-        "dx": 7,
-        "dy": 0,
-        "fontSize": 11
-      },
-      "view": {
-        "stroke": null,
-        "continuousWidth": 600,
-        "continuousHeight": 300,
-        "discreteWidth": 600,
-        "discreteHeight": 300
-      },
-      "background": "#f7f7f7",
-      "bar": {"color": "#179fdb"},
-      "line": {"color": "#676A86"},
-      "rule": {"color": "#676A86"},
-      "area": {"opacity": 0.3},
-      "point": {"filled": true, "size": 80, "color": "#e6224b", "opacity": 0.95},
-      "geoshape": {"stroke": "white", "strokeWidth": 0.3},
-      "rect": {"fill": "#d6d4d4", "opacity": 0.3},
-      "axis": {
-        "labelColor": "#676A86",
-        "labelFontSize": 11,
-        "labelFont": "Montserrat, sans-serif",
-        "labelOpacity": 0.7,
-        "tickColor": "#676A86",
-        "tickOpacity": 0.5,
-        "domainColor": "#676A86",
-        "domainOpacity": 0.5,
-        "gridColor": "#676A86",
-        "gridDash": [2, 2],
-        "gridOpacity": 0.5,
-        "title": null,
-        "titleColor": "#676A86",
-        "titleOpacity": 0.8,
-        "tickSize": 4
-      },
-      "axisXDiscrete": {
-        "grid": false,
-        "labelAngle": 0,
-        "tickCount": 10,
-        "tickOpacity": 0.5,
-        "title": null
-      },
-      "axisYDiscrete": {"ticks": false, "labelPadding": 5},
-      "axisXTemporal": {"grid": false, "ticks": true},
-      "axisXQuantitative": {"grid": true},
-      "axisYQuantitative": {
-        "gridColor": "#676A86",
-        "gridDash": [1, 5],
-        "gridOpacity": 0.5,
-        "ticks": false,
-        "labelPadding": 5,
-        "tickCount": 8,
-        "titleAngle": 0,
-        "titleAlign": "left",
-        "titleBaseline": "bottom",
-        "titleX": 0,
-        "titleY": -5
-      },
-      "title": {
-        "color": "#122b39E6",
-        "subtitleColor": "#676A86",
-        "font": "Montserrat, sans-serif",
-        "subtitleFont": "Montserrat, sans-serif",
-        "anchor": "start",
-        "fontSize": 16,
-        "subtitleFontSize": 14,
-        "subtitlePadding": 4,
-        "offset": 0,
-        "frame": "group"
-      },
-      "legend": {
-        "orient": "top",
-        "title": null,
-        "labelFontSize": 12,
-        "offset": 0,
-        "padding": 4
+    "anchor": "start"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/data/cofer_clean.csv"
+  },
+  "width": 600,
+  "height": 400,
+  "encoding": {
+    "x": {"field": "date", "type": "temporal", "axis": {"title": null}}
+  },
+  "layer": [
+    {
+      "mark": {"type": "line", "strokeCap": "round"},
+      "transform": [
+        {"filter": "datum.series == 'U.S. Dollars'"},
+        {"filter": "datum.share != 0"}
+      ],
+      "encoding": {
+        "y": {
+          "field": "share",
+          "type": "quantitative",
+          "title": null,
+          "scale": {"domain": [0.45, 0.75]},
+          "axis": {"format": ".0%"}
+        },
+        "color": {
+          "datum": "US Dollar",
+          "scale": {
+            "domain": ["US Dollar", "Renminbi (right scale)"],
+            "range": ["#0A3161", "#EE1C25"]
+          }
+        },
+        "tooltip": [
+          {"field": "series", "type": "nominal", "title": "Currency"},
+          {
+            "field": "date",
+            "type": "temporal",
+            "timeUnit": "yearmonth",
+            "title": "Month"
+          },
+          {
+            "field": "share",
+            "type": "quantitative",
+            "format": ".1%",
+            "title": "Share"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {"type": "line", "strokeCap": "round"},
+      "transform": [
+        {"filter": "datum.series == 'Chinese Renminbi'"},
+        {"filter": "datum.share != 0"}
+      ],
+      "encoding": {
+        "y": {
+          "field": "share",
+          "type": "quantitative",
+          "title": null,
+          "scale": {"domain": [0.01, 0.07]},
+          "axis": {"format": ".0%", "orient": "right"}
+        },
+        "color": {
+          "datum": "Renminbi (right scale)",
+          "scale": {
+            "domain": ["US Dollar", "Renminbi (right scale)"],
+            "range": ["#0A3161", "#EE1C25"]
+          }
+        },
+        "tooltip": [
+          {"field": "series", "type": "nominal", "title": "Currency"},
+          {
+            "field": "date",
+            "type": "temporal",
+            "timeUnit": "yearmonth",
+            "title": "Month"
+          },
+          {
+            "field": "share",
+            "type": "quantitative",
+            "format": ".1%",
+            "title": "Share"
+          }
+        ]
       }
     }
+  ],
+  "resolve": {"scale": {"y": "independent"}},
+  "config": {
+    "font": "Montserrat, sans-serif",
+    "text": {
+      "color": "#676A86",
+      "align": "left",
+      "baseline": "middle",
+      "dx": 7,
+      "dy": 0,
+      "fontSize": 11
+    },
+    "view": {
+      "stroke": null,
+      "continuousWidth": 600,
+      "continuousHeight": 300,
+      "discreteWidth": 600,
+      "discreteHeight": 300
+    },
+    "background": "#f7f7f7",
+    "bar": {"color": "#179fdb"},
+    "line": {"color": "#676A86"},
+    "rule": {"color": "#676A86"},
+    "area": {"opacity": 0.3},
+    "point": {"filled": true, "size": 80, "color": "#e6224b", "opacity": 0.95},
+    "geoshape": {"stroke": "white", "strokeWidth": 0.3},
+    "rect": {"fill": "#d6d4d4", "opacity": 0.3},
+    "axis": {
+      "labelColor": "#676A86",
+      "labelFontSize": 11,
+      "labelFont": "Montserrat, sans-serif",
+      "labelOpacity": 0.7,
+      "tickColor": "#676A86",
+      "tickOpacity": 0.5,
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [2, 2],
+      "gridOpacity": 0.5,
+      "title": null,
+      "titleColor": "#676A86",
+      "titleOpacity": 0.8,
+      "tickSize": 4
+    },
+    "axisXDiscrete": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": null
+    },
+    "axisYDiscrete": {"ticks": false, "labelPadding": 5},
+    "axisXTemporal": {"grid": false, "ticks": true},
+    "axisXQuantitative": {"grid": true},
+    "axisYQuantitative": {
+      "gridColor": "#676A86",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "ticks": false,
+      "labelPadding": 5,
+      "tickCount": 8,
+      "titleAngle": 0,
+      "titleAlign": "left",
+      "titleBaseline": "bottom",
+      "titleX": 0,
+      "titleY": -5
+    },
+    "title": {
+      "color": "#122b39E6",
+      "subtitleColor": "#676A86",
+      "font": "Montserrat, sans-serif",
+      "subtitleFont": "Montserrat, sans-serif",
+      "anchor": "start",
+      "fontSize": 16,
+      "subtitleFontSize": 14,
+      "subtitlePadding": 4,
+      "offset": 0,
+      "frame": "group"
+    },
+    "legend": {
+      "orient": "top",
+      "title": null,
+      "labelFontSize": 12,
+      "offset": 0,
+      "padding": 4
+    }
   }
+}

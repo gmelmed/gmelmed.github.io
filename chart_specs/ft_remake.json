@@ -1,142 +1,161 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": {
-      "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/data/cofer_clean.csv"
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/data/cofer_clean.csv"
+  },
+  "title": {
+    "text": "The Dollar is dominant in FX reserves but its lead is starting to slip",
+    "subtitle": [
+      "Currency share of allocated foreign currency reserves (%) | Source: IMF",
+      ""
+    ],
+    "anchor": "start"
+  },
+  "transform": [{"filter": "datum.share != 0"}],
+  "mark": {"type": "line", "strokeCap": "round"},
+  "encoding": {
+    "x": {"field": "date", "type": "temporal"},
+    "y": {"field": "share", "type": "quantitative", "axis": {"format": ".0%"}},
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "U.S. Dollars",
+          "Chinese Renminbi",
+          "Euro",
+          "Japanese Yen",
+          "Pounds Sterling",
+          "Australian Dollars",
+          "Canadian Dollars",
+          "Swiss Francs"
+        ],
+        "range": [
+          "#0A3161",
+          "#EE1C25",
+          "lightgrey",
+          "lightgrey",
+          "lightgrey",
+          "lightgrey",
+          "lightgrey",
+          "lightgrey"
+        ]
+      },
+      "legend": {"values": ["U.S. Dollars", "Chinese Renminbi"]}
     },
-    "title": {
-      "text": "The dollar is dominant in FX reserves but its lead is starting to slip",
-      "subtitle": [
-        "Currency share of allocated foreign currency reserves (%) | Source: IMF",
-        ""
-      ],
-      "anchor": "start"
+    "strokeWidth": {
+      "condition": {
+        "test": "datum.series == 'U.S. Dollars' || datum.series == 'Chinese Renminbi'",
+        "value": 2.5
+      },
+      "value": 2
     },
-    "transform": [{"filter": "datum.share != 0"}],
-    "mark": {"type": "line", "strokeCap": "round"},
-    "encoding": {
-      "x": {"field": "date", "type": "temporal"},
-      "y": {"field": "share", "type": "quantitative"},
-      "color": {
+    "opacity": {
+      "condition": {
+        "test": "datum.series == 'U.S. Dollars' || datum.series == 'Chinese Renminbi'",
+        "value": 1
+      },
+      "value": 0.8
+    },
+    "tooltip":[
+      {
         "field": "series",
         "type": "nominal",
-        "scale": {
-          "domain": [
-            "U.S. dollars",
-            "Chinese renminbi",
-            "euro",
-            "Japanese yen",
-            "pounds sterling",
-            "Australian dollars",
-            "Canadian dollars",
-            "Swiss francs"
-          ],
-          "range": [
-            "#0A3161",
-            "#EE1C25",
-            "lightgrey",
-            "lightgrey",
-            "lightgrey",
-            "lightgrey",
-            "lightgrey",
-            "lightgrey"
-          ]
-        },
-        "legend": {"values": ["U.S. dollars", "Chinese renminbi"]}
+        "title" :"Currency"
       },
-      "strokeWidth": {
-        "condition": {
-          "test": "datum.series == 'U.S. dollars' || datum.series == 'Chinese renminbi'",
-          "value": 2.5
-        },
-        "value": 2
+      {
+        "field": "date",
+        "type": "temporal",
+        "timeUnit": "yearmonth",
+        "title": "Month"
       },
-      "opacity": {
-        "condition": {
-          "test": "datum.series == 'U.S. dollars' || datum.series == 'Chinese renminbi'",
-          "value": 1
-        },
-        "value": 0.8
+      {
+        "field": "share",
+        "type": "quantitative",
+        "format": ".1%",
+        "title": "Share"
       }
+    ]
+  },
+  "config": {
+    "font": "Montserrat, sans-serif",
+    "text": {
+      "color": "#676A86",
+      "align": "left",
+      "baseline": "middle",
+      "dx": 7,
+      "dy": 0,
+      "fontSize": 11
     },
-    "config": {
+    "view": {
+      "stroke": null,
+      "continuousWidth": 600,
+      "continuousHeight": 300,
+      "discreteWidth": 600,
+      "discreteHeight": 300
+    },
+    "background": "#f7f7f7",
+    "bar": {"color": "#179fdb"},
+    "line": {"color": "#676A86"},
+    "rule": {"color": "#676A86"},
+    "area": {"opacity": 0.3},
+    "point": {"filled": true, "size": 80, "color": "#e6224b", "opacity": 0.95},
+    "geoshape": {"stroke": "white", "strokeWidth": 0.3},
+    "rect": {"fill": "#d6d4d4", "opacity": 0.3},
+    "axis": {
+      "labelColor": "#676A86",
+      "labelFontSize": 11,
+      "labelFont": "Montserrat, sans-serif",
+      "labelOpacity": 0.7,
+      "tickColor": "#676A86",
+      "tickOpacity": 0.5,
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [2, 2],
+      "gridOpacity": 0.5,
+      "title": null,
+      "titleColor": "#676A86",
+      "titleOpacity": 0.8,
+      "tickSize": 4
+    },
+    "axisXDiscrete": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": null
+    },
+    "axisYDiscrete": {"ticks": false, "labelPadding": 5},
+    "axisXTemporal": {"grid": false, "ticks": true},
+    "axisXQuantitative": {"grid": true},
+    "axisYQuantitative": {
+      "gridColor": "#676A86",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "ticks": false,
+      "labelPadding": 5,
+      "tickCount": 8,
+      "titleAngle": 0,
+      "titleAlign": "left",
+      "titleBaseline": "bottom",
+      "titleX": 0,
+      "titleY": -5
+    },
+    "title": {
+      "color": "#122b39E6",
+      "subtitleColor": "#676A86",
       "font": "Montserrat, sans-serif",
-      "text": {
-        "color": "#676A86",
-        "align": "left",
-        "baseline": "middle",
-        "dx": 7,
-        "dy": 0,
-        "fontSize": 11
-      },
-      "view": {
-        "stroke": null,
-        "continuousWidth": 600,
-        "continuousHeight": 300,
-        "discreteWidth": 600,
-        "discreteHeight": 300
-      },
-      "background": "#f7f7f7",
-      "bar": {"color": "#179fdb"},
-      "line": {"color": "#676A86"},
-      "rule": {"color": "#676A86"},
-      "area": {"opacity": 0.3},
-      "point": {"filled": true, "size": 80, "color": "#e6224b", "opacity": 0.95},
-      "geoshape": {"stroke": "white", "strokeWidth": 0.3},
-      "rect": {"fill": "#d6d4d4", "opacity": 0.3},
-      "axis": {
-        "labelColor": "#676A86",
-        "labelFontSize": 11,
-        "labelFont": "Montserrat, sans-serif",
-        "labelOpacity": 0.7,
-        "tickColor": "#676A86",
-        "tickOpacity": 0.5,
-        "domainColor": "#676A86",
-        "domainOpacity": 0.5,
-        "gridColor": "#676A86",
-        "gridDash": [2, 2],
-        "gridOpacity": 0.5,
-        "title": null,
-        "titleColor": "#676A86",
-        "titleOpacity": 0.8,
-        "tickSize": 4
-      },
-      "axisXDiscrete": {
-        "grid": false,
-        "labelAngle": 0,
-        "tickCount": 10,
-        "tickOpacity": 0.5,
-        "title": null
-      },
-      "axisYDiscrete": {"ticks": false, "labelPadding": 5},
-      "axisXTemporal": {"grid": false, "ticks": true},
-      "axisXQuantitative": {"grid": true},
-      "axisYQuantitative": {
-        "gridColor": "#676A86",
-        "gridDash": [1, 5],
-        "gridOpacity": 0.5,
-        "ticks": false,
-        "labelPadding": 5,
-        "tickCount": 8,
-        "titleAngle": 0,
-        "titleAlign": "left",
-        "titleBaseline": "bottom",
-        "titleX": 0,
-        "titleY": -5
-      },
-      "title": {
-        "color": "#122b39E6",
-        "subtitleColor": "#676A86",
-        "font": "Montserrat, sans-serif",
-        "subtitleFont": "Montserrat, sans-serif",
-        "anchor": "start",
-        "fontSize": 16,
-        "subtitleFontSize": 14,
-        "subtitlePadding": 4,
-        "offset": 0,
-        "frame": "group"
-      },
-      "legend": {"orient": "top", "title": null, "labelFontSize": 12}
+      "subtitleFont": "Montserrat, sans-serif",
+      "anchor": "start",
+      "fontSize": 16,
+      "subtitleFontSize": 14,
+      "subtitlePadding": 4,
+      "offset": 0,
+      "frame": "group"
     },
-    "height": 400,
-    "width": 600
-  }
+    "legend": {"orient": "top", "title": null, "labelFontSize": 12}
+  },
+  "height": 400,
+  "width": 600
+}
