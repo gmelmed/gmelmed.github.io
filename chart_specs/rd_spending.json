@@ -34,6 +34,12 @@
           "title": "Countries"
         },
         {
+          "field": "date",
+          "type": "temporal",
+          "timeUnit": "yearmonth",
+          "title": "Month"
+        },
+        {
           "field": "value",
           "type": "quantitative",
           "format": ".2%",

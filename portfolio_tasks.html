@@ -92,7 +92,7 @@
                 <figure id="cc3_1"></figure>
             </p>
             <p>
-                The second chart shows the UK's spending on R&D as a share of GDP. The ECO panelists (and many ECO contributors) argue that the UK is under-investing in R&D. The chart below shows R&D spending as a share of GDP for G7 economies.<sup><a href="#fn2" id="ref1">2</a></sup> Based on the rhetoric around this issue, I expected to see the UK near the bottom. In fact, the UK is in the middle of the pack, below the US, Germany, and Japan and above Italy, Canada and France. The UK is also the only country in the G7 that is steadily increasing its R&D spending as a share of GDP. Of course, this says nothing about the quality of the R&D spending.
+                The second chart shows the UK's spending on R&D as a share of GDP. The ECO panelists (and many ECO contributors) argue that the UK is under-investing in R&D. The chart below shows R&D spending as a share of GDP for G7 economies. Based on the rhetoric around this issue, I expected to see the UK near the bottom. In fact, the UK is in the middle of the pack, below the US, Germany, and Japan and above Italy, Canada and France.<sup><a href="#fn2" id="ref1">2</a></sup> The UK is also the only country in the G7 that is steadily increasing its R&D spending as a share of GDP. Of course, this says nothing about the quality of the R&D spending.
                 <figure id="cc3_2"></figure>
             </p>
 
@@ -157,6 +157,10 @@
                 <b>Task:</b> Produce two charts that use advanced analytics.
             </p>
             <p>
+                My first analytics chart is from my <a href="final_project/rent_in_america.html">final project.</a> This is essentially the thesis of my project: areas that under-supply housing have higher rent growth.
+            </p>
+            <figure id="cc8_1"></figure>
+            <p>
                 For the next visualization, I returned to the life expectancy data I used for my <a href="lifeex.html">policy memo</a> on the subject last year. In it, I argued that life expectancy in the US is diverging by geography and by class. The decline and stagnation of overall life expectancy conceals a great deal of variation. Consider the density plots of life expectancy by county every four years. The distributions gradually become flatter and wider, indicating a widening gap between the shortest- and longest-living areas.
             </p>
             <figure id="cc8_2"></figure>
@@ -191,7 +195,7 @@
                     <a href="#fn1-ref">↩</a>
                 </li>
                 <li id="fn2">
-                    I don't think I'm cherry-picking my sample either. The UK is also middle-of-the pack when compared with G20 countries and OECD countries.
+                    I don't think I'm cherry-picking my sample either. The UK is also middle-of-the pack when compared with G20 countries and OECD countries. <a href="#fn2-ref">↩</a>
                 </li>
             </ol>
         </div>
@@ -209,6 +213,7 @@
     let facet_spec = "chart_specs/uk_labor_mkt.json";
     let nyc_plain_spec = "chart_specs/nyc_plain.json";
     let nyc_languages_spec = "chart_specs/nyc_languages.json";
+    let homebuilding_spec = "final_project/specs/homebuilding_zori.json";
     let lifeex_distribution_spec = "chart_specs/lifeex_distributions.json";
     let interactive_map_spec = "chart_specs/lifeex_state_interactive.json";
     let lifeex_dropdown_spec = "chart_specs/lifeex_dropdown.json";
@@ -224,6 +229,7 @@
     vegaEmbed('#cc6', facet_spec)
     vegaEmbed('#cc7_1', nyc_plain_spec)
     vegaEmbed('#cc7_2', nyc_languages_spec)
+    vegaEmbed('#cc8_1', homebuilding_spec)
     vegaEmbed('#cc8_2', lifeex_distribution_spec)
     vegaEmbed('#cc10_1', interactive_map_spec)
     vegaEmbed('#cc10_2', lifeex_dropdown_spec)
