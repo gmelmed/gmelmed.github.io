@@ -37,7 +37,7 @@
           "field": "value",
           "type": "quantitative",
           "format": ".2%",
-          "title": "MVA"
+          "title": "R&D spending (% of GDP)"
         }
       ]
     },
