@@ -32,7 +32,12 @@
       "scale": {"type": "linear", "range": [50, 1000]},
       "legend": null
     },
-    "color": {"field": "region", "type": "nominal", "title": "Region"},
+    "color": {
+      "field": "region", 
+      "type": "nominal", 
+      "title": "Region",
+      "scale": {"scheme":"observable10"}
+    },
     "opacity": {"condition": {"selection": "hover", "value": 1}, "value": 0.6},
     "tooltip": [
       {"field": "name", "title": "Metro"},
@@ -57,17 +62,6 @@
     "font": "Montserrat, sans-serif",
     "view": {"stroke": "transparent"},
     "background": "#f7f7f7",
-    "range": {
-      "category": [
-        "#002fa7",
-        "#FFD300",
-        "#FF9500",
-        "#FF2B7F",
-        "#00C5CD",
-        "#5D00A6",
-        "#00FF7F"
-      ]
-    },
     "point": {"filled": true, "size": 80, "opacity": 0.95},
     "axis": {
       "labelColor": "#676A86",
