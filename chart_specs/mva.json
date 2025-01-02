@@ -162,8 +162,23 @@
     "point": {
       "filled": true,
       "size": 80,
-      "color": "#e6224b",
+      "color": "#4269d0",
       "opacity": 0.95
+    },
+    "area": {
+      "color": "#4269d0"
+    },
+    "line": {
+      "color": "#4269d0"
+    },
+    "bar": {
+      "color": "#4269d0"
+    },
+    "circle": {
+      "color": "#4269d0"
+    },
+    "rule": {
+      "color": "#4269d0"
     },
     "axis": {
       "labelColor": "#676A86",
