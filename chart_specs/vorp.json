@@ -4,7 +4,7 @@
       "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/data/vorp.csv"
     },
     "title": {
-      "text": "Jokić and Shai are in a league of their own",
+      "text": "Jokić and SGA are in a league of their own",
       "subtitle": [
         "Every NBA team ranked by leading value over replacement player (VORP)",
         "Data from basketball reference",
@@ -40,14 +40,14 @@
       {
         "transform": [
           {
-            "filter": "datum.category == 'best' || datum.category == 'avg' || datum.category == 'avg_wo'"
+            "filter": "datum.category == 'Best Player' || datum.category == 'Average' || datum.category == 'Average without Best'"
           }
         ],
         "mark": {
           "type": "point",
           "color": "lightgray",
           "opacity": 0.8,
-          "size":100,
+          "size": 100,
           "strokeWidth": 1.5
         },
         "encoding": {
@@ -58,7 +58,14 @@
             "sort": {"field": "VORP", "op": "max", "order": "descending"}
           },
           "y": {"field": "VORP", "type": "quantitative"},
-          "color": {"field": "category"},
+          "color": {
+            "field": "category",
+            "scale": {"domain": ["Best Player", "Average", "Average without Best"]},
+            "legend":{
+              "title":null,
+              "orient": "bottom"
+            }
+          },
           "tooltip": [
             {"field": "player", "type": "nominal", "title": "Player"},
             {"field": "VORP", "type": "quantitative", "format": ".2f"}
@@ -66,14 +73,14 @@
         }
       },
       {
-        "transform": [{"filter": "datum.category == 'best'"}],
+        "transform": [{"filter": "datum.best == 1"}],
         "mark": {
           "type": "text",
           "angle": -45,
           "dx": 8,
           "dy": -5,
           "fontSize": 11,
-          "align":"left"
+          "align": "left"
         },
         "encoding": {
           "x": {
