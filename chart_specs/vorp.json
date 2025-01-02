@@ -6,15 +6,38 @@
     "title": {
       "text": "Jokić and SGA are in a league of their own",
       "subtitle": [
-        "Every NBA team ranked by leading value over replacement player (VORP)",
-        "Data from basketball reference",
+        "Every NBA player ranked by Value Over Replacement Player (VORP)",
+        "Data from Basketball Reference",
         ""
       ],
       "anchor": "start"
     },
-    "height": 400,
-    "width": 600,
+    "height": 500,
+    "width": 400,
     "layer": [
+      {
+        "transform": [
+          {
+            "filter": "datum.category == 'Best Player' || datum.category == 'Average without Best'"
+          },
+          {"pivot": "category", "value": "VORP", "groupby": ["team"]}
+        ],
+        "mark": {
+          "type": "rule",
+          "color": "lightgray",
+          "opacity": 0.5,
+          "strokeWidth": 1
+        },
+        "encoding": {
+          "y": {
+            "field": "team",
+            "type": "nominal",
+            "sort": {"field": "VORP", "op": "max", "order": "descending"}
+          },
+          "x": {"field": "Best Player", "type": "quantitative"},
+          "x2": {"field": "Average without Best"}
+        }
+      },
       {
         "mark": {
           "type": "point",
@@ -30,10 +53,10 @@
             "title": null,
             "sort": {"field": "VORP", "op": "max", "order": "descending"}
           },
-          "x": {"field": "VORP", "type": "quantitative"},
+          "x": {"field": "VORP", "type": "quantitative", "title": "VORP"},
           "tooltip": [
             {"field": "player", "type": "nominal", "title": "Player"},
-            {"field": "VORP", "type": "quantitative", "format": ".2f"}
+            {"field": "VORP", "type": "quantitative", "format": ".1f"}
           ]
         }
       },
@@ -67,7 +90,7 @@
           },
           "tooltip": [
             {"field": "player", "type": "nominal", "title": "Player"},
-            {"field": "VORP", "type": "quantitative", "format": ".2f"}
+            {"field": "VORP", "type": "quantitative", "format": ".1f"}
           ]
         }
       },
@@ -113,6 +136,7 @@
         "titleOpacity": 0.8,
         "tickSize": 4
       },
+      "axisXQuantitative": {"grid": false},
       "axisXTemporal": {"grid": false},
       "axisYQuantitative": {
         "gridColor": "#676A86",
