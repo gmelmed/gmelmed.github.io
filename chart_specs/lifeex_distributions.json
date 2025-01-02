@@ -1,120 +1,162 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Distribution of Life Expectancy Across US Counties",
-    "width": 600,
-    "height": 70,
-    "data": {
-      "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/data/lifeex_counties.csv"
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Distribution of Life Expectancy Across US Counties",
+  "width": 600,
+  "height": 70,
+  "data": {
+    "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/data/lifeex_counties.csv"
+  },
+  "transform": [
+    {
+      "filter": "datum.year == 2003 || datum.year == 2007 || datum.year == 2011 || datum.year == 2015 || datum.year == 2019"
     },
-    "transform": [
-    {"filter": "datum.year == 2003 || datum.year == 2007 || datum.year == 2011 || datum.year == 2015 || datum.year == 2019"},
     {
       "density": "val",
-      "groupby": ["year"],
-      "extent": [70, 85]
+      "groupby": [
+        "year"
+      ],
+      "extent": [
+        70,
+        85
+      ]
     }
   ],
-    "encoding": {
-      "x": {
-        "field": "value", 
-        "type": "quantitative", 
-        "title": "Life Expectancy (years)",
-        "scale": {"domain": [70, 85]}
-      },
-      "y": {
-        "field": "density", 
-        "type": "quantitative", 
-        "stack": "zero",
-        "axis": {"title": null, "labels": false, "ticks": false}
-      },
-      "row": {
-        "field": "year",
-        "type": "ordinal",
-        "title": "Year"
+  "encoding": {
+    "x": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Life Expectancy (years)",
+      "scale": {
+        "domain": [
+          70,
+          85
+        ]
       }
     },
-    "mark": {
-      "type": "area",
-      "color": "#002fa7",
-      "opacity": 0.75
-    },
-    "config": {
-      "font": "Montserrat, sans-serif",
-      "text": {
-        "color": "#676A86",
-        "align": "left",
-        "baseline": "middle",
-        "dx": 7,
-        "dy": 0,
-        "fontSize": 11
-      },
-      "view": {
-        "stroke": null,
-        "continuousWidth": 600,
-        "continuousHeight": 300,
-        "discreteWidth": 600,
-        "discreteHeight": 300
-      },
-      "background": "#f7f7f7",
-      "bar": {"color": "#179fdb"},
-      "line": {"color": "#676A86"},
-      "rule": {"color": "#676A86"},
-      "area": {"opacity": 0.3},
-      "point": {"filled": true, "size": 80, "color": "#e6224b", "opacity": 0.95},
-      "geoshape": {"stroke": "white", "strokeWidth": 0.3},
-      "rect": {"fill": "#d6d4d4", "opacity": 0.3},
+    "y": {
+      "field": "density",
+      "type": "quantitative",
+      "stack": "zero",
       "axis": {
-        "labelColor": "#676A86",
-        "labelFontSize": 11,
-        "labelFont": "Montserrat, sans-serif",
-        "labelOpacity": 0.7,
-        "tickColor": "#676A86",
-        "tickOpacity": 0.5,
-        "domainColor": "#676A86",
-        "domainOpacity": 0.5,
-        "gridColor": "#676A86",
-        "gridDash": [2, 2],
-        "gridOpacity": 0.5,
         "title": null,
-        "titleColor": "#676A86",
-        "titleOpacity": 0.8,
-        "tickSize": 4
-      },
-      "axisXDiscrete": {
-        "grid": false,
-        "labelAngle": 0,
-        "tickCount": 10,
-        "tickOpacity": 0.5,
-        "title": null
-      },
-      "axisYDiscrete": {"ticks": false, "labelPadding": 5},
-      "axisXTemporal": {"grid": false, "ticks": true},
-      "axisXQuantitative": {"grid": false},
-      "axisYQuantitative": {
-        "gridColor": "#676A86",
-        "gridDash": [1, 5],
-        "gridOpacity": 0.5,
-        "ticks": false,
-        "labelPadding": 5,
-        "tickCount": 3,
-        "titleAngle": 0,
-        "titleAlign": "left",
-        "titleBaseline": "bottom",
-        "titleX": 0,
-        "titleY": -5
-      },
-      "title": {
-        "color": "#122b39E6",
-        "subtitleColor": "#676A86",
-        "font": "Montserrat, sans-serif",
-        "subtitleFont": "Montserrat, sans-serif",
-        "anchor": "start",
-        "fontSize": 16,
-        "subtitleFontSize": 14,
-        "subtitlePadding": 4,
-        "offset": 0,
-        "frame": "group"
-      },
-      "legend": {"orient": "top", "title": null, "labelFontSize": 12}
+        "labels": false,
+        "ticks": false
+      }
+    },
+    "row": {
+      "field": "year",
+      "type": "ordinal",
+      "title": "Year"
+    }
+  },
+  "mark": {
+    "type": "area",
+    "opacity": 0.75
+  },
+  "config": {
+    "font": "Montserrat, sans-serif",
+    "text": {
+      "color": "#676A86",
+      "align": "left",
+      "baseline": "middle",
+      "dx": 7,
+      "dy": 0,
+      "fontSize": 11
+    },
+    "view": {
+      "stroke": null,
+      "continuousWidth": 600,
+      "continuousHeight": 300,
+      "discreteWidth": 600,
+      "discreteHeight": 300
+    },
+    "background": "#f7f7f7",
+    "range": {
+      "category": {
+        "scheme": "observable10"
+      }
+    },
+    "area": {
+      "opacity": 0.3
+    },
+    "geoshape": {
+      "stroke": "white",
+      "strokeWidth": 0.3
+    },
+    "rect": {
+      "fill": "#d6d4d4",
+      "opacity": 0.3
+    },
+    "axis": {
+      "labelColor": "#676A86",
+      "labelFontSize": 11,
+      "labelFont": "Montserrat, sans-serif",
+      "labelOpacity": 0.7,
+      "tickColor": "#676A86",
+      "tickOpacity": 0.5,
+      "domainColor": "#676A86",
+      "domainOpacity": 0.5,
+      "gridColor": "#676A86",
+      "gridDash": [
+        2,
+        2
+      ],
+      "gridOpacity": 0.5,
+      "title": null,
+      "titleColor": "#676A86",
+      "titleOpacity": 0.8,
+      "tickSize": 4
+    },
+    "axisXDiscrete": {
+      "grid": false,
+      "labelAngle": 0,
+      "tickCount": 10,
+      "tickOpacity": 0.5,
+      "title": null
+    },
+    "axisYDiscrete": {
+      "ticks": false,
+      "labelPadding": 5
+    },
+    "axisXTemporal": {
+      "grid": false,
+      "ticks": true
+    },
+    "axisXQuantitative": {
+      "grid": false
+    },
+    "axisYQuantitative": {
+      "gridColor": "#676A86",
+      "gridDash": [
+        1,
+        5
+      ],
+      "gridOpacity": 0.5,
+      "ticks": false,
+      "labelPadding": 5,
+      "tickCount": 3,
+      "titleAngle": 0,
+      "titleAlign": "left",
+      "titleBaseline": "bottom",
+      "titleX": 0,
+      "titleY": -5
+    },
+    "title": {
+      "color": "#122b39E6",
+      "subtitleColor": "#676A86",
+      "font": "Montserrat, sans-serif",
+      "subtitleFont": "Montserrat, sans-serif",
+      "anchor": "start",
+      "fontSize": 16,
+      "subtitleFontSize": 14,
+      "subtitlePadding": 4,
+      "offset": 0,
+      "frame": "group"
+    },
+    "legend": {
+      "orient": "top",
+      "title": null,
+      "labelFontSize": 12
     }
   }
+}

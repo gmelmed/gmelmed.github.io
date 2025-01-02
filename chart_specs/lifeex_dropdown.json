@@ -102,9 +102,7 @@
       "mark": {
         "type": "point",
         "filled":false,
-        "color": "#002fa7",
-        "strokeWidth": 1.5,
-        "opacity": 0.8
+        "strokeWidth": 1.5
       },
       "encoding": {
         "x": {"field": "year", "type": "temporal", "title": "Year"},
@@ -141,11 +139,12 @@
       "discreteHeight": 300
     },
     "background": "#f7f7f7",
-    "bar": {"color": "#179fdb"},
-    "line": {"color": "#676A86"},
-    "rule": {"color": "#676A86"},
+    "range": {
+      "category": {
+        "scheme": "observable10"
+      }
+    },
     "area": {"opacity": 0.3},
-    "point": {"filled": true, "size": 80, "color": "#e6224b", "opacity": 0.95},
     "geoshape": {"stroke": "white", "strokeWidth": 0.3},
     "rect": {"fill": "#d6d4d4", "opacity": 0.3},
     "axis": {
