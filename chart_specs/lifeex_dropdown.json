@@ -103,7 +103,8 @@
         "type": "point",
         "filled":false,
         "color": "#002fa7",
-        "strokeWidth": 1.5
+        "strokeWidth": 1.5,
+        "opacity": 0.8
       },
       "encoding": {
         "x": {"field": "year", "type": "temporal", "title": "Year"},
