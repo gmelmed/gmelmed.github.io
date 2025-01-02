@@ -65,9 +65,11 @@
             <p>
                 <b>Task:</b> Build two separate charts using the “create” tool from Economics Observatory's <a href="https://www.economicsobservatory.com/create">"create" tool</a>. Embed the two charts in your page.
             </p>
+            <p>I'll start with some good news:</p>
+            <figure id="cc2_1"></figure>
+            <p>Now for some not-so-good news:</p>
+            <figure id="cc2_2"></figure>
         </div>
-        <figure id="cc2_1"></figure>
-        <figure id="cc2_2"></figure>
     </section>
 
     <section>
@@ -198,14 +200,14 @@
     <footer class="footnotes">
             <ol>
                 <li id="fn1">
-                    I changed the configuration of the JSON specs for these charts and the CC2 charts to match the style of my portfolio.
+                    I changed the <tt>config</tt> section of the JSON specs for these charts and the CC2 charts to match the style of my portfolio. I also added a tooltip the the CC2 charts. Otherwise, the charts are the same as the originals.
                     <a href="#fn1-ref">↩</a>
                 </li>
                 <li id="fn2">
                     I don't think I'm cherry-picking my sample either. The UK is also middle-of-the pack when compared with G20 countries and OECD countries. <a href="#fn2-ref">↩</a>
                 </li>
                 <li id="fn3">
-                    I wish I could say I came up with the idea for this chart, but it's a recreation of a map by <a href="https://www.reddit.com/r/MapPorn/comments/145weto/first_second_and_third_most_spoken_languages_in/">this Reddit user.</a> <a href="#fn3-ref">↩</a>
+                    I wish I could say I came up with the idea for this chart, but it's a recreation of <a href="https://www.reddit.com/r/MapPorn/comments/145weto/first_second_and_third_most_spoken_languages_in/">this map.</a> <a href="#fn3-ref">↩</a>
             </ol>
         </div>
     </footer>    
@@ -229,8 +231,8 @@
 
     vegaEmbed('#cc1_1', rd_football_spec)
     vegaEmbed('#cc1_2', rd_accommodation_spec)
-    vegaEmbed('#cc2_1', eco_nuclear_spec)
-    vegaEmbed('#cc2_2', eco_india_spec)
+    vegaEmbed('#cc2_2', eco_nuclear_spec)
+    vegaEmbed('#cc2_1', eco_india_spec)
     vegaEmbed('#cc3_1', mva_spec)
     vegaEmbed('#cc3_2', rd_spec)
     vegaEmbed('#cc4_1', ft_recreation_spec)
