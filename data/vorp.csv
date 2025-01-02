@@ -1,566 +1,566 @@
-player,id,VORP,best,category,surname
-Nikola Jokić,DEN,3.9,1,Best Player,Jokić
-Shai Gilgeous-Alexander,OKC,3.8,1,Best Player,Gilgeous-Alexander
-Giannis Antetokounmpo,MIL,2.5,1,Best Player,Antetokounmpo
-Jayson Tatum,BOS,2.5,1,Best Player,Tatum
-Victor Wembanyama,SAS,2.4,1,Best Player,Wembanyama
-Alperen Sengun,HOU,2.2,1,Best Player,Sengun
-Domantas Sabonis,SAC,2.1,1,Best Player,Sabonis
-Anthony Davis,LAL,2.1,1,Best Player,Davis
-Karl-Anthony Towns,NYK,2.1,1,Best Player,Towns
-Josh Hart,NYK,1.8,0,other,Hart
-Luka Dončić,DAL,1.8,1,Best Player,Dončić
-Franz Wagner,ORL,1.7,1,Best Player,Wagner
-LeBron James,LAL,1.7,0,other,James
-Jalen Williams,OKC,1.7,0,other,Williams
-Kyrie Irving,DAL,1.6,0,other,Irving
-Tyler Herro,MIA,1.6,1,Best Player,Herro
-Stephen Curry,GSW,1.6,1,Best Player,Curry
-Cameron Johnson,BRK,1.6,1,Best Player,Johnson
-Derrick White,BOS,1.6,0,other,White
-Payton Pritchard,BOS,1.5,0,other,Pritchard
-Jalen Brunson,NYK,1.5,0,other,Brunson
-Donovan Mitchell,CLE,1.4,1,Best Player,Mitchell
-Darius Garland,CLE,1.4,0,other,Garland
-LaMelo Ball,CHO,1.4,1,Best Player,Ball
-Nikola Vučević,CHI,1.4,1,Best Player,Vučević
-Tyrese Haliburton,IND,1.4,1,Best Player,Haliburton
-James Harden,LAC,1.4,1,Best Player,Harden
-Evan Mobley,CLE,1.4,0,other,Mobley
-Jarrett Allen,CLE,1.4,0,other,Allen
-Damian Lillard,MIL,1.3,0,other,Lillard
-Anthony Edwards,MIN,1.3,1,Best Player,Edwards
-De'Aaron Fox,SAC,1.3,0,other,Fox
-Jimmy Butler,MIA,1.2,0,other,Butler
-Jaren Jackson Jr.,MEM,1.2,1,Best Player,Jackson
-Cade Cunningham,DET,1.2,1,Best Player,Cunningham
-Santi Aldama,MEM,1.2,0,other,Aldama
-Norman Powell,LAC,1.2,0,other,Powell
-Jalen Johnson,ATL,1.2,1,Best Player,Johnson
-Tyrese Maxey,PHI,1.1,1,Best Player,Maxey
-Amen Thompson,HOU,1.0,0,other,Thompson
-Goga Bitadze,ORL,1.0,0,other,Bitadze
-Pascal Siakam,IND,1.0,0,other,Siakam
-Fred VanVleet,HOU,1.0,0,other,VanVleet
-Tari Eason,HOU,1.0,0,other,Eason
-Kevin Durant,PHO,1.0,1,Best Player,Durant
-Ivica Zubac,LAC,1.0,0,other,Zubac
-Dereck Lively II,DAL,0.9,0,other,Lively
-Chris Paul,SAS,0.9,0,other,Paul
-Daniel Gafford,DAL,0.9,0,other,Gafford
-Moritz Wagner,ORL,0.9,0,other,Wagner
-Bam Adebayo,MIA,0.9,0,other,Adebayo
-Julius Randle,MIN,0.9,0,other,Randle
-Ja Morant,MEM,0.9,0,other,Morant
-Caris LeVert,CLE,0.9,0,other,LeVert
-Devin Booker,PHO,0.8,0,other,Booker
-Desmond Bane,MEM,0.8,0,other,Bane
-Ty Jerome,CLE,0.8,0,other,Jerome
-Scottie Barnes,TOR,0.8,1,Best Player,Barnes
-Trayce Jackson-Davis,GSW,0.8,0,other,Jackson-Davis
-Andrew Wiggins,GSW,0.8,0,other,Wiggins
-Tyus Jones,PHO,0.7,0,other,Jones
-Jalen Suggs,ORL,0.7,0,other,Suggs
-Trae Young,ATL,0.7,0,other,Young
-Obi Toppin,IND,0.7,0,other,Toppin
-Walker Kessler,UTA,0.7,1,Best Player,Kessler
-Isaiah Hartenstein,OKC,0.7,0,other,Hartenstein
-Jonas Valančiūnas,WAS,0.7,1,Best Player,Valančiūnas
-Royce O'Neale,PHO,0.7,0,other,O'Neale
-Jay Huff,MEM,0.7,0,other,Huff
-Brook Lopez,MIL,0.6,0,other,Lopez
-Michael Porter Jr.,DEN,0.6,0,other,Porter
-Jake LaRavia,MEM,0.6,0,other,LaRavia
-De'Andre Hunter,ATL,0.6,0,other,Hunter
-Josh Giddey,CHI,0.6,0,other,Giddey
-Jaylen Brown,BOS,0.6,0,other,Brown
-John Collins,UTA,0.6,0,other,Collins
-Luke Kornet,BOS,0.6,0,other,Kornet
-Zach LaVine,CHI,0.6,0,other,LaVine
-Rudy Gobert,MIN,0.6,0,other,Gobert
-Jordan Poole,WAS,0.6,0,other,Poole
-RJ Barrett,TOR,0.6,0,other,Barrett
-Jrue Holiday,BOS,0.6,0,other,Holiday
-Keon Ellis,SAC,0.6,0,other,Ellis
-Dyson Daniels,ATL,0.6,0,other,Daniels
-Jakob Poeltl,TOR,0.6,0,other,Poeltl
-Lauri Markkanen,UTA,0.6,0,other,Markkanen
-Dean Wade,CLE,0.5,0,other,Wade
-Mikal Bridges,NYK,0.5,0,other,Bridges
-Russell Westbrook,DEN,0.5,0,other,Westbrook
-T.J. McConnell,IND,0.5,0,other,McConnell
-Malik Beasley,DET,0.5,0,other,Beasley
-Cason Wallace,OKC,0.5,0,other,Wallace
-Trey Murphy III,NOP,0.5,1,Best Player,Murphy
-OG Anunoby,NYK,0.5,0,other,Anunoby
-Draymond Green,GSW,0.5,0,other,Green
-Chet Holmgren,OKC,0.5,0,other,Holmgren
-Al Horford,BOS,0.5,0,other,Horford
-Bobby Portis,MIL,0.5,0,other,Portis
-Nickeil Alexander-Walker,MIN,0.5,0,other,Alexander-Walker
-Mark Williams,CHO,0.5,0,other,Williams
-Larry Nance Jr.,ATL,0.5,0,other,Nance
-Kenrich Williams,OKC,0.5,0,other,Williams
-Joel Embiid,PHI,0.5,0,other,Embiid
-Brandon Miller,CHO,0.5,0,other,Miller
-DeMar DeRozan,SAC,0.5,0,other,DeRozan
-Jalen Duren,DET,0.5,0,other,Duren
-Kris Dunn,LAC,0.5,0,other,Dunn
-Miles Bridges,CHO,0.5,0,other,Bridges
-Deni Avdija,POR,0.5,1,Best Player,Avdija
-Jabari Smith Jr.,HOU,0.4,0,other,Smith
-Donte DiVincenzo,MIN,0.4,0,other,DiVincenzo
-Scotty Pippen Jr.,MEM,0.4,0,other,Pippen
-Kristaps Porziņģis,BOS,0.4,0,other,Porziņģis
-Luke Kennard,MEM,0.4,0,other,Kennard
-Klay Thompson,DAL,0.4,0,other,Thompson
-P.J. Washington,DAL,0.4,0,other,Washington
-Mike Conley,MIN,0.4,0,other,Conley
-Paul Reed,DET,0.4,0,other,Reed
-Paul George,PHI,0.4,0,other,George
-Luguentz Dort,OKC,0.4,0,other,Dort
-Miles McBride,NYK,0.4,0,other,McBride
-Austin Reaves,LAL,0.4,0,other,Reaves
-Naz Reid,MIN,0.4,0,other,Reid
-Paolo Banchero,ORL,0.4,0,other,Banchero
-Isaac Okoro,CLE,0.4,0,other,Okoro
-Chris Boucher,TOR,0.4,0,other,Boucher
-Jared McCain,PHI,0.4,0,other,McCain
-Sam Hauser,BOS,0.4,0,other,Hauser
-Nic Claxton,BRK,0.4,0,other,Claxton
-Jonathan Kuminga,GSW,0.4,0,other,Kuminga
-Kyle Anderson,GSW,0.4,0,other,Anderson
-Alex Caruso,OKC,0.4,0,other,Caruso
-Cam Thomas,BRK,0.4,0,other,Thomas
-Jamal Murray,DEN,0.4,0,other,Murray
-Jeremy Sochan,SAS,0.4,0,other,Sochan
-Guerschon Yabusele,PHI,0.4,0,other,Yabusele
-Kentavious Caldwell-Pope,ORL,0.3,0,other,Caldwell-Pope
-Quentin Grimes,DAL,0.3,0,other,Grimes
-Malik Monk,SAC,0.3,0,other,Monk
-Onyeka Okongwu,ATL,0.3,0,other,Okongwu
-Zach Edey,MEM,0.3,0,other,Edey
-Jaden Ivey,DET,0.3,0,other,Ivey
-Derrick Jones Jr.,LAC,0.3,0,other,Jones
-Aaron Wiggins,OKC,0.3,0,other,Wiggins
-Aaron Gordon,DEN,0.3,0,other,Gordon
-Cameron Payne,NYK,0.3,0,other,Payne
-Brandon Clarke,MEM,0.3,0,other,Clarke
-Nikola Jović,MIA,0.3,0,other,Jović
-Christian Braun,DEN,0.3,0,other,Braun
-Isaiah Stewart,DET,0.3,0,other,Stewart
-Robert Williams,POR,0.3,0,other,Williams
-Jalen Green,HOU,0.3,0,other,Green
-Spencer Dinwiddie,DAL,0.3,0,other,Dinwiddie
-Dalano Banton,POR,0.3,0,other,Banton
-Naji Marshall,DAL,0.3,0,other,Marshall
-John Konchar,MEM,0.3,0,other,Konchar
-Dwight Powell,DAL,0.3,0,other,Powell
-Buddy Hield,GSW,0.3,0,other,Hield
-Alec Burks,MIA,0.3,0,other,Burks
-Dru Smith,MIA,0.3,0,other,Smith
-Julian Champagnie,SAS,0.3,0,other,Champagnie
-Gary Payton II,GSW,0.3,0,other,Payton
-Wendell Carter Jr.,ORL,0.3,0,other,Carter
-Brandon Ingram,NOP,0.2,0,other,Ingram
-Garrison Mathews,ATL,0.2,0,other,Mathews
-Clint Capela,ATL,0.2,0,other,Capela
-Dillon Brooks,HOU,0.2,0,other,Brooks
-Nicolas Batum,LAC,0.2,0,other,Batum
-Justin Champagnie,WAS,0.2,0,other,Champagnie
-Khris Middleton,MIL,0.2,0,other,Middleton
-Marcus Sasser,DET,0.2,0,other,Sasser
-Jamison Battle,TOR,0.2,0,other,Battle
-Lonzo Ball,CHI,0.2,0,other,Ball
-Jonathan Isaac,ORL,0.2,0,other,Isaac
-Tobias Harris,DET,0.2,0,other,Harris
-Ben Simmons,BRK,0.2,0,other,Simmons
-Amir Coffey,LAC,0.2,0,other,Coffey
-Kevon Looney,GSW,0.2,0,other,Looney
-Sandro Mamukelashvili,SAS,0.2,0,other,Mamukelashvili
-Bones Hyland,LAC,0.2,0,other,Hyland
-Josh Minott,MIN,0.2,0,other,Minott
-Cody Martin,CHO,0.2,0,other,Martin
-Zach Collins,SAS,0.2,0,other,Collins
-Ochai Agbaji,TOR,0.2,0,other,Agbaji
-Isaiah Joe,OKC,0.2,0,other,Joe
-Ryan Rollins,MIL,0.2,0,other,Rollins
-Marcus Smart,MEM,0.2,0,other,Smart
-Tyrese Martin,BRK,0.2,0,other,Martin
-CJ McCollum,NOP,0.2,0,other,McCollum
-Aaron Holiday,HOU,0.2,0,other,Holiday
-Jalen Smith,CHI,0.2,0,other,Smith
-Sam Merrill,CLE,0.2,0,other,Merrill
-Neemias Queta,BOS,0.2,0,other,Queta
-Josh Okogie,PHO,0.2,0,other,Okogie
-Ayo Dosunmu,CHI,0.1,0,other,Dosunmu
-Myles Turner,IND,0.1,0,other,Turner
-Mason Plumlee,PHO,0.1,0,other,Plumlee
-Cam Whitmore,HOU,0.1,0,other,Whitmore
-Malcolm Brogdon,WAS,0.1,0,other,Brogdon
-Harrison Barnes,SAS,0.1,0,other,Barnes
-Brandon Boston Jr.,NOP,0.1,0,other,Boston
-Duncan Robinson,MIA,0.1,0,other,Robinson
-JT Thor,CLE,0.1,0,other,Thor
-Devin Vassell,SAS,0.1,0,other,Vassell
-Collin Sexton,UTA,0.1,0,other,Sexton
-Jaylin Williams,OKC,0.1,0,other,Williams
-Kevin Love,MIA,0.1,0,other,Love
-Brandin Podziemski,GSW,0.1,0,other,Podziemski
-Grayson Allen,PHO,0.1,0,other,Allen
-Wendell Moore Jr.,DET,0.1,0,other,Moore
-Alex Len,SAC,0.1,0,other,Len
-Talen Horton-Tucker,CHI,0.1,0,other,Horton-Tucker
-Torrey Craig,CHI,0.1,0,other,Craig
-Craig Porter Jr.,CLE,0.1,0,other,Porter
-Landry Shamet,NYK,0.1,0,other,Shamet
-Jose Alvarado,NOP,0.1,0,other,Alvarado
-Jonathan Mogbo,TOR,0.1,0,other,Mogbo
-Drew Eubanks,UTA,0.1,0,other,Eubanks
-Tre Jones,SAS,0.1,0,other,Jones
-Kel'el Ware,MIA,0.1,0,other,Ware
-A.J. Green,MIL,0.1,0,other,Green
-Trevelin Queen,ORL,0.1,0,other,Queen
-Ajay Mitchell,OKC,0.1,0,other,Mitchell
-Terance Mann,LAC,0.1,0,other,Mann
-Rui Hachimura,LAL,0.1,0,other,Hachimura
-Steven Adams,HOU,0.1,0,other,Adams
-Dariq Whitehead,BRK,0.1,0,other,Whitehead
-Kelly Oubre Jr.,PHI,0.1,0,other,Oubre
-Kai Jones,LAC,0.1,0,other,Jones
-Pat Spencer,GSW,0.1,0,other,Spencer
-Bradley Beal,PHO,0.1,0,other,Beal
-Kelly Olynyk,TOR,0.1,0,other,Olynyk
-Jarace Walker,IND,0.1,0,other,Walker
-Grant Williams,CHO,0.1,0,other,Williams
-Precious Achiuwa,NYK,0.1,0,other,Achiuwa
-Chris Duarte,CHI,0.1,0,other,Duarte
-DaQuan Jeffries,CHO,0.1,0,other,Jeffries
-Jordan Clarkson,UTA,0.1,0,other,Clarkson
-KJ Martin,PHI,0.1,0,other,Martin
-Georges Niang,CLE,0.1,0,other,Niang
-Jae'Sean Tate,HOU,0.1,0,other,Tate
-Micah Potter,UTA,0.1,0,other,Potter
-Marvin Bagley III,WAS,0.1,0,other,Bagley
-Immanuel Quickley,TOR,0.1,0,other,Quickley
-Haywood Highsmith,MIA,0.1,0,other,Highsmith
-Tyler Smith,MIL,0.1,0,other,Smith
-Isaiah Jackson,IND,0.0,0,other,Jackson
-Johnny Davis,WAS,0.0,0,other,Davis
-Jevon Carter,CHI,0.0,0,other,Carter
-Peyton Watson,DEN,0.0,0,other,Watson
-Trey Lyles,SAC,0.0,0,other,Lyles
-Deandre Ayton,POR,0.0,0,other,Ayton
-Jaden McDaniels,MIN,0.0,0,other,McDaniels
-DeAndre Jordan,DEN,0.0,0,other,Jordan
-Monte Morris,PHO,0.0,0,other,Morris
-Kyle Lowry,PHI,0.0,0,other,Lowry
-Reggie Jackson,PHI,0.0,0,other,Jackson
-Alondes Williams,DET,0.0,0,other,Williams
-Jalen Pickett,DEN,0.0,0,other,Pickett
-Cory Joseph,ORL,0.0,0,other,Joseph
-Drew Peterson,BOS,0.0,0,other,Peterson
-Bruno Fernando,TOR,0.0,0,other,Fernando
-Zion Williamson,NOP,0.0,0,other,Williamson
-Jeenathan Williams,HOU,0.0,0,other,Williams
-Charles Bassey,SAS,0.0,0,other,Bassey
-David Roddy,ATL,0.0,0,other,Roddy
-De'Anthony Melton,GSW,0.0,0,other,Melton
-Jaxson Hayes,LAL,0.0,0,other,Hayes
-TyTy Washington Jr.,PHO,0.0,0,other,Washington
-Leonard Miller,MIN,0.0,0,other,Miller
-E.J. Liddell,CHI,0.0,0,other,Liddell
-Mason Jones,SAC,0.0,0,other,Jones
-PJ Dozier,MIN,0.0,0,other,Dozier
-Patrick Baldwin Jr.,WAS,0.0,0,other,Baldwin
-Cam Spencer,MEM,0.0,0,other,Spencer
-Olivier-Maxence Prosper,DAL,0.0,0,other,Prosper
-Seth Curry,CHO,0.0,0,other,Curry
-Jared Butler,WAS,0.0,0,other,Butler
-Collin Gillespie,PHO,0.0,0,other,Gillespie
-Kobe Brown,LAC,0.0,0,other,Brown
-Mac McClung,ORL,0.0,0,other,McClung
-Pete Nance,PHI,0.0,0,other,Nance
-Alex Reese,OKC,0.0,0,other,Reese
-Chris Livingston,MIL,0.0,0,other,Livingston
-A.J. Lawson,TOR,0.0,0,other,Lawson
-Moses Moody,GSW,0.0,0,other,Moody
-Bryce McGowens,POR,0.0,0,other,McGowens
-Cam Christie,LAC,0.0,0,other,Christie
-Jeff Dowtin,PHI,0.0,0,other,Dowtin
-Jaylen Martin,BRK,0.0,0,other,Martin
-Oscar Tshiebwe,UTA,0.0,0,other,Tshiebwe
-Bol Bol,PHO,0.0,0,other,Bol
-Quinten Post,GSW,0.0,0,other,Post
-James Wiseman,IND,0.0,0,other,Wiseman
-Jeff Green,HOU,0.0,0,other,Green
-Joe Ingles,MIN,0.0,0,other,Ingles
-Sidy Cissoko,SAS,0.0,0,other,Cissoko
-Duop Reath,POR,0.0,0,other,Reath
-Day'Ron Sharpe,BRK,0.0,0,other,Sharpe
-Gary Harris,ORL,0.0,0,other,Harris
-Luka Garza,MIN,0.0,0,other,Garza
-Jalen Hood-Schifino,LAL,0.0,0,other,Hood-Schifino
-Adama Sanogo,CHI,0.0,0,other,Sanogo
-Justin Edwards,PHI,0.0,0,other,Edwards
-Elfrid Payton,NOP,0.0,0,other,Payton
-Aaron Nesmith,IND,0.0,0,other,Nesmith
-Terrence Shannon Jr.,MIN,0.0,0,other,Shannon
-Brice Sensabaugh,UTA,0.0,0,other,Sensabaugh
-Stanley Umude,MIL,0.0,0,other,Umude
-Kyle Filipowski,UTA,0.0,0,other,Filipowski
-Richaun Holmes,WAS,0.0,0,other,Holmes
-Tre Mann,CHO,0.0,0,other,Mann
-Keldon Johnson,SAS,0.0,0,other,Johnson
-Isaiah Crawford,SAC,0.0,0,other,Crawford
-Trentyn Flowers,LAC,0.0,0,other,Flowers
-Taze Moore,POR,0.0,0,other,Moore
-Mo Bamba,LAC,0.0,0,other,Bamba
-Orlando Robinson,SAC,0.0,0,other,Robinson
-Jacob Toppin,NYK,0.0,0,other,Toppin
-Donovan Clingan,POR,0.0,0,other,Clingan
-Riley Minix,SAS,0.0,0,other,Minix
-Justin Minaya,POR,0.0,0,other,Minaya
-Keshad Johnson,MIA,0.0,0,other,Johnson
-Jared Rhoden,CHO,0.0,0,other,Rhoden
-David Duke Jr.,SAS,0.0,0,other,Duke
-James Johnson,IND,0.0,0,other,Johnson
-Jaime Jaquez Jr.,MIA,0.0,0,other,Jaquez
-AJ Johnson,MIL,0.0,0,other,Johnson
-Harrison Ingram,SAS,0.0,0,other,Ingram
-Anfernee Simons,POR,0.0,0,other,Simons
-Dominick Barlow,ATL,0.0,0,other,Barlow
-Bruce Brown,TOR,0.0,0,other,Brown
-Quenton Jackson,IND,0.0,0,other,Jackson
-Tristan Vukcevic,WAS,0.0,0,other,Vukcevic
-Tyler Kolek,NYK,0.0,0,other,Kolek
-Yuki Kawamura,MEM,0.0,0,other,Kawamura
-Jamal Cain,NOP,0.0,0,other,Cain
-Taylor Hendricks,UTA,0.0,0,other,Hendricks
-Josh Christopher,MIA,0.0,0,other,Christopher
-Jock Landale,HOU,0.0,0,other,Landale
-Quincy Olivari,LAL,0.0,0,other,Olivari
-Max Strus,CLE,0.0,0,other,Strus
-Jerami Grant,POR,0.0,0,other,Grant
-Liam Robbins,MIL,0.0,0,other,Robbins
-Spencer Jones,DEN,0.0,0,other,Jones
-PJ Hall,DEN,0.0,0,other,Hall
-Jack McVeigh,HOU,0.0,0,other,McVeigh
-Daniss Jenkins,DET,0.0,0,other,Jenkins
-Ricky Council IV,PHI,0.0,0,other,Council
-Garrett Temple,TOR,0.0,0,other,Temple
-Anthony Gill,WAS,0.0,0,other,Gill
-Lester Quiñones,PHI,0.0,0,other,Quiñones
-Ousmane Dieng,OKC,0.0,0,other,Dieng
-Jaden Springer,BOS,0.0,0,other,Springer
-Luke Travers,CLE,0.0,0,other,Travers
-Bronny James,LAL,0.0,0,other,James
-Mouhamed Gueye,ATL,0.0,0,other,Gueye
-Ulrich Chomche,TOR,0.0,0,other,Chomche
-Alex Ducas,OKC,0.0,0,other,Ducas
-Andrew Nembhard,IND,0.0,0,other,Nembhard
-Moses Brown,IND,0.0,0,other,Brown
-Branden Carlson,OKC,0.0,0,other,Carlson
-Vlatko Čančar,DEN,0.0,0,other,Čančar
-Markieff Morris,DAL,0.0,0,other,Morris
-Max Christie,LAL,0.0,0,other,Christie
-Daishen Nix,MIN,-0.1,0,other,Nix
-Jordan Walsh,BOS,-0.1,0,other,Walsh
-Malevy Leons,OKC,-0.1,0,other,Leons
-Jericho Sims,NYK,-0.1,0,other,Sims
-Jae Crowder,SAC,-0.1,0,other,Crowder
-Vince Williams Jr.,MEM,-0.1,0,other,Williams
-Pacome Dadiet,NYK,-0.1,0,other,Dadiet
-Shaedon Sharpe,POR,-0.1,0,other,Sharpe
-Cui Yongxi,BRK,-0.1,0,other,Yongxi
-Colin Castleton,MEM,-0.1,0,other,Castleton
-Kobe Bufkin,ATL,-0.1,0,other,Bufkin
-Cole Swider,DET,-0.1,0,other,Swider
-Patrick Williams,CHI,-0.1,0,other,Williams
-Jazian Gortman,DAL,-0.1,0,other,Gortman
-Rob Dillingham,MIN,-0.1,0,other,Dillingham
-Tristen Newton,IND,-0.1,0,other,Newton
-Brandon Williams,DAL,-0.1,0,other,Williams
-Adam Flagler,OKC,-0.1,0,other,Flagler
-Jaylen Wells,MEM,-0.1,0,other,Wells
-Karlo Matković,NOP,-0.1,0,other,Matković
-Nick Richards,CHO,-0.1,0,other,Richards
-Isaiah Wong,CHO,-0.1,0,other,Wong
-Patty Mills,UTA,-0.1,0,other,Mills
-Jordan McLaughlin,SAC,-0.1,0,other,McLaughlin
-Svi Mykhailiuk,UTA,-0.1,0,other,Mykhailiuk
-Johnny Furphy,IND,-0.1,0,other,Furphy
-Eric Gordon,PHI,-0.1,0,other,Gordon
-Bilal Coulibaly,WAS,-0.1,0,other,Coulibaly
-Baylor Scheierman,BOS,-0.1,0,other,Scheierman
-Isaac Jones,SAC,-0.1,0,other,Jones
-JD Davison,BOS,-0.1,0,other,Davison
-Caleb Martin,PHI,-0.1,0,other,Martin
-D.J. Carton,TOR,-0.1,0,other,Carton
-Jalen Bridges,PHO,-0.1,0,other,Bridges
-Moussa Diabaté,CHO,-0.1,0,other,Diabaté
-Taj Gibson,CHO,-0.1,0,other,Gibson
-Colby Jones,SAC,-0.1,0,other,Jones
-Bogdan Bogdanović,ATL,-0.1,0,other,Bogdanović
-Gui Santos,GSW,-0.1,0,other,Santos
-Delon Wright,MIL,-0.1,0,other,Wright
-Ariel Hukporti,NYK,-0.1,0,other,Hukporti
-Reed Sheppard,HOU,-0.1,0,other,Sheppard
-Adem Bona,PHI,-0.1,0,other,Bona
-Oso Ighodaro,PHO,-0.1,0,other,Ighodaro
-Trey Alexander,DEN,-0.1,0,other,Alexander
-Damion Lee,PHO,-0.1,0,other,Lee
-Dalton Knecht,LAL,-0.1,0,other,Knecht
-Cam Reddish,LAL,-0.1,0,other,Reddish
-Keaton Wallace,ATL,-0.1,0,other,Wallace
-Noah Clowney,BRK,-0.1,0,other,Clowney
-Antonio Reeves,NOP,-0.1,0,other,Reeves
-Kris Murray,POR,-0.1,0,other,Murray
-Gradey Dick,TOR,-0.1,0,other,Dick
-Coby White,CHI,-0.1,0,other,White
-Caleb Houstan,ORL,-0.1,0,other,Houstan
-Nick Smith Jr.,CHO,-0.1,0,other,Smith
-Pat Connaughton,MIL,-0.1,0,other,Connaughton
-Tristan Da Silva,ORL,-0.1,0,other,Da
-Jeremiah Robinson-Earl,NOP,-0.1,0,other,Robinson-Earl
-Kessler Edwards,DAL,-0.1,0,other,Edwards
-Cole Anthony,ORL,-0.1,0,other,Anthony
-Kevin Huerter,SAC,-0.1,0,other,Huerter
-Alex Sarr,WAS,-0.1,0,other,Sarr
-Javonte Green,NOP,-0.1,0,other,Green
-Johnny Juzang,UTA,-0.1,0,other,Juzang
-Jaylon Tyson,CLE,-0.1,0,other,Tyson
-Taurean Prince,MIL,-0.1,0,other,Prince
-Christian Koloko,LAL,-0.1,0,other,Koloko
-Pelle Larsson,MIA,-0.1,0,other,Larsson
-Lindy Waters III,GSW,-0.1,0,other,Waters
-Ausar Thompson,DET,-0.1,0,other,Thompson
-Anthony Black,ORL,-0.1,0,other,Black
-MarJon Beauchamp,MIL,-0.1,0,other,Beauchamp
-Trendon Watford,BRK,-0.1,0,other,Watford
-KJ Simpson,CHO,-0.1,0,other,Simpson
-Rayan Rupert,POR,-0.1,0,other,Rupert
-Jordan Miller,LAC,-0.1,0,other,Miller
-Armel Traoré,LAL,-0.1,0,other,Traoré
-Doug McDermott,SAC,-0.1,0,other,McDermott
-Tristan Thompson,CLE,-0.1,0,other,Thompson
-Matt Ryan,NYK,-0.1,0,other,Ryan
-Ryan Dunn,PHO,-0.1,0,other,Dunn
-Daniel Theis,NOP,-0.1,0,other,Theis
-Ben Sheppard,IND,-0.1,0,other,Sheppard
-Hunter Tyson,DEN,-0.2,0,other,Tyson
-Blake Wesley,SAS,-0.2,0,other,Wesley
-Vit Krejci,ATL,-0.2,0,other,Krejci
-Zeke Nnaji,DEN,-0.2,0,other,Nnaji
-Malaki Branham,SAS,-0.2,0,other,Branham
-Simone Fontecchio,DET,-0.2,0,other,Fontecchio
-Jett Howard,ORL,-0.2,0,other,Howard
-Enrique Freeman,IND,-0.2,0,other,Freeman
-Toumani Camara,POR,-0.2,0,other,Camara
-Jaylen Nowell,NOP,-0.2,0,other,Nowell
-Xavier Tillman Sr.,BOS,-0.2,0,other,Tillman
-Terry Rozier,MIA,-0.2,0,other,Rozier
-Yves Missi,NOP,-0.2,0,other,Missi
-Jabari Walker,POR,-0.2,0,other,Walker
-Dario Šarić,DEN,-0.2,0,other,Šarić
-Trey Jemison,NOP,-0.2,0,other,Jemison
-Josh Richardson,MIA,-0.2,0,other,Richardson
-Andre Drummond,PHI,-0.2,0,other,Drummond
-Julian Strawther,DEN,-0.2,0,other,Strawther
-Julian Phillips,CHI,-0.2,0,other,Phillips
-Gary Trent Jr.,MIL,-0.2,0,other,Trent
-Jusuf Nurkić,PHO,-0.2,0,other,Nurkić
-Dillon Jones,OKC,-0.2,0,other,Jones
-Herbert Jones,NOP,-0.2,0,other,Jones
-Dejounte Murray,NOP,-0.2,0,other,Murray
-Ziaire Williams,BRK,-0.2,0,other,Williams
-Dalen Terry,CHI,-0.3,0,other,Terry
-Tim Hardaway Jr.,DET,-0.3,0,other,Hardaway
-Maxi Kleber,DAL,-0.3,0,other,Kleber
-Ja'Kobe Walter,TOR,-0.3,0,other,Walter
-Kevin Porter Jr.,LAC,-0.3,0,other,Porter
-Ron Holland,DET,-0.3,0,other,Holland
-Tidjane Salaün,CHO,-0.3,0,other,Salaün
-Matas Buzelis,CHI,-0.4,0,other,Buzelis
-Kyle Kuzma,WAS,-0.4,0,other,Kuzma
-Scoot Henderson,POR,-0.4,0,other,Henderson
-Jordan Hawkins,NOP,-0.4,0,other,Hawkins
-Corey Kispert,WAS,-0.4,0,other,Kispert
-Jaden Hardy,DAL,-0.4,0,other,Hardy
-Bennedict Mathurin,IND,-0.4,0,other,Mathurin
-Jamal Shead,TOR,-0.4,0,other,Shead
-Keyonte George,UTA,-0.4,0,other,George
-Jalen Wilson,BRK,-0.5,0,other,Wilson
-Cody Williams,UTA,-0.5,0,other,Williams
-Andre Jackson Jr.,MIL,-0.5,0,other,Jackson
-Vasilije Micić,CHO,-0.5,0,other,Micić
-Keegan Murray,SAC,-0.5,0,other,Murray
-Josh Green,CHO,-0.5,0,other,Green
-Kyshawn George,WAS,-0.6,0,other,George
-Gabe Vincent,LAL,-0.6,0,other,Vincent
-Stephon Castle,SAS,-0.6,0,other,Castle
-Keon Johnson,BRK,-0.6,0,other,Johnson
-Davion Mitchell,TOR,-0.6,0,other,Mitchell
-Zaccharie Risacher,ATL,-0.6,0,other,Risacher
-Carlton Carrington,WAS,-0.7,0,other,Carrington
-Isaiah Collier,UTA,-0.8,0,other,Collier
-ATL average,ATL,0.19999999999999998,0,Average,average
-BOS average,BOS,0.525,0,Average,average
-BRK average,BRK,0.09285714285714287,0,Average,average
-CHI average,CHI,0.13529411764705881,0,Average,average
-CHO average,CHO,0.07368421052631578,0,Average,average
-CLE average,CLE,0.53125,0,Average,average
-DAL average,DAL,0.3647058823529412,0,Average,average
-DEN average,DEN,0.3,0,Average,average
-DET average,DET,0.16875,0,Average,average
-GSW average,GSW,0.33125,0,Average,average
-HOU average,HOU,0.40625,0,Average,average
-IND average,IND,0.1611111111111111,0,Average,average
-LAC average,LAC,0.3,0,Average,average
-LAL average,LAL,0.2357142857142857,0,Average,average
-MEM average,MEM,0.4117647058823529,0,Average,average
-MIA average,MIA,0.28125,0,Average,average
-MIL average,MIL,0.24444444444444446,0,Average,average
-MIN average,MIN,0.28125,0,Average,average
-NOP average,NOP,-0.042105263157894736,0,Average,average
-NYK average,NYK,0.46,0,Average,average
-OKC average,OKC,0.46315789473684205,0,Average,average
-ORL average,ORL,0.29411764705882354,0,Average,average
-PHI average,PHI,0.1388888888888889,0,Average,average
-PHO average,PHO,0.1823529411764706,0,Average,average
-POR average,POR,-6.530723674265627e-18,0,Average,average
-SAC average,SAC,0.22352941176470587,0,Average,average
-SAS average,SAS,0.20555555555555557,0,Average,average
-TOR average,TOR,0.08421052631578947,0,Average,average
-UTA average,UTA,0.0176470588235294,0,Average,average
-WAS average,WAS,-0.03529411764705883,0,Average,average
-ATL average without best player,ATL,0.13333333333333333,0,Average without Best,average
-BOS average without best player,BOS,0.39333333333333337,0,Average without Best,average
-BRK average without best player,BRK,-0.02307692307692307,0,Average without Best,average
-CHI average without best player,CHI,0.056249999999999994,0,Average without Best,average
-CHO average without best player,CHO,0.0,0,Average without Best,average
-CLE average without best player,CLE,0.47333333333333333,0,Average without Best,average
-DAL average without best player,DAL,0.275,0,Average without Best,average
-DEN average without best player,DEN,0.075,0,Average without Best,average
-DET average without best player,DET,0.1,0,Average without Best,average
-GSW average without best player,GSW,0.24666666666666667,0,Average without Best,average
-HOU average without best player,HOU,0.2866666666666667,0,Average without Best,average
-IND average without best player,IND,0.08823529411764706,0,Average without Best,average
-LAC average without best player,LAC,0.22666666666666666,0,Average without Best,average
-LAL average without best player,LAL,0.0923076923076923,0,Average without Best,average
-MEM average without best player,MEM,0.3625,0,Average without Best,average
-MIA average without best player,MIA,0.19333333333333333,0,Average without Best,average
-MIL average without best player,MIL,0.11176470588235293,0,Average without Best,average
-MIN average without best player,MIN,0.21333333333333335,0,Average without Best,average
-NOP average without best player,NOP,-0.07222222222222223,0,Average without Best,average
-NYK average without best player,NYK,0.34285714285714286,0,Average without Best,average
-OKC average without best player,OKC,0.2777777777777778,0,Average without Best,average
-ORL average without best player,ORL,0.20625,0,Average without Best,average
-PHI average without best player,PHI,0.0823529411764706,0,Average without Best,average
-PHO average without best player,PHO,0.13125,0,Average without Best,average
-POR average without best player,POR,-0.03125000000000001,0,Average without Best,average
-SAC average without best player,SAC,0.10625,0,Average without Best,average
-SAS average without best player,SAS,0.07647058823529412,0,Average without Best,average
-TOR average without best player,TOR,0.044444444444444446,0,Average without Best,average
-UTA average without best player,UTA,-0.02500000000000001,0,Average without Best,average
-WAS average without best player,WAS,-0.08124999999999999,0,Average without Best,average
+player,id,VORP,best,category,surname,team
+Nikola Jokić,DEN,3.9,1,Best Player,Jokić,Denver Nuggets
+Shai Gilgeous-Alexander,OKC,3.8,1,Best Player,Gilgeous-Alexander,Oklahoma City Thunder
+Giannis Antetokounmpo,MIL,2.5,1,Best Player,Antetokounmpo,Milwaukee Bucks
+Jayson Tatum,BOS,2.5,1,Best Player,Tatum,Boston Celtics
+Victor Wembanyama,SAS,2.4,1,Best Player,Wembanyama,San Antonio Spurs
+Alperen Sengun,HOU,2.2,1,Best Player,Sengun,Houston Rockets
+Domantas Sabonis,SAC,2.1,1,Best Player,Sabonis,Sacramento Kings
+Anthony Davis,LAL,2.1,1,Best Player,Davis,Los Angeles Lakers
+Karl-Anthony Towns,NYK,2.1,1,Best Player,Towns,New York Knicks
+Josh Hart,NYK,1.8,0,other,Hart,New York Knicks
+Luka Dončić,DAL,1.8,1,Best Player,Dončić,Dallas Mavericks
+Franz Wagner,ORL,1.7,1,Best Player,Wagner,Orlando Magic
+LeBron James,LAL,1.7,0,other,James,Los Angeles Lakers
+Jalen Williams,OKC,1.7,0,other,Williams,Oklahoma City Thunder
+Kyrie Irving,DAL,1.6,0,other,Irving,Dallas Mavericks
+Tyler Herro,MIA,1.6,1,Best Player,Herro,Miami Heat
+Stephen Curry,GSW,1.6,1,Best Player,Curry,Golden State Warriors
+Cameron Johnson,BRK,1.6,1,Best Player,Johnson,Brooklyn Nets
+Derrick White,BOS,1.6,0,other,White,Boston Celtics
+Payton Pritchard,BOS,1.5,0,other,Pritchard,Boston Celtics
+Jalen Brunson,NYK,1.5,0,other,Brunson,New York Knicks
+Donovan Mitchell,CLE,1.4,1,Best Player,Mitchell,Cleveland Cavaliers
+Darius Garland,CLE,1.4,0,other,Garland,Cleveland Cavaliers
+LaMelo Ball,CHO,1.4,1,Best Player,Ball,Charlotte Hornets
+Nikola Vučević,CHI,1.4,1,Best Player,Vučević,Chicago Bulls
+Tyrese Haliburton,IND,1.4,1,Best Player,Haliburton,Indiana Pacers
+James Harden,LAC,1.4,1,Best Player,Harden,Los Angeles Clippers
+Evan Mobley,CLE,1.4,0,other,Mobley,Cleveland Cavaliers
+Jarrett Allen,CLE,1.4,0,other,Allen,Cleveland Cavaliers
+Damian Lillard,MIL,1.3,0,other,Lillard,Milwaukee Bucks
+Anthony Edwards,MIN,1.3,1,Best Player,Edwards,Minnesota Timberwolves
+De'Aaron Fox,SAC,1.3,0,other,Fox,Sacramento Kings
+Jimmy Butler,MIA,1.2,0,other,Butler,Miami Heat
+Jaren Jackson Jr.,MEM,1.2,1,Best Player,Jackson,Memphis Grizzlies
+Cade Cunningham,DET,1.2,1,Best Player,Cunningham,Detroit Pistons
+Santi Aldama,MEM,1.2,0,other,Aldama,Memphis Grizzlies
+Norman Powell,LAC,1.2,0,other,Powell,Los Angeles Clippers
+Jalen Johnson,ATL,1.2,1,Best Player,Johnson,Atlanta Hawks
+Tyrese Maxey,PHI,1.1,1,Best Player,Maxey,Philadelphia 76ers
+Amen Thompson,HOU,1.0,0,other,Thompson,Houston Rockets
+Goga Bitadze,ORL,1.0,0,other,Bitadze,Orlando Magic
+Pascal Siakam,IND,1.0,0,other,Siakam,Indiana Pacers
+Fred VanVleet,HOU,1.0,0,other,VanVleet,Houston Rockets
+Tari Eason,HOU,1.0,0,other,Eason,Houston Rockets
+Kevin Durant,PHO,1.0,1,Best Player,Durant,Phoenix Suns
+Ivica Zubac,LAC,1.0,0,other,Zubac,Los Angeles Clippers
+Dereck Lively II,DAL,0.9,0,other,Lively,Dallas Mavericks
+Chris Paul,SAS,0.9,0,other,Paul,San Antonio Spurs
+Daniel Gafford,DAL,0.9,0,other,Gafford,Dallas Mavericks
+Moritz Wagner,ORL,0.9,0,other,Wagner,Orlando Magic
+Bam Adebayo,MIA,0.9,0,other,Adebayo,Miami Heat
+Julius Randle,MIN,0.9,0,other,Randle,Minnesota Timberwolves
+Ja Morant,MEM,0.9,0,other,Morant,Memphis Grizzlies
+Caris LeVert,CLE,0.9,0,other,LeVert,Cleveland Cavaliers
+Devin Booker,PHO,0.8,0,other,Booker,Phoenix Suns
+Desmond Bane,MEM,0.8,0,other,Bane,Memphis Grizzlies
+Ty Jerome,CLE,0.8,0,other,Jerome,Cleveland Cavaliers
+Scottie Barnes,TOR,0.8,1,Best Player,Barnes,Toronto Raptors
+Trayce Jackson-Davis,GSW,0.8,0,other,Jackson-Davis,Golden State Warriors
+Andrew Wiggins,GSW,0.8,0,other,Wiggins,Golden State Warriors
+Tyus Jones,PHO,0.7,0,other,Jones,Phoenix Suns
+Jalen Suggs,ORL,0.7,0,other,Suggs,Orlando Magic
+Trae Young,ATL,0.7,0,other,Young,Atlanta Hawks
+Obi Toppin,IND,0.7,0,other,Toppin,Indiana Pacers
+Walker Kessler,UTA,0.7,1,Best Player,Kessler,Utah Jazz
+Isaiah Hartenstein,OKC,0.7,0,other,Hartenstein,Oklahoma City Thunder
+Jonas Valančiūnas,WAS,0.7,1,Best Player,Valančiūnas,Washington Wizards
+Royce O'Neale,PHO,0.7,0,other,O'Neale,Phoenix Suns
+Jay Huff,MEM,0.7,0,other,Huff,Memphis Grizzlies
+Brook Lopez,MIL,0.6,0,other,Lopez,Milwaukee Bucks
+Michael Porter Jr.,DEN,0.6,0,other,Porter,Denver Nuggets
+Jake LaRavia,MEM,0.6,0,other,LaRavia,Memphis Grizzlies
+De'Andre Hunter,ATL,0.6,0,other,Hunter,Atlanta Hawks
+Josh Giddey,CHI,0.6,0,other,Giddey,Chicago Bulls
+Jaylen Brown,BOS,0.6,0,other,Brown,Boston Celtics
+John Collins,UTA,0.6,0,other,Collins,Utah Jazz
+Luke Kornet,BOS,0.6,0,other,Kornet,Boston Celtics
+Zach LaVine,CHI,0.6,0,other,LaVine,Chicago Bulls
+Rudy Gobert,MIN,0.6,0,other,Gobert,Minnesota Timberwolves
+Jordan Poole,WAS,0.6,0,other,Poole,Washington Wizards
+RJ Barrett,TOR,0.6,0,other,Barrett,Toronto Raptors
+Jrue Holiday,BOS,0.6,0,other,Holiday,Boston Celtics
+Keon Ellis,SAC,0.6,0,other,Ellis,Sacramento Kings
+Dyson Daniels,ATL,0.6,0,other,Daniels,Atlanta Hawks
+Jakob Poeltl,TOR,0.6,0,other,Poeltl,Toronto Raptors
+Lauri Markkanen,UTA,0.6,0,other,Markkanen,Utah Jazz
+Dean Wade,CLE,0.5,0,other,Wade,Cleveland Cavaliers
+Mikal Bridges,NYK,0.5,0,other,Bridges,New York Knicks
+Russell Westbrook,DEN,0.5,0,other,Westbrook,Denver Nuggets
+T.J. McConnell,IND,0.5,0,other,McConnell,Indiana Pacers
+Malik Beasley,DET,0.5,0,other,Beasley,Detroit Pistons
+Cason Wallace,OKC,0.5,0,other,Wallace,Oklahoma City Thunder
+Trey Murphy III,NOP,0.5,1,Best Player,Murphy,New Orleans Pelicans
+OG Anunoby,NYK,0.5,0,other,Anunoby,New York Knicks
+Draymond Green,GSW,0.5,0,other,Green,Golden State Warriors
+Chet Holmgren,OKC,0.5,0,other,Holmgren,Oklahoma City Thunder
+Al Horford,BOS,0.5,0,other,Horford,Boston Celtics
+Bobby Portis,MIL,0.5,0,other,Portis,Milwaukee Bucks
+Nickeil Alexander-Walker,MIN,0.5,0,other,Alexander-Walker,Minnesota Timberwolves
+Mark Williams,CHO,0.5,0,other,Williams,Charlotte Hornets
+Larry Nance Jr.,ATL,0.5,0,other,Nance,Atlanta Hawks
+Kenrich Williams,OKC,0.5,0,other,Williams,Oklahoma City Thunder
+Joel Embiid,PHI,0.5,0,other,Embiid,Philadelphia 76ers
+Brandon Miller,CHO,0.5,0,other,Miller,Charlotte Hornets
+DeMar DeRozan,SAC,0.5,0,other,DeRozan,Sacramento Kings
+Jalen Duren,DET,0.5,0,other,Duren,Detroit Pistons
+Kris Dunn,LAC,0.5,0,other,Dunn,Los Angeles Clippers
+Miles Bridges,CHO,0.5,0,other,Bridges,Charlotte Hornets
+Deni Avdija,POR,0.5,1,Best Player,Avdija,Portland Trail Blazers
+Jabari Smith Jr.,HOU,0.4,0,other,Smith,Houston Rockets
+Donte DiVincenzo,MIN,0.4,0,other,DiVincenzo,Minnesota Timberwolves
+Scotty Pippen Jr.,MEM,0.4,0,other,Pippen,Memphis Grizzlies
+Kristaps Porziņģis,BOS,0.4,0,other,Porziņģis,Boston Celtics
+Luke Kennard,MEM,0.4,0,other,Kennard,Memphis Grizzlies
+Klay Thompson,DAL,0.4,0,other,Thompson,Dallas Mavericks
+P.J. Washington,DAL,0.4,0,other,Washington,Dallas Mavericks
+Mike Conley,MIN,0.4,0,other,Conley,Minnesota Timberwolves
+Paul Reed,DET,0.4,0,other,Reed,Detroit Pistons
+Paul George,PHI,0.4,0,other,George,Philadelphia 76ers
+Luguentz Dort,OKC,0.4,0,other,Dort,Oklahoma City Thunder
+Miles McBride,NYK,0.4,0,other,McBride,New York Knicks
+Austin Reaves,LAL,0.4,0,other,Reaves,Los Angeles Lakers
+Naz Reid,MIN,0.4,0,other,Reid,Minnesota Timberwolves
+Paolo Banchero,ORL,0.4,0,other,Banchero,Orlando Magic
+Isaac Okoro,CLE,0.4,0,other,Okoro,Cleveland Cavaliers
+Chris Boucher,TOR,0.4,0,other,Boucher,Toronto Raptors
+Jared McCain,PHI,0.4,0,other,McCain,Philadelphia 76ers
+Sam Hauser,BOS,0.4,0,other,Hauser,Boston Celtics
+Nic Claxton,BRK,0.4,0,other,Claxton,Brooklyn Nets
+Jonathan Kuminga,GSW,0.4,0,other,Kuminga,Golden State Warriors
+Kyle Anderson,GSW,0.4,0,other,Anderson,Golden State Warriors
+Alex Caruso,OKC,0.4,0,other,Caruso,Oklahoma City Thunder
+Cam Thomas,BRK,0.4,0,other,Thomas,Brooklyn Nets
+Jamal Murray,DEN,0.4,0,other,Murray,Denver Nuggets
+Jeremy Sochan,SAS,0.4,0,other,Sochan,San Antonio Spurs
+Guerschon Yabusele,PHI,0.4,0,other,Yabusele,Philadelphia 76ers
+Kentavious Caldwell-Pope,ORL,0.3,0,other,Caldwell-Pope,Orlando Magic
+Quentin Grimes,DAL,0.3,0,other,Grimes,Dallas Mavericks
+Malik Monk,SAC,0.3,0,other,Monk,Sacramento Kings
+Onyeka Okongwu,ATL,0.3,0,other,Okongwu,Atlanta Hawks
+Zach Edey,MEM,0.3,0,other,Edey,Memphis Grizzlies
+Jaden Ivey,DET,0.3,0,other,Ivey,Detroit Pistons
+Derrick Jones Jr.,LAC,0.3,0,other,Jones,Los Angeles Clippers
+Aaron Wiggins,OKC,0.3,0,other,Wiggins,Oklahoma City Thunder
+Aaron Gordon,DEN,0.3,0,other,Gordon,Denver Nuggets
+Cameron Payne,NYK,0.3,0,other,Payne,New York Knicks
+Brandon Clarke,MEM,0.3,0,other,Clarke,Memphis Grizzlies
+Nikola Jović,MIA,0.3,0,other,Jović,Miami Heat
+Christian Braun,DEN,0.3,0,other,Braun,Denver Nuggets
+Isaiah Stewart,DET,0.3,0,other,Stewart,Detroit Pistons
+Robert Williams,POR,0.3,0,other,Williams,Portland Trail Blazers
+Jalen Green,HOU,0.3,0,other,Green,Houston Rockets
+Spencer Dinwiddie,DAL,0.3,0,other,Dinwiddie,Dallas Mavericks
+Dalano Banton,POR,0.3,0,other,Banton,Portland Trail Blazers
+Naji Marshall,DAL,0.3,0,other,Marshall,Dallas Mavericks
+John Konchar,MEM,0.3,0,other,Konchar,Memphis Grizzlies
+Dwight Powell,DAL,0.3,0,other,Powell,Dallas Mavericks
+Buddy Hield,GSW,0.3,0,other,Hield,Golden State Warriors
+Alec Burks,MIA,0.3,0,other,Burks,Miami Heat
+Dru Smith,MIA,0.3,0,other,Smith,Miami Heat
+Julian Champagnie,SAS,0.3,0,other,Champagnie,San Antonio Spurs
+Gary Payton II,GSW,0.3,0,other,Payton,Golden State Warriors
+Wendell Carter Jr.,ORL,0.3,0,other,Carter,Orlando Magic
+Brandon Ingram,NOP,0.2,0,other,Ingram,New Orleans Pelicans
+Garrison Mathews,ATL,0.2,0,other,Mathews,Atlanta Hawks
+Clint Capela,ATL,0.2,0,other,Capela,Atlanta Hawks
+Dillon Brooks,HOU,0.2,0,other,Brooks,Houston Rockets
+Nicolas Batum,LAC,0.2,0,other,Batum,Los Angeles Clippers
+Justin Champagnie,WAS,0.2,0,other,Champagnie,Washington Wizards
+Khris Middleton,MIL,0.2,0,other,Middleton,Milwaukee Bucks
+Marcus Sasser,DET,0.2,0,other,Sasser,Detroit Pistons
+Jamison Battle,TOR,0.2,0,other,Battle,Toronto Raptors
+Lonzo Ball,CHI,0.2,0,other,Ball,Chicago Bulls
+Jonathan Isaac,ORL,0.2,0,other,Isaac,Orlando Magic
+Tobias Harris,DET,0.2,0,other,Harris,Detroit Pistons
+Ben Simmons,BRK,0.2,0,other,Simmons,Brooklyn Nets
+Amir Coffey,LAC,0.2,0,other,Coffey,Los Angeles Clippers
+Kevon Looney,GSW,0.2,0,other,Looney,Golden State Warriors
+Sandro Mamukelashvili,SAS,0.2,0,other,Mamukelashvili,San Antonio Spurs
+Bones Hyland,LAC,0.2,0,other,Hyland,Los Angeles Clippers
+Josh Minott,MIN,0.2,0,other,Minott,Minnesota Timberwolves
+Cody Martin,CHO,0.2,0,other,Martin,Charlotte Hornets
+Zach Collins,SAS,0.2,0,other,Collins,San Antonio Spurs
+Ochai Agbaji,TOR,0.2,0,other,Agbaji,Toronto Raptors
+Isaiah Joe,OKC,0.2,0,other,Joe,Oklahoma City Thunder
+Ryan Rollins,MIL,0.2,0,other,Rollins,Milwaukee Bucks
+Marcus Smart,MEM,0.2,0,other,Smart,Memphis Grizzlies
+Tyrese Martin,BRK,0.2,0,other,Martin,Brooklyn Nets
+CJ McCollum,NOP,0.2,0,other,McCollum,New Orleans Pelicans
+Aaron Holiday,HOU,0.2,0,other,Holiday,Houston Rockets
+Jalen Smith,CHI,0.2,0,other,Smith,Chicago Bulls
+Sam Merrill,CLE,0.2,0,other,Merrill,Cleveland Cavaliers
+Neemias Queta,BOS,0.2,0,other,Queta,Boston Celtics
+Josh Okogie,PHO,0.2,0,other,Okogie,Phoenix Suns
+Ayo Dosunmu,CHI,0.1,0,other,Dosunmu,Chicago Bulls
+Myles Turner,IND,0.1,0,other,Turner,Indiana Pacers
+Mason Plumlee,PHO,0.1,0,other,Plumlee,Phoenix Suns
+Cam Whitmore,HOU,0.1,0,other,Whitmore,Houston Rockets
+Malcolm Brogdon,WAS,0.1,0,other,Brogdon,Washington Wizards
+Harrison Barnes,SAS,0.1,0,other,Barnes,San Antonio Spurs
+Brandon Boston Jr.,NOP,0.1,0,other,Boston,New Orleans Pelicans
+Duncan Robinson,MIA,0.1,0,other,Robinson,Miami Heat
+JT Thor,CLE,0.1,0,other,Thor,Cleveland Cavaliers
+Devin Vassell,SAS,0.1,0,other,Vassell,San Antonio Spurs
+Collin Sexton,UTA,0.1,0,other,Sexton,Utah Jazz
+Jaylin Williams,OKC,0.1,0,other,Williams,Oklahoma City Thunder
+Kevin Love,MIA,0.1,0,other,Love,Miami Heat
+Brandin Podziemski,GSW,0.1,0,other,Podziemski,Golden State Warriors
+Grayson Allen,PHO,0.1,0,other,Allen,Phoenix Suns
+Wendell Moore Jr.,DET,0.1,0,other,Moore,Detroit Pistons
+Alex Len,SAC,0.1,0,other,Len,Sacramento Kings
+Talen Horton-Tucker,CHI,0.1,0,other,Horton-Tucker,Chicago Bulls
+Torrey Craig,CHI,0.1,0,other,Craig,Chicago Bulls
+Craig Porter Jr.,CLE,0.1,0,other,Porter,Cleveland Cavaliers
+Landry Shamet,NYK,0.1,0,other,Shamet,New York Knicks
+Jose Alvarado,NOP,0.1,0,other,Alvarado,New Orleans Pelicans
+Jonathan Mogbo,TOR,0.1,0,other,Mogbo,Toronto Raptors
+Drew Eubanks,UTA,0.1,0,other,Eubanks,Utah Jazz
+Tre Jones,SAS,0.1,0,other,Jones,San Antonio Spurs
+Kel'el Ware,MIA,0.1,0,other,Ware,Miami Heat
+A.J. Green,MIL,0.1,0,other,Green,Milwaukee Bucks
+Trevelin Queen,ORL,0.1,0,other,Queen,Orlando Magic
+Ajay Mitchell,OKC,0.1,0,other,Mitchell,Oklahoma City Thunder
+Terance Mann,LAC,0.1,0,other,Mann,Los Angeles Clippers
+Rui Hachimura,LAL,0.1,0,other,Hachimura,Los Angeles Lakers
+Steven Adams,HOU,0.1,0,other,Adams,Houston Rockets
+Dariq Whitehead,BRK,0.1,0,other,Whitehead,Brooklyn Nets
+Kelly Oubre Jr.,PHI,0.1,0,other,Oubre,Philadelphia 76ers
+Kai Jones,LAC,0.1,0,other,Jones,Los Angeles Clippers
+Pat Spencer,GSW,0.1,0,other,Spencer,Golden State Warriors
+Bradley Beal,PHO,0.1,0,other,Beal,Phoenix Suns
+Kelly Olynyk,TOR,0.1,0,other,Olynyk,Toronto Raptors
+Jarace Walker,IND,0.1,0,other,Walker,Indiana Pacers
+Grant Williams,CHO,0.1,0,other,Williams,Charlotte Hornets
+Precious Achiuwa,NYK,0.1,0,other,Achiuwa,New York Knicks
+Chris Duarte,CHI,0.1,0,other,Duarte,Chicago Bulls
+DaQuan Jeffries,CHO,0.1,0,other,Jeffries,Charlotte Hornets
+Jordan Clarkson,UTA,0.1,0,other,Clarkson,Utah Jazz
+KJ Martin,PHI,0.1,0,other,Martin,Philadelphia 76ers
+Georges Niang,CLE,0.1,0,other,Niang,Cleveland Cavaliers
+Jae'Sean Tate,HOU,0.1,0,other,Tate,Houston Rockets
+Micah Potter,UTA,0.1,0,other,Potter,Utah Jazz
+Marvin Bagley III,WAS,0.1,0,other,Bagley,Washington Wizards
+Immanuel Quickley,TOR,0.1,0,other,Quickley,Toronto Raptors
+Haywood Highsmith,MIA,0.1,0,other,Highsmith,Miami Heat
+Tyler Smith,MIL,0.1,0,other,Smith,Milwaukee Bucks
+Isaiah Jackson,IND,0.0,0,other,Jackson,Indiana Pacers
+Johnny Davis,WAS,0.0,0,other,Davis,Washington Wizards
+Jevon Carter,CHI,0.0,0,other,Carter,Chicago Bulls
+Peyton Watson,DEN,0.0,0,other,Watson,Denver Nuggets
+Trey Lyles,SAC,0.0,0,other,Lyles,Sacramento Kings
+Deandre Ayton,POR,0.0,0,other,Ayton,Portland Trail Blazers
+Jaden McDaniels,MIN,0.0,0,other,McDaniels,Minnesota Timberwolves
+DeAndre Jordan,DEN,0.0,0,other,Jordan,Denver Nuggets
+Monte Morris,PHO,0.0,0,other,Morris,Phoenix Suns
+Kyle Lowry,PHI,0.0,0,other,Lowry,Philadelphia 76ers
+Reggie Jackson,PHI,0.0,0,other,Jackson,Philadelphia 76ers
+Alondes Williams,DET,0.0,0,other,Williams,Detroit Pistons
+Jalen Pickett,DEN,0.0,0,other,Pickett,Denver Nuggets
+Cory Joseph,ORL,0.0,0,other,Joseph,Orlando Magic
+Drew Peterson,BOS,0.0,0,other,Peterson,Boston Celtics
+Bruno Fernando,TOR,0.0,0,other,Fernando,Toronto Raptors
+Zion Williamson,NOP,0.0,0,other,Williamson,New Orleans Pelicans
+Jeenathan Williams,HOU,0.0,0,other,Williams,Houston Rockets
+Charles Bassey,SAS,0.0,0,other,Bassey,San Antonio Spurs
+David Roddy,ATL,0.0,0,other,Roddy,Atlanta Hawks
+De'Anthony Melton,GSW,0.0,0,other,Melton,Golden State Warriors
+Jaxson Hayes,LAL,0.0,0,other,Hayes,Los Angeles Lakers
+TyTy Washington Jr.,PHO,0.0,0,other,Washington,Phoenix Suns
+Leonard Miller,MIN,0.0,0,other,Miller,Minnesota Timberwolves
+E.J. Liddell,CHI,0.0,0,other,Liddell,Chicago Bulls
+Mason Jones,SAC,0.0,0,other,Jones,Sacramento Kings
+PJ Dozier,MIN,0.0,0,other,Dozier,Minnesota Timberwolves
+Patrick Baldwin Jr.,WAS,0.0,0,other,Baldwin,Washington Wizards
+Cam Spencer,MEM,0.0,0,other,Spencer,Memphis Grizzlies
+Olivier-Maxence Prosper,DAL,0.0,0,other,Prosper,Dallas Mavericks
+Seth Curry,CHO,0.0,0,other,Curry,Charlotte Hornets
+Jared Butler,WAS,0.0,0,other,Butler,Washington Wizards
+Collin Gillespie,PHO,0.0,0,other,Gillespie,Phoenix Suns
+Kobe Brown,LAC,0.0,0,other,Brown,Los Angeles Clippers
+Mac McClung,ORL,0.0,0,other,McClung,Orlando Magic
+Pete Nance,PHI,0.0,0,other,Nance,Philadelphia 76ers
+Alex Reese,OKC,0.0,0,other,Reese,Oklahoma City Thunder
+Chris Livingston,MIL,0.0,0,other,Livingston,Milwaukee Bucks
+A.J. Lawson,TOR,0.0,0,other,Lawson,Toronto Raptors
+Moses Moody,GSW,0.0,0,other,Moody,Golden State Warriors
+Bryce McGowens,POR,0.0,0,other,McGowens,Portland Trail Blazers
+Cam Christie,LAC,0.0,0,other,Christie,Los Angeles Clippers
+Jeff Dowtin,PHI,0.0,0,other,Dowtin,Philadelphia 76ers
+Jaylen Martin,BRK,0.0,0,other,Martin,Brooklyn Nets
+Oscar Tshiebwe,UTA,0.0,0,other,Tshiebwe,Utah Jazz
+Bol Bol,PHO,0.0,0,other,Bol,Phoenix Suns
+Quinten Post,GSW,0.0,0,other,Post,Golden State Warriors
+James Wiseman,IND,0.0,0,other,Wiseman,Indiana Pacers
+Jeff Green,HOU,0.0,0,other,Green,Houston Rockets
+Joe Ingles,MIN,0.0,0,other,Ingles,Minnesota Timberwolves
+Sidy Cissoko,SAS,0.0,0,other,Cissoko,San Antonio Spurs
+Duop Reath,POR,0.0,0,other,Reath,Portland Trail Blazers
+Day'Ron Sharpe,BRK,0.0,0,other,Sharpe,Brooklyn Nets
+Gary Harris,ORL,0.0,0,other,Harris,Orlando Magic
+Luka Garza,MIN,0.0,0,other,Garza,Minnesota Timberwolves
+Jalen Hood-Schifino,LAL,0.0,0,other,Hood-Schifino,Los Angeles Lakers
+Adama Sanogo,CHI,0.0,0,other,Sanogo,Chicago Bulls
+Justin Edwards,PHI,0.0,0,other,Edwards,Philadelphia 76ers
+Elfrid Payton,NOP,0.0,0,other,Payton,New Orleans Pelicans
+Aaron Nesmith,IND,0.0,0,other,Nesmith,Indiana Pacers
+Terrence Shannon Jr.,MIN,0.0,0,other,Shannon,Minnesota Timberwolves
+Brice Sensabaugh,UTA,0.0,0,other,Sensabaugh,Utah Jazz
+Stanley Umude,MIL,0.0,0,other,Umude,Milwaukee Bucks
+Kyle Filipowski,UTA,0.0,0,other,Filipowski,Utah Jazz
+Richaun Holmes,WAS,0.0,0,other,Holmes,Washington Wizards
+Tre Mann,CHO,0.0,0,other,Mann,Charlotte Hornets
+Keldon Johnson,SAS,0.0,0,other,Johnson,San Antonio Spurs
+Isaiah Crawford,SAC,0.0,0,other,Crawford,Sacramento Kings
+Trentyn Flowers,LAC,0.0,0,other,Flowers,Los Angeles Clippers
+Taze Moore,POR,0.0,0,other,Moore,Portland Trail Blazers
+Mo Bamba,LAC,0.0,0,other,Bamba,Los Angeles Clippers
+Orlando Robinson,SAC,0.0,0,other,Robinson,Sacramento Kings
+Jacob Toppin,NYK,0.0,0,other,Toppin,New York Knicks
+Donovan Clingan,POR,0.0,0,other,Clingan,Portland Trail Blazers
+Riley Minix,SAS,0.0,0,other,Minix,San Antonio Spurs
+Justin Minaya,POR,0.0,0,other,Minaya,Portland Trail Blazers
+Keshad Johnson,MIA,0.0,0,other,Johnson,Miami Heat
+Jared Rhoden,CHO,0.0,0,other,Rhoden,Charlotte Hornets
+David Duke Jr.,SAS,0.0,0,other,Duke,San Antonio Spurs
+James Johnson,IND,0.0,0,other,Johnson,Indiana Pacers
+Jaime Jaquez Jr.,MIA,0.0,0,other,Jaquez,Miami Heat
+AJ Johnson,MIL,0.0,0,other,Johnson,Milwaukee Bucks
+Harrison Ingram,SAS,0.0,0,other,Ingram,San Antonio Spurs
+Anfernee Simons,POR,0.0,0,other,Simons,Portland Trail Blazers
+Dominick Barlow,ATL,0.0,0,other,Barlow,Atlanta Hawks
+Bruce Brown,TOR,0.0,0,other,Brown,Toronto Raptors
+Quenton Jackson,IND,0.0,0,other,Jackson,Indiana Pacers
+Tristan Vukcevic,WAS,0.0,0,other,Vukcevic,Washington Wizards
+Tyler Kolek,NYK,0.0,0,other,Kolek,New York Knicks
+Yuki Kawamura,MEM,0.0,0,other,Kawamura,Memphis Grizzlies
+Jamal Cain,NOP,0.0,0,other,Cain,New Orleans Pelicans
+Taylor Hendricks,UTA,0.0,0,other,Hendricks,Utah Jazz
+Josh Christopher,MIA,0.0,0,other,Christopher,Miami Heat
+Jock Landale,HOU,0.0,0,other,Landale,Houston Rockets
+Quincy Olivari,LAL,0.0,0,other,Olivari,Los Angeles Lakers
+Max Strus,CLE,0.0,0,other,Strus,Cleveland Cavaliers
+Jerami Grant,POR,0.0,0,other,Grant,Portland Trail Blazers
+Liam Robbins,MIL,0.0,0,other,Robbins,Milwaukee Bucks
+Spencer Jones,DEN,0.0,0,other,Jones,Denver Nuggets
+PJ Hall,DEN,0.0,0,other,Hall,Denver Nuggets
+Jack McVeigh,HOU,0.0,0,other,McVeigh,Houston Rockets
+Daniss Jenkins,DET,0.0,0,other,Jenkins,Detroit Pistons
+Ricky Council IV,PHI,0.0,0,other,Council,Philadelphia 76ers
+Garrett Temple,TOR,0.0,0,other,Temple,Toronto Raptors
+Anthony Gill,WAS,0.0,0,other,Gill,Washington Wizards
+Lester Quiñones,PHI,0.0,0,other,Quiñones,Philadelphia 76ers
+Ousmane Dieng,OKC,0.0,0,other,Dieng,Oklahoma City Thunder
+Jaden Springer,BOS,0.0,0,other,Springer,Boston Celtics
+Luke Travers,CLE,0.0,0,other,Travers,Cleveland Cavaliers
+Bronny James,LAL,0.0,0,other,James,Los Angeles Lakers
+Mouhamed Gueye,ATL,0.0,0,other,Gueye,Atlanta Hawks
+Ulrich Chomche,TOR,0.0,0,other,Chomche,Toronto Raptors
+Alex Ducas,OKC,0.0,0,other,Ducas,Oklahoma City Thunder
+Andrew Nembhard,IND,0.0,0,other,Nembhard,Indiana Pacers
+Moses Brown,IND,0.0,0,other,Brown,Indiana Pacers
+Branden Carlson,OKC,0.0,0,other,Carlson,Oklahoma City Thunder
+Vlatko Čančar,DEN,0.0,0,other,Čančar,Denver Nuggets
+Markieff Morris,DAL,0.0,0,other,Morris,Dallas Mavericks
+Max Christie,LAL,0.0,0,other,Christie,Los Angeles Lakers
+Daishen Nix,MIN,-0.1,0,other,Nix,Minnesota Timberwolves
+Jordan Walsh,BOS,-0.1,0,other,Walsh,Boston Celtics
+Malevy Leons,OKC,-0.1,0,other,Leons,Oklahoma City Thunder
+Jericho Sims,NYK,-0.1,0,other,Sims,New York Knicks
+Jae Crowder,SAC,-0.1,0,other,Crowder,Sacramento Kings
+Vince Williams Jr.,MEM,-0.1,0,other,Williams,Memphis Grizzlies
+Pacome Dadiet,NYK,-0.1,0,other,Dadiet,New York Knicks
+Shaedon Sharpe,POR,-0.1,0,other,Sharpe,Portland Trail Blazers
+Cui Yongxi,BRK,-0.1,0,other,Yongxi,Brooklyn Nets
+Colin Castleton,MEM,-0.1,0,other,Castleton,Memphis Grizzlies
+Kobe Bufkin,ATL,-0.1,0,other,Bufkin,Atlanta Hawks
+Cole Swider,DET,-0.1,0,other,Swider,Detroit Pistons
+Patrick Williams,CHI,-0.1,0,other,Williams,Chicago Bulls
+Jazian Gortman,DAL,-0.1,0,other,Gortman,Dallas Mavericks
+Rob Dillingham,MIN,-0.1,0,other,Dillingham,Minnesota Timberwolves
+Tristen Newton,IND,-0.1,0,other,Newton,Indiana Pacers
+Brandon Williams,DAL,-0.1,0,other,Williams,Dallas Mavericks
+Adam Flagler,OKC,-0.1,0,other,Flagler,Oklahoma City Thunder
+Jaylen Wells,MEM,-0.1,0,other,Wells,Memphis Grizzlies
+Karlo Matković,NOP,-0.1,0,other,Matković,New Orleans Pelicans
+Nick Richards,CHO,-0.1,0,other,Richards,Charlotte Hornets
+Isaiah Wong,CHO,-0.1,0,other,Wong,Charlotte Hornets
+Patty Mills,UTA,-0.1,0,other,Mills,Utah Jazz
+Jordan McLaughlin,SAC,-0.1,0,other,McLaughlin,Sacramento Kings
+Svi Mykhailiuk,UTA,-0.1,0,other,Mykhailiuk,Utah Jazz
+Johnny Furphy,IND,-0.1,0,other,Furphy,Indiana Pacers
+Eric Gordon,PHI,-0.1,0,other,Gordon,Philadelphia 76ers
+Bilal Coulibaly,WAS,-0.1,0,other,Coulibaly,Washington Wizards
+Baylor Scheierman,BOS,-0.1,0,other,Scheierman,Boston Celtics
+Isaac Jones,SAC,-0.1,0,other,Jones,Sacramento Kings
+JD Davison,BOS,-0.1,0,other,Davison,Boston Celtics
+Caleb Martin,PHI,-0.1,0,other,Martin,Philadelphia 76ers
+D.J. Carton,TOR,-0.1,0,other,Carton,Toronto Raptors
+Jalen Bridges,PHO,-0.1,0,other,Bridges,Phoenix Suns
+Moussa Diabaté,CHO,-0.1,0,other,Diabaté,Charlotte Hornets
+Taj Gibson,CHO,-0.1,0,other,Gibson,Charlotte Hornets
+Colby Jones,SAC,-0.1,0,other,Jones,Sacramento Kings
+Bogdan Bogdanović,ATL,-0.1,0,other,Bogdanović,Atlanta Hawks
+Gui Santos,GSW,-0.1,0,other,Santos,Golden State Warriors
+Delon Wright,MIL,-0.1,0,other,Wright,Milwaukee Bucks
+Ariel Hukporti,NYK,-0.1,0,other,Hukporti,New York Knicks
+Reed Sheppard,HOU,-0.1,0,other,Sheppard,Houston Rockets
+Adem Bona,PHI,-0.1,0,other,Bona,Philadelphia 76ers
+Oso Ighodaro,PHO,-0.1,0,other,Ighodaro,Phoenix Suns
+Trey Alexander,DEN,-0.1,0,other,Alexander,Denver Nuggets
+Damion Lee,PHO,-0.1,0,other,Lee,Phoenix Suns
+Dalton Knecht,LAL,-0.1,0,other,Knecht,Los Angeles Lakers
+Cam Reddish,LAL,-0.1,0,other,Reddish,Los Angeles Lakers
+Keaton Wallace,ATL,-0.1,0,other,Wallace,Atlanta Hawks
+Noah Clowney,BRK,-0.1,0,other,Clowney,Brooklyn Nets
+Antonio Reeves,NOP,-0.1,0,other,Reeves,New Orleans Pelicans
+Kris Murray,POR,-0.1,0,other,Murray,Portland Trail Blazers
+Gradey Dick,TOR,-0.1,0,other,Dick,Toronto Raptors
+Coby White,CHI,-0.1,0,other,White,Chicago Bulls
+Caleb Houstan,ORL,-0.1,0,other,Houstan,Orlando Magic
+Nick Smith Jr.,CHO,-0.1,0,other,Smith,Charlotte Hornets
+Pat Connaughton,MIL,-0.1,0,other,Connaughton,Milwaukee Bucks
+Tristan Da Silva,ORL,-0.1,0,other,Da,Orlando Magic
+Jeremiah Robinson-Earl,NOP,-0.1,0,other,Robinson-Earl,New Orleans Pelicans
+Kessler Edwards,DAL,-0.1,0,other,Edwards,Dallas Mavericks
+Cole Anthony,ORL,-0.1,0,other,Anthony,Orlando Magic
+Kevin Huerter,SAC,-0.1,0,other,Huerter,Sacramento Kings
+Alex Sarr,WAS,-0.1,0,other,Sarr,Washington Wizards
+Javonte Green,NOP,-0.1,0,other,Green,New Orleans Pelicans
+Johnny Juzang,UTA,-0.1,0,other,Juzang,Utah Jazz
+Jaylon Tyson,CLE,-0.1,0,other,Tyson,Cleveland Cavaliers
+Taurean Prince,MIL,-0.1,0,other,Prince,Milwaukee Bucks
+Christian Koloko,LAL,-0.1,0,other,Koloko,Los Angeles Lakers
+Pelle Larsson,MIA,-0.1,0,other,Larsson,Miami Heat
+Lindy Waters III,GSW,-0.1,0,other,Waters,Golden State Warriors
+Ausar Thompson,DET,-0.1,0,other,Thompson,Detroit Pistons
+Anthony Black,ORL,-0.1,0,other,Black,Orlando Magic
+MarJon Beauchamp,MIL,-0.1,0,other,Beauchamp,Milwaukee Bucks
+Trendon Watford,BRK,-0.1,0,other,Watford,Brooklyn Nets
+KJ Simpson,CHO,-0.1,0,other,Simpson,Charlotte Hornets
+Rayan Rupert,POR,-0.1,0,other,Rupert,Portland Trail Blazers
+Jordan Miller,LAC,-0.1,0,other,Miller,Los Angeles Clippers
+Armel Traoré,LAL,-0.1,0,other,Traoré,Los Angeles Lakers
+Doug McDermott,SAC,-0.1,0,other,McDermott,Sacramento Kings
+Tristan Thompson,CLE,-0.1,0,other,Thompson,Cleveland Cavaliers
+Matt Ryan,NYK,-0.1,0,other,Ryan,New York Knicks
+Ryan Dunn,PHO,-0.1,0,other,Dunn,Phoenix Suns
+Daniel Theis,NOP,-0.1,0,other,Theis,New Orleans Pelicans
+Ben Sheppard,IND,-0.1,0,other,Sheppard,Indiana Pacers
+Hunter Tyson,DEN,-0.2,0,other,Tyson,Denver Nuggets
+Blake Wesley,SAS,-0.2,0,other,Wesley,San Antonio Spurs
+Vit Krejci,ATL,-0.2,0,other,Krejci,Atlanta Hawks
+Zeke Nnaji,DEN,-0.2,0,other,Nnaji,Denver Nuggets
+Malaki Branham,SAS,-0.2,0,other,Branham,San Antonio Spurs
+Simone Fontecchio,DET,-0.2,0,other,Fontecchio,Detroit Pistons
+Jett Howard,ORL,-0.2,0,other,Howard,Orlando Magic
+Enrique Freeman,IND,-0.2,0,other,Freeman,Indiana Pacers
+Toumani Camara,POR,-0.2,0,other,Camara,Portland Trail Blazers
+Jaylen Nowell,NOP,-0.2,0,other,Nowell,New Orleans Pelicans
+Xavier Tillman Sr.,BOS,-0.2,0,other,Tillman,Boston Celtics
+Terry Rozier,MIA,-0.2,0,other,Rozier,Miami Heat
+Yves Missi,NOP,-0.2,0,other,Missi,New Orleans Pelicans
+Jabari Walker,POR,-0.2,0,other,Walker,Portland Trail Blazers
+Dario Šarić,DEN,-0.2,0,other,Šarić,Denver Nuggets
+Trey Jemison,NOP,-0.2,0,other,Jemison,New Orleans Pelicans
+Josh Richardson,MIA,-0.2,0,other,Richardson,Miami Heat
+Andre Drummond,PHI,-0.2,0,other,Drummond,Philadelphia 76ers
+Julian Strawther,DEN,-0.2,0,other,Strawther,Denver Nuggets
+Julian Phillips,CHI,-0.2,0,other,Phillips,Chicago Bulls
+Gary Trent Jr.,MIL,-0.2,0,other,Trent,Milwaukee Bucks
+Jusuf Nurkić,PHO,-0.2,0,other,Nurkić,Phoenix Suns
+Dillon Jones,OKC,-0.2,0,other,Jones,Oklahoma City Thunder
+Herbert Jones,NOP,-0.2,0,other,Jones,New Orleans Pelicans
+Dejounte Murray,NOP,-0.2,0,other,Murray,New Orleans Pelicans
+Ziaire Williams,BRK,-0.2,0,other,Williams,Brooklyn Nets
+Dalen Terry,CHI,-0.3,0,other,Terry,Chicago Bulls
+Tim Hardaway Jr.,DET,-0.3,0,other,Hardaway,Detroit Pistons
+Maxi Kleber,DAL,-0.3,0,other,Kleber,Dallas Mavericks
+Ja'Kobe Walter,TOR,-0.3,0,other,Walter,Toronto Raptors
+Kevin Porter Jr.,LAC,-0.3,0,other,Porter,Los Angeles Clippers
+Ron Holland,DET,-0.3,0,other,Holland,Detroit Pistons
+Tidjane Salaün,CHO,-0.3,0,other,Salaün,Charlotte Hornets
+Matas Buzelis,CHI,-0.4,0,other,Buzelis,Chicago Bulls
+Kyle Kuzma,WAS,-0.4,0,other,Kuzma,Washington Wizards
+Scoot Henderson,POR,-0.4,0,other,Henderson,Portland Trail Blazers
+Jordan Hawkins,NOP,-0.4,0,other,Hawkins,New Orleans Pelicans
+Corey Kispert,WAS,-0.4,0,other,Kispert,Washington Wizards
+Jaden Hardy,DAL,-0.4,0,other,Hardy,Dallas Mavericks
+Bennedict Mathurin,IND,-0.4,0,other,Mathurin,Indiana Pacers
+Jamal Shead,TOR,-0.4,0,other,Shead,Toronto Raptors
+Keyonte George,UTA,-0.4,0,other,George,Utah Jazz
+Jalen Wilson,BRK,-0.5,0,other,Wilson,Brooklyn Nets
+Cody Williams,UTA,-0.5,0,other,Williams,Utah Jazz
+Andre Jackson Jr.,MIL,-0.5,0,other,Jackson,Milwaukee Bucks
+Vasilije Micić,CHO,-0.5,0,other,Micić,Charlotte Hornets
+Keegan Murray,SAC,-0.5,0,other,Murray,Sacramento Kings
+Josh Green,CHO,-0.5,0,other,Green,Charlotte Hornets
+Kyshawn George,WAS,-0.6,0,other,George,Washington Wizards
+Gabe Vincent,LAL,-0.6,0,other,Vincent,Los Angeles Lakers
+Stephon Castle,SAS,-0.6,0,other,Castle,San Antonio Spurs
+Keon Johnson,BRK,-0.6,0,other,Johnson,Brooklyn Nets
+Davion Mitchell,TOR,-0.6,0,other,Mitchell,Toronto Raptors
+Zaccharie Risacher,ATL,-0.6,0,other,Risacher,Atlanta Hawks
+Carlton Carrington,WAS,-0.7,0,other,Carrington,Washington Wizards
+Isaiah Collier,UTA,-0.8,0,other,Collier,Utah Jazz
+ATL average,ATL,0.19999999999999998,0,Average,average,Atlanta Hawks
+BOS average,BOS,0.525,0,Average,average,Boston Celtics
+BRK average,BRK,0.09285714285714287,0,Average,average,Brooklyn Nets
+CHI average,CHI,0.13529411764705881,0,Average,average,Chicago Bulls
+CHO average,CHO,0.07368421052631578,0,Average,average,Charlotte Hornets
+CLE average,CLE,0.53125,0,Average,average,Cleveland Cavaliers
+DAL average,DAL,0.3647058823529412,0,Average,average,Dallas Mavericks
+DEN average,DEN,0.3,0,Average,average,Denver Nuggets
+DET average,DET,0.16875,0,Average,average,Detroit Pistons
+GSW average,GSW,0.33125,0,Average,average,Golden State Warriors
+HOU average,HOU,0.40625,0,Average,average,Houston Rockets
+IND average,IND,0.1611111111111111,0,Average,average,Indiana Pacers
+LAC average,LAC,0.3,0,Average,average,Los Angeles Clippers
+LAL average,LAL,0.2357142857142857,0,Average,average,Los Angeles Lakers
+MEM average,MEM,0.4117647058823529,0,Average,average,Memphis Grizzlies
+MIA average,MIA,0.28125,0,Average,average,Miami Heat
+MIL average,MIL,0.24444444444444446,0,Average,average,Milwaukee Bucks
+MIN average,MIN,0.28125,0,Average,average,Minnesota Timberwolves
+NOP average,NOP,-0.042105263157894736,0,Average,average,New Orleans Pelicans
+NYK average,NYK,0.46,0,Average,average,New York Knicks
+OKC average,OKC,0.46315789473684205,0,Average,average,Oklahoma City Thunder
+ORL average,ORL,0.29411764705882354,0,Average,average,Orlando Magic
+PHI average,PHI,0.1388888888888889,0,Average,average,Philadelphia 76ers
+PHO average,PHO,0.1823529411764706,0,Average,average,Phoenix Suns
+POR average,POR,-6.530723674265627e-18,0,Average,average,Portland Trail Blazers
+SAC average,SAC,0.22352941176470587,0,Average,average,Sacramento Kings
+SAS average,SAS,0.20555555555555557,0,Average,average,San Antonio Spurs
+TOR average,TOR,0.08421052631578947,0,Average,average,Toronto Raptors
+UTA average,UTA,0.0176470588235294,0,Average,average,Utah Jazz
+WAS average,WAS,-0.03529411764705883,0,Average,average,Washington Wizards
+ATL average without best player,ATL,0.13333333333333333,0,Average without Best,average,Atlanta Hawks
+BOS average without best player,BOS,0.39333333333333337,0,Average without Best,average,Boston Celtics
+BRK average without best player,BRK,-0.02307692307692307,0,Average without Best,average,Brooklyn Nets
+CHI average without best player,CHI,0.056249999999999994,0,Average without Best,average,Chicago Bulls
+CHO average without best player,CHO,0.0,0,Average without Best,average,Charlotte Hornets
+CLE average without best player,CLE,0.47333333333333333,0,Average without Best,average,Cleveland Cavaliers
+DAL average without best player,DAL,0.275,0,Average without Best,average,Dallas Mavericks
+DEN average without best player,DEN,0.075,0,Average without Best,average,Denver Nuggets
+DET average without best player,DET,0.1,0,Average without Best,average,Detroit Pistons
+GSW average without best player,GSW,0.24666666666666667,0,Average without Best,average,Golden State Warriors
+HOU average without best player,HOU,0.2866666666666667,0,Average without Best,average,Houston Rockets
+IND average without best player,IND,0.08823529411764706,0,Average without Best,average,Indiana Pacers
+LAC average without best player,LAC,0.22666666666666666,0,Average without Best,average,Los Angeles Clippers
+LAL average without best player,LAL,0.0923076923076923,0,Average without Best,average,Los Angeles Lakers
+MEM average without best player,MEM,0.3625,0,Average without Best,average,Memphis Grizzlies
+MIA average without best player,MIA,0.19333333333333333,0,Average without Best,average,Miami Heat
+MIL average without best player,MIL,0.11176470588235293,0,Average without Best,average,Milwaukee Bucks
+MIN average without best player,MIN,0.21333333333333335,0,Average without Best,average,Minnesota Timberwolves
+NOP average without best player,NOP,-0.07222222222222223,0,Average without Best,average,New Orleans Pelicans
+NYK average without best player,NYK,0.34285714285714286,0,Average without Best,average,New York Knicks
+OKC average without best player,OKC,0.2777777777777778,0,Average without Best,average,Oklahoma City Thunder
+ORL average without best player,ORL,0.20625,0,Average without Best,average,Orlando Magic
+PHI average without best player,PHI,0.0823529411764706,0,Average without Best,average,Philadelphia 76ers
+PHO average without best player,PHO,0.13125,0,Average without Best,average,Phoenix Suns
+POR average without best player,POR,-0.03125000000000001,0,Average without Best,average,Portland Trail Blazers
+SAC average without best player,SAC,0.10625,0,Average without Best,average,Sacramento Kings
+SAS average without best player,SAS,0.07647058823529412,0,Average without Best,average,San Antonio Spurs
+TOR average without best player,TOR,0.044444444444444446,0,Average without Best,average,Toronto Raptors
+UTA average without best player,UTA,-0.02500000000000001,0,Average without Best,average,Utah Jazz
+WAS average without best player,WAS,-0.08124999999999999,0,Average without Best,average,Washington Wizards
