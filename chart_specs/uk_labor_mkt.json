@@ -50,7 +50,8 @@
         "layer": [
           {
             "mark": {
-              "type": "line"
+              "type": "line",
+              "color": "#4269d0"
             }
           },
           {
@@ -58,7 +59,8 @@
             "mark": {
               "type": "point",
               "filled": true,
-              "size": 60
+              "size": 60,
+              "color": "#4269d0"
             }
           }
         ]

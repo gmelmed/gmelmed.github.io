@@ -51,7 +51,8 @@
   },
   "mark": {
     "type": "area",
-    "opacity": 0.75
+    "opacity": 0.75,
+    "color": "#4269d0"
   },
   "config": {
     "font": "Montserrat, sans-serif",
