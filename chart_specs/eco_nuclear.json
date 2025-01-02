@@ -12,22 +12,82 @@
     "url": "https://api.economicsobservatory.com/deu/nGwh?vega",
     "format": {"type": "json"}
   },
-  "mark": {
-    "type": "line",
-    "color":"#002fa7"
-  },
   "encoding": {
     "x": {
       "field": "date",
       "type": "temporal",
       "axis": {"title": "", "titleColor": "#122B39", "grid": false}
-    },
-    "y": {
-      "field": "value",
-      "type": "quantitative",
-      "axis": {"title": "", "titleColor": "#122B39", "grid": true}
     }
   },
+  "layer": [
+    {
+      "encoding": {
+        "y": {
+          "field": "value",
+          "type": "quantitative",
+          "axis": {"title": "", "titleColor": "#122B39", "grid": true}
+        },
+        "tooltip": [
+          {
+            "field": "date",
+            "type": "temporal",
+            "title": "Date",
+            "format": "%b %Y"
+          },
+          {
+            "field": "value",
+            "type": "quantitative",
+            "title": "Output (GWh)",
+            "format": ",.0f"
+          }
+        ]
+      },
+      "layer": [
+        {
+          "mark": {"type": "line", "color": "#002fa7"}
+        },
+        {
+          "transform": [{"filter": {"param": "hover", "empty": false}}],
+          "mark": {"type": "point", "color": "#002fa7", "size": 100}
+        }
+      ]
+    },
+    {
+      "mark": "rule",
+      "encoding": {
+        "opacity": {
+          "condition": {"value": 0.3, "param": "hover", "empty": false},
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "date",
+            "type": "temporal",
+            "title": "Date",
+            "format": "%b %Y"
+          },
+          {
+            "field": "value",
+            "type": "quantitative",
+            "title": "Output (GWh)",
+            "format": ",.0f"
+          }
+        ]
+      },
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": ["date"],
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ]
+    }
+  ],
   "config": {
     "font": "Montserrat, sans-serif",
     "view": {"stroke": "transparent"},
@@ -42,7 +102,7 @@
         "#00FF7F"
       ]
     },
-    "point": {"filled": true, "size": 80, "opacity": 0.95},
+    "point": {"filled": true, "opacity": 0.95},
     "axis": {
       "labelColor": "#676A86",
       "labelFontSize": 11,
