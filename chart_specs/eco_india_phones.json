@@ -21,7 +21,6 @@
       "field": "date",
       "type": "temporal",
       "axis": {
-        "title": "Millions of subscribers",
         "grid": false
       }
     }
@@ -33,7 +32,7 @@
           "field": "value",
           "type": "quantitative",
           "axis": {
-            "title": "",
+            "title": "Millions of subscribers",
             "grid": true
           }
         },
