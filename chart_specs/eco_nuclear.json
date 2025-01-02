@@ -7,7 +7,6 @@
   },
   "height": 400,
   "width": 600,
-  "autosize": {"type": "fit", "contains": "padding"},
   "data": {
     "url": "https://api.economicsobservatory.com/deu/nGwh?vega",
     "format": {"type": "json"}
@@ -25,18 +24,14 @@
         "y": {
           "field": "value",
           "type": "quantitative",
-          "axis": {
-            "title": "Output (GWh)",
-            "grid": true,
-            "format": "~s"
-            }
+          "axis": {"title": "Output (GWh)", "grid": true, "format": "~s"}
         },
         "tooltip": [
           {
             "field": "date",
             "type": "temporal",
             "title": "Date",
-            "format": "%b %Y"
+            "timeUnit":"year"
           },
           {
             "field": "value",
@@ -65,8 +60,8 @@
           {
             "field": "date",
             "type": "temporal",
-            "title": "Date",
-            "format": "%b %Y"
+            "title": "Year",
+            "timeUnit":"year"
           },
           {
             "field": "value",
@@ -92,36 +87,15 @@
   ],
   "config": {
     "font": "Montserrat, sans-serif",
-    "view": {
-      "stroke": "transparent"
-    },
+    "view": {"stroke": "transparent"},
     "background": "#f7f7f7",
-    "range": {
-      "category": {
-        "scheme": "observable10"
-      }
-    },
-    "point": {
-      "filled": true,
-      "size": 80,
-      "color": "#4269d0",
-      "opacity": 0.95
-    },
-    "area": {
-      "color": "#4269d0"
-    },
-    "line": {
-      "color": "#4269d0"
-    },
-    "bar": {
-      "color": "#4269d0"
-    },
-    "circle": {
-      "color": "#4269d0"
-    },
-    "rule": {
-      "color": "#4269d0"
-    },
+    "range": {"category": {"scheme": "observable10"}},
+    "point": {"filled": true, "size": 80, "color": "#4269d0", "opacity": 0.95},
+    "area": {"color": "#4269d0"},
+    "line": {"color": "#4269d0"},
+    "bar": {"color": "#4269d0"},
+    "circle": {"color": "#4269d0"},
+    "rule": {"color": "#4269d0"},
     "axis": {
       "labelColor": "#676A86",
       "labelFontSize": 11,
@@ -132,25 +106,17 @@
       "domainColor": "#676A86",
       "domainOpacity": 0.5,
       "gridColor": "#676A86",
-      "gridDash": [
-        2,
-        2
-      ],
+      "gridDash": [2, 2],
       "gridOpacity": 0.5,
       "title": null,
       "titleColor": "#676A86",
       "titleOpacity": 0.8,
       "tickSize": 4
     },
-    "axisXTemporal": {
-      "grid": false
-    },
+    "axisXTemporal": {"grid": false},
     "axisYQuantitative": {
       "gridColor": "#676A86",
-      "gridDash": [
-        1,
-        5
-      ],
+      "gridDash": [1, 5],
       "gridOpacity": 0.5,
       "ticks": false,
       "labelPadding": 5,
