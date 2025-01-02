@@ -24,13 +24,13 @@
           "strokeWidth": 1.5
         },
         "encoding": {
-          "x": {
-            "field": "id",
+          "y": {
+            "field": "team",
             "type": "nominal",
             "title": null,
             "sort": {"field": "VORP", "op": "max", "order": "descending"}
           },
-          "y": {"field": "VORP", "type": "quantitative"},
+          "x": {"field": "VORP", "type": "quantitative"},
           "tooltip": [
             {"field": "player", "type": "nominal", "title": "Player"},
             {"field": "VORP", "type": "quantitative", "format": ".2f"}
@@ -51,20 +51,19 @@
           "strokeWidth": 1.5
         },
         "encoding": {
-          "x": {
-            "field": "id",
+          "y": {
+            "field": "team",
             "type": "nominal",
             "title": null,
             "sort": {"field": "VORP", "op": "max", "order": "descending"}
           },
-          "y": {"field": "VORP", "type": "quantitative"},
+          "x": {"field": "VORP", "type": "quantitative", "title": "VORP"},
           "color": {
             "field": "category",
-            "scale": {"domain": ["Best Player", "Average", "Average without Best"]},
-            "legend":{
-              "title":null,
-              "orient": "bottom"
-            }
+            "scale": {
+              "domain": ["Best Player", "Average", "Average without Best"]
+            },
+            "legend": {"title": null, "orient": "top"}
           },
           "tooltip": [
             {"field": "player", "type": "nominal", "title": "Player"},
@@ -74,21 +73,14 @@
       },
       {
         "transform": [{"filter": "datum.best == 1"}],
-        "mark": {
-          "type": "text",
-          "angle": -45,
-          "dx": 8,
-          "dy": -5,
-          "fontSize": 11,
-          "align": "left"
-        },
+        "mark": {"type": "text", "dx": 8, "align": "left"},
         "encoding": {
-          "x": {
-            "field": "id",
+          "y": {
+            "field": "team",
             "type": "nominal",
             "sort": {"field": "VORP", "op": "max", "order": "descending"}
           },
-          "y": {"field": "VORP", "type": "quantitative"},
+          "x": {"field": "VORP", "type": "quantitative"},
           "text": {"field": "surname"}
         }
       }
