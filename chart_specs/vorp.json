@@ -4,10 +4,11 @@
       "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/data/vorp.csv"
     },
     "title": {
-      "text": "Get Nikola Jokic some help",
+      "text": "Jokić and Shai are in a league of their own",
       "subtitle": [
-        "Every NBA team ranked by value over replacement player (VORP)",
-        "Data from basketball reference"
+        "Every NBA team ranked by leading value over replacement player (VORP)",
+        "Data from basketball reference",
+        ""
       ],
       "anchor": "start"
     },
@@ -18,6 +19,7 @@
         "mark": {
           "type": "point",
           "color": "lightgray",
+          "size": 80,
           "opacity": 0.3,
           "strokeWidth": 1.5
         },
@@ -44,7 +46,8 @@
         "mark": {
           "type": "point",
           "color": "lightgray",
-          "opacity": 1,
+          "opacity": 0.8,
+          "size":100,
           "strokeWidth": 1.5
         },
         "encoding": {
@@ -79,7 +82,7 @@
             "sort": {"field": "VORP", "op": "max", "order": "descending"}
           },
           "y": {"field": "VORP", "type": "quantitative"},
-          "text": {"field": "player"}
+          "text": {"field": "surname"}
         }
       }
     ],
