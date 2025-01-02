@@ -534,33 +534,33 @@ SAS average,SAS,0.20555555555555557,0,Average,average
 TOR average,TOR,0.08421052631578947,0,Average,average
 UTA average,UTA,0.0176470588235294,0,Average,average
 WAS average,WAS,-0.03529411764705883,0,Average,average
-ATL average without best player,ATL,0.13333333333333333,0,Average without Best Player,average
-BOS average without best player,BOS,0.39333333333333337,0,Average without Best Player,average
-BRK average without best player,BRK,-0.02307692307692307,0,Average without Best Player,average
-CHI average without best player,CHI,0.056249999999999994,0,Average without Best Player,average
-CHO average without best player,CHO,0.0,0,Average without Best Player,average
-CLE average without best player,CLE,0.47333333333333333,0,Average without Best Player,average
-DAL average without best player,DAL,0.275,0,Average without Best Player,average
-DEN average without best player,DEN,0.075,0,Average without Best Player,average
-DET average without best player,DET,0.1,0,Average without Best Player,average
-GSW average without best player,GSW,0.24666666666666667,0,Average without Best Player,average
-HOU average without best player,HOU,0.2866666666666667,0,Average without Best Player,average
-IND average without best player,IND,0.08823529411764706,0,Average without Best Player,average
-LAC average without best player,LAC,0.22666666666666666,0,Average without Best Player,average
-LAL average without best player,LAL,0.0923076923076923,0,Average without Best Player,average
-MEM average without best player,MEM,0.3625,0,Average without Best Player,average
-MIA average without best player,MIA,0.19333333333333333,0,Average without Best Player,average
-MIL average without best player,MIL,0.11176470588235293,0,Average without Best Player,average
-MIN average without best player,MIN,0.21333333333333335,0,Average without Best Player,average
-NOP average without best player,NOP,-0.07222222222222223,0,Average without Best Player,average
-NYK average without best player,NYK,0.34285714285714286,0,Average without Best Player,average
-OKC average without best player,OKC,0.2777777777777778,0,Average without Best Player,average
-ORL average without best player,ORL,0.20625,0,Average without Best Player,average
-PHI average without best player,PHI,0.0823529411764706,0,Average without Best Player,average
-PHO average without best player,PHO,0.13125,0,Average without Best Player,average
-POR average without best player,POR,-0.03125000000000001,0,Average without Best Player,average
-SAC average without best player,SAC,0.10625,0,Average without Best Player,average
-SAS average without best player,SAS,0.07647058823529412,0,Average without Best Player,average
-TOR average without best player,TOR,0.044444444444444446,0,Average without Best Player,average
-UTA average without best player,UTA,-0.02500000000000001,0,Average without Best Player,average
-WAS average without best player,WAS,-0.08124999999999999,0,Average without Best Player,average
+ATL average without best player,ATL,0.13333333333333333,0,Average without Best,average
+BOS average without best player,BOS,0.39333333333333337,0,Average without Best,average
+BRK average without best player,BRK,-0.02307692307692307,0,Average without Best,average
+CHI average without best player,CHI,0.056249999999999994,0,Average without Best,average
+CHO average without best player,CHO,0.0,0,Average without Best,average
+CLE average without best player,CLE,0.47333333333333333,0,Average without Best,average
+DAL average without best player,DAL,0.275,0,Average without Best,average
+DEN average without best player,DEN,0.075,0,Average without Best,average
+DET average without best player,DET,0.1,0,Average without Best,average
+GSW average without best player,GSW,0.24666666666666667,0,Average without Best,average
+HOU average without best player,HOU,0.2866666666666667,0,Average without Best,average
+IND average without best player,IND,0.08823529411764706,0,Average without Best,average
+LAC average without best player,LAC,0.22666666666666666,0,Average without Best,average
+LAL average without best player,LAL,0.0923076923076923,0,Average without Best,average
+MEM average without best player,MEM,0.3625,0,Average without Best,average
+MIA average without best player,MIA,0.19333333333333333,0,Average without Best,average
+MIL average without best player,MIL,0.11176470588235293,0,Average without Best,average
+MIN average without best player,MIN,0.21333333333333335,0,Average without Best,average
+NOP average without best player,NOP,-0.07222222222222223,0,Average without Best,average
+NYK average without best player,NYK,0.34285714285714286,0,Average without Best,average
+OKC average without best player,OKC,0.2777777777777778,0,Average without Best,average
+ORL average without best player,ORL,0.20625,0,Average without Best,average
+PHI average without best player,PHI,0.0823529411764706,0,Average without Best,average
+PHO average without best player,PHO,0.13125,0,Average without Best,average
+POR average without best player,POR,-0.03125000000000001,0,Average without Best,average
+SAC average without best player,SAC,0.10625,0,Average without Best,average
+SAS average without best player,SAS,0.07647058823529412,0,Average without Best,average
+TOR average without best player,TOR,0.044444444444444446,0,Average without Best,average
+UTA average without best player,UTA,-0.02500000000000001,0,Average without Best,average
+WAS average without best player,WAS,-0.08124999999999999,0,Average without Best,average
