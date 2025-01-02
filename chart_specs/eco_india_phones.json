@@ -3,19 +3,27 @@
   "title": {
     "text": "Phone subscribers in India",
     "anchor": "start",
-    "subtitle": ["Millions | ODI through ECO API", ""]
+    "subtitle": [
+      "Millions | ODI through ECO API",
+      ""
+    ]
   },
   "height": 400,
   "width": 600,
   "data": {
     "url": "https://api.economicsobservatory.com/ind/tele?vega",
-    "format": {"type": "json"}
+    "format": {
+      "type": "json"
+    }
   },
   "encoding": {
     "x": {
       "field": "date",
       "type": "temporal",
-      "axis": {"title": "", "grid": false}
+      "axis": {
+        "title": "",
+        "grid": false
+      }
     }
   },
   "layer": [
@@ -24,7 +32,10 @@
         "y": {
           "field": "value",
           "type": "quantitative",
-          "axis": {"title": "", "grid": true}
+          "axis": {
+            "title": "",
+            "grid": true
+          }
         },
         "tooltip": [
           {
@@ -43,11 +54,26 @@
       },
       "layer": [
         {
-          "mark": {"type": "line", "strokeWidth": 2, "color": "#002fa7"}
+          "mark": {
+            "type": "line",
+            "strokeWidth": 2,
+            "color": "#002fa7"
+          }
         },
         {
-          "transform": [{"filter": {"param": "hover", "empty": false}}],
-          "mark": {"type": "point", "color": "#002fa7", "size": 100}
+          "transform": [
+            {
+              "filter": {
+                "param": "hover",
+                "empty": false
+              }
+            }
+          ],
+          "mark": {
+            "type": "point",
+            "color": "#002fa7",
+            "size": 100
+          }
         }
       ]
     },
@@ -55,7 +81,11 @@
       "mark": "rule",
       "encoding": {
         "opacity": {
-          "condition": {"value": 0.3, "param": "hover", "empty": false},
+          "condition": {
+            "value": 0.3,
+            "param": "hover",
+            "empty": false
+          },
           "value": 0
         },
         "tooltip": [
@@ -78,7 +108,9 @@
           "name": "hover",
           "select": {
             "type": "point",
-            "fields": ["date"],
+            "fields": [
+              "date"
+            ],
             "nearest": true,
             "on": "pointerover",
             "clear": "pointerout"
@@ -89,20 +121,19 @@
   ],
   "config": {
     "font": "Montserrat, sans-serif",
-    "view": {"stroke": "transparent"},
+    "view": {
+      "stroke": "transparent"
+    },
     "background": "#f7f7f7",
     "range": {
-      "category": [
-        "#002fa7",
-        "#FFD300",
-        "#FF9500",
-        "#FF2B7F",
-        "#00C5CD",
-        "#5D00A6",
-        "#00FF7F"
-      ]
+      "category": {
+        "scheme": "observable10"
+      }
     },
-    "point": {"filled": true, "opacity": 0.95},
+    "point": {
+      "filled": true,
+      "opacity": 0.95
+    },
     "axis": {
       "labelColor": "#676A86",
       "labelFontSize": 11,
@@ -113,7 +144,10 @@
       "domainColor": "#676A86",
       "domainOpacity": 0.5,
       "gridColor": "#676A86",
-      "gridDash": [2, 2],
+      "gridDash": [
+        2,
+        2
+      ],
       "gridOpacity": 0.5,
       "title": null,
       "titleColor": "#676A86",
@@ -127,11 +161,19 @@
       "tickOpacity": 0.5,
       "title": null
     },
-    "axisYDiscrete": {"ticks": false, "labelPadding": 5},
-    "axisXQuantitative": {"grid": true},
+    "axisYDiscrete": {
+      "ticks": false,
+      "labelPadding": 5
+    },
+    "axisXQuantitative": {
+      "grid": true
+    },
     "axisYQuantitative": {
       "gridColor": "#676A86",
-      "gridDash": [1, 5],
+      "gridDash": [
+        1,
+        5
+      ],
       "gridOpacity": 0.5,
       "ticks": false,
       "labelPadding": 5,

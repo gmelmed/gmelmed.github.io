@@ -3,20 +3,32 @@
   "title": {
     "text": "German Nuclear Power Generation",
     "anchor": "start",
-    "subtitle": ["Output, GWh, | IEA via ECO-API", ""]
+    "subtitle": [
+      "Output, GWh, | IEA via ECO-API",
+      ""
+    ]
   },
   "height": 400,
   "width": 600,
-  "autosize": {"type": "fit", "contains": "padding"},
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
   "data": {
     "url": "https://api.economicsobservatory.com/deu/nGwh?vega",
-    "format": {"type": "json"}
+    "format": {
+      "type": "json"
+    }
   },
   "encoding": {
     "x": {
       "field": "date",
       "type": "temporal",
-      "axis": {"title": "", "titleColor": "#122B39", "grid": false}
+      "axis": {
+        "title": "",
+        "titleColor": "#122B39",
+        "grid": false
+      }
     }
   },
   "layer": [
@@ -25,7 +37,11 @@
         "y": {
           "field": "value",
           "type": "quantitative",
-          "axis": {"title": "", "titleColor": "#122B39", "grid": true}
+          "axis": {
+            "title": "",
+            "titleColor": "#122B39",
+            "grid": true
+          }
         },
         "tooltip": [
           {
@@ -44,11 +60,25 @@
       },
       "layer": [
         {
-          "mark": {"type": "line", "color": "#002fa7"}
+          "mark": {
+            "type": "line",
+            "color": "#002fa7"
+          }
         },
         {
-          "transform": [{"filter": {"param": "hover", "empty": false}}],
-          "mark": {"type": "point", "color": "#002fa7", "size": 100}
+          "transform": [
+            {
+              "filter": {
+                "param": "hover",
+                "empty": false
+              }
+            }
+          ],
+          "mark": {
+            "type": "point",
+            "color": "#002fa7",
+            "size": 100
+          }
         }
       ]
     },
@@ -56,7 +86,11 @@
       "mark": "rule",
       "encoding": {
         "opacity": {
-          "condition": {"value": 0.3, "param": "hover", "empty": false},
+          "condition": {
+            "value": 0.3,
+            "param": "hover",
+            "empty": false
+          },
           "value": 0
         },
         "tooltip": [
@@ -79,7 +113,9 @@
           "name": "hover",
           "select": {
             "type": "point",
-            "fields": ["date"],
+            "fields": [
+              "date"
+            ],
             "nearest": true,
             "on": "pointerover",
             "clear": "pointerout"
@@ -90,19 +126,19 @@
   ],
   "config": {
     "font": "Montserrat, sans-serif",
-    "view": {"stroke": "transparent"},
+    "view": {
+      "stroke": "transparent"
+    },
     "background": "#f7f7f7",
     "range": {
-      "category": [
-        "#FFD300",
-        "#00C5CD",
-        "#002fa7",
-        "#FF2B7F",
-        "#5D00A6",
-        "#00FF7F"
-      ]
+      "category": {
+        "scheme": "observable10"
+      }
     },
-    "point": {"filled": true, "opacity": 0.95},
+    "point": {
+      "filled": true,
+      "opacity": 0.95
+    },
     "axis": {
       "labelColor": "#676A86",
       "labelFontSize": 11,
@@ -113,17 +149,25 @@
       "domainColor": "#676A86",
       "domainOpacity": 0.5,
       "gridColor": "#676A86",
-      "gridDash": [2, 2],
+      "gridDash": [
+        2,
+        2
+      ],
       "gridOpacity": 0.5,
       "title": null,
       "titleColor": "#676A86",
       "titleOpacity": 0.8,
       "tickSize": 4
     },
-    "axisXTemporal": {"grid": false},
+    "axisXTemporal": {
+      "grid": false
+    },
     "axisYQuantitative": {
       "gridColor": "#676A86",
-      "gridDash": [1, 5],
+      "gridDash": [
+        1,
+        5
+      ],
       "gridOpacity": 0.5,
       "ticks": true,
       "labelPadding": 5,

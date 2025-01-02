@@ -35,8 +35,7 @@
     "color": {
       "field": "region", 
       "type": "nominal", 
-      "title": "Region",
-      "scale": {"scheme":"observable10"}
+      "title": "Region"
     },
     "opacity": {"condition": {"selection": "hover", "value": 1}, "value": 0.6},
     "tooltip": [
@@ -62,6 +61,11 @@
     "font": "Montserrat, sans-serif",
     "view": {"stroke": "transparent"},
     "background": "#f7f7f7",
+    "range": {
+      "category": {
+        "scheme": "observable10"
+      }
+    },
     "point": {"filled": true, "size": 80, "opacity": 0.95},
     "axis": {
       "labelColor": "#676A86",

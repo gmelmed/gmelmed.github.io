@@ -123,15 +123,9 @@
     "view": {"stroke": "transparent"},
     "background": "#f7f7f7",
     "range": {
-      "category": [
-        "#002fa7",
-        "#FFD300",
-        "#FF9500",
-        "#FF2B7F",
-        "#00C5CD",
-        "#5D00A6",
-        "#00FF7F"
-      ]
+      "category": {
+        "scheme": "observable10"
+      }
     },
     "point": {"filled": true, "opacity": 0.95},
     "axis": {

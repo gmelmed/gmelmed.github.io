@@ -49,13 +49,14 @@
         },
         "layer": [
           {
-            "mark": {"type": "line", "color": "#002fa7"}
+            "mark": {
+              "type": "line"
+            }
           },
           {
             "transform": [{"filter": {"param": "hover", "empty": false}}],
             "mark": {
               "type": "point",
-              "color": "#002fa7",
               "filled": true,
               "size": 60
             }
@@ -113,6 +114,9 @@
     "font": "Montserrat, sans-serif",
     "view": {"stroke": "transparent"},
     "background": "#f7f7f7",
+    "range": {
+      "category": {"scheme":"observable10"}
+    },
     "axis": {
       "labelColor": "#676A86",
       "labelFontSize": 11,
