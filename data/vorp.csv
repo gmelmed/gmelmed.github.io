@@ -1,49 +1,49 @@
 player,id,VORP,best,category,surname
-Nikola Jokić,DEN,3.9,1,Best Player's VORP,Jokić
-Shai Gilgeous-Alexander,OKC,3.8,1,Best Player's VORP,Gilgeous-Alexander
-Giannis Antetokounmpo,MIL,2.5,1,Best Player's VORP,Antetokounmpo
-Jayson Tatum,BOS,2.5,1,Best Player's VORP,Tatum
-Victor Wembanyama,SAS,2.4,1,Best Player's VORP,Wembanyama
-Alperen Sengun,HOU,2.2,1,Best Player's VORP,Sengun
-Domantas Sabonis,SAC,2.1,1,Best Player's VORP,Sabonis
-Anthony Davis,LAL,2.1,1,Best Player's VORP,Davis
-Karl-Anthony Towns,NYK,2.1,1,Best Player's VORP,Towns
+Nikola Jokić,DEN,3.9,1,Best Player,Jokić
+Shai Gilgeous-Alexander,OKC,3.8,1,Best Player,Gilgeous-Alexander
+Giannis Antetokounmpo,MIL,2.5,1,Best Player,Antetokounmpo
+Jayson Tatum,BOS,2.5,1,Best Player,Tatum
+Victor Wembanyama,SAS,2.4,1,Best Player,Wembanyama
+Alperen Sengun,HOU,2.2,1,Best Player,Sengun
+Domantas Sabonis,SAC,2.1,1,Best Player,Sabonis
+Anthony Davis,LAL,2.1,1,Best Player,Davis
+Karl-Anthony Towns,NYK,2.1,1,Best Player,Towns
 Josh Hart,NYK,1.8,0,other,Hart
-Luka Dončić,DAL,1.8,1,Best Player's VORP,Dončić
-Franz Wagner,ORL,1.7,1,Best Player's VORP,Wagner
+Luka Dončić,DAL,1.8,1,Best Player,Dončić
+Franz Wagner,ORL,1.7,1,Best Player,Wagner
 LeBron James,LAL,1.7,0,other,James
 Jalen Williams,OKC,1.7,0,other,Williams
 Kyrie Irving,DAL,1.6,0,other,Irving
-Tyler Herro,MIA,1.6,1,Best Player's VORP,Herro
-Stephen Curry,GSW,1.6,1,Best Player's VORP,Curry
-Cameron Johnson,BRK,1.6,1,Best Player's VORP,Johnson
+Tyler Herro,MIA,1.6,1,Best Player,Herro
+Stephen Curry,GSW,1.6,1,Best Player,Curry
+Cameron Johnson,BRK,1.6,1,Best Player,Johnson
 Derrick White,BOS,1.6,0,other,White
 Payton Pritchard,BOS,1.5,0,other,Pritchard
 Jalen Brunson,NYK,1.5,0,other,Brunson
-Donovan Mitchell,CLE,1.4,1,Best Player's VORP,Mitchell
+Donovan Mitchell,CLE,1.4,1,Best Player,Mitchell
 Darius Garland,CLE,1.4,0,other,Garland
-LaMelo Ball,CHO,1.4,1,Best Player's VORP,Ball
-Nikola Vučević,CHI,1.4,1,Best Player's VORP,Vučević
-Tyrese Haliburton,IND,1.4,1,Best Player's VORP,Haliburton
-James Harden,LAC,1.4,1,Best Player's VORP,Harden
+LaMelo Ball,CHO,1.4,1,Best Player,Ball
+Nikola Vučević,CHI,1.4,1,Best Player,Vučević
+Tyrese Haliburton,IND,1.4,1,Best Player,Haliburton
+James Harden,LAC,1.4,1,Best Player,Harden
 Evan Mobley,CLE,1.4,0,other,Mobley
 Jarrett Allen,CLE,1.4,0,other,Allen
 Damian Lillard,MIL,1.3,0,other,Lillard
-Anthony Edwards,MIN,1.3,1,Best Player's VORP,Edwards
+Anthony Edwards,MIN,1.3,1,Best Player,Edwards
 De'Aaron Fox,SAC,1.3,0,other,Fox
 Jimmy Butler,MIA,1.2,0,other,Butler
-Jaren Jackson Jr.,MEM,1.2,1,Best Player's VORP,Jackson
-Cade Cunningham,DET,1.2,1,Best Player's VORP,Cunningham
+Jaren Jackson Jr.,MEM,1.2,1,Best Player,Jackson
+Cade Cunningham,DET,1.2,1,Best Player,Cunningham
 Santi Aldama,MEM,1.2,0,other,Aldama
 Norman Powell,LAC,1.2,0,other,Powell
-Jalen Johnson,ATL,1.2,1,Best Player's VORP,Johnson
-Tyrese Maxey,PHI,1.1,1,Best Player's VORP,Maxey
+Jalen Johnson,ATL,1.2,1,Best Player,Johnson
+Tyrese Maxey,PHI,1.1,1,Best Player,Maxey
 Amen Thompson,HOU,1.0,0,other,Thompson
 Goga Bitadze,ORL,1.0,0,other,Bitadze
 Pascal Siakam,IND,1.0,0,other,Siakam
 Fred VanVleet,HOU,1.0,0,other,VanVleet
 Tari Eason,HOU,1.0,0,other,Eason
-Kevin Durant,PHO,1.0,1,Best Player's VORP,Durant
+Kevin Durant,PHO,1.0,1,Best Player,Durant
 Ivica Zubac,LAC,1.0,0,other,Zubac
 Dereck Lively II,DAL,0.9,0,other,Lively
 Chris Paul,SAS,0.9,0,other,Paul
@@ -56,16 +56,16 @@ Caris LeVert,CLE,0.9,0,other,LeVert
 Devin Booker,PHO,0.8,0,other,Booker
 Desmond Bane,MEM,0.8,0,other,Bane
 Ty Jerome,CLE,0.8,0,other,Jerome
-Scottie Barnes,TOR,0.8,1,Best Player's VORP,Barnes
+Scottie Barnes,TOR,0.8,1,Best Player,Barnes
 Trayce Jackson-Davis,GSW,0.8,0,other,Jackson-Davis
 Andrew Wiggins,GSW,0.8,0,other,Wiggins
 Tyus Jones,PHO,0.7,0,other,Jones
 Jalen Suggs,ORL,0.7,0,other,Suggs
 Trae Young,ATL,0.7,0,other,Young
 Obi Toppin,IND,0.7,0,other,Toppin
-Walker Kessler,UTA,0.7,1,Best Player's VORP,Kessler
+Walker Kessler,UTA,0.7,1,Best Player,Kessler
 Isaiah Hartenstein,OKC,0.7,0,other,Hartenstein
-Jonas Valančiūnas,WAS,0.7,1,Best Player's VORP,Valančiūnas
+Jonas Valančiūnas,WAS,0.7,1,Best Player,Valančiūnas
 Royce O'Neale,PHO,0.7,0,other,O'Neale
 Jay Huff,MEM,0.7,0,other,Huff
 Brook Lopez,MIL,0.6,0,other,Lopez
@@ -91,7 +91,7 @@ Russell Westbrook,DEN,0.5,0,other,Westbrook
 T.J. McConnell,IND,0.5,0,other,McConnell
 Malik Beasley,DET,0.5,0,other,Beasley
 Cason Wallace,OKC,0.5,0,other,Wallace
-Trey Murphy III,NOP,0.5,1,Best Player's VORP,Murphy
+Trey Murphy III,NOP,0.5,1,Best Player,Murphy
 OG Anunoby,NYK,0.5,0,other,Anunoby
 Draymond Green,GSW,0.5,0,other,Green
 Chet Holmgren,OKC,0.5,0,other,Holmgren
@@ -107,7 +107,7 @@ DeMar DeRozan,SAC,0.5,0,other,DeRozan
 Jalen Duren,DET,0.5,0,other,Duren
 Kris Dunn,LAC,0.5,0,other,Dunn
 Miles Bridges,CHO,0.5,0,other,Bridges
-Deni Avdija,POR,0.5,1,Best Player's VORP,Avdija
+Deni Avdija,POR,0.5,1,Best Player,Avdija
 Jabari Smith Jr.,HOU,0.4,0,other,Smith
 Donte DiVincenzo,MIN,0.4,0,other,DiVincenzo
 Scotty Pippen Jr.,MEM,0.4,0,other,Pippen
@@ -504,63 +504,63 @@ Davion Mitchell,TOR,-0.6,0,other,Mitchell
 Zaccharie Risacher,ATL,-0.6,0,other,Risacher
 Carlton Carrington,WAS,-0.7,0,other,Carrington
 Isaiah Collier,UTA,-0.8,0,other,Collier
-ATL average,ATL,0.19999999999999998,0,Team Average,average
-BOS average,BOS,0.525,0,Team Average,average
-BRK average,BRK,0.09285714285714287,0,Team Average,average
-CHI average,CHI,0.13529411764705881,0,Team Average,average
-CHO average,CHO,0.07368421052631578,0,Team Average,average
-CLE average,CLE,0.53125,0,Team Average,average
-DAL average,DAL,0.3647058823529412,0,Team Average,average
-DEN average,DEN,0.3,0,Team Average,average
-DET average,DET,0.16875,0,Team Average,average
-GSW average,GSW,0.33125,0,Team Average,average
-HOU average,HOU,0.40625,0,Team Average,average
-IND average,IND,0.1611111111111111,0,Team Average,average
-LAC average,LAC,0.3,0,Team Average,average
-LAL average,LAL,0.2357142857142857,0,Team Average,average
-MEM average,MEM,0.4117647058823529,0,Team Average,average
-MIA average,MIA,0.28125,0,Team Average,average
-MIL average,MIL,0.24444444444444446,0,Team Average,average
-MIN average,MIN,0.28125,0,Team Average,average
-NOP average,NOP,-0.042105263157894736,0,Team Average,average
-NYK average,NYK,0.46,0,Team Average,average
-OKC average,OKC,0.46315789473684205,0,Team Average,average
-ORL average,ORL,0.29411764705882354,0,Team Average,average
-PHI average,PHI,0.1388888888888889,0,Team Average,average
-PHO average,PHO,0.1823529411764706,0,Team Average,average
-POR average,POR,-6.530723674265627e-18,0,Team Average,average
-SAC average,SAC,0.22352941176470587,0,Team Average,average
-SAS average,SAS,0.20555555555555557,0,Team Average,average
-TOR average,TOR,0.08421052631578947,0,Team Average,average
-UTA average,UTA,0.0176470588235294,0,Team Average,average
-WAS average,WAS,-0.03529411764705883,0,Team Average,average
-ATL average without best player,ATL,0.13333333333333333,0,Team Average without Best Player,average
-BOS average without best player,BOS,0.39333333333333337,0,Team Average without Best Player,average
-BRK average without best player,BRK,-0.02307692307692307,0,Team Average without Best Player,average
-CHI average without best player,CHI,0.056249999999999994,0,Team Average without Best Player,average
-CHO average without best player,CHO,0.0,0,Team Average without Best Player,average
-CLE average without best player,CLE,0.47333333333333333,0,Team Average without Best Player,average
-DAL average without best player,DAL,0.275,0,Team Average without Best Player,average
-DEN average without best player,DEN,0.075,0,Team Average without Best Player,average
-DET average without best player,DET,0.1,0,Team Average without Best Player,average
-GSW average without best player,GSW,0.24666666666666667,0,Team Average without Best Player,average
-HOU average without best player,HOU,0.2866666666666667,0,Team Average without Best Player,average
-IND average without best player,IND,0.08823529411764706,0,Team Average without Best Player,average
-LAC average without best player,LAC,0.22666666666666666,0,Team Average without Best Player,average
-LAL average without best player,LAL,0.0923076923076923,0,Team Average without Best Player,average
-MEM average without best player,MEM,0.3625,0,Team Average without Best Player,average
-MIA average without best player,MIA,0.19333333333333333,0,Team Average without Best Player,average
-MIL average without best player,MIL,0.11176470588235293,0,Team Average without Best Player,average
-MIN average without best player,MIN,0.21333333333333335,0,Team Average without Best Player,average
-NOP average without best player,NOP,-0.07222222222222223,0,Team Average without Best Player,average
-NYK average without best player,NYK,0.34285714285714286,0,Team Average without Best Player,average
-OKC average without best player,OKC,0.2777777777777778,0,Team Average without Best Player,average
-ORL average without best player,ORL,0.20625,0,Team Average without Best Player,average
-PHI average without best player,PHI,0.0823529411764706,0,Team Average without Best Player,average
-PHO average without best player,PHO,0.13125,0,Team Average without Best Player,average
-POR average without best player,POR,-0.03125000000000001,0,Team Average without Best Player,average
-SAC average without best player,SAC,0.10625,0,Team Average without Best Player,average
-SAS average without best player,SAS,0.07647058823529412,0,Team Average without Best Player,average
-TOR average without best player,TOR,0.044444444444444446,0,Team Average without Best Player,average
-UTA average without best player,UTA,-0.02500000000000001,0,Team Average without Best Player,average
-WAS average without best player,WAS,-0.08124999999999999,0,Team Average without Best Player,average
+ATL average,ATL,0.19999999999999998,0,Average,average
+BOS average,BOS,0.525,0,Average,average
+BRK average,BRK,0.09285714285714287,0,Average,average
+CHI average,CHI,0.13529411764705881,0,Average,average
+CHO average,CHO,0.07368421052631578,0,Average,average
+CLE average,CLE,0.53125,0,Average,average
+DAL average,DAL,0.3647058823529412,0,Average,average
+DEN average,DEN,0.3,0,Average,average
+DET average,DET,0.16875,0,Average,average
+GSW average,GSW,0.33125,0,Average,average
+HOU average,HOU,0.40625,0,Average,average
+IND average,IND,0.1611111111111111,0,Average,average
+LAC average,LAC,0.3,0,Average,average
+LAL average,LAL,0.2357142857142857,0,Average,average
+MEM average,MEM,0.4117647058823529,0,Average,average
+MIA average,MIA,0.28125,0,Average,average
+MIL average,MIL,0.24444444444444446,0,Average,average
+MIN average,MIN,0.28125,0,Average,average
+NOP average,NOP,-0.042105263157894736,0,Average,average
+NYK average,NYK,0.46,0,Average,average
+OKC average,OKC,0.46315789473684205,0,Average,average
+ORL average,ORL,0.29411764705882354,0,Average,average
+PHI average,PHI,0.1388888888888889,0,Average,average
+PHO average,PHO,0.1823529411764706,0,Average,average
+POR average,POR,-6.530723674265627e-18,0,Average,average
+SAC average,SAC,0.22352941176470587,0,Average,average
+SAS average,SAS,0.20555555555555557,0,Average,average
+TOR average,TOR,0.08421052631578947,0,Average,average
+UTA average,UTA,0.0176470588235294,0,Average,average
+WAS average,WAS,-0.03529411764705883,0,Average,average
+ATL average without best player,ATL,0.13333333333333333,0,Average without Best Player,average
+BOS average without best player,BOS,0.39333333333333337,0,Average without Best Player,average
+BRK average without best player,BRK,-0.02307692307692307,0,Average without Best Player,average
+CHI average without best player,CHI,0.056249999999999994,0,Average without Best Player,average
+CHO average without best player,CHO,0.0,0,Average without Best Player,average
+CLE average without best player,CLE,0.47333333333333333,0,Average without Best Player,average
+DAL average without best player,DAL,0.275,0,Average without Best Player,average
+DEN average without best player,DEN,0.075,0,Average without Best Player,average
+DET average without best player,DET,0.1,0,Average without Best Player,average
+GSW average without best player,GSW,0.24666666666666667,0,Average without Best Player,average
+HOU average without best player,HOU,0.2866666666666667,0,Average without Best Player,average
+IND average without best player,IND,0.08823529411764706,0,Average without Best Player,average
+LAC average without best player,LAC,0.22666666666666666,0,Average without Best Player,average
+LAL average without best player,LAL,0.0923076923076923,0,Average without Best Player,average
+MEM average without best player,MEM,0.3625,0,Average without Best Player,average
+MIA average without best player,MIA,0.19333333333333333,0,Average without Best Player,average
+MIL average without best player,MIL,0.11176470588235293,0,Average without Best Player,average
+MIN average without best player,MIN,0.21333333333333335,0,Average without Best Player,average
+NOP average without best player,NOP,-0.07222222222222223,0,Average without Best Player,average
+NYK average without best player,NYK,0.34285714285714286,0,Average without Best Player,average
+OKC average without best player,OKC,0.2777777777777778,0,Average without Best Player,average
+ORL average without best player,ORL,0.20625,0,Average without Best Player,average
+PHI average without best player,PHI,0.0823529411764706,0,Average without Best Player,average
+PHO average without best player,PHO,0.13125,0,Average without Best Player,average
+POR average without best player,POR,-0.03125000000000001,0,Average without Best Player,average
+SAC average without best player,SAC,0.10625,0,Average without Best Player,average
+SAS average without best player,SAS,0.07647058823529412,0,Average without Best Player,average
+TOR average without best player,TOR,0.044444444444444446,0,Average without Best Player,average
+UTA average without best player,UTA,-0.02500000000000001,0,Average without Best Player,average
+WAS average without best player,WAS,-0.08124999999999999,0,Average without Best Player,average
