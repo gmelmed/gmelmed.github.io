@@ -1,566 +1,566 @@
-player,id,VORP,category
-Nikola Jokić,DEN,3.9,best
-Shai Gilgeous-Alexander,OKC,3.8,best
-Giannis Antetokounmpo,MIL,2.5,best
-Jayson Tatum,BOS,2.5,best
-Victor Wembanyama,SAS,2.4,best
-Alperen Sengun,HOU,2.2,best
-Domantas Sabonis,SAC,2.1,best
-Anthony Davis,LAL,2.1,best
-Karl-Anthony Towns,NYK,2.1,best
-Josh Hart,NYK,1.8,other
-Luka Dončić,DAL,1.8,best
-Franz Wagner,ORL,1.7,best
-LeBron James,LAL,1.7,other
-Jalen Williams,OKC,1.7,other
-Kyrie Irving,DAL,1.6,other
-Tyler Herro,MIA,1.6,best
-Stephen Curry,GSW,1.6,best
-Cameron Johnson,BRK,1.6,best
-Derrick White,BOS,1.6,other
-Payton Pritchard,BOS,1.5,other
-Jalen Brunson,NYK,1.5,other
-Donovan Mitchell,CLE,1.4,best
-Darius Garland,CLE,1.4,other
-LaMelo Ball,CHO,1.4,best
-Nikola Vučević,CHI,1.4,best
-Tyrese Haliburton,IND,1.4,best
-James Harden,LAC,1.4,best
-Evan Mobley,CLE,1.4,other
-Jarrett Allen,CLE,1.4,other
-Damian Lillard,MIL,1.3,other
-Anthony Edwards,MIN,1.3,best
-De'Aaron Fox,SAC,1.3,other
-Jimmy Butler,MIA,1.2,other
-Jaren Jackson Jr.,MEM,1.2,best
-Cade Cunningham,DET,1.2,best
-Santi Aldama,MEM,1.2,other
-Norman Powell,LAC,1.2,other
-Jalen Johnson,ATL,1.2,best
-Tyrese Maxey,PHI,1.1,best
-Amen Thompson,HOU,1.0,other
-Goga Bitadze,ORL,1.0,other
-Pascal Siakam,IND,1.0,other
-Fred VanVleet,HOU,1.0,other
-Tari Eason,HOU,1.0,other
-Kevin Durant,PHO,1.0,best
-Ivica Zubac,LAC,1.0,other
-Dereck Lively II,DAL,0.9,other
-Chris Paul,SAS,0.9,other
-Daniel Gafford,DAL,0.9,other
-Moritz Wagner,ORL,0.9,other
-Bam Adebayo,MIA,0.9,other
-Julius Randle,MIN,0.9,other
-Ja Morant,MEM,0.9,other
-Caris LeVert,CLE,0.9,other
-Devin Booker,PHO,0.8,other
-Desmond Bane,MEM,0.8,other
-Ty Jerome,CLE,0.8,other
-Scottie Barnes,TOR,0.8,best
-Trayce Jackson-Davis,GSW,0.8,other
-Andrew Wiggins,GSW,0.8,other
-Tyus Jones,PHO,0.7,other
-Jalen Suggs,ORL,0.7,other
-Trae Young,ATL,0.7,other
-Obi Toppin,IND,0.7,other
-Walker Kessler,UTA,0.7,best
-Isaiah Hartenstein,OKC,0.7,other
-Jonas Valančiūnas,WAS,0.7,best
-Royce O'Neale,PHO,0.7,other
-Jay Huff,MEM,0.7,other
-Brook Lopez,MIL,0.6,other
-Michael Porter Jr.,DEN,0.6,other
-Jake LaRavia,MEM,0.6,other
-De'Andre Hunter,ATL,0.6,other
-Josh Giddey,CHI,0.6,other
-Jaylen Brown,BOS,0.6,other
-John Collins,UTA,0.6,other
-Luke Kornet,BOS,0.6,other
-Zach LaVine,CHI,0.6,other
-Rudy Gobert,MIN,0.6,other
-Jordan Poole,WAS,0.6,other
-RJ Barrett,TOR,0.6,other
-Jrue Holiday,BOS,0.6,other
-Keon Ellis,SAC,0.6,other
-Dyson Daniels,ATL,0.6,other
-Jakob Poeltl,TOR,0.6,other
-Lauri Markkanen,UTA,0.6,other
-Dean Wade,CLE,0.5,other
-Mikal Bridges,NYK,0.5,other
-Russell Westbrook,DEN,0.5,other
-T.J. McConnell,IND,0.5,other
-Malik Beasley,DET,0.5,other
-Cason Wallace,OKC,0.5,other
-Trey Murphy III,NOP,0.5,best
-OG Anunoby,NYK,0.5,other
-Draymond Green,GSW,0.5,other
-Chet Holmgren,OKC,0.5,other
-Al Horford,BOS,0.5,other
-Bobby Portis,MIL,0.5,other
-Nickeil Alexander-Walker,MIN,0.5,other
-Mark Williams,CHO,0.5,other
-Larry Nance Jr.,ATL,0.5,other
-Kenrich Williams,OKC,0.5,other
-Joel Embiid,PHI,0.5,other
-Brandon Miller,CHO,0.5,other
-DeMar DeRozan,SAC,0.5,other
-Jalen Duren,DET,0.5,other
-Kris Dunn,LAC,0.5,other
-Miles Bridges,CHO,0.5,other
-Deni Avdija,POR,0.5,best
-Jabari Smith Jr.,HOU,0.4,other
-Donte DiVincenzo,MIN,0.4,other
-Scotty Pippen Jr.,MEM,0.4,other
-Kristaps Porziņģis,BOS,0.4,other
-Luke Kennard,MEM,0.4,other
-Klay Thompson,DAL,0.4,other
-P.J. Washington,DAL,0.4,other
-Mike Conley,MIN,0.4,other
-Paul Reed,DET,0.4,other
-Paul George,PHI,0.4,other
-Luguentz Dort,OKC,0.4,other
-Miles McBride,NYK,0.4,other
-Austin Reaves,LAL,0.4,other
-Naz Reid,MIN,0.4,other
-Paolo Banchero,ORL,0.4,other
-Isaac Okoro,CLE,0.4,other
-Chris Boucher,TOR,0.4,other
-Jared McCain,PHI,0.4,other
-Sam Hauser,BOS,0.4,other
-Nic Claxton,BRK,0.4,other
-Jonathan Kuminga,GSW,0.4,other
-Kyle Anderson,GSW,0.4,other
-Alex Caruso,OKC,0.4,other
-Cam Thomas,BRK,0.4,other
-Jamal Murray,DEN,0.4,other
-Jeremy Sochan,SAS,0.4,other
-Guerschon Yabusele,PHI,0.4,other
-Kentavious Caldwell-Pope,ORL,0.3,other
-Quentin Grimes,DAL,0.3,other
-Malik Monk,SAC,0.3,other
-Onyeka Okongwu,ATL,0.3,other
-Zach Edey,MEM,0.3,other
-Jaden Ivey,DET,0.3,other
-Derrick Jones Jr.,LAC,0.3,other
-Aaron Wiggins,OKC,0.3,other
-Aaron Gordon,DEN,0.3,other
-Cameron Payne,NYK,0.3,other
-Brandon Clarke,MEM,0.3,other
-Nikola Jović,MIA,0.3,other
-Christian Braun,DEN,0.3,other
-Isaiah Stewart,DET,0.3,other
-Robert Williams,POR,0.3,other
-Jalen Green,HOU,0.3,other
-Spencer Dinwiddie,DAL,0.3,other
-Dalano Banton,POR,0.3,other
-Naji Marshall,DAL,0.3,other
-John Konchar,MEM,0.3,other
-Dwight Powell,DAL,0.3,other
-Buddy Hield,GSW,0.3,other
-Alec Burks,MIA,0.3,other
-Dru Smith,MIA,0.3,other
-Julian Champagnie,SAS,0.3,other
-Gary Payton II,GSW,0.3,other
-Wendell Carter Jr.,ORL,0.3,other
-Brandon Ingram,NOP,0.2,other
-Garrison Mathews,ATL,0.2,other
-Clint Capela,ATL,0.2,other
-Dillon Brooks,HOU,0.2,other
-Nicolas Batum,LAC,0.2,other
-Justin Champagnie,WAS,0.2,other
-Khris Middleton,MIL,0.2,other
-Marcus Sasser,DET,0.2,other
-Jamison Battle,TOR,0.2,other
-Lonzo Ball,CHI,0.2,other
-Jonathan Isaac,ORL,0.2,other
-Tobias Harris,DET,0.2,other
-Ben Simmons,BRK,0.2,other
-Amir Coffey,LAC,0.2,other
-Kevon Looney,GSW,0.2,other
-Sandro Mamukelashvili,SAS,0.2,other
-Bones Hyland,LAC,0.2,other
-Josh Minott,MIN,0.2,other
-Cody Martin,CHO,0.2,other
-Zach Collins,SAS,0.2,other
-Ochai Agbaji,TOR,0.2,other
-Isaiah Joe,OKC,0.2,other
-Ryan Rollins,MIL,0.2,other
-Marcus Smart,MEM,0.2,other
-Tyrese Martin,BRK,0.2,other
-CJ McCollum,NOP,0.2,other
-Aaron Holiday,HOU,0.2,other
-Jalen Smith,CHI,0.2,other
-Sam Merrill,CLE,0.2,other
-Neemias Queta,BOS,0.2,other
-Josh Okogie,PHO,0.2,other
-Ayo Dosunmu,CHI,0.1,other
-Myles Turner,IND,0.1,other
-Mason Plumlee,PHO,0.1,other
-Cam Whitmore,HOU,0.1,other
-Malcolm Brogdon,WAS,0.1,other
-Harrison Barnes,SAS,0.1,other
-Brandon Boston Jr.,NOP,0.1,other
-Duncan Robinson,MIA,0.1,other
-JT Thor,CLE,0.1,other
-Devin Vassell,SAS,0.1,other
-Collin Sexton,UTA,0.1,other
-Jaylin Williams,OKC,0.1,other
-Kevin Love,MIA,0.1,other
-Brandin Podziemski,GSW,0.1,other
-Grayson Allen,PHO,0.1,other
-Wendell Moore Jr.,DET,0.1,other
-Alex Len,SAC,0.1,other
-Talen Horton-Tucker,CHI,0.1,other
-Torrey Craig,CHI,0.1,other
-Craig Porter Jr.,CLE,0.1,other
-Landry Shamet,NYK,0.1,other
-Jose Alvarado,NOP,0.1,other
-Jonathan Mogbo,TOR,0.1,other
-Drew Eubanks,UTA,0.1,other
-Tre Jones,SAS,0.1,other
-Kel'el Ware,MIA,0.1,other
-A.J. Green,MIL,0.1,other
-Trevelin Queen,ORL,0.1,other
-Ajay Mitchell,OKC,0.1,other
-Terance Mann,LAC,0.1,other
-Rui Hachimura,LAL,0.1,other
-Steven Adams,HOU,0.1,other
-Dariq Whitehead,BRK,0.1,other
-Kelly Oubre Jr.,PHI,0.1,other
-Kai Jones,LAC,0.1,other
-Pat Spencer,GSW,0.1,other
-Bradley Beal,PHO,0.1,other
-Kelly Olynyk,TOR,0.1,other
-Jarace Walker,IND,0.1,other
-Grant Williams,CHO,0.1,other
-Precious Achiuwa,NYK,0.1,other
-Chris Duarte,CHI,0.1,other
-DaQuan Jeffries,CHO,0.1,other
-Jordan Clarkson,UTA,0.1,other
-KJ Martin,PHI,0.1,other
-Georges Niang,CLE,0.1,other
-Jae'Sean Tate,HOU,0.1,other
-Micah Potter,UTA,0.1,other
-Marvin Bagley III,WAS,0.1,other
-Immanuel Quickley,TOR,0.1,other
-Haywood Highsmith,MIA,0.1,other
-Tyler Smith,MIL,0.1,other
-Isaiah Jackson,IND,0.0,other
-Johnny Davis,WAS,0.0,other
-Jevon Carter,CHI,0.0,other
-Peyton Watson,DEN,0.0,other
-Trey Lyles,SAC,0.0,other
-Deandre Ayton,POR,0.0,other
-Jaden McDaniels,MIN,0.0,other
-DeAndre Jordan,DEN,0.0,other
-Monte Morris,PHO,0.0,other
-Kyle Lowry,PHI,0.0,other
-Reggie Jackson,PHI,0.0,other
-Alondes Williams,DET,0.0,other
-Jalen Pickett,DEN,0.0,other
-Cory Joseph,ORL,0.0,other
-Drew Peterson,BOS,0.0,other
-Bruno Fernando,TOR,0.0,other
-Zion Williamson,NOP,0.0,other
-Jeenathan Williams,HOU,0.0,other
-Charles Bassey,SAS,0.0,other
-David Roddy,ATL,0.0,other
-De'Anthony Melton,GSW,0.0,other
-Jaxson Hayes,LAL,0.0,other
-TyTy Washington Jr.,PHO,0.0,other
-Leonard Miller,MIN,0.0,other
-E.J. Liddell,CHI,0.0,other
-Mason Jones,SAC,0.0,other
-PJ Dozier,MIN,0.0,other
-Patrick Baldwin Jr.,WAS,0.0,other
-Cam Spencer,MEM,0.0,other
-Olivier-Maxence Prosper,DAL,0.0,other
-Seth Curry,CHO,0.0,other
-Jared Butler,WAS,0.0,other
-Collin Gillespie,PHO,0.0,other
-Kobe Brown,LAC,0.0,other
-Mac McClung,ORL,0.0,other
-Pete Nance,PHI,0.0,other
-Alex Reese,OKC,0.0,other
-Chris Livingston,MIL,0.0,other
-A.J. Lawson,TOR,0.0,other
-Moses Moody,GSW,0.0,other
-Bryce McGowens,POR,0.0,other
-Cam Christie,LAC,0.0,other
-Jeff Dowtin,PHI,0.0,other
-Jaylen Martin,BRK,0.0,other
-Oscar Tshiebwe,UTA,0.0,other
-Bol Bol,PHO,0.0,other
-Quinten Post,GSW,0.0,other
-James Wiseman,IND,0.0,other
-Jeff Green,HOU,0.0,other
-Joe Ingles,MIN,0.0,other
-Sidy Cissoko,SAS,0.0,other
-Duop Reath,POR,0.0,other
-Day'Ron Sharpe,BRK,0.0,other
-Gary Harris,ORL,0.0,other
-Luka Garza,MIN,0.0,other
-Jalen Hood-Schifino,LAL,0.0,other
-Adama Sanogo,CHI,0.0,other
-Justin Edwards,PHI,0.0,other
-Elfrid Payton,NOP,0.0,other
-Aaron Nesmith,IND,0.0,other
-Terrence Shannon Jr.,MIN,0.0,other
-Brice Sensabaugh,UTA,0.0,other
-Stanley Umude,MIL,0.0,other
-Kyle Filipowski,UTA,0.0,other
-Richaun Holmes,WAS,0.0,other
-Tre Mann,CHO,0.0,other
-Keldon Johnson,SAS,0.0,other
-Isaiah Crawford,SAC,0.0,other
-Trentyn Flowers,LAC,0.0,other
-Taze Moore,POR,0.0,other
-Mo Bamba,LAC,0.0,other
-Orlando Robinson,SAC,0.0,other
-Jacob Toppin,NYK,0.0,other
-Donovan Clingan,POR,0.0,other
-Riley Minix,SAS,0.0,other
-Justin Minaya,POR,0.0,other
-Keshad Johnson,MIA,0.0,other
-Jared Rhoden,CHO,0.0,other
-David Duke Jr.,SAS,0.0,other
-James Johnson,IND,0.0,other
-Jaime Jaquez Jr.,MIA,0.0,other
-AJ Johnson,MIL,0.0,other
-Harrison Ingram,SAS,0.0,other
-Anfernee Simons,POR,0.0,other
-Dominick Barlow,ATL,0.0,other
-Bruce Brown,TOR,0.0,other
-Quenton Jackson,IND,0.0,other
-Tristan Vukcevic,WAS,0.0,other
-Tyler Kolek,NYK,0.0,other
-Yuki Kawamura,MEM,0.0,other
-Jamal Cain,NOP,0.0,other
-Taylor Hendricks,UTA,0.0,other
-Josh Christopher,MIA,0.0,other
-Jock Landale,HOU,0.0,other
-Quincy Olivari,LAL,0.0,other
-Max Strus,CLE,0.0,other
-Jerami Grant,POR,0.0,other
-Liam Robbins,MIL,0.0,other
-Spencer Jones,DEN,0.0,other
-PJ Hall,DEN,0.0,other
-Jack McVeigh,HOU,0.0,other
-Daniss Jenkins,DET,0.0,other
-Ricky Council IV,PHI,0.0,other
-Garrett Temple,TOR,0.0,other
-Anthony Gill,WAS,0.0,other
-Lester Quiñones,PHI,0.0,other
-Ousmane Dieng,OKC,0.0,other
-Jaden Springer,BOS,0.0,other
-Luke Travers,CLE,0.0,other
-Bronny James,LAL,0.0,other
-Mouhamed Gueye,ATL,0.0,other
-Ulrich Chomche,TOR,0.0,other
-Alex Ducas,OKC,0.0,other
-Andrew Nembhard,IND,0.0,other
-Moses Brown,IND,0.0,other
-Branden Carlson,OKC,0.0,other
-Vlatko Čančar,DEN,0.0,other
-Markieff Morris,DAL,0.0,other
-Max Christie,LAL,0.0,other
-Daishen Nix,MIN,-0.1,other
-Jordan Walsh,BOS,-0.1,other
-Malevy Leons,OKC,-0.1,other
-Jericho Sims,NYK,-0.1,other
-Jae Crowder,SAC,-0.1,other
-Vince Williams Jr.,MEM,-0.1,other
-Pacome Dadiet,NYK,-0.1,other
-Shaedon Sharpe,POR,-0.1,other
-Cui Yongxi,BRK,-0.1,other
-Colin Castleton,MEM,-0.1,other
-Kobe Bufkin,ATL,-0.1,other
-Cole Swider,DET,-0.1,other
-Patrick Williams,CHI,-0.1,other
-Jazian Gortman,DAL,-0.1,other
-Rob Dillingham,MIN,-0.1,other
-Tristen Newton,IND,-0.1,other
-Brandon Williams,DAL,-0.1,other
-Adam Flagler,OKC,-0.1,other
-Jaylen Wells,MEM,-0.1,other
-Karlo Matković,NOP,-0.1,other
-Nick Richards,CHO,-0.1,other
-Isaiah Wong,CHO,-0.1,other
-Patty Mills,UTA,-0.1,other
-Jordan McLaughlin,SAC,-0.1,other
-Svi Mykhailiuk,UTA,-0.1,other
-Johnny Furphy,IND,-0.1,other
-Eric Gordon,PHI,-0.1,other
-Bilal Coulibaly,WAS,-0.1,other
-Baylor Scheierman,BOS,-0.1,other
-Isaac Jones,SAC,-0.1,other
-JD Davison,BOS,-0.1,other
-Caleb Martin,PHI,-0.1,other
-D.J. Carton,TOR,-0.1,other
-Jalen Bridges,PHO,-0.1,other
-Moussa Diabaté,CHO,-0.1,other
-Taj Gibson,CHO,-0.1,other
-Colby Jones,SAC,-0.1,other
-Bogdan Bogdanović,ATL,-0.1,other
-Gui Santos,GSW,-0.1,other
-Delon Wright,MIL,-0.1,other
-Ariel Hukporti,NYK,-0.1,other
-Reed Sheppard,HOU,-0.1,other
-Adem Bona,PHI,-0.1,other
-Oso Ighodaro,PHO,-0.1,other
-Trey Alexander,DEN,-0.1,other
-Damion Lee,PHO,-0.1,other
-Dalton Knecht,LAL,-0.1,other
-Cam Reddish,LAL,-0.1,other
-Keaton Wallace,ATL,-0.1,other
-Noah Clowney,BRK,-0.1,other
-Antonio Reeves,NOP,-0.1,other
-Kris Murray,POR,-0.1,other
-Gradey Dick,TOR,-0.1,other
-Coby White,CHI,-0.1,other
-Caleb Houstan,ORL,-0.1,other
-Nick Smith Jr.,CHO,-0.1,other
-Pat Connaughton,MIL,-0.1,other
-Tristan Da Silva,ORL,-0.1,other
-Jeremiah Robinson-Earl,NOP,-0.1,other
-Kessler Edwards,DAL,-0.1,other
-Cole Anthony,ORL,-0.1,other
-Kevin Huerter,SAC,-0.1,other
-Alex Sarr,WAS,-0.1,other
-Javonte Green,NOP,-0.1,other
-Johnny Juzang,UTA,-0.1,other
-Jaylon Tyson,CLE,-0.1,other
-Taurean Prince,MIL,-0.1,other
-Christian Koloko,LAL,-0.1,other
-Pelle Larsson,MIA,-0.1,other
-Lindy Waters III,GSW,-0.1,other
-Ausar Thompson,DET,-0.1,other
-Anthony Black,ORL,-0.1,other
-MarJon Beauchamp,MIL,-0.1,other
-Trendon Watford,BRK,-0.1,other
-KJ Simpson,CHO,-0.1,other
-Rayan Rupert,POR,-0.1,other
-Jordan Miller,LAC,-0.1,other
-Armel Traoré,LAL,-0.1,other
-Doug McDermott,SAC,-0.1,other
-Tristan Thompson,CLE,-0.1,other
-Matt Ryan,NYK,-0.1,other
-Ryan Dunn,PHO,-0.1,other
-Daniel Theis,NOP,-0.1,other
-Ben Sheppard,IND,-0.1,other
-Hunter Tyson,DEN,-0.2,other
-Blake Wesley,SAS,-0.2,other
-Vit Krejci,ATL,-0.2,other
-Zeke Nnaji,DEN,-0.2,other
-Malaki Branham,SAS,-0.2,other
-Simone Fontecchio,DET,-0.2,other
-Jett Howard,ORL,-0.2,other
-Enrique Freeman,IND,-0.2,other
-Toumani Camara,POR,-0.2,other
-Jaylen Nowell,NOP,-0.2,other
-Xavier Tillman Sr.,BOS,-0.2,other
-Terry Rozier,MIA,-0.2,other
-Yves Missi,NOP,-0.2,other
-Jabari Walker,POR,-0.2,other
-Dario Šarić,DEN,-0.2,other
-Trey Jemison,NOP,-0.2,other
-Josh Richardson,MIA,-0.2,other
-Andre Drummond,PHI,-0.2,other
-Julian Strawther,DEN,-0.2,other
-Julian Phillips,CHI,-0.2,other
-Gary Trent Jr.,MIL,-0.2,other
-Jusuf Nurkić,PHO,-0.2,other
-Dillon Jones,OKC,-0.2,other
-Herbert Jones,NOP,-0.2,other
-Dejounte Murray,NOP,-0.2,other
-Ziaire Williams,BRK,-0.2,other
-Dalen Terry,CHI,-0.3,other
-Tim Hardaway Jr.,DET,-0.3,other
-Maxi Kleber,DAL,-0.3,other
-Ja'Kobe Walter,TOR,-0.3,other
-Kevin Porter Jr.,LAC,-0.3,other
-Ron Holland,DET,-0.3,other
-Tidjane Salaün,CHO,-0.3,other
-Matas Buzelis,CHI,-0.4,other
-Kyle Kuzma,WAS,-0.4,other
-Scoot Henderson,POR,-0.4,other
-Jordan Hawkins,NOP,-0.4,other
-Corey Kispert,WAS,-0.4,other
-Jaden Hardy,DAL,-0.4,other
-Bennedict Mathurin,IND,-0.4,other
-Jamal Shead,TOR,-0.4,other
-Keyonte George,UTA,-0.4,other
-Jalen Wilson,BRK,-0.5,other
-Cody Williams,UTA,-0.5,other
-Andre Jackson Jr.,MIL,-0.5,other
-Vasilije Micić,CHO,-0.5,other
-Keegan Murray,SAC,-0.5,other
-Josh Green,CHO,-0.5,other
-Kyshawn George,WAS,-0.6,other
-Gabe Vincent,LAL,-0.6,other
-Stephon Castle,SAS,-0.6,other
-Keon Johnson,BRK,-0.6,other
-Davion Mitchell,TOR,-0.6,other
-Zaccharie Risacher,ATL,-0.6,other
-Carlton Carrington,WAS,-0.7,other
-Isaiah Collier,UTA,-0.8,other
-ATL average,ATL,0.19999999999999998,avg
-BOS average,BOS,0.525,avg
-BRK average,BRK,0.09285714285714287,avg
-CHI average,CHI,0.13529411764705881,avg
-CHO average,CHO,0.07368421052631578,avg
-CLE average,CLE,0.53125,avg
-DAL average,DAL,0.3647058823529412,avg
-DEN average,DEN,0.3,avg
-DET average,DET,0.16875,avg
-GSW average,GSW,0.33125,avg
-HOU average,HOU,0.40625,avg
-IND average,IND,0.1611111111111111,avg
-LAC average,LAC,0.3,avg
-LAL average,LAL,0.2357142857142857,avg
-MEM average,MEM,0.4117647058823529,avg
-MIA average,MIA,0.28125,avg
-MIL average,MIL,0.24444444444444446,avg
-MIN average,MIN,0.28125,avg
-NOP average,NOP,-0.042105263157894736,avg
-NYK average,NYK,0.46,avg
-OKC average,OKC,0.46315789473684205,avg
-ORL average,ORL,0.29411764705882354,avg
-PHI average,PHI,0.1388888888888889,avg
-PHO average,PHO,0.1823529411764706,avg
-POR average,POR,-6.530723674265627e-18,avg
-SAC average,SAC,0.22352941176470587,avg
-SAS average,SAS,0.20555555555555557,avg
-TOR average,TOR,0.08421052631578947,avg
-UTA average,UTA,0.0176470588235294,avg
-WAS average,WAS,-0.03529411764705883,avg
-ATL average without best player,ATL,0.13333333333333333,avg_wo
-BOS average without best player,BOS,0.39333333333333337,avg_wo
-BRK average without best player,BRK,-0.02307692307692307,avg_wo
-CHI average without best player,CHI,0.056249999999999994,avg_wo
-CHO average without best player,CHO,0.0,avg_wo
-CLE average without best player,CLE,0.47333333333333333,avg_wo
-DAL average without best player,DAL,0.275,avg_wo
-DEN average without best player,DEN,0.075,avg_wo
-DET average without best player,DET,0.1,avg_wo
-GSW average without best player,GSW,0.24666666666666667,avg_wo
-HOU average without best player,HOU,0.2866666666666667,avg_wo
-IND average without best player,IND,0.08823529411764706,avg_wo
-LAC average without best player,LAC,0.22666666666666666,avg_wo
-LAL average without best player,LAL,0.0923076923076923,avg_wo
-MEM average without best player,MEM,0.3625,avg_wo
-MIA average without best player,MIA,0.19333333333333333,avg_wo
-MIL average without best player,MIL,0.11176470588235293,avg_wo
-MIN average without best player,MIN,0.21333333333333335,avg_wo
-NOP average without best player,NOP,-0.07222222222222223,avg_wo
-NYK average without best player,NYK,0.34285714285714286,avg_wo
-OKC average without best player,OKC,0.2777777777777778,avg_wo
-ORL average without best player,ORL,0.20625,avg_wo
-PHI average without best player,PHI,0.0823529411764706,avg_wo
-PHO average without best player,PHO,0.13125,avg_wo
-POR average without best player,POR,-0.03125000000000001,avg_wo
-SAC average without best player,SAC,0.10625,avg_wo
-SAS average without best player,SAS,0.07647058823529412,avg_wo
-TOR average without best player,TOR,0.044444444444444446,avg_wo
-UTA average without best player,UTA,-0.02500000000000001,avg_wo
-WAS average without best player,WAS,-0.08124999999999999,avg_wo
+player,id,VORP,category,surname
+Nikola Jokić,DEN,3.9,best,Jokić
+Shai Gilgeous-Alexander,OKC,3.8,best,Gilgeous-Alexander
+Giannis Antetokounmpo,MIL,2.5,best,Antetokounmpo
+Jayson Tatum,BOS,2.5,best,Tatum
+Victor Wembanyama,SAS,2.4,best,Wembanyama
+Alperen Sengun,HOU,2.2,best,Sengun
+Domantas Sabonis,SAC,2.1,best,Sabonis
+Anthony Davis,LAL,2.1,best,Davis
+Karl-Anthony Towns,NYK,2.1,best,Towns
+Josh Hart,NYK,1.8,other,Hart
+Luka Dončić,DAL,1.8,best,Dončić
+Franz Wagner,ORL,1.7,best,Wagner
+LeBron James,LAL,1.7,other,James
+Jalen Williams,OKC,1.7,other,Williams
+Kyrie Irving,DAL,1.6,other,Irving
+Tyler Herro,MIA,1.6,best,Herro
+Stephen Curry,GSW,1.6,best,Curry
+Cameron Johnson,BRK,1.6,best,Johnson
+Derrick White,BOS,1.6,other,White
+Payton Pritchard,BOS,1.5,other,Pritchard
+Jalen Brunson,NYK,1.5,other,Brunson
+Donovan Mitchell,CLE,1.4,best,Mitchell
+Darius Garland,CLE,1.4,other,Garland
+LaMelo Ball,CHO,1.4,best,Ball
+Nikola Vučević,CHI,1.4,best,Vučević
+Tyrese Haliburton,IND,1.4,best,Haliburton
+James Harden,LAC,1.4,best,Harden
+Evan Mobley,CLE,1.4,other,Mobley
+Jarrett Allen,CLE,1.4,other,Allen
+Damian Lillard,MIL,1.3,other,Lillard
+Anthony Edwards,MIN,1.3,best,Edwards
+De'Aaron Fox,SAC,1.3,other,Fox
+Jimmy Butler,MIA,1.2,other,Butler
+Jaren Jackson Jr.,MEM,1.2,best,Jackson
+Cade Cunningham,DET,1.2,best,Cunningham
+Santi Aldama,MEM,1.2,other,Aldama
+Norman Powell,LAC,1.2,other,Powell
+Jalen Johnson,ATL,1.2,best,Johnson
+Tyrese Maxey,PHI,1.1,best,Maxey
+Amen Thompson,HOU,1.0,other,Thompson
+Goga Bitadze,ORL,1.0,other,Bitadze
+Pascal Siakam,IND,1.0,other,Siakam
+Fred VanVleet,HOU,1.0,other,VanVleet
+Tari Eason,HOU,1.0,other,Eason
+Kevin Durant,PHO,1.0,best,Durant
+Ivica Zubac,LAC,1.0,other,Zubac
+Dereck Lively II,DAL,0.9,other,Lively
+Chris Paul,SAS,0.9,other,Paul
+Daniel Gafford,DAL,0.9,other,Gafford
+Moritz Wagner,ORL,0.9,other,Wagner
+Bam Adebayo,MIA,0.9,other,Adebayo
+Julius Randle,MIN,0.9,other,Randle
+Ja Morant,MEM,0.9,other,Morant
+Caris LeVert,CLE,0.9,other,LeVert
+Devin Booker,PHO,0.8,other,Booker
+Desmond Bane,MEM,0.8,other,Bane
+Ty Jerome,CLE,0.8,other,Jerome
+Scottie Barnes,TOR,0.8,best,Barnes
+Trayce Jackson-Davis,GSW,0.8,other,Jackson-Davis
+Andrew Wiggins,GSW,0.8,other,Wiggins
+Tyus Jones,PHO,0.7,other,Jones
+Jalen Suggs,ORL,0.7,other,Suggs
+Trae Young,ATL,0.7,other,Young
+Obi Toppin,IND,0.7,other,Toppin
+Walker Kessler,UTA,0.7,best,Kessler
+Isaiah Hartenstein,OKC,0.7,other,Hartenstein
+Jonas Valančiūnas,WAS,0.7,best,Valančiūnas
+Royce O'Neale,PHO,0.7,other,O'Neale
+Jay Huff,MEM,0.7,other,Huff
+Brook Lopez,MIL,0.6,other,Lopez
+Michael Porter Jr.,DEN,0.6,other,Porter
+Jake LaRavia,MEM,0.6,other,LaRavia
+De'Andre Hunter,ATL,0.6,other,Hunter
+Josh Giddey,CHI,0.6,other,Giddey
+Jaylen Brown,BOS,0.6,other,Brown
+John Collins,UTA,0.6,other,Collins
+Luke Kornet,BOS,0.6,other,Kornet
+Zach LaVine,CHI,0.6,other,LaVine
+Rudy Gobert,MIN,0.6,other,Gobert
+Jordan Poole,WAS,0.6,other,Poole
+RJ Barrett,TOR,0.6,other,Barrett
+Jrue Holiday,BOS,0.6,other,Holiday
+Keon Ellis,SAC,0.6,other,Ellis
+Dyson Daniels,ATL,0.6,other,Daniels
+Jakob Poeltl,TOR,0.6,other,Poeltl
+Lauri Markkanen,UTA,0.6,other,Markkanen
+Dean Wade,CLE,0.5,other,Wade
+Mikal Bridges,NYK,0.5,other,Bridges
+Russell Westbrook,DEN,0.5,other,Westbrook
+T.J. McConnell,IND,0.5,other,McConnell
+Malik Beasley,DET,0.5,other,Beasley
+Cason Wallace,OKC,0.5,other,Wallace
+Trey Murphy III,NOP,0.5,best,Murphy
+OG Anunoby,NYK,0.5,other,Anunoby
+Draymond Green,GSW,0.5,other,Green
+Chet Holmgren,OKC,0.5,other,Holmgren
+Al Horford,BOS,0.5,other,Horford
+Bobby Portis,MIL,0.5,other,Portis
+Nickeil Alexander-Walker,MIN,0.5,other,Alexander-Walker
+Mark Williams,CHO,0.5,other,Williams
+Larry Nance Jr.,ATL,0.5,other,Nance
+Kenrich Williams,OKC,0.5,other,Williams
+Joel Embiid,PHI,0.5,other,Embiid
+Brandon Miller,CHO,0.5,other,Miller
+DeMar DeRozan,SAC,0.5,other,DeRozan
+Jalen Duren,DET,0.5,other,Duren
+Kris Dunn,LAC,0.5,other,Dunn
+Miles Bridges,CHO,0.5,other,Bridges
+Deni Avdija,POR,0.5,best,Avdija
+Jabari Smith Jr.,HOU,0.4,other,Smith
+Donte DiVincenzo,MIN,0.4,other,DiVincenzo
+Scotty Pippen Jr.,MEM,0.4,other,Pippen
+Kristaps Porziņģis,BOS,0.4,other,Porziņģis
+Luke Kennard,MEM,0.4,other,Kennard
+Klay Thompson,DAL,0.4,other,Thompson
+P.J. Washington,DAL,0.4,other,Washington
+Mike Conley,MIN,0.4,other,Conley
+Paul Reed,DET,0.4,other,Reed
+Paul George,PHI,0.4,other,George
+Luguentz Dort,OKC,0.4,other,Dort
+Miles McBride,NYK,0.4,other,McBride
+Austin Reaves,LAL,0.4,other,Reaves
+Naz Reid,MIN,0.4,other,Reid
+Paolo Banchero,ORL,0.4,other,Banchero
+Isaac Okoro,CLE,0.4,other,Okoro
+Chris Boucher,TOR,0.4,other,Boucher
+Jared McCain,PHI,0.4,other,McCain
+Sam Hauser,BOS,0.4,other,Hauser
+Nic Claxton,BRK,0.4,other,Claxton
+Jonathan Kuminga,GSW,0.4,other,Kuminga
+Kyle Anderson,GSW,0.4,other,Anderson
+Alex Caruso,OKC,0.4,other,Caruso
+Cam Thomas,BRK,0.4,other,Thomas
+Jamal Murray,DEN,0.4,other,Murray
+Jeremy Sochan,SAS,0.4,other,Sochan
+Guerschon Yabusele,PHI,0.4,other,Yabusele
+Kentavious Caldwell-Pope,ORL,0.3,other,Caldwell-Pope
+Quentin Grimes,DAL,0.3,other,Grimes
+Malik Monk,SAC,0.3,other,Monk
+Onyeka Okongwu,ATL,0.3,other,Okongwu
+Zach Edey,MEM,0.3,other,Edey
+Jaden Ivey,DET,0.3,other,Ivey
+Derrick Jones Jr.,LAC,0.3,other,Jones
+Aaron Wiggins,OKC,0.3,other,Wiggins
+Aaron Gordon,DEN,0.3,other,Gordon
+Cameron Payne,NYK,0.3,other,Payne
+Brandon Clarke,MEM,0.3,other,Clarke
+Nikola Jović,MIA,0.3,other,Jović
+Christian Braun,DEN,0.3,other,Braun
+Isaiah Stewart,DET,0.3,other,Stewart
+Robert Williams,POR,0.3,other,Williams
+Jalen Green,HOU,0.3,other,Green
+Spencer Dinwiddie,DAL,0.3,other,Dinwiddie
+Dalano Banton,POR,0.3,other,Banton
+Naji Marshall,DAL,0.3,other,Marshall
+John Konchar,MEM,0.3,other,Konchar
+Dwight Powell,DAL,0.3,other,Powell
+Buddy Hield,GSW,0.3,other,Hield
+Alec Burks,MIA,0.3,other,Burks
+Dru Smith,MIA,0.3,other,Smith
+Julian Champagnie,SAS,0.3,other,Champagnie
+Gary Payton II,GSW,0.3,other,Payton
+Wendell Carter Jr.,ORL,0.3,other,Carter
+Brandon Ingram,NOP,0.2,other,Ingram
+Garrison Mathews,ATL,0.2,other,Mathews
+Clint Capela,ATL,0.2,other,Capela
+Dillon Brooks,HOU,0.2,other,Brooks
+Nicolas Batum,LAC,0.2,other,Batum
+Justin Champagnie,WAS,0.2,other,Champagnie
+Khris Middleton,MIL,0.2,other,Middleton
+Marcus Sasser,DET,0.2,other,Sasser
+Jamison Battle,TOR,0.2,other,Battle
+Lonzo Ball,CHI,0.2,other,Ball
+Jonathan Isaac,ORL,0.2,other,Isaac
+Tobias Harris,DET,0.2,other,Harris
+Ben Simmons,BRK,0.2,other,Simmons
+Amir Coffey,LAC,0.2,other,Coffey
+Kevon Looney,GSW,0.2,other,Looney
+Sandro Mamukelashvili,SAS,0.2,other,Mamukelashvili
+Bones Hyland,LAC,0.2,other,Hyland
+Josh Minott,MIN,0.2,other,Minott
+Cody Martin,CHO,0.2,other,Martin
+Zach Collins,SAS,0.2,other,Collins
+Ochai Agbaji,TOR,0.2,other,Agbaji
+Isaiah Joe,OKC,0.2,other,Joe
+Ryan Rollins,MIL,0.2,other,Rollins
+Marcus Smart,MEM,0.2,other,Smart
+Tyrese Martin,BRK,0.2,other,Martin
+CJ McCollum,NOP,0.2,other,McCollum
+Aaron Holiday,HOU,0.2,other,Holiday
+Jalen Smith,CHI,0.2,other,Smith
+Sam Merrill,CLE,0.2,other,Merrill
+Neemias Queta,BOS,0.2,other,Queta
+Josh Okogie,PHO,0.2,other,Okogie
+Ayo Dosunmu,CHI,0.1,other,Dosunmu
+Myles Turner,IND,0.1,other,Turner
+Mason Plumlee,PHO,0.1,other,Plumlee
+Cam Whitmore,HOU,0.1,other,Whitmore
+Malcolm Brogdon,WAS,0.1,other,Brogdon
+Harrison Barnes,SAS,0.1,other,Barnes
+Brandon Boston Jr.,NOP,0.1,other,Boston
+Duncan Robinson,MIA,0.1,other,Robinson
+JT Thor,CLE,0.1,other,Thor
+Devin Vassell,SAS,0.1,other,Vassell
+Collin Sexton,UTA,0.1,other,Sexton
+Jaylin Williams,OKC,0.1,other,Williams
+Kevin Love,MIA,0.1,other,Love
+Brandin Podziemski,GSW,0.1,other,Podziemski
+Grayson Allen,PHO,0.1,other,Allen
+Wendell Moore Jr.,DET,0.1,other,Moore
+Alex Len,SAC,0.1,other,Len
+Talen Horton-Tucker,CHI,0.1,other,Horton-Tucker
+Torrey Craig,CHI,0.1,other,Craig
+Craig Porter Jr.,CLE,0.1,other,Porter
+Landry Shamet,NYK,0.1,other,Shamet
+Jose Alvarado,NOP,0.1,other,Alvarado
+Jonathan Mogbo,TOR,0.1,other,Mogbo
+Drew Eubanks,UTA,0.1,other,Eubanks
+Tre Jones,SAS,0.1,other,Jones
+Kel'el Ware,MIA,0.1,other,Ware
+A.J. Green,MIL,0.1,other,Green
+Trevelin Queen,ORL,0.1,other,Queen
+Ajay Mitchell,OKC,0.1,other,Mitchell
+Terance Mann,LAC,0.1,other,Mann
+Rui Hachimura,LAL,0.1,other,Hachimura
+Steven Adams,HOU,0.1,other,Adams
+Dariq Whitehead,BRK,0.1,other,Whitehead
+Kelly Oubre Jr.,PHI,0.1,other,Oubre
+Kai Jones,LAC,0.1,other,Jones
+Pat Spencer,GSW,0.1,other,Spencer
+Bradley Beal,PHO,0.1,other,Beal
+Kelly Olynyk,TOR,0.1,other,Olynyk
+Jarace Walker,IND,0.1,other,Walker
+Grant Williams,CHO,0.1,other,Williams
+Precious Achiuwa,NYK,0.1,other,Achiuwa
+Chris Duarte,CHI,0.1,other,Duarte
+DaQuan Jeffries,CHO,0.1,other,Jeffries
+Jordan Clarkson,UTA,0.1,other,Clarkson
+KJ Martin,PHI,0.1,other,Martin
+Georges Niang,CLE,0.1,other,Niang
+Jae'Sean Tate,HOU,0.1,other,Tate
+Micah Potter,UTA,0.1,other,Potter
+Marvin Bagley III,WAS,0.1,other,Bagley
+Immanuel Quickley,TOR,0.1,other,Quickley
+Haywood Highsmith,MIA,0.1,other,Highsmith
+Tyler Smith,MIL,0.1,other,Smith
+Isaiah Jackson,IND,0.0,other,Jackson
+Johnny Davis,WAS,0.0,other,Davis
+Jevon Carter,CHI,0.0,other,Carter
+Peyton Watson,DEN,0.0,other,Watson
+Trey Lyles,SAC,0.0,other,Lyles
+Deandre Ayton,POR,0.0,other,Ayton
+Jaden McDaniels,MIN,0.0,other,McDaniels
+DeAndre Jordan,DEN,0.0,other,Jordan
+Monte Morris,PHO,0.0,other,Morris
+Kyle Lowry,PHI,0.0,other,Lowry
+Reggie Jackson,PHI,0.0,other,Jackson
+Alondes Williams,DET,0.0,other,Williams
+Jalen Pickett,DEN,0.0,other,Pickett
+Cory Joseph,ORL,0.0,other,Joseph
+Drew Peterson,BOS,0.0,other,Peterson
+Bruno Fernando,TOR,0.0,other,Fernando
+Zion Williamson,NOP,0.0,other,Williamson
+Jeenathan Williams,HOU,0.0,other,Williams
+Charles Bassey,SAS,0.0,other,Bassey
+David Roddy,ATL,0.0,other,Roddy
+De'Anthony Melton,GSW,0.0,other,Melton
+Jaxson Hayes,LAL,0.0,other,Hayes
+TyTy Washington Jr.,PHO,0.0,other,Washington
+Leonard Miller,MIN,0.0,other,Miller
+E.J. Liddell,CHI,0.0,other,Liddell
+Mason Jones,SAC,0.0,other,Jones
+PJ Dozier,MIN,0.0,other,Dozier
+Patrick Baldwin Jr.,WAS,0.0,other,Baldwin
+Cam Spencer,MEM,0.0,other,Spencer
+Olivier-Maxence Prosper,DAL,0.0,other,Prosper
+Seth Curry,CHO,0.0,other,Curry
+Jared Butler,WAS,0.0,other,Butler
+Collin Gillespie,PHO,0.0,other,Gillespie
+Kobe Brown,LAC,0.0,other,Brown
+Mac McClung,ORL,0.0,other,McClung
+Pete Nance,PHI,0.0,other,Nance
+Alex Reese,OKC,0.0,other,Reese
+Chris Livingston,MIL,0.0,other,Livingston
+A.J. Lawson,TOR,0.0,other,Lawson
+Moses Moody,GSW,0.0,other,Moody
+Bryce McGowens,POR,0.0,other,McGowens
+Cam Christie,LAC,0.0,other,Christie
+Jeff Dowtin,PHI,0.0,other,Dowtin
+Jaylen Martin,BRK,0.0,other,Martin
+Oscar Tshiebwe,UTA,0.0,other,Tshiebwe
+Bol Bol,PHO,0.0,other,Bol
+Quinten Post,GSW,0.0,other,Post
+James Wiseman,IND,0.0,other,Wiseman
+Jeff Green,HOU,0.0,other,Green
+Joe Ingles,MIN,0.0,other,Ingles
+Sidy Cissoko,SAS,0.0,other,Cissoko
+Duop Reath,POR,0.0,other,Reath
+Day'Ron Sharpe,BRK,0.0,other,Sharpe
+Gary Harris,ORL,0.0,other,Harris
+Luka Garza,MIN,0.0,other,Garza
+Jalen Hood-Schifino,LAL,0.0,other,Hood-Schifino
+Adama Sanogo,CHI,0.0,other,Sanogo
+Justin Edwards,PHI,0.0,other,Edwards
+Elfrid Payton,NOP,0.0,other,Payton
+Aaron Nesmith,IND,0.0,other,Nesmith
+Terrence Shannon Jr.,MIN,0.0,other,Shannon
+Brice Sensabaugh,UTA,0.0,other,Sensabaugh
+Stanley Umude,MIL,0.0,other,Umude
+Kyle Filipowski,UTA,0.0,other,Filipowski
+Richaun Holmes,WAS,0.0,other,Holmes
+Tre Mann,CHO,0.0,other,Mann
+Keldon Johnson,SAS,0.0,other,Johnson
+Isaiah Crawford,SAC,0.0,other,Crawford
+Trentyn Flowers,LAC,0.0,other,Flowers
+Taze Moore,POR,0.0,other,Moore
+Mo Bamba,LAC,0.0,other,Bamba
+Orlando Robinson,SAC,0.0,other,Robinson
+Jacob Toppin,NYK,0.0,other,Toppin
+Donovan Clingan,POR,0.0,other,Clingan
+Riley Minix,SAS,0.0,other,Minix
+Justin Minaya,POR,0.0,other,Minaya
+Keshad Johnson,MIA,0.0,other,Johnson
+Jared Rhoden,CHO,0.0,other,Rhoden
+David Duke Jr.,SAS,0.0,other,Duke
+James Johnson,IND,0.0,other,Johnson
+Jaime Jaquez Jr.,MIA,0.0,other,Jaquez
+AJ Johnson,MIL,0.0,other,Johnson
+Harrison Ingram,SAS,0.0,other,Ingram
+Anfernee Simons,POR,0.0,other,Simons
+Dominick Barlow,ATL,0.0,other,Barlow
+Bruce Brown,TOR,0.0,other,Brown
+Quenton Jackson,IND,0.0,other,Jackson
+Tristan Vukcevic,WAS,0.0,other,Vukcevic
+Tyler Kolek,NYK,0.0,other,Kolek
+Yuki Kawamura,MEM,0.0,other,Kawamura
+Jamal Cain,NOP,0.0,other,Cain
+Taylor Hendricks,UTA,0.0,other,Hendricks
+Josh Christopher,MIA,0.0,other,Christopher
+Jock Landale,HOU,0.0,other,Landale
+Quincy Olivari,LAL,0.0,other,Olivari
+Max Strus,CLE,0.0,other,Strus
+Jerami Grant,POR,0.0,other,Grant
+Liam Robbins,MIL,0.0,other,Robbins
+Spencer Jones,DEN,0.0,other,Jones
+PJ Hall,DEN,0.0,other,Hall
+Jack McVeigh,HOU,0.0,other,McVeigh
+Daniss Jenkins,DET,0.0,other,Jenkins
+Ricky Council IV,PHI,0.0,other,Council
+Garrett Temple,TOR,0.0,other,Temple
+Anthony Gill,WAS,0.0,other,Gill
+Lester Quiñones,PHI,0.0,other,Quiñones
+Ousmane Dieng,OKC,0.0,other,Dieng
+Jaden Springer,BOS,0.0,other,Springer
+Luke Travers,CLE,0.0,other,Travers
+Bronny James,LAL,0.0,other,James
+Mouhamed Gueye,ATL,0.0,other,Gueye
+Ulrich Chomche,TOR,0.0,other,Chomche
+Alex Ducas,OKC,0.0,other,Ducas
+Andrew Nembhard,IND,0.0,other,Nembhard
+Moses Brown,IND,0.0,other,Brown
+Branden Carlson,OKC,0.0,other,Carlson
+Vlatko Čančar,DEN,0.0,other,Čančar
+Markieff Morris,DAL,0.0,other,Morris
+Max Christie,LAL,0.0,other,Christie
+Daishen Nix,MIN,-0.1,other,Nix
+Jordan Walsh,BOS,-0.1,other,Walsh
+Malevy Leons,OKC,-0.1,other,Leons
+Jericho Sims,NYK,-0.1,other,Sims
+Jae Crowder,SAC,-0.1,other,Crowder
+Vince Williams Jr.,MEM,-0.1,other,Williams
+Pacome Dadiet,NYK,-0.1,other,Dadiet
+Shaedon Sharpe,POR,-0.1,other,Sharpe
+Cui Yongxi,BRK,-0.1,other,Yongxi
+Colin Castleton,MEM,-0.1,other,Castleton
+Kobe Bufkin,ATL,-0.1,other,Bufkin
+Cole Swider,DET,-0.1,other,Swider
+Patrick Williams,CHI,-0.1,other,Williams
+Jazian Gortman,DAL,-0.1,other,Gortman
+Rob Dillingham,MIN,-0.1,other,Dillingham
+Tristen Newton,IND,-0.1,other,Newton
+Brandon Williams,DAL,-0.1,other,Williams
+Adam Flagler,OKC,-0.1,other,Flagler
+Jaylen Wells,MEM,-0.1,other,Wells
+Karlo Matković,NOP,-0.1,other,Matković
+Nick Richards,CHO,-0.1,other,Richards
+Isaiah Wong,CHO,-0.1,other,Wong
+Patty Mills,UTA,-0.1,other,Mills
+Jordan McLaughlin,SAC,-0.1,other,McLaughlin
+Svi Mykhailiuk,UTA,-0.1,other,Mykhailiuk
+Johnny Furphy,IND,-0.1,other,Furphy
+Eric Gordon,PHI,-0.1,other,Gordon
+Bilal Coulibaly,WAS,-0.1,other,Coulibaly
+Baylor Scheierman,BOS,-0.1,other,Scheierman
+Isaac Jones,SAC,-0.1,other,Jones
+JD Davison,BOS,-0.1,other,Davison
+Caleb Martin,PHI,-0.1,other,Martin
+D.J. Carton,TOR,-0.1,other,Carton
+Jalen Bridges,PHO,-0.1,other,Bridges
+Moussa Diabaté,CHO,-0.1,other,Diabaté
+Taj Gibson,CHO,-0.1,other,Gibson
+Colby Jones,SAC,-0.1,other,Jones
+Bogdan Bogdanović,ATL,-0.1,other,Bogdanović
+Gui Santos,GSW,-0.1,other,Santos
+Delon Wright,MIL,-0.1,other,Wright
+Ariel Hukporti,NYK,-0.1,other,Hukporti
+Reed Sheppard,HOU,-0.1,other,Sheppard
+Adem Bona,PHI,-0.1,other,Bona
+Oso Ighodaro,PHO,-0.1,other,Ighodaro
+Trey Alexander,DEN,-0.1,other,Alexander
+Damion Lee,PHO,-0.1,other,Lee
+Dalton Knecht,LAL,-0.1,other,Knecht
+Cam Reddish,LAL,-0.1,other,Reddish
+Keaton Wallace,ATL,-0.1,other,Wallace
+Noah Clowney,BRK,-0.1,other,Clowney
+Antonio Reeves,NOP,-0.1,other,Reeves
+Kris Murray,POR,-0.1,other,Murray
+Gradey Dick,TOR,-0.1,other,Dick
+Coby White,CHI,-0.1,other,White
+Caleb Houstan,ORL,-0.1,other,Houstan
+Nick Smith Jr.,CHO,-0.1,other,Smith
+Pat Connaughton,MIL,-0.1,other,Connaughton
+Tristan Da Silva,ORL,-0.1,other,Da
+Jeremiah Robinson-Earl,NOP,-0.1,other,Robinson-Earl
+Kessler Edwards,DAL,-0.1,other,Edwards
+Cole Anthony,ORL,-0.1,other,Anthony
+Kevin Huerter,SAC,-0.1,other,Huerter
+Alex Sarr,WAS,-0.1,other,Sarr
+Javonte Green,NOP,-0.1,other,Green
+Johnny Juzang,UTA,-0.1,other,Juzang
+Jaylon Tyson,CLE,-0.1,other,Tyson
+Taurean Prince,MIL,-0.1,other,Prince
+Christian Koloko,LAL,-0.1,other,Koloko
+Pelle Larsson,MIA,-0.1,other,Larsson
+Lindy Waters III,GSW,-0.1,other,Waters
+Ausar Thompson,DET,-0.1,other,Thompson
+Anthony Black,ORL,-0.1,other,Black
+MarJon Beauchamp,MIL,-0.1,other,Beauchamp
+Trendon Watford,BRK,-0.1,other,Watford
+KJ Simpson,CHO,-0.1,other,Simpson
+Rayan Rupert,POR,-0.1,other,Rupert
+Jordan Miller,LAC,-0.1,other,Miller
+Armel Traoré,LAL,-0.1,other,Traoré
+Doug McDermott,SAC,-0.1,other,McDermott
+Tristan Thompson,CLE,-0.1,other,Thompson
+Matt Ryan,NYK,-0.1,other,Ryan
+Ryan Dunn,PHO,-0.1,other,Dunn
+Daniel Theis,NOP,-0.1,other,Theis
+Ben Sheppard,IND,-0.1,other,Sheppard
+Hunter Tyson,DEN,-0.2,other,Tyson
+Blake Wesley,SAS,-0.2,other,Wesley
+Vit Krejci,ATL,-0.2,other,Krejci
+Zeke Nnaji,DEN,-0.2,other,Nnaji
+Malaki Branham,SAS,-0.2,other,Branham
+Simone Fontecchio,DET,-0.2,other,Fontecchio
+Jett Howard,ORL,-0.2,other,Howard
+Enrique Freeman,IND,-0.2,other,Freeman
+Toumani Camara,POR,-0.2,other,Camara
+Jaylen Nowell,NOP,-0.2,other,Nowell
+Xavier Tillman Sr.,BOS,-0.2,other,Tillman
+Terry Rozier,MIA,-0.2,other,Rozier
+Yves Missi,NOP,-0.2,other,Missi
+Jabari Walker,POR,-0.2,other,Walker
+Dario Šarić,DEN,-0.2,other,Šarić
+Trey Jemison,NOP,-0.2,other,Jemison
+Josh Richardson,MIA,-0.2,other,Richardson
+Andre Drummond,PHI,-0.2,other,Drummond
+Julian Strawther,DEN,-0.2,other,Strawther
+Julian Phillips,CHI,-0.2,other,Phillips
+Gary Trent Jr.,MIL,-0.2,other,Trent
+Jusuf Nurkić,PHO,-0.2,other,Nurkić
+Dillon Jones,OKC,-0.2,other,Jones
+Herbert Jones,NOP,-0.2,other,Jones
+Dejounte Murray,NOP,-0.2,other,Murray
+Ziaire Williams,BRK,-0.2,other,Williams
+Dalen Terry,CHI,-0.3,other,Terry
+Tim Hardaway Jr.,DET,-0.3,other,Hardaway
+Maxi Kleber,DAL,-0.3,other,Kleber
+Ja'Kobe Walter,TOR,-0.3,other,Walter
+Kevin Porter Jr.,LAC,-0.3,other,Porter
+Ron Holland,DET,-0.3,other,Holland
+Tidjane Salaün,CHO,-0.3,other,Salaün
+Matas Buzelis,CHI,-0.4,other,Buzelis
+Kyle Kuzma,WAS,-0.4,other,Kuzma
+Scoot Henderson,POR,-0.4,other,Henderson
+Jordan Hawkins,NOP,-0.4,other,Hawkins
+Corey Kispert,WAS,-0.4,other,Kispert
+Jaden Hardy,DAL,-0.4,other,Hardy
+Bennedict Mathurin,IND,-0.4,other,Mathurin
+Jamal Shead,TOR,-0.4,other,Shead
+Keyonte George,UTA,-0.4,other,George
+Jalen Wilson,BRK,-0.5,other,Wilson
+Cody Williams,UTA,-0.5,other,Williams
+Andre Jackson Jr.,MIL,-0.5,other,Jackson
+Vasilije Micić,CHO,-0.5,other,Micić
+Keegan Murray,SAC,-0.5,other,Murray
+Josh Green,CHO,-0.5,other,Green
+Kyshawn George,WAS,-0.6,other,George
+Gabe Vincent,LAL,-0.6,other,Vincent
+Stephon Castle,SAS,-0.6,other,Castle
+Keon Johnson,BRK,-0.6,other,Johnson
+Davion Mitchell,TOR,-0.6,other,Mitchell
+Zaccharie Risacher,ATL,-0.6,other,Risacher
+Carlton Carrington,WAS,-0.7,other,Carrington
+Isaiah Collier,UTA,-0.8,other,Collier
+ATL average,ATL,0.19999999999999998,avg,average
+BOS average,BOS,0.525,avg,average
+BRK average,BRK,0.09285714285714287,avg,average
+CHI average,CHI,0.13529411764705881,avg,average
+CHO average,CHO,0.07368421052631578,avg,average
+CLE average,CLE,0.53125,avg,average
+DAL average,DAL,0.3647058823529412,avg,average
+DEN average,DEN,0.3,avg,average
+DET average,DET,0.16875,avg,average
+GSW average,GSW,0.33125,avg,average
+HOU average,HOU,0.40625,avg,average
+IND average,IND,0.1611111111111111,avg,average
+LAC average,LAC,0.3,avg,average
+LAL average,LAL,0.2357142857142857,avg,average
+MEM average,MEM,0.4117647058823529,avg,average
+MIA average,MIA,0.28125,avg,average
+MIL average,MIL,0.24444444444444446,avg,average
+MIN average,MIN,0.28125,avg,average
+NOP average,NOP,-0.042105263157894736,avg,average
+NYK average,NYK,0.46,avg,average
+OKC average,OKC,0.46315789473684205,avg,average
+ORL average,ORL,0.29411764705882354,avg,average
+PHI average,PHI,0.1388888888888889,avg,average
+PHO average,PHO,0.1823529411764706,avg,average
+POR average,POR,-6.530723674265627e-18,avg,average
+SAC average,SAC,0.22352941176470587,avg,average
+SAS average,SAS,0.20555555555555557,avg,average
+TOR average,TOR,0.08421052631578947,avg,average
+UTA average,UTA,0.0176470588235294,avg,average
+WAS average,WAS,-0.03529411764705883,avg,average
+ATL average without best player,ATL,0.13333333333333333,avg_wo,average
+BOS average without best player,BOS,0.39333333333333337,avg_wo,average
+BRK average without best player,BRK,-0.02307692307692307,avg_wo,average
+CHI average without best player,CHI,0.056249999999999994,avg_wo,average
+CHO average without best player,CHO,0.0,avg_wo,average
+CLE average without best player,CLE,0.47333333333333333,avg_wo,average
+DAL average without best player,DAL,0.275,avg_wo,average
+DEN average without best player,DEN,0.075,avg_wo,average
+DET average without best player,DET,0.1,avg_wo,average
+GSW average without best player,GSW,0.24666666666666667,avg_wo,average
+HOU average without best player,HOU,0.2866666666666667,avg_wo,average
+IND average without best player,IND,0.08823529411764706,avg_wo,average
+LAC average without best player,LAC,0.22666666666666666,avg_wo,average
+LAL average without best player,LAL,0.0923076923076923,avg_wo,average
+MEM average without best player,MEM,0.3625,avg_wo,average
+MIA average without best player,MIA,0.19333333333333333,avg_wo,average
+MIL average without best player,MIL,0.11176470588235293,avg_wo,average
+MIN average without best player,MIN,0.21333333333333335,avg_wo,average
+NOP average without best player,NOP,-0.07222222222222223,avg_wo,average
+NYK average without best player,NYK,0.34285714285714286,avg_wo,average
+OKC average without best player,OKC,0.2777777777777778,avg_wo,average
+ORL average without best player,ORL,0.20625,avg_wo,average
+PHI average without best player,PHI,0.0823529411764706,avg_wo,average
+PHO average without best player,PHO,0.13125,avg_wo,average
+POR average without best player,POR,-0.03125000000000001,avg_wo,average
+SAC average without best player,SAC,0.10625,avg_wo,average
+SAS average without best player,SAS,0.07647058823529412,avg_wo,average
+TOR average without best player,TOR,0.044444444444444446,avg_wo,average
+UTA average without best player,UTA,-0.02500000000000001,avg_wo,average
+WAS average without best player,WAS,-0.08124999999999999,avg_wo,average

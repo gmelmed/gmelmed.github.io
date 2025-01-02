@@ -1,0 +1,144 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/data/vorp.csv"
+    },
+    "title": {
+      "text": "Get Nikola Jokic some help",
+      "subtitle": [
+        "Every NBA team ranked by value over replacement player (VORP)",
+        "Data from basketball reference"
+      ],
+      "anchor": "start"
+    },
+    "height": 400,
+    "width": 600,
+    "layer": [
+      {
+        "mark": {
+          "type": "point",
+          "color": "lightgray",
+          "opacity": 0.3,
+          "strokeWidth": 1.5
+        },
+        "encoding": {
+          "x": {
+            "field": "id",
+            "type": "nominal",
+            "title": null,
+            "sort": {"field": "VORP", "op": "max", "order": "descending"}
+          },
+          "y": {"field": "VORP", "type": "quantitative"},
+          "tooltip": [
+            {"field": "player", "type": "nominal", "title": "Player"},
+            {"field": "VORP", "type": "quantitative", "format": ".2f"}
+          ]
+        }
+      },
+      {
+        "transform": [
+          {
+            "filter": "datum.category == 'best' || datum.category == 'avg' || datum.category == 'avg_wo'"
+          }
+        ],
+        "mark": {
+          "type": "point",
+          "color": "lightgray",
+          "opacity": 1,
+          "strokeWidth": 1.5
+        },
+        "encoding": {
+          "x": {
+            "field": "id",
+            "type": "nominal",
+            "title": null,
+            "sort": {"field": "VORP", "op": "max", "order": "descending"}
+          },
+          "y": {"field": "VORP", "type": "quantitative"},
+          "color": {"field": "category"},
+          "tooltip": [
+            {"field": "player", "type": "nominal", "title": "Player"},
+            {"field": "VORP", "type": "quantitative", "format": ".2f"}
+          ]
+        }
+      },
+      {
+        "transform": [{"filter": "datum.category == 'best'"}],
+        "mark": {
+          "type": "text",
+          "angle": -45,
+          "dx": 8,
+          "dy": -5,
+          "fontSize": 11,
+          "align":"left"
+        },
+        "encoding": {
+          "x": {
+            "field": "id",
+            "type": "nominal",
+            "sort": {"field": "VORP", "op": "max", "order": "descending"}
+          },
+          "y": {"field": "VORP", "type": "quantitative"},
+          "text": {"field": "player"}
+        }
+      }
+    ],
+    "config": {
+      "font": "Montserrat, sans-serif",
+      "view": {"stroke": "transparent"},
+      "background": "#f7f7f7",
+      "range": {"category": {"scheme": "observable10"}},
+      "point": {"filled": true, "size": 80, "color": "#4269d0", "opacity": 0.95},
+      "area": {"color": "#4269d0"},
+      "line": {"color": "#4269d0"},
+      "bar": {"color": "#4269d0"},
+      "circle": {"color": "#4269d0"},
+      "rule": {"color": "#4269d0"},
+      "axis": {
+        "labelColor": "#676A86",
+        "labelFontSize": 11,
+        "labelFont": "Montserrat, sans-serif",
+        "labelOpacity": 0.7,
+        "tickColor": "#676A86",
+        "tickOpacity": 0.5,
+        "domainColor": "#676A86",
+        "domainOpacity": 0.5,
+        "gridColor": "#676A86",
+        "gridDash": [2, 2],
+        "gridOpacity": 0.5,
+        "title": null,
+        "titleColor": "#676A86",
+        "titleOpacity": 0.8,
+        "tickSize": 4
+      },
+      "axisXTemporal": {"grid": false},
+      "axisYQuantitative": {
+        "gridColor": "#676A86",
+        "gridDash": [1, 5],
+        "gridOpacity": 0.5,
+        "ticks": false,
+        "labelPadding": 5,
+        "tickCount": 8,
+        "titleAngle": 0,
+        "titleAlign": "left",
+        "titleBaseline": "bottom",
+        "titleX": 0,
+        "titleY": -5
+      },
+      "legend": {
+        "titleFont": "Montserrat, sans-serif",
+        "titleFontSize": 14,
+        "titleColor": "#1a1a1a",
+        "title": null,
+        "labelColor": "#1a1a1a",
+        "labelFontSize": 12
+      },
+      "title": {
+        "font": "Montserrat, sans-serif",
+        "fontSize": 16,
+        "color": "#1a1a1a",
+        "subtitleFontSize": 14,
+        "subtitleColor": "#676A86"
+      }
+    }
+  }
