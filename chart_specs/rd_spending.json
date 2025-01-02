@@ -4,49 +4,40 @@
     "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/data/rd_spending.csv"
   },
   "transform": [
-    {
-      "filter": "toDate(datum.date) >= toDate('1990-01-01')"
-    },
-    {
-      "filter": "datum.value !=0"
-    }
+    {"filter": "toDate(datum.date) >= toDate('1990-01-01')"},
+    {"filter": "datum.value !=0"}
   ],
   "encoding": {
-    "x": {
-      "field": "date",
-      "type": "temporal",
-      "title": null
-    },
+    "x": {"field": "date", "type": "temporal", "title": null},
     "y": {
       "field": "value",
       "type": "quantitative",
       "title": "R&D spending, % of GDP",
-      "axis": {
-        "format": "%"
-      }
+      "axis": {"format": "%"}
     },
     "color": {
       "condition": {
         "param": "hover",
         "field": "country",
         "type": "nominal",
-        "legend": null
+        "legend": null,
+        "scale": {
+          "domain": [
+            "United Kingdom",
+            "France",
+            "Germany",
+            "Italy",
+            "Japan",
+            "Canada",
+            "United States"
+          ]
+        }
       },
       "value": "grey"
     },
-    "opacity": {
-      "condition": {
-        "param": "hover",
-        "value": 1
-      },
-      "value": 0.2
-    },
+    "opacity": {"condition": {"param": "hover", "value": 1}, "value": 0.2},
     "tooltip": [
-      {
-        "field": "country",
-        "type": "nominal",
-        "title": "Countries"
-      },
+      {"field": "country", "type": "nominal", "title": "Countries"},
       {
         "field": "date",
         "type": "temporal",
@@ -69,68 +60,29 @@
           "name": "hover",
           "select": {
             "type": "point",
-            "fields": [
-              "country"
-            ],
+            "fields": ["country"],
             "on": "pointerover"
           },
-          "value": [
-            {
-              "country": "United Kingdom"
-            }
-          ]
+          "value": [{"country": "United Kingdom"}]
         }
       ],
-      "mark": {
-        "type": "line",
-        "strokeWidth": 8,
-        "stroke": "transparent"
-      }
+      "mark": {"type": "line", "strokeWidth": 8, "stroke": "transparent"}
     },
-    {
-      "mark": "line"
-    },
+    {"mark": "line"},
     {
       "transform": [
         {
-          "window": [
-            {
-              "op": "rank",
-              "as": "rank"
-            }
-          ],
-          "sort": [
-            {
-              "field": "date",
-              "order": "descending"
-            }
-          ],
-          "groupby": [
-            "country"
-          ]
+          "window": [{"op": "rank", "as": "rank"}],
+          "sort": [{"field": "date", "order": "descending"}],
+          "groupby": ["country"]
         },
-        {
-          "filter": "datum.rank == 1"
-        }
+        {"filter": "datum.rank == 1"}
       ],
       "layer": [
+        {"mark": {"type": "circle"}},
         {
-          "mark": {
-            "type": "circle"
-          }
-        },
-        {
-          "mark": {
-            "type": "text",
-            "align": "left",
-            "dx": 4
-          },
-          "encoding": {
-            "text": {
-              "field": "country",
-              "type": "nominal"
-            }
-          }
+          "mark": {"type": "text", "align": "left", "dx": 4},
+          "encoding": {"text": {"field": "country", "type": "nominal"}}
         }
       ]
     }
@@ -140,28 +92,14 @@
   "title": {
     "text": "G7 R&D spending",
     "anchor": "start",
-    "subtitle": [
-      "Data from World Bank",
-      ""
-    ]
+    "subtitle": ["Data from World Bank", ""]
   },
   "config": {
     "font": "Montserrat, sans-serif",
-    "view": {
-      "stroke": "transparent"
-    },
+    "view": {"stroke": "transparent"},
     "background": "#f7f7f7",
-    "range": {
-      "category": {
-        "scheme": "observable10"
-      }
-    },
-    "point": {
-      "filled": true,
-      "size": 80,
-      "color": "#e6224b",
-      "opacity": 0.95
-    },
+    "range": {"category": {"scheme": "observable10"}},
+    "point": {"filled": true, "size": 80, "color": "#e6224b", "opacity": 0.95},
     "axis": {
       "labelColor": "#676A86",
       "labelFontSize": 11,
@@ -172,25 +110,17 @@
       "domainColor": "#676A86",
       "domainOpacity": 0.5,
       "gridColor": "#676A86",
-      "gridDash": [
-        2,
-        2
-      ],
+      "gridDash": [2, 2],
       "gridOpacity": 0.5,
       "title": null,
       "titleColor": "#676A86",
       "titleOpacity": 0.8,
       "tickSize": 4
     },
-    "axisXTemporal": {
-      "grid": false
-    },
+    "axisXTemporal": {"grid": false},
     "axisYQuantitative": {
       "gridColor": "#676A86",
-      "gridDash": [
-        1,
-        5
-      ],
+      "gridDash": [1, 5],
       "gridOpacity": 0.5,
       "ticks": false,
       "labelPadding": 5,
