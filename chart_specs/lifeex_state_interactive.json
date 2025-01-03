@@ -1,111 +1,104 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": {
-      "text": "Life expectancy at birth by county, 2000-2019",
-      "anchor": "start",
-      "subtitle": ["Data: IHME", ""]
-    },
-    "width": 700,
-    "height": 500,
-    "data": {
-      "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/data/lifeex_states.csv"
-    },
-    "params": [
-      {
-        "name": "year",
-        "value": 2000,
-        "bind": {
-          "input": "range",
-          "min": 2000,
-          "max": 2019,
-          "step": 1,
-          "name": "Year:"
-        }
-      }
-    ],
-    "layer": [
-      {
-        "data": {
-          "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/data/us_states_topo.json",
-          "format": {"type": "topojson", "feature": "geog"}
-        },
-        "mark": {
-          "type": "geoshape",
-          "stroke": "black",
-          "strokeWidth": 0.3,
-          "fill": "#f7f7f7"
-        }
-      },
-      {
-        "transform": [
-          {
-            "lookup": "id",
-            "from": {
-              "data": {
-                "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/data/us_states_topo.json",
-                "format": {"type": "topojson", "feature": "geog"}
-              },
-              "key": "id",
-              "fields": ["type", "properties", "geometry", "arcs"]
-            }
-          },
-          {"filter": "datum.year == year"}
-        ],
-        "encoding": {
-          "color": {
-            "field": "val",
-            "type": "quantitative",
-            "legend": {
-              "title": null,
-              "labelFontWeight": "lighter",
-              "format":".0f",
-              "orient": "none",
-              "legendX": 0,
-              "legendY": -10,
-              "direction": "horizontal",
-              "gradientLength": 200
-            },
-            "scale": {
-              "scheme": "purpleorange",
-              "reverse":true,
-              "domainMin": 74,
-              "domainMax": 81
-              }
-          },
-          "tooltip": [
-            {
-              "field": "location_name",
-              "title": "County"
-            },
-            {
-              "field": "val",
-              "title": "Estimate",
-              "format": ".1f"
-            }
-          ]
-        },
-        "projection": {"type": "albersUsa"},
-        "mark": {"type": "geoshape", "stroke": "black", "strokeWidth": 0.3}
-      }
-    ],
-    "config": {
-      "font": "Montserrat, sans-serif",
-      "view": {"stroke": "transparent"},
-      "background": "#f7f7f7",
-      "legend": {
-        "titleFont": "Montserrat, sans-serif",
-        "titleFontSize": 14,
-        "titleColor": "#122b39",
-        "title": null,
-        "labelColor": "#122b39",
-        "labelFontSize": 12
-      },
-      "title": {
-        "font": "Montserrat-Bold, sans-serif",
-        "color": "#122b39",
-        "fontSize": 16,
-        "subtitleFontSize": 14,
-        "subtitleColor": "#676A86"
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Life expectancy at birth by US State, 2000-2019",
+    "anchor": "start",
+    "subtitle": ["Data: IHME", ""]
+  },
+  "width": 700,
+  "height": 500,
+  "data": {
+    "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/data/lifeex_states.csv"
+  },
+  "params": [
+    {
+      "name": "year",
+      "value": 2000,
+      "bind": {
+        "input": "range",
+        "min": 2000,
+        "max": 2019,
+        "step": 1,
+        "name": "Year:"
       }
     }
+  ],
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/data/us_states_topo.json",
+        "format": {"type": "topojson", "feature": "geog"}
+      },
+      "mark": {
+        "type": "geoshape",
+        "stroke": "whitesmoke",
+        "strokeWidth": 0.3,
+        "fill": "#f7f7f7"
+      }
+    },
+    {
+      "transform": [
+        {
+          "lookup": "id",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/data/us_states_topo.json",
+              "format": {"type": "topojson", "feature": "geog"}
+            },
+            "key": "id",
+            "fields": ["type", "properties", "geometry", "arcs"]
+          }
+        },
+        {"filter": "datum.year == year"}
+      ],
+      "encoding": {
+        "color": {
+          "field": "val",
+          "type": "quantitative",
+          "legend": {
+            "title": null,
+            "labelFontWeight": "lighter",
+            "format": ".0f",
+            "orient": "none",
+            "legendX": 0,
+            "legendY": -10,
+            "direction": "horizontal",
+            "gradientLength": 200
+          },
+          "scale": {
+            "scheme": "purpleorange",
+            "reverse": true,
+            "domainMin": 74,
+            "domainMax": 81
+          }
+        },
+        "tooltip": [
+          {"field": "location_name", "title": "County"},
+          {"field": "val", "title": "Estimate", "format": ".1f"}
+        ]
+      },
+      "projection": {"type": "albersUsa"},
+      "mark": {"type": "geoshape", "stroke": "whitesmoke", "strokeWidth": 0.3}
+    }
+  ],
+  "config": {
+    "font": "Montserrat, sans-serif",
+    "view": {"stroke": "transparent"},
+    "background": "#f7f7f7",
+    "legend": {
+      "titleFont": "Montserrat, sans-serif",
+      "titleFontSize": 14,
+      "titleColor": "#122b39",
+      "title": null,
+      "labelColor": "#122b39",
+      "labelFontSize": 12
+    },
+    "title": {
+      "font": "Montserrat-Bold, sans-serif",
+      "color": "#122b39",
+      "fontSize": 16,
+      "subtitleFontSize": 14,
+      "subtitleColor": "#676A86"
+    }
   }
+}
