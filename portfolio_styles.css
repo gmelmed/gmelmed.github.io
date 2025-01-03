@@ -1,6 +1,6 @@
 /* Import fonts via Google Fonts */
 body { 
-  font-family: 'Cardo', serif; /* Use Lora for the body text */
+  font-family: 'Cardo', serif; 
   font-size: 18px;
   color: #1a1a1a;
   line-height: 1.6;
