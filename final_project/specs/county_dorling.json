@@ -8,8 +8,8 @@
       "Data from Zillow Observed Rent Index (ZORI). Last updated November 2024."
     ]
   },
-  "width": 700,
-  "height": 500,
+  "width": 600,
+  "height": 400,
   "layer": [
     {
       "data": {

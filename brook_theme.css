@@ -198,7 +198,9 @@ p {
     font-family: var(--bs-font-serif);
     margin-top: 0;
     margin-bottom: 1rem;
+    font-size: 1.25rem;
 }
+
 
 abbr[title] {
     text-decoration: underline dotted;
@@ -215,6 +217,7 @@ address {
 ol,
 ul {
     padding-left: 2rem;
+    font-family: var(--bs-font-serif);
 }
 
 ol,
@@ -222,6 +225,7 @@ ul,
 dl {
     margin-top: 0;
     margin-bottom: 1rem;
+    font-family: var(--bs-font-serif);
 }
 
 ol ol,
@@ -229,6 +233,7 @@ ul ul,
 ol ul,
 ul ol {
     margin-bottom: 0;
+    font-family: var(--bs-font-serif);
 }
 
 dt {
@@ -241,7 +246,12 @@ dd {
 }
 
 blockquote {
-    margin: 0 0 1rem;
+    margin-bottom: 1rem;
+    font-family: var(--bs-font-serif);
+    font-size: 1.25rem;           /* smaller size */
+    padding-left: 1.5rem;        /* indentation */
+    border-left: 3px solid #dee2e6;  /* vertical line */
+    margin-left: 1rem;          /* additional left margin */
 }
 
 b,
@@ -637,7 +647,11 @@ progress {
 
 .blockquote {
     margin-bottom: 1rem;
-    font-size: calc(1.2625rem + 0.15vw);
+    font-family: var(--bs-font-serif);
+    font-size: 1.25rem;           /* smaller size */
+    padding-left: 1.5rem;        /* indentation */
+    border-left: 3px solid #dee2e6;  /* vertical line */
+    margin-left: 1rem;          /* additional left margin */
 }
 
 @media (min-width: 1200px) {

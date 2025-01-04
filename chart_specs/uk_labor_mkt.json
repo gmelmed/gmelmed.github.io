@@ -13,11 +13,9 @@
     "title": null
   },
   "spec": {
-    "width": 200,
-    "height": 150,
-    "encoding": {
-      "x": {"field": "date", "type": "temporal"}
-    },
+    "width": 150,
+    "height": 120,
+    "encoding": {"x": {"field": "date", "type": "temporal"}},
     "layer": [
       {
         "encoding": {
@@ -40,20 +38,11 @@
               "title": "Value",
               "format": ".1f"
             },
-            {
-              "field": "series",
-              "type": "nominal",
-              "title": "Series"
-            }
+            {"field": "series", "type": "nominal", "title": "Series"}
           ]
         },
         "layer": [
-          {
-            "mark": {
-              "type": "line",
-              "color": "#4269d0"
-            }
-          },
+          {"mark": {"type": "line", "color": "#4269d0"}},
           {
             "transform": [{"filter": {"param": "hover", "empty": false}}],
             "mark": {
@@ -79,11 +68,7 @@
               "format": "%b %Y",
               "title": "Date"
             },
-            {
-              "field": "series",
-              "type": "nominal",
-              "title": "Series"
-            },
+            {"field": "series", "type": "nominal", "title": "Series"},
             {
               "field": "value",
               "type": "quantitative",
@@ -109,16 +94,14 @@
   },
   "resolve": {"scale": {"y": "independent"}},
   "title": {
-    "text": "The UK labor market in 9 time series",
+    "text": "The UK labor market at a glance",
     "subtitle": ["Data: ONS", ""]
   },
   "config": {
     "font": "Montserrat, sans-serif",
     "view": {"stroke": "transparent"},
     "background": "#f7f7f7",
-    "range": {
-      "category": {"scheme":"observable10"}
-    },
+    "range": {"category": {"scheme": "observable10"}},
     "axis": {
       "labelColor": "#676A86",
       "labelFontSize": 11,
