@@ -1,9 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Change in population, 2020-2023",
+    "text": "Change in population, 2020-2024",
     "anchor": "start",
-    "subtitle": ["1 hexagon = 350k people", "Data: US Census Bureau"]
+    "subtitle": ["States are sized by 2024 population. 1 hexagon = 350k people.", "Data from US Census Bureau."]
   },
   "width": 600,
   "height": 400,
@@ -15,56 +15,34 @@
       "lookup": "id",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/final_project/shapefiles/us_tilemap_topo.json",
-          "format": {
-            "type": "topojson",
-            "feature": "tiles"
-          }
+          "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/final_project/shapefiles/tiles_topo_24.json",
+          "format": {"type": "topojson", "feature": "tiles"}
         },
         "key": "id",
         "fields": ["type", "properties", "geometry", "arcs"]
       }
     }
   ],
-  "params": [
-    {"name": "hover", 
-    "select": {
-      "type": "point",
-      "on": "mouseover"
-      }
-    }
-  ],
+  "params": [{"name": "hover", "select": {"type": "point", "on": "mouseover"}}],
   "encoding": {
     "color": {
       "field": "change",
       "type": "quantitative",
       "legend": {
         "title": null,
-        "format":".0%",
+        "format": ".0%",
         "orient": "right",
         "direction": "vertical",
         "gradientLength": 200
       },
-      "scale": {
-        "scheme": "purpleorange",
-        "reverse":true,
-        "domainMid": 0.01
-      }
+      "scale": {"scheme": "purpleorange", "reverse": true, "domainMid": 0.01}
     },
     "strokeWidth": {
-      "condition": {
-        "param": "hover",
-        "empty": false,
-        "value": 1
-      },
+      "condition": {"param": "hover", "empty": false, "value": 1},
       "value": 0.15
     },
     "tooltip": [
-      {
-        "field": "name",
-        "title": "State",
-        "type": "nominal"
-      },
+      {"field": "name", "title": "State", "type": "nominal"},
       {
         "field": "change",
         "title": "% pop. change",
@@ -79,19 +57,11 @@
       }
     ]
   },
-  "projection": {
-    "type": "identity",
-    "reflectY": true
-  },
-  "mark": {
-    "type": "geoshape",
-    "stroke": "white"
-  },
+  "projection": {"type": "identity", "reflectY": true},
+  "mark": {"type": "geoshape", "stroke": "white"},
   "config": {
     "font": "Montserrat, sans-serif",
-    "view": {
-      "stroke": "transparent"
-    },
+    "view": {"stroke": "transparent"},
     "background": "#f7f7f7",
     "legend": {
       "titleFont": "Montserrat, sans-serif",
