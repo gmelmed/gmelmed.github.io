@@ -27,7 +27,7 @@ census_api_key("9330018ae4a2bd20da22ced1281145d9405dc349")
 fips_pop <- get_decennial(
   geography = "county",
   variables = "P1_001N",  # Total population from 2020 Census
-  year = 2020,
+  year = 2023,
   cache_table = TRUE
 ) |>
   select(-variable) |>
@@ -45,7 +45,7 @@ fips_pop <- get_decennial(
 fips_map <- get_decennial(
   geography = "county",
   variables = "P1_001N",
-  year = 2020,
+  year = 2023,
   geometry = TRUE,
   shift_geo = FALSE,
   cache_table = TRUE
@@ -79,7 +79,7 @@ county_dorling_filtered <- county_dorling |>
 # Export as GeoJSON
 st_write(
   county_dorling_filtered,
-  "county_dorling.geojson",
+  "county_dorling_ct.geojson",
   delete_dsn = TRUE  # Overwrites existing file
 )
 
@@ -89,7 +89,7 @@ if(!require("rmapshaper")) install.packages("rmapshaper")
 library(rmapshaper)
 ms_write(
   county_dorling_filtered,
-  "county_dorling.topojson",
+  "county_dorling_.topojson",
   force = TRUE
 )
 ```
