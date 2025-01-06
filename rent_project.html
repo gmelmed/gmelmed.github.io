@@ -231,11 +231,14 @@
                     <p>
                         Homebuilding in Florida's major cities has been relatively high, but not enough to accomodate its surging population. That is, not everywhere. The charts below show homebuilding and rent growth in Florida's four major metro areas, which account for more than half of its population. 
                     </p>
-                    <div style="text-align: center;">
-                        <!-- figures 8 and 9 next to each other -->
-                        <figure id="Location8"></figure>
-                        <!-- <figure id="Location9"></figure> -->
+                    <div style="text-align: center; display: flex; justify-content: center; gap: 20px;">
+                        <!-- figures 8 and 9 side by side -->
+                        <figure id="Location8" style="flex: 1; min-width: 0;"></figure>
+                        <figure id="Location9" style="flex: 1; min-width: 0;"></figure>
                     </div>
+                    <p>
+                        Orlando and Jacksonville have wethered the storm better than Miami and Tampa because they have built more homes. 
+                    </p>
                 </div>
             </div>
         </div>
@@ -378,7 +381,7 @@
         vegaEmbed('#Location5', dorling_1)
         vegaEmbed('#Location6', supply_spec)
         vegaEmbed('#Location7', demand_spec)
-        vegaEmbed('#Location8', fl_homebuilding_spec)
+        vegaEmbed('#Location8', fl_building_spec)
         vegaEmbed('#Location9', fl_rent_spec)
 
 

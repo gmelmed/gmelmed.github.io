@@ -94,7 +94,9 @@
               "field": "name",
               "scale": {
                 "domain": ["Orlando", "Jacksonville", "Miami", "Tampa"]
-              }
+              },
+             "legend":{
+                "orient": "top"}
             }
           }
         },

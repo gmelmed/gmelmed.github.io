@@ -8,8 +8,8 @@
         "Data from US Census American Community Survey (ACS)."
       ]
     },
-    "width": 600,
-    "height": 400,
+    "width": 700,
+    "height": 450,
     "params": [
       {
         "name": "year",
