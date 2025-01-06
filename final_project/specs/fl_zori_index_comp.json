@@ -229,11 +229,12 @@
     }
   },
   "height": 400,
-  "width": 400,
+  "width": 300,
   "title": {
-    "text": "...and have experienced slower rent growth as a result.",
+    "text": "Rent growth in Florida",
     "subtitle": [
       "Indexed rent prices in the southeast.",
+      "Other southeast metros shown in grey.",
       "Data from Zillow's Observed Rent Index (ZORI).",
       ""
     ],

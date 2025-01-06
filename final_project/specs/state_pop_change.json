@@ -35,7 +35,7 @@
         "direction": "vertical",
         "gradientLength": 200
       },
-      "scale": {"scheme": "purpleorange", "reverse": true, "domainMid": 0.01}
+      "scale": {"scheme": "purpleorange", "reverse": true, "domainMid": 0.02}
     },
     "strokeWidth": {
       "condition": {"param": "hover", "empty": false, "value": 1},
