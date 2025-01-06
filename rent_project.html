@@ -29,14 +29,15 @@
             <a class="navbar-brand pe-md-4 fs-4 text-center" href="index.html">
                 <span class="ms-md-1 mt-1 fw-bolder me-md-5">Gabe Melmed</span>
             </a>
-    
+
             <!-- Right side - Social links -->
             <div class="d-flex align-items-center">
                 <a href="https://github.com/gmelmed" aria-label="Personal links" class="fs-6 link-fancy me-2">
                     GitHub
                 </a>
                 <span class="mx-2">|</span>
-                <a href="https://www.linkedin.com/in/gabriel-melmed-3a160019b/" aria-label="Personal links" class="fs-6 link-fancy">
+                <a href="https://www.linkedin.com/in/gabriel-melmed-3a160019b/" aria-label="Personal links"
+                    class="fs-6 link-fancy">
                     LinkedIn
                 </a>
             </div>
@@ -69,6 +70,13 @@
                         the
                         COVID-19 pandemic.
                     </p>
+                    <p>
+                        The map below shows median gross rent as a share of household income. Households that pay more that 30% of their income on rent are officially considered "rent burdened". From the map below, we can see that the typical renter is burdened in practically all of America's population centers.
+                    </p>
+                    <!-- figure -->
+                    <div style="text-align: center;">
+                        <figure id="Location1"></figure>
+                    </div>
                     <p>
                         Happily, the crisis peaked in mid-2022. This is little comfort to millions of Americans whose
                         rent
@@ -120,7 +128,7 @@
 
                     </p>
                     <div style="text-align: center;">
-                        <figure id="Location1"></figure>
+                        <figure id="Location2"></figure>
                     </div>
                     <h2>Where are Americans Moving?</h2>
                     <p>
@@ -141,7 +149,7 @@
                                 href="#fn2">2</a></sup>
                     </p>
                     <div style="text-align: center;">
-                        <figure id="Location2"></figure>
+                        <figure id="Location3"></figure>
                     </div>
                     <h2>Mapping Rent</h2>
                     <p>
@@ -153,7 +161,7 @@
                         Florida seems to be the most impacted.
                     </p>
                     <div style="text-align: center;">
-                    <figure id="Location3"></figure>
+                        <figure id="Location4"></figure>
                     </div>
                     <p>
                         The one-year view tells a different story. Over the past year, rent inflation is felt most
@@ -165,7 +173,7 @@
                         past year.<sup id="fn3-ref"><a href="#fn3">3</a></sup>
                     </p>
                     <div style="text-align: center;">
-                        <figure id="Location4"></figure>
+                        <figure id="Location5"></figure>
                     </div>
                     <h2>Who Builds Homes?</h2>
                     <p>
@@ -193,7 +201,7 @@
                         rent increases plaguing other major metros.<sup id="fn4-ref"><a href="#fn4">4</a></sup>
                     </p>
                     <div style="text-align: center;">
-                        <figure id="Location5"></figure>
+                        <figure id="Location6"></figure>
                     </div>
                     <p>
                         The next chart provides further evidence of a supply-driven market dynamic. It plots the same 50
@@ -214,7 +222,7 @@
                             id="fn5-ref"><a href="#fn5">5</a></sup>
                     </p>
                     <div style="text-align: center;">
-                        <figure id="Location6"></figure>
+                        <figure id="Location7"></figure>
                     </div>
                 </div>
             </div>
@@ -340,6 +348,7 @@
     </footer>
     <script>
         // Embed the vega-lite visualizations
+        let burden_spec = "final_project/specs/rent_income_share.json";
         let rent_inflation_spec = "final_project/specs/rent_inflation.json";
         let rent_map_spec = "final_project/specs/zori_county_bubble.html";
         let supply_spec = "final_project/specs/homebuilding_zori.json";
@@ -348,12 +357,13 @@
         let dorling_5 = "final_project/specs/county_dorling_5year.json";
         let dorling_1 = "final_project/specs/county_dorling.json";
 
-        vegaEmbed('#Location1', rent_inflation_spec)
-        vegaEmbed('#Location2', pop_change_spec)
-        vegaEmbed('#Location3', dorling_5)
-        vegaEmbed('#Location4', dorling_1)
-        vegaEmbed('#Location5', supply_spec)
-        vegaEmbed('#Location6', demand_spec)
+        vegaEmbed('#Location1', burden_spec)
+        vegaEmbed('#Location2', rent_inflation_spec)
+        vegaEmbed('#Location3', pop_change_spec)
+        vegaEmbed('#Location4', dorling_5)
+        vegaEmbed('#Location5', dorling_1)
+        vegaEmbed('#Location6', supply_spec)
+        vegaEmbed('#Location7', demand_spec)
 
 
 
