@@ -224,6 +224,18 @@
                     <div style="text-align: center;">
                         <figure id="Location7"></figure>
                     </div>
+                    <h2>A tale of four metropolitan statistical areas</h2>
+                    <p>
+                        As some of the maps above show, Florida has been one of the hardest-hit states in the rent crisis. The sunshine state consistently has some of the highest rent to income ratios in the nation. In the past five years, Florida has seen some of the most explosive rent growth in the country. This due in part to a surge in housing demand - no state has gained more population since 2020.
+                    </p>
+                    <p>
+                        Homebuilding in Florida's major cities has been relatively high, but not enough to accomodate its surging population. That is, not everywhere. The charts below show homebuilding and rent growth in Florida's four major metro areas, which account for more than half of its population. 
+                    </p>
+                    <div style="text-align: center;">
+                        <!-- figures 8 and 9 next to each other -->
+                        <figure id="Location8"></figure>
+                        <!-- <figure id="Location9"></figure> -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -356,6 +368,8 @@
         let pop_change_spec = "final_project/specs/state_pop_change.json";
         let dorling_5 = "final_project/specs/county_dorling_5year.json";
         let dorling_1 = "final_project/specs/county_dorling.json";
+        let fl_building_spec = "final_project/specs/fl_building_comp.json";
+        let fl_rent_spec = "final_project/specs/fl_zori_index_comp.json";
 
         vegaEmbed('#Location1', burden_spec)
         vegaEmbed('#Location2', rent_inflation_spec)
@@ -364,6 +378,8 @@
         vegaEmbed('#Location5', dorling_1)
         vegaEmbed('#Location6', supply_spec)
         vegaEmbed('#Location7', demand_spec)
+        vegaEmbed('#Location8', fl_homebuilding_spec)
+        vegaEmbed('#Location9', fl_rent_spec)
 
 
 
