@@ -1,0 +1,148 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "config": {
+      "font": "Montserrat, sans-serif",
+      "view": {"stroke": "transparent"},
+      "background": "#f7f7f7",
+      "range": {"category": {"scheme": "observable10"}},
+      "point": {"filled": true, "opacity": 0.95},
+      "axis": {
+        "labelColor": "#676A86",
+        "labelFontSize": 11,
+        "labelFont": "Montserrat, sans-serif",
+        "labelOpacity": 0.7,
+        "tickColor": "#676A86",
+        "tickOpacity": 0.5,
+        "domainColor": "#676A86",
+        "domainOpacity": 0.5,
+        "gridColor": "#676A86",
+        "gridDash": [2, 2],
+        "gridOpacity": 0.5,
+        "title": null,
+        "titleColor": "#676A86",
+        "titleOpacity": 0.8,
+        "tickSize": 4
+      },
+      "axisXTemporal": {"grid": false},
+      "axisYQuantitative": {
+        "gridColor": "#676A86",
+        "gridDash": [1, 5],
+        "gridOpacity": 0.5,
+        "ticks": false,
+        "labelPadding": 5,
+        "tickCount": 8,
+        "titleAngle": 0,
+        "titleAlign": "left",
+        "titleBaseline": "bottom",
+        "titleX": 0,
+        "titleY": -5
+      },
+      "legend": {
+        "titleFont": "Montserrat, sans-serif",
+        "titleFontSize": 14,
+        "titleColor": "#1a1a1a",
+        "title": null,
+        "labelColor": "#1a1a1a",
+        "labelFontSize": 12
+      },
+      "title": {
+        "font": "Montserrat, sans-serif",
+        "fontSize": 16,
+        "color": "#1a1a1a",
+        "subtitleFontSize": 14,
+        "subtitleColor": "#676A86"
+      }
+    },
+    "title": {
+      "text": "Hotel prices by UK region",
+      "subtitle": [
+        "Price bands show deciles from 10th to 90th percentile.",
+        "Data from Richard Davies' UK prices database.",
+        ""
+      ],
+      "anchor": "start"
+    },
+    "width": 600,
+    "height": 400,
+    "data": {
+      "url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/data/hotel_deciles.csv"
+    },
+    "params": [
+      {
+        "name": "Region",
+        "value": "London",
+        "bind": {
+          "input": "select",
+          "options": [
+            "London",
+            "South East",
+            "South West",
+            "East Anglia",
+            "East Midlands",
+            "West Midlands",
+            "Yorkshire & Humber",
+            "North West",
+            "North",
+            "Wales",
+            "Scotland",
+            "Northern Ireland"
+          ]
+        }
+      }
+    ],
+    "transform": [
+      {"filter": "datum.region_name == Region"},
+      {"filter": "toDate(datum.date) >= toDate('2010-01-01')"}
+      ],
+    "mark": {"type": "area", "opacity": 0.7},
+    "encoding": {
+      "x": {"field": "date", "type": "temporal", "title": null},
+      "y": {
+        "field": "price_upper",
+        "type": "quantitative",
+        "scale": {
+          "zero": true
+          },
+        "title":"Price per night (£)"
+      },
+      "y2": {"field": "price_lower"},
+      "color": {
+        "field": "band",
+        "scale": {
+          "range": [
+            "#D9D9F3",
+            "#00BFFF",
+            "#0276FD",
+            "#000080",
+            "#000080",
+            "#0276FD",
+            "#00BFFF",
+            "#D9D9F3"
+          ]
+        },
+        "legend":null
+      },
+      "tooltip": [
+        {
+          "field": "date",
+          "type": "temporal",
+          "timeUnit": "yearmonth",
+          "title": "Month"
+          },
+        {"field": "band", 
+        "type": "nominal",
+        "title": "Percentile range"
+        },
+        {"field": "price_lower",
+        "type": "quantitative",
+        "format": ".2f",
+        "title":"Lower bound(£)"
+        },
+        {"field": "price_upper", 
+        "type": "quantitative", 
+        "format": ".2f",
+        "title":"Upper bound(£)"
+        }
+      ]
+    }
+  }

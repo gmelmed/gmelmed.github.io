@@ -246,6 +246,22 @@
                     <div style="text-align: center;">
                         <figure id="cc8_2"></figure>
                     </div>
+                    <h3>CC9: Big data.</h3>
+                    <p>
+                        <b>Task:</b> Produce two charts using the <a href="https://richarddavies.io/prices/">UK price data</a>  provided in class.
+                    </p>
+                    <p>
+                        How much does a suit cost? I found every component of a mens suit in the UK price data. The chart below shows the average price of each component in that month. Clothing prices have more seasonality than I expected!
+                    </p>
+                    <div style="text-align: center;">
+                        <figure id="cc9_1"></figure>
+                    </div>
+                    <p>
+                        My next chart shows percentile bands of a 1-night stay at a hotel by UK region. The upper percentiles show extreme seasonality, peaking in the fall and spring (perhaps for booking summer and christmas vacations?). The middle bands stayed relatively stable until the recent post-pandemic inflation.
+                    </p>
+                    <div style="text-align: center;">
+                        <figure id="cc9_2"></figure>
+                    </div>
                     <h3>CC10: Interactivity.</h3>
                     <p>
                         <b>Task:</b> Produce two visualizations that have interactive elements.
@@ -371,6 +387,8 @@
         let lifeex_distribution_spec = "chart_specs/lifeex_distributions.json";
         let interactive_map_spec = "chart_specs/lifeex_state_interactive.json";
         let lifeex_dropdown_spec = "chart_specs/lifeex_dropdown.json";
+        let suit_spec = "chart_specs/suit_spec.json";
+        let hotel_spec = "chart_specs/hotels.json";
 
         vegaEmbed('#cc1_1', rd_football_spec)
         vegaEmbed('#cc1_2', rd_accommodation_spec)
@@ -386,6 +404,8 @@
         vegaEmbed('#cc7_2', nyc_languages_spec)
         vegaEmbed('#cc8_1', homebuilding_spec)
         vegaEmbed('#cc8_2', lifeex_distribution_spec)
+        vegaEmbed('#cc9_1', suit_spec)
+        vegaEmbed('#cc9_2', hotel_spec)
         vegaEmbed('#cc10_1', interactive_map_spec)
         vegaEmbed('#cc10_2', lifeex_dropdown_spec)
 
