@@ -26,14 +26,15 @@
             <a class="navbar-brand pe-md-4 fs-4 text-center" href="index.html">
                 <span class="ms-md-1 mt-1 fw-bolder me-md-5">Gabe Melmed</span>
             </a>
-    
+
             <!-- Right side - Social links -->
             <div class="d-flex align-items-center">
                 <a href="https://github.com/gmelmed" aria-label="Personal links" class="fs-6 link-fancy me-2">
                     GitHub
                 </a>
                 <span class="mx-2">|</span>
-                <a href="https://www.linkedin.com/in/gabriel-melmed-3a160019b/" aria-label="Personal links" class="fs-6 link-fancy">
+                <a href="https://www.linkedin.com/in/gabriel-melmed-3a160019b/" aria-label="Personal links"
+                    class="fs-6 link-fancy">
                     LinkedIn
                 </a>
             </div>
@@ -248,16 +249,22 @@
                     </div>
                     <h3>CC9: Big data.</h3>
                     <p>
-                        <b>Task:</b> Produce two charts using the <a href="https://richarddavies.io/prices/">UK price data</a>  provided in class.
+                        <b>Task:</b> Produce two charts using the <a href="https://richarddavies.io/prices/">UK price
+                            data</a> provided in class.
                     </p>
                     <p>
-                        How much does a suit cost? I found every component of a mens suit in the UK price data. The chart below shows the average price of each component in that month. Clothing prices have more seasonality than I expected!
+                        How much does a suit cost? I found every component of a mens suit in the UK price data. The
+                        chart below shows the average price of each component in that month. Clothing prices have more
+                        seasonality than I expected!
                     </p>
                     <div style="text-align: center;">
                         <figure id="cc9_1"></figure>
                     </div>
                     <p>
-                        My next chart shows percentile bands of a 1-night stay at a hotel by UK region. The upper percentiles show extreme seasonality, peaking in the fall and spring (perhaps for booking summer and christmas vacations?). The middle bands stayed relatively stable until the recent post-pandemic inflation.
+                        My next chart shows percentile bands of a 1-night stay at a hotel by UK region. The upper
+                        percentiles show extreme seasonality, peaking in the fall and spring (perhaps for booking summer
+                        and christmas vacations?). The middle bands stayed relatively stable until the recent
+                        post-pandemic inflation.
                     </p>
                     <div style="text-align: center;">
                         <figure id="cc9_2"></figure>
@@ -412,16 +419,35 @@
 
         // Select all links in the document
         document.querySelectorAll("a").forEach(link => {
-            const isLinkStyle = link.closest(".links"); // Check if the link is in the .links class
-            const isFootnoteLink = link.href.includes("#fn"); // Links to footnotes
-            const isSuperscriptLink = link.href.includes("#fn") && link.id.includes("ref"); // Superscripts back to the footnote
+            const href = link.href.toLowerCase(); // Convert to lowercase for consistent comparison
 
-            // Open in same tab for .links, footnotes, or superscripts
-            if (isLinkStyle || isFootnoteLink || isSuperscriptLink) {
-                link.removeAttribute("target");
-            } else {
-                // Otherwise, open in a new tab
+            // Define which links should open in new tabs
+            const shouldOpenNewTab =
+                href.includes('github.com') ||
+                href.includes('linkedin.com') ||
+                href.includes('templatedeck.com') ||
+                href.includes('economicsobservatory.com') ||
+                href.includes('basketball-reference.com') ||
+                href.includes('richarddavies.io') ||
+                (href.includes('reddit.com')) ||
+                (href.includes('ons.gov.uk'));
+
+            // Check if it's an internal navigation link (starts with current domain or #)
+            const isInternalLink =
+                link.href.includes('#') || // Footnote links
+                href.includes('index.html') ||
+                href.includes('rent_project.html') ||
+                href.includes('final_project') ||
+                href.includes('lifeex.html');
+
+            if (shouldOpenNewTab && !isInternalLink) {
+                // External links open in new tab
                 link.setAttribute("target", "_blank");
+                // Add security best practice for external links
+                link.setAttribute("rel", "noopener noreferrer");
+            } else {
+                // Internal links stay in same tab
+                link.removeAttribute("target");
             }
         });
 
