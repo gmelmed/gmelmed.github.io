@@ -66,6 +66,17 @@
     "width": 600,
     "data": {"url": "https://raw.githubusercontent.com/gmelmed/gmelmed.github.io/refs/heads/main/data/suit_avg.csv"},
     "mark": "area",
+    "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": ["item_name"],
+            "on": "pointerover"
+          },
+          "value": [{"item_name": "None"}]
+        }
+      ],
     "encoding": {
       "x": {
         "type": "temporal",
@@ -74,11 +85,14 @@
         "axis": {"format": "%Y"}
       },
       "y": {
-        "aggregate": "sum", "field": "price"
+        "aggregate": "sum",
+        "field": "price",
+        "title": "Average price (GBP)"
       },
       "color": {
-        "field": "description"
+        "field": "item_name"
       },
+      "opacity": {"condition": {"param": "hover", "value": 1}, "value": 0.7},
       "tooltip":[
         {
           "type": "temporal",
@@ -88,8 +102,14 @@
         },
         {
           "type": "nominal",
-          "field": "description",
+          "field": "item_name",
           "title": "Item"
+        },
+        {
+          "type": "quantitative",
+          "field":"price",
+          "title":"Average price (GBP)",
+          "format":".2f"
         }
       ]
     }
