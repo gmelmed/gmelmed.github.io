@@ -56,6 +56,12 @@
             <div class="row d-flex justify-content-center text-start">
                 <div class="col-12 col-lg-10 col-xl-8 py-vh-2">
                     <h5>
+                        Aims 
+                    </h5>
+                    <p>
+                        This project aims to (i) visualize the scale of the American housing affordability crisis and (ii) identify regional trends in both housing supply and housing demand.
+                    </p>
+                    <h5>
                         Rent is Expensive
                     </h5>
                     <p>
@@ -69,7 +75,7 @@
                         <figure id="Location1"></figure>
                     </div>
                     <p>
-                        A secondary goal for this project was to reflect the true population density of the US while showing regional trends. US population density doesn't lend itself well to straightforward choropleths, so I find cartograms to be more informative. <sup id="fn1"><a href="#fn1-ref">1</a></sup>
+                        I accessed the data above through the US Census API. I wrote a python function to form a time series rather than a single year's data. A secondary goal for this project was to reflect the true population density of the US while showing regional trends. US population density doesn't lend itself well to straightforward choropleths, so I find cartograms to be more informative. <sup id="fn1"><a href="#fn1-ref">1</a></sup>
                     </p>
                     <p>
                         Rents surged in the wake of the COVID-19 pandemic as surging demand met chronically low supply. The crisis peaked in mid-2022, with rents growing nearly twice as fast as overall prices.
@@ -78,7 +84,7 @@
                         <figure id="Location2"></figure>
                     </div>
                     <p>
-                        I decided to use Zillow's Observed Rent Index (ZORI) for this project. Zillow has monthly data stretching back nearly ten years and they calculate the figure such that it doesn't over-index on new housing.
+                        I decided to use Zillow's Observed Rent Index (ZORI) for this project. Zillow has monthly data stretching back nearly ten years and they calculate the figure such that it doesn't over-index on new housing. Zillow doesn't have a free API, so I had to harvest stable links from Zillow's site. 
                     </p>
                     <p>
                         To understand the American housing market, it helps to understand where people are moving. New York, Illinois, and California – home to the three largest cities in the US – are hemorrhaging population, while the south and mountain west have seen large gains. Housing costs are a major driver away from major coastal cities and toward the "sun belt." Population loss is a fate all areas of the country should seek to avoid. It means fewer jobs, less tax revenue, and less political power.
@@ -130,10 +136,7 @@
                         How's Florida Doing?
                     </h4>
                     <p>
-                        The maps above show Florida is the most rent-burdened state in the country and the state with the highest rent inflation since the pandemic. The sunshine state has also gained the most population in relative terms. So it's worth taking a closer look at the state.
-                    </p>
-                    <p>
-                        Homebuilding in Florida's major cities has been relatively high, but not enough to accomodate date its surging population. That is, not everywhere. The charts below show homebuilding and rent growth in Florida's four major metro areas, which are home to more than half of its population. 
+                        The maps above show Florida is the most rent-burdened state in the country and the state with the highest rent inflation since the pandemic. The sunshine state has also gained the most population in relative terms. So it's worth taking a closer look at the state. The charts below show homebuilding and rent growth in Florida's four major metro areas, which are home to more than half of its population. 
                     </p>
                     <div style="text-align: center; display: flex; justify-content: center; gap: 20px;">
                         <!-- figures 8 and 9 side by side -->
