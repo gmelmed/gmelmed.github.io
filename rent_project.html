@@ -49,187 +49,91 @@
         <div class="row d-flex justify-content-center text-center">
             <div class="col-12 col-lg-10 col-xl-8">
                 <h1 class="display-huge">Mapping America's Rent Crisis</h1>
-                <p class="lead pt-2 py-vh-2">This is my final project for <i>PP434: Automated Data Visualization for
-                        Public
-                        Policy.</i> My assingment is to make 5-8 data visualizations on a policy-related topic of my
-                    choice
-                    and discuss my aims, data, analytical challenges, and conclusions.</p>
+                <p class="lead pt-2 py-vh-2">This is my final project for <i>PP434: Automated Data Visualization for Public Policy.</i> My assingment is to make 5-8 data visualizations on a policy-related topic of my choice and discuss my aims, data, analytical challenges, and conclusions.</p>
             </div>
 
 
             <div class="row d-flex justify-content-center text-start">
                 <div class="col-12 col-lg-10 col-xl-8 py-vh-2">
+                    <h5>
+                        Rent is Expensive
+                    </h5>
                     <p>
-                        The United States is facing a once-in-a-generation housing affordability crisis. In mid 2022, a
-                        typical
-                        american renter devoted a greater share of her income to rent <a
-                            href="https://www.moodyscre.com/insights/market-insights/q2-2024-housing-affordability-update/#:~:text=National%20Rent%2Dto%2DIncome%20Ratio,from%2027.8%25%20a%20year%20earlier.">than
-                            at any point this century</a>. Housing is chronically undersupplied in most of the places
-                        where
-                        people want to live, and the crisis was made acute when demand for housing surged in the wake of
-                        the
-                        COVID-19 pandemic.
+                        The United States is facing a once-in-a-generation housing affordability crisis. In mid 2022, a typical American renter devoted a greater share of her income to rent<a href="https://www.moodyscre.com/insights/market-insights/q2-2024-housing-affordability-update/#:~:text=National%20Rent%2Dto%2DIncome%20Ratio,from%2027.8%25%20a%20year%20earlier."> than at any point this century</a>.
                     </p>
                     <p>
-                        The map below shows median gross rent as a share of household income. Households that pay more that 30% of their income on rent are officially considered "rent burdened". From the map below, we can see that the typical renter is burdened in practically all of America's population centers.
+                        The map below shows median gross rent as a share of household income in every US county. Households that pay more that 30% of their income on rent are officially considered "rent burdened". A typical renter is near or above this threshold in all of America's population centers.
                     </p>
                     <!-- figure -->
                     <div style="text-align: center;">
                         <figure id="Location1"></figure>
                     </div>
                     <p>
-                        Happily, the crisis peaked in mid-2022. This is little comfort to millions of Americans whose
-                        rent
-                        is
-                        still eating up more of their monthly budget than ever before, but it does mean that explosive
-                        rent
-                        growth has ended in many areas. Policy makers throughout the country (mainly in the south and
-                        southwest)
-                        have recognized the crisis and taken steps to address it by unlocking abundant housing.
+                        A secondary goal for this project was to reflect the true population density of the US while showing regional trends. US population density doesn't lend itself well to straightforward choropleths, so I find cartograms to be more informative. <sup id="fn1"><a href="#fn1-ref">1</a></sup>
                     </p>
                     <p>
-                        Not all areas are so lucky, however. Recovery has been uneven and the crisis is still raging in
-                        many
-                        parts of the country. This project aims to explore the geography of the rent crisis in the US,
-                        understand the factors that drive rent inflation, and highlight effective policy solutions.
-                    </p>
-                    <p>
-                        First, a brief note on my choice of rent rather than home values as my variable of interest:
-                        Home
-                        values
-                        have also exploded in the past five years, but I consider them mostly out of the scope of this
-                        project.
-                        I chose to focus on rent two two reasons. First, rent it is a more immediate concern for most
-                        middle-
-                        and lower-income Americans who do not own their home. Relatedly, Americans who own their homes
-                        do
-                        not
-                        necessarily consider the events of the past five years to be a crisis. In fact, many homeowners
-                        have
-                        seen their net worth increase dramatically with their home values. For renters, the past five
-                        years
-                        have
-                        been a crisis.
-                    </p>
-                    <h2>Rent Inflation</h2>
-                    <p>
-                        The surge in rent prices is not simply the result of post-pandemic inflation.The chart below
-                        shows
-                        the year-on-year change in rent prices and inflation since 2016. Rent inflation outpaced overall
-                        inflation for years before the pandemic began and immediately after the pandemic, rent prices
-                        rose
-                        an order of magnitude faster than overall prices. Since this peak, rent inflation has slowed to
-                        around pre-pandemic levels in the past year. Currently, rent inflation is only outpacing overall
-                        inflation by less than a percentage point. This national trend conceals a great deal of regional
-                        variation, however. As the proceeding charts will demonstrate, some places have brought their
-                        rent
-                        growth under control, while others are still in the throes of a housing crisis.<sup
-                            id="fn1-ref"><a href="#fn1">1</a></sup>
-
+                        Rents surged in the wake of the COVID-19 pandemic as surging demand met chronically low supply. The crisis peaked in mid-2022, with rents growing nearly twice as fast as overall prices.
                     </p>
                     <div style="text-align: center;">
                         <figure id="Location2"></figure>
                     </div>
-                    <h2>Where are Americans Moving?</h2>
                     <p>
-                        To understand America's rent crisis, it helps to understand which areas are gaining and losing
-                        population. The map below shows population change from 2020 to 2023 by state. Since the
-                        pandemic,
-                        hundreds of thousands of people have moved away from large states with major cities. New York,
-                        California, and Illinois experienced the biggest losses. Meanwhile, the states in the 'sun belt'
-                        (roughly, the southeast, southwest, and mountain west) has seen the largest population gains.
-                        The
-                        primary driver of this migration is the cost of living. Housing costs in major coastal cities
-                        and
-                        Chicago have become prohibitive for many Americans, who are seeking cheaper (and warmer) areas
-                        as a
-                        result. This has been helped along by the rise of remote work - many Americans are no longer
-                        tied to
-                        their place of employment and can live wherever they want.<sup id="fn2-ref"><a
-                                href="#fn2">2</a></sup>
+                        I decided to use Zillow's Observed Rent Index (ZORI) for this project. Zillow has monthly data stretching back nearly ten years and they calculate the figure such that it doesn't over-index on new housing.
+                    </p>
+                    <p>
+                        To understand the American housing market, it helps to understand where people are moving. New York, Illinois, and California – home to the three largest cities in the US – are hemorrhaging population, while the south and mountain west have seen large gains. Housing costs are a major driver away from major coastal cities and toward the "sun belt." Population loss is a fate all areas of the country should seek to avoid. It means fewer jobs, less tax revenue, and less political power.
+                        <sup id="fn2"><a href="#fn2-ref">2</a></sup>
                     </p>
                     <div style="text-align: center;">
                         <figure id="Location3"></figure>
                     </div>
-                    <h2>Mapping Rent</h2>
+                    <h5>
+                        Mapping Rent Inflation
+                    </h5>
                     <p>
-                        Not all areas have experienced the same rent inflation. The first map below shows the change in
-                        rent
-                        index over the past five years by county. Looking at the five-year view, we see few counties
-                        have
-                        been immune from spiking rents. The southeast and southwest saw the greatest increases in rent.
-                        Florida seems to be the most impacted.
+                        The first map below shows the change in ZORI over the past five years by county. Few counties have been immune from spiking rents. The southeast and southwest saw the greatest increases in rent and their populations surged. Florida seems to be the most impacted state.
                     </p>
                     <div style="text-align: center;">
                         <figure id="Location4"></figure>
                     </div>
                     <p>
-                        The one-year view tells a different story. Over the past year, rent inflation is felt most
-                        acutely
-                        in the midwest and northeast. In the sunt belt, rent inflation is near or below overall
-                        inflation. A
-                        small handful of counties, mostly in the Texas, even saw their rent index <i>decrease</i> over
-                        the
-                        past year.<sup id="fn3-ref"><a href="#fn3">3</a></sup>
+                        The one-year view tells a different story. Over the past year, rent inflation is felt most acutely in the midwest and northeast. In the sun belt, rent inflation has leveled off. A small handful of counties, mostly in Texas, even saw their rent index <i>decrease</i> over the past year.
                     </p>
                     <div style="text-align: center;">
                         <figure id="Location5"></figure>
                     </div>
-                    <h2>Who Builds Homes?</h2>
                     <p>
-                        I believe the rent crisis is mainly caused by an under-supply of housing in the areas where
-                        people
-                        want to live. When there are fewer available rental units in an area, renters have to compete
-                        for a
-                        limited number of homes, which gives landlords room to charge higher rents.
+                        One limitation of the Zillow data: ZORI is fairly robust in its coverage, but several smaller counties are missing from these cartograms. To appear on the map, a county must have data for the most recent period and one or five years prior.
                     </p>
+                    <h5>
+                        Supply and Demand
+                    </h5>
                     <p>
-                        Consider the chart plotting America's 50 largest metro areas, comparing their rent index changes
-                        against new multi-unit housing approvals per 10,000 residents this year. A clear pattern
-                        emerges:
-                        metro areas experiencing the highest rent inflation tend to have the lowest home building rates.
-                        This relationship is particularly stark in mid-sized northeastern cities like Hartford,
-                        Providence,
-                        Buffalo, and Cleveland, where rent inflation exceeds 5.5% while new multi-unit construction
-                        languishes at fewer than 2 structures per 10,000 people.
-                    </p>
-                    <p>
-                        At the opposite end of the spectrum stands Austin, which is emerging as a beacon of housing
-                        affordability amid a national rental crisis. With more than 10 new multi-unit structures per
-                        10,000
-                        people—the second-highest building rate nationally—Austin has managed to buck the trend of steep
-                        rent increases plaguing other major metros.<sup id="fn4-ref"><a href="#fn4">4</a></sup>
+                        Zillow also has a variable called the Zillow Observed Rent Demand Index (ZORDI). It measures the traffic on a typical listing in an area. Think of it as a barometer of competition for available units. The visualization below shows ZORDI and the year-on year change in ZORI in America’s 50 largest metro areas.
                     </p>
                     <div style="text-align: center;">
                         <figure id="Location6"></figure>
                     </div>
                     <p>
-                        The next chart provides further evidence of a supply-driven market dynamic. It plots the same 50
-                        metro areas, comparing rent inflation against the Zillow Observed Rent Demand Index (ZORDI),
-                        which
-                        measures the typical traffic a rental listing receives on their site. While "rent demand" might
-                        suggest total market activity, ZORDI actually captures the level of interest each individual
-                        rental
-                        listing attracts. In essence, it's a barometer of <i>competition</i> for available units in each
-                        metro area.
+                        The plot sorts itself into regions remarkably well. In the southeast and southwest, prices are levelling off as renters face less competition. In the northeast and midwest, competitive markets are seeing the steepest rent increases.
                     </p>
                     <p>
-                        This visualization presents almost a mirror image of the previous chart. Metro areas
-                        experiencing
-                        the steepest rent increases typically show the lowest ZORDI scores. The contrast between our
-                        previous extreme examples, Austin and Hartford, becomes even more striking here—their positions
-                        flip. Renters face extreme competition in Hartford and very little in Austin.<sup
-                            id="fn5-ref"><a href="#fn5">5</a></sup>
+                        This is a supply-driven market dynamic. The cities and regions with the highest building rates have seen the slowest rent growth. Using data from the US Census Bureau's <a href="https://www.census.gov/construction/bps/index.html">Building Permits Survey</a>, I calculated the number of new multi-unit housing structures approved per capita in the past year. I chose multi-unit structures because they are usually built to rent.
                     </p>
                     <div style="text-align: center;">
                         <figure id="Location7"></figure>
                     </div>
-                    <h2>A tale of four metropolitan statistical areas</h2>
                     <p>
-                        As some of the maps above show, Florida has been one of the hardest-hit states in the rent crisis. The sunshine state consistently has some of the highest rent to income ratios in the nation. In the past five years, Florida has seen some of the most explosive rent growth in the country. This due in part to a surge in housing demand - no state has gained more population since 2020.
+                        Keep in mind that this is new housing <i>approvals</i>, not completions. Just the knowledge that new housing is on the way can be a signal to landlords that they must price competitively. The city Austin, Texas breaks this chart. No city has built more housing and no city is seeing rents decrease faster. This is remarkable considering Austin is <a href="https://explodingtopics.com/blog/fastest-growing-cities">one of the fastest-growing cities in the country.</a>
+                    </p>
+                    <h4>
+                        How's Florida Doing?
+                    </h4>
+                    <p>
+                        The maps above show Florida is the most rent-burdened state in the country and the state with the highest rent inflation since the pandemic. The sunshine state has also gained the most population in relative terms. So it's worth taking a closer look at the state.
                     </p>
                     <p>
-                        Homebuilding in Florida's major cities has been relatively high, but not enough to accomodate its surging population. That is, not everywhere. The charts below show homebuilding and rent growth in Florida's four major metro areas, which account for more than half of its population. 
+                        Homebuilding in Florida's major cities has been relatively high, but not enough to accomodate date its surging population. That is, not everywhere. The charts below show homebuilding and rent growth in Florida's four major metro areas, which are home to more than half of its population. 
                     </p>
                     <div style="text-align: center; display: flex; justify-content: center; gap: 20px;">
                         <!-- figures 8 and 9 side by side -->
@@ -237,7 +141,16 @@
                         <figure id="Location9" style="flex: 1; min-width: 0;"></figure>
                     </div>
                     <p>
-                        Orlando and Jacksonville have built more homes than the rest of the state and have seen their rent growth slow as a result. Rents are still extremely high, to be sure, but they have leveled off. If these cities's building rates keep pace, incomes should eventually catch up to rents.
+                        Orlando and Jacksonville have built more homes than the rest of the state and have seen their rent growth slow as a result. Rents are still extremely high, to be sure, but they have leveled off. If these cities's building rates keep pace, incomes should eventually catch up to rents and the cities will become more affordable.
+                    </p>
+                    <h4>
+                        Conclusion
+                    </h4>
+                    <p>
+                        The above visualizations demonstrate the need for abundant housing in America. The cities and regions that have built the most housing have seen the slowest rent growth. The cities that have built the least have seen the most. After an instense spike, there is reason for optimism, but only in some areas. 
+                    </p>
+                    <p>
+                        In southeast and southwest, building lots of new housing has paid off and rent growth has stabilized. If the midwest and northeast do not build more housing, they will continue to become more expensive and lose more population. This is a fate all areas of the country should seek to avoid.
                     </p>
                 </div>
             </div>
@@ -272,84 +185,13 @@
                 <ol>
                     <li id="fn1">
                         <p>
-                            To measure rent for this project, I am using Zillow's Observed Rent Index (ZORI). Zillow
-                            describes ZORI as:
-                        <blockquote>
-                            A smoothed measure of the typical observed market rate rent across a given region. ZORI is a
-                            repeat-rent index that is weighted to the rental housing stock to ensure representativeness
-                            across the entire market, not just those homes currently listed for-rent. The index is
-                            dollar-denominated by computing the mean of listed rents that fall into the 35th to 65th
-                            percentile range for all homes and apartments in a given region, which is weighted to
-                            reflect the rental housing stock.
-                        </blockquote>
+                            I made the cartogram shapefile above using <a href="">this R code</a> from Kieran Healy. <a href="#fn1-ref">↩</a>
                         <p>
-                            ZORI is a mean figure, but since it excludes the highest and lowest percentiles, it is not
-                            heavily affected by extreme values. It also accounts for seasonality:
-                        </p>
-                        <blockquote>
-                            What’s available to rent at any given time can change rapidly, and measures of median or
-                            average prices across time may not reflect actual market-based movements in rent prices, but
-                            instead simply reflect the fact that certain unit types are available at different times.
-                            ZORI solves this challenge by calculating price differences for the same rental unit over
-                            time, then aggregating those differences across all properties repeatedly listed for rent on
-                            Zillow.
-                        </blockquote>
-                        <p>
-                            For more on ZORI, see <a
-                                href="https://www.zillow.com/research/methodology-zori-repeat-rent-27092/">Zillow's
-                                methodology.</a>
-
-                            I scraped the ZORI data from the Zillow's website. I used the FRED API to get the Consumer
-                            Price
-                            Index (CPI) for all urban consumers. I built the chart using vega-lite.<a
-                                href="#fn1-ref">↩</a>
-                        </p>
                     </li>
                     <li id="fn2">
                         <p>
-                            Cost of living and remote work aren't the only factors driving Americans to the sun belt.
-                            People also argue that these areas are gaining population because (i) the US is an ageing
-                            country and the sun belt contains many popular retirement areas, (ii) sun belt states,
-                            especially in the south, tend to have lower taxes, (iii) many of these states, like Texas,
-                            Georgia, and North Carolina, are booming economies in their own right, and (iv) crime and
-                            other quality-of-life issues have risen in major cities. The reasons people give typically
-                            depend on their politics, but almost every observer agrees that housing costs play a major
-                            role.
-                        </p>
-                        <p>
-                            I made this map using Pitch Interactive's <a
-                                href="https://pitchinteractiveinc.github.io/tilegrams/">tilegram maker</a>. The app
-                            allows the user to input data in csv format and generates a topojson of the US with states
-                            sized by the provided data. I used the most recent US Census population data for this map.
-                            Like the last maps, I opted for a cartogram rather than a map to give a sense of population
-                            density. I built the map using vega-lite.<a href="#fn2-ref">↩</a>
-                        </p>
-                    </li>
-                    <li id="fn3">
-                        <p>
-                            This chart uses the same Zillow data as the previous chart. I calculated YoY change using
-                            python. I built the map using D3 and mapbox. The D3 spec for this map uses the most recent
-                            ZORI data for each county. For population data, I used 2023 US Census figures. To locate
-                            conties on the map, I used the latitude and longitude of population centroids (rather than
-                            the geographic centers of counties), also from the US Census. The goal of this map is to
-                            show how rent inflation is distributed across the US while providing an accurate picture of
-                            the population density.<a href="#fn3-ref">↩</a>
-                        </p>
-                    </li>
-                    <li id="fn4">
-                        <p>
-                            I acquired the homebuilding data from the US Census Bureau using their API. I chose to focus
-                            on multi-unit structures because they are the most likely to be rented. To calculate
-                            homebuilding per capita, I used metro are population figures from the 2023 US Census. I
-                            calculated the homebuilding rate using python. I built the chart using vega-lite.<a
-                                href="#fn4-ref">↩</a>
-                        </p>
-                    </li>
-                    <li id="fn5">
-                        <p>
-                            Like ZORI, I acquired ZORDI data by scraping Zillow's website. Zillow makes all of this
-                            information easily downloadable on their website, but does not offer an API for their public
-                            data. Strange.<a href="#fn5-ref">↩</a>
+                            I made the shapefile for this cartogram using Pitch Interactive's <a
+                                href="https://pitchinteractiveinc.github.io/tilegrams/">tilegram maker</a>.
                         </p>
                     </li>
                 </ol>
@@ -366,8 +208,8 @@
         let burden_spec = "final_project/specs/rent_income_share.json";
         let rent_inflation_spec = "final_project/specs/rent_inflation.json";
         let rent_map_spec = "final_project/specs/zori_county_bubble.html";
-        let supply_spec = "final_project/specs/homebuilding_zori.json";
         let demand_spec = "final_project/specs/demand_rent.json";
+        let supply_spec = "final_project/specs/homebuilding_zori.json";
         let pop_change_spec = "final_project/specs/state_pop_change.json";
         let dorling_5 = "final_project/specs/county_dorling_5year.json";
         let dorling_1 = "final_project/specs/county_dorling.json";
@@ -379,8 +221,8 @@
         vegaEmbed('#Location3', pop_change_spec)
         vegaEmbed('#Location4', dorling_5)
         vegaEmbed('#Location5', dorling_1)
-        vegaEmbed('#Location6', supply_spec)
-        vegaEmbed('#Location7', demand_spec)
+        vegaEmbed('#Location6', demand_spec)
+        vegaEmbed('#Location7', supply_spec)
         vegaEmbed('#Location8', fl_building_spec)
         vegaEmbed('#Location9', fl_rent_spec)
 
