@@ -233,18 +233,38 @@
 
         // Select all links in the document
         document.querySelectorAll("a").forEach(link => {
-            const isLinkStyle = link.closest(".links"); // Check if the link is in the .links class
-            const isFootnoteLink = link.href.includes("#fn"); // Links to footnotes
-            const isSuperscriptLink = link.href.includes("#fn") && link.id.includes("ref"); // Superscripts back to the footnote
+            const href = link.href.toLowerCase(); // Convert to lowercase for consistent comparison
 
-            // Open in same tab for .links, footnotes, or superscripts
-            if (isLinkStyle || isFootnoteLink || isSuperscriptLink) {
-                link.removeAttribute("target");
-            } else {
-                // Otherwise, open in a new tab
+            // Define which links should open in new tabs
+            const shouldOpenNewTab =
+                href.includes('github.com') ||
+                href.includes('linkedin.com') ||
+                href.includes('templatedeck.com') ||
+                href.includes('economicsobservatory.com') ||
+                href.includes('basketball-reference.com') ||
+                href.includes('richarddavies.io') ||
+                (href.includes('reddit.com')) ||
+                (href.includes('ons.gov.uk'));
+
+            // Check if it's an internal navigation link (starts with current domain or #)
+            const isInternalLink =
+                link.href.includes('#') || // Footnote links
+                href.includes('index.html') ||
+                href.includes('rent_project.html') ||
+                href.includes('final_project') ||
+                href.includes('lifeex.html');
+
+            if (shouldOpenNewTab && !isInternalLink) {
+                // External links open in new tab
                 link.setAttribute("target", "_blank");
+                // Add security best practice for external links
+                link.setAttribute("rel", "noopener noreferrer");
+            } else {
+                // Internal links stay in same tab
+                link.removeAttribute("target");
             }
         });
+
     </script>
 </body>
 
