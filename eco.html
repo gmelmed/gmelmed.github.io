@@ -1,129 +1,156 @@
-<!DOCTYPE html>
-<html> 
-<head>    
-    <link rel="stylesheet" type="text/css" href="portfolio_styles.css">
-    <title>ECO | Gabe Melmed</title> 
+<!doctype html>
+<html class="h-100" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>Economics Observatory Contributions | Gabe Melmed</title>
+    <link rel="stylesheet" href="brook_theme.css">
 
     <!-- Link to Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Petrona:wght@400;700&family=Cardo:wght@400;700&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?&family=Cardo:wght@400;700&family=Montserrat:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
 
+    <!-- Add this line for emoji favicon -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨🏻‍💻</text></svg>">
+
+    <!-- Vega and Vega-Lite for visualizations -->
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 
-
-    <style>
-        #chartGrid {
-            display: flex;
-        }
-
-        .footnotes {
-            margin-top: 20px;
-            font-size: 0.9em;
-            color: #555;
-        }
-        .footnotes li {
-            margin-bottom: 10px;
-        }
-
-    </style>
 </head>
 
-<body> 
-    <h1 class="big" style="margin-bottom: 0px;"> 
-        Gabe Melmed
-    </h1>
-    <p class = "links">
-        <a href="https://gmelmed.github.io">Home</a> | 
-        <a href="/final_project/rent_in_america.html">Mapping America's Housing Crisis</a> | 
-        <a href="portfolio_tasks.html">PP434 Portfolio Tasks</a> |  
-        <a href="lifeex.html">Diverging Life Expectancy</a> |
-         <a href="other_projects.html">Other Projects</a> | More coming soon.
-    </p>
-    <h1>
-        Economics Observatory Contributions
-    </h1>
-    <p>
-        <i>These are a selection of some of my favorite visualizations I have created for the <a href="https://www.economicsobservatory.com/">Economics Observatory</a>. I've made minor style adjustments so they match the rest of the site. Thanks to the team for their support and guidance.</i>
-    </p>
-    <section>
-        
-        <div class="chart-description">
-            <h2>The 2024 US Election</h2>
-            <figure id="Location1"></figure>
-            <p> 
-                The US Democratic Party is the latest in a series of incumbent parties to lose vote share in 2024. Backlash against inflation may be driving these sweeping changes. This chart shows eight national elections held in high-income OECD countries. In every case, the incumbent party experienced a decline in vote share compared to the previous election.
-            </p>
+<body data-bs-spy="scroll" data-bs-target="#navScroll">
+    <nav id="navScroll" class="navbar navbar-light py-vh-3 pb-0 px-vw-5" tabindex="0">
+        <div class="container-fluid d-flex justify-content-between">
+            <!-- Left side - Name/Home link -->
+            <a class="navbar-brand pe-md-4 fs-4 text-center" href="index.html">
+                <span class="ms-md-1 mt-1 fw-bolder me-md-5">Gabe Melmed</span>
+            </a>
+
+            <!-- Right side - Social links -->
+            <div class="d-flex align-items-center">
+                <a href="https://github.com/gmelmed" aria-label="Personal links" class="fs-6 link-fancy me-2">
+                    GitHub
+                </a>
+                <span class="mx-2">|</span>
+                <a href="https://www.linkedin.com/in/gabriel-melmed-3a160019b/" aria-label="Personal links"
+                    class="fs-6 link-fancy">
+                    LinkedIn
+                </a>
+            </div>
         </div>
-        
-    </section>
+    </nav>
 
-    <section>
-        <div class="chart-description">
-            <h2>Cherry Blossoms and Climate Change</h2>
-            <figure id="Location2"></figure>
-            <p> 
-                Kyoto’s world-famous cherry blossom trees are blooming earlier and earlier every year. The timing of peak blossom depends on spring temperatures, which are rising. Note the sharp drop in the 20th century.
-            </p>
+    <main class="container py-vh-3">
+        <div class="row d-flex justify-content-center text-center">
+            <div class="col-12 col-lg-10 col-xl-8">
+                <!-- <small class="text-muted">By
+                    John Doe</small> -->
+                <h1 class="display-huge">Economics Observatory Contributions</h1>
+                <p>
+                    <i>These are a selection of some of my favorite visualizations I have created for the <a
+                            href="https://www.economicsobservatory.com/">Economics Observatory</a>. I've made minor
+                        style adjustments so they match the rest of the site. Thanks to the team for their support and
+                        guidance.</i>
+                </p>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <img src="img/webp/office111.webp" class="img-fluid" alt="">
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center text-start">
+                <div class="col-12 col-lg-10 col-xl-8 py-vh-2">
+                    
+                    <h2>The 2024 US Election</h2>
+                    <p>
+                        The US Democratic Party is the latest in a series of incumbent parties to lose vote share in
+                        2024. Backlash against inflation may be driving these sweeping changes. This chart shows eight
+                        national elections held in high-income OECD countries. In every case, the incumbent party
+                        experienced a decline in vote share compared to the previous election.
+                    </p>
+                    <figure id="Location1"></figure>
+                    <h2>Cherry Blossoms and Climate Change</h2>
+                    <figure id="Location2"></figure>
+                    <p>
+                        Kyoto’s world-famous cherry blossom trees are blooming earlier and earlier every year. The
+                        timing of peak blossom depends on spring temperatures, which are rising. Note the sharp drop in
+                        the 20th century.
+                    </p>
+                    <h2>Medal Compensation at the 2024 Paris Olympics</h2>
+                    <p>
+                        The following is a section of an article I co-authored on the 2024 Paris Olympics. The full
+                        article can be found <a
+                            href="https://www.economicsobservatory.com/what-happened-at-the-2024-olympics">here</a>.
+                    <blockquote>
+                        The Olympics can be highly lucrative for some athletes, but not for all. The IOC maintains an
+                        official policy of amateur competition, so it does not reward medallists or pay athletes to
+                        compete.
+
+                        With no universal compensation regime, athletes’ earnings depend on their sport, their
+                        performance, corporate sponsorship and, most importantly, their country.
+
+                        While the Olympics as a whole is governed by the IOC, each sport is governed by its own
+                        international federation, which has autonomy over their IOC-allocated funds. This year, two
+                        broke with the IOC’s amateur athletics tradition.
+
+                        World Athletics – the governing body for track and field – elected to reward gold medallists,
+                        paying $50,000 (around £39,400). The International Boxing Association announced that it would
+                        reward medallists and their coaches: for gold, $100,000 for the boxer and $25,000 for the coach,
+                        $50,000 and $25,000 respectively for silver, and $12,500 apiece for bronze.
+
+                        Several National Olympic Committees (NOCs) also have medal compensation policies. At the Paris
+                        games, Hong Kong had the most generous scheme, paying its gold medallists HK$6,000,000 (around
+                        £590,000). Singapore and Taiwan are among the other nations that offer financial incentives to
+                        their athletes.
+                    </blockquote>
+                    </p>
+                    <figure id="Location3"></figure>
+                    <p>
+                    <blockquote>
+                        Not every NOC compensates their medallists this generously or at all. Indeed, of the ten largest
+                        teams, only Italy and Spain compensate gold medallists more than $100,000 (around £76,700).
+                    </blockquote>
+                    </p>
+                    <figure id="Location4"></figure>
+
+                </div>
+            </div>
         </div>
-    </section>
+    </main>
+    <div class="container d-flex justify-content-between">
 
-    <section>
-        <div class="chart-description">
-            <h2>Medal Compensation at the 2024 Paris Olympics</h2>
-            <p> 
-                The following is a section of an article I co-authored on the 2024 Paris Olympics. The full article can be found <a href="https://www.economicsobservatory.com/what-happened-at-the-2024-olympics">here</a>.
-                
-                <blockquote>
-                    The Olympics can be highly lucrative for some athletes, but not for all. The IOC maintains an official policy of amateur competition, so it does not reward medallists or pay athletes to compete.
 
-                    With no universal compensation regime, athletes’ earnings depend on their sport, their performance, corporate sponsorship and, most importantly, their country.
 
-                    While the Olympics as a whole is governed by the IOC, each sport is governed by its own international federation, which has autonomy over their IOC-allocated funds. This year, two broke with the IOC’s amateur athletics tradition.
+        <div class="col border-top border-end py-vh-3 d-flex align-items-center">
 
-                    World Athletics – the governing body for track and field – elected to reward gold medallists, paying $50,000 (around £39,400). The International Boxing Association announced that it would reward medallists and their coaches: for gold, $100,000 for the boxer and $25,000 for the coach, $50,000 and $25,000 respectively for silver, and $12,500 apiece for bronze.
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-arrow-left"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+            </svg>
+            <a href="index.html" class="ms-2 display-6">Home</a>
 
-                    Several National Olympic Committees (NOCs) also have medal compensation policies. At the Paris games, Hong Kong had the most generous scheme, paying its gold medallists HK$6,000,000 (around £590,000). Singapore and Taiwan are among the other nations that offer financial incentives to their athletes.
-                </blockquote>
-            </p>
-            <figure id="Location3"></figure>
-            <p>
-                <blockquote>
-                    Not every NOC compensates their medallists this generously or at all. Indeed, of the ten largest teams, only Italy and Spain compensate gold medallists more than $100,000 (around £76,700).
-                </blockquote>
-            </p>
-            <figure id="Location4"></figure>
         </div>
-    </section>
-    
+        <div class="col border-top text-end py-vh-3 d-flex align-items-center justify-content-end">
+
+            <a href="rent_project.html" class="me-2 display-6">Mapping America's Rent Crisis</a><svg
+                xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-arrow-right"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+            </svg>
+        </div>
+
+    </div>
 
     <script>
-        const customConfig = {
-            config: {
-            font: "Montserrat, sans-serif",
-            view: {
-                stroke: "transparent"
-            },
-            background: "#f7f7f7",
-            legend: {
-                titleFont: "Montserrat, sans-serif",
-                titleFontSize: 14,
-                titleColor: "#1a1a1a",
-                title: null,
-                labelColor: "#1a1a1a",
-                labelFontSize: 12
-            },
-            title: {
-                font: "Montserrat, sans-serif",
-                fontSize: 16,
-                color: "#1a1a1a",
-                subtitleFontSize: 14,
-                subtitleColor: "#676A86"
-            }
-            }
-        };
-
-
         let elections_spec = "chart_specs/elections.json";
         let cherry_blossoms_spec = "chart_specs/cherry_blossoms.json";
         let olympics_toprosters_spec = "chart_specs/olympic_medal_comp.json";
@@ -135,20 +162,45 @@
         vegaEmbed("#Location4", olympics_toprosters_spec)
 
 
-        // Select all links in the document
-        document.querySelectorAll("a").forEach(link => {
-            const isLinkStyle = link.closest(".links"); // Check if the link is in the .links class
-            const isFootnoteLink = link.href.includes("#fn"); // Links to footnotes
-            const isSuperscriptLink = link.href.includes("#fn") && link.id.includes("ref"); // Superscripts back to the footnote
-
-            // Open in same tab for .links, footnotes, or superscripts
-            if (isLinkStyle || isFootnoteLink || isSuperscriptLink) {
-                link.removeAttribute("target");
-            } else {
-                // Otherwise, open in a new tab
-                link.setAttribute("target", "_blank");
+        // Handle footnote links
+        document.addEventListener('click', function (e) {
+            // Check if the clicked element is a footnote link
+            if (e.target.tagName === 'A' && e.target.hash) {
+                e.preventDefault();
+                const targetId = e.target.hash.slice(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    setTimeout(() => {
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                    }, 0);
+                    window.location.hash = targetId;
+                }
             }
         });
+
+        // Handle all links
+        document.querySelectorAll("a").forEach(link => {
+            const href = link.href.toLowerCase();
+            const currentDomain = window.location.hostname;
+
+            // Check if it's an internal link (same domain or anchor)
+            const isInternalLink =
+                href.includes('#') || // Footnote/anchor links
+                link.hostname === currentDomain; // Same domain (your repository)
+
+            if (!isInternalLink) {
+                // External links open in new tab
+                link.setAttribute("target", "_blank");
+                link.setAttribute("rel", "noopener noreferrer");
+            } else {
+                // Internal links stay in same tab
+                link.removeAttribute("target");
+            }
+        });
+
+
     </script>
+
 </body>
+
 </html>
