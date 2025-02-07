@@ -13,6 +13,8 @@
         href="https://fonts.googleapis.com/css2?family=Petrona:wght@400;700&family=Cardo:wght@400;700&family=Montserrat:wght@400;600;700;800&display=swap"
         rel="stylesheet">
 
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🕺🏻</text></svg>">
+
     <!-- This is a link to the vega-lite which we're using to make graphs -->
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
@@ -29,14 +31,15 @@
             <a class="navbar-brand pe-md-4 fs-4 text-center" href="index.html">
                 <span class="ms-md-1 mt-1 fw-bolder me-md-5">Gabe Melmed</span>
             </a>
-    
+
             <!-- Right side - Social links -->
             <div class="d-flex align-items-center">
                 <a href="https://github.com/gmelmed" aria-label="Personal links" class="fs-6 link-fancy me-2">
                     GitHub
                 </a>
                 <span class="mx-2">|</span>
-                <a href="https://www.linkedin.com/in/gabriel-melmed-3a160019b/" aria-label="Personal links" class="fs-6 link-fancy">
+                <a href="https://www.linkedin.com/in/gabriel-melmed-3a160019b/" aria-label="Personal links"
+                    class="fs-6 link-fancy">
                     LinkedIn
                 </a>
             </div>
@@ -49,9 +52,14 @@
                 <div class="row d-flex justify-content-center text-center">
                     <div class="col-12 col-lg-8">
                         <h1 class="display-huge mb-3">Welcome to my portfolio</h1>
-                        
-                        <p class="lead pt-2 py-vh-2">A bit about me - I am Masters student in Data Science for Public Policy at the London School of Economics. My goal is to make data informative and persuasive, no matter now complex. The work on this page is a mix of class assignments and professional data visualizations I've made for <a href ="https://www.economicsobservatory.com/">Economics Observatory</a>. Use the links below to navigate.</p>  
-                        
+
+                        <p class="lead pt-2 py-vh-2">A bit about me - I am Masters student in Data Science for Public
+                            Policy at the London School of Economics. My goal is to make data informative and
+                            persuasive, no matter now complex. The work on this page is a mix of class assignments and
+                            professional data visualizations I've made for <a
+                                href="https://www.economicsobservatory.com/">Economics Observatory</a>. Use the links
+                            below to navigate.</p>
+
                     </div>
                 </div>
             </div>
@@ -88,21 +96,25 @@
             </div>
         </div>
         <div class="container">
-        <div class="row d-flex justify-content-center text-start">
-            <div class="col-12 col-lg-10 col-xl-8 py-vh-2">
-                <p></p>
-                <h3>Featured Work: New York's Linguistic Landscape</h3>
-                <p> 
-                    New York is an incredibly diverse city. Walking around the city, you're likely to hear dozens of languages every day. I used data from NYC Open Data to map to Map New York's linguistic landscape. This map shows the third most common language spoken in each community district. I map the third most common language because the first two are English and Spanish in almost every district. 
-                </p>
-                <div style="text-align: center;">
-                    <figure id="Location1"></figure>
-                </div>
-                
+            <div class="row d-flex justify-content-center text-start">
+                <div class="col-12 col-lg-10 col-xl-8 py-vh-2">
+                    <p></p>
+                    <h3>Featured Work: New York's Linguistic Landscape</h3>
+                    <p>
+                        New York is an incredibly diverse city. Walking around the city, you're likely to hear dozens of
+                        languages every day. I used data from NYC Open Data to map to Map New York's linguistic
+                        landscape. This map shows the third most common language spoken in each community district. I
+                        map the third most common language because the first two are English and Spanish in almost every
+                        district.
+                    </p>
+                    <div style="text-align: center;">
+                        <figure id="Location1"></figure>
+                    </div>
 
+
+                </div>
             </div>
-        </div>   
-    </div>
+        </div>
 
     </main>
 
@@ -115,6 +127,41 @@
     <script>
         let vorp = "chart_specs/nyc_languages.json";
         vegaEmbed("#Location1", vorp);
+        // Handle footnote links
+        document.addEventListener('click', function (e) {
+            // Check if the clicked element is a footnote link
+            if (e.target.tagName === 'A' && e.target.hash) {
+                e.preventDefault();
+                const targetId = e.target.hash.slice(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    setTimeout(() => {
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                    }, 0);
+                    window.location.hash = targetId;
+                }
+            }
+        });
+
+        // Handle all links
+        document.querySelectorAll("a").forEach(link => {
+            const href = link.href.toLowerCase();
+            const currentDomain = window.location.hostname;
+
+            // Check if it's an internal link (same domain or anchor)
+            const isInternalLink =
+                href.includes('#') || // Footnote/anchor links
+                link.hostname === currentDomain; // Same domain (your repository)
+
+            if (!isInternalLink) {
+                // External links open in new tab
+                link.setAttribute("target", "_blank");
+                link.setAttribute("rel", "noopener noreferrer");
+            } else {
+                // Internal links stay in same tab
+                link.removeAttribute("target");
+            }
+        });
     </script>
 
 </body>

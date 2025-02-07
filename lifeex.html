@@ -13,6 +13,9 @@
         href="https://fonts.googleapis.com/css2?family=Petrona:wght@400;700&family=Cardo:wght@400;700&family=Montserrat:wght@400;600;700;800&display=swap"
         rel="stylesheet">
 
+        <!-- Add this line for emoji favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏥</text></svg>">
+
     <!-- Vega and Vega-Lite for visualizations -->
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
@@ -26,14 +29,15 @@
             <a class="navbar-brand pe-md-4 fs-4 text-center" href="index.html">
                 <span class="ms-md-1 mt-1 fw-bolder me-md-5">Gabe Melmed</span>
             </a>
-    
+
             <!-- Right side - Social links -->
             <div class="d-flex align-items-center">
                 <a href="https://github.com/gmelmed" aria-label="Personal links" class="fs-6 link-fancy me-2">
                     GitHub
                 </a>
                 <span class="mx-2">|</span>
-                <a href="https://www.linkedin.com/in/gabriel-melmed-3a160019b/" aria-label="Personal links" class="fs-6 link-fancy">
+                <a href="https://www.linkedin.com/in/gabriel-melmed-3a160019b/" aria-label="Personal links"
+                    class="fs-6 link-fancy">
                     LinkedIn
                 </a>
             </div>
@@ -61,84 +65,192 @@
                         driven down when people die younger and up when people die older.<sup id="fn1-ref"><a
                                 href="#fn1">1</a></sup>
                     </p>
-                    <div style="min-height:691px" id="datawrapper-vis-clXMX"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/clXMX/embed.js" charset="utf-8" data-target="#datawrapper-vis-clXMX"></script><noscript><img src="https://datawrapper.dwcdn.net/clXMX/full.png" alt="" /></noscript></div>
+                    <div style="min-height:691px" id="datawrapper-vis-clXMX">
+                        <script type="text/javascript" defer src="https://datawrapper.dwcdn.net/clXMX/embed.js"
+                            charset="utf-8" data-target="#datawrapper-vis-clXMX"></script><noscript><img
+                                src="https://datawrapper.dwcdn.net/clXMX/full.png" alt="" /></noscript>
+                    </div>
                     <p></p>
                     <p>
-                        Despite the typical American being materially richer than her counterpart in almost every country in this group, she is expected to die earlier. Beginning around 2010, US life expectancy began to rise slowly compared to other high-income nations. It declined sharply compared to peer countries during the COVID-19 pandemic and has rebounded slower since the pandemic ended. The CDC’s <a href="https://www.washingtonpost.com/health/2023/11/29/life-expectancy-2022-united-states/">provisional figures for 2022</a> indicate life expectancy has ticked up but remains below pre-COVID levels.
+                        Despite the typical American being materially richer than her counterpart in almost every
+                        country in this group, she is expected to die earlier. Beginning around 2010, US life expectancy
+                        began to rise slowly compared to other high-income nations. It declined sharply compared to peer
+                        countries during the COVID-19 pandemic and has rebounded slower since the pandemic ended. The
+                        CDC’s <a
+                            href="https://www.washingtonpost.com/health/2023/11/29/life-expectancy-2022-united-states/">provisional
+                            figures for 2022</a> indicate life expectancy has ticked up but remains below pre-COVID
+                        levels.
                     </p>
                     <p>
-                        For the past two decades, public health experts have been attempting to raise the salience of America’s life expectancy crisis to little effect. Few national leaders have explicitly named the issue. President Biden has not mentioned the crisis in any public remarks. Some members of congress have proposed declaring a national crisis, but <a href="https://www.washingtonpost.com/health/2023/12/28/life-expectancy-no-political-response/">they are a small minority.</a>
+                        For the past two decades, public health experts have been attempting to raise the salience of
+                        America’s life expectancy crisis to little effect. Few national leaders have explicitly named
+                        the issue. President Biden has not mentioned the crisis in any public remarks. Some members of
+                        congress have proposed declaring a national crisis, but <a
+                            href="https://www.washingtonpost.com/health/2023/12/28/life-expectancy-no-political-response/">they
+                            are a small minority.</a>
                     </p>
 
                     <p>
-                        This memo makes two points. First, America’s under-performing life expectancy is not an overall trend, rather a reflection of a decline in outcomes for America’s lower class. Second, the life expectancy gap is explained by four main factors: obesity-related chronic conditions, the opioid epidemic, gun violence, and motor vehicle deaths.
+                        This memo makes two points. First, America’s under-performing life expectancy is not an overall
+                        trend, rather a reflection of a decline in outcomes for America’s lower class. Second, the life
+                        expectancy gap is explained by four main factors: obesity-related chronic conditions, the opioid
+                        epidemic, gun violence, and motor vehicle deaths.
                     </p>
                     <h3>
                         Divergence, not Stagnation
                     </h3>
                     <p>
-                        National-level statistics can be misleading – they often obscure divides between regions and subgroups in a population. This is the case with US life expectancy. Looking at the US’s overall life expectancy, one might think life expectancy is stagnating for all Americans as it increases in other rich countries. When we examine <a href="https://ghdx.healthdata.org/record/ihme-data/united-states-life-expectancy-by-county-race-ethnicity-2000-2019">county-level data</a>  from The Institute for Health Metrics and Evaluation’s Global Health Data Exchange (Henceforth IHME and GHDX), we see life expectancy is not stagnating but <i>diverging</i>. There is a large and growing gap between the longest- and shortest-living Americans. The map below shows US counties by the change in their life expectancy from 2000 to 2019.
+                        National-level statistics can be misleading – they often obscure divides between regions and
+                        subgroups in a population. This is the case with US life expectancy. Looking at the US’s overall
+                        life expectancy, one might think life expectancy is stagnating for all Americans as it increases
+                        in other rich countries. When we examine <a
+                            href="https://ghdx.healthdata.org/record/ihme-data/united-states-life-expectancy-by-county-race-ethnicity-2000-2019">county-level
+                            data</a> from The Institute for Health Metrics and Evaluation’s Global Health Data Exchange
+                        (Henceforth IHME and GHDX), we see life expectancy is not stagnating but <i>diverging</i>. There
+                        is a large and growing gap between the longest- and shortest-living Americans. The map below
+                        shows US counties by the change in their life expectancy from 2000 to 2019.
                     </p>
-                    <div style="min-height:750px" id="datawrapper-vis-Y2n2K"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/Y2n2K/embed.js" charset="utf-8" data-target="#datawrapper-vis-Y2n2K"></script><noscript><img src="https://datawrapper.dwcdn.net/Y2n2K/full.png" alt="" /></noscript></div>
+                    <div style="min-height:750px" id="datawrapper-vis-Y2n2K">
+                        <script type="text/javascript" defer src="https://datawrapper.dwcdn.net/Y2n2K/embed.js"
+                            charset="utf-8" data-target="#datawrapper-vis-Y2n2K"></script><noscript><img
+                                src="https://datawrapper.dwcdn.net/Y2n2K/full.png" alt="" /></noscript>
+                    </div>
                     <p></p>
                     <p>
-                        This map reveals an urban-rural divide. the counties that lost years of life expectancy are overwhelmingly in rural areas (with the notable exception of the mountain west). Meanwhile urban counties tended to gain years (the largest increase was recorded by New York County, NY). Life expectancy also reveals regional inequality - improving counties tend to be in urban areas in coastal regions while declining counties are concentrated in the Midwest and Appalachian regions. If American policymakers are to tackle the country’s life expectancy crisis, they must focus attention, personnel, and resources in these areas.
+                        This map reveals an urban-rural divide. the counties that lost years of life expectancy are
+                        overwhelmingly in rural areas (with the notable exception of the mountain west). Meanwhile urban
+                        counties tended to gain years (the largest increase was recorded by New York County, NY). Life
+                        expectancy also reveals regional inequality - improving counties tend to be in urban areas in
+                        coastal regions while declining counties are concentrated in the Midwest and Appalachian
+                        regions. If American policymakers are to tackle the country’s life expectancy crisis, they must
+                        focus attention, personnel, and resources in these areas.
                     </p>
                     <p>
-                        As one may infer from the map above, life expectancy is also highly correlated with income. When <a href="https://doi.org/10.1001/jama.2016.4226">Chetty et. Al. 2016</a> compared tax records to death records from 1999 to 2016, they revealed “higher income was associated with greater longevity throughout the income distribution.” The authors also found “differences in life expectancy across income groups increased over time."
+                        As one may infer from the map above, life expectancy is also highly correlated with income. When
+                        <a href="https://doi.org/10.1001/jama.2016.4226">Chetty et. Al. 2016</a> compared tax records to
+                        death records from 1999 to 2016, they revealed “higher income was associated with greater
+                        longevity throughout the income distribution.” The authors also found “differences in life
+                        expectancy across income groups increased over time."
                     </p>
                     <p>
-                        Life expectancy gaps between the rich and poor are to be expected in any country, but they are especially large in the US. The gap between the richest and poorest Americans is far larger than the gap between the richest and poorest Europeans. <a href="https://doi.org/10.1073/pnas.2104684118">This is especially true for Black Americans.</a>
+                        Life expectancy gaps between the rich and poor are to be expected in any country, but they are
+                        especially large in the US. The gap between the richest and poorest Americans is far larger than
+                        the gap between the richest and poorest Europeans. <a
+                            href="https://doi.org/10.1073/pnas.2104684118">This is especially true for Black
+                            Americans.</a>
                     </p>
                     <p>
-                        Other researchers have focused on education-based mortality gaps. <a href="https://doi.org/10.1257/app.20190297">Novosad et. Al. 2022</a> examined mortality changes at constant education percentiles. They found from 1992 to 2018, the least educated 10% of Americans (read: high-school dropouts) have faced “catastrophic" increases in early mortality while mortality in other education bands stagnated or decreased.
+                        Other researchers have focused on education-based mortality gaps. <a
+                            href="https://doi.org/10.1257/app.20190297">Novosad et. Al. 2022</a> examined mortality
+                        changes at constant education percentiles. They found from 1992 to 2018, the least educated 10%
+                        of Americans (read: high-school dropouts) have faced “catastrophic" increases in early mortality
+                        while mortality in other education bands stagnated or decreased.
                     </p>
                     <p>
-                        COVID-19 accounted for a sharp life expectancy reduction in virtually all countries, including the US.<sup id="fn2-ref"><a href="#fn2">2</a></sup>  COVID infections, hospitalizations, and deaths all <a href="https://doi.org/10.15585/mmwr.mm7226a5">diverged sharply by class</a> – wealthier Americans with remote-compatible jobs were able to stay home and avoid infection. After the introduction of COVID vaccines, rural Americans were vaccinated at <a href="https://doi.org/10.15585/mmwr.mm7109a2">far lower rates</a> than urban Americans, compounding the urban-rural expectancy gap.
+                        COVID-19 accounted for a sharp life expectancy reduction in virtually all countries, including
+                        the US.<sup id="fn2-ref"><a href="#fn2">2</a></sup> COVID infections, hospitalizations, and
+                        deaths all <a href="https://doi.org/10.15585/mmwr.mm7226a5">diverged sharply by class</a> –
+                        wealthier Americans with remote-compatible jobs were able to stay home and avoid infection.
+                        After the introduction of COVID vaccines, rural Americans were vaccinated at <a
+                            href="https://doi.org/10.15585/mmwr.mm7109a2">far lower rates</a> than urban Americans,
+                        compounding the urban-rural expectancy gap.
                     </p>
                     <p>
-                        Underperforming life expectancy is not a nationwide issue but a sign of inequality and neglect – the US is failing to ensure its rural, poor, and less educated citizens live long and healthy lives.
+                        Underperforming life expectancy is not a nationwide issue but a sign of inequality and neglect –
+                        the US is failing to ensure its rural, poor, and less educated citizens live long and healthy
+                        lives.
                     </p>
                     <h3>The Causes</h3>
                     <p>
-                        There is no single cause for the US’s under-performing life expectancy. The figure represents a culmination of several factors related to Americans’ health, wellbeing, and safety. The chart below uses GHDX data to compare age-standardized years of life lost due to different risk factors in 2019 in the same set of 20 rich countries from the chart above. Risk factors include behavioral (which include tobacco, alcohol, and substance abuse), environmental (unclean air and water, occupational hazards), and metabolic risks (mostly related to obesity). We can see the gap between the US and peer countries is driven primarily by behavioral and metabolic risks. While analysts debate the relative gravity of individual factors, a consensus has emerged that the US’s life expectancy under-performs due to <a href = "https://www.washingtonpost.com/health/interactive/2023/american-life-expectancy-dropping/">four main factors:</a> (i) obesity and its attendant chronic conditions, (ii) the opioid epidemic, (iii) gun violence, and (iv) motor vehicle deaths. The latter two are not captured by the risk factors in the chart, so the gap shown below is likely an underestimate.
+                        There is no single cause for the US’s under-performing life expectancy. The figure represents a
+                        culmination of several factors related to Americans’ health, wellbeing, and safety. The chart
+                        below uses GHDX data to compare age-standardized years of life lost due to different risk
+                        factors in 2019 in the same set of 20 rich countries from the chart above. Risk factors include
+                        behavioral (which include tobacco, alcohol, and substance abuse), environmental (unclean air and
+                        water, occupational hazards), and metabolic risks (mostly related to obesity). We can see the
+                        gap between the US and peer countries is driven primarily by behavioral and metabolic risks.
+                        While analysts debate the relative gravity of individual factors, a consensus has emerged that
+                        the US’s life expectancy under-performs due to <a
+                            href="https://www.washingtonpost.com/health/interactive/2023/american-life-expectancy-dropping/">four
+                            main factors:</a> (i) obesity and its attendant chronic conditions, (ii) the opioid
+                        epidemic, (iii) gun violence, and (iv) motor vehicle deaths. The latter two are not captured by
+                        the risk factors in the chart, so the gap shown below is likely an underestimate.
                     </p>
-                    <div style="min-height:639px" id="datawrapper-vis-qaI9Q"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/qaI9Q/embed.js" charset="utf-8" data-target="#datawrapper-vis-qaI9Q"></script><noscript><img src="https://datawrapper.dwcdn.net/qaI9Q/full.png" alt="" /></noscript></div>
+                    <div style="min-height:639px" id="datawrapper-vis-qaI9Q">
+                        <script type="text/javascript" defer src="https://datawrapper.dwcdn.net/qaI9Q/embed.js"
+                            charset="utf-8" data-target="#datawrapper-vis-qaI9Q"></script><noscript><img
+                                src="https://datawrapper.dwcdn.net/qaI9Q/full.png" alt="" /></noscript>
+                    </div>
                     <p></p>
                     <h5>
                         Obesity and Chronic Conditions
                     </h5>
                     <p>
-                        In 2005, <a href="https://doi.org/10.1056/NEJMsr043743">a team of researchers warned</a> in the New England journal of medicine that increases in US obesity could halt decades of progress in life expectancy. A <a href="https://www.washingtonpost.com/health/interactive/2023/american-life-expectancy-dropping/">recent analysis from the Washington Post</a> finds chronic conditions such as heart disease, diabetes, hypertension, liver disease, and kidney disease (all of which are highly correlated with obesity) “erase more than twice as many years of life among people younger than 65 as all the overdoses, homicides, suicides and car accidents combined.”
+                        In 2005, <a href="https://doi.org/10.1056/NEJMsr043743">a team of researchers warned</a> in the
+                        New England journal of medicine that increases in US obesity could halt decades of progress in
+                        life expectancy. A <a
+                            href="https://www.washingtonpost.com/health/interactive/2023/american-life-expectancy-dropping/">recent
+                            analysis from the Washington Post</a> finds chronic conditions such as heart disease,
+                        diabetes, hypertension, liver disease, and kidney disease (all of which are highly correlated
+                        with obesity) “erase more than twice as many years of life among people younger than 65 as all
+                        the overdoses, homicides, suicides and car accidents combined.”
                     </p>
                     <p>
-                        The US is an extreme outlier in obesity among rich nations. This is driven in large part by food deserts, which lead to highly unhealthy diets and are concentrated in the poor and rural areas highlighted above.
+                        The US is an extreme outlier in obesity among rich nations. This is driven in large part by food
+                        deserts, which lead to highly unhealthy diets and are concentrated in the poor and rural areas
+                        highlighted above.
                     </p>
                     <h5>
                         Substance Abuse
                     </h5>
                     <p>
-                        Breaking down the behavioral risks shown in figure 3, we see the gap in years of life lost due to behavioral risks is driven primarily by drug use. For the past two decades, the US has experienced an opioid epidemic. This epidemic has concentrated in the regions with declining life expectancy shown above. <a href="https://doi.org/10.1371/journal.pone.0226732">Glei and Preston 2020</a> estimate that from 1998 to 2016, drug use reduced male expectancy by 1.4 years and female expectancy by 0.7. In West Virginia, the most affected state, reductions were 3.6 and 1.9 years.
+                        Breaking down the behavioral risks shown in figure 3, we see the gap in years of life lost due
+                        to behavioral risks is driven primarily by drug use. For the past two decades, the US has
+                        experienced an opioid epidemic. This epidemic has concentrated in the regions with declining
+                        life expectancy shown above. <a href="https://doi.org/10.1371/journal.pone.0226732">Glei and
+                            Preston 2020</a> estimate that from 1998 to 2016, drug use reduced male expectancy by 1.4
+                        years and female expectancy by 0.7. In West Virginia, the most affected state, reductions were
+                        3.6 and 1.9 years.
                     </p>
                     <h5>
                         Gun Violence
                     </h5>
                     <p>
-                        In addition to COVID-19, gun violence accounted for the sharp decline in life expectancy in 2020 and 2021. Homicides <a href="https://www.pewresearch.org/short-reads/2021/10/27/what-we-know-about-the-increase-in-u-s-murders-in-2020/">spiked</a> in the US during these years. Even before the recent spike, the US was an outlier in firearm-related deaths. <a href="https://doi.org/10.1136/bmjebm-2018-111103">Kalesan et. Al. 2018</a> estimate that gun violence accounts for 21% of the male life expectancy gap between the US and other high-income countries. Breaking the data down by race, they find the gap is especially large for Black men.
+                        In addition to COVID-19, gun violence accounted for the sharp decline in life expectancy in 2020
+                        and 2021. Homicides <a
+                            href="https://www.pewresearch.org/short-reads/2021/10/27/what-we-know-about-the-increase-in-u-s-murders-in-2020/">spiked</a>
+                        in the US during these years. Even before the recent spike, the US was an outlier in
+                        firearm-related deaths. <a href="https://doi.org/10.1136/bmjebm-2018-111103">Kalesan et. Al.
+                            2018</a> estimate that gun violence accounts for 21% of the male life expectancy gap between
+                        the US and other high-income countries. Breaking the data down by race, they find the gap is
+                        especially large for Black men.
                     </p>
                     <h5>
                         Motor Vehicle Deaths
                     </h5>
                     <p>
-                        Among rich countries, the US is an outlier in road fatalities per capita. This is for several reasons. American cars tend to be far larger than cars in peer countries, <a href="https://doi.org/10.1016/j.ecotra.2021.100219">resulting in more pedestrian deaths.</a> A greater share of Americans <a href="https://www.ft.com/content/a75a6623-67f4-41d1-a0ca-cedc9fda4f90">self-reported</a> speeding and driving without a seatbelt than in peer countries. Furthermore, the built environment in American municipalities makes driving the dominant form of transportation. Not only does this lead to more road fatalities through increased driving, but it also <a href="https://doi.org/10.1146/annurev-publhealth-032013-182411.">leads to a less active lifestyle in general.</a>
+                        Among rich countries, the US is an outlier in road fatalities per capita. This is for several
+                        reasons. American cars tend to be far larger than cars in peer countries, <a
+                            href="https://doi.org/10.1016/j.ecotra.2021.100219">resulting in more pedestrian deaths.</a>
+                        A greater share of Americans <a
+                            href="https://www.ft.com/content/a75a6623-67f4-41d1-a0ca-cedc9fda4f90">self-reported</a>
+                        speeding and driving without a seatbelt than in peer countries. Furthermore, the built
+                        environment in American municipalities makes driving the dominant form of transportation. Not
+                        only does this lead to more road fatalities through increased driving, but it also <a
+                            href="https://doi.org/10.1146/annurev-publhealth-032013-182411.">leads to a less active
+                            lifestyle in general.</a>
                     </p>
                     <h3>
                         Conclusion
                     </h3>
                     <p>
-                        Life expectancy reflects a convergence of policy outcomes affecting lower-class Americans. Fortunately, the origins of this crisis are no great mystery. We know the main factors driving the crisis. Obesity-related chronic conditions, opioids, gun violence, and motor vehicle deaths leave little to be explained. Unfortunately, these are all disparate issues, each with complex and politically fraught solutions.
+                        Life expectancy reflects a convergence of policy outcomes affecting lower-class Americans.
+                        Fortunately, the origins of this crisis are no great mystery. We know the main factors driving
+                        the crisis. Obesity-related chronic conditions, opioids, gun violence, and motor vehicle deaths
+                        leave little to be explained. Unfortunately, these are all disparate issues, each with complex
+                        and politically fraught solutions.
                     </p>
-                
+
                 </div>
             </div>
         </div>
@@ -169,10 +281,18 @@
             <div class="col-12 col-lg-10 col-xl-6 py-vh-2">
                 <ol>
                     <li id="fn1">
-                        <p>A note on life expectancy: this memo deals with life expectancy at birth for both men and women. These figures vary by sex – in the US, female life expectancy is consistently around 5 years longer than male life expectancy. While the reasons for Male and Female mortality in America vary, the difference of 5 years has been remarkably stable since 2000. For this reason, this memo will refer almost entirely to the unified figures for both men and women.<a href="#ref1">↩</a></p>
+                        <p>A note on life expectancy: this memo deals with life expectancy at birth for both men and
+                            women. These figures vary by sex – in the US, female life expectancy is consistently around
+                            5 years longer than male life expectancy. While the reasons for Male and Female mortality in
+                            America vary, the difference of 5 years has been remarkably stable since 2000. For this
+                            reason, this memo will refer almost entirely to the unified figures for both men and
+                            women.<a href="#ref1">↩</a></p>
                     </li>
                     <li id="fn2">
-                        <p>A note on COVID-19: while the pandemic had a dramatic impact on American life expectancy in 2020 and 2021, it is largely outside of the scope of this memo. This memo concerns the reasons for America’s persistent expectancy gap which predate the pandemic.<a href="#ref2">↩</a></p>
+                        <p>A note on COVID-19: while the pandemic had a dramatic impact on American life expectancy in
+                            2020 and 2021, it is largely outside of the scope of this memo. This memo concerns the
+                            reasons for America’s persistent expectancy gap which predate the pandemic.<a
+                                href="#ref2">↩</a></p>
                     </li>
                 </ol>
             </div>
@@ -191,15 +311,23 @@
         vegaEmbed('#viz2', spec2);
         vegaEmbed('#viz3', spec3);
 
-        // Handle external links
+        // Handle all links
         document.querySelectorAll("a").forEach(link => {
-            const isFootnoteLink = link.href.includes("#fn");
-            const isSuperscriptLink = link.href.includes("#fn") && link.id.includes("ref");
+            const href = link.href.toLowerCase();
+            const currentDomain = window.location.hostname;
 
-            if (isFootnoteLink || isSuperscriptLink) {
-                link.removeAttribute("target");
-            } else {
+            // Check if it's an internal link (same domain or anchor)
+            const isInternalLink =
+                href.includes('#') || // Footnote/anchor links
+                link.hostname === currentDomain; // Same domain (your repository)
+
+            if (!isInternalLink) {
+                // External links open in new tab
                 link.setAttribute("target", "_blank");
+                link.setAttribute("rel", "noopener noreferrer");
+            } else {
+                // Internal links stay in same tab
+                link.removeAttribute("target");
             }
         });
     </script>

@@ -15,6 +15,8 @@
         href="https://fonts.googleapis.com/css2?family=Petrona:wght@400;700&family=Cardo:wght@400;700&family=Montserrat:wght@400;600;700;800&display=swap"
         rel="stylesheet">
 
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏠</text></svg>">
+
     <!-- This is a link to the vega-lite which we're using to make graphs -->
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
@@ -231,33 +233,19 @@
 
 
 
-        // Select all links in the document
+        // Handle all links
         document.querySelectorAll("a").forEach(link => {
-            const href = link.href.toLowerCase(); // Convert to lowercase for consistent comparison
+            const href = link.href.toLowerCase();
+            const currentDomain = window.location.hostname;
 
-            // Define which links should open in new tabs
-            const shouldOpenNewTab =
-                href.includes('github.com') ||
-                href.includes('linkedin.com') ||
-                href.includes('templatedeck.com') ||
-                href.includes('economicsobservatory.com') ||
-                href.includes('basketball-reference.com') ||
-                href.includes('richarddavies.io') ||
-                (href.includes('reddit.com')) ||
-                (href.includes('ons.gov.uk'));
-
-            // Check if it's an internal navigation link (starts with current domain or #)
+            // Check if it's an internal link (same domain or anchor)
             const isInternalLink =
-                link.href.includes('#') || // Footnote links
-                href.includes('index.html') ||
-                href.includes('rent_project.html') ||
-                href.includes('final_project') ||
-                href.includes('lifeex.html');
+                href.includes('#') || // Footnote/anchor links
+                link.hostname === currentDomain; // Same domain (your repository)
 
-            if (shouldOpenNewTab && !isInternalLink) {
+            if (!isInternalLink) {
                 // External links open in new tab
                 link.setAttribute("target", "_blank");
-                // Add security best practice for external links
                 link.setAttribute("rel", "noopener noreferrer");
             } else {
                 // Internal links stay in same tab

@@ -12,6 +12,9 @@
         href="https://fonts.googleapis.com/css2?&family=Cardo:wght@400;700&family=Montserrat:wght@400;600;700;800&display=swap"
         rel="stylesheet">
 
+    <!-- Add this line for emoji favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📊</text></svg>">
+    
     <!-- Vega and Vega-Lite for visualizations -->
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
@@ -46,8 +49,8 @@
             <div class="col-12 col-lg-10 col-xl-8">
                 <!-- <small class="text-muted">By
                     John Doe</small> -->
-                <h1 class="display-huge">Data Visualization Protflio</h1>
-                <p class="lead pt-2 py-vh-2">This is a portfolio of coding challanges I have created for PP434:
+                <h1 class="display-huge">Data Visualization Portflio</h1>
+                <p class="lead pt-2 py-vh-2">This is a portfolio of coding challenges I have created for PP434:
                     Automated Data Visualization for Public Policy. The simplest visualizations are at the top and the
                     most complex are at the bottom.</p>
             </div>
@@ -176,7 +179,9 @@
                     </p>
                     <p>
                         For this plot, I scraped <a href="https://www.basketball-reference.com">Basketball Reference</a>
-                        to find player statistics from this season. <a href="https://colab.research.google.com/github/gmelmed/gmelmed.github.io/blob/main/cc5_data.ipynb">Here's</a> a notebook with the code I used. I created the plot below, which shows every player
+                        to find player statistics from this season. <a
+                            href="https://colab.research.google.com/github/gmelmed/gmelmed.github.io/blob/main/cc5_data.ipynb">Here's</a>
+                        a notebook with the code I used. I created the plot below, which shows every player
                         organized by team and ranked by an advanced statistic called value over replacement player, or
                         VORP.<sup><a href="#fn3" id="ref3">3</a></sup> To show the distribution of talent across the
                         league and across teams, I show each team's best player, team average, and team average without
@@ -330,10 +335,8 @@
                     <li id="fn1">
                         <p>
                             I changed the <tt>config</tt> section of the JSON specs for these charts and the CC2
-                            charts
-                            to match the style of my portfolio. I also added a tooltip the the CC2 charts.
-                            Otherwise,
-                            the charts are the same as the originals.<a href="#fn1-ref">↩</a>
+                            charts to match the style of my portfolio. I also added a tooltip the the CC2 charts.
+                            Otherwise, the charts are the same as the originals.<a href="#fn1-ref">↩</a>
                         </p>
                     </li>
                     <li id="fn2">
@@ -417,39 +420,42 @@
         vegaEmbed('#cc10_2', lifeex_dropdown_spec)
 
 
-        // Select all links in the document
+        // Handle footnote links
+        document.addEventListener('click', function (e) {
+            // Check if the clicked element is a footnote link
+            if (e.target.tagName === 'A' && e.target.hash) {
+                e.preventDefault();
+                const targetId = e.target.hash.slice(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    setTimeout(() => {
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                    }, 0);
+                    window.location.hash = targetId;
+                }
+            }
+        });
+
+        // Handle all links
         document.querySelectorAll("a").forEach(link => {
-            const href = link.href.toLowerCase(); // Convert to lowercase for consistent comparison
+            const href = link.href.toLowerCase();
+            const currentDomain = window.location.hostname;
 
-            // Define which links should open in new tabs
-            const shouldOpenNewTab =
-                href.includes('github.com') ||
-                href.includes('linkedin.com') ||
-                href.includes('templatedeck.com') ||
-                href.includes('economicsobservatory.com') ||
-                href.includes('basketball-reference.com') ||
-                href.includes('richarddavies.io') ||
-                (href.includes('reddit.com')) ||
-                (href.includes('ons.gov.uk'));
-
-            // Check if it's an internal navigation link (starts with current domain or #)
+            // Check if it's an internal link (same domain or anchor)
             const isInternalLink =
-                link.href.includes('#') || // Footnote links
-                href.includes('index.html') ||
-                href.includes('rent_project.html') ||
-                href.includes('final_project') ||
-                href.includes('lifeex.html');
+                href.includes('#') || // Footnote/anchor links
+                link.hostname === currentDomain; // Same domain (your repository)
 
-            if (shouldOpenNewTab && !isInternalLink) {
+            if (!isInternalLink) {
                 // External links open in new tab
                 link.setAttribute("target", "_blank");
-                // Add security best practice for external links
                 link.setAttribute("rel", "noopener noreferrer");
             } else {
                 // Internal links stay in same tab
                 link.removeAttribute("target");
             }
         });
+
 
     </script>
 
