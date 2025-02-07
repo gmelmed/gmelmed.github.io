@@ -1,227 +1,205 @@
-<!DOCTYPE html>
-<html> 
+<!doctype html>
+<html class="h-100" lang="en">
 
-<head>    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name="author" content="Your Name">
     <title>Other Projects | Gabe Melmed</title>
+    <link rel="stylesheet" href="brook_theme.css">
 
     <!-- Link to Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Petrona:wght@400;700&family=Cardo:wght@400;700&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Petrona:wght@400;700&family=Cardo:wght@400;700&family=Montserrat:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
 
-    <!-- Link to your CSS -->
-    <link rel="stylesheet" type="text/css" href="portfolio_styles.css">
+        <!-- Add this line for emoji favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🕺🏻</text></svg>">
 
-    <!-- This is a link to the vega-lite which we're using to make graphs -->
+    <!-- Vega and Vega-Lite for visualizations -->
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
-
-
-    <style>
-        #chartGrid {
-            display: flex;
-        }
-
-        .footnotes {
-            margin-top: 20px;
-            font-size: 0.9em;
-            color: #555;
-        }
-        .footnotes li {
-            margin-bottom: 10px;
-        }
-        
-    </style>
 </head>
 
-<body> 
-    <h1 class="big" style="margin-bottom: 0px;"> 
-        Gabe Melmed
-    </h1>
-    <!-- Add a body paragraph -->
-    <p class = "links">
-        <!-- we're setting the margin to 0px so the header and authour name are close together -->
-        <a href="index.html">Home</a> | 
-        <a href="/final_project/rent_in_america.html">Mapping America's Housing Crisis</a> | <a href="lifeex.html">Diverging Life Expectancy</a> | 
-        <a href="eco.html">Economics Observatory Contributions</a> | More coming soon.
-    </p>
+<body data-bs-spy="scroll" data-bs-target="#navScroll">
+    <nav id="navScroll" class="navbar navbar-light py-vh-3 pb-0 px-vw-5" tabindex="0">
+        <div class="container-fluid d-flex justify-content-between">
+            <!-- Left side - Name/Home link -->
+            <a class="navbar-brand pe-md-4 fs-4 text-center" href="index.html">
+                <span class="ms-md-1 mt-1 fw-bolder me-md-5">Gabe Melmed</span>
+            </a>
 
-    <h2>
-        Identifying and understanding micro-enterprises in Colombia
-    </h2>
-    <p>
-        These are visualizations I created for a final project for <i>PP422: Data Science for Public Policy.</i> My colleagues and I were hired by UNDP Colombia to Classify informal small businesses using national survey data. Our aim was to identify distinct categories of micro-enterprises to help UNDP tailor formalization programming to businesses' specific needs.
-    </p>
-    <p>
-        To complete this task, my colleagues and I used two unsupervised learning techniques. First, we created an informality index using principal component analysis (PCA). We then used k-means clustering to identify distinct categories of micro-enterprises. We identified three categories of micro-enterprises: <i>Deep-rooted informal, Transitional firms,</i> and <i>Formalization prospects</i>.
-    </p>
-    <p>
-        The maps below show how our informality index varies geographically.<sup id="fn1-ref"><a href="#fn1">1</a></sup>
-    </p>
-    <p>
-        <div class="datawrapper-container">
-            <iframe 
-                class="verytall" 
-                title="Average Formality Index by Metro Area" 
-                aria-label="Map" 
-                src="https://datawrapper.dwcdn.net/dIt6G/7/" 
-                scrolling="no" 
-                frameborder="0"></iframe>
+            <!-- Right side - Social links -->
+            <div class="d-flex align-items-center">
+                <a href="https://github.com/gmelmed" aria-label="Personal links" class="fs-6 link-fancy me-2">
+                    GitHub
+                </a>
+                <span class="mx-2">|</span>
+                <a href="https://www.linkedin.com/in/gabriel-melmed-3a160019b/" aria-label="Personal links"
+                    class="fs-6 link-fancy">
+                    LinkedIn
+                </a>
+            </div>
         </div>
-    </p>
-    <p>
-        <div class="datawrapper-container">
-            <iframe 
-                class="verytall" 
-                title="Average Formality Index by Department" 
-                aria-label="Map" 
-                src="https://datawrapper.dwcdn.net/eU9TT/2/" 
-                scrolling="no" 
-                frameborder="0"></iframe>
+    </nav>
+
+    <main class="container py-vh-3">
+        <div class="row d-flex justify-content-center text-center">
+            <div class="col-12 col-lg-10 col-xl-8">
+                <h1 class="display-huge">Other Projects</h1>
+                
+            </div>
+
+            <div class="row d-flex justify-content-center text-start">
+                <div class="col-12 col-lg-10 col-xl-8 py-vh-2">
+                    <h2>
+                        Identifying and understanding micro-enterprises in Colombia
+                    </h2>
+                    <p>
+                        These are visualizations I created for a final project for <i>PP422: Data Science for Public Policy.</i> My colleagues and I were hired by UNDP Colombia to Classify informal small businesses using national survey data. Our aim was to identify distinct categories of micro-enterprises to help UNDP tailor formalization programming to businesses' specific needs.
+                    </p>
+                    <p>
+                        To complete this task, my colleagues and I used two unsupervised learning techniques. First, we created an informality index using principal component analysis (PCA). We then used k-means clustering to identify distinct categories of micro-enterprises. We identified three categories of micro-enterprises: <i>Deep-rooted informal, Transitional firms,</i> and <i>Formalization prospects</i>.
+                    </p>
+                    <p>
+                        The maps below show how our informality index varies geographically.<sup id="fn1-ref"><a href="#fn1">1</a></sup>
+                    </p>
+                    <div style="min-height:799px" id="datawrapper-vis-dIt6G"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/dIt6G/embed.js" charset="utf-8" data-target="#datawrapper-vis-dIt6G"></script><noscript><img src="https://datawrapper.dwcdn.net/dIt6G/full.png" alt="" /></noscript></div>
+                    
+                    <div style="min-height:793px" id="datawrapper-vis-eU9TT"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/eU9TT/embed.js" charset="utf-8" data-target="#datawrapper-vis-eU9TT"></script><noscript><img src="https://datawrapper.dwcdn.net/eU9TT/full.png" alt="" /></noscript></div>
+                    <p>
+                        I also created a bar chart to show how our informality categories varied geographically.
+                    </p>
+                    <div style="min-height:665px" id="datawrapper-vis-YnSVU"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/YnSVU/embed.js" charset="utf-8" data-target="#datawrapper-vis-YnSVU"></script><noscript><img src="https://datawrapper.dwcdn.net/YnSVU/full.png" alt="" /></noscript></div>
+
+                   <div style="min-height:713px" id="datawrapper-vis-DoUvS"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/DoUvS/embed.js" charset="utf-8" data-target="#datawrapper-vis-DoUvS"></script><noscript><img src="https://datawrapper.dwcdn.net/DoUvS/full.png" alt="" /></noscript></div>
+                   <h2>
+                    The state of the Mexican Economy
+                    </h2> 
+                    <p>
+                        <i>This is an assignment I completed for PP440: Micro- and Macro-Economics for Public Policy. My assignment was to write a memo addressed to the finance minister of a country of my choice on that country's economic performance in the long- and short-run (part of the assignment was to define a specific point demarcating the long- and short-run and to justify my definition). I was asked to describe the state of the economy using three variables the and accompanying visualizations. Finally, I had to discuss whether I believe supply or demand factors are dominating in driving inflation. I chose to write about Mexico. I had a two-page space limit. I have made minor grammatical and flow edits.</i>
+                    </p>
+                    <h3>
+                        0. Summary
+                    </h3>
+                    <p>
+                        This memo provides an overview of the performance of the Mexican economy in the long run and the short run. I define the short run as beginning in March of 2020 and continuing until today. This is because the shock and subsequent recovery from the COVID-19 pandemic has been the dominant economic force affecting Mexico's economy in recent years. I highlight the short term in each of the figures below. I express economic performance in terms of GDP growth, unemployment, and inflation. I chose these figures because they illustrate the strengths and weaknesses of Mexico's economy - Mexico has relatively low growth and unstable inflation but performs well in unemployment. GDP growth is modest in the long run, typically around 2% year-over-year. In the short run, growth cratered due to COVID-19, but has since recovered to typical levels. In the short and long runs, unemployment is relatively low and declining. Inflation in Mexico is more sensitive - it has peaked three times over the past 15 years. In the short run, Mexico has experienced its highest inflation since the 2008 global financial crisis, peaking in August 2022. As I explain later in the memo, this is mainly driven by demand-side factors. 
+                    </p>
+                    <h3>
+                        I. GDP Growth
+                    </h3>
+                    <p>
+                        Apart from a dramatic peak and valley due to the COVID-19 pandemic, GDP growth in Mexico has been modest for the past decade.  As shown in Figure 1, Mexico's GDP typically grows around 2% per year, rarely surpassing 3% and sometimes dipping below 1%.  Mexico entered COVID-19 in a mild recession. Economic commentators <a href="https://www.economist.com/the-americas/2022/03/19/why-mexicos-economy-underperforms">often</a> <a href = "https://www.noahpinion.blog/p/mexico-a-development-puzzle">remark</a> that Mexico's economy under-performs because its growth rate is persistently lower than other middle-income countries. In terms of GDP growth, Mexico more closely resembles a high-income country.<sup id="fn2-ref"><a href="#fn2">2</a></sup>
+                    </p>
+                    <div style="min-height:441px" id="datawrapper-vis-n56Wl"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/n56Wl/embed.js" charset="utf-8" data-target="#datawrapper-vis-n56Wl"></script><noscript><img src="https://datawrapper.dwcdn.net/n56Wl/full.png" alt="" /></noscript></div>
+
+                    <p>
+                        In the short run, Mexico's economy is still recovering from the COVID-19 pandemic. The pandemic was a massive shock to growth, which dropped to -20% in the second quarter of 2020. Mexico's economy shrank for the following three quarters. GDP growth spiked to nearly 22% in the second quarter of 2021 (this number is only this high because the COVID-related drop was so steep.) Since then, GDP growth has been consistently small but positive. GDP has grown at around 3% since COVID-19. Mexico's GDP reached pre-pandemic levels in the third quarter of 2022, <a href="https://www.reuters.com/markets/mexicos-economy-seen-reaching-pre-pandemic-levels-2023-lagging-peers-fitch-2022-09-02/">slower than most Latin American economies.</a> Recently, Mexico's, GDP growth has begun to decline. After a steep valley and peak due to COVID-19, Mexico appears to be returning to its usual slow growth.
+                    </p>
+                    <h3>
+                        II. Unemployment
+                    </h3>
+                    <p>
+                        Despite its under-performance in other areas, Mexico's Unemployment rate is enviably low. Over the past two decades, unemployment in Mexico has been consistently lower than in other large Latin American economies.<sup id="fn3-ref"><a href="#fn3">3</a></sup> As shown in Figure 2, unemployment in Mexico has spiked due to negative economic shocks but has recovered reliably. It reached nearly 6% at the height of the 2008 financial crisis, but recovered steadily over the next decade, leveling off at around 3.5% before the beginning of COVID-19.
+                    </p>
+                    <div style="min-height:445px" id="datawrapper-vis-0Dxno"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/0Dxno/embed.js" charset="utf-8" data-target="#datawrapper-vis-0Dxno"></script><noscript><img src="https://datawrapper.dwcdn.net/0Dxno/full.png" alt="" /></noscript></div>
+                    <p>
+                        In the short run, unemployment has followed a similar pattern. At the height of the COVID-19 pandemic, unemployment reached nearly 5%. Recovery has been swift since then - by the third quarter of 2023, unemployment reached 2.8%, its lowest level in over two decades. Unemployment in Mexico appears to be cyclical rather than structural. Mexican policymakers should be more concerned with GDP growth and inflation.
+                    </p>
+                    <h3>
+                        III. Inflation
+                    </h3>
+                    <p>
+                        Inflation in Mexico is more volatile in the long run. Figure 3 shows that in the past 15 years, Mexico has experienced two spikes in inflation, each lasting around a year. The first occurred in 2009 after the global financial crisis, reaching a peak of around 6.5%. Over the next five years, inflation stayed between 3% and 4.5%. Inflation reached a record low, just over 2%  near the end of 2015, only to surpass 6.5%  again two years later. Inflation was declining in the two years before COVID.
+                    </p>
+                    <div style="min-height:423px" id="datawrapper-vis-WJGVa"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/WJGVa/embed.js" charset="utf-8" data-target="#datawrapper-vis-WJGVa"></script><noscript><img src="https://datawrapper.dwcdn.net/WJGVa/full.png" alt="" /></noscript></div>
+                    <p>
+                        In the short run, Mexico has experienced its highest inflation since the 1990s. Inflation rose sharply from the beginning of the COVID-19 pandemic, reaching a peak of 8.7% in August of 2022. Since this peak, inflation has declined just as sharply. Last month, inflation stood at 4.4%. I believe Mexico's most recent inflation is demand-related. 
+                    </p>
+                    <h3>
+                        IV. Causes of inflation
+                    </h3>
+                    <p>
+                        I believe Mexico's recent inflation is due to the economy overheating. This is because growth in the short run has been consistently positive. In the aggregate demand/aggregate supply framework, this indicates inflation is due to an outward shift in aggregate demand. Additional data points support this thesis. Mexico has recently experienced a surge in investment due to American supply chain near-shoring efforts and major domestic infrastructure projects, <a href="https://www.apricitas.io/p/mexicos-investment-boom">many of which are over budget.</a> I believe this investment has shifted Mexico's aggregate demand outward, leading to greater output and higher prices.
+                    </p>
+                    <p>
+                        The Mexican central bank appears to agree with this assessment. To cool the economy, Banxico has aggressively pursued a contractionary monetary policy, holding interest rates at a near-record 11.25% for its past seven meetings. The economy seems to be responding to these high interest rates. GDP growth, while still positive, has slowed for the past five quarters. Unemployment, having dropped sharply in the short term, has begun to level off near 3%. Indeed, Mexico's monetary policy may soon lead to a recession.
+                    </p>
+                </div>
+            </div>
         </div>
-    </p>
-    <p>
-        I also created a bar chart to show how our informality categories varied geographically.
-    </p>
-    <p>
-        <div class="datawrapper-container">
-            <iframe 
-                class="tall" 
-                title="Cluster Assignments by Metro Area" 
-                aria-label="Stacked Bars" 
-                src="https://datawrapper.dwcdn.net/YnSVU/2/" 
-                scrolling="no" 
-                frameborder="0"></iframe>
+    </main>
+
+    <div class="container d-flex justify-content-between">
+        <div class="col border-top border-end py-vh-3 d-flex align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-arrow-left"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+            </svg>
+            <a href="eco.html" class="ms-2 display-6">Economics Observatory Contributions</a>
         </div>
-    </p>
-    <p>
-        <div class="datawrapper-container">
-            <iframe 
-                class="tall" 
-                title="Cluster Assignments by Department" 
-                aria-label="Stacked Bars" 
-                src="https://datawrapper.dwcdn.net/DoUvS/4/" 
-                scrolling="no" 
-                frameborder="0"></iframe>
+        <div class="col border-top text-end py-vh-3 d-flex align-items-center justify-content-end">
+            <span class="display-6">More coming soon.</span>
         </div>
-    </p>
-    <h2>
-        The State of the Mexican Economy
-    </h2>
-    <p>
-        <i>This is an assignment I completed for PP440: Micro- and Macro-Economics for Public Policy. My assignment was to write a memo addressed to the finance minister of a country of my choice on that country's economic performance in the long- and short-run (part of the assignment was to define a specific point demarcating the long- and short-run and to justify my definition). I was asked to describe the state of the economy using three variables the and accompanying visualizations. Finally, I had to discuss whether I believe supply or demand factors are dominating in driving inflation. I chose to write about Mexico. I had a two-page space limit. I have made minor grammatical and flow edits.</i>
-    </p>
-    <h3>
-        0. Summary
-    </h3>
-    <p>
-        This memo provides an overview of the performance of the Mexican economy in the long run and the short run. I define the short run as beginning in March of 2020 and continuing until today. This is because the shock and subsequent recovery from the COVID-19 pandemic has been the dominant economic force affecting Mexico's economy in recent years. I highlight the short term in each of the figures below. I express economic performance in terms of GDP growth, unemployment, and inflation. I chose these figures because they illustrate the strengths and weaknesses of Mexico's economy - Mexico has relatively low growth and unstable inflation but performs well in unemployment. GDP growth is modest in the long run, typically around 2% year-over-year. In the short run, growth cratered due to COVID-19, but has since recovered to typical levels. In the short and long runs, unemployment is relatively low and declining. Inflation in Mexico is more sensitive - it has peaked three times over the past 15 years. In the short run, Mexico has experienced its highest inflation since the 2008 global financial crisis, peaking in August 2022. As I explain later in the memo, this is mainly driven by demand-side factors. 
-    </p>
-    <h3>
-        I. GDP Growth
-    </h3>
-    <p>
-        Apart from a dramatic peak and valley due to the COVID-19 pandemic, GDP growth in Mexico has been modest for the past decade.  As shown in Figure 1, Mexico's GDP typically grows around 2% per year, rarely surpassing 3% and sometimes dipping below 1%.  Mexico entered COVID-19 in a mild recession. Economic commentators <a href="https://www.economist.com/the-americas/2022/03/19/why-mexicos-economy-underperforms">often</a> <a href = "https://www.noahpinion.blog/p/mexico-a-development-puzzle">remark</a> that Mexico's economy under-performs because its growth rate is persistently lower than other middle-income countries. In terms of GDP growth, Mexico more closely resembles a high-income country.<sup id="fn2-ref"><a href="#fn2">2</a></sup>
-    </p>
-    <p>
-        <!-- Figure 1: Mexican Real GDP Growth -->
-        <div class="datawrapper-container">
-            <iframe 
-                class="wide"
-                title="Figure 1: Mexican Real GDP Growth" 
-                aria-label="Column Chart" 
-                id="datawrapper-chart-n56Wl" 
-                src="https://datawrapper.dwcdn.net/n56Wl/2/" 
-                scrolling="no" 
-                frameborder="0"></iframe>
+    </div>
+
+    <!-- Footnotes -->
+    <footer>
+        <div class="row d-flex justify-content-center text-start">
+            <div class="col-12 col-lg-10 col-xl-6 py-vh-2">
+                <ol>
+                    <li id="fn1">
+                        Colombia's south-eastern departments were not represented in the survey.<a href="#fn1-ref">↩</a>
+                    </li>
+                    <li id="fn2">
+                        It's silly and irrelevant, but I feel the need to mention the green in the visualizations in this project is the same shade of green on the Mexican flag.<a href="#fn2-ref">↩</a>
+                    </li>
+                    <li id="fn3">
+                        Unemployment is persistently higher in Brazil, Argentina, and Colombia, all of which have comparable economies and populations.<a href="#fn3-ref">↩</a>
+                    </li>
+                </ol>
+            </div>
         </div>
-    </p>
-    <p>
-        In the short run, Mexico's economy is still recovering from the COVID-19 pandemic. The pandemic was a massive shock to growth, which dropped to -20% in the second quarter of 2020. Mexico's economy shrank for the following three quarters. GDP growth spiked to nearly 22% in the second quarter of 2021 (this number is only this high because the COVID-related drop was so steep.) Since then, GDP growth has been consistently small but positive. GDP has grown at around 3% since COVID-19. Mexico's GDP reached pre-pandemic levels in the third quarter of 2022, <a href="https://www.reuters.com/markets/mexicos-economy-seen-reaching-pre-pandemic-levels-2023-lagging-peers-fitch-2022-09-02/">slower than most Latin American economies.</a> Recently, Mexico's, GDP growth has begun to decline. After a steep valley and peak due to COVID-19, Mexico appears to be returning to its usual slow growth.
-    </p>
-    <h3>
-        II. Unemployment
-    </h3>
-    <p>
-        Despite its under-performance in other areas, Mexico's Unemployment rate is enviably low. Over the past two decades, unemployment in Mexico has been consistently lower than in other large Latin American economies.<sup id="fn3-ref"><a href="#fn3">3</a></sup> As shown in Figure 2, unemployment in Mexico has spiked due to negative economic shocks but has recovered reliably. It reached nearly 6% at the height of the 2008 financial crisis, but recovered steadily over the next decade, leveling off at around 3.5% before the beginning of COVID-19.
-    </p>
-    <p>
-        <!-- Figure 2: Mexican Unemployment -->
-        <div class="datawrapper-container">
-            <iframe 
-                class="wide"
-                title="Figure 2: Mexican Unemployment" 
-                aria-label="Interactive line chart" 
-                id="datawrapper-chart-0Dxno"
-                src="https://datawrapper.dwcdn.net/0Dxno/3/" 
-                scrolling="no" 
-                frameborder="0"></iframe>
+        <div class="container text-center small py-vh-3">
+            Template from
+            <a href="https://templatedeck.com" class="link-fancy" target="_blank">templatedeck.com</a>
+            <!-- Footer link -->
         </div>
-    </p>
-    <p>
-        In the short run, unemployment has followed a similar pattern. At the height of the COVID-19 pandemic, unemployment reached nearly 5%. Recovery has been swift since then - by the third quarter of 2023, unemployment reached 2.8%, its lowest level in over two decades. Unemployment in Mexico appears to be cyclical rather than structural. Mexican policymakers should be more concerned with GDP growth and inflation.
-    </p>
-    <h3>
-        III. Inflation
-    </h3>
-    <p>
-        Inflation in Mexico is more volatile in the long run. Figure 3 shows that in the past 15 years, Mexico has experienced two spikes in inflation, each lasting around a year. The first occurred in 2009 after the global financial crisis, reaching a peak of around 6.5%. Over the next five years, inflation stayed between 3% and 4.5%. Inflation reached a record low, just over 2%  near the end of 2015, only to surpass 6.5%  again two years later. Inflation was declining in the two years before COVID.
-    </p>
-    <p>
-        <!-- Figure 3: Mexican Inflation -->
-        <div class="datawrapper-container">
-            <iframe 
-                class="wide"
-                title="Figure 3: Mexican Inflation" 
-                aria-label="Interactive line chart" 
-                id="datawrapper-chart-WJGVa" 
-                src="https://datawrapper.dwcdn.net/WJGVa/2/" 
-                scrolling="no" 
-                frameborder="0"></iframe>
-        </div>
-    </p>
-    <p>
-        In the short run, Mexico has experienced its highest inflation since the 1990s. Inflation rose sharply from the beginning of the COVID-19 pandemic, reaching a peak of 8.7% in August of 2022. Since this peak, inflation has declined just as sharply. Last month, inflation stood at 4.4%. I believe Mexico's most recent inflation is demand-related. 
-    </p>
-    <h3>
-        IV. Causes of inflation
-    </h3>
-    <p>
-        I believe Mexico's recent inflation is due to the economy overheating. This is because growth in the short run has been consistently positive. In the aggregate demand/aggregate supply framework, this indicates inflation is due to an outward shift in aggregate demand. Additional data points support this thesis. Mexico has recently experienced a surge in investment due to American supply chain near-shoring efforts and major domestic infrastructure projects, <a href="https://www.apricitas.io/p/mexicos-investment-boom">many of which are over budget.</a> I believe this investment has shifted Mexico's aggregate demand outward, leading to greater output and higher prices.
-    </p>
-    <p>
-        The Mexican central bank appears to agree with this assessment. To cool the economy, Banxico has aggressively pursued a contractionary monetary policy, holding interest rates at a near-record 11.25% for its past seven meetings. The economy seems to be responding to these high interest rates. GDP growth, while still positive, has slowed for the past five quarters. Unemployment, having dropped sharply in the short term, has begun to level off near 3%. Indeed, Mexico's monetary policy may soon lead to a recession.
-    </p>   
-    <footer class="footnotes">
-        <hr>
-        <ol>
-            <li id="fn1">
-                Colombia's south-eastern departments were not represented in the survey.<a href="#fn1-ref">↩</a>
-            </li>
-            <li id="fn2">
-                It's silly and irrelevant, but I feel the need to mention the green in the visualizations in this project is the same shade of green on the Mexican flag.<a href="#fn2-ref">↩</a>
-            </li>
-            <li id="fn3">
-                Unemployment is persistently higher in Brazil, Argentina, and Colombia, all of which have comparable economies and populations.<a href="#fn3-ref">↩</a>
-        </ol>
     </footer>
-    <script>
-        // Select all links in the document
-        document.querySelectorAll("a").forEach(link => {
-            const isLinkStyle = link.closest(".links"); // Check if the link is in the .links class
-            const isFootnoteLink = link.href.includes("#fn"); // Links to footnotes
-            const isSuperscriptLink = link.href.includes("#fn") && link.id.includes("ref"); // Superscripts back to the footnote
 
-            // Open in same tab for .links, footnotes, or superscripts
-            if (isLinkStyle || isFootnoteLink || isSuperscriptLink) {
-                link.removeAttribute("target");
-            } else {
-                // Otherwise, open in a new tab
+    <script>
+        // Your Vega-Lite chart specifications
+        let spec1 = "path/to/your/spec1.json";
+        let spec2 = "path/to/your/spec2.json";
+        let spec3 = "path/to/your/spec3.json";
+
+        // Embed the visualizations
+        vegaEmbed('#viz1', spec1);
+        vegaEmbed('#viz2', spec2);
+        vegaEmbed('#viz3', spec3);
+
+        // Handle all links
+        document.querySelectorAll("a").forEach(link => {
+            const href = link.href.toLowerCase();
+            const currentDomain = window.location.hostname;
+
+            // Check if it's an internal link (same domain or anchor)
+            const isInternalLink =
+                href.includes('#') || // Footnote/anchor links
+                link.hostname === currentDomain; // Same domain (your repository)
+
+            if (!isInternalLink) {
+                // External links open in new tab
                 link.setAttribute("target", "_blank");
+                link.setAttribute("rel", "noopener noreferrer");
+            } else {
+                // Internal links stay in same tab
+                link.removeAttribute("target");
             }
         });
-    </script>    
+    </script>
 </body>
-</html>
 
+</html>
